@@ -1,0 +1,137 @@
+\hypertarget{structble__gatt__client__event__cb}{}\section{ble\+\_\+gatt\+\_\+client\+\_\+event\+\_\+cb Struct Reference}
+\label{structble__gatt__client__event__cb}\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+
+
+{\ttfamily \#include $<$ble\+\_\+manager.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_a4cfebad7f0221c03c06419f5d1b972d4}{primary\+\_\+service\+\_\+found}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client founds the primary service as part of service discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__primary__service__found__t}{at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+found\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_a4436e1c9a54d9c532281ca67c28827f8}{included\+\_\+service\+\_\+found}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client founds the included service as part of service discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__included__service__found__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+found\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_aed7efe1ec5c627556016aebdef73a002}{characteristic\+\_\+found}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client founds the characteristics as part of char discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__found__t}{at\+\_\+ble\+\_\+characteristic\+\_\+found\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_ae157e3403e4de753657b55d39bb08277}{descriptor\+\_\+found}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client founds the descriptor as part of discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__descriptor__found__t}{at\+\_\+ble\+\_\+descriptor\+\_\+found\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_a849ea337025d6a2fabe329864aa7f3aa}{discovery\+\_\+complete}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client Discovery completes this event will be triggered Refer \mbox{\hyperlink{at__ble__api_8h_ad6fbc03cf1f09d166dd381a805a42e9c}{at\+\_\+ble\+\_\+discovery\+\_\+complete\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_aa0e76a1ad0f3e798ea31ff98ba213309}{characteristic\+\_\+read\+\_\+by\+\_\+uuid\+\_\+response}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client discovers the characteristic using U\+U\+ID this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__read__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+response\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_add8b50999d393179e93d19c3bd15defd}{characteristic\+\_\+read\+\_\+multible\+\_\+response}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client characteristic read with multiple response this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__read__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+response\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_a56ba53f48eabaee0c1e0112761650f31}{characteristic\+\_\+write\+\_\+response}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client writes onto G\+A\+TT server characteristics this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__write__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+response\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_ab7b825b35a5ff72e4dfdc67cf4033de7}{notification\+\_\+recieved}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client receives the notification from G\+A\+TT Server. \mbox{\hyperlink{structat__ble__notification__recieved__t}{at\+\_\+ble\+\_\+notification\+\_\+recieved\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__client__event__cb_a0d5f5f9e4cf80206d91a6b0ad93145dd}{indication\+\_\+recieved}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client receives the indication from G\+A\+TT Server. \mbox{\hyperlink{structat__ble__indication__recieved__t}{at\+\_\+ble\+\_\+indication\+\_\+recieved\+\_\+t}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structble__gatt__client__event__cb_aed7efe1ec5c627556016aebdef73a002}\label{structble__gatt__client__event__cb_aed7efe1ec5c627556016aebdef73a002}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!characteristic\_found@{characteristic\_found}}
+\index{characteristic\_found@{characteristic\_found}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_found}{characteristic\_found}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+found}
+
+
+
+If G\+A\+TT Client founds the characteristics as part of char discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__found__t}{at\+\_\+ble\+\_\+characteristic\+\_\+found\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_aa0e76a1ad0f3e798ea31ff98ba213309}\label{structble__gatt__client__event__cb_aa0e76a1ad0f3e798ea31ff98ba213309}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!characteristic\_read\_by\_uuid\_response@{characteristic\_read\_by\_uuid\_response}}
+\index{characteristic\_read\_by\_uuid\_response@{characteristic\_read\_by\_uuid\_response}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_read\_by\_uuid\_response}{characteristic\_read\_by\_uuid\_response}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+read\+\_\+by\+\_\+uuid\+\_\+response}
+
+
+
+If G\+A\+TT Client discovers the characteristic using U\+U\+ID this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__read__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+response\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_add8b50999d393179e93d19c3bd15defd}\label{structble__gatt__client__event__cb_add8b50999d393179e93d19c3bd15defd}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!characteristic\_read\_multible\_response@{characteristic\_read\_multible\_response}}
+\index{characteristic\_read\_multible\_response@{characteristic\_read\_multible\_response}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_read\_multible\_response}{characteristic\_read\_multible\_response}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+read\+\_\+multible\+\_\+response}
+
+
+
+If G\+A\+TT Client characteristic read with multiple response this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__read__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+response\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_a56ba53f48eabaee0c1e0112761650f31}\label{structble__gatt__client__event__cb_a56ba53f48eabaee0c1e0112761650f31}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!characteristic\_write\_response@{characteristic\_write\_response}}
+\index{characteristic\_write\_response@{characteristic\_write\_response}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_write\_response}{characteristic\_write\_response}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+write\+\_\+response}
+
+
+
+If G\+A\+TT Client writes onto G\+A\+TT server characteristics this event will be triggered Refer \mbox{\hyperlink{structat__ble__characteristic__write__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+response\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_ae157e3403e4de753657b55d39bb08277}\label{structble__gatt__client__event__cb_ae157e3403e4de753657b55d39bb08277}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!descriptor\_found@{descriptor\_found}}
+\index{descriptor\_found@{descriptor\_found}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{descriptor\_found}{descriptor\_found}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} descriptor\+\_\+found}
+
+
+
+If G\+A\+TT Client founds the descriptor as part of discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__descriptor__found__t}{at\+\_\+ble\+\_\+descriptor\+\_\+found\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_a849ea337025d6a2fabe329864aa7f3aa}\label{structble__gatt__client__event__cb_a849ea337025d6a2fabe329864aa7f3aa}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!discovery\_complete@{discovery\_complete}}
+\index{discovery\_complete@{discovery\_complete}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{discovery\_complete}{discovery\_complete}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} discovery\+\_\+complete}
+
+
+
+If G\+A\+TT Client Discovery completes this event will be triggered Refer \mbox{\hyperlink{at__ble__api_8h_ad6fbc03cf1f09d166dd381a805a42e9c}{at\+\_\+ble\+\_\+discovery\+\_\+complete\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_a4436e1c9a54d9c532281ca67c28827f8}\label{structble__gatt__client__event__cb_a4436e1c9a54d9c532281ca67c28827f8}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!included\_service\_found@{included\_service\_found}}
+\index{included\_service\_found@{included\_service\_found}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{included\_service\_found}{included\_service\_found}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} included\+\_\+service\+\_\+found}
+
+
+
+If G\+A\+TT Client founds the included service as part of service discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__included__service__found__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+found\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_a0d5f5f9e4cf80206d91a6b0ad93145dd}\label{structble__gatt__client__event__cb_a0d5f5f9e4cf80206d91a6b0ad93145dd}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!indication\_recieved@{indication\_recieved}}
+\index{indication\_recieved@{indication\_recieved}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{indication\_recieved}{indication\_recieved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} indication\+\_\+recieved}
+
+
+
+G\+A\+TT Client receives the indication from G\+A\+TT Server. \mbox{\hyperlink{structat__ble__indication__recieved__t}{at\+\_\+ble\+\_\+indication\+\_\+recieved\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_ab7b825b35a5ff72e4dfdc67cf4033de7}\label{structble__gatt__client__event__cb_ab7b825b35a5ff72e4dfdc67cf4033de7}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!notification\_recieved@{notification\_recieved}}
+\index{notification\_recieved@{notification\_recieved}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{notification\_recieved}{notification\_recieved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} notification\+\_\+recieved}
+
+
+
+G\+A\+TT Client receives the notification from G\+A\+TT Server. \mbox{\hyperlink{structat__ble__notification__recieved__t}{at\+\_\+ble\+\_\+notification\+\_\+recieved\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__client__event__cb_a4cfebad7f0221c03c06419f5d1b972d4}\label{structble__gatt__client__event__cb_a4cfebad7f0221c03c06419f5d1b972d4}} 
+\index{ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}!primary\_service\_found@{primary\_service\_found}}
+\index{primary\_service\_found@{primary\_service\_found}!ble\_gatt\_client\_event\_cb@{ble\_gatt\_client\_event\_cb}}
+\subsubsection{\texorpdfstring{primary\_service\_found}{primary\_service\_found}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} primary\+\_\+service\+\_\+found}
+
+
+
+If G\+A\+TT Client founds the primary service as part of service discovery process this event will be triggered Refer \mbox{\hyperlink{structat__ble__primary__service__found__t}{at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+found\+\_\+t}}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/ble\+\_\+mgr/\mbox{\hyperlink{ble__manager_8h}{ble\+\_\+manager.\+h}}\end{DoxyCompactItemize}

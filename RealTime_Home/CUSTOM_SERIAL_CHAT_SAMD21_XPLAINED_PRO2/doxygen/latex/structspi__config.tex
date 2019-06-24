@@ -1,0 +1,149 @@
+\hypertarget{structspi__config}{}\section{spi\+\_\+config Struct Reference}
+\label{structspi__config}\index{spi\_config@{spi\_config}}
+
+
+S\+PI configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$spi.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} \mbox{\hyperlink{structspi__config_aa56044693231ac71d809d1c28e94800a}{mode}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}{spi\+\_\+data\+\_\+order}} \mbox{\hyperlink{structspi__config_acf9451596e18d899f5c9f5ac019e234f}{data\+\_\+order}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}{spi\+\_\+transfer\+\_\+mode}} \mbox{\hyperlink{structspi__config_aa6612419a505f9a340d1bdda22274adc}{transfer\+\_\+mode}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}{spi\+\_\+signal\+\_\+mux\+\_\+setting}} \mbox{\hyperlink{structspi__config_a973f48b0b9271ae4ce74235c108a5d69}{mux\+\_\+setting}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} \mbox{\hyperlink{structspi__config_a7ca9bf5df3e678e26819ff8444041797}{character\+\_\+size}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structspi__config_a514964d5c2a8da4dd96bac82a53477f2}{run\+\_\+in\+\_\+standby}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structspi__config_aeb0ee3a89acb7a67727a62a68adf0120}{receiver\+\_\+enable}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \mbox{\hyperlink{structspi__slave__config}{spi\_slave\_config}} \mbox{\hyperlink{structspi__config_a64443d2e45f9103b7ab0166ab7e44a41}{slave}}\\
+\>struct \mbox{\hyperlink{structspi__master__config}{spi\_master\_config}} \mbox{\hyperlink{structspi__config_a03ce4a83f9312e08f9ec6bff0dfdbf28}{master}}\\
+\} \mbox{\hyperlink{structspi__config_a0f7ed07442eb6f29d7188434c1c5e177}{mode\_specific}}\\
+
+\end{tabbing}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga1ab9bb87560ad127ed982591b7d67311}{gclk\+\_\+generator}} \mbox{\hyperlink{structspi__config_a2dba667c6d06bff254b7284d45dd02a3}{generator\+\_\+source}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structspi__config_a36c58e420cf9b44d2f6cc8042f81b5d6}{pinmux\+\_\+pad0}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structspi__config_acbc2a9a6d4bee7422a98b6af97e470dc}{pinmux\+\_\+pad1}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structspi__config_ac2961331910efba2dd3a1f865bb34e74}{pinmux\+\_\+pad2}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structspi__config_aa0b3c5c2950e092fe55c7bc2fab47d75}{pinmux\+\_\+pad3}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+PI configuration structure. 
+
+Configuration structure for an S\+PI instance. This structure should be initialized by the spi\+\_\+get\+\_\+config\+\_\+defaults function before being modified by the user application. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structspi__config_a7ca9bf5df3e678e26819ff8444041797}\label{structspi__config_a7ca9bf5df3e678e26819ff8444041797}} 
+\index{spi\_config@{spi\_config}!character\_size@{character\_size}}
+\index{character\_size@{character\_size}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{character\_size}{character\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} character\+\_\+size}
+
+S\+PI character size \mbox{\Hypertarget{structspi__config_acf9451596e18d899f5c9f5ac019e234f}\label{structspi__config_acf9451596e18d899f5c9f5ac019e234f}} 
+\index{spi\_config@{spi\_config}!data\_order@{data\_order}}
+\index{data\_order@{data\_order}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{data\_order}{data\_order}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}{spi\+\_\+data\+\_\+order}} data\+\_\+order}
+
+Data order \mbox{\Hypertarget{structspi__config_a2dba667c6d06bff254b7284d45dd02a3}\label{structspi__config_a2dba667c6d06bff254b7284d45dd02a3}} 
+\index{spi\_config@{spi\_config}!generator\_source@{generator\_source}}
+\index{generator\_source@{generator\_source}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{generator\_source}{generator\_source}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga1ab9bb87560ad127ed982591b7d67311}{gclk\+\_\+generator}} generator\+\_\+source}
+
+G\+C\+LK generator to use as clock source \mbox{\Hypertarget{structspi__config_a03ce4a83f9312e08f9ec6bff0dfdbf28}\label{structspi__config_a03ce4a83f9312e08f9ec6bff0dfdbf28}} 
+\index{spi\_config@{spi\_config}!master@{master}}
+\index{master@{master}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{master}{master}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structspi__master__config}{spi\+\_\+master\+\_\+config}} master}
+
+Master specific configuration \mbox{\Hypertarget{structspi__config_aa56044693231ac71d809d1c28e94800a}\label{structspi__config_aa56044693231ac71d809d1c28e94800a}} 
+\index{spi\_config@{spi\_config}!mode@{mode}}
+\index{mode@{mode}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} mode}
+
+S\+PI mode \mbox{\Hypertarget{structspi__config_a0f7ed07442eb6f29d7188434c1c5e177}\label{structspi__config_a0f7ed07442eb6f29d7188434c1c5e177}} 
+\index{spi\_config@{spi\_config}!mode\_specific@{mode\_specific}}
+\index{mode\_specific@{mode\_specific}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{mode\_specific}{mode\_specific}}
+{\footnotesize\ttfamily union \{ ... \}   mode\+\_\+specific}
+
+Union for slave or master specific configuration \mbox{\Hypertarget{structspi__config_a973f48b0b9271ae4ce74235c108a5d69}\label{structspi__config_a973f48b0b9271ae4ce74235c108a5d69}} 
+\index{spi\_config@{spi\_config}!mux\_setting@{mux\_setting}}
+\index{mux\_setting@{mux\_setting}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{mux\_setting}{mux\_setting}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}{spi\+\_\+signal\+\_\+mux\+\_\+setting}} mux\+\_\+setting}
+
+M\+UX setting \mbox{\Hypertarget{structspi__config_a36c58e420cf9b44d2f6cc8042f81b5d6}\label{structspi__config_a36c58e420cf9b44d2f6cc8042f81b5d6}} 
+\index{spi\_config@{spi\_config}!pinmux\_pad0@{pinmux\_pad0}}
+\index{pinmux\_pad0@{pinmux\_pad0}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{pinmux\_pad0}{pinmux\_pad0}}
+{\footnotesize\ttfamily uint32\+\_\+t pinmux\+\_\+pad0}
+
+P\+A\+D0 pinmux \mbox{\Hypertarget{structspi__config_acbc2a9a6d4bee7422a98b6af97e470dc}\label{structspi__config_acbc2a9a6d4bee7422a98b6af97e470dc}} 
+\index{spi\_config@{spi\_config}!pinmux\_pad1@{pinmux\_pad1}}
+\index{pinmux\_pad1@{pinmux\_pad1}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{pinmux\_pad1}{pinmux\_pad1}}
+{\footnotesize\ttfamily uint32\+\_\+t pinmux\+\_\+pad1}
+
+P\+A\+D1 pinmux \mbox{\Hypertarget{structspi__config_ac2961331910efba2dd3a1f865bb34e74}\label{structspi__config_ac2961331910efba2dd3a1f865bb34e74}} 
+\index{spi\_config@{spi\_config}!pinmux\_pad2@{pinmux\_pad2}}
+\index{pinmux\_pad2@{pinmux\_pad2}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{pinmux\_pad2}{pinmux\_pad2}}
+{\footnotesize\ttfamily uint32\+\_\+t pinmux\+\_\+pad2}
+
+P\+A\+D2 pinmux \mbox{\Hypertarget{structspi__config_aa0b3c5c2950e092fe55c7bc2fab47d75}\label{structspi__config_aa0b3c5c2950e092fe55c7bc2fab47d75}} 
+\index{spi\_config@{spi\_config}!pinmux\_pad3@{pinmux\_pad3}}
+\index{pinmux\_pad3@{pinmux\_pad3}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{pinmux\_pad3}{pinmux\_pad3}}
+{\footnotesize\ttfamily uint32\+\_\+t pinmux\+\_\+pad3}
+
+P\+A\+D3 pinmux \mbox{\Hypertarget{structspi__config_aeb0ee3a89acb7a67727a62a68adf0120}\label{structspi__config_aeb0ee3a89acb7a67727a62a68adf0120}} 
+\index{spi\_config@{spi\_config}!receiver\_enable@{receiver\_enable}}
+\index{receiver\_enable@{receiver\_enable}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{receiver\_enable}{receiver\_enable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} receiver\+\_\+enable}
+
+Enable receiver \mbox{\Hypertarget{structspi__config_a514964d5c2a8da4dd96bac82a53477f2}\label{structspi__config_a514964d5c2a8da4dd96bac82a53477f2}} 
+\index{spi\_config@{spi\_config}!run\_in\_standby@{run\_in\_standby}}
+\index{run\_in\_standby@{run\_in\_standby}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{run\_in\_standby}{run\_in\_standby}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} run\+\_\+in\+\_\+standby}
+
+Enabled in sleep modes \mbox{\Hypertarget{structspi__config_a64443d2e45f9103b7ab0166ab7e44a41}\label{structspi__config_a64443d2e45f9103b7ab0166ab7e44a41}} 
+\index{spi\_config@{spi\_config}!slave@{slave}}
+\index{slave@{slave}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{slave}{slave}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structspi__slave__config}{spi\+\_\+slave\+\_\+config}} slave}
+
+Slave specific configuration \mbox{\Hypertarget{structspi__config_aa6612419a505f9a340d1bdda22274adc}\label{structspi__config_aa6612419a505f9a340d1bdda22274adc}} 
+\index{spi\_config@{spi\_config}!transfer\_mode@{transfer\_mode}}
+\index{transfer\_mode@{transfer\_mode}!spi\_config@{spi\_config}}
+\subsubsection{\texorpdfstring{transfer\_mode}{transfer\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}{spi\+\_\+transfer\+\_\+mode}} transfer\+\_\+mode}
+
+Transfer mode 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/sercom/spi/\mbox{\hyperlink{spi_8h}{spi.\+h}}\end{DoxyCompactItemize}

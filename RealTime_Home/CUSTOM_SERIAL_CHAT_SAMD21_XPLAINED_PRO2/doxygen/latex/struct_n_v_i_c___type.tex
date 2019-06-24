@@ -1,0 +1,105 @@
+\hypertarget{struct_n_v_i_c___type}{}\section{N\+V\+I\+C\+\_\+\+Type Struct Reference}
+\label{struct_n_v_i_c___type}\index{NVIC\_Type@{NVIC\_Type}}
+
+
+Structure type to access the Nested Vectored Interrupt Controller (N\+V\+IC).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+cm0plus.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_ab0e414637f38c9234818752145f0d1e6}{I\+S\+ER}} \mbox{[}1\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_a03c9ef255da9ec52ad195ff310267707}{R\+E\+S\+E\+R\+V\+E\+D0}} \mbox{[}31\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_a36b661a339cab43484a412776b3840d7}{I\+C\+ER}} \mbox{[}1\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_ab8c47832d71ed57b001dbcc5741972e4}{R\+S\+E\+R\+V\+E\+D1}} \mbox{[}31\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_a0ed5d4d6b2105c9235639256bf6f94b8}{I\+S\+PR}} \mbox{[}1\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_aaade1cfbe11f972bd8172705a64e761e}{R\+E\+S\+E\+R\+V\+E\+D2}} \mbox{[}31\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_a193e3ea34c0cb880ced9f31c80320758}{I\+C\+PR}} \mbox{[}1\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_a9b8fd6d6abdb53c9c474cd1857906546}{R\+E\+S\+E\+R\+V\+E\+D3}} \mbox{[}31\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_af900a5feb8eaad3787ff37801da4f949}{R\+E\+S\+E\+R\+V\+E\+D4}} \mbox{[}64\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_n_v_i_c___type_aa09d96b0a7347a2df161495145a51a93}{IP}} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure type to access the Nested Vectored Interrupt Controller (N\+V\+IC). 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_n_v_i_c___type_a36b661a339cab43484a412776b3840d7}\label{struct_n_v_i_c___type_a36b661a339cab43484a412776b3840d7}} 
+\index{NVIC\_Type@{NVIC\_Type}!ICER@{ICER}}
+\index{ICER@{ICER}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{ICER}{ICER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t I\+C\+ER\mbox{[}1\mbox{]}}
+
+Offset\+: 0x080 (R/W) Interrupt Clear Enable Register \mbox{\Hypertarget{struct_n_v_i_c___type_a193e3ea34c0cb880ced9f31c80320758}\label{struct_n_v_i_c___type_a193e3ea34c0cb880ced9f31c80320758}} 
+\index{NVIC\_Type@{NVIC\_Type}!ICPR@{ICPR}}
+\index{ICPR@{ICPR}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{ICPR}{ICPR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t I\+C\+PR\mbox{[}1\mbox{]}}
+
+Offset\+: 0x180 (R/W) Interrupt Clear Pending Register \mbox{\Hypertarget{struct_n_v_i_c___type_aa09d96b0a7347a2df161495145a51a93}\label{struct_n_v_i_c___type_aa09d96b0a7347a2df161495145a51a93}} 
+\index{NVIC\_Type@{NVIC\_Type}!IP@{IP}}
+\index{IP@{IP}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{IP}{IP}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t IP\mbox{[}8\mbox{]}}
+
+Offset\+: 0x300 (R/W) Interrupt Priority Register \mbox{\Hypertarget{struct_n_v_i_c___type_ab0e414637f38c9234818752145f0d1e6}\label{struct_n_v_i_c___type_ab0e414637f38c9234818752145f0d1e6}} 
+\index{NVIC\_Type@{NVIC\_Type}!ISER@{ISER}}
+\index{ISER@{ISER}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{ISER}{ISER}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t I\+S\+ER\mbox{[}1\mbox{]}}
+
+Offset\+: 0x000 (R/W) Interrupt Set Enable Register \mbox{\Hypertarget{struct_n_v_i_c___type_a0ed5d4d6b2105c9235639256bf6f94b8}\label{struct_n_v_i_c___type_a0ed5d4d6b2105c9235639256bf6f94b8}} 
+\index{NVIC\_Type@{NVIC\_Type}!ISPR@{ISPR}}
+\index{ISPR@{ISPR}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{ISPR}{ISPR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t I\+S\+PR\mbox{[}1\mbox{]}}
+
+Offset\+: 0x100 (R/W) Interrupt Set Pending Register \mbox{\Hypertarget{struct_n_v_i_c___type_a03c9ef255da9ec52ad195ff310267707}\label{struct_n_v_i_c___type_a03c9ef255da9ec52ad195ff310267707}} 
+\index{NVIC\_Type@{NVIC\_Type}!RESERVED0@{RESERVED0}}
+\index{RESERVED0@{RESERVED0}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{RESERVED0}{RESERVED0}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D0\mbox{[}31\mbox{]}}
+
+\mbox{\Hypertarget{struct_n_v_i_c___type_aaade1cfbe11f972bd8172705a64e761e}\label{struct_n_v_i_c___type_aaade1cfbe11f972bd8172705a64e761e}} 
+\index{NVIC\_Type@{NVIC\_Type}!RESERVED2@{RESERVED2}}
+\index{RESERVED2@{RESERVED2}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{RESERVED2}{RESERVED2}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D2\mbox{[}31\mbox{]}}
+
+\mbox{\Hypertarget{struct_n_v_i_c___type_a9b8fd6d6abdb53c9c474cd1857906546}\label{struct_n_v_i_c___type_a9b8fd6d6abdb53c9c474cd1857906546}} 
+\index{NVIC\_Type@{NVIC\_Type}!RESERVED3@{RESERVED3}}
+\index{RESERVED3@{RESERVED3}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{RESERVED3}{RESERVED3}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D3\mbox{[}31\mbox{]}}
+
+\mbox{\Hypertarget{struct_n_v_i_c___type_af900a5feb8eaad3787ff37801da4f949}\label{struct_n_v_i_c___type_af900a5feb8eaad3787ff37801da4f949}} 
+\index{NVIC\_Type@{NVIC\_Type}!RESERVED4@{RESERVED4}}
+\index{RESERVED4@{RESERVED4}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{RESERVED4}{RESERVED4}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D4\mbox{[}64\mbox{]}}
+
+\mbox{\Hypertarget{struct_n_v_i_c___type_ab8c47832d71ed57b001dbcc5741972e4}\label{struct_n_v_i_c___type_ab8c47832d71ed57b001dbcc5741972e4}} 
+\index{NVIC\_Type@{NVIC\_Type}!RSERVED1@{RSERVED1}}
+\index{RSERVED1@{RSERVED1}!NVIC\_Type@{NVIC\_Type}}
+\subsubsection{\texorpdfstring{RSERVED1}{RSERVED1}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+S\+E\+R\+V\+E\+D1\mbox{[}31\mbox{]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/\+C\+M\+S\+I\+S/\+Include/\mbox{\hyperlink{core__cm0plus_8h}{core\+\_\+cm0plus.\+h}}\end{DoxyCompactItemize}

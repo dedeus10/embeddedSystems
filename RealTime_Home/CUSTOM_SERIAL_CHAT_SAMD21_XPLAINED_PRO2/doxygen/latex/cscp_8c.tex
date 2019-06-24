@@ -1,0 +1,231 @@
+\hypertarget{cscp_8c}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+profiles/cscp/cscp.c File Reference}
+\label{cscp_8c}\index{ASF/thirdparty/wireless/ble\_sdk/ble\_profiles/cscp/cscp.c@{ASF/thirdparty/wireless/ble\_sdk/ble\_profiles/cscp/cscp.c}}
+
+
+Custom Serial Chat Profile.  
+
+
+{\ttfamily \#include $<$asf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ble\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ble\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cscp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cscs.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{cscp_8c_a00c7f4dfcfaeeabbf4912cad3e7baf0e}{csc\+\_\+prf\+\_\+buf\+\_\+init}} (uint8\+\_\+t $\ast$databuf, uint16\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em C\+SC profile buffer initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cscp_8c_a89e78c75c377ea400d4272c5dffd1282}{csc\+\_\+prf\+\_\+init}} (void $\ast$param)
+\begin{DoxyCompactList}\small\item\em C\+SC profile initialization function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cscp_8c_a1e7354d210879cac7dce885af297b7c5}{csc\+\_\+prf\+\_\+send\+\_\+data}} (uint8\+\_\+t $\ast$databuf, uint16\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em C\+SC profile send data function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cscp_8c_a7db44bc678bee79c9b2db8b01892a4c5}{csc\+\_\+prf\+\_\+dev\+\_\+adv}} (void)
+\begin{DoxyCompactList}\small\item\em C\+SC profile advertisement function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a2aa49ceda8dd20ac330d3d3a9b84cbcc}{csc\+\_\+prf\+\_\+connected\+\_\+state\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Connection handler invoked by ble manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a1fd6d154d04a1be9c7d7df2f94cf6327}{csc\+\_\+prf\+\_\+discovery\+\_\+complete\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Discovery Complete handler invoked by ble manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a5479e620ef3a287593cd7042b3005454}{csc\+\_\+prf\+\_\+service\+\_\+found\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Service found handler invoked by ble manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a686ff845cc62acaa5d70045032670d24}{csc\+\_\+prf\+\_\+characteristic\+\_\+found\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em characteristic found handler invoked by ble manager \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a039867307b97c57178638a7776ee9f23}{csc\+\_\+prf\+\_\+descriptor\+\_\+found\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em client descriptor found handler invoked by ble manager \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a69f4c6e96d4565a3eff7b1e7d5142da8}{csc\+\_\+prf\+\_\+notification\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em invoked by ble manager on receiving notification \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_adcd12e5e1bfd8b6dfada8ac352e0855b}{csc\+\_\+prf\+\_\+write\+\_\+notification\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em invoked by ble manager for setting the notification \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_ac1546d4a4582b8e7f6a9311292317c7c}{csc\+\_\+prf\+\_\+disconnect\+\_\+event\+\_\+handler}} (void $\ast$params)
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_a4e380d090ad239134616fdf71c4712f0}{csc\+\_\+prf\+\_\+char\+\_\+changed\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Service characteristic change handler function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cscp_8c_af0651ec16c35fdd73bf0273949a41c37}{notify\+\_\+recv\+\_\+ntf\+\_\+handler}} (\mbox{\hyperlink{cscp_8h_a8c0a963c1d72ea4305bc7ee945d20b16}{recv\+\_\+ntf\+\_\+callback\+\_\+t}} recv\+\_\+ntf\+\_\+fn)
+\begin{DoxyCompactList}\small\item\em Function call the user defined callback for sending the receive data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscp_8c_ad81854fcad2cca05e3ec50bb382eccd9}{csc\+\_\+notification\+\_\+confirmation\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em csc\+\_\+notification\+\_\+confirmation\+\_\+handler called by ble manager to give the status of notification sent \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cscp_8h_aac0ea484b59b13e79c511577d9fa4494}{app\+\_\+csc\+\_\+data\+\_\+t}} \mbox{\hyperlink{cscp_8c_a29eafc4ca3c5308f625c80b4bc212e89}{app\+\_\+csc\+\_\+info}}
+\item 
+\mbox{\hyperlink{cscp_8h_a8c0a963c1d72ea4305bc7ee945d20b16}{recv\+\_\+ntf\+\_\+callback\+\_\+t}} \mbox{\hyperlink{cscp_8c_ab7de3e522f7d64d321d88893a5255291}{recv\+\_\+ntf\+\_\+cb}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Custom Serial Chat Profile. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{cscp_8c_ad81854fcad2cca05e3ec50bb382eccd9}\label{cscp_8c_ad81854fcad2cca05e3ec50bb382eccd9}} 
+\index{cscp.c@{cscp.c}!csc\_notification\_confirmation\_handler@{csc\_notification\_confirmation\_handler}}
+\index{csc\_notification\_confirmation\_handler@{csc\_notification\_confirmation\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_notification\_confirmation\_handler()}{csc\_notification\_confirmation\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+notification\+\_\+confirmation\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+csc\+\_\+notification\+\_\+confirmation\+\_\+handler called by ble manager to give the status of notification sent 
+
+Notification confirmation handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}} & address of the cmd completion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cscp_8c_a00c7f4dfcfaeeabbf4912cad3e7baf0e}\label{cscp_8c_a00c7f4dfcfaeeabbf4912cad3e7baf0e}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_buf\_init@{csc\_prf\_buf\_init}}
+\index{csc\_prf\_buf\_init@{csc\_prf\_buf\_init}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_buf\_init()}{csc\_prf\_buf\_init()}}
+{\footnotesize\ttfamily void csc\+\_\+prf\+\_\+buf\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{databuf,  }\item[{uint16\+\_\+t}]{datalen }\end{DoxyParamCaption})}
+
+
+
+C\+SC profile buffer initialization. 
+
+\textbackslash{}\+C\+SC buffer initialization function \mbox{\Hypertarget{cscp_8c_a4e380d090ad239134616fdf71c4712f0}\label{cscp_8c_a4e380d090ad239134616fdf71c4712f0}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_char\_changed\_handler@{csc\_prf\_char\_changed\_handler}}
+\index{csc\_prf\_char\_changed\_handler@{csc\_prf\_char\_changed\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_char\_changed\_handler()}{csc\_prf\_char\_changed\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+char\+\_\+changed\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Service characteristic change handler function. 
+
+\textbackslash{}\+Service characteristic change handler function \mbox{\Hypertarget{cscp_8c_a686ff845cc62acaa5d70045032670d24}\label{cscp_8c_a686ff845cc62acaa5d70045032670d24}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_characteristic\_found\_handler@{csc\_prf\_characteristic\_found\_handler}}
+\index{csc\_prf\_characteristic\_found\_handler@{csc\_prf\_characteristic\_found\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_characteristic\_found\_handler()}{csc\_prf\_characteristic\_found\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+characteristic\+\_\+found\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+characteristic found handler invoked by ble manager 
+
+Handler for characteristic found. \mbox{\Hypertarget{cscp_8c_a2aa49ceda8dd20ac330d3d3a9b84cbcc}\label{cscp_8c_a2aa49ceda8dd20ac330d3d3a9b84cbcc}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_connected\_state\_handler@{csc\_prf\_connected\_state\_handler}}
+\index{csc\_prf\_connected\_state\_handler@{csc\_prf\_connected\_state\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_connected\_state\_handler()}{csc\_prf\_connected\_state\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+connected\+\_\+state\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Connection handler invoked by ble manager. 
+
+Handler for connection event. \mbox{\Hypertarget{cscp_8c_a039867307b97c57178638a7776ee9f23}\label{cscp_8c_a039867307b97c57178638a7776ee9f23}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_descriptor\_found\_handler@{csc\_prf\_descriptor\_found\_handler}}
+\index{csc\_prf\_descriptor\_found\_handler@{csc\_prf\_descriptor\_found\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_descriptor\_found\_handler()}{csc\_prf\_descriptor\_found\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+descriptor\+\_\+found\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+client descriptor found handler invoked by ble manager 
+
+Handler for descriptor found. \mbox{\Hypertarget{cscp_8c_a7db44bc678bee79c9b2db8b01892a4c5}\label{cscp_8c_a7db44bc678bee79c9b2db8b01892a4c5}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_dev\_adv@{csc\_prf\_dev\_adv}}
+\index{csc\_prf\_dev\_adv@{csc\_prf\_dev\_adv}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_dev\_adv()}{csc\_prf\_dev\_adv()}}
+{\footnotesize\ttfamily void csc\+\_\+prf\+\_\+dev\+\_\+adv (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+C\+SC profile advertisement function. 
+
+\textbackslash{}\+C\+SC device advertisement handler function \mbox{\Hypertarget{cscp_8c_ac1546d4a4582b8e7f6a9311292317c7c}\label{cscp_8c_ac1546d4a4582b8e7f6a9311292317c7c}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_disconnect\_event\_handler@{csc\_prf\_disconnect\_event\_handler}}
+\index{csc\_prf\_disconnect\_event\_handler@{csc\_prf\_disconnect\_event\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_disconnect\_event\_handler()}{csc\_prf\_disconnect\_event\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+disconnect\+\_\+event\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+\textbackslash{}\+C\+SC device disconnected handler function \mbox{\Hypertarget{cscp_8c_a1fd6d154d04a1be9c7d7df2f94cf6327}\label{cscp_8c_a1fd6d154d04a1be9c7d7df2f94cf6327}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_discovery\_complete\_handler@{csc\_prf\_discovery\_complete\_handler}}
+\index{csc\_prf\_discovery\_complete\_handler@{csc\_prf\_discovery\_complete\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_discovery\_complete\_handler()}{csc\_prf\_discovery\_complete\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+discovery\+\_\+complete\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Discovery Complete handler invoked by ble manager. 
+
+Handler for discovery complete. \mbox{\Hypertarget{cscp_8c_a89e78c75c377ea400d4272c5dffd1282}\label{cscp_8c_a89e78c75c377ea400d4272c5dffd1282}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_init@{csc\_prf\_init}}
+\index{csc\_prf\_init@{csc\_prf\_init}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_init()}{csc\_prf\_init()}}
+{\footnotesize\ttfamily void csc\+\_\+prf\+\_\+init (\begin{DoxyParamCaption}\item[{void $\ast$}]{param }\end{DoxyParamCaption})}
+
+
+
+C\+SC profile initialization function. 
+
+\textbackslash{}\+C\+SC profile initialization function \mbox{\Hypertarget{cscp_8c_a69f4c6e96d4565a3eff7b1e7d5142da8}\label{cscp_8c_a69f4c6e96d4565a3eff7b1e7d5142da8}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_notification\_handler@{csc\_prf\_notification\_handler}}
+\index{csc\_prf\_notification\_handler@{csc\_prf\_notification\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_notification\_handler()}{csc\_prf\_notification\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+notification\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+invoked by ble manager on receiving notification 
+
+\mbox{\Hypertarget{cscp_8c_a1e7354d210879cac7dce885af297b7c5}\label{cscp_8c_a1e7354d210879cac7dce885af297b7c5}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_send\_data@{csc\_prf\_send\_data}}
+\index{csc\_prf\_send\_data@{csc\_prf\_send\_data}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_send\_data()}{csc\_prf\_send\_data()}}
+{\footnotesize\ttfamily void csc\+\_\+prf\+\_\+send\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{databuf,  }\item[{uint16\+\_\+t}]{datalen }\end{DoxyParamCaption})}
+
+
+
+C\+SC profile send data function. 
+
+\textbackslash{}\+C\+SC profile send data function \mbox{\Hypertarget{cscp_8c_a5479e620ef3a287593cd7042b3005454}\label{cscp_8c_a5479e620ef3a287593cd7042b3005454}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_service\_found\_handler@{csc\_prf\_service\_found\_handler}}
+\index{csc\_prf\_service\_found\_handler@{csc\_prf\_service\_found\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_service\_found\_handler()}{csc\_prf\_service\_found\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+service\+\_\+found\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Service found handler invoked by ble manager. 
+
+Handler for service found. \mbox{\Hypertarget{cscp_8c_adcd12e5e1bfd8b6dfada8ac352e0855b}\label{cscp_8c_adcd12e5e1bfd8b6dfada8ac352e0855b}} 
+\index{cscp.c@{cscp.c}!csc\_prf\_write\_notification\_handler@{csc\_prf\_write\_notification\_handler}}
+\index{csc\_prf\_write\_notification\_handler@{csc\_prf\_write\_notification\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{csc\_prf\_write\_notification\_handler()}{csc\_prf\_write\_notification\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+prf\+\_\+write\+\_\+notification\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+invoked by ble manager for setting the notification 
+
+Handler for configuring the notification for remote device. \mbox{\Hypertarget{cscp_8c_af0651ec16c35fdd73bf0273949a41c37}\label{cscp_8c_af0651ec16c35fdd73bf0273949a41c37}} 
+\index{cscp.c@{cscp.c}!notify\_recv\_ntf\_handler@{notify\_recv\_ntf\_handler}}
+\index{notify\_recv\_ntf\_handler@{notify\_recv\_ntf\_handler}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{notify\_recv\_ntf\_handler()}{notify\_recv\_ntf\_handler()}}
+{\footnotesize\ttfamily void notify\+\_\+recv\+\_\+ntf\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cscp_8h_a8c0a963c1d72ea4305bc7ee945d20b16}{recv\+\_\+ntf\+\_\+callback\+\_\+t}}}]{recv\+\_\+ntf\+\_\+fn }\end{DoxyParamCaption})}
+
+
+
+Function call the user defined callback for sending the receive data. 
+
+\textbackslash{}\+Notify to user about the new data received 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{cscp_8c_a29eafc4ca3c5308f625c80b4bc212e89}\label{cscp_8c_a29eafc4ca3c5308f625c80b4bc212e89}} 
+\index{cscp.c@{cscp.c}!app\_csc\_info@{app\_csc\_info}}
+\index{app\_csc\_info@{app\_csc\_info}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{app\_csc\_info}{app\_csc\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cscp_8h_aac0ea484b59b13e79c511577d9fa4494}{app\+\_\+csc\+\_\+data\+\_\+t}} app\+\_\+csc\+\_\+info}
+
+\mbox{\Hypertarget{cscp_8c_ab7de3e522f7d64d321d88893a5255291}\label{cscp_8c_ab7de3e522f7d64d321d88893a5255291}} 
+\index{cscp.c@{cscp.c}!recv\_ntf\_cb@{recv\_ntf\_cb}}
+\index{recv\_ntf\_cb@{recv\_ntf\_cb}!cscp.c@{cscp.c}}
+\subsubsection{\texorpdfstring{recv\_ntf\_cb}{recv\_ntf\_cb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cscp_8h_a8c0a963c1d72ea4305bc7ee945d20b16}{recv\+\_\+ntf\+\_\+callback\+\_\+t}} recv\+\_\+ntf\+\_\+cb}
+

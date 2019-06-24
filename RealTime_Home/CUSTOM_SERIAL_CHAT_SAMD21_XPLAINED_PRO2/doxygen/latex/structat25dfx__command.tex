@@ -1,0 +1,74 @@
+\hypertarget{structat25dfx__command}{}\section{at25dfx\+\_\+command Struct Reference}
+\label{structat25dfx__command}\index{at25dfx\_command@{at25dfx\_command}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{at25dfx_8c_a6f3ddc55f0728cd3909eee7b5d4ea571}{at25dfx\+\_\+command\+\_\+opcode}} \mbox{\hyperlink{structat25dfx__command_a2b5b9e841d577861efac73dfaea3bbb3}{opcode}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat25dfx__command_a524935062171f0d36ba3552566e448a2}{command\+\_\+size}}
+\item 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} \mbox{\hyperlink{structat25dfx__command_a50728cdb7f877630c4f1605013ce5497}{address}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>const uint8\_t $\ast$ \mbox{\hyperlink{structat25dfx__command_a24f3678e750daea4c5d322027cc8244d}{tx}}\\
+\>uint8\_t $\ast$ \mbox{\hyperlink{structat25dfx__command_a3f0a8f4dd90ed4333466ccccacc10fda}{rx}}\\
+\} \mbox{\hyperlink{structat25dfx__command_aa278fbfc4827c8708fac562bfa7ced88}{data}}\\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} \mbox{\hyperlink{structat25dfx__command_a9cf615645e4992ade7ce819f1fef286a}{length}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Serial\+Flash command container 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat25dfx__command_a50728cdb7f877630c4f1605013ce5497}\label{structat25dfx__command_a50728cdb7f877630c4f1605013ce5497}} 
+\index{at25dfx\_command@{at25dfx\_command}!address@{address}}
+\index{address@{address}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address}
+
+Serial\+Flash address to operate on \mbox{\Hypertarget{structat25dfx__command_a524935062171f0d36ba3552566e448a2}\label{structat25dfx__command_a524935062171f0d36ba3552566e448a2}} 
+\index{at25dfx\_command@{at25dfx\_command}!command\_size@{command\_size}}
+\index{command\_size@{command\_size}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{command\_size}{command\_size}}
+{\footnotesize\ttfamily uint8\+\_\+t command\+\_\+size}
+
+Size\+: opcode byte (1) \mbox{[}+ address bytes (3)\mbox{]} \mbox{[}+ dummy bytes (N)\mbox{]} \mbox{\Hypertarget{structat25dfx__command_aa278fbfc4827c8708fac562bfa7ced88}\label{structat25dfx__command_aa278fbfc4827c8708fac562bfa7ced88}} 
+\index{at25dfx\_command@{at25dfx\_command}!data@{data}}
+\index{data@{data}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily union \{ ... \}   data}
+
+Buffer to read from/write to \mbox{\Hypertarget{structat25dfx__command_a9cf615645e4992ade7ce819f1fef286a}\label{structat25dfx__command_a9cf615645e4992ade7ce819f1fef286a}} 
+\index{at25dfx\_command@{at25dfx\_command}!length@{length}}
+\index{length@{length}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} length}
+
+Number of bytes to read/write \mbox{\Hypertarget{structat25dfx__command_a2b5b9e841d577861efac73dfaea3bbb3}\label{structat25dfx__command_a2b5b9e841d577861efac73dfaea3bbb3}} 
+\index{at25dfx\_command@{at25dfx\_command}!opcode@{opcode}}
+\index{opcode@{opcode}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{opcode}{opcode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{at25dfx_8c_a6f3ddc55f0728cd3909eee7b5d4ea571}{at25dfx\+\_\+command\+\_\+opcode}} opcode}
+
+Opcode to send \mbox{\Hypertarget{structat25dfx__command_a3f0a8f4dd90ed4333466ccccacc10fda}\label{structat25dfx__command_a3f0a8f4dd90ed4333466ccccacc10fda}} 
+\index{at25dfx\_command@{at25dfx\_command}!rx@{rx}}
+\index{rx@{rx}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{rx}{rx}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ rx}
+
+\mbox{\Hypertarget{structat25dfx__command_a24f3678e750daea4c5d322027cc8244d}\label{structat25dfx__command_a24f3678e750daea4c5d322027cc8244d}} 
+\index{at25dfx\_command@{at25dfx\_command}!tx@{tx}}
+\index{tx@{tx}!at25dfx\_command@{at25dfx\_command}}
+\subsubsection{\texorpdfstring{tx}{tx}}
+{\footnotesize\ttfamily const uint8\+\_\+t$\ast$ tx}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/common2/components/memory/serial\+\_\+flash/at25dfx/\mbox{\hyperlink{at25dfx_8c}{at25dfx.\+c}}\end{DoxyCompactItemize}

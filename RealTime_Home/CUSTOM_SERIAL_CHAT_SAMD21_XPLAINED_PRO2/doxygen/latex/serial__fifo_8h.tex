@@ -1,0 +1,40 @@
+\hypertarget{serial__fifo_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/services/serial\+\_\+fifo/serial\+\_\+fifo.h File Reference}
+\label{serial__fifo_8h}\index{ASF/thirdparty/wireless/ble\_sdk/services/serial\_fifo/serial\_fifo.h@{ASF/thirdparty/wireless/ble\_sdk/services/serial\_fifo/serial\_fifo.h}}
+
+
+This file controls the software Serial F\+I\+FO management.  
+
+
+{\ttfamily \#include \char`\"{}compiler.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}}
+\begin{DoxyCompactList}\small\item\em F\+I\+FO descriptor used by F\+I\+FO driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}} \mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a1bb99f1f4efb995d853055f2b828211b}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+OK}} = 0, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a70a699fd8e590acf0a0401d068cde2b1}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW}}, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a8081f9c03c40070cc7c561f8e7f6e05c}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW}}, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857af3c8eb15fe6d85dd497e80e9ce2861d4}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+OR}}
+ \}
+\begin{DoxyCompactList}\small\item\em Error codes used by S\+E\+R\+I\+AL F\+I\+FO driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__fifo__group_ga047008758cc687991adab14866208100}{ser\+\_\+fifo\+\_\+init}} (\mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}} $\ast$\mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}}, void $\ast$buffer, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Initializes a new software F\+I\+FO for a certain \textquotesingle{}size\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file controls the software Serial F\+I\+FO management. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

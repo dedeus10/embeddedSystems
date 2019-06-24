@@ -1,0 +1,75 @@
+\hypertarget{structsystem__clock__source__osc32k__config}{}\section{system\+\_\+clock\+\_\+source\+\_\+osc32k\+\_\+config Struct Reference}
+\label{structsystem__clock__source__osc32k__config}\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+
+
+Configuration structure for O\+S\+C32K.  
+
+
+
+
+{\ttfamily \#include $<$clock\+\_\+feature.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf2f527fc5dd85dcf1c7091d6059d05cb}{system\+\_\+osc32k\+\_\+startup}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_ac9cd8bea608992ed4f1be68325aa5f2d}{startup\+\_\+time}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_a1b19b8025cbbd0e1c0760a1fe845d084}{enable\+\_\+1khz\+\_\+output}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_a904f4432fc52ffd6d0ec7ac0f4f8f461}{enable\+\_\+32khz\+\_\+output}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_a514964d5c2a8da4dd96bac82a53477f2}{run\+\_\+in\+\_\+standby}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_a23620c12634b9230d2325ec5c245cf32}{on\+\_\+demand}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__osc32k__config_a9caf694235ca3f471e8167a317b6f581}{write\+\_\+once}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration structure for O\+S\+C32K. 
+
+Internal 32K\+Hz (nominal) oscillator configuration structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structsystem__clock__source__osc32k__config_a1b19b8025cbbd0e1c0760a1fe845d084}\label{structsystem__clock__source__osc32k__config_a1b19b8025cbbd0e1c0760a1fe845d084}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!enable\_1khz\_output@{enable\_1khz\_output}}
+\index{enable\_1khz\_output@{enable\_1khz\_output}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{enable\_1khz\_output}{enable\_1khz\_output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} enable\+\_\+1khz\+\_\+output}
+
+Enable 1K\+Hz output \mbox{\Hypertarget{structsystem__clock__source__osc32k__config_a904f4432fc52ffd6d0ec7ac0f4f8f461}\label{structsystem__clock__source__osc32k__config_a904f4432fc52ffd6d0ec7ac0f4f8f461}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!enable\_32khz\_output@{enable\_32khz\_output}}
+\index{enable\_32khz\_output@{enable\_32khz\_output}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{enable\_32khz\_output}{enable\_32khz\_output}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} enable\+\_\+32khz\+\_\+output}
+
+Enable 32K\+Hz output \mbox{\Hypertarget{structsystem__clock__source__osc32k__config_a23620c12634b9230d2325ec5c245cf32}\label{structsystem__clock__source__osc32k__config_a23620c12634b9230d2325ec5c245cf32}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!on\_demand@{on\_demand}}
+\index{on\_demand@{on\_demand}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{on\_demand}{on\_demand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} on\+\_\+demand}
+
+Run On Demand. If this is set the O\+S\+C32K won\textquotesingle{}t run until requested by a peripheral \mbox{\Hypertarget{structsystem__clock__source__osc32k__config_a514964d5c2a8da4dd96bac82a53477f2}\label{structsystem__clock__source__osc32k__config_a514964d5c2a8da4dd96bac82a53477f2}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!run\_in\_standby@{run\_in\_standby}}
+\index{run\_in\_standby@{run\_in\_standby}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{run\_in\_standby}{run\_in\_standby}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} run\+\_\+in\+\_\+standby}
+
+Keep the O\+S\+C32K enabled in standby sleep mode \mbox{\Hypertarget{structsystem__clock__source__osc32k__config_ac9cd8bea608992ed4f1be68325aa5f2d}\label{structsystem__clock__source__osc32k__config_ac9cd8bea608992ed4f1be68325aa5f2d}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!startup\_time@{startup\_time}}
+\index{startup\_time@{startup\_time}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{startup\_time}{startup\_time}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf2f527fc5dd85dcf1c7091d6059d05cb}{system\+\_\+osc32k\+\_\+startup}} startup\+\_\+time}
+
+Startup time \mbox{\Hypertarget{structsystem__clock__source__osc32k__config_a9caf694235ca3f471e8167a317b6f581}\label{structsystem__clock__source__osc32k__config_a9caf694235ca3f471e8167a317b6f581}} 
+\index{system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}!write\_once@{write\_once}}
+\index{write\_once@{write\_once}!system\_clock\_source\_osc32k\_config@{system\_clock\_source\_osc32k\_config}}
+\subsubsection{\texorpdfstring{write\_once}{write\_once}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} write\+\_\+once}
+
+Lock configuration after it has been written, a device reset will release the lock 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/system/clock/clock\+\_\+samd21\+\_\+r21\+\_\+da\+\_\+ha1/\mbox{\hyperlink{clock__feature_8h}{clock\+\_\+feature.\+h}}\end{DoxyCompactItemize}

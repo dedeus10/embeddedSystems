@@ -1,0 +1,110 @@
+\hypertarget{systick__counter_8h}{}\section{A\+S\+F/common2/services/delay/sam0/systick\+\_\+counter.h File Reference}
+\label{systick__counter_8h}\index{ASF/common2/services/delay/sam0/systick\_counter.h@{ASF/common2/services/delay/sam0/systick\_counter.h}}
+
+
+A\+RM functions for busy-\/wait delay loops.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$clock.\+h$>$}\newline
+\subsection*{Convenience functions for busy-\/wait delay loops}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{systick__counter_8h_a25de6f000bcc542a5f3292e369e49681}{cpu\+\_\+delay\+\_\+us}}(delay)~\mbox{\hyperlink{systick__counter_8h_adb03c5e0f32376f37dfb254560903146}{delay\+\_\+cycles\+\_\+us}}(delay)
+\begin{DoxyCompactList}\small\item\em Delay program execution for at least the specified number of microseconds. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{systick__counter_8h_acdbe5e2991f2b665ef2babea7b978667}{cpu\+\_\+delay\+\_\+ms}}(delay)~\mbox{\hyperlink{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}{delay\+\_\+cycles\+\_\+ms}}(delay)
+\begin{DoxyCompactList}\small\item\em Delay program execution for at least the specified number of milliseconds. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{systick__counter_8h_ac16436855dffc7dc7939324a0408adb0}{cpu\+\_\+delay\+\_\+s}}(delay)~\mbox{\hyperlink{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}{delay\+\_\+cycles\+\_\+ms}}(1000 $\ast$ delay)
+\begin{DoxyCompactList}\small\item\em Delay program execution for at least the specified number of seconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{systick__counter_8h_adb03c5e0f32376f37dfb254560903146}{delay\+\_\+cycles\+\_\+us}} (uint32\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Delay loop to delay at least n number of microseconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}{delay\+\_\+cycles\+\_\+ms}} (uint32\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Delay loop to delay at least n number of milliseconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+RM functions for busy-\/wait delay loops. 
+
+Copyright (c) 2014-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{systick__counter_8h_acdbe5e2991f2b665ef2babea7b978667}\label{systick__counter_8h_acdbe5e2991f2b665ef2babea7b978667}} 
+\index{systick\_counter.h@{systick\_counter.h}!cpu\_delay\_ms@{cpu\_delay\_ms}}
+\index{cpu\_delay\_ms@{cpu\_delay\_ms}!systick\_counter.h@{systick\_counter.h}}
+\subsubsection{\texorpdfstring{cpu\_delay\_ms}{cpu\_delay\_ms}}
+{\footnotesize\ttfamily \#define cpu\+\_\+delay\+\_\+ms(\begin{DoxyParamCaption}\item[{}]{delay }\end{DoxyParamCaption})~\mbox{\hyperlink{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}{delay\+\_\+cycles\+\_\+ms}}(delay)}
+
+
+
+Delay program execution for at least the specified number of milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & number of milliseconds to wait \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{systick__counter_8h_ac16436855dffc7dc7939324a0408adb0}\label{systick__counter_8h_ac16436855dffc7dc7939324a0408adb0}} 
+\index{systick\_counter.h@{systick\_counter.h}!cpu\_delay\_s@{cpu\_delay\_s}}
+\index{cpu\_delay\_s@{cpu\_delay\_s}!systick\_counter.h@{systick\_counter.h}}
+\subsubsection{\texorpdfstring{cpu\_delay\_s}{cpu\_delay\_s}}
+{\footnotesize\ttfamily \#define cpu\+\_\+delay\+\_\+s(\begin{DoxyParamCaption}\item[{}]{delay }\end{DoxyParamCaption})~\mbox{\hyperlink{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}{delay\+\_\+cycles\+\_\+ms}}(1000 $\ast$ delay)}
+
+
+
+Delay program execution for at least the specified number of seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & number of seconds to wait \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{systick__counter_8h_a25de6f000bcc542a5f3292e369e49681}\label{systick__counter_8h_a25de6f000bcc542a5f3292e369e49681}} 
+\index{systick\_counter.h@{systick\_counter.h}!cpu\_delay\_us@{cpu\_delay\_us}}
+\index{cpu\_delay\_us@{cpu\_delay\_us}!systick\_counter.h@{systick\_counter.h}}
+\subsubsection{\texorpdfstring{cpu\_delay\_us}{cpu\_delay\_us}}
+{\footnotesize\ttfamily \#define cpu\+\_\+delay\+\_\+us(\begin{DoxyParamCaption}\item[{}]{delay }\end{DoxyParamCaption})~\mbox{\hyperlink{systick__counter_8h_adb03c5e0f32376f37dfb254560903146}{delay\+\_\+cycles\+\_\+us}}(delay)}
+
+
+
+Delay program execution for at least the specified number of microseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & number of microseconds to wait \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}\label{systick__counter_8h_ad13dc67d9f0bdb8971855e4e0cb0e405}} 
+\index{systick\_counter.h@{systick\_counter.h}!delay\_cycles\_ms@{delay\_cycles\_ms}}
+\index{delay\_cycles\_ms@{delay\_cycles\_ms}!systick\_counter.h@{systick\_counter.h}}
+\subsubsection{\texorpdfstring{delay\_cycles\_ms()}{delay\_cycles\_ms()}}
+{\footnotesize\ttfamily void delay\+\_\+cycles\+\_\+ms (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Delay loop to delay at least n number of milliseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of milliseconds to wait \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{systick__counter_8h_adb03c5e0f32376f37dfb254560903146}\label{systick__counter_8h_adb03c5e0f32376f37dfb254560903146}} 
+\index{systick\_counter.h@{systick\_counter.h}!delay\_cycles\_us@{delay\_cycles\_us}}
+\index{delay\_cycles\_us@{delay\_cycles\_us}!systick\_counter.h@{systick\_counter.h}}
+\subsubsection{\texorpdfstring{delay\_cycles\_us()}{delay\_cycles\_us()}}
+{\footnotesize\ttfamily void delay\+\_\+cycles\+\_\+us (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Delay loop to delay at least n number of microseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of microseconds to wait \\
+\hline
+\end{DoxyParams}

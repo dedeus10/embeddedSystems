@@ -1,0 +1,165 @@
+\hypertarget{group__dtm__group}{}\section{Direct test Mode A\+P\+Is (D\+TM)}
+\label{group__dtm__group}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+
+
+This group includes all Direct test mode A\+P\+Is.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structat__ble__dtm__t}{at\+\_\+ble\+\_\+dtm\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em data type of D\+MT status and report, \char`\"{}number\+\_\+of\+\_\+packets\char`\"{} will be used only in case of receiving the event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} after calling the A\+PI \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}{at\+\_\+ble\+\_\+dtm\+\_\+payload\+\_\+type\+\_\+t}} \{ \newline
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a7ced4f76dabdf5057635c491ced5e8a7}{P\+A\+Y\+L\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+R\+A\+N\+D\+\_\+9}} = 0x00, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a0b7da6cfeb6e8422d76fb95a31a6f947}{P\+A\+Y\+L\+\_\+11110000}}, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a267a3d00c976155f932052826ecfcc95}{P\+A\+Y\+L\+\_\+10101010}}, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a2b9f83b96d35e69ec4cb4293aa3f3468}{P\+A\+Y\+L\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+R\+A\+N\+D\+\_\+15}}, 
+\newline
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8ad32342447d33405244027075476c6688}{P\+A\+Y\+L\+\_\+\+A\+L\+L\+\_\+1}}, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a77c5305cce2ee8212cb7db1c8f151429}{P\+A\+Y\+L\+\_\+\+A\+L\+L\+\_\+0}}, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a3d532cbde4dde791f2252fed07e2dff8}{P\+A\+Y\+L\+\_\+00001111}}, 
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a1afbd02fdc58256b2efb430d4aa04cd6}{P\+A\+Y\+L\+\_\+01010101}}, 
+\newline
+\mbox{\hyperlink{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a4ed882f0510d5144d09ce896262d7924}{P\+A\+Y\+L\+\_\+\+E\+ND}}
+ \}
+\begin{DoxyCompactList}\small\item\em Direct test mode Transmitter test Packet Payload Type (D\+TM) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__dtm__group_ga820983d8c500e89b132467c02ea19340}{at\+\_\+ble\+\_\+dtm\+\_\+reset}} (void)
+\begin{DoxyCompactList}\small\item\em pack and send Direct test mode reset command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__dtm__group_ga37c9b74a351ddbed677bfb0b6b9396a9}{at\+\_\+ble\+\_\+dtm\+\_\+rx\+\_\+test\+\_\+start}} (uint8\+\_\+t frequency\+\_\+index)
+\begin{DoxyCompactList}\small\item\em pack and send Direct test mode RX test start command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__dtm__group_ga6d836e42fe4af24071a8d9191555bb85}{at\+\_\+ble\+\_\+dtm\+\_\+tx\+\_\+test\+\_\+start}} (uint8\+\_\+t frequency\+\_\+index, uint8\+\_\+t data\+\_\+length, \mbox{\hyperlink{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}{at\+\_\+ble\+\_\+dtm\+\_\+payload\+\_\+type\+\_\+t}} payload)
+\begin{DoxyCompactList}\small\item\em Pack and send Direct test mode TX test start command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__dtm__group_gafa12d16c45ae0e5efc01beba4772ab69}{at\+\_\+ble\+\_\+dtm\+\_\+stop\+\_\+test}} (void)
+\begin{DoxyCompactList}\small\item\em pack and send Direct test mode stop test command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all Direct test mode A\+P\+Is. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}\label{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}} 
+\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!at\_ble\_dtm\_payload\_type\_t@{at\_ble\_dtm\_payload\_type\_t}}
+\index{at\_ble\_dtm\_payload\_type\_t@{at\_ble\_dtm\_payload\_type\_t}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+\subsubsection{\texorpdfstring{at\_ble\_dtm\_payload\_type\_t}{at\_ble\_dtm\_payload\_type\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}{at\+\_\+ble\+\_\+dtm\+\_\+payload\+\_\+type\+\_\+t}}}
+
+
+
+Direct test mode Transmitter test Packet Payload Type (D\+TM) 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_PSEUDO\_RAND\_9@{PAYL\_PSEUDO\_RAND\_9}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_PSEUDO\_RAND\_9@{PAYL\_PSEUDO\_RAND\_9}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a7ced4f76dabdf5057635c491ced5e8a7}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a7ced4f76dabdf5057635c491ced5e8a7}} 
+P\+A\+Y\+L\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+R\+A\+N\+D\+\_\+9&Pseudo-\/random 9 TX test payload type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_11110000@{PAYL\_11110000}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_11110000@{PAYL\_11110000}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a0b7da6cfeb6e8422d76fb95a31a6f947}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a0b7da6cfeb6e8422d76fb95a31a6f947}} 
+P\+A\+Y\+L\+\_\+11110000&11110000 TX test payload type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_10101010@{PAYL\_10101010}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_10101010@{PAYL\_10101010}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a267a3d00c976155f932052826ecfcc95}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a267a3d00c976155f932052826ecfcc95}} 
+P\+A\+Y\+L\+\_\+10101010&10101010 TX test payload type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_PSEUDO\_RAND\_15@{PAYL\_PSEUDO\_RAND\_15}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_PSEUDO\_RAND\_15@{PAYL\_PSEUDO\_RAND\_15}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a2b9f83b96d35e69ec4cb4293aa3f3468}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a2b9f83b96d35e69ec4cb4293aa3f3468}} 
+P\+A\+Y\+L\+\_\+\+P\+S\+E\+U\+D\+O\+\_\+\+R\+A\+N\+D\+\_\+15&Pseudo-\/random 15 TX test payload type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_ALL\_1@{PAYL\_ALL\_1}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_ALL\_1@{PAYL\_ALL\_1}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8ad32342447d33405244027075476c6688}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8ad32342447d33405244027075476c6688}} 
+P\+A\+Y\+L\+\_\+\+A\+L\+L\+\_\+1&All 1s TX test payload type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_ALL\_0@{PAYL\_ALL\_0}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_ALL\_0@{PAYL\_ALL\_0}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a77c5305cce2ee8212cb7db1c8f151429}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a77c5305cce2ee8212cb7db1c8f151429}} 
+P\+A\+Y\+L\+\_\+\+A\+L\+L\+\_\+0&All 0s TX test payload type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_00001111@{PAYL\_00001111}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_00001111@{PAYL\_00001111}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a3d532cbde4dde791f2252fed07e2dff8}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a3d532cbde4dde791f2252fed07e2dff8}} 
+P\+A\+Y\+L\+\_\+00001111&00001111 TX test payload type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_01010101@{PAYL\_01010101}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_01010101@{PAYL\_01010101}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a1afbd02fdc58256b2efb430d4aa04cd6}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a1afbd02fdc58256b2efb430d4aa04cd6}} 
+P\+A\+Y\+L\+\_\+01010101&01010101 TX test payload type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAYL\_END@{PAYL\_END}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!PAYL\_END@{PAYL\_END}}}\mbox{\Hypertarget{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a4ed882f0510d5144d09ce896262d7924}\label{group__dtm__group_gga08e5052da6ec260eb2778714b5ffdce8a4ed882f0510d5144d09ce896262d7924}} 
+P\+A\+Y\+L\+\_\+\+E\+ND&Enumeration end value for TX test payload type value check. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__dtm__group_ga820983d8c500e89b132467c02ea19340}\label{group__dtm__group_ga820983d8c500e89b132467c02ea19340}} 
+\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!at\_ble\_dtm\_reset@{at\_ble\_dtm\_reset}}
+\index{at\_ble\_dtm\_reset@{at\_ble\_dtm\_reset}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+\subsubsection{\texorpdfstring{at\_ble\_dtm\_reset()}{at\_ble\_dtm\_reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+dtm\+\_\+reset (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+pack and send Direct test mode reset command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__dtm__group_ga37c9b74a351ddbed677bfb0b6b9396a9}\label{group__dtm__group_ga37c9b74a351ddbed677bfb0b6b9396a9}} 
+\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!at\_ble\_dtm\_rx\_test\_start@{at\_ble\_dtm\_rx\_test\_start}}
+\index{at\_ble\_dtm\_rx\_test\_start@{at\_ble\_dtm\_rx\_test\_start}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+\subsubsection{\texorpdfstring{at\_ble\_dtm\_rx\_test\_start()}{at\_ble\_dtm\_rx\_test\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+dtm\+\_\+rx\+\_\+test\+\_\+start (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{frequency\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+pack and send Direct test mode RX test start command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em frequency\+\_\+index} & frequency index to do RX test on (from 0 to 39)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__dtm__group_gafa12d16c45ae0e5efc01beba4772ab69}\label{group__dtm__group_gafa12d16c45ae0e5efc01beba4772ab69}} 
+\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!at\_ble\_dtm\_stop\_test@{at\_ble\_dtm\_stop\_test}}
+\index{at\_ble\_dtm\_stop\_test@{at\_ble\_dtm\_stop\_test}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+\subsubsection{\texorpdfstring{at\_ble\_dtm\_stop\_test()}{at\_ble\_dtm\_stop\_test()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+dtm\+\_\+stop\+\_\+test (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+pack and send Direct test mode stop test command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} event 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__dtm__group_ga6d836e42fe4af24071a8d9191555bb85}\label{group__dtm__group_ga6d836e42fe4af24071a8d9191555bb85}} 
+\index{Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}!at\_ble\_dtm\_tx\_test\_start@{at\_ble\_dtm\_tx\_test\_start}}
+\index{at\_ble\_dtm\_tx\_test\_start@{at\_ble\_dtm\_tx\_test\_start}!Direct test Mode APIs (DTM)@{Direct test Mode APIs (DTM)}}
+\subsubsection{\texorpdfstring{at\_ble\_dtm\_tx\_test\_start()}{at\_ble\_dtm\_tx\_test\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+dtm\+\_\+tx\+\_\+test\+\_\+start (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{frequency\+\_\+index,  }\item[{uint8\+\_\+t}]{data\+\_\+length,  }\item[{\mbox{\hyperlink{group__dtm__group_ga08e5052da6ec260eb2778714b5ffdce8}{at\+\_\+ble\+\_\+dtm\+\_\+payload\+\_\+type\+\_\+t}}}]{payload }\end{DoxyParamCaption})}
+
+
+
+Pack and send Direct test mode TX test start command, after calling this A\+PI you should wait for \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em frequency\+\_\+index} & frequency index to do TX test on (from 0 to 39) \\
+\hline
+\mbox{\texttt{ in}}  & {\em data\+\_\+length} & payload length (from 0 to 36) \\
+\hline
+\mbox{\texttt{ in}}  & {\em payload} & packet payload type (from 0 to 7)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

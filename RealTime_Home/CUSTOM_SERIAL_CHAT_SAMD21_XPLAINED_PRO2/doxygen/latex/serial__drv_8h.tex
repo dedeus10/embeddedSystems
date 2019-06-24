@@ -1,0 +1,179 @@
+\hypertarget{serial__drv_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/services/serial/uart/serial\+\_\+drv.h File Reference}
+\label{serial__drv_8h}\index{ASF/thirdparty/wireless/ble\_sdk/services/serial/uart/serial\_drv.h@{ASF/thirdparty/wireless/ble\_sdk/services/serial/uart/serial\_drv.h}}
+
+
+Handles Serial driver functionalities.  
+
+
+{\ttfamily \#include \char`\"{}compiler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}status\+\_\+codes.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serial__drv_8h_a9210b97835b081d93c764a0bacf59771}{platform\+\_\+start\+\_\+rx}} (void)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{serial__drv_8h_ae67169e66a3f78a2a21522a8b796c7e3}{configure\+\_\+serial\+\_\+drv}} (uint32\+\_\+t)
+\begin{DoxyCompactList}\small\item\em Initializes the Serial IO Module. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{serial__drv_8h_acf8097aae02f1b086e42ab22109c80b9}{serial\+\_\+drv\+\_\+send}} (uint8\+\_\+t $\ast$data, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Transmits data via U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{serial__drv_8h_a1ce3f299563759bd806eca5df08a6cf2}{serial\+\_\+read\+\_\+data}} (uint8\+\_\+t $\ast$data, uint16\+\_\+t max\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Receives data from U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{serial__drv_8h_a07ecd3fc3267ef761a70f26e1d5bca01}{serial\+\_\+read\+\_\+byte}} (uint16\+\_\+t $\ast$data)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_ae9de18b2d07edeb8b57dd9f8f825a918}{configure\+\_\+usart\+\_\+after\+\_\+patch}} (uint32\+\_\+t)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{serial__drv_8h_afe795dd20684a8fdee1f02926b360c08}{platform\+\_\+serial\+\_\+drv\+\_\+tx\+\_\+status}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_ad6a781c918c382f183f018897c2338f8}{platform\+\_\+leave\+\_\+critical\+\_\+section}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_a96d24b1bb1414d78475637261824a222}{platform\+\_\+enter\+\_\+critical\+\_\+section}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_ad06d8f1586c620b7dd07189261ea0f6a}{platform\+\_\+set\+\_\+ble\+\_\+rts\+\_\+high}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_adff8153e18690f2f99c89e620297ef02}{platform\+\_\+set\+\_\+ble\+\_\+rts\+\_\+low}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_aad77601c44e224086f9d2d7727ca6e12}{platform\+\_\+set\+\_\+hostsleep}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_ad7f38546ad16a12d1f19012f50c8d3c2}{platform\+\_\+restore\+\_\+from\+\_\+sleep}} (void)
+\item 
+void \mbox{\hyperlink{serial__drv_8h_af9e2045bdd7611b48dfe699bff496b3d}{platform\+\_\+configure\+\_\+sleep\+\_\+manager}} (void)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{serial__drv_8h_ad1a7481bd4a4f6ded9cd419d04d88146}{serial\+\_\+drive\+\_\+rx\+\_\+data\+\_\+count}} (void)
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+Handles Serial driver functionalities. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{serial__drv_8h_ae67169e66a3f78a2a21522a8b796c7e3}\label{serial__drv_8h_ae67169e66a3f78a2a21522a8b796c7e3}} 
+\index{serial\_drv.h@{serial\_drv.h}!configure\_serial\_drv@{configure\_serial\_drv}}
+\index{configure\_serial\_drv@{configure\_serial\_drv}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{configure\_serial\_drv()}{configure\_serial\_drv()}}
+{\footnotesize\ttfamily uint8\+\_\+t configure\+\_\+serial\+\_\+drv (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the Serial IO Module. 
+
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+U\+S\+\_\+\+OK for successful initialization and F\+A\+I\+L\+U\+RE incase the IO is not initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serial__drv_8h_ae9de18b2d07edeb8b57dd9f8f825a918}\label{serial__drv_8h_ae9de18b2d07edeb8b57dd9f8f825a918}} 
+\index{serial\_drv.h@{serial\_drv.h}!configure\_usart\_after\_patch@{configure\_usart\_after\_patch}}
+\index{configure\_usart\_after\_patch@{configure\_usart\_after\_patch}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{configure\_usart\_after\_patch()}{configure\_usart\_after\_patch()}}
+{\footnotesize\ttfamily void configure\+\_\+usart\+\_\+after\+\_\+patch (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_af9e2045bdd7611b48dfe699bff496b3d}\label{serial__drv_8h_af9e2045bdd7611b48dfe699bff496b3d}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_configure\_sleep\_manager@{platform\_configure\_sleep\_manager}}
+\index{platform\_configure\_sleep\_manager@{platform\_configure\_sleep\_manager}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_configure\_sleep\_manager()}{platform\_configure\_sleep\_manager()}}
+{\footnotesize\ttfamily void platform\+\_\+configure\+\_\+sleep\+\_\+manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_a96d24b1bb1414d78475637261824a222}\label{serial__drv_8h_a96d24b1bb1414d78475637261824a222}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_enter\_critical\_section@{platform\_enter\_critical\_section}}
+\index{platform\_enter\_critical\_section@{platform\_enter\_critical\_section}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_enter\_critical\_section()}{platform\_enter\_critical\_section()}}
+{\footnotesize\ttfamily void platform\+\_\+enter\+\_\+critical\+\_\+section (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_ad6a781c918c382f183f018897c2338f8}\label{serial__drv_8h_ad6a781c918c382f183f018897c2338f8}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_leave\_critical\_section@{platform\_leave\_critical\_section}}
+\index{platform\_leave\_critical\_section@{platform\_leave\_critical\_section}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_leave\_critical\_section()}{platform\_leave\_critical\_section()}}
+{\footnotesize\ttfamily void platform\+\_\+leave\+\_\+critical\+\_\+section (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_ad7f38546ad16a12d1f19012f50c8d3c2}\label{serial__drv_8h_ad7f38546ad16a12d1f19012f50c8d3c2}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_restore\_from\_sleep@{platform\_restore\_from\_sleep}}
+\index{platform\_restore\_from\_sleep@{platform\_restore\_from\_sleep}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_restore\_from\_sleep()}{platform\_restore\_from\_sleep()}}
+{\footnotesize\ttfamily void platform\+\_\+restore\+\_\+from\+\_\+sleep (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_afe795dd20684a8fdee1f02926b360c08}\label{serial__drv_8h_afe795dd20684a8fdee1f02926b360c08}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_serial\_drv\_tx\_status@{platform\_serial\_drv\_tx\_status}}
+\index{platform\_serial\_drv\_tx\_status@{platform\_serial\_drv\_tx\_status}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_serial\_drv\_tx\_status()}{platform\_serial\_drv\_tx\_status()}}
+{\footnotesize\ttfamily uint32\+\_\+t platform\+\_\+serial\+\_\+drv\+\_\+tx\+\_\+status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_ad06d8f1586c620b7dd07189261ea0f6a}\label{serial__drv_8h_ad06d8f1586c620b7dd07189261ea0f6a}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_set\_ble\_rts\_high@{platform\_set\_ble\_rts\_high}}
+\index{platform\_set\_ble\_rts\_high@{platform\_set\_ble\_rts\_high}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_set\_ble\_rts\_high()}{platform\_set\_ble\_rts\_high()}}
+{\footnotesize\ttfamily void platform\+\_\+set\+\_\+ble\+\_\+rts\+\_\+high (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_adff8153e18690f2f99c89e620297ef02}\label{serial__drv_8h_adff8153e18690f2f99c89e620297ef02}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_set\_ble\_rts\_low@{platform\_set\_ble\_rts\_low}}
+\index{platform\_set\_ble\_rts\_low@{platform\_set\_ble\_rts\_low}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_set\_ble\_rts\_low()}{platform\_set\_ble\_rts\_low()}}
+{\footnotesize\ttfamily void platform\+\_\+set\+\_\+ble\+\_\+rts\+\_\+low (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_aad77601c44e224086f9d2d7727ca6e12}\label{serial__drv_8h_aad77601c44e224086f9d2d7727ca6e12}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_set\_hostsleep@{platform\_set\_hostsleep}}
+\index{platform\_set\_hostsleep@{platform\_set\_hostsleep}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_set\_hostsleep()}{platform\_set\_hostsleep()}}
+{\footnotesize\ttfamily void platform\+\_\+set\+\_\+hostsleep (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_a9210b97835b081d93c764a0bacf59771}\label{serial__drv_8h_a9210b97835b081d93c764a0bacf59771}} 
+\index{serial\_drv.h@{serial\_drv.h}!platform\_start\_rx@{platform\_start\_rx}}
+\index{platform\_start\_rx@{platform\_start\_rx}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{platform\_start\_rx()}{platform\_start\_rx()}}
+{\footnotesize\ttfamily void platform\+\_\+start\+\_\+rx (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+This module performs serial input/output functionalities via U\+A\+RT \mbox{\Hypertarget{serial__drv_8h_ad1a7481bd4a4f6ded9cd419d04d88146}\label{serial__drv_8h_ad1a7481bd4a4f6ded9cd419d04d88146}} 
+\index{serial\_drv.h@{serial\_drv.h}!serial\_drive\_rx\_data\_count@{serial\_drive\_rx\_data\_count}}
+\index{serial\_drive\_rx\_data\_count@{serial\_drive\_rx\_data\_count}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{serial\_drive\_rx\_data\_count()}{serial\_drive\_rx\_data\_count()}}
+{\footnotesize\ttfamily uint16\+\_\+t serial\+\_\+drive\+\_\+rx\+\_\+data\+\_\+count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_acf8097aae02f1b086e42ab22109c80b9}\label{serial__drv_8h_acf8097aae02f1b086e42ab22109c80b9}} 
+\index{serial\_drv.h@{serial\_drv.h}!serial\_drv\_send@{serial\_drv\_send}}
+\index{serial\_drv\_send@{serial\_drv\_send}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{serial\_drv\_send()}{serial\_drv\_send()}}
+{\footnotesize\ttfamily uint16\+\_\+t serial\+\_\+drv\+\_\+send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Transmits data via U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the buffer where the data to be transmitted is present \\
+\hline
+{\em length} & Number of bytes to be transmitted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes actually transmitted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serial__drv_8h_a07ecd3fc3267ef761a70f26e1d5bca01}\label{serial__drv_8h_a07ecd3fc3267ef761a70f26e1d5bca01}} 
+\index{serial\_drv.h@{serial\_drv.h}!serial\_read\_byte@{serial\_read\_byte}}
+\index{serial\_read\_byte@{serial\_read\_byte}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{serial\_read\_byte()}{serial\_read\_byte()}}
+{\footnotesize\ttfamily uint8\+\_\+t serial\+\_\+read\+\_\+byte (\begin{DoxyParamCaption}\item[{uint16\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serial__drv_8h_a1ce3f299563759bd806eca5df08a6cf2}\label{serial__drv_8h_a1ce3f299563759bd806eca5df08a6cf2}} 
+\index{serial\_drv.h@{serial\_drv.h}!serial\_read\_data@{serial\_read\_data}}
+\index{serial\_read\_data@{serial\_read\_data}!serial\_drv.h@{serial\_drv.h}}
+\subsubsection{\texorpdfstring{serial\_read\_data()}{serial\_read\_data()}}
+{\footnotesize\ttfamily uint8\+\_\+t serial\+\_\+read\+\_\+data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint16\+\_\+t}]{max\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+Receives data from U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to the buffer where the received data is to be stored \\
+\hline
+{\em max\+\_\+length} & maximum length of data to be received\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+actual number of bytes received 
+\end{DoxyReturn}

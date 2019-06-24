@@ -1,0 +1,65 @@
+\hypertarget{structat__ble__bus__info__t}{}\section{at\+\_\+ble\+\_\+bus\+\_\+info\+\_\+t Struct Reference}
+\label{structat__ble__bus__info__t}\index{at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}}
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__bus__info__t_acd9e3a84de3da90418d97b78eb84d2bd}{bus\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Either \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca8fe67bfab4b12ad57597bb27c46ebe1f}{A\+T\+\_\+\+B\+L\+E\+\_\+\+U\+A\+RT}} or \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca9aa7efedf4d5a083f67fa25350141e24}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+PI}}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__bus__info__t_adcb4737ceda8181e0320a9decbb72f7f}{btlc1000\+\_\+uart\+\_\+pinout\+\_\+switch}}
+\begin{DoxyCompactList}\small\item\em In case of using \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca8fe67bfab4b12ad57597bb27c46ebe1f}{A\+T\+\_\+\+B\+L\+E\+\_\+\+U\+A\+RT}} as interface this is used to switch U\+A\+RT pin-\/out, true or false. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__bus__info__t_a935a87589314d156349378379263270c}{host\+\_\+external\+\_\+wakeup\+\_\+gpio}}
+\begin{DoxyCompactList}\small\item\em Select B\+T\+L\+C1000 G\+P\+IO for host wakeup, for Wing board select B\+T\+L\+C1000\+\_\+\+E\+X\+T\+\_\+\+P\+I\+N9 only, for SoC use the enum values. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structat__ble__bus__info__t_a9fd6a700bdcd24eac39b919db84beeaa}{bus\+\_\+baudrate}}
+\begin{DoxyCompactList}\small\item\em U\+A\+RT baudrate value one of \mbox{\hyperlink{at__ble__api_8h_af9f45be471328ddc873fa3b6d3fe865a}{at\+\_\+ble\+\_\+uart\+\_\+baudrate\+\_\+tag}} values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__bus__info__t_adcb4737ceda8181e0320a9decbb72f7f}\label{structat__ble__bus__info__t_adcb4737ceda8181e0320a9decbb72f7f}} 
+\index{at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}!btlc1000\_uart\_pinout\_switch@{btlc1000\_uart\_pinout\_switch}}
+\index{btlc1000\_uart\_pinout\_switch@{btlc1000\_uart\_pinout\_switch}!at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}}
+\subsubsection{\texorpdfstring{btlc1000\_uart\_pinout\_switch}{btlc1000\_uart\_pinout\_switch}}
+{\footnotesize\ttfamily uint8\+\_\+t btlc1000\+\_\+uart\+\_\+pinout\+\_\+switch}
+
+
+
+In case of using \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca8fe67bfab4b12ad57597bb27c46ebe1f}{A\+T\+\_\+\+B\+L\+E\+\_\+\+U\+A\+RT}} as interface this is used to switch U\+A\+RT pin-\/out, true or false. 
+
+\mbox{\Hypertarget{structat__ble__bus__info__t_a9fd6a700bdcd24eac39b919db84beeaa}\label{structat__ble__bus__info__t_a9fd6a700bdcd24eac39b919db84beeaa}} 
+\index{at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}!bus\_baudrate@{bus\_baudrate}}
+\index{bus\_baudrate@{bus\_baudrate}!at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}}
+\subsubsection{\texorpdfstring{bus\_baudrate}{bus\_baudrate}}
+{\footnotesize\ttfamily uint32\+\_\+t bus\+\_\+baudrate}
+
+
+
+U\+A\+RT baudrate value one of \mbox{\hyperlink{at__ble__api_8h_af9f45be471328ddc873fa3b6d3fe865a}{at\+\_\+ble\+\_\+uart\+\_\+baudrate\+\_\+tag}} values. 
+
+\mbox{\Hypertarget{structat__ble__bus__info__t_acd9e3a84de3da90418d97b78eb84d2bd}\label{structat__ble__bus__info__t_acd9e3a84de3da90418d97b78eb84d2bd}} 
+\index{at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}!bus\_type@{bus\_type}}
+\index{bus\_type@{bus\_type}!at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}}
+\subsubsection{\texorpdfstring{bus\_type}{bus\_type}}
+{\footnotesize\ttfamily uint8\+\_\+t bus\+\_\+type}
+
+
+
+Either \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca8fe67bfab4b12ad57597bb27c46ebe1f}{A\+T\+\_\+\+B\+L\+E\+\_\+\+U\+A\+RT}} or \mbox{\hyperlink{at__ble__api_8h_a42bc6bd8b2502ca57a35ba77d29bad8ca9aa7efedf4d5a083f67fa25350141e24}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+PI}}. 
+
+\mbox{\Hypertarget{structat__ble__bus__info__t_a935a87589314d156349378379263270c}\label{structat__ble__bus__info__t_a935a87589314d156349378379263270c}} 
+\index{at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}!host\_external\_wakeup\_gpio@{host\_external\_wakeup\_gpio}}
+\index{host\_external\_wakeup\_gpio@{host\_external\_wakeup\_gpio}!at\_ble\_bus\_info\_t@{at\_ble\_bus\_info\_t}}
+\subsubsection{\texorpdfstring{host\_external\_wakeup\_gpio}{host\_external\_wakeup\_gpio}}
+{\footnotesize\ttfamily uint8\+\_\+t host\+\_\+external\+\_\+wakeup\+\_\+gpio}
+
+
+
+Select B\+T\+L\+C1000 G\+P\+IO for host wakeup, for Wing board select B\+T\+L\+C1000\+\_\+\+E\+X\+T\+\_\+\+P\+I\+N9 only, for SoC use the enum values. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

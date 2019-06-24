@@ -1,0 +1,257 @@
+\hypertarget{structble__gap__event__cb}{}\section{ble\+\_\+gap\+\_\+event\+\_\+cb Struct Reference}
+\label{structble__gap__event__cb}\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+
+
+{\ttfamily \#include $<$ble\+\_\+manager.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a7d48511f1be9edaa2c90203676a4783d}{undefined}}
+\begin{DoxyCompactList}\small\item\em B\+LE Undefined events received from B\+T\+L\+C1000, which is not handled in Library. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a329baf6bb5a032ec1cbc23129c8fdc34}{scan\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em B\+LE scan information contains the peer device scan information Refer \mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a3ee0fc48015b52eadf114dc0230dfe24}{scan\+\_\+report}}
+\begin{DoxyCompactList}\small\item\em Once the B\+LE scan timeout or scan stop will trigger the scan report event Refer \mbox{\hyperlink{structat__ble__scan__report__t}{at\+\_\+ble\+\_\+scan\+\_\+report\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_abe12b31fb97d5e0c3d9d5586cd6f4644}{advt\+\_\+cmp}}
+\begin{DoxyCompactList}\small\item\em Advertisement complete event Refer \mbox{\hyperlink{structat__ble__adv__cmp__evt__t}{at\+\_\+ble\+\_\+adv\+\_\+cmp\+\_\+evt\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a7a194f2870758c8e7d196cd6cf5856be}{adv\+\_\+report}}
+\begin{DoxyCompactList}\small\item\em Advertisement report in case of advertisement stopped due to advertisement timeout Refer \mbox{\hyperlink{structat__ble__adv__report__t}{at\+\_\+ble\+\_\+adv\+\_\+report\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a85b2130f83424798ff217b85989c4274}{rand\+\_\+addr\+\_\+changed}}
+\begin{DoxyCompactList}\small\item\em B\+LE device own random address changed event Refer \mbox{\hyperlink{at__ble__api_8h_a774212504efdbcbb607153f99dd71a80}{at\+\_\+ble\+\_\+rand\+\_\+addr\+\_\+changed\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a3b38460284d2f0d8f1ae91fdd676c70e}{connected}}
+\begin{DoxyCompactList}\small\item\em B\+LE connected event, device connected to peer device Refer \mbox{\hyperlink{structat__ble__connected__t}{at\+\_\+ble\+\_\+connected\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a62038f6df191ce8ba93813d8b1c304a9}{disconnected}}
+\begin{DoxyCompactList}\small\item\em B\+LE disconnected event, device disconnected from peer device Refer \mbox{\hyperlink{structat__ble__disconnected__t}{at\+\_\+ble\+\_\+disconnected\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a188c92b6f13d3c1043589b27e7be9c73}{conn\+\_\+parameter\+\_\+update\+\_\+done}}
+\begin{DoxyCompactList}\small\item\em Connection parameter update done on peer device and own device Refer \mbox{\hyperlink{structat__ble__conn__param__update__done__t}{at\+\_\+ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+done\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_ab6bf3bb7fc558c70dba3e1f8b8905b8f}{conn\+\_\+param\+\_\+update\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Connection parameter update request from peer device Refer \mbox{\hyperlink{structat__ble__conn__param__update__request__t}{at\+\_\+ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+request\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a1c49b2a5f5d3615b3bbc5c2d9150cf0d}{pair\+\_\+done}}
+\begin{DoxyCompactList}\small\item\em Pair complete event as part of end of pairing process Refer \mbox{\hyperlink{structat__ble__pair__done__t}{at\+\_\+ble\+\_\+pair\+\_\+done\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a2319946e714518f71853159f0c7a7d06}{pair\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Pair request event from Central device Refer \mbox{\hyperlink{structat__ble__pair__request__t}{at\+\_\+ble\+\_\+pair\+\_\+request\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a13f404377a9ffdd95fc8903626dbf4a2}{slave\+\_\+sec\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Slave security request received from peer Peripheral device Refer \mbox{\hyperlink{structat__ble__slave__sec__request__t}{at\+\_\+ble\+\_\+slave\+\_\+sec\+\_\+request\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a8b0be84aceb66871327bec983a6d420d}{pair\+\_\+key\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Pair Key request event from Peer central device Refer \mbox{\hyperlink{structat__ble__pair__key__request__t}{at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+request\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_abb7e482061d1e122de5ef2e8605c14f8}{encryption\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em encryption request comes from the peer device. Needs to supply the bonding information which is stored earlier \mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_af2a39ef3c65d5a624220c969a9a5beb4}{encryption\+\_\+status\+\_\+changed}}
+\begin{DoxyCompactList}\small\item\em encryption status changed event received from S\+MP once the encryption is started \mbox{\hyperlink{structat__ble__encryption__status__changed__t}{at\+\_\+ble\+\_\+encryption\+\_\+status\+\_\+changed\+\_\+t}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_afae8e9c934def7a93731076e226f8fa2}{resolv\+\_\+rand\+\_\+addr\+\_\+status}}
+\begin{DoxyCompactList}\small\item\em Event triggered once the Resolve random address is resolved using supplied I\+RK\textquotesingle{}s. \mbox{\hyperlink{structat__ble__resolv__rand__addr__status__t}{at\+\_\+ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+status\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a3acdd775f490630b4df601a35256aefa}{sign\+\_\+counters\+\_\+ind}}
+\begin{DoxyCompactList}\small\item\em Event is triggered once the connection signature information indication received. \mbox{\hyperlink{structat__ble__sign__counter__t}{at\+\_\+ble\+\_\+sign\+\_\+counter\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a7cae876541e7318f71528229c913ba74}{peer\+\_\+att\+\_\+info\+\_\+ind}}
+\begin{DoxyCompactList}\small\item\em Peer attribute information indication received Event. \mbox{\hyperlink{structat__ble__peer__att__info__ind__t}{at\+\_\+ble\+\_\+peer\+\_\+att\+\_\+info\+\_\+ind\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gap__event__cb_a6b045c39cf5058dc43f1f65e4626b754}{con\+\_\+channel\+\_\+map\+\_\+ind}}
+\begin{DoxyCompactList}\small\item\em Peer device channel map received indication. \mbox{\hyperlink{structat__ble__channel__map__t}{at\+\_\+ble\+\_\+channel\+\_\+map\+\_\+t}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structble__gap__event__cb_a7a194f2870758c8e7d196cd6cf5856be}\label{structble__gap__event__cb_a7a194f2870758c8e7d196cd6cf5856be}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!adv\_report@{adv\_report}}
+\index{adv\_report@{adv\_report}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{adv\_report}{adv\_report}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} adv\+\_\+report}
+
+
+
+Advertisement report in case of advertisement stopped due to advertisement timeout Refer \mbox{\hyperlink{structat__ble__adv__report__t}{at\+\_\+ble\+\_\+adv\+\_\+report\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_abe12b31fb97d5e0c3d9d5586cd6f4644}\label{structble__gap__event__cb_abe12b31fb97d5e0c3d9d5586cd6f4644}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!advt\_cmp@{advt\_cmp}}
+\index{advt\_cmp@{advt\_cmp}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{advt\_cmp}{advt\_cmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} advt\+\_\+cmp}
+
+
+
+Advertisement complete event Refer \mbox{\hyperlink{structat__ble__adv__cmp__evt__t}{at\+\_\+ble\+\_\+adv\+\_\+cmp\+\_\+evt\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a6b045c39cf5058dc43f1f65e4626b754}\label{structble__gap__event__cb_a6b045c39cf5058dc43f1f65e4626b754}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!con\_channel\_map\_ind@{con\_channel\_map\_ind}}
+\index{con\_channel\_map\_ind@{con\_channel\_map\_ind}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{con\_channel\_map\_ind}{con\_channel\_map\_ind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} con\+\_\+channel\+\_\+map\+\_\+ind}
+
+
+
+Peer device channel map received indication. \mbox{\hyperlink{structat__ble__channel__map__t}{at\+\_\+ble\+\_\+channel\+\_\+map\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_ab6bf3bb7fc558c70dba3e1f8b8905b8f}\label{structble__gap__event__cb_ab6bf3bb7fc558c70dba3e1f8b8905b8f}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!conn\_param\_update\_request@{conn\_param\_update\_request}}
+\index{conn\_param\_update\_request@{conn\_param\_update\_request}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{conn\_param\_update\_request}{conn\_param\_update\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} conn\+\_\+param\+\_\+update\+\_\+request}
+
+
+
+Connection parameter update request from peer device Refer \mbox{\hyperlink{structat__ble__conn__param__update__request__t}{at\+\_\+ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+request\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a188c92b6f13d3c1043589b27e7be9c73}\label{structble__gap__event__cb_a188c92b6f13d3c1043589b27e7be9c73}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!conn\_parameter\_update\_done@{conn\_parameter\_update\_done}}
+\index{conn\_parameter\_update\_done@{conn\_parameter\_update\_done}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{conn\_parameter\_update\_done}{conn\_parameter\_update\_done}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} conn\+\_\+parameter\+\_\+update\+\_\+done}
+
+
+
+Connection parameter update done on peer device and own device Refer \mbox{\hyperlink{structat__ble__conn__param__update__done__t}{at\+\_\+ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+done\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a3b38460284d2f0d8f1ae91fdd676c70e}\label{structble__gap__event__cb_a3b38460284d2f0d8f1ae91fdd676c70e}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!connected@{connected}}
+\index{connected@{connected}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} connected}
+
+
+
+B\+LE connected event, device connected to peer device Refer \mbox{\hyperlink{structat__ble__connected__t}{at\+\_\+ble\+\_\+connected\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a62038f6df191ce8ba93813d8b1c304a9}\label{structble__gap__event__cb_a62038f6df191ce8ba93813d8b1c304a9}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!disconnected@{disconnected}}
+\index{disconnected@{disconnected}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{disconnected}{disconnected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} disconnected}
+
+
+
+B\+LE disconnected event, device disconnected from peer device Refer \mbox{\hyperlink{structat__ble__disconnected__t}{at\+\_\+ble\+\_\+disconnected\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_abb7e482061d1e122de5ef2e8605c14f8}\label{structble__gap__event__cb_abb7e482061d1e122de5ef2e8605c14f8}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!encryption\_request@{encryption\_request}}
+\index{encryption\_request@{encryption\_request}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{encryption\_request}{encryption\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} encryption\+\_\+request}
+
+
+
+encryption request comes from the peer device. Needs to supply the bonding information which is stored earlier \mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}} 
+
+\mbox{\Hypertarget{structble__gap__event__cb_af2a39ef3c65d5a624220c969a9a5beb4}\label{structble__gap__event__cb_af2a39ef3c65d5a624220c969a9a5beb4}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!encryption\_status\_changed@{encryption\_status\_changed}}
+\index{encryption\_status\_changed@{encryption\_status\_changed}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{encryption\_status\_changed}{encryption\_status\_changed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} encryption\+\_\+status\+\_\+changed}
+
+
+
+encryption status changed event received from S\+MP once the encryption is started \mbox{\hyperlink{structat__ble__encryption__status__changed__t}{at\+\_\+ble\+\_\+encryption\+\_\+status\+\_\+changed\+\_\+t}} 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a1c49b2a5f5d3615b3bbc5c2d9150cf0d}\label{structble__gap__event__cb_a1c49b2a5f5d3615b3bbc5c2d9150cf0d}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!pair\_done@{pair\_done}}
+\index{pair\_done@{pair\_done}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{pair\_done}{pair\_done}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} pair\+\_\+done}
+
+
+
+Pair complete event as part of end of pairing process Refer \mbox{\hyperlink{structat__ble__pair__done__t}{at\+\_\+ble\+\_\+pair\+\_\+done\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a8b0be84aceb66871327bec983a6d420d}\label{structble__gap__event__cb_a8b0be84aceb66871327bec983a6d420d}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!pair\_key\_request@{pair\_key\_request}}
+\index{pair\_key\_request@{pair\_key\_request}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{pair\_key\_request}{pair\_key\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} pair\+\_\+key\+\_\+request}
+
+
+
+Pair Key request event from Peer central device Refer \mbox{\hyperlink{structat__ble__pair__key__request__t}{at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+request\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a2319946e714518f71853159f0c7a7d06}\label{structble__gap__event__cb_a2319946e714518f71853159f0c7a7d06}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!pair\_request@{pair\_request}}
+\index{pair\_request@{pair\_request}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{pair\_request}{pair\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} pair\+\_\+request}
+
+
+
+Pair request event from Central device Refer \mbox{\hyperlink{structat__ble__pair__request__t}{at\+\_\+ble\+\_\+pair\+\_\+request\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a7cae876541e7318f71528229c913ba74}\label{structble__gap__event__cb_a7cae876541e7318f71528229c913ba74}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!peer\_att\_info\_ind@{peer\_att\_info\_ind}}
+\index{peer\_att\_info\_ind@{peer\_att\_info\_ind}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{peer\_att\_info\_ind}{peer\_att\_info\_ind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} peer\+\_\+att\+\_\+info\+\_\+ind}
+
+
+
+Peer attribute information indication received Event. \mbox{\hyperlink{structat__ble__peer__att__info__ind__t}{at\+\_\+ble\+\_\+peer\+\_\+att\+\_\+info\+\_\+ind\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a85b2130f83424798ff217b85989c4274}\label{structble__gap__event__cb_a85b2130f83424798ff217b85989c4274}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!rand\_addr\_changed@{rand\_addr\_changed}}
+\index{rand\_addr\_changed@{rand\_addr\_changed}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{rand\_addr\_changed}{rand\_addr\_changed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} rand\+\_\+addr\+\_\+changed}
+
+
+
+B\+LE device own random address changed event Refer \mbox{\hyperlink{at__ble__api_8h_a774212504efdbcbb607153f99dd71a80}{at\+\_\+ble\+\_\+rand\+\_\+addr\+\_\+changed\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_afae8e9c934def7a93731076e226f8fa2}\label{structble__gap__event__cb_afae8e9c934def7a93731076e226f8fa2}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!resolv\_rand\_addr\_status@{resolv\_rand\_addr\_status}}
+\index{resolv\_rand\_addr\_status@{resolv\_rand\_addr\_status}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{resolv\_rand\_addr\_status}{resolv\_rand\_addr\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} resolv\+\_\+rand\+\_\+addr\+\_\+status}
+
+
+
+Event triggered once the Resolve random address is resolved using supplied I\+RK\textquotesingle{}s. \mbox{\hyperlink{structat__ble__resolv__rand__addr__status__t}{at\+\_\+ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+status\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a329baf6bb5a032ec1cbc23129c8fdc34}\label{structble__gap__event__cb_a329baf6bb5a032ec1cbc23129c8fdc34}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!scan\_info@{scan\_info}}
+\index{scan\_info@{scan\_info}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{scan\_info}{scan\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} scan\+\_\+info}
+
+
+
+B\+LE scan information contains the peer device scan information Refer \mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a3ee0fc48015b52eadf114dc0230dfe24}\label{structble__gap__event__cb_a3ee0fc48015b52eadf114dc0230dfe24}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!scan\_report@{scan\_report}}
+\index{scan\_report@{scan\_report}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{scan\_report}{scan\_report}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} scan\+\_\+report}
+
+
+
+Once the B\+LE scan timeout or scan stop will trigger the scan report event Refer \mbox{\hyperlink{structat__ble__scan__report__t}{at\+\_\+ble\+\_\+scan\+\_\+report\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a3acdd775f490630b4df601a35256aefa}\label{structble__gap__event__cb_a3acdd775f490630b4df601a35256aefa}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!sign\_counters\_ind@{sign\_counters\_ind}}
+\index{sign\_counters\_ind@{sign\_counters\_ind}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{sign\_counters\_ind}{sign\_counters\_ind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} sign\+\_\+counters\+\_\+ind}
+
+
+
+Event is triggered once the connection signature information indication received. \mbox{\hyperlink{structat__ble__sign__counter__t}{at\+\_\+ble\+\_\+sign\+\_\+counter\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a13f404377a9ffdd95fc8903626dbf4a2}\label{structble__gap__event__cb_a13f404377a9ffdd95fc8903626dbf4a2}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!slave\_sec\_request@{slave\_sec\_request}}
+\index{slave\_sec\_request@{slave\_sec\_request}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{slave\_sec\_request}{slave\_sec\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} slave\+\_\+sec\+\_\+request}
+
+
+
+Slave security request received from peer Peripheral device Refer \mbox{\hyperlink{structat__ble__slave__sec__request__t}{at\+\_\+ble\+\_\+slave\+\_\+sec\+\_\+request\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gap__event__cb_a7d48511f1be9edaa2c90203676a4783d}\label{structble__gap__event__cb_a7d48511f1be9edaa2c90203676a4783d}} 
+\index{ble\_gap\_event\_cb@{ble\_gap\_event\_cb}!undefined@{undefined}}
+\index{undefined@{undefined}!ble\_gap\_event\_cb@{ble\_gap\_event\_cb}}
+\subsubsection{\texorpdfstring{undefined}{undefined}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} undefined}
+
+
+
+B\+LE Undefined events received from B\+T\+L\+C1000, which is not handled in Library. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/ble\+\_\+mgr/\mbox{\hyperlink{ble__manager_8h}{ble\+\_\+manager.\+h}}\end{DoxyCompactItemize}

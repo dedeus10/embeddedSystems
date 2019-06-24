@@ -1,0 +1,592 @@
+\hypertarget{group__asfdoc__common2__at25dfx__group}{}\section{A\+T25\+D\+Fx Serial\+Flash Driver}
+\label{group__asfdoc__common2__at25dfx__group}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}}
+\item 
+struct \mbox{\hyperlink{structat25dfx__chip__config}{at25dfx\+\_\+chip\+\_\+config}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}{at25dfx\+\_\+type}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabbf1e1dd637f606098ae4ccac417ab14}{A\+T25\+D\+F\+X\+\_\+512B}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da7190685f36888e0fc72a10ec34f1c6f7}{A\+T25\+D\+F\+X\+\_\+021}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab04ef01e6fa145d7a0a3472974978404}{A\+T25\+D\+F\+X\+\_\+041A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da9a5f9c0b38017fce506e65e5fcfccf1c}{A\+T25\+D\+F\+X\+\_\+081}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da958e4a75f1080b2e6ae0a8ad53d46189}{A\+T25\+D\+F\+X\+\_\+081A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dacf36c8ececd590e2ebf63524ec6b8e00}{A\+T25\+D\+F\+X\+\_\+161}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dac4cdd46ba3dfb0894e6f0b0502d2568e}{A\+T25\+D\+F\+X\+\_\+\+L161}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da07eaaa7f5f50f718d8523bc5ecceeb61}{A\+T25\+D\+F\+X\+\_\+\+Q161}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab1b556b612d1dfc5786da5196fea6fe1}{A\+T25\+D\+F\+X\+\_\+321A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabe078bc157dc861a62e7bc5539bf0bd1}{A\+T25\+D\+F\+X\+\_\+641}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}} \{ \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059ba1803edc936dff9e00b22bb1665c5f4e0}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+4\+KB}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059badb4fdfe58350143efe009cc15e39b52a}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+32\+KB}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059baebd2ecf4d5e40c0fa33506d7fa4fb0fd}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+64\+KB}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Presence}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gabc77a5e6b7714d6a3731505b24ac5082}{at25dfx\+\_\+chip\+\_\+check\+\_\+presence}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Check presence of chip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Read/\+Write}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga867ff68dbb3def1fbac0c9359ea7e36e}{at25dfx\+\_\+chip\+\_\+read\+\_\+buffer}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, void $\ast$data, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} length)
+\begin{DoxyCompactList}\small\item\em Read data from chip. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga680dae17472f869582c92512d4995dcc}{at25dfx\+\_\+chip\+\_\+write\+\_\+buffer}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, const void $\ast$data, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} length)
+\begin{DoxyCompactList}\small\item\em Write data to chip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Erase}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gae996a3088d79878787756de3a53f7651}{at25dfx\+\_\+chip\+\_\+erase}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Erase chip. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gacb524f227dc6a286a4a6d5f2d19aed1f}{at25dfx\+\_\+chip\+\_\+erase\+\_\+block}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}} block\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Erase block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Sector Protect}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gab9a4079fe6c6fee840cb296843d27500}{at25dfx\+\_\+chip\+\_\+set\+\_\+global\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} protect)
+\begin{DoxyCompactList}\small\item\em Set sector protection globally. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}{at25dfx\+\_\+chip\+\_\+set\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} protect)
+\begin{DoxyCompactList}\small\item\em Set protection setting of a single sector. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaa811a5f0cad3fba016aef4ae128b8207}{at25dfx\+\_\+chip\+\_\+get\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} $\ast$protect)
+\begin{DoxyCompactList}\small\item\em Get protection setting of a single sector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Sleep/\+Wake}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga9a5ea9405eedcf45f3846b3e74f227a3}{at25dfx\+\_\+chip\+\_\+sleep}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Put device to sleep. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga66d2ea2176179b7e6cb06901bb2bdc05}{at25dfx\+\_\+chip\+\_\+wake}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Wake device from sleep. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga78981ccb6b863d6548f343fe01792406}{at25dfx\+\_\+spi\+\_\+module\+\_\+t}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This driver provides an interface for basic usage of Serial\+Flash devices, i.\+e., read/write, global and local protect/unprotect of sectors, and sleep/wake.
+
+It supports multiple instances, and the instances can be connected to either common or individual S\+PI interfaces. For a list of the supported Serial\+Flash types, see \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}{at25dfx\+\_\+type}}.
+
+The following peripherals are used by this module\+:
+\begin{DoxyItemize}
+\item S\+E\+R\+C\+OM S\+PI (data transfer)
+\item \mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT}} (chip selection)
+\end{DoxyItemize}
+
+The outline of this documentation is as follows\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_prerequisites}{Prerequisites}}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_overview}{Module Overview}}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_considerations}{Special Considerations}}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_extra_info}{Extra Information}}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_examples}{Examples}}
+\item \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_api_overview}{A\+PI Overview}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_prerequisites}{}\subsection{Prerequisites}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_prerequisites}
+This driver requires that the S\+PI drivers are instantiated, initialized and enabled by the user, and that the S\+PI instances are persistent for as long as the associated instances of this driver exist or are used. To ensure persistence of the S\+PI instances, the convention is to define them in the same scope as the instances of this driver, which is usually a global one.
+
+The hardware abstraction layer (H\+AL) of this driver supports several S\+PI driver implementations, but not at the same time. So for a given project, one must select which implementation to support, and use it for all instances. The reader is assumed to be familiar with how to configure and initialize the S\+PI drivers, but the basic configuration to use is supplied by this driver\textquotesingle{}s H\+AL\+:
+\begin{DoxyItemize}
+\item at25dfx\+\_\+spi\+\_\+get\+\_\+config\+\_\+defaults() for polled S\+E\+R\+C\+OM S\+PI
+\item at25dfx\+\_\+spi\+\_\+master\+\_\+vec\+\_\+get\+\_\+config\+\_\+defaults() for S\+E\+R\+C\+OM S\+PI Master with Vectored I/O
+\end{DoxyItemize}
+
+To ensure correct operation, the user should not change anything in the base configuration except the baud rate, the S\+E\+R\+C\+OM M\+UX and the pin M\+UX settings.\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_overview}{}\subsection{Module Overview}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_overview}
+This driver enables the user to do basic operations on Serial\+Flash devices in the A\+T25\+D\+Fx series, such as checking their presence, reading from and writing to them, putting them to sleep and waking them back up when needed. Basic security is implemented, i.\+e., sector protection to prevent accidental erase and write. Functionality for permanently locking and securing A\+T25\+D\+Fx devices is not implemented in this driver.
+
+Each instance of this driver corresponds to a single A\+T25\+D\+Fx device, and must be associated with an instance of the S\+PI driver supported by the selected H\+AL implementation, as well as a P\+O\+RT pin for chip select (CS).
+
+All functions of this driver are blocking, which means that they do not return until the initiated operation completes. Further, since the selected H\+AL might use an interrupt-\/driven driver, this driver should not be used within interrupts.\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_spi_share}{}\subsubsection{S\+P\+I Bus Sharing}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_spi_share}
+Serial\+Flash devices can share a S\+PI bus, due to the use of CS lines. S\+PI bus sharing is supported by this driver without any special configuration. To share a S\+PI bus, simply associate the same S\+PI driver instance to multiple instances of this driver.
+
+The \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_asfdoc_sam0_at25dfx_example}{figure below}} illustrates an example where two out of three instances of this driver are associated with the same S\+PI driver instance.
+
+\label{group__asfdoc__common2__at25dfx__group_asfdoc_sam0_at25dfx_example}%
+\Hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_sam0_at25dfx_example}%
+\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_threads}{}\subsubsection{Use in Threaded Environments}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_module_threads}
+The functions of this driver rely on the locking mechanism in the S\+PI drivers to ensure exclusive access to a S\+PI driver instance for the entire duration of an operation, such as writing data to the A\+T25\+D\+Fx device. They will not wait for an already locked instance to be unlocked. Instead, they will simply return a status code indicating that it was busy.
+
+This behavior means that the functions are thread safe in the sense that no two operations may interfere with each other. It also means that there is no queueing of operations. Assuming the illustration above was a multi-\/threaded application, it would have to wait for an operation on A\+T25\+D\+Fx instance \#2 to end before one could be initiated on instance \#3, and vice versa. If queueing of operations is needed, it must be implemented as a layer on top of this driver.
+
+Be aware that the protocol implementation in this driver is not interrupt-\/ driven, and the H\+AL may use a polled driver. Hence, an on-\/going operation may be temporarily paused if the M\+CU switches threads.\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_considerations}{}\subsection{Special Considerations}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_considerations}
+\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_dev}{}\subsubsection{Device Specifics}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_dev}
+The available erase block sizes, and the availability and granularity of protection sectors may differ between devices.
+
+For example, with A\+T25\+F512B (\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabbf1e1dd637f606098ae4ccac417ab14}{A\+T25\+D\+F\+X\+\_\+512B}}), issuing a 64 kB block erase command will cause a 32 kB erase, and it does not support setting protection on individual sectors, only globally.
+
+Refer to the Serial\+Flash device\textquotesingle{}s datasheet for details about which operations are supported and what limitations apply to them.\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_flash}{}\subsubsection{Flash Memory Behavior}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_special_flash}
+The reader should be aware of some details of how flash memory generally functions\+:
+\begin{DoxyEnumerate}
+\item Erasing a flash memory block means that all bits in the block are reset to a high level (logical \char`\"{}1\char`\"{}), i.\+e., all bytes will read as {\ttfamily 0x\+FF}.
+\item Writing to a flash memory location will only set relevant bits to a low level (logical \char`\"{}0\char`\"{}), never to a high level.
+\item It is possible to write several times to a flash memory block without erasing, but there may be limitations on the number of times it can be done.
+\end{DoxyEnumerate}\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_extra_info}{}\subsection{Extra Information}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_extra_info}
+For extra information, see \mbox{\hyperlink{asfdoc_common2_at25dfx_extra}{Extra Information for A\+T25\+D\+Fx Serial\+Flash Driver}}. This includes\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_common2_at25dfx_extra_asfdoc_common2_at25dfx_extra_acronyms}{Acronyms}}
+\item \mbox{\hyperlink{asfdoc_common2_at25dfx_extra_asfdoc_common2_at25dfx_extra_dependencies}{Dependencies}}
+\item \mbox{\hyperlink{asfdoc_common2_at25dfx_extra_asfdoc_common2_at25dfx_extra_errata}{Errata}}
+\item \mbox{\hyperlink{asfdoc_common2_at25dfx_extra_asfdoc_common2_at25dfx_extra_history}{Module History}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_examples}{}\subsection{Examples}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_examples}
+For a list of examples related to this driver, see \mbox{\hyperlink{asfdoc_common2_at25dfx_exqsg}{Examples for A\+T25\+D\+Fx Serial\+Flash Driver}}.\hypertarget{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_api_overview}{}\subsection{A\+P\+I Overview}\label{group__asfdoc__common2__at25dfx__group_asfdoc_common2_at25dfx_api_overview}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}\label{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_address\_t@{at25dfx\_address\_t}}
+\index{at25dfx\_address\_t@{at25dfx\_address\_t}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_address\_t}{at25dfx\_address\_t}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}
+
+Serial\+Flash internal address. \mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}\label{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_datalen\_t@{at25dfx\_datalen\_t}}
+\index{at25dfx\_datalen\_t@{at25dfx\_datalen\_t}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_datalen\_t}{at25dfx\_datalen\_t}}
+{\footnotesize\ttfamily typedef uint16\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}}}
+
+Length of data package to read/write. \mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga78981ccb6b863d6548f343fe01792406}\label{group__asfdoc__common2__at25dfx__group_ga78981ccb6b863d6548f343fe01792406}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_spi\_module\_t@{at25dfx\_spi\_module\_t}}
+\index{at25dfx\_spi\_module\_t@{at25dfx\_spi\_module\_t}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_spi\_module\_t}{at25dfx\_spi\_module\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga78981ccb6b863d6548f343fe01792406}{at25dfx\+\_\+spi\+\_\+module\+\_\+t}}}
+
+Typedef for S\+PI H\+AL 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}\label{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_block\_size@{at25dfx\_block\_size}}
+\index{at25dfx\_block\_size@{at25dfx\_block\_size}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_block\_size}{at25dfx\_block\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}}}
+
+Size of block to erase. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_BLOCK\_SIZE\_4KB@{AT25DFX\_BLOCK\_SIZE\_4KB}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_BLOCK\_SIZE\_4KB@{AT25DFX\_BLOCK\_SIZE\_4KB}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059ba1803edc936dff9e00b22bb1665c5f4e0}\label{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059ba1803edc936dff9e00b22bb1665c5f4e0}} 
+A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+4\+KB&4 kilo\+Byte block size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_BLOCK\_SIZE\_32KB@{AT25DFX\_BLOCK\_SIZE\_32KB}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_BLOCK\_SIZE\_32KB@{AT25DFX\_BLOCK\_SIZE\_32KB}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059badb4fdfe58350143efe009cc15e39b52a}\label{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059badb4fdfe58350143efe009cc15e39b52a}} 
+A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+32\+KB&32 kilo\+Byte block size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_BLOCK\_SIZE\_64KB@{AT25DFX\_BLOCK\_SIZE\_64KB}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_BLOCK\_SIZE\_64KB@{AT25DFX\_BLOCK\_SIZE\_64KB}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059baebd2ecf4d5e40c0fa33506d7fa4fb0fd}\label{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059baebd2ecf4d5e40c0fa33506d7fa4fb0fd}} 
+A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+64\+KB&64 kilo\+Byte block size. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}\label{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_type@{at25dfx\_type}}
+\index{at25dfx\_type@{at25dfx\_type}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_type}{at25dfx\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}{at25dfx\+\_\+type}}}
+
+Serial\+Flash type. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_512B@{AT25DFX\_512B}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_512B@{AT25DFX\_512B}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabbf1e1dd637f606098ae4ccac417ab14}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabbf1e1dd637f606098ae4ccac417ab14}} 
+A\+T25\+D\+F\+X\+\_\+512B&A\+T25\+F512B, compatible with A\+T25\+B\+C\+M512B \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_021@{AT25DFX\_021}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_021@{AT25DFX\_021}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da7190685f36888e0fc72a10ec34f1c6f7}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da7190685f36888e0fc72a10ec34f1c6f7}} 
+A\+T25\+D\+F\+X\+\_\+021&A\+T25\+D\+F021 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_041A@{AT25DFX\_041A}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_041A@{AT25DFX\_041A}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab04ef01e6fa145d7a0a3472974978404}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab04ef01e6fa145d7a0a3472974978404}} 
+A\+T25\+D\+F\+X\+\_\+041A&A\+T25\+D\+F041A \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_081@{AT25DFX\_081}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_081@{AT25DFX\_081}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da9a5f9c0b38017fce506e65e5fcfccf1c}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da9a5f9c0b38017fce506e65e5fcfccf1c}} 
+A\+T25\+D\+F\+X\+\_\+081&A\+T25\+D\+F081, compatible with A\+T25\+D\+L081 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_081A@{AT25DFX\_081A}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_081A@{AT25DFX\_081A}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da958e4a75f1080b2e6ae0a8ad53d46189}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da958e4a75f1080b2e6ae0a8ad53d46189}} 
+A\+T25\+D\+F\+X\+\_\+081A&A\+T25\+D\+F081A, compatible with A\+T26\+D\+F081A \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_161@{AT25DFX\_161}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_161@{AT25DFX\_161}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dacf36c8ececd590e2ebf63524ec6b8e00}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dacf36c8ececd590e2ebf63524ec6b8e00}} 
+A\+T25\+D\+F\+X\+\_\+161&A\+T25\+D\+F161 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_L161@{AT25DFX\_L161}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_L161@{AT25DFX\_L161}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dac4cdd46ba3dfb0894e6f0b0502d2568e}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dac4cdd46ba3dfb0894e6f0b0502d2568e}} 
+A\+T25\+D\+F\+X\+\_\+\+L161&A\+T25\+D\+L161 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_Q161@{AT25DFX\_Q161}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_Q161@{AT25DFX\_Q161}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da07eaaa7f5f50f718d8523bc5ecceeb61}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da07eaaa7f5f50f718d8523bc5ecceeb61}} 
+A\+T25\+D\+F\+X\+\_\+\+Q161&A\+T25\+D\+Q161 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_321A@{AT25DFX\_321A}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_321A@{AT25DFX\_321A}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab1b556b612d1dfc5786da5196fea6fe1}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab1b556b612d1dfc5786da5196fea6fe1}} 
+A\+T25\+D\+F\+X\+\_\+321A&A\+T25\+D\+F321A \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AT25DFX\_641@{AT25DFX\_641}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!AT25DFX\_641@{AT25DFX\_641}}}\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabe078bc157dc861a62e7bc5539bf0bd1}\label{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabe078bc157dc861a62e7bc5539bf0bd1}} 
+A\+T25\+D\+F\+X\+\_\+641&A\+T25\+D\+F641, compatible with A\+T25\+D\+F641A \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gabc77a5e6b7714d6a3731505b24ac5082}\label{group__asfdoc__common2__at25dfx__group_gabc77a5e6b7714d6a3731505b24ac5082}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_check\_presence@{at25dfx\_chip\_check\_presence}}
+\index{at25dfx\_chip\_check\_presence@{at25dfx\_chip\_check\_presence}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_check\_presence()}{at25dfx\_chip\_check\_presence()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+check\+\_\+presence (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip }\end{DoxyParamCaption})}
+
+
+
+Check presence of chip. 
+
+This function checks whether or not the Serial\+Flash device is present by attempting to read out its device ID, and comparing it with the one that its type should have.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if chip responded with ID matching its type. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND} & if chip did not respond, or with wrong ID. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gae996a3088d79878787756de3a53f7651}\label{group__asfdoc__common2__at25dfx__group_gae996a3088d79878787756de3a53f7651}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_erase@{at25dfx\_chip\_erase}}
+\index{at25dfx\_chip\_erase@{at25dfx\_chip\_erase}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_erase()}{at25dfx\_chip\_erase()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+erase (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip }\end{DoxyParamCaption})}
+
+
+
+Erase chip. 
+
+This function erases all content of the Serial\+Flash device.
+
+\begin{DoxyPrecond}{Precondition}
+All sectors must be unprotected prior to a chip erase, or it will not be performed.
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gab9a4079fe6c6fee840cb296843d27500}{at25dfx\+\_\+chip\+\_\+set\+\_\+global\+\_\+sector\+\_\+protect()}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+IO} & if operation failed. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gacb524f227dc6a286a4a6d5f2d19aed1f}\label{group__asfdoc__common2__at25dfx__group_gacb524f227dc6a286a4a6d5f2d19aed1f}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_erase\_block@{at25dfx\_chip\_erase\_block}}
+\index{at25dfx\_chip\_erase\_block@{at25dfx\_chip\_erase\_block}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_erase\_block()}{at25dfx\_chip\_erase\_block()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+erase\+\_\+block (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}]{address,  }\item[{enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}}}]{block\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+Erase block. 
+
+This function erases all content within a block of the Serial\+Flash device.
+
+\begin{DoxyPrecond}{Precondition}
+The sector(s) which the block resides in must be unprotected prior to a block erase, or it will not be performed.
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}{at25dfx\+\_\+chip\+\_\+set\+\_\+sector\+\_\+protect()}}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+The alignment of the erase blocks is given by the erase block size. The Serial\+Flash device will simply ignore address bits which index within the block. For example, doing a 4 kB block erase with the start address set to the 2 kB boundary will cause the first 4 kB to get erased, not 4 kB starting at the 2 kB boundary.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address} & Address within the block to erase. \\
+\hline
+\mbox{\texttt{ in}}  & {\em block\+\_\+size} & Size of block to erase.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+IO} & if operation failed. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & if address is out of bounds. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gaa811a5f0cad3fba016aef4ae128b8207}\label{group__asfdoc__common2__at25dfx__group_gaa811a5f0cad3fba016aef4ae128b8207}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_get\_sector\_protect@{at25dfx\_chip\_get\_sector\_protect}}
+\index{at25dfx\_chip\_get\_sector\_protect@{at25dfx\_chip\_get\_sector\_protect}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_get\_sector\_protect()}{at25dfx\_chip\_get\_sector\_protect()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+get\+\_\+sector\+\_\+protect (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}]{address,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} $\ast$}]{protect }\end{DoxyParamCaption})}
+
+
+
+Get protection setting of a single sector. 
+
+This function gets the protect setting of a single sector.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}{at25dfx\+\_\+chip\+\_\+set\+\_\+sector\+\_\+protect()}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address} & Address within sector to get setting of. \\
+\hline
+\mbox{\texttt{ out}}  & {\em bool} & Address of variable to store the setting to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & if address is out of bounds. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga867ff68dbb3def1fbac0c9359ea7e36e}\label{group__asfdoc__common2__at25dfx__group_ga867ff68dbb3def1fbac0c9359ea7e36e}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_read\_buffer@{at25dfx\_chip\_read\_buffer}}
+\index{at25dfx\_chip\_read\_buffer@{at25dfx\_chip\_read\_buffer}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_read\_buffer()}{at25dfx\_chip\_read\_buffer()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+read\+\_\+buffer (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}]{address,  }\item[{void $\ast$}]{data,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}}}]{length }\end{DoxyParamCaption})}
+
+
+
+Read data from chip. 
+
+This function reads data from the Serial\+Flash device, into a buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address} & Serial\+Flash internal address to start reading from. \\
+\hline
+\mbox{\texttt{ out}}  & {\em data} & Buffer to write data into. \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Number of bytes to read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & if address and/or length is out of bounds. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_gab9a4079fe6c6fee840cb296843d27500}\label{group__asfdoc__common2__at25dfx__group_gab9a4079fe6c6fee840cb296843d27500}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_set\_global\_sector\_protect@{at25dfx\_chip\_set\_global\_sector\_protect}}
+\index{at25dfx\_chip\_set\_global\_sector\_protect@{at25dfx\_chip\_set\_global\_sector\_protect}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_set\_global\_sector\_protect()}{at25dfx\_chip\_set\_global\_sector\_protect()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+set\+\_\+global\+\_\+sector\+\_\+protect (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{protect }\end{DoxyParamCaption})}
+
+
+
+Set sector protection globally. 
+
+This function applies a protect setting to all sectors.
+
+\begin{DoxyNote}{Note}
+Global setting of sector protection is done by writing to the status register of the device.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bool} & Protection setting to apply. \begin{DoxyItemize}
+\item {\ttfamily true} if the sectors should be protected. \item {\ttfamily false} if the sectors should be unprotected.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if write operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}\label{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_set\_sector\_protect@{at25dfx\_chip\_set\_sector\_protect}}
+\index{at25dfx\_chip\_set\_sector\_protect@{at25dfx\_chip\_set\_sector\_protect}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_set\_sector\_protect()}{at25dfx\_chip\_set\_sector\_protect()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+set\+\_\+sector\+\_\+protect (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}]{address,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{protect }\end{DoxyParamCaption})}
+
+
+
+Set protection setting of a single sector. 
+
+This function applies a protect setting to a single sector.
+
+\begin{DoxyNote}{Note}
+The granularity of the sectors for protection can vary between Serial\+Flash devices and is not necessarily uniform. Please refer to the datasheet for details.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address} & Address within sector to protect. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bool} & Protection setting to apply. \begin{DoxyItemize}
+\item {\ttfamily true} if the sector should be protected. \item {\ttfamily false} if the sector should be unprotected.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if write operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & if address is out of bounds. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga9a5ea9405eedcf45f3846b3e74f227a3}\label{group__asfdoc__common2__at25dfx__group_ga9a5ea9405eedcf45f3846b3e74f227a3}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_sleep@{at25dfx\_chip\_sleep}}
+\index{at25dfx\_chip\_sleep@{at25dfx\_chip\_sleep}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_sleep()}{at25dfx\_chip\_sleep()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+sleep (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip }\end{DoxyParamCaption})}
+
+
+
+Put device to sleep. 
+
+This function puts the Serial\+Flash device to sleep for the purpose of reducing power consumption while the device is not needed.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga66d2ea2176179b7e6cb06901bb2bdc05}{at25dfx\+\_\+chip\+\_\+wake()}}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+The device will not respond to any commands until it is woken up.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if write operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga66d2ea2176179b7e6cb06901bb2bdc05}\label{group__asfdoc__common2__at25dfx__group_ga66d2ea2176179b7e6cb06901bb2bdc05}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_wake@{at25dfx\_chip\_wake}}
+\index{at25dfx\_chip\_wake@{at25dfx\_chip\_wake}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_wake()}{at25dfx\_chip\_wake()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+wake (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip }\end{DoxyParamCaption})}
+
+
+
+Wake device from sleep. 
+
+This function wakes the Serial\+Flash device from sleep.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga9a5ea9405eedcf45f3846b3e74f227a3}{at25dfx\+\_\+chip\+\_\+sleep()}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if write operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__common2__at25dfx__group_ga680dae17472f869582c92512d4995dcc}\label{group__asfdoc__common2__at25dfx__group_ga680dae17472f869582c92512d4995dcc}} 
+\index{AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}!at25dfx\_chip\_write\_buffer@{at25dfx\_chip\_write\_buffer}}
+\index{at25dfx\_chip\_write\_buffer@{at25dfx\_chip\_write\_buffer}!AT25DFx SerialFlash Driver@{AT25DFx SerialFlash Driver}}
+\subsubsection{\texorpdfstring{at25dfx\_chip\_write\_buffer()}{at25dfx\_chip\_write\_buffer()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} at25dfx\+\_\+chip\+\_\+write\+\_\+buffer (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$}]{chip,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}}]{address,  }\item[{const void $\ast$}]{data,  }\item[{\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}}}]{length }\end{DoxyParamCaption})}
+
+
+
+Write data to chip. 
+
+This function writes data to the Serial\+Flash device, from a buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chip} & Address of Serial\+Flash chip instance to operate on. \\
+\hline
+\mbox{\texttt{ in}}  & {\em address} & Serial\+Flash internal address to start writing to. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & Buffer to read data from. \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Number of bytes to write.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & if operation succeeded. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+IO} & if operation failed. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & if S\+PI is busy with some other operation. \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & if address and/or length is out of bounds. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,97 @@
+\hypertarget{structat__ble__pair__features__t}{}\section{at\+\_\+ble\+\_\+pair\+\_\+features\+\_\+t Struct Reference}
+\label{structat__ble__pair__features__t}\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+
+
+Pairing Features.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a94db8d982b31ca2cb106f01fc6d9afd4}{at\+\_\+ble\+\_\+iocab\+\_\+t}} \mbox{\hyperlink{structat__ble__pair__features__t_a8157240b63053697a4cdcc87b78525ec}{io\+\_\+cababilities}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structat__ble__pair__features__t_a0430e2654fcb685cbe7fe84688c4a6bc}{mitm\+\_\+protection}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structat__ble__pair__features__t_af408fae3fc79712c6c72a088b67c00d7}{bond}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structat__ble__pair__features__t_a1f9c825c648822ba2a91d9d41babb46a}{oob\+\_\+avaiable}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__pair__features__t_a66c3e526aae4ca7f3212ae207225b0a2}{min\+\_\+key\+\_\+size}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__pair__features__t_a43d814618fbf7f63a318966dd84746c2}{max\+\_\+key\+\_\+size}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} \mbox{\hyperlink{structat__ble__pair__features__t_a5d50a35e7fd63e7011dabaedab0d535e}{initiator\+\_\+keys}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} \mbox{\hyperlink{structat__ble__pair__features__t_a7040db09082753ec2ba9cc272aa7505e}{responder\+\_\+keys}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_aeb4d5485cd0d013e0991f8513c628357}{at\+\_\+ble\+\_\+auth\+\_\+levels\+\_\+t}} \mbox{\hyperlink{structat__ble__pair__features__t_abf6fc623b510d867745faeebf8845895}{desired\+\_\+auth}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pairing Features. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__pair__features__t_af408fae3fc79712c6c72a088b67c00d7}\label{structat__ble__pair__features__t_af408fae3fc79712c6c72a088b67c00d7}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!bond@{bond}}
+\index{bond@{bond}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{bond}{bond}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} bond}
+
+If True then bonding is requested \mbox{\Hypertarget{structat__ble__pair__features__t_abf6fc623b510d867745faeebf8845895}\label{structat__ble__pair__features__t_abf6fc623b510d867745faeebf8845895}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!desired\_auth@{desired\_auth}}
+\index{desired\_auth@{desired\_auth}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{desired\_auth}{desired\_auth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_aeb4d5485cd0d013e0991f8513c628357}{at\+\_\+ble\+\_\+auth\+\_\+levels\+\_\+t}} desired\+\_\+auth}
+
+The desired authentication level to be reached, value of \mbox{\hyperlink{at__ble__api_8h_aeb4d5485cd0d013e0991f8513c628357}{at\+\_\+ble\+\_\+auth\+\_\+levels\+\_\+t}} \mbox{\Hypertarget{structat__ble__pair__features__t_a5d50a35e7fd63e7011dabaedab0d535e}\label{structat__ble__pair__features__t_a5d50a35e7fd63e7011dabaedab0d535e}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!initiator\_keys@{initiator\_keys}}
+\index{initiator\_keys@{initiator\_keys}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{initiator\_keys}{initiator\_keys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} initiator\+\_\+keys}
+
+Security keys offered to peer device, value of \mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} \mbox{\Hypertarget{structat__ble__pair__features__t_a8157240b63053697a4cdcc87b78525ec}\label{structat__ble__pair__features__t_a8157240b63053697a4cdcc87b78525ec}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!io\_cababilities@{io\_cababilities}}
+\index{io\_cababilities@{io\_cababilities}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{io\_cababilities}{io\_cababilities}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a94db8d982b31ca2cb106f01fc6d9afd4}{at\+\_\+ble\+\_\+iocab\+\_\+t}} io\+\_\+cababilities}
+
+IO capabilities of this device, value of \mbox{\hyperlink{at__ble__api_8h_a94db8d982b31ca2cb106f01fc6d9afd4}{at\+\_\+ble\+\_\+iocab\+\_\+t}} \mbox{\Hypertarget{structat__ble__pair__features__t_a43d814618fbf7f63a318966dd84746c2}\label{structat__ble__pair__features__t_a43d814618fbf7f63a318966dd84746c2}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!max\_key\_size@{max\_key\_size}}
+\index{max\_key\_size@{max\_key\_size}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{max\_key\_size}{max\_key\_size}}
+{\footnotesize\ttfamily uint8\+\_\+t max\+\_\+key\+\_\+size}
+
+Maximum key size accepted \mbox{\Hypertarget{structat__ble__pair__features__t_a66c3e526aae4ca7f3212ae207225b0a2}\label{structat__ble__pair__features__t_a66c3e526aae4ca7f3212ae207225b0a2}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!min\_key\_size@{min\_key\_size}}
+\index{min\_key\_size@{min\_key\_size}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{min\_key\_size}{min\_key\_size}}
+{\footnotesize\ttfamily uint8\+\_\+t min\+\_\+key\+\_\+size}
+
+Minimum key size accepted \mbox{\Hypertarget{structat__ble__pair__features__t_a0430e2654fcb685cbe7fe84688c4a6bc}\label{structat__ble__pair__features__t_a0430e2654fcb685cbe7fe84688c4a6bc}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!mitm\_protection@{mitm\_protection}}
+\index{mitm\_protection@{mitm\_protection}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{mitm\_protection}{mitm\_protection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} mitm\+\_\+protection}
+
+If true then Man-\/\+In-\/\+The-\/\+Middle protection must be provided \mbox{\Hypertarget{structat__ble__pair__features__t_a1f9c825c648822ba2a91d9d41babb46a}\label{structat__ble__pair__features__t_a1f9c825c648822ba2a91d9d41babb46a}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!oob\_avaiable@{oob\_avaiable}}
+\index{oob\_avaiable@{oob\_avaiable}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{oob\_avaiable}{oob\_avaiable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} oob\+\_\+avaiable}
+
+If true then out-\/of-\/band data is available \mbox{\Hypertarget{structat__ble__pair__features__t_a7040db09082753ec2ba9cc272aa7505e}\label{structat__ble__pair__features__t_a7040db09082753ec2ba9cc272aa7505e}} 
+\index{at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}!responder\_keys@{responder\_keys}}
+\index{responder\_keys@{responder\_keys}!at\_ble\_pair\_features\_t@{at\_ble\_pair\_features\_t}}
+\subsubsection{\texorpdfstring{responder\_keys}{responder\_keys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} responder\+\_\+keys}
+
+Security keys needed from peer device, value of \mbox{\hyperlink{at__ble__api_8h_a3406daa27ebb020343610744c1e88560}{at\+\_\+ble\+\_\+key\+\_\+dis\+\_\+t}} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

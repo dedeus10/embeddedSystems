@@ -1,0 +1,28 @@
+var union_p_m___a_p_b_c_m_a_s_k___type =
+[
+    [ "__pad0__", "union_p_m___a_p_b_c_m_a_s_k___type.html#a3e57c2ef1c3ffb36722f000cc1156824", null ],
+    [ "AC1_", "union_p_m___a_p_b_c_m_a_s_k___type.html#abbe220fbf6dc128dbdd79f441e0bb472", null ],
+    [ "AC_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a199d422c0272cd97381a6a4d29c48d5c", null ],
+    [ "ADC_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a33c36a1eeac0f6b9f241851937e55073", null ],
+    [ "bit", "union_p_m___a_p_b_c_m_a_s_k___type.html#af2c91922f9fba7594360a5d1a1f7295b", null ],
+    [ "DAC_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a52351e765d73b0f5b9f06b5887e451af", null ],
+    [ "EVSYS_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a986c1b4829e0f41b25a30a9eb0b97646", null ],
+    [ "I2S_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a32016ec93dd1ab818e71706c019fa2a4", null ],
+    [ "PAC2_", "union_p_m___a_p_b_c_m_a_s_k___type.html#aa7960bc608c96b80eb26282d089a0e16", null ],
+    [ "PTC_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a73bc38d2352e61cf3cf0222b88fab621", null ],
+    [ "reg", "union_p_m___a_p_b_c_m_a_s_k___type.html#a6b91636401516a477989a336376d7b40", null ],
+    [ "SERCOM0_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a7f752e2a4aea341fc1c4527dec0331c8", null ],
+    [ "SERCOM1_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a35d4d200a2fca19dafb79e160cb9cfe4", null ],
+    [ "SERCOM2_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a9f690b6ba4218c30e75df7da4b973a4c", null ],
+    [ "SERCOM3_", "union_p_m___a_p_b_c_m_a_s_k___type.html#ac1a45a02b28ed73cf4c26f7e65c051ba", null ],
+    [ "SERCOM4_", "union_p_m___a_p_b_c_m_a_s_k___type.html#ad871ba6ef8c9fff3341a68764dcd8ba4", null ],
+    [ "SERCOM5_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a19cb7399f5a37ca19f59c1c61957ed6f", null ],
+    [ "TC3_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a83f891cea5394d213968ba3850ab3241", null ],
+    [ "TC4_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a6b5b1d2d731fafc45f9396cb41b8c4f5", null ],
+    [ "TC5_", "union_p_m___a_p_b_c_m_a_s_k___type.html#aeeceb5bef2a8ae787b6a157bf787c106", null ],
+    [ "TC6_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a396a12b52ef1f90ebee4120f3889e0f3", null ],
+    [ "TC7_", "union_p_m___a_p_b_c_m_a_s_k___type.html#ab52ab4d9e2c6132f87f3b80e51e52fce", null ],
+    [ "TCC0_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a5d772bb5f5feb51aa287bbe308964404", null ],
+    [ "TCC1_", "union_p_m___a_p_b_c_m_a_s_k___type.html#aaf23cacf1ec80847e7cfb6e6e7c28fe8", null ],
+    [ "TCC2_", "union_p_m___a_p_b_c_m_a_s_k___type.html#a78a459cadc229c32542b9b9f096a29e8", null ]
+];

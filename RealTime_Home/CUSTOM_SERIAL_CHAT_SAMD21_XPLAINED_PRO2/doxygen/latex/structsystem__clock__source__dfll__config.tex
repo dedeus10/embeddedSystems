@@ -1,0 +1,115 @@
+\hypertarget{structsystem__clock__source__dfll__config}{}\section{system\+\_\+clock\+\_\+source\+\_\+dfll\+\_\+config Struct Reference}
+\label{structsystem__clock__source__dfll__config}\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+
+
+Configuration structure for D\+F\+LL.  
+
+
+
+
+{\ttfamily \#include $<$clock\+\_\+feature.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf264d9ce05843104cb8a393b1d9ddfa2}{system\+\_\+clock\+\_\+dfll\+\_\+loop\+\_\+mode}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_a386f6ce572ff329ba13d571b9ed6e268}{loop\+\_\+mode}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_a23620c12634b9230d2325ec5c245cf32}{on\+\_\+demand}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga56ab87696abcd4e0103d6259386017ae}{system\+\_\+clock\+\_\+dfll\+\_\+quick\+\_\+lock}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_ab1bd091a458367369f07b3ae5ac01bb7}{quick\+\_\+lock}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga04ee95a872995397e3db9cf1494721e3}{system\+\_\+clock\+\_\+dfll\+\_\+chill\+\_\+cycle}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_a56f3e7fb02c48f8225962450590a8b15}{chill\+\_\+cycle}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga6ce68deec62f12bb85ddb2f8c103ada5}{system\+\_\+clock\+\_\+dfll\+\_\+wakeup\+\_\+lock}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_a843f42c0b5b46661a11b921a5fdd43a6}{wakeup\+\_\+lock}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf9b0eb010541f1d7c8af3eeb0573043d}{system\+\_\+clock\+\_\+dfll\+\_\+stable\+\_\+tracking}} \mbox{\hyperlink{structsystem__clock__source__dfll__config_a19c44ac61bae54e6e680c62290a07c08}{stable\+\_\+tracking}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structsystem__clock__source__dfll__config_a963f7fa8d903a4072243932f6bdf7435}{coarse\+\_\+value}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structsystem__clock__source__dfll__config_a2ad9bda5c7114122e23b85655d283e08}{fine\+\_\+value}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structsystem__clock__source__dfll__config_af9e180432db304763a2a6e85545bbd93}{coarse\+\_\+max\+\_\+step}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structsystem__clock__source__dfll__config_ad003851e3f86f611abdda9f773a3de5b}{fine\+\_\+max\+\_\+step}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structsystem__clock__source__dfll__config_a0a7273152483e58db6e15a14f056617c}{multiply\+\_\+factor}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration structure for D\+F\+LL. 
+
+D\+F\+LL oscillator configuration structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structsystem__clock__source__dfll__config_a56f3e7fb02c48f8225962450590a8b15}\label{structsystem__clock__source__dfll__config_a56f3e7fb02c48f8225962450590a8b15}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!chill\_cycle@{chill\_cycle}}
+\index{chill\_cycle@{chill\_cycle}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{chill\_cycle}{chill\_cycle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga04ee95a872995397e3db9cf1494721e3}{system\+\_\+clock\+\_\+dfll\+\_\+chill\+\_\+cycle}} chill\+\_\+cycle}
+
+Enable Chill Cycle \mbox{\Hypertarget{structsystem__clock__source__dfll__config_af9e180432db304763a2a6e85545bbd93}\label{structsystem__clock__source__dfll__config_af9e180432db304763a2a6e85545bbd93}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!coarse\_max\_step@{coarse\_max\_step}}
+\index{coarse\_max\_step@{coarse\_max\_step}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{coarse\_max\_step}{coarse\_max\_step}}
+{\footnotesize\ttfamily uint8\+\_\+t coarse\+\_\+max\+\_\+step}
+
+Coarse adjustment maximum step size (Closed loop mode) \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a963f7fa8d903a4072243932f6bdf7435}\label{structsystem__clock__source__dfll__config_a963f7fa8d903a4072243932f6bdf7435}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!coarse\_value@{coarse\_value}}
+\index{coarse\_value@{coarse\_value}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{coarse\_value}{coarse\_value}}
+{\footnotesize\ttfamily uint8\+\_\+t coarse\+\_\+value}
+
+Coarse calibration value (Open loop mode) \mbox{\Hypertarget{structsystem__clock__source__dfll__config_ad003851e3f86f611abdda9f773a3de5b}\label{structsystem__clock__source__dfll__config_ad003851e3f86f611abdda9f773a3de5b}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!fine\_max\_step@{fine\_max\_step}}
+\index{fine\_max\_step@{fine\_max\_step}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{fine\_max\_step}{fine\_max\_step}}
+{\footnotesize\ttfamily uint16\+\_\+t fine\+\_\+max\+\_\+step}
+
+Fine adjustment maximum step size (Closed loop mode) \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a2ad9bda5c7114122e23b85655d283e08}\label{structsystem__clock__source__dfll__config_a2ad9bda5c7114122e23b85655d283e08}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!fine\_value@{fine\_value}}
+\index{fine\_value@{fine\_value}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{fine\_value}{fine\_value}}
+{\footnotesize\ttfamily uint16\+\_\+t fine\+\_\+value}
+
+Fine calibration value (Open loop mode) \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a386f6ce572ff329ba13d571b9ed6e268}\label{structsystem__clock__source__dfll__config_a386f6ce572ff329ba13d571b9ed6e268}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!loop\_mode@{loop\_mode}}
+\index{loop\_mode@{loop\_mode}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{loop\_mode}{loop\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf264d9ce05843104cb8a393b1d9ddfa2}{system\+\_\+clock\+\_\+dfll\+\_\+loop\+\_\+mode}} loop\+\_\+mode}
+
+Loop mode \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a0a7273152483e58db6e15a14f056617c}\label{structsystem__clock__source__dfll__config_a0a7273152483e58db6e15a14f056617c}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!multiply\_factor@{multiply\_factor}}
+\index{multiply\_factor@{multiply\_factor}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{multiply\_factor}{multiply\_factor}}
+{\footnotesize\ttfamily uint16\+\_\+t multiply\+\_\+factor}
+
+D\+F\+LL multiply factor (Closed loop mode \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a23620c12634b9230d2325ec5c245cf32}\label{structsystem__clock__source__dfll__config_a23620c12634b9230d2325ec5c245cf32}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!on\_demand@{on\_demand}}
+\index{on\_demand@{on\_demand}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{on\_demand}{on\_demand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} on\+\_\+demand}
+
+Run On Demand. If this is set the D\+F\+LL won\textquotesingle{}t run until requested by a peripheral. \mbox{\Hypertarget{structsystem__clock__source__dfll__config_ab1bd091a458367369f07b3ae5ac01bb7}\label{structsystem__clock__source__dfll__config_ab1bd091a458367369f07b3ae5ac01bb7}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!quick\_lock@{quick\_lock}}
+\index{quick\_lock@{quick\_lock}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{quick\_lock}{quick\_lock}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga56ab87696abcd4e0103d6259386017ae}{system\+\_\+clock\+\_\+dfll\+\_\+quick\+\_\+lock}} quick\+\_\+lock}
+
+Enable Quick Lock \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a19c44ac61bae54e6e680c62290a07c08}\label{structsystem__clock__source__dfll__config_a19c44ac61bae54e6e680c62290a07c08}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!stable\_tracking@{stable\_tracking}}
+\index{stable\_tracking@{stable\_tracking}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{stable\_tracking}{stable\_tracking}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gaf9b0eb010541f1d7c8af3eeb0573043d}{system\+\_\+clock\+\_\+dfll\+\_\+stable\+\_\+tracking}} stable\+\_\+tracking}
+
+D\+F\+LL tracking after fine lock \mbox{\Hypertarget{structsystem__clock__source__dfll__config_a843f42c0b5b46661a11b921a5fdd43a6}\label{structsystem__clock__source__dfll__config_a843f42c0b5b46661a11b921a5fdd43a6}} 
+\index{system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}!wakeup\_lock@{wakeup\_lock}}
+\index{wakeup\_lock@{wakeup\_lock}!system\_clock\_source\_dfll\_config@{system\_clock\_source\_dfll\_config}}
+\subsubsection{\texorpdfstring{wakeup\_lock}{wakeup\_lock}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga6ce68deec62f12bb85ddb2f8c103ada5}{system\+\_\+clock\+\_\+dfll\+\_\+wakeup\+\_\+lock}} wakeup\+\_\+lock}
+
+D\+F\+LL lock state on wakeup 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/system/clock/clock\+\_\+samd21\+\_\+r21\+\_\+da\+\_\+ha1/\mbox{\hyperlink{clock__feature_8h}{clock\+\_\+feature.\+h}}\end{DoxyCompactItemize}

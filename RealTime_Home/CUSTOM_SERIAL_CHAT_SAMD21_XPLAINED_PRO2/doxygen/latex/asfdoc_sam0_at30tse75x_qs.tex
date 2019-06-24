@@ -1,0 +1,45 @@
+In this use case we will interface the temperature sensor, set a resolution and read the temperature.\hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_prereq}{}\section{Prerequisites}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_prereq}
+The temperature sensor must be connected to the device.\hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_setup}{}\section{Setup}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_setup}
+\hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_init_code}{}\subsection{Initialization Code}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_init_code}
+Add a global variable to store the temperature\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+Copy-\/paste the following setup code to your application main function\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_workflow}
+
+\begin{DoxyEnumerate}
+\item Initialize system 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize I2C interface 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_implement}{}\section{Implementation}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_implement}
+\hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_imp_code}{}\subsection{Code}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_imp_code}
+Add after initialization in main. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_imp_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_at30tse75x_qs_asfdoc_sam0_at30tse75x_qs_imp_workflow}
+
+\begin{DoxyEnumerate}
+\item Read T\+H\+I\+GH register from temperature sensor\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Read T\+L\+OW register from temperature sensor\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set temperature sensor resolution to 12-\/bit\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Continuously read the temperature\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

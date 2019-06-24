@@ -1,0 +1,837 @@
+\hypertarget{conf__clocks_8h}{}\section{config/conf\+\_\+clocks.h File Reference}
+\label{conf__clocks_8h}\index{config/conf\_clocks.h@{config/conf\_clocks.h}}
+
+
+S\+AM D21 Clock configuration.  
+
+
+{\ttfamily \#include $<$clock.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a306974c657c1978f9932985d52299e35}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+D\+E\+T\+E\+CT}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a8d3c40ca0cf96c483a00b1ae4e8190c4}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+F\+L\+A\+S\+H\+\_\+\+W\+A\+I\+T\+\_\+\+S\+T\+A\+T\+ES}}~2
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a13335e9ee97daf2a97dc1938d017d033}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+P\+U\+\_\+\+D\+I\+V\+I\+D\+ER}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_adb25b207beb8f78d9ae012fedb4aba4e}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+A\+\_\+\+D\+I\+V\+I\+D\+ER}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a87d21519abdf4f7a83f1d7037f5308d5}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+B\+\_\+\+D\+I\+V\+I\+D\+ER}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a693d24c0d8387f5e0e8454d43b9d878e}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+C\+\_\+\+D\+I\+V\+I\+D\+ER}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ad79c7c4e928a5919a26af6c2accaa0b7}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga1ee1b0be167bd253038400d9c6d0cbefa564fc679b9f90127b6666b6bced33463}{S\+Y\+S\+T\+E\+M\+\_\+\+O\+S\+C8\+M\+\_\+\+D\+I\+V\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a1bcb9549a9e731dba2c6166333855e33}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ae166dabd3130208cb2e6e8d5c0f37da2}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a970c3542aa826693d79fed228527f7ad}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ab175ad3111f32983b5523d6f011d5c29}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggab463f9d80799466f12321e6252493e70a1f1e123ed025f2e02f063d0d75b3ff56}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_abbe2157f582a3495e766016ee998a535}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY}}~12000000\+UL
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ae4f8b326137515974703979d8f7c9638}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga93797ad2901b27dd84fa8b7edc9bb5c5a1eff23f1ee9c792ec44683af90206d50}{S\+Y\+S\+T\+E\+M\+\_\+\+X\+O\+S\+C\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+32768}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_abee2a4ac08122bc6d2d5ced8ea8fc914}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+A\+U\+T\+O\+\_\+\+G\+A\+I\+N\+\_\+\+C\+O\+N\+T\+R\+OL}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a219f7f72aad7640191b3600243cfc817}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a28e610ffaaea05b87cbc66085ca5369f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a02c8d32bc28c4407b82dd47b897c9403}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0aeb39f56f57c7de2f80c4e988cae93b}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggab463f9d80799466f12321e6252493e70a1f1e123ed025f2e02f063d0d75b3ff56}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a8813c275ed0609c8af59754dcdc06e47}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga6a5226fe65f283da094a3d1bd6c5692fa7205636a0c4b4d7bc1b1aad12aaf9a49}{S\+Y\+S\+T\+E\+M\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+65536}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a768a4ba2d3f88c67360fbbe30f5ee0a3}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+A\+U\+T\+O\+\_\+\+A\+M\+P\+L\+I\+T\+U\+D\+E\+\_\+\+C\+O\+N\+T\+R\+OL}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a5255730d6b4832c0e43a8f2e51ec642f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+1\+K\+H\+Z\+\_\+\+O\+U\+P\+UT}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a72f354060769c565f34226987c84975a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+32\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a9c7162036abce7c496cd2fbce0fa4d3a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa402d62c28172a09c3e186a7510c3691}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a01c4258cbd5a0e8b76ad03c279aef065}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ab31c8a669126c162410552d315806117}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggaf2f527fc5dd85dcf1c7091d6059d05cbab47cb8c22788fa124a7fa91d469972fa}{S\+Y\+S\+T\+E\+M\+\_\+\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+130}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0f0692f22b997e8e1e28d5c0f6a0c4bd}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+1\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a59fc82c972398a25a2c93b014bcb99e7}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+32\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a729d20a4b046a24cf9f35e1150ab98b7}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a89281c6ddcf169b1d56d43d955a35e42}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_acee21aeaf826d30cc9784b8f3bdba76f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a547ae9cf29e45eb1c060fda65a5083e0}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+L\+O\+O\+P\+\_\+\+M\+O\+DE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggaf264d9ce05843104cb8a393b1d9ddfa2a1a18e1d9233792ba5e4663c978d7a46b}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+L\+O\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+O\+S\+ED}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a8ea52b13ac21a51a061208b30c5b772a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a4dbcfa9d2b1375d21fa94b479accee09}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+F\+I\+N\+E\+\_\+\+V\+A\+L\+UE}}~(0xff / 4)
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_acfee66a372387370b7cda4b8a462576c}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR}}~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+3
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a9ed843668593e31294176935220f4cbf}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+U\+L\+T\+I\+P\+L\+Y\+\_\+\+F\+A\+C\+T\+OR}}~(48000000 / 32768)
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ab96f8903dd2703b9702221bb32fd7212}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+Q\+U\+I\+C\+K\+\_\+\+L\+O\+CK}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a910cb4aee2efdcd1a270e37d34b9696d}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+T\+R\+A\+C\+K\+\_\+\+A\+F\+T\+E\+R\+\_\+\+F\+I\+N\+E\+\_\+\+L\+O\+CK}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a09f6f0563735b4aeba4202ea4e39ed84}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+K\+E\+E\+P\+\_\+\+L\+O\+C\+K\+\_\+\+O\+N\+\_\+\+W\+A\+K\+E\+UP}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa3ee0ee4d91acdb8ad4bf1ae8335fa61}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+H\+I\+L\+L\+\_\+\+C\+Y\+C\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a1e931a72cc33acdb243ca6ae8f8d2099}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+A\+X\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+S\+T\+E\+P\+\_\+\+S\+I\+ZE}}~(0x1f / 4)
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0aaca6aedf88482cf007c68de80d9be2}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+A\+X\+\_\+\+F\+I\+N\+E\+\_\+\+S\+T\+E\+P\+\_\+\+S\+I\+ZE}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_afda1bbe8f20694433c96359d8cce3516}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a59e6c51d4e3972214f5979b9204ae21c}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ad59cc39496aa8930fd4e45d2ebb0eb7f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa29bc93b27ecfb3e9760fe0b623c8f7c}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+B\+Y\+P\+A\+SS}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac21c13f20bf3a1550b4f8b46c634f926}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+W\+A\+K\+E\+\_\+\+U\+P\+\_\+\+F\+A\+ST}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a59e43661daffbf0279ed0d51c2c984c2}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0eb4b56222ec1d6fa2bb37d581297fce}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+T\+I\+ME}}~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+T\+I\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ab0d812ecdaf8833b7f2aa4d9a820c61c}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+C\+L\+O\+CK}}~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32K
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a2cda0800a63829cdeefc630525afb09e}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+F\+I\+L\+T\+ER}}~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a4d662104b03f91425e76fd2ea3459d99}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY}}~32768
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a00629a94bacde08078eac041537b6545}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+D\+I\+V\+I\+D\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a7897fa464ab5736af7e3b60f0da81df6}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY}}~48000000
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac465ab8a6513c36a7fd203093712eb49}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR}}~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ad7995c788dcf37e5e2c23ad385105b9d}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR}}~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a89ce538db8570ed34670c5d5fb332a69}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+G\+C\+LK}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a1d645772e68dc0d31196cafd71eceb38}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac2c10ac03b7c5ac331bb662e87741e65}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a55f57c4229bbd72b82dfb5d7f63a3689}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a6115cfc6953d6fceaaa84fbfcfd51212}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+F\+LL}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ae48ae01a75ebf943ef3c5d895d12f681}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac61a24e4846de4cc2d56764baeca40d1}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_abec49b1b2eca444d97e5fabdf240f911}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aaef679a08a9bef4a81d5f5886c1fe6eb}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a2c58e741d6d9a11c0c4d6f0fbd962533}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a86b049a4cfcf151eb59ce0e61dcd1287}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a548060d567516f600598a4bca5845139}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a7e5b5bcecddb929855629b8e8b3aa000}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aac5c83a8131ce796e4edef9c1b87ef1a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa2feed4ac14dd19a4b6343445fbf7581}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a122233d164de1b1847acc526e1d83360}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+X\+O\+S\+C32K}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa0e81f26f7154afd05e8a8857df3e340}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a8ce6386ded28bbc0bb9b48d343d67e79}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a6fba3029e5102605766d50148a2a5db1}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aa3a3ff4146d228f9c5da1569479ea853}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a99fa839f571c53995d88325c9498722a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a122233d164de1b1847acc526e1d83360}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+X\+O\+S\+C32K}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a96bde5d0b117ffe7a837c548c47df1cc}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ade0a86f5c96b244563776391c7d251d5}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_af595184002d1caff0cf5101ed0fcbb1b}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a803c77ad9ff4ef9d173d7496de72210f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a1a8ed95317ff0f97f0e72b1e8fa60669}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a2da1426d240b96544956a8706cbf948b}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aab12a38119e3f348fb6235c57eb85f3b}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aed289b4da780b120c15025d65a1c04ee}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aaa0310fd098ce274c57b97ac3759a70c}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_abb0995d55a9b0a328220880e8da78dfb}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a4d265b9a20e8180497eea03c013287ed}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a4f01b683f9c0a91d5711d28f7ecc4353}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a5d6bc0357837928fec6702996146f757}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a8cc7b00bc1b5e1e0c6732ec2320b671f}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aac3692519de2bf9b4d41b07df3cd294b}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aed8f40f45639e81d9de8b1b525e6b15a}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a217415121ce4a24cdcfe44115571b7d8}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0b4700e8894de21d720367b72e9368f2}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a2c6350144c50e4f501ed3944bd4d5d73}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a81b03d20d41a479c08729b8df50f8bde}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_af58b12b0844a1c75ae79f9bd53ec5d60}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac7a6d317da37f463bd96132fe12408c9}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a0b46fcfc2e51e9906b512a3acfe5dd38}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_af0e2eb6200a02914f3b2ea277441a564}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_a4bf4cb001b62c80fc1b21faeeeecf0da}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_aab0ebdcf07ba0f24fc6cb6d8e33e92d6}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{conf__clocks_8h_ac514b7e5479eff2dba74b2929a59b8cb}{C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE}}~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM D21 Clock configuration. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{conf__clocks_8h_adb25b207beb8f78d9ae012fedb4aba4e}\label{conf__clocks_8h_adb25b207beb8f78d9ae012fedb4aba4e}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_APBA\_DIVIDER@{CONF\_CLOCK\_APBA\_DIVIDER}}
+\index{CONF\_CLOCK\_APBA\_DIVIDER@{CONF\_CLOCK\_APBA\_DIVIDER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_APBA\_DIVIDER}{CONF\_CLOCK\_APBA\_DIVIDER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+A\+\_\+\+D\+I\+V\+I\+D\+ER~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a87d21519abdf4f7a83f1d7037f5308d5}\label{conf__clocks_8h_a87d21519abdf4f7a83f1d7037f5308d5}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_APBB\_DIVIDER@{CONF\_CLOCK\_APBB\_DIVIDER}}
+\index{CONF\_CLOCK\_APBB\_DIVIDER@{CONF\_CLOCK\_APBB\_DIVIDER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_APBB\_DIVIDER}{CONF\_CLOCK\_APBB\_DIVIDER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+B\+\_\+\+D\+I\+V\+I\+D\+ER~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a693d24c0d8387f5e0e8454d43b9d878e}\label{conf__clocks_8h_a693d24c0d8387f5e0e8454d43b9d878e}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_APBC\_DIVIDER@{CONF\_CLOCK\_APBC\_DIVIDER}}
+\index{CONF\_CLOCK\_APBC\_DIVIDER@{CONF\_CLOCK\_APBC\_DIVIDER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_APBC\_DIVIDER}{CONF\_CLOCK\_APBC\_DIVIDER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+A\+P\+B\+C\+\_\+\+D\+I\+V\+I\+D\+ER~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a89ce538db8570ed34670c5d5fb332a69}\label{conf__clocks_8h_a89ce538db8570ed34670c5d5fb332a69}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_CONFIGURE\_GCLK@{CONF\_CLOCK\_CONFIGURE\_GCLK}}
+\index{CONF\_CLOCK\_CONFIGURE\_GCLK@{CONF\_CLOCK\_CONFIGURE\_GCLK}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_CONFIGURE\_GCLK}{CONF\_CLOCK\_CONFIGURE\_GCLK}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+G\+C\+LK~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a306974c657c1978f9932985d52299e35}\label{conf__clocks_8h_a306974c657c1978f9932985d52299e35}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT@{CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT}}
+\index{CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT@{CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT}{CONF\_CLOCK\_CPU\_CLOCK\_FAILURE\_DETECT}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+D\+E\+T\+E\+CT~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a13335e9ee97daf2a97dc1938d017d033}\label{conf__clocks_8h_a13335e9ee97daf2a97dc1938d017d033}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_CPU\_DIVIDER@{CONF\_CLOCK\_CPU\_DIVIDER}}
+\index{CONF\_CLOCK\_CPU\_DIVIDER@{CONF\_CLOCK\_CPU\_DIVIDER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_CPU\_DIVIDER}{CONF\_CLOCK\_CPU\_DIVIDER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+C\+P\+U\+\_\+\+D\+I\+V\+I\+D\+ER~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga30e9b73868506309f3dc4935fbe9ce4baa4e9b93b809ddfbdffb13f72da94c1d7}{S\+Y\+S\+T\+E\+M\+\_\+\+M\+A\+I\+N\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+I\+V\+\_\+1}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_acee21aeaf826d30cc9784b8f3bdba76f}\label{conf__clocks_8h_acee21aeaf826d30cc9784b8f3bdba76f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_ENABLE@{CONF\_CLOCK\_DFLL\_ENABLE}}
+\index{CONF\_CLOCK\_DFLL\_ENABLE@{CONF\_CLOCK\_DFLL\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_ENABLE}{CONF\_CLOCK\_DFLL\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa3ee0ee4d91acdb8ad4bf1ae8335fa61}\label{conf__clocks_8h_aa3ee0ee4d91acdb8ad4bf1ae8335fa61}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE@{CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE}}
+\index{CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE@{CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE}{CONF\_CLOCK\_DFLL\_ENABLE\_CHILL\_CYCLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+C\+H\+I\+L\+L\+\_\+\+C\+Y\+C\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a4dbcfa9d2b1375d21fa94b479accee09}\label{conf__clocks_8h_a4dbcfa9d2b1375d21fa94b479accee09}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_FINE\_VALUE@{CONF\_CLOCK\_DFLL\_FINE\_VALUE}}
+\index{CONF\_CLOCK\_DFLL\_FINE\_VALUE@{CONF\_CLOCK\_DFLL\_FINE\_VALUE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_FINE\_VALUE}{CONF\_CLOCK\_DFLL\_FINE\_VALUE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+F\+I\+N\+E\+\_\+\+V\+A\+L\+UE~(0xff / 4)}
+
+\mbox{\Hypertarget{conf__clocks_8h_a09f6f0563735b4aeba4202ea4e39ed84}\label{conf__clocks_8h_a09f6f0563735b4aeba4202ea4e39ed84}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP@{CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP}}
+\index{CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP@{CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP}{CONF\_CLOCK\_DFLL\_KEEP\_LOCK\_ON\_WAKEUP}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+K\+E\+E\+P\+\_\+\+L\+O\+C\+K\+\_\+\+O\+N\+\_\+\+W\+A\+K\+E\+UP~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a547ae9cf29e45eb1c060fda65a5083e0}\label{conf__clocks_8h_a547ae9cf29e45eb1c060fda65a5083e0}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_LOOP\_MODE@{CONF\_CLOCK\_DFLL\_LOOP\_MODE}}
+\index{CONF\_CLOCK\_DFLL\_LOOP\_MODE@{CONF\_CLOCK\_DFLL\_LOOP\_MODE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_LOOP\_MODE}{CONF\_CLOCK\_DFLL\_LOOP\_MODE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+L\+O\+O\+P\+\_\+\+M\+O\+DE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggaf264d9ce05843104cb8a393b1d9ddfa2a1a18e1d9233792ba5e4663c978d7a46b}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+L\+O\+O\+P\+\_\+\+M\+O\+D\+E\+\_\+\+C\+L\+O\+S\+ED}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a1e931a72cc33acdb243ca6ae8f8d2099}\label{conf__clocks_8h_a1e931a72cc33acdb243ca6ae8f8d2099}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE@{CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE}}
+\index{CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE@{CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE}{CONF\_CLOCK\_DFLL\_MAX\_COARSE\_STEP\_SIZE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+A\+X\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+S\+T\+E\+P\+\_\+\+S\+I\+ZE~(0x1f / 4)}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0aaca6aedf88482cf007c68de80d9be2}\label{conf__clocks_8h_a0aaca6aedf88482cf007c68de80d9be2}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE@{CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE}}
+\index{CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE@{CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE}{CONF\_CLOCK\_DFLL\_MAX\_FINE\_STEP\_SIZE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+A\+X\+\_\+\+F\+I\+N\+E\+\_\+\+S\+T\+E\+P\+\_\+\+S\+I\+ZE~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a9ed843668593e31294176935220f4cbf}\label{conf__clocks_8h_a9ed843668593e31294176935220f4cbf}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR@{CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR}}
+\index{CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR@{CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR}{CONF\_CLOCK\_DFLL\_MULTIPLY\_FACTOR}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+M\+U\+L\+T\+I\+P\+L\+Y\+\_\+\+F\+A\+C\+T\+OR~(48000000 / 32768)}
+
+\mbox{\Hypertarget{conf__clocks_8h_a8ea52b13ac21a51a061208b30c5b772a}\label{conf__clocks_8h_a8ea52b13ac21a51a061208b30c5b772a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_ON\_DEMAND@{CONF\_CLOCK\_DFLL\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_DFLL\_ON\_DEMAND@{CONF\_CLOCK\_DFLL\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_ON\_DEMAND}{CONF\_CLOCK\_DFLL\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ab96f8903dd2703b9702221bb32fd7212}\label{conf__clocks_8h_ab96f8903dd2703b9702221bb32fd7212}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_QUICK\_LOCK@{CONF\_CLOCK\_DFLL\_QUICK\_LOCK}}
+\index{CONF\_CLOCK\_DFLL\_QUICK\_LOCK@{CONF\_CLOCK\_DFLL\_QUICK\_LOCK}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_QUICK\_LOCK}{CONF\_CLOCK\_DFLL\_QUICK\_LOCK}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+Q\+U\+I\+C\+K\+\_\+\+L\+O\+CK~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_acfee66a372387370b7cda4b8a462576c}\label{conf__clocks_8h_acfee66a372387370b7cda4b8a462576c}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR@{CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR}}
+\index{CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR@{CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR}{CONF\_CLOCK\_DFLL\_SOURCE\_GCLK\_GENERATOR}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+3}
+
+\mbox{\Hypertarget{conf__clocks_8h_a910cb4aee2efdcd1a270e37d34b9696d}\label{conf__clocks_8h_a910cb4aee2efdcd1a270e37d34b9696d}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK@{CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK}}
+\index{CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK@{CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK}{CONF\_CLOCK\_DFLL\_TRACK\_AFTER\_FINE\_LOCK}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+F\+L\+L\+\_\+\+T\+R\+A\+C\+K\+\_\+\+A\+F\+T\+E\+R\+\_\+\+F\+I\+N\+E\+\_\+\+L\+O\+CK~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_afda1bbe8f20694433c96359d8cce3516}\label{conf__clocks_8h_afda1bbe8f20694433c96359d8cce3516}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_ENABLE@{CONF\_CLOCK\_DPLL\_ENABLE}}
+\index{CONF\_CLOCK\_DPLL\_ENABLE@{CONF\_CLOCK\_DPLL\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_ENABLE}{CONF\_CLOCK\_DPLL\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a2cda0800a63829cdeefc630525afb09e}\label{conf__clocks_8h_a2cda0800a63829cdeefc630525afb09e}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_FILTER@{CONF\_CLOCK\_DPLL\_FILTER}}
+\index{CONF\_CLOCK\_DPLL\_FILTER@{CONF\_CLOCK\_DPLL\_FILTER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_FILTER}{CONF\_CLOCK\_DPLL\_FILTER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+F\+I\+L\+T\+ER~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa29bc93b27ecfb3e9760fe0b623c8f7c}\label{conf__clocks_8h_aa29bc93b27ecfb3e9760fe0b623c8f7c}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_LOCK\_BYPASS@{CONF\_CLOCK\_DPLL\_LOCK\_BYPASS}}
+\index{CONF\_CLOCK\_DPLL\_LOCK\_BYPASS@{CONF\_CLOCK\_DPLL\_LOCK\_BYPASS}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_LOCK\_BYPASS}{CONF\_CLOCK\_DPLL\_LOCK\_BYPASS}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+B\+Y\+P\+A\+SS~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ad7995c788dcf37e5e2c23ad385105b9d}\label{conf__clocks_8h_ad7995c788dcf37e5e2c23ad385105b9d}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR@{CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR}}
+\index{CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR@{CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR}{CONF\_CLOCK\_DPLL\_LOCK\_GCLK\_GENERATOR}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0eb4b56222ec1d6fa2bb37d581297fce}\label{conf__clocks_8h_a0eb4b56222ec1d6fa2bb37d581297fce}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_LOCK\_TIME@{CONF\_CLOCK\_DPLL\_LOCK\_TIME}}
+\index{CONF\_CLOCK\_DPLL\_LOCK\_TIME@{CONF\_CLOCK\_DPLL\_LOCK\_TIME}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_LOCK\_TIME}{CONF\_CLOCK\_DPLL\_LOCK\_TIME}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+T\+I\+ME~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+C\+K\+\_\+\+T\+I\+M\+E\+\_\+\+D\+E\+F\+A\+U\+LT}
+
+\mbox{\Hypertarget{conf__clocks_8h_a59e43661daffbf0279ed0d51c2c984c2}\label{conf__clocks_8h_a59e43661daffbf0279ed0d51c2c984c2}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE@{CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE}}
+\index{CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE@{CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE}{CONF\_CLOCK\_DPLL\_LOW\_POWER\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a59e6c51d4e3972214f5979b9204ae21c}\label{conf__clocks_8h_a59e6c51d4e3972214f5979b9204ae21c}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_ON\_DEMAND@{CONF\_CLOCK\_DPLL\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_DPLL\_ON\_DEMAND@{CONF\_CLOCK\_DPLL\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_ON\_DEMAND}{CONF\_CLOCK\_DPLL\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a7897fa464ab5736af7e3b60f0da81df6}\label{conf__clocks_8h_a7897fa464ab5736af7e3b60f0da81df6}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY@{CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY}}
+\index{CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY@{CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY}{CONF\_CLOCK\_DPLL\_OUTPUT\_FREQUENCY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY~48000000}
+
+\mbox{\Hypertarget{conf__clocks_8h_ab0d812ecdaf8833b7f2aa4d9a820c61c}\label{conf__clocks_8h_ab0d812ecdaf8833b7f2aa4d9a820c61c}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK@{CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK}}
+\index{CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK@{CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK}{CONF\_CLOCK\_DPLL\_REFERENCE\_CLOCK}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+C\+L\+O\+CK~S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32K}
+
+\mbox{\Hypertarget{conf__clocks_8h_a00629a94bacde08078eac041537b6545}\label{conf__clocks_8h_a00629a94bacde08078eac041537b6545}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER@{CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER}}
+\index{CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER@{CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER}{CONF\_CLOCK\_DPLL\_REFERENCE\_DIVIDER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+D\+I\+V\+I\+D\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a4d662104b03f91425e76fd2ea3459d99}\label{conf__clocks_8h_a4d662104b03f91425e76fd2ea3459d99}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY@{CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY}}
+\index{CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY@{CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY}{CONF\_CLOCK\_DPLL\_REFERENCE\_FREQUENCY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY~32768}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac465ab8a6513c36a7fd203093712eb49}\label{conf__clocks_8h_ac465ab8a6513c36a7fd203093712eb49}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR@{CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR}}
+\index{CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR@{CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR}{CONF\_CLOCK\_DPLL\_REFERENCE\_GCLK\_GENERATOR}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+E\+F\+E\+R\+E\+N\+C\+E\+\_\+\+G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+OR~G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+1}
+
+\mbox{\Hypertarget{conf__clocks_8h_ad59cc39496aa8930fd4e45d2ebb0eb7f}\label{conf__clocks_8h_ad59cc39496aa8930fd4e45d2ebb0eb7f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_DPLL\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac21c13f20bf3a1550b4f8b46c634f926}\label{conf__clocks_8h_ac21c13f20bf3a1550b4f8b46c634f926}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST@{CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST}}
+\index{CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST@{CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST}{CONF\_CLOCK\_DPLL\_WAKE\_UP\_FAST}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+D\+P\+L\+L\+\_\+\+W\+A\+K\+E\+\_\+\+U\+P\+\_\+\+F\+A\+ST~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a8d3c40ca0cf96c483a00b1ae4e8190c4}\label{conf__clocks_8h_a8d3c40ca0cf96c483a00b1ae4e8190c4}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_FLASH\_WAIT\_STATES@{CONF\_CLOCK\_FLASH\_WAIT\_STATES}}
+\index{CONF\_CLOCK\_FLASH\_WAIT\_STATES@{CONF\_CLOCK\_FLASH\_WAIT\_STATES}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_FLASH\_WAIT\_STATES}{CONF\_CLOCK\_FLASH\_WAIT\_STATES}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+F\+L\+A\+S\+H\+\_\+\+W\+A\+I\+T\+\_\+\+S\+T\+A\+T\+ES~2}
+
+\mbox{\Hypertarget{conf__clocks_8h_a55f57c4229bbd72b82dfb5d7f63a3689}\label{conf__clocks_8h_a55f57c4229bbd72b82dfb5d7f63a3689}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_0\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a6115cfc6953d6fceaaa84fbfcfd51212}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+D\+F\+LL}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a1d645772e68dc0d31196cafd71eceb38}\label{conf__clocks_8h_a1d645772e68dc0d31196cafd71eceb38}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_0\_ENABLE@{CONF\_CLOCK\_GCLK\_0\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_0\_ENABLE@{CONF\_CLOCK\_GCLK\_0\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_0\_ENABLE}{CONF\_CLOCK\_GCLK\_0\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac61a24e4846de4cc2d56764baeca40d1}\label{conf__clocks_8h_ac61a24e4846de4cc2d56764baeca40d1}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_0\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ae48ae01a75ebf943ef3c5d895d12f681}\label{conf__clocks_8h_ae48ae01a75ebf943ef3c5d895d12f681}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_0\_PRESCALER@{CONF\_CLOCK\_GCLK\_0\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_0\_PRESCALER@{CONF\_CLOCK\_GCLK\_0\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_0\_PRESCALER}{CONF\_CLOCK\_GCLK\_0\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac2c10ac03b7c5ac331bb662e87741e65}\label{conf__clocks_8h_ac2c10ac03b7c5ac331bb662e87741e65}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_0\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+0\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a2c58e741d6d9a11c0c4d6f0fbd962533}\label{conf__clocks_8h_a2c58e741d6d9a11c0c4d6f0fbd962533}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_1\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_abec49b1b2eca444d97e5fabdf240f911}\label{conf__clocks_8h_abec49b1b2eca444d97e5fabdf240f911}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_1\_ENABLE@{CONF\_CLOCK\_GCLK\_1\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_1\_ENABLE@{CONF\_CLOCK\_GCLK\_1\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_1\_ENABLE}{CONF\_CLOCK\_GCLK\_1\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a548060d567516f600598a4bca5845139}\label{conf__clocks_8h_a548060d567516f600598a4bca5845139}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_1\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a86b049a4cfcf151eb59ce0e61dcd1287}\label{conf__clocks_8h_a86b049a4cfcf151eb59ce0e61dcd1287}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_1\_PRESCALER@{CONF\_CLOCK\_GCLK\_1\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_1\_PRESCALER@{CONF\_CLOCK\_GCLK\_1\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_1\_PRESCALER}{CONF\_CLOCK\_GCLK\_1\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_aaef679a08a9bef4a81d5f5886c1fe6eb}\label{conf__clocks_8h_aaef679a08a9bef4a81d5f5886c1fe6eb}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_1\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+1\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa2feed4ac14dd19a4b6343445fbf7581}\label{conf__clocks_8h_aa2feed4ac14dd19a4b6343445fbf7581}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_2\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a122233d164de1b1847acc526e1d83360}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+X\+O\+S\+C32K}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a7e5b5bcecddb929855629b8e8b3aa000}\label{conf__clocks_8h_a7e5b5bcecddb929855629b8e8b3aa000}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_2\_ENABLE@{CONF\_CLOCK\_GCLK\_2\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_2\_ENABLE@{CONF\_CLOCK\_GCLK\_2\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_2\_ENABLE}{CONF\_CLOCK\_GCLK\_2\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a8ce6386ded28bbc0bb9b48d343d67e79}\label{conf__clocks_8h_a8ce6386ded28bbc0bb9b48d343d67e79}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_2\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa0e81f26f7154afd05e8a8857df3e340}\label{conf__clocks_8h_aa0e81f26f7154afd05e8a8857df3e340}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_2\_PRESCALER@{CONF\_CLOCK\_GCLK\_2\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_2\_PRESCALER@{CONF\_CLOCK\_GCLK\_2\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_2\_PRESCALER}{CONF\_CLOCK\_GCLK\_2\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_aac5c83a8131ce796e4edef9c1b87ef1a}\label{conf__clocks_8h_aac5c83a8131ce796e4edef9c1b87ef1a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_2\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+2\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a99fa839f571c53995d88325c9498722a}\label{conf__clocks_8h_a99fa839f571c53995d88325c9498722a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_3\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a122233d164de1b1847acc526e1d83360}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+X\+O\+S\+C32K}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a6fba3029e5102605766d50148a2a5db1}\label{conf__clocks_8h_a6fba3029e5102605766d50148a2a5db1}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_3\_ENABLE@{CONF\_CLOCK\_GCLK\_3\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_3\_ENABLE@{CONF\_CLOCK\_GCLK\_3\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_3\_ENABLE}{CONF\_CLOCK\_GCLK\_3\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ade0a86f5c96b244563776391c7d251d5}\label{conf__clocks_8h_ade0a86f5c96b244563776391c7d251d5}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_3\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a96bde5d0b117ffe7a837c548c47df1cc}\label{conf__clocks_8h_a96bde5d0b117ffe7a837c548c47df1cc}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_3\_PRESCALER@{CONF\_CLOCK\_GCLK\_3\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_3\_PRESCALER@{CONF\_CLOCK\_GCLK\_3\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_3\_PRESCALER}{CONF\_CLOCK\_GCLK\_3\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa3a3ff4146d228f9c5da1569479ea853}\label{conf__clocks_8h_aa3a3ff4146d228f9c5da1569479ea853}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_3\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+3\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a1a8ed95317ff0f97f0e72b1e8fa60669}\label{conf__clocks_8h_a1a8ed95317ff0f97f0e72b1e8fa60669}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_4\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_af595184002d1caff0cf5101ed0fcbb1b}\label{conf__clocks_8h_af595184002d1caff0cf5101ed0fcbb1b}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_4\_ENABLE@{CONF\_CLOCK\_GCLK\_4\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_4\_ENABLE@{CONF\_CLOCK\_GCLK\_4\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_4\_ENABLE}{CONF\_CLOCK\_GCLK\_4\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aab12a38119e3f348fb6235c57eb85f3b}\label{conf__clocks_8h_aab12a38119e3f348fb6235c57eb85f3b}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_4\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a2da1426d240b96544956a8706cbf948b}\label{conf__clocks_8h_a2da1426d240b96544956a8706cbf948b}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_4\_PRESCALER@{CONF\_CLOCK\_GCLK\_4\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_4\_PRESCALER@{CONF\_CLOCK\_GCLK\_4\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_4\_PRESCALER}{CONF\_CLOCK\_GCLK\_4\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a803c77ad9ff4ef9d173d7496de72210f}\label{conf__clocks_8h_a803c77ad9ff4ef9d173d7496de72210f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_4\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+4\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_abb0995d55a9b0a328220880e8da78dfb}\label{conf__clocks_8h_abb0995d55a9b0a328220880e8da78dfb}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_5\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aed289b4da780b120c15025d65a1c04ee}\label{conf__clocks_8h_aed289b4da780b120c15025d65a1c04ee}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_5\_ENABLE@{CONF\_CLOCK\_GCLK\_5\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_5\_ENABLE@{CONF\_CLOCK\_GCLK\_5\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_5\_ENABLE}{CONF\_CLOCK\_GCLK\_5\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a4f01b683f9c0a91d5711d28f7ecc4353}\label{conf__clocks_8h_a4f01b683f9c0a91d5711d28f7ecc4353}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_5\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a4d265b9a20e8180497eea03c013287ed}\label{conf__clocks_8h_a4d265b9a20e8180497eea03c013287ed}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_5\_PRESCALER@{CONF\_CLOCK\_GCLK\_5\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_5\_PRESCALER@{CONF\_CLOCK\_GCLK\_5\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_5\_PRESCALER}{CONF\_CLOCK\_GCLK\_5\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_aaa0310fd098ce274c57b97ac3759a70c}\label{conf__clocks_8h_aaa0310fd098ce274c57b97ac3759a70c}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_5\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+5\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aac3692519de2bf9b4d41b07df3cd294b}\label{conf__clocks_8h_aac3692519de2bf9b4d41b07df3cd294b}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_6\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a5d6bc0357837928fec6702996146f757}\label{conf__clocks_8h_a5d6bc0357837928fec6702996146f757}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_6\_ENABLE@{CONF\_CLOCK\_GCLK\_6\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_6\_ENABLE@{CONF\_CLOCK\_GCLK\_6\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_6\_ENABLE}{CONF\_CLOCK\_GCLK\_6\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a217415121ce4a24cdcfe44115571b7d8}\label{conf__clocks_8h_a217415121ce4a24cdcfe44115571b7d8}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_6\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aed8f40f45639e81d9de8b1b525e6b15a}\label{conf__clocks_8h_aed8f40f45639e81d9de8b1b525e6b15a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_6\_PRESCALER@{CONF\_CLOCK\_GCLK\_6\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_6\_PRESCALER@{CONF\_CLOCK\_GCLK\_6\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_6\_PRESCALER}{CONF\_CLOCK\_GCLK\_6\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a8cc7b00bc1b5e1e0c6732ec2320b671f}\label{conf__clocks_8h_a8cc7b00bc1b5e1e0c6732ec2320b671f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_6\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+6\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a81b03d20d41a479c08729b8df50f8bde}\label{conf__clocks_8h_a81b03d20d41a479c08729b8df50f8bde}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_7\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0b4700e8894de21d720367b72e9368f2}\label{conf__clocks_8h_a0b4700e8894de21d720367b72e9368f2}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_7\_ENABLE@{CONF\_CLOCK\_GCLK\_7\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_7\_ENABLE@{CONF\_CLOCK\_GCLK\_7\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_7\_ENABLE}{CONF\_CLOCK\_GCLK\_7\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac7a6d317da37f463bd96132fe12408c9}\label{conf__clocks_8h_ac7a6d317da37f463bd96132fe12408c9}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_7\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_af58b12b0844a1c75ae79f9bd53ec5d60}\label{conf__clocks_8h_af58b12b0844a1c75ae79f9bd53ec5d60}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_7\_PRESCALER@{CONF\_CLOCK\_GCLK\_7\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_7\_PRESCALER@{CONF\_CLOCK\_GCLK\_7\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_7\_PRESCALER}{CONF\_CLOCK\_GCLK\_7\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_a2c6350144c50e4f501ed3944bd4d5d73}\label{conf__clocks_8h_a2c6350144c50e4f501ed3944bd4d5d73}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_7\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+7\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a4bf4cb001b62c80fc1b21faeeeecf0da}\label{conf__clocks_8h_a4bf4cb001b62c80fc1b21faeeeecf0da}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE}}
+\index{CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE@{CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE}{CONF\_CLOCK\_GCLK\_8\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga86882dc960f2552722e9713da97fcc58a7a76d4184666899a7b6c4e7f49395f3d}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+O\+S\+C8M}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0b46fcfc2e51e9906b512a3acfe5dd38}\label{conf__clocks_8h_a0b46fcfc2e51e9906b512a3acfe5dd38}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_8\_ENABLE@{CONF\_CLOCK\_GCLK\_8\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_8\_ENABLE@{CONF\_CLOCK\_GCLK\_8\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_8\_ENABLE}{CONF\_CLOCK\_GCLK\_8\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ac514b7e5479eff2dba74b2929a59b8cb}\label{conf__clocks_8h_ac514b7e5479eff2dba74b2929a59b8cb}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE}}
+\index{CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE@{CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE}{CONF\_CLOCK\_GCLK\_8\_OUTPUT\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aab0ebdcf07ba0f24fc6cb6d8e33e92d6}\label{conf__clocks_8h_aab0ebdcf07ba0f24fc6cb6d8e33e92d6}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_8\_PRESCALER@{CONF\_CLOCK\_GCLK\_8\_PRESCALER}}
+\index{CONF\_CLOCK\_GCLK\_8\_PRESCALER@{CONF\_CLOCK\_GCLK\_8\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_8\_PRESCALER}{CONF\_CLOCK\_GCLK\_8\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~1}
+
+\mbox{\Hypertarget{conf__clocks_8h_af0e2eb6200a02914f3b2ea277441a564}\label{conf__clocks_8h_af0e2eb6200a02914f3b2ea277441a564}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_GCLK\_8\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+G\+C\+L\+K\+\_\+8\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a01c4258cbd5a0e8b76ad03c279aef065}\label{conf__clocks_8h_a01c4258cbd5a0e8b76ad03c279aef065}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_ENABLE@{CONF\_CLOCK\_OSC32K\_ENABLE}}
+\index{CONF\_CLOCK\_OSC32K\_ENABLE@{CONF\_CLOCK\_OSC32K\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_ENABLE}{CONF\_CLOCK\_OSC32K\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0f0692f22b997e8e1e28d5c0f6a0c4bd}\label{conf__clocks_8h_a0f0692f22b997e8e1e28d5c0f6a0c4bd}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT@{CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT}}
+\index{CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT@{CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT}{CONF\_CLOCK\_OSC32K\_ENABLE\_1KHZ\_OUTPUT}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+1\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a59fc82c972398a25a2c93b014bcb99e7}\label{conf__clocks_8h_a59fc82c972398a25a2c93b014bcb99e7}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT@{CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT}}
+\index{CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT@{CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT}{CONF\_CLOCK\_OSC32K\_ENABLE\_32KHZ\_OUTPUT}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+32\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a729d20a4b046a24cf9f35e1150ab98b7}\label{conf__clocks_8h_a729d20a4b046a24cf9f35e1150ab98b7}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_ON\_DEMAND@{CONF\_CLOCK\_OSC32K\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_OSC32K\_ON\_DEMAND@{CONF\_CLOCK\_OSC32K\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_ON\_DEMAND}{CONF\_CLOCK\_OSC32K\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a89281c6ddcf169b1d56d43d955a35e42}\label{conf__clocks_8h_a89281c6ddcf169b1d56d43d955a35e42}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_OSC32K\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ab31c8a669126c162410552d315806117}\label{conf__clocks_8h_ab31c8a669126c162410552d315806117}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC32K\_STARTUP\_TIME@{CONF\_CLOCK\_OSC32K\_STARTUP\_TIME}}
+\index{CONF\_CLOCK\_OSC32K\_STARTUP\_TIME@{CONF\_CLOCK\_OSC32K\_STARTUP\_TIME}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC32K\_STARTUP\_TIME}{CONF\_CLOCK\_OSC32K\_STARTUP\_TIME}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggaf2f527fc5dd85dcf1c7091d6059d05cbab47cb8c22788fa124a7fa91d469972fa}{S\+Y\+S\+T\+E\+M\+\_\+\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+130}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a1bcb9549a9e731dba2c6166333855e33}\label{conf__clocks_8h_a1bcb9549a9e731dba2c6166333855e33}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC8M\_ON\_DEMAND@{CONF\_CLOCK\_OSC8M\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_OSC8M\_ON\_DEMAND@{CONF\_CLOCK\_OSC8M\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC8M\_ON\_DEMAND}{CONF\_CLOCK\_OSC8M\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ad79c7c4e928a5919a26af6c2accaa0b7}\label{conf__clocks_8h_ad79c7c4e928a5919a26af6c2accaa0b7}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC8M\_PRESCALER@{CONF\_CLOCK\_OSC8M\_PRESCALER}}
+\index{CONF\_CLOCK\_OSC8M\_PRESCALER@{CONF\_CLOCK\_OSC8M\_PRESCALER}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC8M\_PRESCALER}{CONF\_CLOCK\_OSC8M\_PRESCALER}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga1ee1b0be167bd253038400d9c6d0cbefa564fc679b9f90127b6666b6bced33463}{S\+Y\+S\+T\+E\+M\+\_\+\+O\+S\+C8\+M\+\_\+\+D\+I\+V\+\_\+1}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ae166dabd3130208cb2e6e8d5c0f37da2}\label{conf__clocks_8h_ae166dabd3130208cb2e6e8d5c0f37da2}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_OSC8M\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+O\+S\+C8\+M\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a768a4ba2d3f88c67360fbbe30f5ee0a3}\label{conf__clocks_8h_a768a4ba2d3f88c67360fbbe30f5ee0a3}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL@{CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL}}
+\index{CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL@{CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL}{CONF\_CLOCK\_XOSC32K\_AUTO\_AMPLITUDE\_CONTROL}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+A\+U\+T\+O\+\_\+\+A\+M\+P\+L\+I\+T\+U\+D\+E\+\_\+\+C\+O\+N\+T\+R\+OL~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a02c8d32bc28c4407b82dd47b897c9403}\label{conf__clocks_8h_a02c8d32bc28c4407b82dd47b897c9403}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_ENABLE@{CONF\_CLOCK\_XOSC32K\_ENABLE}}
+\index{CONF\_CLOCK\_XOSC32K\_ENABLE@{CONF\_CLOCK\_XOSC32K\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_ENABLE}{CONF\_CLOCK\_XOSC32K\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a5255730d6b4832c0e43a8f2e51ec642f}\label{conf__clocks_8h_a5255730d6b4832c0e43a8f2e51ec642f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT@{CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT}}
+\index{CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT@{CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT}{CONF\_CLOCK\_XOSC32K\_ENABLE\_1KHZ\_OUPUT}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+1\+K\+H\+Z\+\_\+\+O\+U\+P\+UT~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a72f354060769c565f34226987c84975a}\label{conf__clocks_8h_a72f354060769c565f34226987c84975a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT@{CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT}}
+\index{CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT@{CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT}{CONF\_CLOCK\_XOSC32K\_ENABLE\_32KHZ\_OUTPUT}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+32\+K\+H\+Z\+\_\+\+O\+U\+T\+P\+UT~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a0aeb39f56f57c7de2f80c4e988cae93b}\label{conf__clocks_8h_a0aeb39f56f57c7de2f80c4e988cae93b}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL@{CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL}}
+\index{CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL@{CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL}{CONF\_CLOCK\_XOSC32K\_EXTERNAL\_CRYSTAL}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggab463f9d80799466f12321e6252493e70a1f1e123ed025f2e02f063d0d75b3ff56}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a9c7162036abce7c496cd2fbce0fa4d3a}\label{conf__clocks_8h_a9c7162036abce7c496cd2fbce0fa4d3a}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_ON\_DEMAND@{CONF\_CLOCK\_XOSC32K\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_XOSC32K\_ON\_DEMAND@{CONF\_CLOCK\_XOSC32K\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_ON\_DEMAND}{CONF\_CLOCK\_XOSC32K\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_aa402d62c28172a09c3e186a7510c3691}\label{conf__clocks_8h_aa402d62c28172a09c3e186a7510c3691}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_XOSC32K\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a8813c275ed0609c8af59754dcdc06e47}\label{conf__clocks_8h_a8813c275ed0609c8af59754dcdc06e47}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME@{CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME}}
+\index{CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME@{CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME}{CONF\_CLOCK\_XOSC32K\_STARTUP\_TIME}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga6a5226fe65f283da094a3d1bd6c5692fa7205636a0c4b4d7bc1b1aad12aaf9a49}{S\+Y\+S\+T\+E\+M\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+65536}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_abee2a4ac08122bc6d2d5ced8ea8fc914}\label{conf__clocks_8h_abee2a4ac08122bc6d2d5ced8ea8fc914}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL@{CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL}}
+\index{CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL@{CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL}{CONF\_CLOCK\_XOSC\_AUTO\_GAIN\_CONTROL}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+A\+U\+T\+O\+\_\+\+G\+A\+I\+N\+\_\+\+C\+O\+N\+T\+R\+OL~\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a970c3542aa826693d79fed228527f7ad}\label{conf__clocks_8h_a970c3542aa826693d79fed228527f7ad}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_ENABLE@{CONF\_CLOCK\_XOSC\_ENABLE}}
+\index{CONF\_CLOCK\_XOSC\_ENABLE@{CONF\_CLOCK\_XOSC\_ENABLE}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_ENABLE}{CONF\_CLOCK\_XOSC\_ENABLE}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+N\+A\+B\+LE~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ab175ad3111f32983b5523d6f011d5c29}\label{conf__clocks_8h_ab175ad3111f32983b5523d6f011d5c29}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL@{CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL}}
+\index{CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL@{CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL}{CONF\_CLOCK\_XOSC\_EXTERNAL\_CRYSTAL}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ggab463f9d80799466f12321e6252493e70a1f1e123ed025f2e02f063d0d75b3ff56}{S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+C\+K\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+C\+R\+Y\+S\+T\+AL}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_abbe2157f582a3495e766016ee998a535}\label{conf__clocks_8h_abbe2157f582a3495e766016ee998a535}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY@{CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY}}
+\index{CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY@{CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY}{CONF\_CLOCK\_XOSC\_EXTERNAL\_FREQUENCY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY~12000000\+UL}
+
+\mbox{\Hypertarget{conf__clocks_8h_a219f7f72aad7640191b3600243cfc817}\label{conf__clocks_8h_a219f7f72aad7640191b3600243cfc817}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_ON\_DEMAND@{CONF\_CLOCK\_XOSC\_ON\_DEMAND}}
+\index{CONF\_CLOCK\_XOSC\_ON\_DEMAND@{CONF\_CLOCK\_XOSC\_ON\_DEMAND}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_ON\_DEMAND}{CONF\_CLOCK\_XOSC\_ON\_DEMAND}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+O\+N\+\_\+\+D\+E\+M\+A\+ND~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_a28e610ffaaea05b87cbc66085ca5369f}\label{conf__clocks_8h_a28e610ffaaea05b87cbc66085ca5369f}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY}}
+\index{CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY@{CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY}{CONF\_CLOCK\_XOSC\_RUN\_IN\_STANDBY}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+R\+U\+N\+\_\+\+I\+N\+\_\+\+S\+T\+A\+N\+D\+BY~\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{conf__clocks_8h_ae4f8b326137515974703979d8f7c9638}\label{conf__clocks_8h_ae4f8b326137515974703979d8f7c9638}} 
+\index{conf\_clocks.h@{conf\_clocks.h}!CONF\_CLOCK\_XOSC\_STARTUP\_TIME@{CONF\_CLOCK\_XOSC\_STARTUP\_TIME}}
+\index{CONF\_CLOCK\_XOSC\_STARTUP\_TIME@{CONF\_CLOCK\_XOSC\_STARTUP\_TIME}!conf\_clocks.h@{conf\_clocks.h}}
+\subsubsection{\texorpdfstring{CONF\_CLOCK\_XOSC\_STARTUP\_TIME}{CONF\_CLOCK\_XOSC\_STARTUP\_TIME}}
+{\footnotesize\ttfamily \#define C\+O\+N\+F\+\_\+\+C\+L\+O\+C\+K\+\_\+\+X\+O\+S\+C\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+\+T\+I\+ME~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga93797ad2901b27dd84fa8b7edc9bb5c5a1eff23f1ee9c792ec44683af90206d50}{S\+Y\+S\+T\+E\+M\+\_\+\+X\+O\+S\+C\+\_\+\+S\+T\+A\+R\+T\+U\+P\+\_\+32768}}}
+

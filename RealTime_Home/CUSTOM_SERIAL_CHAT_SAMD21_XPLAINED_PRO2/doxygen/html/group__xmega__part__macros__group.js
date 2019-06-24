@@ -1,0 +1,25 @@
+var group__xmega__part__macros__group =
+[
+    [ "XMEGA", "group__xmega__part__macros__group.html#ga959bff90afbae437308a52eeb67b3368", null ],
+    [ "XMEGA_A", "group__xmega__part__macros__group.html#gab903a90d3a0bc99d7248eaecbb325a23", null ],
+    [ "XMEGA_A1", "group__xmega__part__macros__group.html#gaa0df665226b6faf69dcc137f1b78f074", null ],
+    [ "XMEGA_A1U", "group__xmega__part__macros__group.html#ga6672329ddee03af905aa378946568b67", null ],
+    [ "XMEGA_A3", "group__xmega__part__macros__group.html#ga831948bd467aa2355eb76ec708d2921a", null ],
+    [ "XMEGA_A3B", "group__xmega__part__macros__group.html#ga32fef354d7f092b04ec41a0733e2c7ae", null ],
+    [ "XMEGA_A3BU", "group__xmega__part__macros__group.html#ga98083f3307fe61cc2377948db87cd708", null ],
+    [ "XMEGA_A3U", "group__xmega__part__macros__group.html#gab5232598231cc5c17658e4b7cc5293ec", null ],
+    [ "XMEGA_A4", "group__xmega__part__macros__group.html#ga7b83a133489c9896dbdc730615c83be8", null ],
+    [ "XMEGA_A4U", "group__xmega__part__macros__group.html#ga7625edcdd219df905c870d73c1689da6", null ],
+    [ "XMEGA_AU", "group__xmega__part__macros__group.html#ga55210f3805902072fce76647b50fa177", null ],
+    [ "XMEGA_B", "group__xmega__part__macros__group.html#ga62f2c1c93640237425cb64186ddce219", null ],
+    [ "XMEGA_B1", "group__xmega__part__macros__group.html#gaa2fd55860a1bbc05c6d0d384e7476596", null ],
+    [ "XMEGA_B3", "group__xmega__part__macros__group.html#ga7385be70af05a3a61864a4fc470fa39d", null ],
+    [ "XMEGA_C", "group__xmega__part__macros__group.html#ga75b06dd59d29b1de54dd73fe67830973", null ],
+    [ "XMEGA_C3", "group__xmega__part__macros__group.html#ga10c26d10c3df7d9874e4527d1327c60b", null ],
+    [ "XMEGA_C4", "group__xmega__part__macros__group.html#ga8add217f9d3d28fda40ec91e65a5d970", null ],
+    [ "XMEGA_D", "group__xmega__part__macros__group.html#gacc9e4b074c3f87ce7b461483b0beb15c", null ],
+    [ "XMEGA_D3", "group__xmega__part__macros__group.html#gad634208a506f79622c67be500014feb3", null ],
+    [ "XMEGA_D4", "group__xmega__part__macros__group.html#ga831e633408c7458a445d333b9b3f142f", null ],
+    [ "XMEGA_E", "group__xmega__part__macros__group.html#gaab6d2543c5128fca0b1aeecb5c080723", null ],
+    [ "XMEGA_E5", "group__xmega__part__macros__group.html#ga3bbcf2e955c9747a3595f8cdc01436ba", null ]
+];

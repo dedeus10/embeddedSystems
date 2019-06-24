@@ -1,0 +1,129 @@
+\hypertarget{startup__samd21_8c}{}\section{A\+S\+F/sam0/utils/cmsis/samd21/source/gcc/startup\+\_\+samd21.c File Reference}
+\label{startup__samd21_8c}\index{ASF/sam0/utils/cmsis/samd21/source/gcc/startup\_samd21.c@{ASF/sam0/utils/cmsis/samd21/source/gcc/startup\_samd21.c}}
+
+
+gcc starttup file for S\+A\+M\+D21  
+
+
+{\ttfamily \#include \char`\"{}samd21.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{startup__samd21_8c_a5f388c8556f7cb6a84b5692db6b6ad80}{\+\_\+\+\_\+libc\+\_\+init\+\_\+array}} (void)
+\item 
+void \mbox{\hyperlink{startup__samd21_8c_a4ed9b32000d3b15c46ffd748f32ed44d}{Dummy\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em Default interrupt handler for unused I\+R\+Qs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{startup__samd21_8c_aaa1400c15ada51a2aeaa13813e9f0c0d}{N\+M\+I\+\_\+\+Handler}} (void \mbox{\hyperlink{group___s_a_m_d21_j18_a__cmsis_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\+Fault\+\_\+\+Handler}} void)
+\item 
+void \mbox{\hyperlink{group___s_a_m_d21_e15_a__cmsis_gae7ee340978f5c25f52f0cad1457c6616}{Reset\+\_\+\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em This is the code that gets called on processor reset. To initialize the device, and call the \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}} routine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_a797d7617293913aabf29979f9355c069}{\+\_\+sfixed}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_aa55487a2e05bbec386ff62a79418827e}{\+\_\+efixed}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_abba93927cdaa2d32967cfc724f47cf8f}{\+\_\+etext}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_ac50d147d186c5fcf7efa97a4197e530e}{\+\_\+srelocate}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_a59f8a39545ac1b9b88d4228c40c910b9}{\+\_\+erelocate}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_a5c6ed4fbf19b32595d4afb2c25aa8363}{\+\_\+szero}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_ad4c54e57daaa1859c4fd4208ed7d31fa}{\+\_\+ezero}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_ae588877090aec0bc36ee7c0ecf084ed4}{\+\_\+sstack}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{startup__samd21_8c_a69247aef56f755ef3b08265060dea50f}{\+\_\+estack}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+gcc starttup file for S\+A\+M\+D21 
+
+Copyright (c) 2016-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{startup__samd21_8c_a5f388c8556f7cb6a84b5692db6b6ad80}\label{startup__samd21_8c_a5f388c8556f7cb6a84b5692db6b6ad80}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_\_libc\_init\_array@{\_\_libc\_init\_array}}
+\index{\_\_libc\_init\_array@{\_\_libc\_init\_array}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_\_libc\_init\_array()}{\_\_libc\_init\_array()}}
+{\footnotesize\ttfamily void \+\_\+\+\_\+libc\+\_\+init\+\_\+array (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{startup__samd21_8c_a4ed9b32000d3b15c46ffd748f32ed44d}\label{startup__samd21_8c_a4ed9b32000d3b15c46ffd748f32ed44d}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!Dummy\_Handler@{Dummy\_Handler}}
+\index{Dummy\_Handler@{Dummy\_Handler}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{Dummy\_Handler()}{Dummy\_Handler()}}
+{\footnotesize\ttfamily void Dummy\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Default interrupt handler for unused I\+R\+Qs. 
+
+\mbox{\Hypertarget{startup__samd21_8c_aaa1400c15ada51a2aeaa13813e9f0c0d}\label{startup__samd21_8c_aaa1400c15ada51a2aeaa13813e9f0c0d}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!NMI\_Handler@{NMI\_Handler}}
+\index{NMI\_Handler@{NMI\_Handler}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{NMI\_Handler()}{NMI\_Handler()}}
+{\footnotesize\ttfamily void N\+M\+I\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void \mbox{\hyperlink{group___s_a_m_d21_j18_a__cmsis_ga2bffc10d5bd4106753b7c30e86903bea}{Hard\+Fault\+\_\+\+Handler}}}]{void }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{startup__samd21_8c_aa55487a2e05bbec386ff62a79418827e}\label{startup__samd21_8c_aa55487a2e05bbec386ff62a79418827e}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_efixed@{\_efixed}}
+\index{\_efixed@{\_efixed}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_efixed}{\_efixed}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+efixed}
+
+\mbox{\Hypertarget{startup__samd21_8c_a59f8a39545ac1b9b88d4228c40c910b9}\label{startup__samd21_8c_a59f8a39545ac1b9b88d4228c40c910b9}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_erelocate@{\_erelocate}}
+\index{\_erelocate@{\_erelocate}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_erelocate}{\_erelocate}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+erelocate}
+
+\mbox{\Hypertarget{startup__samd21_8c_a69247aef56f755ef3b08265060dea50f}\label{startup__samd21_8c_a69247aef56f755ef3b08265060dea50f}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_estack@{\_estack}}
+\index{\_estack@{\_estack}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_estack}{\_estack}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+estack}
+
+\mbox{\Hypertarget{startup__samd21_8c_abba93927cdaa2d32967cfc724f47cf8f}\label{startup__samd21_8c_abba93927cdaa2d32967cfc724f47cf8f}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_etext@{\_etext}}
+\index{\_etext@{\_etext}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_etext}{\_etext}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+etext}
+
+\mbox{\Hypertarget{startup__samd21_8c_ad4c54e57daaa1859c4fd4208ed7d31fa}\label{startup__samd21_8c_ad4c54e57daaa1859c4fd4208ed7d31fa}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_ezero@{\_ezero}}
+\index{\_ezero@{\_ezero}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_ezero}{\_ezero}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+ezero}
+
+\mbox{\Hypertarget{startup__samd21_8c_a797d7617293913aabf29979f9355c069}\label{startup__samd21_8c_a797d7617293913aabf29979f9355c069}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_sfixed@{\_sfixed}}
+\index{\_sfixed@{\_sfixed}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_sfixed}{\_sfixed}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+sfixed}
+
+\mbox{\Hypertarget{startup__samd21_8c_ac50d147d186c5fcf7efa97a4197e530e}\label{startup__samd21_8c_ac50d147d186c5fcf7efa97a4197e530e}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_srelocate@{\_srelocate}}
+\index{\_srelocate@{\_srelocate}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_srelocate}{\_srelocate}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+srelocate}
+
+\mbox{\Hypertarget{startup__samd21_8c_ae588877090aec0bc36ee7c0ecf084ed4}\label{startup__samd21_8c_ae588877090aec0bc36ee7c0ecf084ed4}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_sstack@{\_sstack}}
+\index{\_sstack@{\_sstack}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_sstack}{\_sstack}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+sstack}
+
+\mbox{\Hypertarget{startup__samd21_8c_a5c6ed4fbf19b32595d4afb2c25aa8363}\label{startup__samd21_8c_a5c6ed4fbf19b32595d4afb2c25aa8363}} 
+\index{startup\_samd21.c@{startup\_samd21.c}!\_szero@{\_szero}}
+\index{\_szero@{\_szero}!startup\_samd21.c@{startup\_samd21.c}}
+\subsubsection{\texorpdfstring{\_szero}{\_szero}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+szero}
+

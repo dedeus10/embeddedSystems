@@ -1,0 +1,48 @@
+\hypertarget{drivers_2port_2port_8h}{}\section{A\+S\+F/sam0/drivers/port/port.h File Reference}
+\label{drivers_2port_2port_8h}\index{ASF/sam0/drivers/port/port.h@{ASF/sam0/drivers/port/port.h}}
+
+
+S\+AM G\+P\+IO \mbox{\hyperlink{struct_port}{Port}} Driver.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$pinmux.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structport__config}{port\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_port}{Port}} pin configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_gabe12893c067f9b011ece79c1bf1b128a}{port\+\_\+pin\+\_\+dir}} \{ \mbox{\hyperlink{group__asfdoc__sam0__port__group_ggabe12893c067f9b011ece79c1bf1b128aacfdf36142de0378cd9927b9c00e2f7a6}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+I\+N\+P\+UT}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+I\+N\+P\+UT, 
+\mbox{\hyperlink{group__asfdoc__sam0__port__group_ggabe12893c067f9b011ece79c1bf1b128aaa2cda8b4095bfaf6f354f113947a3463}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+UT}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+UT, 
+\mbox{\hyperlink{group__asfdoc__sam0__port__group_ggabe12893c067f9b011ece79c1bf1b128aae3d3fdfe355c7727ea36948da3b848ad}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+W\+T\+H\+\_\+\+R\+E\+A\+D\+B\+A\+CK}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+W\+I\+T\+H\+\_\+\+R\+E\+A\+D\+B\+A\+CK
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_port}{Port}} pin direction configuration enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_ga1f47828261f5b7ac5f864b42981a2004}{port\+\_\+pin\+\_\+pull}} \{ \mbox{\hyperlink{group__asfdoc__sam0__port__group_gga1f47828261f5b7ac5f864b42981a2004ab178b34fb381794e7f550b14ff08a302}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE, 
+\mbox{\hyperlink{group__asfdoc__sam0__port__group_gga1f47828261f5b7ac5f864b42981a2004a6505b9a836a818d1f2c8a248b9ac8073}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+UP}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+UP, 
+\mbox{\hyperlink{group__asfdoc__sam0__port__group_gga1f47828261f5b7ac5f864b42981a2004a2665866a5f05266cc8fa78da60ebc19d}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_port}{Port}} pin input pull configuration enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}\textbf{ State Reading/\+Writing (Physical Group Orientated)}\par
+\end{Indent}
+\begin{Indent}\textbf{ Configuration and Initialization}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__port__group_gad21f235037f2d75ee3e7c08ba8b239c5}{port\+\_\+pin\+\_\+set\+\_\+config}} (const uint8\+\_\+t gpio\+\_\+pin, const struct \mbox{\hyperlink{structport__config}{port\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes a \mbox{\hyperlink{struct_port}{Port}} pin configuration to the hardware module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__port__group_ga7b832928bee6911ac7c9f18df8a5cf4a}{port\+\_\+group\+\_\+set\+\_\+config}} (\mbox{\hyperlink{struct_port_group}{Port\+Group}} $\ast$const port, const uint32\+\_\+t mask, const struct \mbox{\hyperlink{structport__config}{port\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes a \mbox{\hyperlink{struct_port}{Port}} group configuration group to the hardware module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ State Reading/\+Writing (Logical Pin Orientated)}\par
+\end{Indent}
+
+
+\subsection{Detailed Description}
+S\+AM G\+P\+IO \mbox{\hyperlink{struct_port}{Port}} Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

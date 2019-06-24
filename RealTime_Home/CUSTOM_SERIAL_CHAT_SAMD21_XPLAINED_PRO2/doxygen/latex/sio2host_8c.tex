@@ -1,0 +1,87 @@
+\hypertarget{sio2host_8c}{}\section{A\+S\+F/thirdparty/wireless/addons/sio2host/uart/sio2host.c File Reference}
+\label{sio2host_8c}\index{ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.c@{ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.c}}
+
+
+Handles Serial I/O Functionalities For the Host Device.  
+
+
+{\ttfamily \#include \char`\"{}asf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sio2host.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}conf\+\_\+sio2host.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_ga6d7d78548e59b7991d13d5a1fa3c5440}{sio2host\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the Serial IO Module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gaf6c11e140f6115317c42db35a9262e0f}{sio2host\+\_\+tx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Transmits data via U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_ga627cf2cfc75197c5c927315bdf1b6449}{sio2host\+\_\+rx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t max\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Receives data from U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gabbb6def1150d2663a675bd384ae816d0}{sio2host\+\_\+getchar}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a blocking character receive functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_gabb543e29f8fd3f02734f54838811f91e}{sio2host\+\_\+putchar}} (uint8\+\_\+t ch)
+\begin{DoxyCompactList}\small\item\em This function prints the character to the host. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__group__sio2host__uart_ga14c4b363b78d5be00daa0bdd56e6a4a9}{sio2host\+\_\+getchar\+\_\+nowait}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a non-\/blocking character receive functionality. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{sio2host_8c_a194782242a6290224262d0c16e23e750}{usart\+\_\+serial\+\_\+read\+\_\+packet}} (\mbox{\hyperlink{conf__sio2host_8h_a94d47face58bc6a1e8e37105ad124d63}{U\+S\+A\+R\+T\+\_\+\+H\+O\+ST}}, \&temp, 1)
+\item 
+\mbox{\hyperlink{sio2host_8c_a378caf314c05fb6bb006623757eba684}{cpu\+\_\+irq\+\_\+disable}} ()
+\item 
+\mbox{\hyperlink{sio2host_8c_a77d5fed0ed9facb9e10ae7d0e73c8ab2}{if}} ((\mbox{\hyperlink{conf__sio2host_8h_aeb6592913b115eb01ab37176a61c4da1}{S\+E\+R\+I\+A\+L\+\_\+\+R\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+O\+ST}} -\/ 1)==serial\+\_\+rx\+\_\+buf\+\_\+tail)
+\item 
+\mbox{\hyperlink{sio2host_8c_aabffbc3734cb64b9456c2019f04eb782}{cpu\+\_\+irq\+\_\+enable}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sio2host_8c_a0544c3fe466e421738dae463968b70ba}{else}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles Serial I/O Functionalities For the Host Device. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sio2host_8c_a378caf314c05fb6bb006623757eba684}\label{sio2host_8c_a378caf314c05fb6bb006623757eba684}} 
+\index{sio2host.c@{sio2host.c}!cpu\_irq\_disable@{cpu\_irq\_disable}}
+\index{cpu\_irq\_disable@{cpu\_irq\_disable}!sio2host.c@{sio2host.c}}
+\subsubsection{\texorpdfstring{cpu\_irq\_disable()}{cpu\_irq\_disable()}}
+{\footnotesize\ttfamily cpu\+\_\+irq\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sio2host_8c_aabffbc3734cb64b9456c2019f04eb782}\label{sio2host_8c_aabffbc3734cb64b9456c2019f04eb782}} 
+\index{sio2host.c@{sio2host.c}!cpu\_irq\_enable@{cpu\_irq\_enable}}
+\index{cpu\_irq\_enable@{cpu\_irq\_enable}!sio2host.c@{sio2host.c}}
+\subsubsection{\texorpdfstring{cpu\_irq\_enable()}{cpu\_irq\_enable()}}
+{\footnotesize\ttfamily cpu\+\_\+irq\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sio2host_8c_a77d5fed0ed9facb9e10ae7d0e73c8ab2}\label{sio2host_8c_a77d5fed0ed9facb9e10ae7d0e73c8ab2}} 
+\index{sio2host.c@{sio2host.c}!if@{if}}
+\index{if@{if}!sio2host.c@{sio2host.c}}
+\subsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{conf__sio2host_8h_aeb6592913b115eb01ab37176a61c4da1}{S\+E\+R\+I\+A\+L\+\_\+\+R\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+H\+O\+ST}} -\/ 1)}]{ = {\ttfamily =~serial\+\_\+rx\+\_\+buf\+\_\+tail} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sio2host_8c_a194782242a6290224262d0c16e23e750}\label{sio2host_8c_a194782242a6290224262d0c16e23e750}} 
+\index{sio2host.c@{sio2host.c}!usart\_serial\_read\_packet@{usart\_serial\_read\_packet}}
+\index{usart\_serial\_read\_packet@{usart\_serial\_read\_packet}!sio2host.c@{sio2host.c}}
+\subsubsection{\texorpdfstring{usart\_serial\_read\_packet()}{usart\_serial\_read\_packet()}}
+{\footnotesize\ttfamily usart\+\_\+serial\+\_\+read\+\_\+packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{conf__sio2host_8h_a94d47face58bc6a1e8e37105ad124d63}{U\+S\+A\+R\+T\+\_\+\+H\+O\+ST}}}]{,  }\item[{\&}]{temp,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{sio2host_8c_a0544c3fe466e421738dae463968b70ba}\label{sio2host_8c_a0544c3fe466e421738dae463968b70ba}} 
+\index{sio2host.c@{sio2host.c}!else@{else}}
+\index{else@{else}!sio2host.c@{sio2host.c}}
+\subsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        serial\_rx\_buf\_tail++}
+
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+\hypertarget{sio2host_8h}{}\section{A\+S\+F/thirdparty/wireless/addons/sio2host/uart/sio2host.h File Reference}
+\label{sio2host_8h}\index{ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h@{ASF/thirdparty/wireless/addons/sio2host/uart/sio2host.h}}
+
+
+Event handling Serial I/O Functionalities.  
+
+
+{\ttfamily \#include \char`\"{}compiler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}status\+\_\+codes.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_ga6d7d78548e59b7991d13d5a1fa3c5440}{sio2host\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the Serial IO Module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gaf6c11e140f6115317c42db35a9262e0f}{sio2host\+\_\+tx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Transmits data via U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_ga627cf2cfc75197c5c927315bdf1b6449}{sio2host\+\_\+rx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t max\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Receives data from U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gabbb6def1150d2663a675bd384ae816d0}{sio2host\+\_\+getchar}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a blocking character receive functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_gabb543e29f8fd3f02734f54838811f91e}{sio2host\+\_\+putchar}} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em This function prints the character to the host. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__group__sio2host__uart_ga14c4b363b78d5be00daa0bdd56e6a4a9}{sio2host\+\_\+getchar\+\_\+nowait}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a non-\/blocking character receive functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Event handling Serial I/O Functionalities. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

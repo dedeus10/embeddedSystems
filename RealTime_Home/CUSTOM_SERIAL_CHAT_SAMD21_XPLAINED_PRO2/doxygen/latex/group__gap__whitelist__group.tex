@@ -1,0 +1,118 @@
+\hypertarget{group__gap__whitelist__group}{}\section{White-\/\+List A\+P\+Is}
+\label{group__gap__whitelist__group}\index{White-\/List APIs@{White-\/List APIs}}
+
+
+This group includes G\+AP White-\/\+List related A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__whitelist__group_ga9c03fafebf456d7cdc4c0f66e87a2847}{at\+\_\+ble\+\_\+whitelist\+\_\+add}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Adds a peer device address to the white-\/list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__whitelist__group_ga4ca7d64ac40fa8d67b3f7a39058b6b4e}{at\+\_\+ble\+\_\+whitelist\+\_\+remove}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Removes a peer device address from the white-\/list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__whitelist__group_gae25e4c2f9252f3080b2a784c84159564}{at\+\_\+ble\+\_\+whitelist\+\_\+clear}} (void)
+\begin{DoxyCompactList}\small\item\em Clear the white-\/list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__whitelist__group_ga42b6dd0c5c1d8e69b0e1d76173f6cb98}{at\+\_\+ble\+\_\+get\+\_\+whitelist\+\_\+size}} (uint8\+\_\+t $\ast$size)
+\begin{DoxyCompactList}\small\item\em Get total number of white list entries that can be stored in the Controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes G\+AP White-\/\+List related A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__whitelist__group_ga42b6dd0c5c1d8e69b0e1d76173f6cb98}\label{group__gap__whitelist__group_ga42b6dd0c5c1d8e69b0e1d76173f6cb98}} 
+\index{White-\/List APIs@{White-\/List APIs}!at\_ble\_get\_whitelist\_size@{at\_ble\_get\_whitelist\_size}}
+\index{at\_ble\_get\_whitelist\_size@{at\_ble\_get\_whitelist\_size}!White-\/List APIs@{White-\/List APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_get\_whitelist\_size()}{at\_ble\_get\_whitelist\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+get\+\_\+whitelist\+\_\+size (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Get total number of white list entries that can be stored in the Controller. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em size} & The white-\/list size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the returned size is the maximum size of Public address white list only, Randome static address white list has the same size too
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__whitelist__group_ga9c03fafebf456d7cdc4c0f66e87a2847}\label{group__gap__whitelist__group_ga9c03fafebf456d7cdc4c0f66e87a2847}} 
+\index{White-\/List APIs@{White-\/List APIs}!at\_ble\_whitelist\_add@{at\_ble\_whitelist\_add}}
+\index{at\_ble\_whitelist\_add@{at\_ble\_whitelist\_add}!White-\/List APIs@{White-\/List APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_whitelist\_add()}{at\_ble\_whitelist\_add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+whitelist\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Adds a peer device address to the white-\/list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em address} & peer device address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This command can be used at any time except when\+:
+\begin{DoxyItemize}
+\item the advertising filter policy uses the white list and advertising is enabled.
+\item the scanning filter policy uses the white list and scanning is enabled.
+\item the initiator filter policy uses the white list and a create connection command is outstanding.
+\end{DoxyItemize}
+
+The only addresses that should be added to the white-\/list is Public device address or random static device address
+
+In case of connection mode is A\+U\+TO, the white-\/list will be cleared
+
+To get scan results from only peers added to white list, make sure that "filter\+\_\+whitelist" argument of \mbox{\hyperlink{group__gap__scan__group_ga26972125714f8cee1bc5a59d5b82623f}{at\+\_\+ble\+\_\+scan\+\_\+start}} is true.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__whitelist__group_gae25e4c2f9252f3080b2a784c84159564}\label{group__gap__whitelist__group_gae25e4c2f9252f3080b2a784c84159564}} 
+\index{White-\/List APIs@{White-\/List APIs}!at\_ble\_whitelist\_clear@{at\_ble\_whitelist\_clear}}
+\index{at\_ble\_whitelist\_clear@{at\_ble\_whitelist\_clear}!White-\/List APIs@{White-\/List APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_whitelist\_clear()}{at\_ble\_whitelist\_clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+whitelist\+\_\+clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Clear the white-\/list. 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__whitelist__group_ga4ca7d64ac40fa8d67b3f7a39058b6b4e}\label{group__gap__whitelist__group_ga4ca7d64ac40fa8d67b3f7a39058b6b4e}} 
+\index{White-\/List APIs@{White-\/List APIs}!at\_ble\_whitelist\_remove@{at\_ble\_whitelist\_remove}}
+\index{at\_ble\_whitelist\_remove@{at\_ble\_whitelist\_remove}!White-\/List APIs@{White-\/List APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_whitelist\_remove()}{at\_ble\_whitelist\_remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+whitelist\+\_\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Removes a peer device address from the white-\/list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em address} & peer device address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This command can be used at any time except when\+:
+\begin{DoxyItemize}
+\item the advertising filter policy uses the white list and advertising is enabled.
+\item the scanning filter policy uses the white list and scanning is enabled.
+\item the initiator filter policy uses the white list and a create connection command is outstanding.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

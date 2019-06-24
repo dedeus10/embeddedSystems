@@ -1,0 +1,67 @@
+\hypertarget{structtc__events}{}\section{tc\+\_\+events Struct Reference}
+\label{structtc__events}\index{tc\_events@{tc\_events}}
+
+
+TC event enable/disable structure.  
+
+
+
+
+{\ttfamily \#include $<$tc.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structtc__events_a4317ebe6ee0706835fb2146672afd8c8}{generate\+\_\+event\+\_\+on\+\_\+compare\+\_\+channel}} \mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__tc__group_gac837f9db5df1793578c195a979c6a9d3}{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+O\+M\+P\+A\+R\+E\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+LS}}\mbox{]}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structtc__events_a94a6bf0d78fb0f99a092994a7ec6d2dd}{generate\+\_\+event\+\_\+on\+\_\+overflow}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structtc__events_acf7887580241865721933e19311d3af3}{on\+\_\+event\+\_\+perform\+\_\+action}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structtc__events_a5d288e8017f6f856d3412544bb2e691f}{invert\+\_\+event\+\_\+input}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga4dcbf6cdb74bc3b7609ce8d16549462f}{tc\+\_\+event\+\_\+action}} \mbox{\hyperlink{structtc__events_a8d0cfdde8f5a4e2e61865c1f93ca309e}{event\+\_\+action}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+TC event enable/disable structure. 
+
+Event flags for the tc\+\_\+enable\+\_\+events() and tc\+\_\+disable\+\_\+events(). 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structtc__events_a8d0cfdde8f5a4e2e61865c1f93ca309e}\label{structtc__events_a8d0cfdde8f5a4e2e61865c1f93ca309e}} 
+\index{tc\_events@{tc\_events}!event\_action@{event\_action}}
+\index{event\_action@{event\_action}!tc\_events@{tc\_events}}
+\subsubsection{\texorpdfstring{event\_action}{event\_action}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga4dcbf6cdb74bc3b7609ce8d16549462f}{tc\+\_\+event\+\_\+action}} event\+\_\+action}
+
+Specifies which event to trigger if an event is triggered \mbox{\Hypertarget{structtc__events_a4317ebe6ee0706835fb2146672afd8c8}\label{structtc__events_a4317ebe6ee0706835fb2146672afd8c8}} 
+\index{tc\_events@{tc\_events}!generate\_event\_on\_compare\_channel@{generate\_event\_on\_compare\_channel}}
+\index{generate\_event\_on\_compare\_channel@{generate\_event\_on\_compare\_channel}!tc\_events@{tc\_events}}
+\subsubsection{\texorpdfstring{generate\_event\_on\_compare\_channel}{generate\_event\_on\_compare\_channel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} generate\+\_\+event\+\_\+on\+\_\+compare\+\_\+channel\mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__tc__group_gac837f9db5df1793578c195a979c6a9d3}{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+O\+M\+P\+A\+R\+E\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+C\+H\+A\+N\+N\+E\+LS}}\mbox{]}}
+
+Generate an output event on a compare channel match \mbox{\Hypertarget{structtc__events_a94a6bf0d78fb0f99a092994a7ec6d2dd}\label{structtc__events_a94a6bf0d78fb0f99a092994a7ec6d2dd}} 
+\index{tc\_events@{tc\_events}!generate\_event\_on\_overflow@{generate\_event\_on\_overflow}}
+\index{generate\_event\_on\_overflow@{generate\_event\_on\_overflow}!tc\_events@{tc\_events}}
+\subsubsection{\texorpdfstring{generate\_event\_on\_overflow}{generate\_event\_on\_overflow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} generate\+\_\+event\+\_\+on\+\_\+overflow}
+
+Generate an output event on counter overflow \mbox{\Hypertarget{structtc__events_a5d288e8017f6f856d3412544bb2e691f}\label{structtc__events_a5d288e8017f6f856d3412544bb2e691f}} 
+\index{tc\_events@{tc\_events}!invert\_event\_input@{invert\_event\_input}}
+\index{invert\_event\_input@{invert\_event\_input}!tc\_events@{tc\_events}}
+\subsubsection{\texorpdfstring{invert\_event\_input}{invert\_event\_input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} invert\+\_\+event\+\_\+input}
+
+Specifies if the input event source is inverted, when used in P\+WP or P\+PW event action modes \mbox{\Hypertarget{structtc__events_acf7887580241865721933e19311d3af3}\label{structtc__events_acf7887580241865721933e19311d3af3}} 
+\index{tc\_events@{tc\_events}!on\_event\_perform\_action@{on\_event\_perform\_action}}
+\index{on\_event\_perform\_action@{on\_event\_perform\_action}!tc\_events@{tc\_events}}
+\subsubsection{\texorpdfstring{on\_event\_perform\_action}{on\_event\_perform\_action}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} on\+\_\+event\+\_\+perform\+\_\+action}
+
+Perform the configured event action when an incoming event is signalled 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/tc/\mbox{\hyperlink{drivers_2tc_2tc_8h}{tc.\+h}}\end{DoxyCompactItemize}

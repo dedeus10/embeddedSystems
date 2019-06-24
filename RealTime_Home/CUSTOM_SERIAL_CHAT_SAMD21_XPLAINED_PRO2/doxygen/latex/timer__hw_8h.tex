@@ -1,0 +1,136 @@
+\hypertarget{timer__hw_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/services/timer/timer\+\_\+hw.h File Reference}
+\label{timer__hw_8h}\index{ASF/thirdparty/wireless/ble\_sdk/services/timer/timer\_hw.h@{ASF/thirdparty/wireless/ble\_sdk/services/timer/timer\_hw.h}}
+
+
+Handles timer functionalities.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{timer__hw_8h_aa4443ef96966723c01609ab85bfbc9b8}{S\+T\+A\+C\+K\+\_\+\+H\+W\+\_\+\+T\+I\+M\+E\+RS}}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{timer__hw_8h_ad14194ae80412b623ff82b9289704f80}{hw\+\_\+timer\+\_\+callback\+\_\+t}}) (void)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{timer__hw_8h_aa6949b2f2bdacdb70ffe3b033608f54a}{platform\+\_\+hw\+\_\+timer\+\_\+callback\+\_\+t}}) (void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{timer__hw_8h_aeeb7243db95b6f7b03316167cded8d2d}{hw\+\_\+timer\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_a8beb3478aba83e1259b4ebeaba4018d7}{hw\+\_\+timer\+\_\+register\+\_\+callback}} (\mbox{\hyperlink{timer__hw_8h_ad14194ae80412b623ff82b9289704f80}{hw\+\_\+timer\+\_\+callback\+\_\+t}} cb\+\_\+ptr)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_a4b8e274a7439d44e8b0ce5bbd3687d5d}{hw\+\_\+timer\+\_\+start}} (uint32\+\_\+t timer\+\_\+val\+\_\+s)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_adf853d4bb98325e15156d86666a8bb5e}{hw\+\_\+timer\+\_\+start\+\_\+ms}} (uint32\+\_\+t timer\+\_\+val\+\_\+ms)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_ac5530397f1dc0d4eca2e0048d0da401f}{hw\+\_\+timer\+\_\+stop}} (void)
+\item 
+void $\ast$ \mbox{\hyperlink{timer__hw_8h_a0c2dd0f7e65fb7229ccd7cb0629507a3}{platform\+\_\+create\+\_\+hw\+\_\+timer}} (\mbox{\hyperlink{timer__hw_8h_aa6949b2f2bdacdb70ffe3b033608f54a}{platform\+\_\+hw\+\_\+timer\+\_\+callback\+\_\+t}} bus\+\_\+tc\+\_\+cb\+\_\+ptr)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_ac3463987ee647821fe6d64adec3d238f}{platform\+\_\+start\+\_\+bus\+\_\+timer}} (void $\ast$timer\+\_\+handle, uint32\+\_\+t ms)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_ab0f76ce6b82176aaf2fc45e529d8112b}{platform\+\_\+delete\+\_\+bus\+\_\+timer}} (void $\ast$timer\+\_\+handle)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_a1de843647d9b1a75e15bc2511a56ec7a}{platform\+\_\+stop\+\_\+bus\+\_\+timer}} (void $\ast$timer\+\_\+handle)
+\item 
+void \mbox{\hyperlink{timer__hw_8h_abd2ac4927cc0b7394501c48be34e65d5}{platform\+\_\+stop\+\_\+stack\+\_\+timers}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles timer functionalities. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{timer__hw_8h_aa4443ef96966723c01609ab85bfbc9b8}\label{timer__hw_8h_aa4443ef96966723c01609ab85bfbc9b8}} 
+\index{timer\_hw.h@{timer\_hw.h}!STACK\_HW\_TIMERS@{STACK\_HW\_TIMERS}}
+\index{STACK\_HW\_TIMERS@{STACK\_HW\_TIMERS}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{STACK\_HW\_TIMERS}{STACK\_HW\_TIMERS}}
+{\footnotesize\ttfamily \#define S\+T\+A\+C\+K\+\_\+\+H\+W\+\_\+\+T\+I\+M\+E\+RS~2}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{timer__hw_8h_ad14194ae80412b623ff82b9289704f80}\label{timer__hw_8h_ad14194ae80412b623ff82b9289704f80}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_callback\_t@{hw\_timer\_callback\_t}}
+\index{hw\_timer\_callback\_t@{hw\_timer\_callback\_t}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_callback\_t}{hw\_timer\_callback\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ hw\+\_\+timer\+\_\+callback\+\_\+t) (void)}
+
+\mbox{\Hypertarget{timer__hw_8h_aa6949b2f2bdacdb70ffe3b033608f54a}\label{timer__hw_8h_aa6949b2f2bdacdb70ffe3b033608f54a}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_hw\_timer\_callback\_t@{platform\_hw\_timer\_callback\_t}}
+\index{platform\_hw\_timer\_callback\_t@{platform\_hw\_timer\_callback\_t}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_hw\_timer\_callback\_t}{platform\_hw\_timer\_callback\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ platform\+\_\+hw\+\_\+timer\+\_\+callback\+\_\+t) (void $\ast$)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{timer__hw_8h_aeeb7243db95b6f7b03316167cded8d2d}\label{timer__hw_8h_aeeb7243db95b6f7b03316167cded8d2d}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_init@{hw\_timer\_init}}
+\index{hw\_timer\_init@{hw\_timer\_init}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_init()}{hw\_timer\_init()}}
+{\footnotesize\ttfamily void hw\+\_\+timer\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_a8beb3478aba83e1259b4ebeaba4018d7}\label{timer__hw_8h_a8beb3478aba83e1259b4ebeaba4018d7}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_register\_callback@{hw\_timer\_register\_callback}}
+\index{hw\_timer\_register\_callback@{hw\_timer\_register\_callback}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_register\_callback()}{hw\_timer\_register\_callback()}}
+{\footnotesize\ttfamily void hw\+\_\+timer\+\_\+register\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{timer__hw_8h_ad14194ae80412b623ff82b9289704f80}{hw\+\_\+timer\+\_\+callback\+\_\+t}}}]{cb\+\_\+ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_a4b8e274a7439d44e8b0ce5bbd3687d5d}\label{timer__hw_8h_a4b8e274a7439d44e8b0ce5bbd3687d5d}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_start@{hw\_timer\_start}}
+\index{hw\_timer\_start@{hw\_timer\_start}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_start()}{hw\_timer\_start()}}
+{\footnotesize\ttfamily void hw\+\_\+timer\+\_\+start (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{timer\+\_\+val\+\_\+s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_adf853d4bb98325e15156d86666a8bb5e}\label{timer__hw_8h_adf853d4bb98325e15156d86666a8bb5e}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_start\_ms@{hw\_timer\_start\_ms}}
+\index{hw\_timer\_start\_ms@{hw\_timer\_start\_ms}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_start\_ms()}{hw\_timer\_start\_ms()}}
+{\footnotesize\ttfamily void hw\+\_\+timer\+\_\+start\+\_\+ms (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{timer\+\_\+val\+\_\+ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_ac5530397f1dc0d4eca2e0048d0da401f}\label{timer__hw_8h_ac5530397f1dc0d4eca2e0048d0da401f}} 
+\index{timer\_hw.h@{timer\_hw.h}!hw\_timer\_stop@{hw\_timer\_stop}}
+\index{hw\_timer\_stop@{hw\_timer\_stop}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{hw\_timer\_stop()}{hw\_timer\_stop()}}
+{\footnotesize\ttfamily void hw\+\_\+timer\+\_\+stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_a0c2dd0f7e65fb7229ccd7cb0629507a3}\label{timer__hw_8h_a0c2dd0f7e65fb7229ccd7cb0629507a3}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_create\_hw\_timer@{platform\_create\_hw\_timer}}
+\index{platform\_create\_hw\_timer@{platform\_create\_hw\_timer}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_create\_hw\_timer()}{platform\_create\_hw\_timer()}}
+{\footnotesize\ttfamily void$\ast$ platform\+\_\+create\+\_\+hw\+\_\+timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{timer__hw_8h_aa6949b2f2bdacdb70ffe3b033608f54a}{platform\+\_\+hw\+\_\+timer\+\_\+callback\+\_\+t}}}]{bus\+\_\+tc\+\_\+cb\+\_\+ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_ab0f76ce6b82176aaf2fc45e529d8112b}\label{timer__hw_8h_ab0f76ce6b82176aaf2fc45e529d8112b}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_delete\_bus\_timer@{platform\_delete\_bus\_timer}}
+\index{platform\_delete\_bus\_timer@{platform\_delete\_bus\_timer}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_delete\_bus\_timer()}{platform\_delete\_bus\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+delete\+\_\+bus\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_ac3463987ee647821fe6d64adec3d238f}\label{timer__hw_8h_ac3463987ee647821fe6d64adec3d238f}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_start\_bus\_timer@{platform\_start\_bus\_timer}}
+\index{platform\_start\_bus\_timer@{platform\_start\_bus\_timer}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_start\_bus\_timer()}{platform\_start\_bus\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+start\+\_\+bus\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle,  }\item[{uint32\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_a1de843647d9b1a75e15bc2511a56ec7a}\label{timer__hw_8h_a1de843647d9b1a75e15bc2511a56ec7a}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_stop\_bus\_timer@{platform\_stop\_bus\_timer}}
+\index{platform\_stop\_bus\_timer@{platform\_stop\_bus\_timer}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_stop\_bus\_timer()}{platform\_stop\_bus\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+stop\+\_\+bus\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{timer__hw_8h_abd2ac4927cc0b7394501c48be34e65d5}\label{timer__hw_8h_abd2ac4927cc0b7394501c48be34e65d5}} 
+\index{timer\_hw.h@{timer\_hw.h}!platform\_stop\_stack\_timers@{platform\_stop\_stack\_timers}}
+\index{platform\_stop\_stack\_timers@{platform\_stop\_stack\_timers}!timer\_hw.h@{timer\_hw.h}}
+\subsubsection{\texorpdfstring{platform\_stop\_stack\_timers()}{platform\_stop\_stack\_timers()}}
+{\footnotesize\ttfamily void platform\+\_\+stop\+\_\+stack\+\_\+timers (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

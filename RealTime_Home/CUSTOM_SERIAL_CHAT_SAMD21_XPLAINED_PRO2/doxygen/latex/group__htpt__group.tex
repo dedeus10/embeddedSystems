@@ -1,0 +1,122 @@
+\hypertarget{group__htpt__group}{}\section{H\+T\+PT A\+P\+Is}
+\label{group__htpt__group}\index{HTPT APIs@{HTPT APIs}}
+
+
+This group includes all H\+T\+PT A\+P\+Is; Database Creation, Send Temperature, ...  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__htpt__group_ga2f9864d034b157d76216d1b7284b568b}{at\+\_\+ble\+\_\+htpt\+\_\+create\+\_\+db}} (\mbox{\hyperlink{at__ble__api_8h_af0538ef74570e97a4abdcc7263fdfcdd}{at\+\_\+ble\+\_\+htpt\+\_\+db\+\_\+config\+\_\+flag}} features, \mbox{\hyperlink{at__ble__api_8h_a236445568b928ababcce95965c981348}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+type}} temp\+\_\+type, uint16\+\_\+t valid\+\_\+range\+\_\+min, uint16\+\_\+t valid\+\_\+range\+\_\+max, uint16\+\_\+t meas\+\_\+intv, \mbox{\hyperlink{at__ble__api_8h_a3da24809ec703fda904a0a3b4c85e350}{at\+\_\+ble\+\_\+htpt\+\_\+sec\+\_\+level}} sec\+\_\+lvl, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$start\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em This A\+PI message shall be used to add an instance of the Health Thermometer service into the database. This should be done during the initialization phase of the device , this is a blocking call and no events will be returned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__htpt__group_ga1bac2afa579331c8bf3a7bf3715f4079}{at\+\_\+ble\+\_\+htpt\+\_\+enable}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_ae35b76480ab773fe13f5dfb9f78a4b28}{at\+\_\+ble\+\_\+htpt\+\_\+ntf\+\_\+ind\+\_\+cfg}} ntf\+\_\+ind\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em This A\+PI message can be used after the connection with a peer device has been established in order to restore known device bond data, in response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0217704aaf8283258dd02858769e6008}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+SP}} event should be received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__htpt__group_ga4979577ecfab6b25dc76e2a448c65b37}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+send}} (uint32\+\_\+t temp, \mbox{\hyperlink{structat__ble__prf__date__time__t}{at\+\_\+ble\+\_\+prf\+\_\+date\+\_\+time\+\_\+t}} $\ast$time\+\_\+stamp, \mbox{\hyperlink{at__ble__api_8h_accb2a3740dd79da6ab168adfa69c9548}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+flags}} flags, \mbox{\hyperlink{at__ble__api_8h_a236445568b928ababcce95965c981348}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+type}} type, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} flag\+\_\+stable\+\_\+meas)
+\begin{DoxyCompactList}\small\item\em This message is used by the application (which handles the temperature device driver and measurements) to send a temperature measurement through the Thermometer role. In response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba918f0b91ca899278bb08d41cf98cb005}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+T\+E\+M\+P\+\_\+\+S\+E\+N\+D\+\_\+\+C\+FM}} event should be received. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__htpt__group_ga2808738edb6dbd353e562b235a4d10a6}{at\+\_\+ble\+\_\+htpt\+\_\+meas\+\_\+intv\+\_\+update}} (uint16\+\_\+t meas\+\_\+intv)
+\begin{DoxyCompactList}\small\item\em This message is used by the application to order the H\+T\+PT profile to generate an indication (if enabled) of the Measurement Interval Char. This can be done as the application desires, at each connection, or if the measurement interval value has been modified locally (interface for this is not provided since a normal thermometer would have very few configurable UI elements and configuration should be done through Collector) In response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba01220ffe1802556ff06810793137b97a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+M\+E\+A\+S\+\_\+\+I\+N\+T\+V\+\_\+\+U\+P\+D\+\_\+\+R\+SP}} event should be received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all H\+T\+PT A\+P\+Is; Database Creation, Send Temperature, ... 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__htpt__group_ga2f9864d034b157d76216d1b7284b568b}\label{group__htpt__group_ga2f9864d034b157d76216d1b7284b568b}} 
+\index{HTPT APIs@{HTPT APIs}!at\_ble\_htpt\_create\_db@{at\_ble\_htpt\_create\_db}}
+\index{at\_ble\_htpt\_create\_db@{at\_ble\_htpt\_create\_db}!HTPT APIs@{HTPT APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_htpt\_create\_db()}{at\_ble\_htpt\_create\_db()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+htpt\+\_\+create\+\_\+db (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_af0538ef74570e97a4abdcc7263fdfcdd}{at\+\_\+ble\+\_\+htpt\+\_\+db\+\_\+config\+\_\+flag}}}]{features,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a236445568b928ababcce95965c981348}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+type}}}]{temp\+\_\+type,  }\item[{uint16\+\_\+t}]{valid\+\_\+range\+\_\+min,  }\item[{uint16\+\_\+t}]{valid\+\_\+range\+\_\+max,  }\item[{uint16\+\_\+t}]{meas\+\_\+intv,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a3da24809ec703fda904a0a3b4c85e350}{at\+\_\+ble\+\_\+htpt\+\_\+sec\+\_\+level}}}]{sec\+\_\+lvl,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$}]{start\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+This A\+PI message shall be used to add an instance of the Health Thermometer service into the database. This should be done during the initialization phase of the device , this is a blocking call and no events will be returned. 
+
+Note \+: allocated profile will be freed if device is reset or configuration changed \mbox{\hyperlink{group__gap__dev__config__group}{Device Configuration A\+P\+Is}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em features} & Indicate if optional features are supported or not, see \mbox{\hyperlink{at__ble__api_8h_af0538ef74570e97a4abdcc7263fdfcdd}{at\+\_\+ble\+\_\+htpt\+\_\+db\+\_\+config\+\_\+flag}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em temp\+\_\+type} & type of temperature as defined in org.\+bluetooth.\+characteristic.\+temperature\+\_\+type \\
+\hline
+\mbox{\texttt{ in}}  & {\em valid\+\_\+range\+\_\+min} & Minimal measurement interval value \\
+\hline
+\mbox{\texttt{ in}}  & {\em valid\+\_\+range\+\_\+max} & Maximal measurement interval value \\
+\hline
+\mbox{\texttt{ in}}  & {\em meas\+\_\+intv} & Latest known value for measurement interval \\
+\hline
+\mbox{\texttt{ in}}  & {\em sec\+\_\+lvl} & can be \+: Disable(0) , Enable(1), Unauth(2), Auth(3) see \mbox{\hyperlink{at__ble__api_8h_a3da24809ec703fda904a0a3b4c85e350}{at\+\_\+ble\+\_\+htpt\+\_\+sec\+\_\+level}} \\
+\hline
+\mbox{\texttt{ out}}  & {\em start\+\_\+handle} & \+: handle of health thermometer service if creation succeeded\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__htpt__group_ga1bac2afa579331c8bf3a7bf3715f4079}\label{group__htpt__group_ga1bac2afa579331c8bf3a7bf3715f4079}} 
+\index{HTPT APIs@{HTPT APIs}!at\_ble\_htpt\_enable@{at\_ble\_htpt\_enable}}
+\index{at\_ble\_htpt\_enable@{at\_ble\_htpt\_enable}!HTPT APIs@{HTPT APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_htpt\_enable()}{at\_ble\_htpt\_enable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+htpt\+\_\+enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ae35b76480ab773fe13f5dfb9f78a4b28}{at\+\_\+ble\+\_\+htpt\+\_\+ntf\+\_\+ind\+\_\+cfg}}}]{ntf\+\_\+ind\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+This A\+PI message can be used after the connection with a peer device has been established in order to restore known device bond data, in response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0217704aaf8283258dd02858769e6008}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+SP}} event should be received. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em ntf\+\_\+ind\+\_\+cfg} & Enable notifications or indications for profile characteristics see \mbox{\hyperlink{at__ble__api_8h_ae35b76480ab773fe13f5dfb9f78a4b28}{at\+\_\+ble\+\_\+htpt\+\_\+ntf\+\_\+ind\+\_\+cfg}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__htpt__group_ga2808738edb6dbd353e562b235a4d10a6}\label{group__htpt__group_ga2808738edb6dbd353e562b235a4d10a6}} 
+\index{HTPT APIs@{HTPT APIs}!at\_ble\_htpt\_meas\_intv\_update@{at\_ble\_htpt\_meas\_intv\_update}}
+\index{at\_ble\_htpt\_meas\_intv\_update@{at\_ble\_htpt\_meas\_intv\_update}!HTPT APIs@{HTPT APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_htpt\_meas\_intv\_update()}{at\_ble\_htpt\_meas\_intv\_update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+htpt\+\_\+meas\+\_\+intv\+\_\+update (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{meas\+\_\+intv }\end{DoxyParamCaption})}
+
+
+
+This message is used by the application to order the H\+T\+PT profile to generate an indication (if enabled) of the Measurement Interval Char. This can be done as the application desires, at each connection, or if the measurement interval value has been modified locally (interface for this is not provided since a normal thermometer would have very few configurable UI elements and configuration should be done through Collector) In response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba01220ffe1802556ff06810793137b97a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+M\+E\+A\+S\+\_\+\+I\+N\+T\+V\+\_\+\+U\+P\+D\+\_\+\+R\+SP}} event should be received. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em meas\+\_\+intv} & Measurement Interval value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__htpt__group_ga4979577ecfab6b25dc76e2a448c65b37}\label{group__htpt__group_ga4979577ecfab6b25dc76e2a448c65b37}} 
+\index{HTPT APIs@{HTPT APIs}!at\_ble\_htpt\_temp\_send@{at\_ble\_htpt\_temp\_send}}
+\index{at\_ble\_htpt\_temp\_send@{at\_ble\_htpt\_temp\_send}!HTPT APIs@{HTPT APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_htpt\_temp\_send()}{at\_ble\_htpt\_temp\_send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+send (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{temp,  }\item[{\mbox{\hyperlink{structat__ble__prf__date__time__t}{at\+\_\+ble\+\_\+prf\+\_\+date\+\_\+time\+\_\+t}} $\ast$}]{time\+\_\+stamp,  }\item[{\mbox{\hyperlink{at__ble__api_8h_accb2a3740dd79da6ab168adfa69c9548}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+flags}}}]{flags,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a236445568b928ababcce95965c981348}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+type}}}]{type,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{flag\+\_\+stable\+\_\+meas }\end{DoxyParamCaption})}
+
+
+
+This message is used by the application (which handles the temperature device driver and measurements) to send a temperature measurement through the Thermometer role. In response a \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba918f0b91ca899278bb08d41cf98cb005}{A\+T\+\_\+\+B\+L\+E\+\_\+\+H\+T\+P\+T\+\_\+\+T\+E\+M\+P\+\_\+\+S\+E\+N\+D\+\_\+\+C\+FM}} event should be received. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em temp} & temperature value \\
+\hline
+\mbox{\texttt{ in}}  & {\em time\+\_\+stamp} & The time of reading according to the format defined in \mbox{\hyperlink{structat__ble__prf__date__time__t}{at\+\_\+ble\+\_\+prf\+\_\+date\+\_\+time\+\_\+t}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em flags} & temp flag see \mbox{\hyperlink{at__ble__api_8h_accb2a3740dd79da6ab168adfa69c9548}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+flags}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & temp type see \mbox{\hyperlink{at__ble__api_8h_a236445568b928ababcce95965c981348}{at\+\_\+ble\+\_\+htpt\+\_\+temp\+\_\+type}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em flag\+\_\+stable\+\_\+meas} & stable or intermediate type of temperature (True stable meas, else false), intermediate type is used for display purposes while the measurement is in progress\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

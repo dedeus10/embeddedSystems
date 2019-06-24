@@ -1,0 +1,97 @@
+\hypertarget{at25dfx_8h}{}\section{A\+S\+F/common2/components/memory/serial\+\_\+flash/at25dfx/at25dfx.h File Reference}
+\label{at25dfx_8h}\index{ASF/common2/components/memory/serial\_flash/at25dfx/at25dfx.h@{ASF/common2/components/memory/serial\_flash/at25dfx/at25dfx.h}}
+
+
+A\+T25\+D\+Fx Serial\+Flash driver interface.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$at25dfx\+\_\+hal.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}}
+\item 
+struct \mbox{\hyperlink{structat25dfx__chip__config}{at25dfx\+\_\+chip\+\_\+config}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga98ba30dd90f741beb7f8d47e7725471d}{at25dfx\+\_\+type}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabbf1e1dd637f606098ae4ccac417ab14}{A\+T25\+D\+F\+X\+\_\+512B}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da7190685f36888e0fc72a10ec34f1c6f7}{A\+T25\+D\+F\+X\+\_\+021}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab04ef01e6fa145d7a0a3472974978404}{A\+T25\+D\+F\+X\+\_\+041A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da9a5f9c0b38017fce506e65e5fcfccf1c}{A\+T25\+D\+F\+X\+\_\+081}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da958e4a75f1080b2e6ae0a8ad53d46189}{A\+T25\+D\+F\+X\+\_\+081A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dacf36c8ececd590e2ebf63524ec6b8e00}{A\+T25\+D\+F\+X\+\_\+161}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dac4cdd46ba3dfb0894e6f0b0502d2568e}{A\+T25\+D\+F\+X\+\_\+\+L161}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471da07eaaa7f5f50f718d8523bc5ecceeb61}{A\+T25\+D\+F\+X\+\_\+\+Q161}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dab1b556b612d1dfc5786da5196fea6fe1}{A\+T25\+D\+F\+X\+\_\+321A}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga98ba30dd90f741beb7f8d47e7725471dabe078bc157dc861a62e7bc5539bf0bd1}{A\+T25\+D\+F\+X\+\_\+641}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}} \{ \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059ba1803edc936dff9e00b22bb1665c5f4e0}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+4\+KB}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059badb4fdfe58350143efe009cc15e39b52a}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+32\+KB}}, 
+\mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gga1b6ad4d489afc2892947e731f9be059baebd2ecf4d5e40c0fa33506d7fa4fb0fd}{A\+T25\+D\+F\+X\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+Z\+E\+\_\+64\+KB}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}\textbf{ Initialization}\par
+\end{Indent}
+\begin{Indent}\textbf{ Presence}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gabc77a5e6b7714d6a3731505b24ac5082}{at25dfx\+\_\+chip\+\_\+check\+\_\+presence}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Check presence of chip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Read/\+Write}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga867ff68dbb3def1fbac0c9359ea7e36e}{at25dfx\+\_\+chip\+\_\+read\+\_\+buffer}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, void $\ast$data, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} length)
+\begin{DoxyCompactList}\small\item\em Read data from chip. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga680dae17472f869582c92512d4995dcc}{at25dfx\+\_\+chip\+\_\+write\+\_\+buffer}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, const void $\ast$data, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaebf176d512c4cc61390aef7159ddccb9}{at25dfx\+\_\+datalen\+\_\+t}} length)
+\begin{DoxyCompactList}\small\item\em Write data to chip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Erase}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gae996a3088d79878787756de3a53f7651}{at25dfx\+\_\+chip\+\_\+erase}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Erase chip. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gacb524f227dc6a286a4a6d5f2d19aed1f}{at25dfx\+\_\+chip\+\_\+erase\+\_\+block}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, enum \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga1b6ad4d489afc2892947e731f9be059b}{at25dfx\+\_\+block\+\_\+size}} block\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Erase block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Sector Protect}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gab9a4079fe6c6fee840cb296843d27500}{at25dfx\+\_\+chip\+\_\+set\+\_\+global\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} protect)
+\begin{DoxyCompactList}\small\item\em Set sector protection globally. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga2c1adc1ecbcc27fbe88f5d57bfa0591c}{at25dfx\+\_\+chip\+\_\+set\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} protect)
+\begin{DoxyCompactList}\small\item\em Set protection setting of a single sector. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_gaa811a5f0cad3fba016aef4ae128b8207}{at25dfx\+\_\+chip\+\_\+get\+\_\+sector\+\_\+protect}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip, \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga6797a814b041014cef23de480c9da9ef}{at25dfx\+\_\+address\+\_\+t}} address, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} $\ast$protect)
+\begin{DoxyCompactList}\small\item\em Get protection setting of a single sector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Sleep/\+Wake}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga9a5ea9405eedcf45f3846b3e74f227a3}{at25dfx\+\_\+chip\+\_\+sleep}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Put device to sleep. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group_ga66d2ea2176179b7e6cb06901bb2bdc05}{at25dfx\+\_\+chip\+\_\+wake}} (struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} $\ast$chip)
+\begin{DoxyCompactList}\small\item\em Wake device from sleep. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+A\+T25\+D\+Fx Serial\+Flash driver interface. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

@@ -1,0 +1,46 @@
+\hypertarget{group__part__macros__group}{}\section{Atmel part identification macros}
+\label{group__part__macros__group}\index{Atmel part identification macros@{Atmel part identification macros}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__uc3__part__macros__group}{A\+V\+R U\+C3 parts}}
+\item 
+\mbox{\hyperlink{group__xmega__part__macros__group}{A\+V\+R X\+M\+E\+G\+A parts}}
+\item 
+\mbox{\hyperlink{group__mega__part__macros__group}{mega\+A\+V\+R parts}}
+\item 
+\mbox{\hyperlink{group__sam__part__macros__group}{S\+A\+M parts}}
+\end{DoxyCompactItemize}
+\subsection*{Convenience macros for part checking}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__part__macros__group_ga2fb54ec8ba6d98af5ed21dfb4ec97483}{A\+V\+R8\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED}}(part)~(defined(\+\_\+\+\_\+ \#\# part \#\# \+\_\+\+\_\+) $\vert$$\vert$ defined(\+\_\+\+\_\+\+A\+V\+R\+\_\+ \#\# part \#\# \+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{group__part__macros__group_gac253d1a424ff2bc355184e3cdb93514d}{A\+V\+R32\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED}}(part)~(defined(\+\_\+\+\_\+\+A\+T32 \#\# part \#\# \+\_\+\+\_\+) $\vert$$\vert$ defined(\+\_\+\+\_\+\+A\+V\+R32\+\_\+ \#\# part \#\# \+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{group__part__macros__group_ga50580478fd56bb842e0cbdd354a6933c}{S\+A\+M\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED}}(part)~(defined(\+\_\+\+\_\+ \#\# part \#\# \+\_\+\+\_\+))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This collection of macros identify which series and families that the various Atmel parts belong to. These can be used to select part-\/dependent sections of code at compile time. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__part__macros__group_gac253d1a424ff2bc355184e3cdb93514d}\label{group__part__macros__group_gac253d1a424ff2bc355184e3cdb93514d}} 
+\index{Atmel part identification macros@{Atmel part identification macros}!AVR32\_PART\_IS\_DEFINED@{AVR32\_PART\_IS\_DEFINED}}
+\index{AVR32\_PART\_IS\_DEFINED@{AVR32\_PART\_IS\_DEFINED}!Atmel part identification macros@{Atmel part identification macros}}
+\subsubsection{\texorpdfstring{AVR32\_PART\_IS\_DEFINED}{AVR32\_PART\_IS\_DEFINED}}
+{\footnotesize\ttfamily \#define A\+V\+R32\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED(\begin{DoxyParamCaption}\item[{}]{part }\end{DoxyParamCaption})~(defined(\+\_\+\+\_\+\+A\+T32 \#\# part \#\# \+\_\+\+\_\+) $\vert$$\vert$ defined(\+\_\+\+\_\+\+A\+V\+R32\+\_\+ \#\# part \#\# \+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{group__part__macros__group_ga2fb54ec8ba6d98af5ed21dfb4ec97483}\label{group__part__macros__group_ga2fb54ec8ba6d98af5ed21dfb4ec97483}} 
+\index{Atmel part identification macros@{Atmel part identification macros}!AVR8\_PART\_IS\_DEFINED@{AVR8\_PART\_IS\_DEFINED}}
+\index{AVR8\_PART\_IS\_DEFINED@{AVR8\_PART\_IS\_DEFINED}!Atmel part identification macros@{Atmel part identification macros}}
+\subsubsection{\texorpdfstring{AVR8\_PART\_IS\_DEFINED}{AVR8\_PART\_IS\_DEFINED}}
+{\footnotesize\ttfamily \#define A\+V\+R8\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED(\begin{DoxyParamCaption}\item[{}]{part }\end{DoxyParamCaption})~(defined(\+\_\+\+\_\+ \#\# part \#\# \+\_\+\+\_\+) $\vert$$\vert$ defined(\+\_\+\+\_\+\+A\+V\+R\+\_\+ \#\# part \#\# \+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{group__part__macros__group_ga50580478fd56bb842e0cbdd354a6933c}\label{group__part__macros__group_ga50580478fd56bb842e0cbdd354a6933c}} 
+\index{Atmel part identification macros@{Atmel part identification macros}!SAM\_PART\_IS\_DEFINED@{SAM\_PART\_IS\_DEFINED}}
+\index{SAM\_PART\_IS\_DEFINED@{SAM\_PART\_IS\_DEFINED}!Atmel part identification macros@{Atmel part identification macros}}
+\subsubsection{\texorpdfstring{SAM\_PART\_IS\_DEFINED}{SAM\_PART\_IS\_DEFINED}}
+{\footnotesize\ttfamily \#define S\+A\+M\+\_\+\+P\+A\+R\+T\+\_\+\+I\+S\+\_\+\+D\+E\+F\+I\+N\+ED(\begin{DoxyParamCaption}\item[{}]{part }\end{DoxyParamCaption})~(defined(\+\_\+\+\_\+ \#\# part \#\# \+\_\+\+\_\+))}
+

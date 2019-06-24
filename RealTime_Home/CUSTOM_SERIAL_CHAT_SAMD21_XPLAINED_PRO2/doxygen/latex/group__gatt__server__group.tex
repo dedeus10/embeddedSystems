@@ -1,0 +1,274 @@
+\hypertarget{group__gatt__server__group}{}\section{G\+A\+TT Server A\+P\+Is}
+\label{group__gatt__server__group}\index{GATT Server APIs@{GATT Server APIs}}
+
+
+This group includes all G\+A\+TT Server A\+P\+Is; Set value, Get value, Notify, Indicate, ...  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_gaa7c9ccdaacf5fb00c35c361992ad3485}{at\+\_\+ble\+\_\+service\+\_\+define}} (\mbox{\hyperlink{structat__ble__service__t}{at\+\_\+ble\+\_\+service\+\_\+t}} $\ast$svc)
+\begin{DoxyCompactList}\small\item\em Defines a new service along with its included services and characteristics. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga7cf329171ab5fa04fac8efda9b37c4f1}{at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+define}} (\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$uuid, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$service\+\_\+handle, \mbox{\hyperlink{structat__ble__included__service__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+t}} $\ast$included\+\_\+service\+\_\+list, uint16\+\_\+t included\+\_\+service\+\_\+count, \mbox{\hyperlink{structat__ble__characteristic__t}{at\+\_\+ble\+\_\+characteristic\+\_\+t}} $\ast$charactristic\+\_\+list, uint16\+\_\+t charactristic\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Defines a new Primary service along with its included services and characteristics. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga74b6ac32481172acfff34c8b7736605d}{at\+\_\+ble\+\_\+secondary\+\_\+service\+\_\+define}} (\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$uuid, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$service\+\_\+handle, \mbox{\hyperlink{structat__ble__included__service__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+t}} $\ast$included\+\_\+service\+\_\+list, uint16\+\_\+t included\+\_\+service\+\_\+count, \mbox{\hyperlink{structat__ble__characteristic__t}{at\+\_\+ble\+\_\+characteristic\+\_\+t}} $\ast$charactristic\+\_\+list, uint16\+\_\+t charactristic\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Defines a new Secondary service along with its included services and characteristics. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga505012ec9659b6c8a933611af55773b0}{at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+set}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle, uint8\+\_\+t $\ast$value, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Sets A characteristic value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga8397f87decb36953e937f04390c3ffa7}{at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+get}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle, uint8\+\_\+t $\ast$value, uint16\+\_\+t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Reads A characteristic value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga5c380b2c2344c8812dbf14a23a4ac1dc}{at\+\_\+ble\+\_\+notification\+\_\+send}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} attr\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Sends a Notification A\+T\+\_\+\+B\+L\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+O\+N\+F\+I\+R\+M\+ED is received as soon as notification P\+DU has been sent over the air. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga53f16fb39e573e040d4b93571dfe97bb}{at\+\_\+ble\+\_\+indication\+\_\+send}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} attr\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Sends an Indication A\+T\+\_\+\+B\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+O\+N\+F\+I\+R\+M\+ED is received when indication has been correctly received by peer device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga89b3ecb2404461014e383ce0ca7b98c0}{at\+\_\+ble\+\_\+send\+\_\+service\+\_\+changed\+\_\+indication}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Sends a Service changed Indication. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_ga2c9e2f91364533457751646648246304}{at\+\_\+ble\+\_\+read\+\_\+authorize\+\_\+reply}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} attr\+\_\+handle, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} grant\+\_\+authorization)
+\begin{DoxyCompactList}\small\item\em Replies to a read authorization request requested by by \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebae51c46b66e7d933258c512f0ea0b7acd}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+E\+A\+D\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__server__group_gaf68dba9223f2fd2828ec74ce9a9f9f8e}{at\+\_\+ble\+\_\+write\+\_\+authorize\+\_\+reply}} (\mbox{\hyperlink{structat__ble__characteristic__write__request__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+request\+\_\+t}} $\ast$param, \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} status)
+\begin{DoxyCompactList}\small\item\em Replies to a write authorization request requested by by \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac18b89e2db777b2340f2f01b93466f18}{A\+T\+\_\+\+B\+L\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all G\+A\+TT Server A\+P\+Is; Set value, Get value, Notify, Indicate, ... 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gatt__server__group_ga8397f87decb36953e937f04390c3ffa7}\label{group__gatt__server__group_ga8397f87decb36953e937f04390c3ffa7}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_characteristic\_value\_get@{at\_ble\_characteristic\_value\_get}}
+\index{at\_ble\_characteristic\_value\_get@{at\_ble\_characteristic\_value\_get}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_value\_get()}{at\_ble\_characteristic\_value\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle,  }\item[{uint8\+\_\+t $\ast$}]{value,  }\item[{uint16\+\_\+t $\ast$}]{len }\end{DoxyParamCaption})}
+
+
+
+Reads A characteristic value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Characteristic value handle \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & read value will be returned here \\
+\hline
+\mbox{\texttt{ out}}  & {\em len} & desired read length, in bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga505012ec9659b6c8a933611af55773b0}\label{group__gatt__server__group_ga505012ec9659b6c8a933611af55773b0}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_characteristic\_value\_set@{at\_ble\_characteristic\_value\_set}}
+\index{at\_ble\_characteristic\_value\_set@{at\_ble\_characteristic\_value\_set}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_value\_set()}{at\_ble\_characteristic\_value\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle,  }\item[{uint8\+\_\+t $\ast$}]{value,  }\item[{uint16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Sets A characteristic value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & Characteristic value handle \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & new value \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & Value length, in bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga53f16fb39e573e040d4b93571dfe97bb}\label{group__gatt__server__group_ga53f16fb39e573e040d4b93571dfe97bb}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_indication\_send@{at\_ble\_indication\_send}}
+\index{at\_ble\_indication\_send@{at\_ble\_indication\_send}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_indication\_send()}{at\_ble\_indication\_send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+indication\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{attr\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Sends an Indication A\+T\+\_\+\+B\+L\+E\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+O\+N\+F\+I\+R\+M\+ED is received when indication has been correctly received by peer device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection to be notified \\
+\hline
+\mbox{\texttt{ in}}  & {\em attr\+\_\+handle} & handle of the attribute originating the indication\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+If the value has been updated, it is required to use \mbox{\hyperlink{group__gatt__server__group_ga505012ec9659b6c8a933611af55773b0}{at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+set}} first
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga5c380b2c2344c8812dbf14a23a4ac1dc}\label{group__gatt__server__group_ga5c380b2c2344c8812dbf14a23a4ac1dc}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_notification\_send@{at\_ble\_notification\_send}}
+\index{at\_ble\_notification\_send@{at\_ble\_notification\_send}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_notification\_send()}{at\_ble\_notification\_send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+notification\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{attr\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Sends a Notification A\+T\+\_\+\+B\+L\+E\+\_\+\+N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+C\+O\+N\+F\+I\+R\+M\+ED is received as soon as notification P\+DU has been sent over the air. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection to be notified \\
+\hline
+\mbox{\texttt{ in}}  & {\em attr\+\_\+handle} & handle of the attribute originating the notification\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+If the value has been updated, it is required to use \mbox{\hyperlink{group__gatt__server__group_ga505012ec9659b6c8a933611af55773b0}{at\+\_\+ble\+\_\+characteristic\+\_\+value\+\_\+set}} first
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga7cf329171ab5fa04fac8efda9b37c4f1}\label{group__gatt__server__group_ga7cf329171ab5fa04fac8efda9b37c4f1}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_primary\_service\_define@{at\_ble\_primary\_service\_define}}
+\index{at\_ble\_primary\_service\_define@{at\_ble\_primary\_service\_define}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_primary\_service\_define()}{at\_ble\_primary\_service\_define()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+define (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{uuid,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$}]{service\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__included__service__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+t}} $\ast$}]{included\+\_\+service\+\_\+list,  }\item[{uint16\+\_\+t}]{included\+\_\+service\+\_\+count,  }\item[{\mbox{\hyperlink{structat__ble__characteristic__t}{at\+\_\+ble\+\_\+characteristic\+\_\+t}} $\ast$}]{charactristic\+\_\+list,  }\item[{uint16\+\_\+t}]{charactristic\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+Defines a new Primary service along with its included services and characteristics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uuid} & The primary service U\+U\+ID \\
+\hline
+\mbox{\texttt{ out}}  & {\em service\+\_\+handle} & the Service handle will be returned here \\
+\hline
+\mbox{\texttt{ in}}  & {\em included\+\_\+service\+\_\+list} & an array of included service references \\
+\hline
+\mbox{\texttt{ in}}  & {\em included\+\_\+service\+\_\+count} & number of elements in included\+\_\+service\+\_\+list \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em charactristic\+\_\+list} & an array of characteristics included in the service, this array is update with respective characteristics handles. \\
+\hline
+\mbox{\texttt{ in}}  & {\em charactristic\+\_\+count} & number of elements in charactristic\+\_\+list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga2c9e2f91364533457751646648246304}\label{group__gatt__server__group_ga2c9e2f91364533457751646648246304}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_read\_authorize\_reply@{at\_ble\_read\_authorize\_reply}}
+\index{at\_ble\_read\_authorize\_reply@{at\_ble\_read\_authorize\_reply}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_read\_authorize\_reply()}{at\_ble\_read\_authorize\_reply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+read\+\_\+authorize\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{attr\+\_\+handle,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{grant\+\_\+authorization }\end{DoxyParamCaption})}
+
+
+
+Replies to a read authorization request requested by by \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebae51c46b66e7d933258c512f0ea0b7acd}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+E\+A\+D\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em attr\+\_\+handle} & handle of the attribute to read \\
+\hline
+\mbox{\texttt{ in}}  & {\em grant\+\_\+authorization} & if True, Authorization is granted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga74b6ac32481172acfff34c8b7736605d}\label{group__gatt__server__group_ga74b6ac32481172acfff34c8b7736605d}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_secondary\_service\_define@{at\_ble\_secondary\_service\_define}}
+\index{at\_ble\_secondary\_service\_define@{at\_ble\_secondary\_service\_define}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_secondary\_service\_define()}{at\_ble\_secondary\_service\_define()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+secondary\+\_\+service\+\_\+define (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{uuid,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} $\ast$}]{service\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__included__service__t}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+t}} $\ast$}]{included\+\_\+service\+\_\+list,  }\item[{uint16\+\_\+t}]{included\+\_\+service\+\_\+count,  }\item[{\mbox{\hyperlink{structat__ble__characteristic__t}{at\+\_\+ble\+\_\+characteristic\+\_\+t}} $\ast$}]{charactristic\+\_\+list,  }\item[{uint16\+\_\+t}]{charactristic\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+Defines a new Secondary service along with its included services and characteristics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uuid} & The secondary service U\+U\+ID \\
+\hline
+\mbox{\texttt{ out}}  & {\em service\+\_\+handle} & the Service handle will be returned here \\
+\hline
+\mbox{\texttt{ in}}  & {\em included\+\_\+service\+\_\+list} & an array of included service references \\
+\hline
+\mbox{\texttt{ in}}  & {\em included\+\_\+service\+\_\+count} & number of elements in included\+\_\+service\+\_\+list \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em charactristic\+\_\+list} & an array of characteristics included in the service, this array is update with respective characteristics handles. \\
+\hline
+\mbox{\texttt{ in}}  & {\em charactristic\+\_\+count} & number of elements in charactristic\+\_\+list\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Secondary Services are only relevant in the context of the entity that references them, It is therefore forbidden to add a secondary service declaration that is not referenced by another service later in the A\+TT table
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_ga89b3ecb2404461014e383ce0ca7b98c0}\label{group__gatt__server__group_ga89b3ecb2404461014e383ce0ca7b98c0}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_send\_service\_changed\_indication@{at\_ble\_send\_service\_changed\_indication}}
+\index{at\_ble\_send\_service\_changed\_indication@{at\_ble\_send\_service\_changed\_indication}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_send\_service\_changed\_indication()}{at\_ble\_send\_service\_changed\_indication()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+send\+\_\+service\+\_\+changed\+\_\+indication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Sends a Service changed Indication. 
+
+\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad0100b0e1b185036a96704bb6b1b996c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+S\+E\+NT}} should be received indicating status of sending the indication
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection to which the indication will be sent \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of affected handle range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of affected handle range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_gaa7c9ccdaacf5fb00c35c361992ad3485}\label{group__gatt__server__group_gaa7c9ccdaacf5fb00c35c361992ad3485}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_service\_define@{at\_ble\_service\_define}}
+\index{at\_ble\_service\_define@{at\_ble\_service\_define}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_service\_define()}{at\_ble\_service\_define()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+service\+\_\+define (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__service__t}{at\+\_\+ble\+\_\+service\+\_\+t}} $\ast$}]{svc }\end{DoxyParamCaption})}
+
+
+
+Defines a new service along with its included services and characteristics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em svc} & The primary service complete description\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__server__group_gaf68dba9223f2fd2828ec74ce9a9f9f8e}\label{group__gatt__server__group_gaf68dba9223f2fd2828ec74ce9a9f9f8e}} 
+\index{GATT Server APIs@{GATT Server APIs}!at\_ble\_write\_authorize\_reply@{at\_ble\_write\_authorize\_reply}}
+\index{at\_ble\_write\_authorize\_reply@{at\_ble\_write\_authorize\_reply}!GATT Server APIs@{GATT Server APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_write\_authorize\_reply()}{at\_ble\_write\_authorize\_reply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+write\+\_\+authorize\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__characteristic__write__request__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+request\+\_\+t}} $\ast$}]{param,  }\item[{\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}}}]{status }\end{DoxyParamCaption})}
+
+
+
+Replies to a write authorization request requested by by \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac18b89e2db777b2340f2f01b93466f18}{A\+T\+\_\+\+B\+L\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+U\+T\+H\+O\+R\+I\+Z\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}} event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em param} & handle \mbox{\hyperlink{structat__ble__characteristic__write__request__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+request\+\_\+t}} struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em status} & \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} to grant write, Otherwise \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

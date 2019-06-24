@@ -1,0 +1,242 @@
+\hypertarget{group__fifo__group}{}\section{serial First-\/\+In-\/\+First-\/\+Out Buffer (F\+I\+FO)}
+\label{group__fifo__group}\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}}
+\begin{DoxyCompactList}\small\item\em F\+I\+FO descriptor used by F\+I\+FO driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}} \mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a1bb99f1f4efb995d853055f2b828211b}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+OK}} = 0, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a70a699fd8e590acf0a0401d068cde2b1}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW}}, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a8081f9c03c40070cc7c561f8e7f6e05c}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW}}, 
+\mbox{\hyperlink{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857af3c8eb15fe6d85dd497e80e9ce2861d4}{S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+OR}}
+ \}
+\begin{DoxyCompactList}\small\item\em Error codes used by S\+E\+R\+I\+AL F\+I\+FO driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__fifo__group_ga047008758cc687991adab14866208100}{ser\+\_\+fifo\+\_\+init}} (\mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}} $\ast$\mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}}, void $\ast$buffer, uint16\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Initializes a new software F\+I\+FO for a certain \textquotesingle{}size\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{group__fifo__group_ga00500224ac165192ac888251a076606d}{u32ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to unsigned-\/32 bits location. \end{DoxyCompactList}\item 
+uint16\+\_\+t $\ast$ \mbox{\hyperlink{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}{u16ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to unsigned-\/16 bits location. \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}{u8ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to unsigned-\/8 bits location. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint32\_t $\ast$ \mbox{\hyperlink{group__fifo__group_ga00500224ac165192ac888251a076606d}{u32ptr}}\\
+\>\>{\em Pointer to unsigned-\/32 bits location. }\\
+\>uint16\_t $\ast$ \mbox{\hyperlink{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}{u16ptr}}\\
+\>\>{\em Pointer to unsigned-\/16 bits location. }\\
+\>uint8\_t $\ast$ \mbox{\hyperlink{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}{u8ptr}}\\
+\>\>{\em Pointer to unsigned-\/8 bits location. }\\
+\} \mbox{\hyperlink{group__fifo__group_ga83d6d4f3680146b2fed2c6cd33da9d59}{buffer}}\\
+
+\end{tabbing}\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_ga926074dbb263b916922202b938daf3ad}{read\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Read index. \end{DoxyCompactList}\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_gaa10e623e08c4046864b5c1507a97a9ed}{write\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Write index. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_gaaba88b24a21a6c70c895c0d55f4a69a0}{size}}
+\begin{DoxyCompactList}\small\item\em Size of the F\+I\+FO (unit is in number of \textquotesingle{}element\textquotesingle{}) \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_ga7fd850d4bb04f7410e8e2abf5f349348}{mask}}
+\begin{DoxyCompactList}\small\item\em Mask used to speed up F\+I\+FO operation (wrapping) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+See fifo\+\_\+quickstart.
+
+These functions manages F\+I\+F\+Os thanks to simple a A\+PI. The F\+I\+FO can be 100\% full thanks to a double-\/index range implementation. For example, a F\+I\+FO of 4 elements can be implemented\+: the F\+I\+FO can really hold up to 4 elements. This is particularly well suited for any kind of application needing a lot of small F\+I\+FO. The maximum fifo size is 128 items (uint8, uint16 or uint32). Note that the driver, thanks to its conception, does not use interrupt protection. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}\label{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!ser\_fifo\_desc\_t@{ser\_fifo\_desc\_t}}
+\index{ser\_fifo\_desc\_t@{ser\_fifo\_desc\_t}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{ser\_fifo\_desc\_t}{ser\_fifo\_desc\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}} \mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__fifo__group_gab6753158b7ebbc2bd6601f7f9a02d857}\label{group__fifo__group_gab6753158b7ebbc2bd6601f7f9a02d857}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+Error codes used by S\+E\+R\+I\+AL F\+I\+FO driver. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SER\_FIFO\_OK@{SER\_FIFO\_OK}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!SER\_FIFO\_OK@{SER\_FIFO\_OK}}}\mbox{\Hypertarget{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a1bb99f1f4efb995d853055f2b828211b}\label{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a1bb99f1f4efb995d853055f2b828211b}} 
+S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+OK&Normal operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SER\_FIFO\_ERROR\_OVERFLOW@{SER\_FIFO\_ERROR\_OVERFLOW}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!SER\_FIFO\_ERROR\_OVERFLOW@{SER\_FIFO\_ERROR\_OVERFLOW}}}\mbox{\Hypertarget{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a70a699fd8e590acf0a0401d068cde2b1}\label{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a70a699fd8e590acf0a0401d068cde2b1}} 
+S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW&Attempt to push something in a F\+I\+FO that is full. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SER\_FIFO\_ERROR\_UNDERFLOW@{SER\_FIFO\_ERROR\_UNDERFLOW}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!SER\_FIFO\_ERROR\_UNDERFLOW@{SER\_FIFO\_ERROR\_UNDERFLOW}}}\mbox{\Hypertarget{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a8081f9c03c40070cc7c561f8e7f6e05c}\label{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857a8081f9c03c40070cc7c561f8e7f6e05c}} 
+S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+O\+R\+\_\+\+U\+N\+D\+E\+R\+F\+L\+OW&Attempt to pull something from a F\+I\+FO that is empty. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SER\_FIFO\_ERROR@{SER\_FIFO\_ERROR}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!SER\_FIFO\_ERROR@{SER\_FIFO\_ERROR}}}\mbox{\Hypertarget{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857af3c8eb15fe6d85dd497e80e9ce2861d4}\label{group__fifo__group_ggab6753158b7ebbc2bd6601f7f9a02d857af3c8eb15fe6d85dd497e80e9ce2861d4}} 
+S\+E\+R\+\_\+\+F\+I\+F\+O\+\_\+\+E\+R\+R\+OR&Error condition during F\+I\+FO initialization. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__fifo__group_ga047008758cc687991adab14866208100}\label{group__fifo__group_ga047008758cc687991adab14866208100}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!ser\_fifo\_init@{ser\_fifo\_init}}
+\index{ser\_fifo\_init@{ser\_fifo\_init}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{ser\_fifo\_init()}{ser\_fifo\_init()}}
+{\footnotesize\ttfamily int ser\+\_\+fifo\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__fifo__group_gab18c001ea5c010cc8dfdedb3525f5013}{ser\+\_\+fifo\+\_\+desc\+\_\+t}} $\ast$}]{ser\+\_\+fifo\+\_\+desc,  }\item[{void $\ast$}]{buffer,  }\item[{uint16\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Initializes a new software F\+I\+FO for a certain \textquotesingle{}size\textquotesingle{}. 
+
+\begin{DoxyPrecond}{Precondition}
+Both fifo descriptor and buffer must be allocated by the caller before.
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structser__fifo__desc}{ser\+\_\+fifo\+\_\+desc}}} & Pointer on the F\+I\+FO descriptor. \\
+\hline
+{\em buffer} & Pointer on the F\+I\+FO buffer. \\
+\hline
+{\em size} & Size of the buffer (unit is in number of \textquotesingle{}elements\textquotesingle{}). It must be a 2-\/power and $<$= to 128.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em F\+I\+F\+O\+\_\+\+OK} & when no error occurred. \\
+\hline
+{\em F\+I\+F\+O\+\_\+\+E\+R\+R\+OR} & when the size is not a 2-\/power. \\
+\hline
+\end{DoxyRetVals}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__fifo__group_ga83d6d4f3680146b2fed2c6cd33da9d59}\label{group__fifo__group_ga83d6d4f3680146b2fed2c6cd33da9d59}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!buffer@{buffer}}
+\index{buffer@{buffer}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily union \{ ... \}    buffer}
+
+\mbox{\Hypertarget{group__fifo__group_ga7fd850d4bb04f7410e8e2abf5f349348}\label{group__fifo__group_ga7fd850d4bb04f7410e8e2abf5f349348}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!mask@{mask}}
+\index{mask@{mask}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily uint16\+\_\+t mask}
+
+
+
+Mask used to speed up F\+I\+FO operation (wrapping) 
+
+\mbox{\Hypertarget{group__fifo__group_ga926074dbb263b916922202b938daf3ad}\label{group__fifo__group_ga926074dbb263b916922202b938daf3ad}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!read\_index@{read\_index}}
+\index{read\_index@{read\_index}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{read\_index}{read\_index}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t read\+\_\+index}
+
+
+
+Read index. 
+
+\mbox{\Hypertarget{group__fifo__group_gaaba88b24a21a6c70c895c0d55f4a69a0}\label{group__fifo__group_gaaba88b24a21a6c70c895c0d55f4a69a0}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!size@{size}}
+\index{size@{size}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily uint16\+\_\+t size}
+
+
+
+Size of the F\+I\+FO (unit is in number of \textquotesingle{}element\textquotesingle{}) 
+
+\mbox{\Hypertarget{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}\label{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u16ptr@{u16ptr}}
+\index{u16ptr@{u16ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u16ptr}{u16ptr}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t$\ast$ u16ptr}
+
+
+
+Pointer to unsigned-\/16 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}\label{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u16ptr@{u16ptr}}
+\index{u16ptr@{u16ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u16ptr}{u16ptr}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t$\ast$ u16ptr}
+
+
+
+Pointer to unsigned-\/16 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_ga00500224ac165192ac888251a076606d}\label{group__fifo__group_ga00500224ac165192ac888251a076606d}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u32ptr@{u32ptr}}
+\index{u32ptr@{u32ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u32ptr}{u32ptr}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ u32ptr}
+
+
+
+Pointer to unsigned-\/32 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_ga00500224ac165192ac888251a076606d}\label{group__fifo__group_ga00500224ac165192ac888251a076606d}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u32ptr@{u32ptr}}
+\index{u32ptr@{u32ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u32ptr}{u32ptr}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ u32ptr}
+
+
+
+Pointer to unsigned-\/32 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}\label{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u8ptr@{u8ptr}}
+\index{u8ptr@{u8ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u8ptr}{u8ptr}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ u8ptr}
+
+
+
+Pointer to unsigned-\/8 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}\label{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!u8ptr@{u8ptr}}
+\index{u8ptr@{u8ptr}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{u8ptr}{u8ptr}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ u8ptr}
+
+
+
+Pointer to unsigned-\/8 bits location. 
+
+\mbox{\Hypertarget{group__fifo__group_gaa10e623e08c4046864b5c1507a97a9ed}\label{group__fifo__group_gaa10e623e08c4046864b5c1507a97a9ed}} 
+\index{serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}!write\_index@{write\_index}}
+\index{write\_index@{write\_index}!serial First-\/In-\/First-\/Out Buffer (FIFO)@{serial First-\/In-\/First-\/Out Buffer (FIFO)}}
+\subsubsection{\texorpdfstring{write\_index}{write\_index}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t write\+\_\+index}
+
+
+
+Write index. 
+

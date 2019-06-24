@@ -1,0 +1,65 @@
+\hypertarget{structat__ble__adv__data__update__on__the__fly__t}{}\section{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t Struct Reference}
+\label{structat__ble__adv__data__update__on__the__fly__t}\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+
+
+use this structure when calling the api \mbox{\hyperlink{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly}} to set the advertising data on the fly  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}{presence\+\_\+bit\+\_\+mask}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a6f7c4a404361598a270a3811c727d550}{adv\+\_\+data}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a75fd7fdf06a003b4e9b217d58cd6b077}{adv\+\_\+data\+\_\+len}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a0e003239e5e63c936174be59bc0ffcfa}{scan\+\_\+resp\+\_\+data}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_aa364778628ff80935bf4515826aae316}{scan\+\_\+response\+\_\+data\+\_\+len}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+use this structure when calling the api \mbox{\hyperlink{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly}} to set the advertising data on the fly 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__adv__data__update__on__the__fly__t_a6f7c4a404361598a270a3811c727d550}\label{structat__ble__adv__data__update__on__the__fly__t_a6f7c4a404361598a270a3811c727d550}} 
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}!adv\_data@{adv\_data}}
+\index{adv\_data@{adv\_data}!at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+\subsubsection{\texorpdfstring{adv\_data}{adv\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ adv\+\_\+data}
+
+advertising data to be placed in advertisement packet \mbox{\Hypertarget{structat__ble__adv__data__update__on__the__fly__t_a75fd7fdf06a003b4e9b217d58cd6b077}\label{structat__ble__adv__data__update__on__the__fly__t_a75fd7fdf06a003b4e9b217d58cd6b077}} 
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}!adv\_data\_len@{adv\_data\_len}}
+\index{adv\_data\_len@{adv\_data\_len}!at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+\subsubsection{\texorpdfstring{adv\_data\_len}{adv\_data\_len}}
+{\footnotesize\ttfamily uint8\+\_\+t adv\+\_\+data\+\_\+len}
+
+advertising data length (from 0 to 28 Bytes) \mbox{\Hypertarget{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}\label{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}} 
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}!presence\_bit\_mask@{presence\_bit\_mask}}
+\index{presence\_bit\_mask@{presence\_bit\_mask}!at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+\subsubsection{\texorpdfstring{presence\_bit\_mask}{presence\_bit\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t presence\+\_\+bit\+\_\+mask}
+
+Presence Bit Mask to indicate data availability refer to the above defines \mbox{\hyperlink{at__ble__api_8h_ad35ea6c7ddf7f4ba30514bd6c2c11232}{A\+D\+V\+\_\+\+D\+A\+T\+A\+\_\+\+P\+R\+E\+S\+E\+NT}} \mbox{\hyperlink{at__ble__api_8h_a2e78b0afe66c462d12ce94807f14785a}{S\+C\+N\+\_\+\+R\+E\+S\+P\+\_\+\+D\+A\+T\+A\+\_\+\+P\+R\+E\+S\+E\+NT}} \mbox{\Hypertarget{structat__ble__adv__data__update__on__the__fly__t_a0e003239e5e63c936174be59bc0ffcfa}\label{structat__ble__adv__data__update__on__the__fly__t_a0e003239e5e63c936174be59bc0ffcfa}} 
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}!scan\_resp\_data@{scan\_resp\_data}}
+\index{scan\_resp\_data@{scan\_resp\_data}!at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+\subsubsection{\texorpdfstring{scan\_resp\_data}{scan\_resp\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ scan\+\_\+resp\+\_\+data}
+
+scan response data to be placed in scan response packet \mbox{\Hypertarget{structat__ble__adv__data__update__on__the__fly__t_aa364778628ff80935bf4515826aae316}\label{structat__ble__adv__data__update__on__the__fly__t_aa364778628ff80935bf4515826aae316}} 
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}!scan\_response\_data\_len@{scan\_response\_data\_len}}
+\index{scan\_response\_data\_len@{scan\_response\_data\_len}!at\_ble\_adv\_data\_update\_on\_the\_fly\_t@{at\_ble\_adv\_data\_update\_on\_the\_fly\_t}}
+\subsubsection{\texorpdfstring{scan\_response\_data\_len}{scan\_response\_data\_len}}
+{\footnotesize\ttfamily uint8\+\_\+t scan\+\_\+response\+\_\+data\+\_\+len}
+
+scan response data length (from 0 to 31 Bytes) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

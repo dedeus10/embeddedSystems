@@ -1,0 +1,229 @@
+\hypertarget{group__gap__dev__config__group}{}\section{Device Configuration A\+P\+Is}
+\label{group__gap__dev__config__group}\index{Device Configuration APIs@{Device Configuration APIs}}
+
+
+This group includes G\+AP device configurations A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\+\_\+ble\+\_\+init}} (\mbox{\hyperlink{structat__ble__init__config__t}{at\+\_\+ble\+\_\+init\+\_\+config\+\_\+t}} $\ast$args)
+\begin{DoxyCompactList}\small\item\em Initialize bus interface, reset the link layer and the host , Initialize memory required for storing data base related data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_gaed47ccba87a2a4989e49243c5de5a767}{at\+\_\+ble\+\_\+set\+\_\+gap\+\_\+deviceinfo}} (\mbox{\hyperlink{structat__ble__gap__deviceinfo__t}{at\+\_\+ble\+\_\+gap\+\_\+deviceinfo\+\_\+t}} $\ast$gap\+\_\+deviceinfo)
+\begin{DoxyCompactList}\small\item\em Set G\+AP attribute data base (Appearance , slave preferred connection parameters , device name write permissions) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_gaec200b5204b2ff7c97807a32b8add91e}{at\+\_\+ble\+\_\+gap\+\_\+get\+\_\+peer\+\_\+deviceinfo}} (uint16\+\_\+t conn\+\_\+handle, \mbox{\hyperlink{structat__ble__gapc__get__info__cmd__t}{at\+\_\+ble\+\_\+gapc\+\_\+get\+\_\+info\+\_\+cmd\+\_\+t}} $\ast$operation)
+\begin{DoxyCompactList}\small\item\em Retrieve information about peer device or about the current active link expected events are \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba5cc67ef12127d45180b4506113dce0bb}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+E\+E\+R\+\_\+\+A\+T\+T\+\_\+\+I\+N\+F\+O\+\_\+\+I\+ND}} \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaf876506d3b4994cfa13ebee6b0b8496e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+A\+P\+\_\+\+I\+ND}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_ga53dde841286e2752674a9d51a20f20cf}{at\+\_\+ble\+\_\+set\+\_\+att\+\_\+config}} (\mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}} $\ast$dev\+\_\+att\+\_\+cfg)
+\begin{DoxyCompactList}\small\item\em Set attribute permissions configuration (Device Appearance permissions, slave preferred connection parameters, Device Name permissions, Service Change feature) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_ga01a50db5b472a8b84738d15120abb63b}{at\+\_\+ble\+\_\+device\+\_\+name\+\_\+set}} (uint8\+\_\+t $\ast$dev\+\_\+name, uint8\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Set device name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_ga113d6fa1fc84f3450f92b1f45bd49f22}{at\+\_\+ble\+\_\+set\+\_\+privacy\+\_\+key}} (\mbox{\hyperlink{structat__ble__gap__irk__t}{at\+\_\+ble\+\_\+gap\+\_\+irk\+\_\+t}} $\ast$irk, uint16\+\_\+t interval)
+\begin{DoxyCompactList}\small\item\em Set device Identity Resolving Key. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_ga6d329f50553f677f15cb89a823be9dc1}{at\+\_\+ble\+\_\+set\+\_\+dev\+\_\+config}} (\mbox{\hyperlink{structat__ble__dev__config__t}{at\+\_\+ble\+\_\+dev\+\_\+config\+\_\+t}} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Set device configuration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__dev__config__group_gaabff432b5c853bdc3e8aca925a1fa7b0}{at\+\_\+ble\+\_\+set\+\_\+channel\+\_\+map}} (\mbox{\hyperlink{structat__ble__channel__map__t}{at\+\_\+ble\+\_\+channel\+\_\+map\+\_\+t}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em Set channel map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes G\+AP device configurations A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__dev__config__group_ga01a50db5b472a8b84738d15120abb63b}\label{group__gap__dev__config__group_ga01a50db5b472a8b84738d15120abb63b}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_device\_name\_set@{at\_ble\_device\_name\_set}}
+\index{at\_ble\_device\_name\_set@{at\_ble\_device\_name\_set}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_device\_name\_set()}{at\_ble\_device\_name\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+device\+\_\+name\+\_\+set (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{dev\+\_\+name,  }\item[{uint8\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Set device name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dev\+\_\+name} & the new device name \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & name length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_gaec200b5204b2ff7c97807a32b8add91e}\label{group__gap__dev__config__group_gaec200b5204b2ff7c97807a32b8add91e}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_gap\_get\_peer\_deviceinfo@{at\_ble\_gap\_get\_peer\_deviceinfo}}
+\index{at\_ble\_gap\_get\_peer\_deviceinfo@{at\_ble\_gap\_get\_peer\_deviceinfo}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_gap\_get\_peer\_deviceinfo()}{at\_ble\_gap\_get\_peer\_deviceinfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+gap\+\_\+get\+\_\+peer\+\_\+deviceinfo (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__gapc__get__info__cmd__t}{at\+\_\+ble\+\_\+gapc\+\_\+get\+\_\+info\+\_\+cmd\+\_\+t}} $\ast$}]{operation }\end{DoxyParamCaption})}
+
+
+
+Retrieve information about peer device or about the current active link expected events are \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba5cc67ef12127d45180b4506113dce0bb}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+E\+E\+R\+\_\+\+A\+T\+T\+\_\+\+I\+N\+F\+O\+\_\+\+I\+ND}} \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaf876506d3b4994cfa13ebee6b0b8496e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+M\+A\+P\+\_\+\+I\+ND}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em operation} & requested operation , \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structat__ble__gapc__get__info__cmd__t}{at\+\_\+ble\+\_\+gapc\+\_\+get\+\_\+info\+\_\+cmd\+\_\+t}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & Handle to the peer device\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}\label{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_init@{at\_ble\_init}}
+\index{at\_ble\_init@{at\_ble\_init}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_init()}{at\_ble\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__init__config__t}{at\+\_\+ble\+\_\+init\+\_\+config\+\_\+t}} $\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Initialize bus interface, reset the link layer and the host , Initialize memory required for storing data base related data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em args} & Pointer to specific data depends on A\+PI version
+\begin{DoxyItemize}
+\item 4.\+1\+: Pointer to structure for interface initialization using \mbox{\hyperlink{structat__ble__init__config__t}{at\+\_\+ble\+\_\+init\+\_\+config\+\_\+t}} structure
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function must be the first to be called.
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_ga53dde841286e2752674a9d51a20f20cf}\label{group__gap__dev__config__group_ga53dde841286e2752674a9d51a20f20cf}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_set\_att\_config@{at\_ble\_set\_att\_config}}
+\index{at\_ble\_set\_att\_config@{at\_ble\_set\_att\_config}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_att\_config()}{at\_ble\_set\_att\_config()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+att\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}} $\ast$}]{dev\+\_\+att\+\_\+cfg }\end{DoxyParamCaption})}
+
+
+
+Set attribute permissions configuration (Device Appearance permissions, slave preferred connection parameters, Device Name permissions, Service Change feature) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dev\+\_\+att\+\_\+cfg} & pointer to attributes configuration\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_gaabff432b5c853bdc3e8aca925a1fa7b0}\label{group__gap__dev__config__group_gaabff432b5c853bdc3e8aca925a1fa7b0}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_set\_channel\_map@{at\_ble\_set\_channel\_map}}
+\index{at\_ble\_set\_channel\_map@{at\_ble\_set\_channel\_map}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_channel\_map()}{at\_ble\_set\_channel\_map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+channel\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__channel__map__t}{at\+\_\+ble\+\_\+channel\+\_\+map\+\_\+t}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+Set channel map. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map} & pointer to mapping values\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structat__ble__channel__map__t}{at\+\_\+ble\+\_\+channel\+\_\+map\+\_\+t}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_ga6d329f50553f677f15cb89a823be9dc1}\label{group__gap__dev__config__group_ga6d329f50553f677f15cb89a823be9dc1}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_set\_dev\_config@{at\_ble\_set\_dev\_config}}
+\index{at\_ble\_set\_dev\_config@{at\_ble\_set\_dev\_config}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_dev\_config()}{at\_ble\_set\_dev\_config()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+dev\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__dev__config__t}{at\+\_\+ble\+\_\+dev\+\_\+config\+\_\+t}} $\ast$}]{config }\end{DoxyParamCaption})}
+
+
+
+Set device configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em config} & Pointer to configurations data structure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Default values would be applied in case of not assign another configurations values.
+\begin{DoxyItemize}
+\item Role \+: \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476aa2ac7617aa32b02150b9db1761c595978}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+A\+LL}}
+\item Renew Duration \+: \mbox{\hyperlink{at__ble__api_8h_a50b36406164b418c4de24014c3bf2a7d}{A\+T\+\_\+\+R\+E\+N\+E\+W\+\_\+\+D\+U\+R\+\_\+\+V\+A\+L\+\_\+\+M\+IN}}
+\item Address \+: 0x1032547698\+BA
+\item I\+R\+Key \+: 0x1032547698\+B\+A\+D\+C\+F\+E1101321541761981\+B\+A1\+D\+C1\+FE
+\item Address Type \+: \mbox{\hyperlink{at__ble__api_8h_aab076e537bd99ea1be0fbf95a2d16be4abcbf9f9edf645c939206d4b4c4045ca9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+P\+U\+B\+L\+IC}}
+\item Attribute Config \+: 0x20, which means\+:
+\begin{DoxyEnumerate}
+\item Name Permission \+: \mbox{\hyperlink{at__ble__api_8h_acd9a0371335811dbc90e98a7802a8968ad5b68af5e4ebdae35af30f67e0e71e99}{A\+T\+\_\+\+B\+L\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}
+\item Appearance Permission \+: \mbox{\hyperlink{at__ble__api_8h_acd9a0371335811dbc90e98a7802a8968ad5b68af5e4ebdae35af30f67e0e71e99}{A\+T\+\_\+\+B\+L\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}
+\item Enable S\+P\+CS \+: false
+\item Enable Service Changed \+: true
+\item R\+FU \+: \mbox{\hyperlink{at__ble__api_8h_acd9a0371335811dbc90e98a7802a8968ad5b68af5e4ebdae35af30f67e0e71e99}{A\+T\+\_\+\+B\+L\+E\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}
+\end{DoxyEnumerate}
+\item G\+AP Start Handle \+: \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}}
+\item G\+A\+TT Start Handle \+: \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}}
+\item Maximum M\+TU \+: \mbox{\hyperlink{at__ble__api_8h_a79ac5175ec942978c613c003af4d3ce6}{A\+T\+\_\+\+M\+T\+U\+\_\+\+V\+A\+L\+\_\+\+R\+E\+C\+O\+M\+M\+E\+N\+D\+ED}}
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structat__ble__dev__config__t}{at\+\_\+ble\+\_\+dev\+\_\+config\+\_\+t}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_gaed47ccba87a2a4989e49243c5de5a767}\label{group__gap__dev__config__group_gaed47ccba87a2a4989e49243c5de5a767}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_set\_gap\_deviceinfo@{at\_ble\_set\_gap\_deviceinfo}}
+\index{at\_ble\_set\_gap\_deviceinfo@{at\_ble\_set\_gap\_deviceinfo}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_gap\_deviceinfo()}{at\_ble\_set\_gap\_deviceinfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+gap\+\_\+deviceinfo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__gap__deviceinfo__t}{at\+\_\+ble\+\_\+gap\+\_\+deviceinfo\+\_\+t}} $\ast$}]{gap\+\_\+deviceinfo }\end{DoxyParamCaption})}
+
+
+
+Set G\+AP attribute data base (Appearance , slave preferred connection parameters , device name write permissions) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em gap\+\_\+deviceinfo} & G\+AP device information, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structat__ble__gap__deviceinfo__t}{at\+\_\+ble\+\_\+gap\+\_\+deviceinfo\+\_\+t}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__dev__config__group_ga113d6fa1fc84f3450f92b1f45bd49f22}\label{group__gap__dev__config__group_ga113d6fa1fc84f3450f92b1f45bd49f22}} 
+\index{Device Configuration APIs@{Device Configuration APIs}!at\_ble\_set\_privacy\_key@{at\_ble\_set\_privacy\_key}}
+\index{at\_ble\_set\_privacy\_key@{at\_ble\_set\_privacy\_key}!Device Configuration APIs@{Device Configuration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_privacy\_key()}{at\_ble\_set\_privacy\_key()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+privacy\+\_\+key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__gap__irk__t}{at\+\_\+ble\+\_\+gap\+\_\+irk\+\_\+t}} $\ast$}]{irk,  }\item[{uint16\+\_\+t}]{interval }\end{DoxyParamCaption})}
+
+
+
+Set device Identity Resolving Key. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em irk} & device I\+RK used for resolvable random BD address generation \\
+\hline
+\mbox{\texttt{ in}}  & {\em interval} & duration before regenerate device address in 10 ms units\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

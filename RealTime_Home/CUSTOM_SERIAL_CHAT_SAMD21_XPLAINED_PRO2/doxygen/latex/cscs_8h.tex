@@ -1,0 +1,100 @@
+\hypertarget{cscs_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/cscs/cscs.h File Reference}
+\label{cscs_8h}\index{ASF/thirdparty/wireless/ble\_sdk/ble\_services/cscs/cscs.h@{ASF/thirdparty/wireless/ble\_sdk/ble\_services/cscs/cscs.h}}
+
+
+Custom Serial Chat Service Declarations.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcsc__serv}{csc\+\_\+serv}}
+\begin{DoxyCompactList}\small\item\em Custom serial chat service info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cscs_8h_a976090b28af8a74f5af124f4d62f313d}{C\+S\+C\+\_\+\+U\+U\+I\+D\+\_\+128\+\_\+\+L\+EN}}~(16)
+\begin{DoxyCompactList}\small\item\em Custom serial chat U\+U\+ID length. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcsc__serv}{csc\+\_\+serv}} \mbox{\hyperlink{cscs_8h_a8c8e139b0677566af0e63e04f83be798}{csc\+\_\+serv\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Custom serial chat service info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscs_8h_a1677aa7e95e3326d55ecf20bbe459cdd}{csc\+\_\+serv\+\_\+init}} (uint8\+\_\+t $\ast$buf, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Initialize the csc service initialization function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{cscs_8h_a0f3d94bc89875442b1a93b71ed1b4004}{csc\+\_\+serv\+\_\+send\+\_\+data}} (uint16\+\_\+t connhandle, uint8\+\_\+t $\ast$databuf, uint16\+\_\+t datalen)
+\begin{DoxyCompactList}\small\item\em Function used for sending data to remote device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Custom Serial Chat Service Declarations. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cscs_8h_a976090b28af8a74f5af124f4d62f313d}\label{cscs_8h_a976090b28af8a74f5af124f4d62f313d}} 
+\index{cscs.h@{cscs.h}!CSC\_UUID\_128\_LEN@{CSC\_UUID\_128\_LEN}}
+\index{CSC\_UUID\_128\_LEN@{CSC\_UUID\_128\_LEN}!cscs.h@{cscs.h}}
+\subsubsection{\texorpdfstring{CSC\_UUID\_128\_LEN}{CSC\_UUID\_128\_LEN}}
+{\footnotesize\ttfamily \#define C\+S\+C\+\_\+\+U\+U\+I\+D\+\_\+128\+\_\+\+L\+EN~(16)}
+
+
+
+Custom serial chat U\+U\+ID length. 
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{cscs_8h_a8c8e139b0677566af0e63e04f83be798}\label{cscs_8h_a8c8e139b0677566af0e63e04f83be798}} 
+\index{cscs.h@{cscs.h}!csc\_serv\_t@{csc\_serv\_t}}
+\index{csc\_serv\_t@{csc\_serv\_t}!cscs.h@{cscs.h}}
+\subsubsection{\texorpdfstring{csc\_serv\_t}{csc\_serv\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structcsc__serv}{csc\+\_\+serv}} \mbox{\hyperlink{cscs_8h_a8c8e139b0677566af0e63e04f83be798}{csc\+\_\+serv\+\_\+t}}}
+
+
+
+Custom serial chat service info. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{cscs_8h_a1677aa7e95e3326d55ecf20bbe459cdd}\label{cscs_8h_a1677aa7e95e3326d55ecf20bbe459cdd}} 
+\index{cscs.h@{cscs.h}!csc\_serv\_init@{csc\_serv\_init}}
+\index{csc\_serv\_init@{csc\_serv\_init}!cscs.h@{cscs.h}}
+\subsubsection{\texorpdfstring{csc\_serv\_init()}{csc\_serv\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+serv\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buf,  }\item[{uint16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+Initialize the csc service initialization function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buf} & Buffer pointer for data to be send \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & size of buffer\\
+\hline
+\end{DoxyParams}
+\textbackslash{}\+C\+SC service Configuration function \mbox{\Hypertarget{cscs_8h_a0f3d94bc89875442b1a93b71ed1b4004}\label{cscs_8h_a0f3d94bc89875442b1a93b71ed1b4004}} 
+\index{cscs.h@{cscs.h}!csc\_serv\_send\_data@{csc\_serv\_send\_data}}
+\index{csc\_serv\_send\_data@{csc\_serv\_send\_data}!cscs.h@{cscs.h}}
+\subsubsection{\texorpdfstring{csc\_serv\_send\_data()}{csc\_serv\_send\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} csc\+\_\+serv\+\_\+send\+\_\+data (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{connhandle,  }\item[{uint8\+\_\+t $\ast$}]{databuf,  }\item[{uint16\+\_\+t}]{datalen }\end{DoxyParamCaption})}
+
+
+
+Function used for sending data to remote device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em buf} & Buffer pointer for data to be send \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & size of buffer\\
+\hline
+\end{DoxyParams}
+\textbackslash{}\+C\+SC service send data function 

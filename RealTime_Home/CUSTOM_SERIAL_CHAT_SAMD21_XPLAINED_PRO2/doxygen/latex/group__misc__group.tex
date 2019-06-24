@@ -1,0 +1,84 @@
+\hypertarget{group__misc__group}{}\section{Misc A\+P\+Is}
+\label{group__misc__group}\index{Misc APIs@{Misc APIs}}
+
+
+This group includes A\+P\+Is which are not belong to any task.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__misc__group_ga80845db83e539aacd58d93f598805c64}{at\+\_\+ble\+\_\+event\+\_\+get}} (\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}} $\ast$\mbox{\hyperlink{ble__manager_8c_a7f4fdb26d292561b95cac0359f75d1e3}{event}}, void $\ast$params, uint32\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em extracts the next event form the event queue \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}{at\+\_\+ble\+\_\+event\+\_\+user\+\_\+defined\+\_\+post}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em Posts a user defined custom event into the event queue, allowing the user code to process other events in the same event handling loop. Events will be received with the as \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba2c2e832242a618195900984a4abec3e9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+E\+V\+E\+NT}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__misc__group_gaba8b09c4f8f3b40e4eb84a38187b1f58}{at\+\_\+ble\+\_\+enable\+\_\+sleep}} (\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} en\+\_\+sleep)
+\begin{DoxyCompactList}\small\item\em Enable/disable deep sleep. Sleep is enabled by default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes A\+P\+Is which are not belong to any task. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__misc__group_gaba8b09c4f8f3b40e4eb84a38187b1f58}\label{group__misc__group_gaba8b09c4f8f3b40e4eb84a38187b1f58}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_enable\_sleep@{at\_ble\_enable\_sleep}}
+\index{at\_ble\_enable\_sleep@{at\_ble\_enable\_sleep}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_enable\_sleep()}{at\_ble\_enable\_sleep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+enable\+\_\+sleep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{en\+\_\+sleep }\end{DoxyParamCaption})}
+
+
+
+Enable/disable deep sleep. Sleep is enabled by default. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em en\+\_\+sleep} & true to enable deep sleep or false to disable it\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__misc__group_ga80845db83e539aacd58d93f598805c64}\label{group__misc__group_ga80845db83e539aacd58d93f598805c64}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_event\_get@{at\_ble\_event\_get}}
+\index{at\_ble\_event\_get@{at\_ble\_event\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_event\_get()}{at\_ble\_event\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+event\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}} $\ast$}]{event,  }\item[{void $\ast$}]{params,  }\item[{uint32\+\_\+t}]{timeout }\end{DoxyParamCaption})}
+
+
+
+extracts the next event form the event queue 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em event} & The received event \\
+\hline
+\mbox{\texttt{ out}}  & {\em params} & Received event data \\
+\hline
+\mbox{\texttt{ in}}  & {\em timeout} & Time in millisecond this function will block waiting of an event (0x\+F\+F\+F\+F\+F\+F\+FF to block indefinitely) in this case, if the user wishes to unblock the function \mbox{\hyperlink{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}{at\+\_\+ble\+\_\+event\+\_\+user\+\_\+defined\+\_\+post}} can be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}\label{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_event\_user\_defined\_post@{at\_ble\_event\_user\_defined\_post}}
+\index{at\_ble\_event\_user\_defined\_post@{at\_ble\_event\_user\_defined\_post}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_event\_user\_defined\_post()}{at\_ble\_event\_user\_defined\_post()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+event\+\_\+user\+\_\+defined\+\_\+post (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Posts a user defined custom event into the event queue, allowing the user code to process other events in the same event handling loop. Events will be received with the as \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba2c2e832242a618195900984a4abec3e9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+E\+V\+E\+NT}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & Parameters sent to the custom event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} operation completed successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} Generic error. 
+\end{DoxyReturn}

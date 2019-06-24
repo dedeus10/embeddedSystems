@@ -1,0 +1,240 @@
+\hypertarget{group__gap__adv__group}{}\section{Advertising Procedure A\+P\+Is}
+\label{group__gap__adv__group}\index{Advertising Procedure APIs@{Advertising Procedure APIs}}
+
+
+This group includes advertising A\+P\+Is.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em use this structure when calling the api \mbox{\hyperlink{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly}} to set the advertising data on the fly \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_gaf4472b661944026a537f3fe2f65b8fcc}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+set}} (uint8\+\_\+t const $\ast$const adv\+\_\+data, uint8\+\_\+t adv\+\_\+data\+\_\+len, uint8\+\_\+t const $\ast$const scan\+\_\+resp\+\_\+data, uint8\+\_\+t scan\+\_\+response\+\_\+data\+\_\+len)
+\begin{DoxyCompactList}\small\item\em Set, clear or update advertisement and scan response data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly}} (\mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} $\ast$update\+\_\+on\+\_\+the\+\_\+fly\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Set, clear or update advertising data or scan response data or both on the fly (while an advertising operation is ongoing) . \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_ga1a780803d17a447dee42b1afdae1e165}{at\+\_\+ble\+\_\+adv\+\_\+start}} (\mbox{\hyperlink{at__ble__api_8h_a6c5e17c16e2d49e866f2f1effd646741}{at\+\_\+ble\+\_\+adv\+\_\+type\+\_\+t}} type, \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42}{at\+\_\+ble\+\_\+adv\+\_\+mode\+\_\+t}} mode, \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$peer\+\_\+addr, \mbox{\hyperlink{at__ble__api_8h_ac1f9457ee534feed87551fc93f9d83d3}{at\+\_\+ble\+\_\+filter\+\_\+type\+\_\+t}} filtered, uint16\+\_\+t interval, uint16\+\_\+t timeout, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} disable\+\_\+randomness)
+\begin{DoxyCompactList}\small\item\em Start advertising (G\+AP Discoverable, Connectable modes, Broadcast Procedure). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_ga989a6f7ad4b5ec22583a2c4f13afc925}{at\+\_\+ble\+\_\+get\+\_\+adv\+\_\+cnt}} (uint32\+\_\+t $\ast$adv\+\_\+pdu\+\_\+cnt)
+\begin{DoxyCompactList}\small\item\em Get the count of Advertising frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_ga79cce7e0365a099993a4b05dedafa523}{at\+\_\+ble\+\_\+rst\+\_\+adv\+\_\+cnt}} (void)
+\begin{DoxyCompactList}\small\item\em Reset the count of Advertising frame. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_gadcd0d72189caecac9bc807d9378d33b0}{at\+\_\+ble\+\_\+en\+\_\+recv\+\_\+adv\+\_\+cmp\+\_\+event}} (\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} en\+\_\+adv\+\_\+notification)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable receiving advertising complete event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac6e92e8f99a08c49a27007c2e32124f9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+C\+M\+P\+\_\+\+E\+V\+E\+NT}} with the end of advertising event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_gae3a980a5bd00c7f06ca00a752ef2769b}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+set}} (\mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}} ch)
+\begin{DoxyCompactList}\small\item\em Set advertising channel using one of \mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_gabcab9fff7caab6392cddd66bac148f33}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+get}} (\mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}} $\ast$ch)
+\begin{DoxyCompactList}\small\item\em get advertising channel. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__adv__group_ga1a6b3d740eb88e63553f794fd59ffbc3}{at\+\_\+ble\+\_\+adv\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stop advertising (G\+AP Discoverable, Connectable modes, Broadcast Procedure). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes advertising A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__adv__group_gabcab9fff7caab6392cddd66bac148f33}\label{group__gap__adv__group_gabcab9fff7caab6392cddd66bac148f33}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_channel\_map\_get@{at\_ble\_adv\_channel\_map\_get}}
+\index{at\_ble\_adv\_channel\_map\_get@{at\_ble\_adv\_channel\_map\_get}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_channel\_map\_get()}{at\_ble\_adv\_channel\_map\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}} $\ast$}]{ch }\end{DoxyParamCaption})}
+
+
+
+get advertising channel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ch} & used advertising channels \mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_gae3a980a5bd00c7f06ca00a752ef2769b}\label{group__gap__adv__group_gae3a980a5bd00c7f06ca00a752ef2769b}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_channel\_map\_set@{at\_ble\_adv\_channel\_map\_set}}
+\index{at\_ble\_adv\_channel\_map\_set@{at\_ble\_adv\_channel\_map\_set}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_channel\_map\_set()}{at\_ble\_adv\_channel\_map\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}}}]{ch }\end{DoxyParamCaption})}
+
+
+
+Set advertising channel using one of \mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33ca}{at\+\_\+ble\+\_\+adv\+\_\+channel\+\_\+map\+\_\+t}}. 
+
+\begin{DoxyNote}{Note}
+Default value is \mbox{\hyperlink{at__ble__api_8h_ae3d53ccdbeba291d4765432f6a9d33caac5dcc09e205dc25c30598616835fb3cf}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+A\+L\+L\+\_\+\+C\+H\+N\+L\+S\+\_\+\+EN}}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_gaf4472b661944026a537f3fe2f65b8fcc}\label{group__gap__adv__group_gaf4472b661944026a537f3fe2f65b8fcc}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_data\_set@{at\_ble\_adv\_data\_set}}
+\index{at\_ble\_adv\_data\_set@{at\_ble\_adv\_data\_set}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_data\_set()}{at\_ble\_adv\_data\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+set (\begin{DoxyParamCaption}\item[{uint8\+\_\+t const $\ast$const}]{adv\+\_\+data,  }\item[{uint8\+\_\+t}]{adv\+\_\+data\+\_\+len,  }\item[{uint8\+\_\+t const $\ast$const}]{scan\+\_\+resp\+\_\+data,  }\item[{uint8\+\_\+t}]{scan\+\_\+response\+\_\+data\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+Set, clear or update advertisement and scan response data. 
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item To clear the advertisement data and set it to a 0-\/length packet, simply provide a valid pointer (p\+Adv\+Data/p\+Sr\+Data) with its corresponding length (dlen/srdlen) set to 0.
+\item The call will fail if p\+Adv\+Data and p\+Sr\+Data are both N\+U\+LL since this would have no effect.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv\+\_\+data} & Raw data to be placed in advertisement packet. If N\+U\+LL, no changes are made to the current advertisement packet data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em adv\+\_\+data\+\_\+len} & Data length for adv\+\_\+data. Max size 28 bytes, 3 bytes are reserved to set advertising AD type flags , shall not be set in advertising data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scan\+\_\+resp\+\_\+data} & Raw data to be placed in scan response packet. If N\+U\+LL, no changes are made to the current scan response packet data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scan\+\_\+response\+\_\+data\+\_\+len} & Data length for scan\+\_\+resp\+\_\+data. Max size 31 bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The First three bytes in advertising data have been reserved in order to Fill Flags(0x01) AD type. This data is set according to advertising mode selected.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}\label{group__gap__adv__group_ga6dbd9fb49cc0fb4feecd09c87ba29518}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_data\_update\_on\_the\_fly@{at\_ble\_adv\_data\_update\_on\_the\_fly}}
+\index{at\_ble\_adv\_data\_update\_on\_the\_fly@{at\_ble\_adv\_data\_update\_on\_the\_fly}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_data\_update\_on\_the\_fly()}{at\_ble\_adv\_data\_update\_on\_the\_fly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} $\ast$}]{update\+\_\+on\+\_\+the\+\_\+fly\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Set, clear or update advertising data or scan response data or both on the fly (while an advertising operation is ongoing) . 
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item to do any operation on Advertising data (clear or set) you must set the bit mask \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t\+::presence\+\_\+bit\+\_\+mask}} inside \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} to \mbox{\hyperlink{at__ble__api_8h_ad35ea6c7ddf7f4ba30514bd6c2c11232}{A\+D\+V\+\_\+\+D\+A\+T\+A\+\_\+\+P\+R\+E\+S\+E\+NT}} (0x01)
+\item to do any operation on scan response data (clear or set) you must set the bit mask \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t\+::presence\+\_\+bit\+\_\+mask}} inside \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} to \mbox{\hyperlink{at__ble__api_8h_a2e78b0afe66c462d12ce94807f14785a}{S\+C\+N\+\_\+\+R\+E\+S\+P\+\_\+\+D\+A\+T\+A\+\_\+\+P\+R\+E\+S\+E\+NT}} (0x02)
+\item if the bit mask \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a51f5db07c335999b716439f52693153e}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t\+::presence\+\_\+bit\+\_\+mask}} inside \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} is not set at all the call will fail
+\item to clear Advertising data send \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_a75fd7fdf06a003b4e9b217d58cd6b077}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t\+::adv\+\_\+data\+\_\+len}} in \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} with value = 0
+\item to clear scan response data send \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t_aa364778628ff80935bf4515826aae316}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t\+::scan\+\_\+response\+\_\+data\+\_\+len}} in \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}} with value = 0
+\item Use this A\+PI only while an advertising activity has started by \mbox{\hyperlink{group__gap__adv__group_ga1a780803d17a447dee42b1afdae1e165}{at\+\_\+ble\+\_\+adv\+\_\+start}}
+\item the new advertise/scan response you set/clear by this A\+PI will be on the Air immediately and it will be stored and be used for future advertise events
+\item to Set, clear or update the adv data while no Advertising activity is ongoing, use \mbox{\hyperlink{group__gap__adv__group_gaf4472b661944026a537f3fe2f65b8fcc}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+set}}
+\item The First three bytes in advertising data have been reserved in order to Fill Flags(0x01) AD type. This data is set according to advertising mode selected.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em update\+\_\+on\+\_\+the\+\_\+fly\+\_\+data} & update on the fly request parameters, refer to \mbox{\hyperlink{structat__ble__adv__data__update__on__the__fly__t}{at\+\_\+ble\+\_\+adv\+\_\+data\+\_\+update\+\_\+on\+\_\+the\+\_\+fly\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_ga1a780803d17a447dee42b1afdae1e165}\label{group__gap__adv__group_ga1a780803d17a447dee42b1afdae1e165}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_start@{at\_ble\_adv\_start}}
+\index{at\_ble\_adv\_start@{at\_ble\_adv\_start}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_start()}{at\_ble\_adv\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_a6c5e17c16e2d49e866f2f1effd646741}{at\+\_\+ble\+\_\+adv\+\_\+type\+\_\+t}}}]{type,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42}{at\+\_\+ble\+\_\+adv\+\_\+mode\+\_\+t}}}]{mode,  }\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{peer\+\_\+addr,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ac1f9457ee534feed87551fc93f9d83d3}{at\+\_\+ble\+\_\+filter\+\_\+type\+\_\+t}}}]{filtered,  }\item[{uint16\+\_\+t}]{interval,  }\item[{uint16\+\_\+t}]{timeout,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{disable\+\_\+randomness }\end{DoxyParamCaption})}
+
+
+
+Start advertising (G\+AP Discoverable, Connectable modes, Broadcast Procedure). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & Advertising type, see \mbox{\hyperlink{at__ble__api_8h_a6c5e17c16e2d49e866f2f1effd646741}{at\+\_\+ble\+\_\+adv\+\_\+type\+\_\+t}} for more info \\
+\hline
+\mbox{\texttt{ in}}  & {\em mode} & either non-\/discoverable,General, Limited or Broadcaster , \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42}{at\+\_\+ble\+\_\+adv\+\_\+mode\+\_\+t}} for more details \\
+\hline
+\mbox{\texttt{ in}}  & {\em peer\+\_\+addr} & For \mbox{\hyperlink{at__ble__api_8h_a6c5e17c16e2d49e866f2f1effd646741af9a8f416d73573d9f7e4ba9c52273f29}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+I\+R\+E\+C\+T\+ED}} mode only, known peer address \\
+\hline
+\mbox{\texttt{ in}}  & {\em filtered} & policy \mbox{\hyperlink{at__ble__api_8h_ac1f9457ee534feed87551fc93f9d83d3}{at\+\_\+ble\+\_\+filter\+\_\+type\+\_\+t}} for more details \\
+\hline
+\mbox{\texttt{ in}}  & {\em interval} & Advertising interval between \mbox{\hyperlink{at__ble__api_8h_a2e2b6f40cdd2f3e6488f3940863c003b}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+M\+IN}} and \mbox{\hyperlink{at__ble__api_8h_aad2eedadcaed32f60bfd4c04b67ca1d1}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+M\+AX}} in 0.\+625 ms units (20ms to 10.\+24s). This parameter must be set to 0 if type equals \mbox{\hyperlink{at__ble__api_8h_a6c5e17c16e2d49e866f2f1effd646741af9a8f416d73573d9f7e4ba9c52273f29}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+I\+R\+E\+C\+T\+ED}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em timeout} & Advertising time-\/out between 0x0001 and 0x028F in scale of Seconds, 0x0000 disables time-\/out. This parameter must be set to 0 if type equals A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+I\+R\+E\+C\+T\+ED.~\newline
+ Timeout only valid with \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42a1e5579400246eb5c6a35ec3a14b06ab8}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+G\+E\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+A\+B\+LE}} and \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42a339d3d03cfb45742b5cf0b438dae5821}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+L\+I\+M\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+A\+B\+LE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em disable\+\_\+randomness} & if True the device will advertise at the exact interval without adding the random 10msec\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+If it is required to change BD address, at\+\_\+ble\+\_\+addr\+\_\+set should be used otherwise default address will be used
+\end{DoxyPrecond}
+\begin{DoxyNote}{Note}
+A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+R\+E\+P\+O\+RT will be received with error code in case of stack can not start advertising; refer to \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_ga1a6b3d740eb88e63553f794fd59ffbc3}\label{group__gap__adv__group_ga1a6b3d740eb88e63553f794fd59ffbc3}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_adv\_stop@{at\_ble\_adv\_stop}}
+\index{at\_ble\_adv\_stop@{at\_ble\_adv\_stop}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_adv\_stop()}{at\_ble\_adv\_stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+adv\+\_\+stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stop advertising (G\+AP Discoverable, Connectable modes, Broadcast Procedure). 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_gadcd0d72189caecac9bc807d9378d33b0}\label{group__gap__adv__group_gadcd0d72189caecac9bc807d9378d33b0}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_en\_recv\_adv\_cmp\_event@{at\_ble\_en\_recv\_adv\_cmp\_event}}
+\index{at\_ble\_en\_recv\_adv\_cmp\_event@{at\_ble\_en\_recv\_adv\_cmp\_event}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_en\_recv\_adv\_cmp\_event()}{at\_ble\_en\_recv\_adv\_cmp\_event()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+en\+\_\+recv\+\_\+adv\+\_\+cmp\+\_\+event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{en\+\_\+adv\+\_\+notification }\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disable receiving advertising complete event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac6e92e8f99a08c49a27007c2e32124f9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+C\+M\+P\+\_\+\+E\+V\+E\+NT}} with the end of advertising event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em en\+\_\+adv\+\_\+notification} & enable/disable receiving advertising complete event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_ga989a6f7ad4b5ec22583a2c4f13afc925}\label{group__gap__adv__group_ga989a6f7ad4b5ec22583a2c4f13afc925}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_get\_adv\_cnt@{at\_ble\_get\_adv\_cnt}}
+\index{at\_ble\_get\_adv\_cnt@{at\_ble\_get\_adv\_cnt}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_get\_adv\_cnt()}{at\_ble\_get\_adv\_cnt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+get\+\_\+adv\+\_\+cnt (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{adv\+\_\+pdu\+\_\+cnt }\end{DoxyParamCaption})}
+
+
+
+Get the count of Advertising frame. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv\+\_\+pdu\+\_\+cnt} & the count of advertising frame since start of advertising.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__adv__group_ga79cce7e0365a099993a4b05dedafa523}\label{group__gap__adv__group_ga79cce7e0365a099993a4b05dedafa523}} 
+\index{Advertising Procedure APIs@{Advertising Procedure APIs}!at\_ble\_rst\_adv\_cnt@{at\_ble\_rst\_adv\_cnt}}
+\index{at\_ble\_rst\_adv\_cnt@{at\_ble\_rst\_adv\_cnt}!Advertising Procedure APIs@{Advertising Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_rst\_adv\_cnt()}{at\_ble\_rst\_adv\_cnt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+rst\+\_\+adv\+\_\+cnt (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Reset the count of Advertising frame. 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

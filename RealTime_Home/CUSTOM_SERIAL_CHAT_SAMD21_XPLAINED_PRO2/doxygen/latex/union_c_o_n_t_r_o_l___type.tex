@@ -1,0 +1,73 @@
+\hypertarget{union_c_o_n_t_r_o_l___type}{}\section{C\+O\+N\+T\+R\+O\+L\+\_\+\+Type Union Reference}
+\label{union_c_o_n_t_r_o_l___type}\index{CONTROL\_Type@{CONTROL\_Type}}
+
+
+Union type to access the Control Registers (C\+O\+N\+T\+R\+OL).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+cm0plus.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_a2a6e513e8a6bf4e58db169e312172332}{nPRIV}}:1\\
+\>uint32\_t \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_ae185aac93686ffc78e998a9daf41415b}{SPSEL}}:1\\
+\>uint32\_t \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_a2518558c090f60161ba4e718a54ee468}{FPCA}}:1\\
+\>uint32\_t \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}{\_reserved0}}:29\\
+\} \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_aff56a666ec2d7b7d277d2ee2871a66c9}{b}}\\
+
+\end{tabbing}\item 
+uint32\+\_\+t \mbox{\hyperlink{union_c_o_n_t_r_o_l___type_ad0fb62e7a08e70fc5e0a76b67809f84b}{w}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Union type to access the Control Registers (C\+O\+N\+T\+R\+OL). 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}\label{union_c_o_n_t_r_o_l___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!\_reserved0@{\_reserved0}}
+\index{\_reserved0@{\_reserved0}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{\_reserved0}{\_reserved0}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+reserved0}
+
+bit\+: 3..31 Reserved \mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_aff56a666ec2d7b7d277d2ee2871a66c9}\label{union_c_o_n_t_r_o_l___type_aff56a666ec2d7b7d277d2ee2871a66c9}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!b@{b}}
+\index{b@{b}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily struct \{ ... \}   b}
+
+Structure used for bit access \mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_a2518558c090f60161ba4e718a54ee468}\label{union_c_o_n_t_r_o_l___type_a2518558c090f60161ba4e718a54ee468}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!FPCA@{FPCA}}
+\index{FPCA@{FPCA}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{FPCA}{FPCA}}
+{\footnotesize\ttfamily uint32\+\_\+t F\+P\+CA}
+
+bit\+: 2 FP extension active flag \mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_a2a6e513e8a6bf4e58db169e312172332}\label{union_c_o_n_t_r_o_l___type_a2a6e513e8a6bf4e58db169e312172332}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!nPRIV@{nPRIV}}
+\index{nPRIV@{nPRIV}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{nPRIV}{nPRIV}}
+{\footnotesize\ttfamily uint32\+\_\+t n\+P\+R\+IV}
+
+bit\+: 0 Execution privilege in Thread mode \mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_ae185aac93686ffc78e998a9daf41415b}\label{union_c_o_n_t_r_o_l___type_ae185aac93686ffc78e998a9daf41415b}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!SPSEL@{SPSEL}}
+\index{SPSEL@{SPSEL}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{SPSEL}{SPSEL}}
+{\footnotesize\ttfamily uint32\+\_\+t S\+P\+S\+EL}
+
+bit\+: 1 Stack to be used \mbox{\Hypertarget{union_c_o_n_t_r_o_l___type_ad0fb62e7a08e70fc5e0a76b67809f84b}\label{union_c_o_n_t_r_o_l___type_ad0fb62e7a08e70fc5e0a76b67809f84b}} 
+\index{CONTROL\_Type@{CONTROL\_Type}!w@{w}}
+\index{w@{w}!CONTROL\_Type@{CONTROL\_Type}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily uint32\+\_\+t w}
+
+Type used for word access 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/\+C\+M\+S\+I\+S/\+Include/\mbox{\hyperlink{core__cm0plus_8h}{core\+\_\+cm0plus.\+h}}\end{DoxyCompactItemize}

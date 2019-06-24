@@ -1,0 +1,1117 @@
+\hypertarget{group__asfdoc__sam0__sercom__spi__group}{}\section{S\+AM Serial Peripheral Interface (S\+E\+R\+C\+OM S\+PI) Driver}
+\label{group__asfdoc__sam0__sercom__spi__group}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}}
+\begin{DoxyCompactList}\small\item\em S\+E\+R\+C\+OM S\+PI driver software device instance structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}}
+\begin{DoxyCompactList}\small\item\em S\+PI peripheral slave instance structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__inst__config}{spi\+\_\+slave\+\_\+inst\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI peripheral slave configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__master__config}{spi\+\_\+master\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI Master configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__config}{spi\+\_\+slave\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI slave configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gae7bc85650aed61f97fe3d5df9b430456}{P\+I\+N\+M\+U\+X\+\_\+\+D\+E\+F\+A\+U\+LT}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaffde9ff712058ef836127e1f3368889e}{P\+I\+N\+M\+U\+X\+\_\+\+U\+N\+U\+S\+ED}}~0x\+F\+F\+F\+F\+F\+F\+FF
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga0131f2774f4e3dd71567400683b60405}{S\+P\+I\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}}) (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a457c19f75d284d1664cc38b0f1e1eb81}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a7da8cc036860fc86ef36aeeffe9088ec}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+R\+E\+C\+E\+I\+V\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88ac2110b62e8233f66ccecd240e8d256a8}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+C\+E\+I\+V\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a3c76f7df3c189cd31938fcf438427051}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+E\+R\+R\+OR}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a75545a7657914031640e2890220ea2ea}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+L\+A\+V\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI Callback enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}{\+\_\+spi\+\_\+direction}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a103cc0246cfe23a4bdbd9919691bab19}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a58378c769c218216a742f064d20afbc5}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+W\+R\+I\+TE}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aa7d6441909cdfbb860d18b6b7d78fcc0}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+B\+O\+TH}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aab6b2f188e1dc97b2024138ef1a45ad5}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+I\+D\+LE}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga16bab5d19c43ffb25c0d3f1e071813de}{spi\+\_\+interrupt\+\_\+flag}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deab47cccbc2e81d8af9d6c1fd777a95762}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+E\+M\+P\+TY}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+D\+RE, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deacc9db35e4654be2e4bd06d2a10fb3837}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+T\+XC, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deabc7fa74e9f37b6aa492ca9889e7d8a92}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+XC
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI Interrupt Flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}{spi\+\_\+transfer\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5addcbccd52e926858945de2e140199027}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+0}} = 0, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5aa55ca25e3c49ff34464adc654d14cfd5}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+1}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+HA, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a29f104b5325a068ab32e652e21a1ec95}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+2}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+OL, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a98dfa4850997601437f5183699d9e63c}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+3}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+HA $\vert$ S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+OL
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI transfer modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}{spi\+\_\+frame\+\_\+format}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaa9dbfeaf1014b44745b56ceda7e0d62d7}{S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+ME}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+F\+O\+RM(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaaba876059c4eb058d0988262d9df8e090}{S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+D\+DR}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+F\+O\+RM(2)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI frame format enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}{spi\+\_\+signal\+\_\+mux\+\_\+setting}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a3cdcdd92d89e38733d77ac89f1a2ddd2}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+A}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6436816e953e9435937dadd832022e23}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+B}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aedcff238d013e3a51eb6580ca3df64d1}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+C}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a157acefdb388019c788d616f5225deda}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+D}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a7234b3f4e0aa7fe723cc85edabea9816}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+E}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a578bd6b0685f742bf51e9c2a395c3ea2}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+F}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad9b9f4b431a3ac65423f57a96cac3bb9}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+G}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a63225e36d738e0cc05c08a58c7a901bd}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+H}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad421b8125db3d485b14470501b98066c}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+I}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370acc5588ae2498b0550997f6d647b19eda}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+J}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aa01984d81ef8cef6c34c03f27bfbd406}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+K}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a79fb82aa500712404307189ade71948f}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+L}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6eba5168c427ef781eee612c99c2e7f6}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+M}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a90871c4e6ee8f90df87ce0d851c1d2a1}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+N}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a34fc3e98645ee794eb240b84e24c2966}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+O}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aca300e01409474db47004e90d93c3fb3}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+P}}
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI signal M\+UX settings. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}{spi\+\_\+addr\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a0031e737207555ff4de8c3f1c4cd51c7}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a1515f491a88330b601198c1792fda41a}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+I\+Q\+UE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(1), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a4205716bda98deed62a4c6d5c8ec9944}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+R\+A\+N\+GE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(2)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI address modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ae68a8adf6e5b67a7bdbe9526b15dae99}{S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+S\+T\+ER}} = 1, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ad1131ed33ad43ab3f667070b04454439}{S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+S\+L\+A\+VE}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}{spi\+\_\+data\+\_\+order}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2ab016ca9032d6e9418d834514cc95b7d3}{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+L\+SB}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+D\+O\+RD, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2a7eb5ed4b7d6f993acd7d09a5d8db3687}{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+M\+SB}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI data order enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7a66283e49623ad09896942662b8221de6}{S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+8\+B\+IT}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+H\+S\+I\+ZE(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7ab70647e252f3251aac0100b56c3d30af}{S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+9\+B\+IT}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+H\+S\+I\+ZE(1)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI character size enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga71091c8fcde0d526329e04f8c7b24efc}{\+\_\+spi\+\_\+interrupt\+\_\+handler}} (uint8\+\_\+t instance)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga6bc86fe61f20b414ac3ca1a74c28dd28}{spi\+\_\+set\+\_\+baudrate}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint32\+\_\+t baudrate)
+\begin{DoxyCompactList}\small\item\em Set the baudrate of the S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Driver Initialization and Configuration}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga83b840fe8c91173bfe54a13787c262e6}{spi\+\_\+init}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, \mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const hw, const struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+E\+R\+C\+OM S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enable/\+Disable}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga65c764f92ed46f0d4845232bd4b241bc}{spi\+\_\+reset}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\begin{DoxyCompactList}\small\item\em Resets the S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Read/\+Write}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gae217dcf01506d2ad9ea554a14e57245f}{spi\+\_\+write\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, const uint8\+\_\+t $\ast$tx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7cdeea24cfa24ab872044c6fa1ae893f}{spi\+\_\+read\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length, uint16\+\_\+t dummy)
+\begin{DoxyCompactList}\small\item\em Reads buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3eb1d72360e67b6fef7574320a5919e6}{spi\+\_\+transceive\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint16\+\_\+t tx\+\_\+data, uint16\+\_\+t $\ast$rx\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Sends and reads a single S\+PI character. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}{spi\+\_\+transceive\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends and receives a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}{spi\+\_\+select\+\_\+slave}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}} $\ast$const slave, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} select)
+\begin{DoxyCompactList}\small\item\em Selects slave device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Callback Management}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9736ace2b57a6d45d3fb820aae552a48}{spi\+\_\+register\+\_\+callback}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}} callback\+\_\+func, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Registers a S\+PI callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7df7ed6a6a9d6a5e1338ceaa0d5f07b2}{spi\+\_\+unregister\+\_\+callback}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$module, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Unregisters a S\+PI callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Writing and Reading}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7a7ddeab7e3ed355e13366ed635ff152}{spi\+\_\+write\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer write. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gac5022683cb35d827578c26cf7689ae61}{spi\+\_\+read\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length, uint16\+\_\+t dummy)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer read. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaba6ac49efcf4b51fa8131d4a07071967}{spi\+\_\+transceive\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer write and read. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga74d13a9fe3203f121664b864f68c94fd}{spi\+\_\+abort\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\begin{DoxyCompactList}\small\item\em Aborts an ongoing job. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This driver for Atmel\textregistered{} $\vert$ S\+M\+A\+RT A\+RM\textregistered{}-\/based microcontrollers provides an interface for the configuration and management of the S\+E\+R\+C\+OM module in its S\+PI mode to transfer S\+PI data frames. The following driver A\+PI modes are covered by this manual\+:
+
+
+\begin{DoxyItemize}
+\item Polled A\+P\+Is
+\end{DoxyItemize}
+
+The following peripheral is used by this module\+:
+\begin{DoxyItemize}
+\item S\+E\+R\+C\+OM (Serial Communication Interface)
+\end{DoxyItemize}
+
+The following devices can use this module\+:
+\begin{DoxyItemize}
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D20/\+D21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM R21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D09/\+D10/\+D11
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM L21/\+L22
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D\+A1
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM C20/\+C21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM H\+A1
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM R30
+\end{DoxyItemize}
+
+The outline of this documentation is as follows\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_prerequisites}{Prerequisites}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_module_overview}{Module Overview}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_special_considerations}{Special Considerations}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_extra_info}{Extra Information}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_examples}{Examples}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_api_overview}{A\+PI Overview}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_prerequisites}{}\subsection{Prerequisites}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_prerequisites}
+There are no prerequisites.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_module_overview}{}\subsection{Module Overview}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_module_overview}
+The Serial Peripheral Interface (S\+PI) is a high-\/speed synchronous data transfer interface using three or four pins. It allows fast communication between a master device and one or more peripheral devices.
+
+A device connected to the bus must act as a master or a slave. The master initiates and controls all data transactions. The S\+PI master initiates a communication cycle by pulling low the Slave Select (SS) pin of the desired slave. The Slave Select pin is active low. Master and slave prepare data to be sent in their respective shift registers, and the master generates the required clock pulses on the S\+CK line to interchange data. Data is always shifted from master to slave on the Master Out -\/ Slave In (M\+O\+SI) line, and from slave to master on the Master In -\/ Slave Out (M\+I\+SO) line. After each data transfer, the master can synchronize to the slave by pulling the SS line high.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_module_features}{}\subsubsection{Driver Feature Macro Definition}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_module_features}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Driver feature macro }&\cellcolor{\tableheadbgcolor}\textbf{ Supported devices  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Driver feature macro }&\cellcolor{\tableheadbgcolor}\textbf{ Supported devices  }\\\cline{1-2}
+\endhead
+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+P\+I\+\_\+\+S\+L\+A\+V\+E\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+L\+O\+W\+\_\+\+D\+E\+T\+E\+CT &S\+AM D21/\+R21/\+D10/\+D11/\+L21/\+L22/\+D\+A1/\+C20/\+C21/\+R30  \\\cline{1-2}
+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+P\+I\+\_\+\+H\+A\+R\+D\+W\+A\+R\+E\+\_\+\+S\+L\+A\+V\+E\+\_\+\+S\+E\+L\+E\+CT &S\+AM D21/\+R21/\+D10/\+D11/\+L21/\+L22/\+D\+A1/\+C20/\+C21/\+R30  \\\cline{1-2}
+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+P\+I\+\_\+\+E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT &S\+AM D21/\+R21/\+D10/\+D11/\+L21/\+L22/\+D\+A1/\+C20/\+C21/\+R30  \\\cline{1-2}
+F\+E\+A\+T\+U\+R\+E\+\_\+\+S\+P\+I\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+C\+H\+E\+M\+E\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+2 &S\+AM D21/\+R21/\+D10/\+D11/\+L21/\+L22/\+D\+A1/\+C20/\+C21/\+R30  \\\cline{1-2}
+\end{longtabu}
+\begin{DoxyNote}{Note}
+The specific features are only available in the driver when the selected device supports those features.
+\end{DoxyNote}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_bus}{}\subsubsection{S\+P\+I Bus Connection}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_bus}
+In \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_connection_example}{the figure below}}, the connection between one master and one slave is shown.
+
+\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_connection_example}%
+\Hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_connection_example}%
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_3}}
+\end{DoxyImageNoCaption}
+
+
+The different lines are as follows\+:
+\begin{DoxyItemize}
+\item {\bfseries{M\+I\+SO}} Master Input Slave Output. The line where the data is shifted out from the slave and into the master.
+\item {\bfseries{M\+O\+SI}} Master Output Slave Input. The line where the data is shifted out from the master and into the slave.
+\item {\bfseries{S\+CK}} Serial Clock. Generated by the master device.
+\item {\bfseries{SS}} Slave Select. To initiate a transaction, the master must pull this line low.
+\end{DoxyItemize}
+
+If the bus consists of several S\+PI slaves, they can be connected in parallel and the S\+PI master can use general I/O pins to control separate SS lines to each slave on the bus.
+
+It is also possible to connect all slaves in series. In this configuration, a common SS is provided to {\ttfamily N} slaves, enabling them simultaneously. The M\+I\+SO from the {\ttfamily N-\/1} slaves is connected to the M\+O\+SI on the next slave. The {\ttfamily N\textsuperscript{th}} slave connects its M\+I\+SO back to the master. For a complete transaction, the master must shift {\ttfamily N+1} characters.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_chsize}{}\subsubsection{S\+P\+I Character Size}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_chsize}
+The S\+PI character size is configurable to eight or nine bits.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_master_mode}{}\subsubsection{Master Mode}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_master_mode}
+When configured as a master, the SS pin will be configured as an output.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_master_mode_data_transfer}{}\paragraph{Data Transfer}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_master_mode_data_transfer}
+Writing a character will start the S\+PI clock generator, and the character is transferred to the shift register when the shift register is empty. Once this is done, a new character can be written. As each character is shifted out from the master, a character is shifted in from the slave. If the receiver is enabled, the data is moved to the receive buffer at the completion of the frame and can be read.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode}{}\subsubsection{Slave Mode}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode}
+When configured as a slave, the S\+PI interface will remain inactive with M\+I\+SO tri-\/stated as long as the SS pin is driven high.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode_data_transfer_slave}{}\paragraph{Data Transfer}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode_data_transfer_slave}
+The data register can be updated at any time. As the S\+PI slave shift register is clocked by S\+CK, a minimum of three S\+CK cycles are needed from the time new data is written, until the character is ready to be shifted out. If the shift register has not been loaded with data, the current contents will be transmitted.
+
+If constant transmission of data is needed in S\+PI slave mode, the system clock should be faster than S\+CK. If the receiver is enabled, the received character can be read from the receive buffer. When SS line is driven high, the slave will not receive any additional data.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode_addr_recognition}{}\paragraph{Address Recognition}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_slave_mode_addr_recognition}
+When the S\+PI slave is configured with address recognition, the first character in a transaction is checked for an address match. If there is a match, the M\+I\+SO output is enabled and the transaction is processed. If the address does not match, the complete transaction is ignored.
+
+If the device is asleep, it can be woken up by an address match in order to process the transaction.
+
+\begin{DoxyNote}{Note}
+In master mode, an address packet is written by the \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}{spi\+\_\+select\+\_\+slave}} function if the address\+\_\+enabled configuration is set in the \mbox{\hyperlink{structspi__slave__inst__config}{spi\+\_\+slave\+\_\+inst\+\_\+config}} struct.
+\end{DoxyNote}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_data_modes}{}\subsubsection{Data Modes}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_data_modes}
+There are four combinations of S\+CK phase and polarity with respect to serial data. \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_mode_table}{The table below}} shows the clock polarity (C\+P\+OL) and clock phase (C\+P\+HA) in the different modes. {\itshape Leading edge} is the first clock edge in a clock cycle and {\itshape trailing edge} is the last clock edge in a clock cycle.
+
+\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_mode_table}%
+\Hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_mode_table}%
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\caption{S\+PI Data Modes}\label{_}\\
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Mode }&\cellcolor{\tableheadbgcolor}\textbf{ C\+P\+OL }&\cellcolor{\tableheadbgcolor}\textbf{ C\+P\+HA }&\cellcolor{\tableheadbgcolor}\textbf{ Leading Edge }&\cellcolor{\tableheadbgcolor}\textbf{ Trailing Edge  }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Mode }&\cellcolor{\tableheadbgcolor}\textbf{ C\+P\+OL }&\cellcolor{\tableheadbgcolor}\textbf{ C\+P\+HA }&\cellcolor{\tableheadbgcolor}\textbf{ Leading Edge }&\cellcolor{\tableheadbgcolor}\textbf{ Trailing Edge  }\\\cline{1-5}
+\endhead
+0  &0  &0  &Rising, Sample  &Falling, Setup   \\\cline{1-5}
+1  &0  &1  &Rising, Setup  &Falling, Sample   \\\cline{1-5}
+2  &1  &0  &Falling, Sample  &Rising, Setup   \\\cline{1-5}
+3  &1  &1  &Falling, Setup  &Rising, Sample   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_pads}{}\subsubsection{S\+E\+R\+C\+O\+M Pads}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_pads}
+The S\+E\+R\+C\+OM pads are automatically configured as seen in \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_sercom_pad_table}{the table below}}. If the receiver is disabled, the data input (M\+I\+SO for master, M\+O\+SI for slave) can be used for other purposes.
+
+In master mode, the SS pin(s) must be configured using the \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}} struct.
+
+\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_sercom_pad_table}%
+\Hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_spi_sercom_pad_table}%
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\caption{S\+E\+R\+C\+OM S\+PI Pad Usages}\label{_}\\
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Pin  }&\cellcolor{\tableheadbgcolor}\textbf{ Master S\+PI  }&\cellcolor{\tableheadbgcolor}\textbf{ Slave S\+PI   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Pin  }&\cellcolor{\tableheadbgcolor}\textbf{ Master S\+PI  }&\cellcolor{\tableheadbgcolor}\textbf{ Slave S\+PI   }\\\cline{1-3}
+\endhead
+M\+O\+SI  &Output  &Input   \\\cline{1-3}
+M\+I\+SO  &Input  &Output   \\\cline{1-3}
+S\+CK  &Output  &Input   \\\cline{1-3}
+SS  &User defined output enable  &Input   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_sleep_modes}{}\subsubsection{Operation in Sleep Modes}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_sleep_modes}
+The S\+PI module can operate in all sleep modes by setting the run\+\_\+in\+\_\+standby option in the \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} struct. The operation in slave and master mode is shown in the table below. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ run\+\_\+in\+\_\+standby  }&\cellcolor{\tableheadbgcolor}\textbf{ Slave  }&\cellcolor{\tableheadbgcolor}\textbf{ Master   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ run\+\_\+in\+\_\+standby  }&\cellcolor{\tableheadbgcolor}\textbf{ Slave  }&\cellcolor{\tableheadbgcolor}\textbf{ Master   }\\\cline{1-3}
+\endhead
+false  &Disabled, all reception is dropped  &G\+C\+LK is disabled when master is idle, wake on transmit complete   \\\cline{1-3}
+true  &Wake on reception  &G\+C\+LK is enabled while in sleep modes, wake on all interrupts   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_clock_generation}{}\subsubsection{Clock Generation}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_clock_generation}
+In S\+PI master mode, the clock (S\+CK) is generated internally using the S\+E\+R\+C\+OM baudrate generator. In S\+PI slave mode, the clock is provided by an external master on the S\+CK pin. This clock is used to directly clock the S\+PI shift register.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_special_considerations}{}\subsection{Special Considerations}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_special_considerations}
+\hypertarget{group__asfdoc__sam0__sercom__spi__group_pin_mux}{}\subsubsection{pinmux Settings}\label{group__asfdoc__sam0__sercom__spi__group_pin_mux}
+The pin M\+UX settings must be configured properly, as not all settings can be used in different modes of operation.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_extra_info}{}\subsection{Extra Information}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_extra_info}
+For extra information, see \mbox{\hyperlink{asfdoc_sam0_sercom_spi_extra}{Extra Information for S\+E\+R\+C\+OM S\+PI Driver}}. This includes\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_acronyms}{Acronyms}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_dependencies}{Dependencies}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_workarounds}{Workarounds Implemented by Driver}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_history}{Module History}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_examples}{}\subsection{Examples}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_examples}
+For a list of examples related to this driver, see \mbox{\hyperlink{asfdoc_sam0_sercom_spi_exqsg}{Examples for S\+E\+R\+C\+OM S\+PI Driver}}.\hypertarget{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_api_overview}{}\subsection{A\+P\+I Overview}\label{group__asfdoc__sam0__sercom__spi__group_asfdoc_sam0_sercom_spi_api_overview}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gae7bc85650aed61f97fe3d5df9b430456}\label{group__asfdoc__sam0__sercom__spi__group_gae7bc85650aed61f97fe3d5df9b430456}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!PINMUX\_DEFAULT@{PINMUX\_DEFAULT}}
+\index{PINMUX\_DEFAULT@{PINMUX\_DEFAULT}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{PINMUX\_DEFAULT}{PINMUX\_DEFAULT}}
+{\footnotesize\ttfamily \#define P\+I\+N\+M\+U\+X\+\_\+\+D\+E\+F\+A\+U\+LT~0}
+
+Default pinmux. \mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gaffde9ff712058ef836127e1f3368889e}\label{group__asfdoc__sam0__sercom__spi__group_gaffde9ff712058ef836127e1f3368889e}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!PINMUX\_UNUSED@{PINMUX\_UNUSED}}
+\index{PINMUX\_UNUSED@{PINMUX\_UNUSED}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{PINMUX\_UNUSED}{PINMUX\_UNUSED}}
+{\footnotesize\ttfamily \#define P\+I\+N\+M\+U\+X\+\_\+\+U\+N\+U\+S\+ED~0x\+F\+F\+F\+F\+F\+F\+FF}
+
+Unused pinmux. \mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga0131f2774f4e3dd71567400683b60405}\label{group__asfdoc__sam0__sercom__spi__group_ga0131f2774f4e3dd71567400683b60405}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_TIMEOUT@{SPI\_TIMEOUT}}
+\index{SPI\_TIMEOUT@{SPI\_TIMEOUT}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{SPI\_TIMEOUT}{SPI\_TIMEOUT}}
+{\footnotesize\ttfamily \#define S\+P\+I\+\_\+\+T\+I\+M\+E\+O\+UT~10000}
+
+S\+PI timeout value. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}\label{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_callback\_t@{spi\_callback\_t}}
+\index{spi\_callback\_t@{spi\_callback\_t}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_callback\_t}{spi\_callback\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ spi\+\_\+callback\+\_\+t) (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)}
+
+Type of the callback functions 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}\label{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!\_spi\_direction@{\_spi\_direction}}
+\index{\_spi\_direction@{\_spi\_direction}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{\_spi\_direction}{\_spi\_direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}{\+\_\+spi\+\_\+direction}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DIRECTION\_READ@{SPI\_DIRECTION\_READ}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DIRECTION\_READ@{SPI\_DIRECTION\_READ}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a103cc0246cfe23a4bdbd9919691bab19}\label{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a103cc0246cfe23a4bdbd9919691bab19}} 
+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD&Transfer direction is read \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DIRECTION\_WRITE@{SPI\_DIRECTION\_WRITE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DIRECTION\_WRITE@{SPI\_DIRECTION\_WRITE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a58378c769c218216a742f064d20afbc5}\label{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a58378c769c218216a742f064d20afbc5}} 
+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+W\+R\+I\+TE&Transfer direction is write \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DIRECTION\_BOTH@{SPI\_DIRECTION\_BOTH}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DIRECTION\_BOTH@{SPI\_DIRECTION\_BOTH}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aa7d6441909cdfbb860d18b6b7d78fcc0}\label{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aa7d6441909cdfbb860d18b6b7d78fcc0}} 
+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+B\+O\+TH&Transfer direction is read and write \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DIRECTION\_IDLE@{SPI\_DIRECTION\_IDLE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DIRECTION\_IDLE@{SPI\_DIRECTION\_IDLE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aab6b2f188e1dc97b2024138ef1a45ad5}\label{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aab6b2f188e1dc97b2024138ef1a45ad5}} 
+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+I\+D\+LE&No transfer \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}\label{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_addr\_mode@{spi\_addr\_mode}}
+\index{spi\_addr\_mode@{spi\_addr\_mode}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_addr\_mode}{spi\_addr\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}{spi\+\_\+addr\+\_\+mode}}}
+
+
+
+S\+PI address modes enum. 
+
+For slave mode when using the S\+PI frame with address format. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_ADDR\_MODE\_MASK@{SPI\_ADDR\_MODE\_MASK}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_ADDR\_MODE\_MASK@{SPI\_ADDR\_MODE\_MASK}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a0031e737207555ff4de8c3f1c4cd51c7}\label{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a0031e737207555ff4de8c3f1c4cd51c7}} 
+S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK&{\ttfamily address\+\_\+mask} in the \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} struct is used as a mask to the register \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_ADDR\_MODE\_UNIQUE@{SPI\_ADDR\_MODE\_UNIQUE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_ADDR\_MODE\_UNIQUE@{SPI\_ADDR\_MODE\_UNIQUE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a1515f491a88330b601198c1792fda41a}\label{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a1515f491a88330b601198c1792fda41a}} 
+S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+I\+Q\+UE&The slave responds to the two unique addresses in {\ttfamily address} and {\ttfamily address\+\_\+mask} in the \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} struct \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_ADDR\_MODE\_RANGE@{SPI\_ADDR\_MODE\_RANGE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_ADDR\_MODE\_RANGE@{SPI\_ADDR\_MODE\_RANGE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a4205716bda98deed62a4c6d5c8ec9944}\label{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a4205716bda98deed62a4c6d5c8ec9944}} 
+S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+R\+A\+N\+GE&The slave responds to the range of addresses between and including {\ttfamily address} and {\ttfamily address\+\_\+mask} in the \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} struct \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}\label{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_callback@{spi\_callback}}
+\index{spi\_callback@{spi\_callback}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_callback}{spi\_callback}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}}}
+
+
+
+S\+PI Callback enum. 
+
+Callbacks for S\+PI callback driver.
+
+\begin{DoxyNote}{Note}
+For slave mode, these callbacks will be called when a transaction is ended by the master pulling Slave Select high. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_BUFFER\_TRANSMITTED@{SPI\_CALLBACK\_BUFFER\_TRANSMITTED}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_BUFFER\_TRANSMITTED@{SPI\_CALLBACK\_BUFFER\_TRANSMITTED}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a457c19f75d284d1664cc38b0f1e1eb81}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a457c19f75d284d1664cc38b0f1e1eb81}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+ED&Callback for buffer transmitted \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_BUFFER\_RECEIVED@{SPI\_CALLBACK\_BUFFER\_RECEIVED}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_BUFFER\_RECEIVED@{SPI\_CALLBACK\_BUFFER\_RECEIVED}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a7da8cc036860fc86ef36aeeffe9088ec}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a7da8cc036860fc86ef36aeeffe9088ec}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+R\+E\+C\+E\+I\+V\+ED&Callback for buffer received \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_BUFFER\_TRANSCEIVED@{SPI\_CALLBACK\_BUFFER\_TRANSCEIVED}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_BUFFER\_TRANSCEIVED@{SPI\_CALLBACK\_BUFFER\_TRANSCEIVED}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88ac2110b62e8233f66ccecd240e8d256a8}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88ac2110b62e8233f66ccecd240e8d256a8}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+C\+E\+I\+V\+ED&Callback for buffers transceived \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_ERROR@{SPI\_CALLBACK\_ERROR}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_ERROR@{SPI\_CALLBACK\_ERROR}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a3c76f7df3c189cd31938fcf438427051}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a3c76f7df3c189cd31938fcf438427051}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+E\+R\+R\+OR&Callback for error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_SLAVE\_TRANSMISSION\_COMPLETE@{SPI\_CALLBACK\_SLAVE\_TRANSMISSION\_COMPLETE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_SLAVE\_TRANSMISSION\_COMPLETE@{SPI\_CALLBACK\_SLAVE\_TRANSMISSION\_COMPLETE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a75545a7657914031640e2890220ea2ea}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a75545a7657914031640e2890220ea2ea}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+L\+A\+V\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE&Callback for transmission ended by master before the entire buffer was read or written from slave \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CALLBACK\_N@{SPI\_CALLBACK\_N}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CALLBACK\_N@{SPI\_CALLBACK\_N}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}\label{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}} 
+S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N&Number of available callbacks \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}\label{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_character\_size@{spi\_character\_size}}
+\index{spi\_character\_size@{spi\_character\_size}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_character\_size}{spi\_character\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}}}
+
+
+
+S\+PI character size enum. 
+
+S\+PI character size. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CHARACTER\_SIZE\_8BIT@{SPI\_CHARACTER\_SIZE\_8BIT}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CHARACTER\_SIZE\_8BIT@{SPI\_CHARACTER\_SIZE\_8BIT}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7a66283e49623ad09896942662b8221de6}\label{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7a66283e49623ad09896942662b8221de6}} 
+S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+8\+B\+IT&8-\/bit character \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_CHARACTER\_SIZE\_9BIT@{SPI\_CHARACTER\_SIZE\_9BIT}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_CHARACTER\_SIZE\_9BIT@{SPI\_CHARACTER\_SIZE\_9BIT}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7ab70647e252f3251aac0100b56c3d30af}\label{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7ab70647e252f3251aac0100b56c3d30af}} 
+S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+9\+B\+IT&9-\/bit character \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}\label{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_data\_order@{spi\_data\_order}}
+\index{spi\_data\_order@{spi\_data\_order}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_data\_order}{spi\_data\_order}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}{spi\+\_\+data\+\_\+order}}}
+
+
+
+S\+PI data order enum. 
+
+S\+PI data order. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DATA\_ORDER\_LSB@{SPI\_DATA\_ORDER\_LSB}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DATA\_ORDER\_LSB@{SPI\_DATA\_ORDER\_LSB}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2ab016ca9032d6e9418d834514cc95b7d3}\label{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2ab016ca9032d6e9418d834514cc95b7d3}} 
+S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+L\+SB&The L\+SB of the data is transmitted first \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_DATA\_ORDER\_MSB@{SPI\_DATA\_ORDER\_MSB}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_DATA\_ORDER\_MSB@{SPI\_DATA\_ORDER\_MSB}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2a7eb5ed4b7d6f993acd7d09a5d8db3687}\label{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2a7eb5ed4b7d6f993acd7d09a5d8db3687}} 
+S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+M\+SB&The M\+SB of the data is transmitted first \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}\label{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_frame\_format@{spi\_frame\_format}}
+\index{spi\_frame\_format@{spi\_frame\_format}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_frame\_format}{spi\_frame\_format}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}{spi\+\_\+frame\+\_\+format}}}
+
+
+
+S\+PI frame format enum. 
+
+Frame format for slave mode. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FRAME\_FORMAT\_SPI\_FRAME@{SPI\_FRAME\_FORMAT\_SPI\_FRAME}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_FRAME\_FORMAT\_SPI\_FRAME@{SPI\_FRAME\_FORMAT\_SPI\_FRAME}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaa9dbfeaf1014b44745b56ceda7e0d62d7}\label{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaa9dbfeaf1014b44745b56ceda7e0d62d7}} 
+S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+ME&S\+PI frame \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_FRAME\_FORMAT\_SPI\_FRAME\_ADDR@{SPI\_FRAME\_FORMAT\_SPI\_FRAME\_ADDR}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_FRAME\_FORMAT\_SPI\_FRAME\_ADDR@{SPI\_FRAME\_FORMAT\_SPI\_FRAME\_ADDR}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaaba876059c4eb058d0988262d9df8e090}\label{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaaba876059c4eb058d0988262d9df8e090}} 
+S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+D\+DR&S\+PI frame with address \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga16bab5d19c43ffb25c0d3f1e071813de}\label{group__asfdoc__sam0__sercom__spi__group_ga16bab5d19c43ffb25c0d3f1e071813de}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_interrupt\_flag@{spi\_interrupt\_flag}}
+\index{spi\_interrupt\_flag@{spi\_interrupt\_flag}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_interrupt\_flag}{spi\_interrupt\_flag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga16bab5d19c43ffb25c0d3f1e071813de}{spi\+\_\+interrupt\+\_\+flag}}}
+
+
+
+S\+PI Interrupt Flags. 
+
+Interrupt flags for the S\+PI module. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_INTERRUPT\_FLAG\_DATA\_REGISTER\_EMPTY@{SPI\_INTERRUPT\_FLAG\_DATA\_REGISTER\_EMPTY}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_INTERRUPT\_FLAG\_DATA\_REGISTER\_EMPTY@{SPI\_INTERRUPT\_FLAG\_DATA\_REGISTER\_EMPTY}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deab47cccbc2e81d8af9d6c1fd777a95762}\label{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deab47cccbc2e81d8af9d6c1fd777a95762}} 
+S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+E\+M\+P\+TY&This flag is set when the contents of the data register has been moved to the shift register and the data register is ready for new data \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_INTERRUPT\_FLAG\_TX\_COMPLETE@{SPI\_INTERRUPT\_FLAG\_TX\_COMPLETE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_INTERRUPT\_FLAG\_TX\_COMPLETE@{SPI\_INTERRUPT\_FLAG\_TX\_COMPLETE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deacc9db35e4654be2e4bd06d2a10fb3837}\label{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deacc9db35e4654be2e4bd06d2a10fb3837}} 
+S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE&This flag is set when the contents of the shift register has been shifted out \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_INTERRUPT\_FLAG\_RX\_COMPLETE@{SPI\_INTERRUPT\_FLAG\_RX\_COMPLETE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_INTERRUPT\_FLAG\_RX\_COMPLETE@{SPI\_INTERRUPT\_FLAG\_RX\_COMPLETE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deabc7fa74e9f37b6aa492ca9889e7d8a92}\label{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deabc7fa74e9f37b6aa492ca9889e7d8a92}} 
+S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE&This flag is set when data has been shifted into the data register \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}\label{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_mode@{spi\_mode}}
+\index{spi\_mode@{spi\_mode}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_mode}{spi\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}}}
+
+
+
+S\+PI modes enum. 
+
+S\+PI mode selection. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_MODE\_MASTER@{SPI\_MODE\_MASTER}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_MODE\_MASTER@{SPI\_MODE\_MASTER}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ae68a8adf6e5b67a7bdbe9526b15dae99}\label{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ae68a8adf6e5b67a7bdbe9526b15dae99}} 
+S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+S\+T\+ER&Master mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_MODE\_SLAVE@{SPI\_MODE\_SLAVE}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_MODE\_SLAVE@{SPI\_MODE\_SLAVE}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ad1131ed33ad43ab3f667070b04454439}\label{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ad1131ed33ad43ab3f667070b04454439}} 
+S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+S\+L\+A\+VE&Slave mode \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}\label{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_signal\_mux\_setting@{spi\_signal\_mux\_setting}}
+\index{spi\_signal\_mux\_setting@{spi\_signal\_mux\_setting}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_signal\_mux\_setting}{spi\_signal\_mux\_setting}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}{spi\+\_\+signal\+\_\+mux\+\_\+setting}}}
+
+
+
+S\+PI signal M\+UX settings. 
+
+Set the functionality of the S\+E\+R\+C\+OM pins. As not all combinations can be used in different modes of operation, proper combinations must be chosen according to the rest of the configuration.
+
+\begin{DoxyNote}{Note}
+In master operation\+: DI is M\+I\+SO, DO is M\+O\+SI. In slave operation\+: DI is M\+O\+SI, DO is M\+I\+SO.
+\end{DoxyNote}
+See \mbox{\hyperlink{asfdoc_sam0_sercom_spi_mux_settings}{M\+UX Settings}} for a description of the various M\+UX setting options. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_A@{SPI\_SIGNAL\_MUX\_SETTING\_A}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_A@{SPI\_SIGNAL\_MUX\_SETTING\_A}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a3cdcdd92d89e38733d77ac89f1a2ddd2}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a3cdcdd92d89e38733d77ac89f1a2ddd2}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+A&S\+PI M\+UX combination A. D\+O\+PO\+: 0x0, D\+I\+PO\+: 0x0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_B@{SPI\_SIGNAL\_MUX\_SETTING\_B}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_B@{SPI\_SIGNAL\_MUX\_SETTING\_B}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6436816e953e9435937dadd832022e23}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6436816e953e9435937dadd832022e23}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+B&S\+PI M\+UX combination B. D\+O\+PO\+: 0x0, D\+I\+PO\+: 0x1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_C@{SPI\_SIGNAL\_MUX\_SETTING\_C}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_C@{SPI\_SIGNAL\_MUX\_SETTING\_C}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aedcff238d013e3a51eb6580ca3df64d1}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aedcff238d013e3a51eb6580ca3df64d1}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+C&S\+PI M\+UX combination C. D\+O\+PO\+: 0x0, D\+I\+PO\+: 0x2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_D@{SPI\_SIGNAL\_MUX\_SETTING\_D}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_D@{SPI\_SIGNAL\_MUX\_SETTING\_D}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a157acefdb388019c788d616f5225deda}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a157acefdb388019c788d616f5225deda}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+D&S\+PI M\+UX combination D. D\+O\+PO\+: 0x0, D\+I\+PO\+: 0x3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_E@{SPI\_SIGNAL\_MUX\_SETTING\_E}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_E@{SPI\_SIGNAL\_MUX\_SETTING\_E}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a7234b3f4e0aa7fe723cc85edabea9816}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a7234b3f4e0aa7fe723cc85edabea9816}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+E&S\+PI M\+UX combination E. D\+O\+PO\+: 0x1, D\+I\+PO\+: 0x0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_F@{SPI\_SIGNAL\_MUX\_SETTING\_F}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_F@{SPI\_SIGNAL\_MUX\_SETTING\_F}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a578bd6b0685f742bf51e9c2a395c3ea2}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a578bd6b0685f742bf51e9c2a395c3ea2}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+F&S\+PI M\+UX combination F. D\+O\+PO\+: 0x1, D\+I\+PO\+: 0x1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_G@{SPI\_SIGNAL\_MUX\_SETTING\_G}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_G@{SPI\_SIGNAL\_MUX\_SETTING\_G}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad9b9f4b431a3ac65423f57a96cac3bb9}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad9b9f4b431a3ac65423f57a96cac3bb9}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+G&S\+PI M\+UX combination G. D\+O\+PO\+: 0x1, D\+I\+PO\+: 0x2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_H@{SPI\_SIGNAL\_MUX\_SETTING\_H}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_H@{SPI\_SIGNAL\_MUX\_SETTING\_H}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a63225e36d738e0cc05c08a58c7a901bd}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a63225e36d738e0cc05c08a58c7a901bd}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+H&S\+PI M\+UX combination H. D\+O\+PO\+: 0x1, D\+I\+PO\+: 0x3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_I@{SPI\_SIGNAL\_MUX\_SETTING\_I}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_I@{SPI\_SIGNAL\_MUX\_SETTING\_I}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad421b8125db3d485b14470501b98066c}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad421b8125db3d485b14470501b98066c}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+I&S\+PI M\+UX combination I. D\+O\+PO\+: 0x2, D\+I\+PO\+: 0x0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_J@{SPI\_SIGNAL\_MUX\_SETTING\_J}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_J@{SPI\_SIGNAL\_MUX\_SETTING\_J}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370acc5588ae2498b0550997f6d647b19eda}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370acc5588ae2498b0550997f6d647b19eda}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+J&S\+PI M\+UX combination J. D\+O\+PO\+: 0x2, D\+I\+PO\+: 0x1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_K@{SPI\_SIGNAL\_MUX\_SETTING\_K}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_K@{SPI\_SIGNAL\_MUX\_SETTING\_K}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aa01984d81ef8cef6c34c03f27bfbd406}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aa01984d81ef8cef6c34c03f27bfbd406}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+K&S\+PI M\+UX combination K. D\+O\+PO\+: 0x2, D\+I\+PO\+: 0x2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_L@{SPI\_SIGNAL\_MUX\_SETTING\_L}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_L@{SPI\_SIGNAL\_MUX\_SETTING\_L}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a79fb82aa500712404307189ade71948f}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a79fb82aa500712404307189ade71948f}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+L&S\+PI M\+UX combination L. D\+O\+PO\+: 0x2, D\+I\+PO\+: 0x3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_M@{SPI\_SIGNAL\_MUX\_SETTING\_M}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_M@{SPI\_SIGNAL\_MUX\_SETTING\_M}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6eba5168c427ef781eee612c99c2e7f6}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6eba5168c427ef781eee612c99c2e7f6}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+M&S\+PI M\+UX combination M. D\+O\+PO\+: 0x3, D\+I\+PO\+: 0x0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_N@{SPI\_SIGNAL\_MUX\_SETTING\_N}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_N@{SPI\_SIGNAL\_MUX\_SETTING\_N}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a90871c4e6ee8f90df87ce0d851c1d2a1}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a90871c4e6ee8f90df87ce0d851c1d2a1}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+N&S\+PI M\+UX combination N. D\+O\+PO\+: 0x3, D\+I\+PO\+: 0x1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_O@{SPI\_SIGNAL\_MUX\_SETTING\_O}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_O@{SPI\_SIGNAL\_MUX\_SETTING\_O}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a34fc3e98645ee794eb240b84e24c2966}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a34fc3e98645ee794eb240b84e24c2966}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+O&S\+PI M\+UX combination O. D\+O\+PO\+: 0x3, D\+I\+PO\+: 0x2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_SIGNAL\_MUX\_SETTING\_P@{SPI\_SIGNAL\_MUX\_SETTING\_P}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_SIGNAL\_MUX\_SETTING\_P@{SPI\_SIGNAL\_MUX\_SETTING\_P}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aca300e01409474db47004e90d93c3fb3}\label{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aca300e01409474db47004e90d93c3fb3}} 
+S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+P&S\+PI M\+UX combination P. D\+O\+PO\+: 0x3, D\+I\+PO\+: 0x3 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}\label{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_transfer\_mode@{spi\_transfer\_mode}}
+\index{spi\_transfer\_mode@{spi\_transfer\_mode}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_transfer\_mode}{spi\_transfer\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}{spi\+\_\+transfer\+\_\+mode}}}
+
+
+
+S\+PI transfer modes enum. 
+
+S\+PI transfer mode. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_TRANSFER\_MODE\_0@{SPI\_TRANSFER\_MODE\_0}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_TRANSFER\_MODE\_0@{SPI\_TRANSFER\_MODE\_0}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5addcbccd52e926858945de2e140199027}\label{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5addcbccd52e926858945de2e140199027}} 
+S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+0&Mode 0. Leading edge\+: rising, sample. Trailing edge\+: falling, setup \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_TRANSFER\_MODE\_1@{SPI\_TRANSFER\_MODE\_1}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_TRANSFER\_MODE\_1@{SPI\_TRANSFER\_MODE\_1}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5aa55ca25e3c49ff34464adc654d14cfd5}\label{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5aa55ca25e3c49ff34464adc654d14cfd5}} 
+S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+1&Mode 1. Leading edge\+: rising, setup. Trailing edge\+: falling, sample \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_TRANSFER\_MODE\_2@{SPI\_TRANSFER\_MODE\_2}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_TRANSFER\_MODE\_2@{SPI\_TRANSFER\_MODE\_2}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a29f104b5325a068ab32e652e21a1ec95}\label{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a29f104b5325a068ab32e652e21a1ec95}} 
+S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+2&Mode 2. Leading edge\+: falling, sample. Trailing edge\+: rising, setup \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPI\_TRANSFER\_MODE\_3@{SPI\_TRANSFER\_MODE\_3}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!SPI\_TRANSFER\_MODE\_3@{SPI\_TRANSFER\_MODE\_3}}}\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a98dfa4850997601437f5183699d9e63c}\label{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a98dfa4850997601437f5183699d9e63c}} 
+S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+3&Mode 3. Leading edge\+: falling, setup. Trailing edge\+: rising, sample \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga71091c8fcde0d526329e04f8c7b24efc}\label{group__asfdoc__sam0__sercom__spi__group_ga71091c8fcde0d526329e04f8c7b24efc}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!\_spi\_interrupt\_handler@{\_spi\_interrupt\_handler}}
+\index{\_spi\_interrupt\_handler@{\_spi\_interrupt\_handler}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{\_spi\_interrupt\_handler()}{\_spi\_interrupt\_handler()}}
+{\footnotesize\ttfamily void \+\_\+spi\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{instance }\end{DoxyParamCaption})}
+
+Prototype for the interrupt handler \mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga74d13a9fe3203f121664b864f68c94fd}\label{group__asfdoc__sam0__sercom__spi__group_ga74d13a9fe3203f121664b864f68c94fd}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_abort\_job@{spi\_abort\_job}}
+\index{spi\_abort\_job@{spi\_abort\_job}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_abort\_job()}{spi\_abort\_job()}}
+{\footnotesize\ttfamily void spi\+\_\+abort\+\_\+job (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module }\end{DoxyParamCaption})}
+
+
+
+Aborts an ongoing job. 
+
+This function will abort the specified job type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to S\+PI software instance struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga83b840fe8c91173bfe54a13787c262e6}\label{group__asfdoc__sam0__sercom__spi__group_ga83b840fe8c91173bfe54a13787c262e6}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_init@{spi\_init}}
+\index{spi\_init@{spi\_init}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_init()}{spi\_init()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+init (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{\mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const}]{hw,  }\item[{const struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} $\ast$const}]{config }\end{DoxyParamCaption})}
+
+
+
+Initializes the S\+E\+R\+C\+OM S\+PI module. 
+
+This function will initialize the S\+E\+R\+C\+OM S\+PI module, based on the values of the config struct.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em hw} & Pointer to hardware instance \\
+\hline
+\mbox{\texttt{ in}}  & {\em config} & Pointer to the config struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the initialization. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & Module initiated correctly \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If module is enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & If module is busy resetting \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If invalid argument(s) were provided \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gac5022683cb35d827578c26cf7689ae61}\label{group__asfdoc__sam0__sercom__spi__group_gac5022683cb35d827578c26cf7689ae61}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_read\_buffer\_job@{spi\_read\_buffer\_job}}
+\index{spi\_read\_buffer\_job@{spi\_read\_buffer\_job}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_read\_buffer\_job()}{spi\_read\_buffer\_job()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+read\+\_\+buffer\+\_\+job (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t $\ast$}]{rx\+\_\+data,  }\item[{uint16\+\_\+t}]{length,  }\item[{uint16\+\_\+t}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Asynchronous buffer read. 
+
+Sets up the driver to read from the S\+PI to a given buffer. If registered and enabled, a callback function will be called when the read is finished.
+
+\begin{DoxyNote}{Note}
+If address matching is enabled for the slave, the first character received and placed in the RX buffer will be the address.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to S\+PI software instance struct \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+data} & Pointer to data buffer to receive \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Data buffer length \\
+\hline
+\mbox{\texttt{ in}}  & {\em dummy} & Dummy character to send when reading in master mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the operation completed successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+B\+U\+SY} & If the S\+PI was already busy with a read operation \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If the receiver is not enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If requested read length was zero \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga7cdeea24cfa24ab872044c6fa1ae893f}\label{group__asfdoc__sam0__sercom__spi__group_ga7cdeea24cfa24ab872044c6fa1ae893f}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_read\_buffer\_wait@{spi\_read\_buffer\_wait}}
+\index{spi\_read\_buffer\_wait@{spi\_read\_buffer\_wait}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_read\_buffer\_wait()}{spi\_read\_buffer\_wait()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+read\+\_\+buffer\+\_\+wait (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t $\ast$}]{rx\+\_\+data,  }\item[{uint16\+\_\+t}]{length,  }\item[{uint16\+\_\+t}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Reads buffer of {\ttfamily length} S\+PI characters. 
+
+This function will read a buffer of data from an S\+PI peripheral by sending dummy S\+PI character if in master mode, or by waiting for data in slave mode.
+
+\begin{DoxyNote}{Note}
+If address matching is enabled for the slave, the first character received and placed in the buffer will be the address.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+data} & Data buffer for received data \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Length of data to receive \\
+\hline
+\mbox{\texttt{ in}}  & {\em dummy} & 8-\/ or 9-\/bit dummy byte to shift out in master mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the read operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the read was completed \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+A\+B\+O\+R\+T\+ED} & If transaction was ended by master before the entire buffer was transferred \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If invalid argument(s) were provided \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT} & If the operation was not completed within the timeout in slave mode \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If the receiver is not enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW} & If the data is overflown \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga9736ace2b57a6d45d3fb820aae552a48}\label{group__asfdoc__sam0__sercom__spi__group_ga9736ace2b57a6d45d3fb820aae552a48}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_register\_callback@{spi\_register\_callback}}
+\index{spi\_register\_callback@{spi\_register\_callback}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_register\_callback()}{spi\_register\_callback()}}
+{\footnotesize\ttfamily void spi\+\_\+register\+\_\+callback (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}}}]{callback\+\_\+func,  }\item[{enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}}}]{callback\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Registers a S\+PI callback function. 
+
+Registers a callback function which is implemented by the user.
+
+\begin{DoxyNote}{Note}
+The callback must be enabled by spi\+\_\+enable\+\_\+callback, in order for the interrupt handler to call it when the conditions for the callback type are met.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to U\+S\+A\+RT software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+func} & Pointer to callback function \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+type} & Callback type given by an enum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga65c764f92ed46f0d4845232bd4b241bc}\label{group__asfdoc__sam0__sercom__spi__group_ga65c764f92ed46f0d4845232bd4b241bc}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_reset@{spi\_reset}}
+\index{spi\_reset@{spi\_reset}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_reset()}{spi\_reset()}}
+{\footnotesize\ttfamily void spi\+\_\+reset (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module }\end{DoxyParamCaption})}
+
+
+
+Resets the S\+PI module. 
+
+This function will reset the S\+PI module to its power on default values and disable it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}\label{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_select\_slave@{spi\_select\_slave}}
+\index{spi\_select\_slave@{spi\_select\_slave}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_select\_slave()}{spi\_select\_slave()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+select\+\_\+slave (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}} $\ast$const}]{slave,  }\item[{const \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{select }\end{DoxyParamCaption})}
+
+
+
+Selects slave device. 
+
+This function will drive the slave select pin of the selected device low or high depending on the select Boolean. If slave address recognition is enabled, the address will be sent to the slave when selecting it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software module struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em slave} & Pointer to the attached slave \\
+\hline
+\mbox{\texttt{ in}}  & {\em select} & Boolean stating if the slave should be selected or deselected\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the slave device was selected \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+D\+EV} & If the S\+PI module is operating in slave mode \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+B\+U\+SY} & If the S\+PI module is not ready to write the slave address \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga6bc86fe61f20b414ac3ca1a74c28dd28}\label{group__asfdoc__sam0__sercom__spi__group_ga6bc86fe61f20b414ac3ca1a74c28dd28}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_set\_baudrate@{spi\_set\_baudrate}}
+\index{spi\_set\_baudrate@{spi\_set\_baudrate}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_set\_baudrate()}{spi\_set\_baudrate()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+set\+\_\+baudrate (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint32\+\_\+t}]{baudrate }\end{DoxyParamCaption})}
+
+
+
+Set the baudrate of the S\+PI module. 
+
+This function will set the baudrate of the S\+PI module.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em baudrate} & The baudrate wanted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of the configuration. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If invalid argument(s) were provided \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the configuration was written \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gaba6ac49efcf4b51fa8131d4a07071967}\label{group__asfdoc__sam0__sercom__spi__group_gaba6ac49efcf4b51fa8131d4a07071967}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_transceive\_buffer\_job@{spi\_transceive\_buffer\_job}}
+\index{spi\_transceive\_buffer\_job@{spi\_transceive\_buffer\_job}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_transceive\_buffer\_job()}{spi\_transceive\_buffer\_job()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+transceive\+\_\+buffer\+\_\+job (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t $\ast$}]{tx\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{rx\+\_\+data,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Asynchronous buffer write and read. 
+
+Sets up the driver to write and read to and from given buffers. If registered and enabled, a callback function will be called when the transfer is finished.
+
+\begin{DoxyNote}{Note}
+If address matching is enabled for the slave, the first character received and placed in the RX buffer will be the address.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to S\+PI software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em tx\+\_\+data} & Pointer to data buffer to send \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+data} & Pointer to data buffer to receive \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Data buffer length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the operation completed successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+B\+U\+SY} & If the S\+PI was already busy with a read operation \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If the receiver is not enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If requested read length was zero \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}\label{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_transceive\_buffer\_wait@{spi\_transceive\_buffer\_wait}}
+\index{spi\_transceive\_buffer\_wait@{spi\_transceive\_buffer\_wait}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_transceive\_buffer\_wait()}{spi\_transceive\_buffer\_wait()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+transceive\+\_\+buffer\+\_\+wait (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t $\ast$}]{tx\+\_\+data,  }\item[{uint8\+\_\+t $\ast$}]{rx\+\_\+data,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Sends and receives a buffer of {\ttfamily length} S\+PI characters. 
+
+This function will send and receive a buffer of data via the S\+PI.
+
+In master mode the S\+PI characters will be sent immediately and the received S\+PI character will be read as soon as the shifting of the S\+PI character is complete.
+
+In slave mode this function will place the data to be sent into the transmit buffer. It will then block until an S\+PI master has shifted the complete buffer and the received data is available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em tx\+\_\+data} & Pointer to the buffer to transmit \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+data} & Pointer to the buffer where received data will be stored \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Number of S\+PI characters to transfer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the operation was completed \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If invalid argument(s) were provided \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT} & If the operation was not completed within the timeout in slave mode \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If the receiver is not enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW} & If the data is overflown \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga3eb1d72360e67b6fef7574320a5919e6}\label{group__asfdoc__sam0__sercom__spi__group_ga3eb1d72360e67b6fef7574320a5919e6}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_transceive\_wait@{spi\_transceive\_wait}}
+\index{spi\_transceive\_wait@{spi\_transceive\_wait}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_transceive\_wait()}{spi\_transceive\_wait()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+transceive\+\_\+wait (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint16\+\_\+t}]{tx\+\_\+data,  }\item[{uint16\+\_\+t $\ast$}]{rx\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Sends and reads a single S\+PI character. 
+
+This function will transfer a single S\+PI character via S\+PI and return the S\+PI character that is shifted into the shift register.
+
+In master mode the S\+PI character will be sent immediately and the received S\+PI character will be read as soon as the shifting of the data is complete.
+
+In slave mode this function will place the data to be sent into the transmit buffer. It will then block until an S\+PI master has shifted a complete S\+PI character, and the received data is available.
+
+\begin{DoxyNote}{Note}
+The data to be sent might not be sent before the next transfer, as loading of the shift register is dependent on S\+CK. 
+
+If address matching is enabled for the slave, the first character received and placed in the buffer will be the address.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em tx\+\_\+data} & S\+PI character to transmit \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+data} & Pointer to store the received S\+PI character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the operation was completed \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT} & If the operation was not completed within the timeout in slave mode \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+D\+E\+N\+I\+ED} & If the receiver is not enabled \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+O\+V\+E\+R\+F\+L\+OW} & If the incoming data is overflown \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga7df7ed6a6a9d6a5e1338ceaa0d5f07b2}\label{group__asfdoc__sam0__sercom__spi__group_ga7df7ed6a6a9d6a5e1338ceaa0d5f07b2}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_unregister\_callback@{spi\_unregister\_callback}}
+\index{spi\_unregister\_callback@{spi\_unregister\_callback}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_unregister\_callback()}{spi\_unregister\_callback()}}
+{\footnotesize\ttfamily void spi\+\_\+unregister\+\_\+callback (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}}}]{callback\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Unregisters a S\+PI callback function. 
+
+Unregisters a callback function which is implemented by the user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to S\+PI software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+type} & Callback type given by an enum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_ga7a7ddeab7e3ed355e13366ed635ff152}\label{group__asfdoc__sam0__sercom__spi__group_ga7a7ddeab7e3ed355e13366ed635ff152}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_write\_buffer\_job@{spi\_write\_buffer\_job}}
+\index{spi\_write\_buffer\_job@{spi\_write\_buffer\_job}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_write\_buffer\_job()}{spi\_write\_buffer\_job()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+write\+\_\+buffer\+\_\+job (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t $\ast$}]{tx\+\_\+data,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Asynchronous buffer write. 
+
+Sets up the driver to write to the S\+PI from a given buffer. If registered and enabled, a callback function will be called when the write is finished.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to S\+PI software instance struct \\
+\hline
+\mbox{\texttt{ out}}  & {\em tx\+\_\+data} & Pointer to data buffer to receive \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Data buffer length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the write request operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the operation completed successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+B\+U\+SY} & If the S\+PI was already busy with a write operation \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If requested write length was zero \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__sercom__spi__group_gae217dcf01506d2ad9ea554a14e57245f}\label{group__asfdoc__sam0__sercom__spi__group_gae217dcf01506d2ad9ea554a14e57245f}} 
+\index{SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}!spi\_write\_buffer\_wait@{spi\_write\_buffer\_wait}}
+\index{spi\_write\_buffer\_wait@{spi\_write\_buffer\_wait}!SAM Serial Peripheral Interface (SERCOM SPI) Driver@{SAM Serial Peripheral Interface (SERCOM SPI) Driver}}
+\subsubsection{\texorpdfstring{spi\_write\_buffer\_wait()}{spi\_write\_buffer\_wait()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} spi\+\_\+write\+\_\+buffer\+\_\+wait (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const}]{module,  }\item[{const uint8\+\_\+t $\ast$}]{tx\+\_\+data,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Sends a buffer of {\ttfamily length} S\+PI characters. 
+
+This function will send a buffer of S\+PI characters via the S\+PI and discard any data that is received. To both send and receive a buffer of data, use the \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}{spi\+\_\+transceive\+\_\+buffer\+\_\+wait}} function.
+
+Note that this function does not handle the \+\_\+\+SS (slave select) pin(s) in master mode; this must be handled by the user application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to the software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em tx\+\_\+data} & Pointer to the buffer to transmit \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & Number of S\+PI characters to transfer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the write operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & If the write was completed \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+A\+B\+O\+R\+T\+ED} & If transaction was ended by master before entire buffer was transferred \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If invalid argument(s) were provided \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT} & If the operation was not completed within the timeout in slave mode \\
+\hline
+\end{DoxyRetVals}

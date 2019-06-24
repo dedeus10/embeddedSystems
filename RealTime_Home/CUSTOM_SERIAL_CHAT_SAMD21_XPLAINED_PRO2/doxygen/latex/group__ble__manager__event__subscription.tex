@@ -1,0 +1,12 @@
+\hypertarget{group__ble__manager__event__subscription}{}\section{B\+LE Event Subscription}
+\label{group__ble__manager__event__subscription}\index{BLE Event Subscription@{BLE Event Subscription}}
+
+
+This group includes functionality of registering the B\+LE Events from profile/service/application.  
+
+
+This group includes functionality of registering the B\+LE Events from profile/service/application. 
+
+B\+L\+E-\/\+Manager checks the registered callbacks with respective events. If the event and registered callbacks is valid ble manager will calls the respective call back to handle the events. The more number of profile can also subscribe the same event for process. ex. If B\+LE battery service and B\+LE blood pressure profile are present in the same application then it can subscribe the same events.
+
+The B\+LE Profile or B\+LE Services can subscribe the events like G\+A\+TT Server Event, G\+A\+TT Client Events, G\+AP Events, L2\+C\+AP Events, H\+T\+PT Profile Events, D\+TM Events and C\+U\+S\+T\+OM Events by registering its call-\/backs to B\+L\+E-\/\+Manager.

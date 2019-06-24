@@ -1,0 +1,72 @@
+\hypertarget{structtc__module}{}\section{tc\+\_\+module Struct Reference}
+\label{structtc__module}\index{tc\_module@{tc\_module}}
+
+
+TC software device instance structure.  
+
+
+
+
+{\ttfamily \#include $<$tc.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{union_tc}{Tc}} $\ast$ \mbox{\hyperlink{structtc__module_a4e05e4e73ff3a72e16b23bb2e44af519}{hw}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga1b112627b81227c49c16b1a93e3321a0}{tc\+\_\+counter\+\_\+size}} \mbox{\hyperlink{structtc__module_aab0e5adb1f12875949e072f548ce2895}{counter\+\_\+size}}
+\item 
+\mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga2a1d57f42085001f29a6584ae8ab1bb4}{tc\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structtc__module_ad76de8a864ec5d6ba1eb04dd8b758adf}{callback}} \mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__tc__group_gga7d3fb5365e46bd4efae2885bd508067faf76c479c366d3c15450245bb4ee9a856}{T\+C\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structtc__module_a76596f8e0d1d5567da4bb6099bc15708}{register\+\_\+callback\+\_\+mask}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structtc__module_a79ea1f5a1699e0e2c93bd3d993257e45}{enable\+\_\+callback\+\_\+mask}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+TC software device instance structure. 
+
+TC software instance structure, used to retain software state information of an associated hardware module instance.
+
+\begin{DoxyNote}{Note}
+The fields of this structure should not be altered by the user application; they are reserved for module-\/internal use only. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structtc__module_ad76de8a864ec5d6ba1eb04dd8b758adf}\label{structtc__module_ad76de8a864ec5d6ba1eb04dd8b758adf}} 
+\index{tc\_module@{tc\_module}!callback@{callback}}
+\index{callback@{callback}!tc\_module@{tc\_module}}
+\subsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga2a1d57f42085001f29a6584ae8ab1bb4}{tc\+\_\+callback\+\_\+t}} callback\mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__tc__group_gga7d3fb5365e46bd4efae2885bd508067faf76c479c366d3c15450245bb4ee9a856}{T\+C\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}}
+
+Array of callbacks \mbox{\Hypertarget{structtc__module_aab0e5adb1f12875949e072f548ce2895}\label{structtc__module_aab0e5adb1f12875949e072f548ce2895}} 
+\index{tc\_module@{tc\_module}!counter\_size@{counter\_size}}
+\index{counter\_size@{counter\_size}!tc\_module@{tc\_module}}
+\subsubsection{\texorpdfstring{counter\_size}{counter\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga1b112627b81227c49c16b1a93e3321a0}{tc\+\_\+counter\+\_\+size}} counter\+\_\+size}
+
+Size of the initialized Timer/\+Counter module configuration \mbox{\Hypertarget{structtc__module_a79ea1f5a1699e0e2c93bd3d993257e45}\label{structtc__module_a79ea1f5a1699e0e2c93bd3d993257e45}} 
+\index{tc\_module@{tc\_module}!enable\_callback\_mask@{enable\_callback\_mask}}
+\index{enable\_callback\_mask@{enable\_callback\_mask}!tc\_module@{tc\_module}}
+\subsubsection{\texorpdfstring{enable\_callback\_mask}{enable\_callback\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t enable\+\_\+callback\+\_\+mask}
+
+Bit mask for callbacks enabled \mbox{\Hypertarget{structtc__module_a4e05e4e73ff3a72e16b23bb2e44af519}\label{structtc__module_a4e05e4e73ff3a72e16b23bb2e44af519}} 
+\index{tc\_module@{tc\_module}!hw@{hw}}
+\index{hw@{hw}!tc\_module@{tc\_module}}
+\subsubsection{\texorpdfstring{hw}{hw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_tc}{Tc}}$\ast$ hw}
+
+Hardware module pointer of the associated Timer/\+Counter peripheral \mbox{\Hypertarget{structtc__module_a76596f8e0d1d5567da4bb6099bc15708}\label{structtc__module_a76596f8e0d1d5567da4bb6099bc15708}} 
+\index{tc\_module@{tc\_module}!register\_callback\_mask@{register\_callback\_mask}}
+\index{register\_callback\_mask@{register\_callback\_mask}!tc\_module@{tc\_module}}
+\subsubsection{\texorpdfstring{register\_callback\_mask}{register\_callback\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t register\+\_\+callback\+\_\+mask}
+
+Bit mask for callbacks registered 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/tc/\mbox{\hyperlink{drivers_2tc_2tc_8h}{tc.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+This is a list of the available Quick Start guides (Q\+S\+Gs) and example applications for \mbox{\hyperlink{group__asfdoc__common2__at25dfx__group}{A\+T25\+D\+Fx Serial\+Flash Driver}}. Q\+S\+Gs are simple examples with step-\/by-\/step instructions to configure and use this driver in a selection of use cases. Note that Q\+S\+Gs can be compiled as a standalone application or be added to the user application.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_common2_at25dfx_basic_use}{Quick Start Guide for A\+T25\+D\+Fx Serial\+Flash Driver}} 
+\end{DoxyItemize}\hypertarget{asfdoc_common2_at25dfx_basic_use}{}\section{Quick Start Guide for A\+T25\+D\+Fx Serial\+Flash Driver}\label{asfdoc_common2_at25dfx_basic_use}
+This quick start will read, unprotect, erase and write bytes to an A\+T25\+D\+F081A that is connected to the S\+PI interface on E\+X\+T1 header of S\+AM D20 Xplained Pro or E\+X\+T3 of S\+AM D21 Xplained Pro.
+
+The S\+E\+R\+C\+OM S\+PI will be configured with the following settings\+:
+
+For S\+AM D20 Xplained Pro
+\begin{DoxyItemize}
+\item 500 k\+Hz baud rate
+\item S\+CK, M\+I\+SO and M\+O\+SI on E\+X\+T1 header\textquotesingle{}s S\+PI pins
+\end{DoxyItemize}
+
+For S\+AM D21 Xplained Pro
+\begin{DoxyItemize}
+\item 120 k\+Hz baud rate
+\item S\+CK, M\+I\+SO and M\+O\+SI on E\+X\+T3
+\end{DoxyItemize}
+
+The A\+T25\+D\+Fx driver instance will be configured with the following settings\+:
+
+For S\+AM D20 Xplained Pro
+\begin{DoxyItemize}
+\item CS on E\+X\+T1 header\textquotesingle{}s S\+S0 pin
+\end{DoxyItemize}
+
+For S\+AM D21 Xplained Pro
+\begin{DoxyItemize}
+\item CS on E\+X\+T3 P\+A13
+\end{DoxyItemize}\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup}{}\subsection{Setup}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup}
+\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_prereq}
+There are no special setup requirements for this use-\/case.\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup_code}{}\subsubsection{Code}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup_code}
+Add to the main application source file, outside of any functions\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Create a new function for initializing the A\+T25\+D\+Fx\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ If not already present, add to the initialization code\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Create read and write buffers. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create global instances of S\+PI and A\+T25\+D\+Fx chip. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a function to contain the A\+T25\+D\+Fx initialization code.
+\item Create local instances of S\+PI and A\+T25\+D\+Fx configurations. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the S\+PI for A\+T25\+D\+Fx connected to E\+X\+T1 header. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the A\+T25\+D\+Fx instance for A\+T25\+D\+F081A, with Slave Select on the S\+S\+\_\+0 pin on E\+X\+T1. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case}{}\subsection{Use Case}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case}
+\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case_code}{}\subsubsection{Code}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case_code}
+Copy into main application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case_flow}{}\subsubsection{Workflow}\label{asfdoc_common2_at25dfx_basic_use_asfdoc_common2_at25dfx_basic_use_case_flow}
+
+\begin{DoxyEnumerate}
+\item Wakeup serial\+Flash. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Check that the Serial\+Flash is present. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Read out the first A\+T25\+D\+F\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE bytes, starting at the very first flash address. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Disable protection of the second sector. \begin{DoxyNote}{Note}
+This device has sectors with a uniform size of 64 kB, so the address {\ttfamily 0x10000} marks the start of the second sector. This can differ between devices.
+\end{DoxyNote}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Erase the first 4 kB of the second 64 kB block (64-\/68 kB range). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Write A\+T25\+D\+F\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE bytes, starting at the beginning of the sector and the newly erased memory locations. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable protection of all sectors, to prevent accidental erases of content. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Put Serial\+Flash device to sleep, to conserve power. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

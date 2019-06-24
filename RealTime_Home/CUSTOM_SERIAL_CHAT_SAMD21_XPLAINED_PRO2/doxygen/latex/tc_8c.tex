@@ -1,0 +1,82 @@
+\hypertarget{tc_8c}{}\section{A\+S\+F/sam0/drivers/tc/tc\+\_\+sam\+\_\+d\+\_\+r\+\_\+h/tc.c File Reference}
+\label{tc_8c}\index{ASF/sam0/drivers/tc/tc\_sam\_d\_r\_h/tc.c@{ASF/sam0/drivers/tc/tc\_sam\_d\_r\_h/tc.c}}
+
+
+S\+AM TC -\/ Timer Counter Driver.  
+
+
+{\ttfamily \#include \char`\"{}tc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tc\+\_\+interrupt.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$system\+\_\+interrupt.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tc_8c_a86b64462d6d0064f3a9986c89e19a560}{\+\_\+\+T\+C\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+V\+E\+C\+T\+\_\+\+N\+UM}}(n,  \mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}})~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+TC\#\#n,
+\item 
+\#define \mbox{\hyperlink{tc_8c_ab4e19d592ee4eb14e57a0bddb7460782}{\+\_\+\+T\+C\+\_\+\+G\+C\+L\+K\+\_\+\+ID}}(n,  \mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}{T\+P\+A\+S\+T\+E3}}(TC,n,\+\_\+\+G\+C\+L\+K\+\_\+\+ID)   ,
+\item 
+\#define \mbox{\hyperlink{tc_8c_aca747928e060d6bd92ec7bf201f50708}{\+\_\+\+T\+C\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK}}(n,  \mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2}}(P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+S\+K\+\_\+\+TC,n) ,
+\item 
+\#define \mbox{\hyperlink{tc_8c_a2fe569f995735cecf90f9d4620e4587a}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+G\+C\+L\+K\+\_\+\+ID}}~\{ \mbox{\hyperlink{group__group__sam0__utils__mrecursion_ga8856265949fb54fdffc8b9ea53a647e8}{M\+R\+E\+C\+U\+R\+S\+I\+ON}}(\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}, \mbox{\hyperlink{tc_8c_ab4e19d592ee4eb14e57a0bddb7460782}{\+\_\+\+T\+C\+\_\+\+G\+C\+L\+K\+\_\+\+ID}}, \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga94cdbe531468f0975311bc2ce36f5e1c}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+M\+A\+X\+\_\+\+ID}}) \}
+\item 
+\#define \mbox{\hyperlink{tc_8c_ad4f9a8dda4309c7255f510e3e07553b1}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK}}~\{ \mbox{\hyperlink{group__group__sam0__utils__mrecursion_ga8856265949fb54fdffc8b9ea53a647e8}{M\+R\+E\+C\+U\+R\+S\+I\+ON}}(\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}, \mbox{\hyperlink{tc_8c_aca747928e060d6bd92ec7bf201f50708}{\+\_\+\+T\+C\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK}}, \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga94cdbe531468f0975311bc2ce36f5e1c}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+M\+A\+X\+\_\+\+ID}}) \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga077a238b03327682013a0bceb4fc44b2}{\+\_\+tc\+\_\+get\+\_\+inst\+\_\+index}} (\mbox{\hyperlink{union_tc}{Tc}} $\ast$const hw)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga98c7f5c97436c2f6cff87a0261597337}{tc\+\_\+init}} (struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst, \mbox{\hyperlink{union_tc}{Tc}} $\ast$const hw, const struct \mbox{\hyperlink{structtc__config}{tc\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes a hardware TC module instance. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga9c81066b0b88893e127fa521f0efde2e}{tc\+\_\+set\+\_\+count\+\_\+value}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst, const uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Sets TC module count value. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__tc__group_gae7d7eb91616c2dff02886dd8cdc87f2d}{tc\+\_\+get\+\_\+count\+\_\+value}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst)
+\begin{DoxyCompactList}\small\item\em Get TC module count value. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__tc__group_gaf780bb09a00298868aa3b8e7627f92ff}{tc\+\_\+get\+\_\+capture\+\_\+value}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst, const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga01eca97dbfd588fd3ba0dcfd4792d857}{tc\+\_\+compare\+\_\+capture\+\_\+channel}} channel\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Gets the TC module capture value. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga687208b24fd33a1da0cbe683adc15fa6}{tc\+\_\+set\+\_\+compare\+\_\+value}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst, const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga01eca97dbfd588fd3ba0dcfd4792d857}{tc\+\_\+compare\+\_\+capture\+\_\+channel}} channel\+\_\+index, const uint32\+\_\+t compare)
+\begin{DoxyCompactList}\small\item\em Sets a TC module compare value. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__tc__group_gad147c1f0393a3ae0c830cec73986eddd}{tc\+\_\+reset}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst)
+\begin{DoxyCompactList}\small\item\em Resets the TC module. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__tc__group_gac22d633ece43bcd18f54283778471340}{tc\+\_\+set\+\_\+top\+\_\+value}} (const struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module\+\_\+inst, const uint32\+\_\+t top\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Set the timer T\+O\+P/period value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM TC -\/ Timer Counter Driver. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tc_8c_ab4e19d592ee4eb14e57a0bddb7460782}\label{tc_8c_ab4e19d592ee4eb14e57a0bddb7460782}} 
+\index{tc.c@{tc.c}!\_TC\_GCLK\_ID@{\_TC\_GCLK\_ID}}
+\index{\_TC\_GCLK\_ID@{\_TC\_GCLK\_ID}!tc.c@{tc.c}}
+\subsubsection{\texorpdfstring{\_TC\_GCLK\_ID}{\_TC\_GCLK\_ID}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+C\+\_\+\+G\+C\+L\+K\+\_\+\+ID(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{\mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}} }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}{T\+P\+A\+S\+T\+E3}}(TC,n,\+\_\+\+G\+C\+L\+K\+\_\+\+ID)   ,}
+
+\mbox{\Hypertarget{tc_8c_a86b64462d6d0064f3a9986c89e19a560}\label{tc_8c_a86b64462d6d0064f3a9986c89e19a560}} 
+\index{tc.c@{tc.c}!\_TC\_INTERRUPT\_VECT\_NUM@{\_TC\_INTERRUPT\_VECT\_NUM}}
+\index{\_TC\_INTERRUPT\_VECT\_NUM@{\_TC\_INTERRUPT\_VECT\_NUM}!tc.c@{tc.c}}
+\subsubsection{\texorpdfstring{\_TC\_INTERRUPT\_VECT\_NUM}{\_TC\_INTERRUPT\_VECT\_NUM}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+C\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+V\+E\+C\+T\+\_\+\+N\+UM(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{\mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}} }\end{DoxyParamCaption})~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+TC\#\#n,}
+
+\mbox{\Hypertarget{tc_8c_aca747928e060d6bd92ec7bf201f50708}\label{tc_8c_aca747928e060d6bd92ec7bf201f50708}} 
+\index{tc.c@{tc.c}!\_TC\_PM\_APBCMASK@{\_TC\_PM\_APBCMASK}}
+\index{\_TC\_PM\_APBCMASK@{\_TC\_PM\_APBCMASK}!tc.c@{tc.c}}
+\subsubsection{\texorpdfstring{\_TC\_PM\_APBCMASK}{\_TC\_PM\_APBCMASK}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+C\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{\mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}} }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2}}(P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+S\+K\+\_\+\+TC,n) ,}
+
+\mbox{\Hypertarget{tc_8c_a2fe569f995735cecf90f9d4620e4587a}\label{tc_8c_a2fe569f995735cecf90f9d4620e4587a}} 
+\index{tc.c@{tc.c}!TC\_INST\_GCLK\_ID@{TC\_INST\_GCLK\_ID}}
+\index{TC\_INST\_GCLK\_ID@{TC\_INST\_GCLK\_ID}!tc.c@{tc.c}}
+\subsubsection{\texorpdfstring{TC\_INST\_GCLK\_ID}{TC\_INST\_GCLK\_ID}}
+{\footnotesize\ttfamily \#define T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+G\+C\+L\+K\+\_\+\+ID~\{ \mbox{\hyperlink{group__group__sam0__utils__mrecursion_ga8856265949fb54fdffc8b9ea53a647e8}{M\+R\+E\+C\+U\+R\+S\+I\+ON}}(\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}, \mbox{\hyperlink{tc_8c_ab4e19d592ee4eb14e57a0bddb7460782}{\+\_\+\+T\+C\+\_\+\+G\+C\+L\+K\+\_\+\+ID}}, \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga94cdbe531468f0975311bc2ce36f5e1c}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+M\+A\+X\+\_\+\+ID}}) \}}
+
+\mbox{\Hypertarget{tc_8c_ad4f9a8dda4309c7255f510e3e07553b1}\label{tc_8c_ad4f9a8dda4309c7255f510e3e07553b1}} 
+\index{tc.c@{tc.c}!TC\_INST\_PM\_APBCMASK@{TC\_INST\_PM\_APBCMASK}}
+\index{TC\_INST\_PM\_APBCMASK@{TC\_INST\_PM\_APBCMASK}!tc.c@{tc.c}}
+\subsubsection{\texorpdfstring{TC\_INST\_PM\_APBCMASK}{TC\_INST\_PM\_APBCMASK}}
+{\footnotesize\ttfamily \#define T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK~\{ \mbox{\hyperlink{group__group__sam0__utils__mrecursion_ga8856265949fb54fdffc8b9ea53a647e8}{M\+R\+E\+C\+U\+R\+S\+I\+ON}}(\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}, \mbox{\hyperlink{tc_8c_aca747928e060d6bd92ec7bf201f50708}{\+\_\+\+T\+C\+\_\+\+P\+M\+\_\+\+A\+P\+B\+C\+M\+A\+SK}}, \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga94cdbe531468f0975311bc2ce36f5e1c}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+M\+A\+X\+\_\+\+ID}}) \}}
+

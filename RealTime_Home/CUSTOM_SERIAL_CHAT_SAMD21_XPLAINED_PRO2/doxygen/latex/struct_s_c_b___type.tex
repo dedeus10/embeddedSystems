@@ -1,0 +1,97 @@
+\hypertarget{struct_s_c_b___type}{}\section{S\+C\+B\+\_\+\+Type Struct Reference}
+\label{struct_s_c_b___type}\index{SCB\_Type@{SCB\_Type}}
+
+
+Structure type to access the System Control Block (S\+CB).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+cm0plus.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a30abfea43143a424074f682bd61eace0}{C\+P\+U\+ID}}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a8fec9e122b923822e7f951cd48cf1d47}{I\+C\+SR}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}{R\+E\+S\+E\+R\+V\+E\+D0}}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_aaec159b48828355cb770049b8b2e8d91}{A\+I\+R\+CR}}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a64a95891ad3e904dd5548112539c1c98}{S\+CR}}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a5e1322e27c40bf91d172f9673f205c97}{C\+CR}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}{R\+E\+S\+E\+R\+V\+E\+D1}}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a70aade06546bce9391e17d9b44beb3a7}{S\+HP}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t \mbox{\hyperlink{struct_s_c_b___type_a04d136e5436e5fa2fb2aaa78a5f86b19}{S\+H\+C\+SR}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure type to access the System Control Block (S\+CB). 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_s_c_b___type_aaec159b48828355cb770049b8b2e8d91}\label{struct_s_c_b___type_aaec159b48828355cb770049b8b2e8d91}} 
+\index{SCB\_Type@{SCB\_Type}!AIRCR@{AIRCR}}
+\index{AIRCR@{AIRCR}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{AIRCR}{AIRCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t A\+I\+R\+CR}
+
+Offset\+: 0x00C (R/W) Application Interrupt and Reset Control Register \mbox{\Hypertarget{struct_s_c_b___type_a5e1322e27c40bf91d172f9673f205c97}\label{struct_s_c_b___type_a5e1322e27c40bf91d172f9673f205c97}} 
+\index{SCB\_Type@{SCB\_Type}!CCR@{CCR}}
+\index{CCR@{CCR}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{CCR}{CCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t C\+CR}
+
+Offset\+: 0x014 (R/W) Configuration Control Register \mbox{\Hypertarget{struct_s_c_b___type_a30abfea43143a424074f682bd61eace0}\label{struct_s_c_b___type_a30abfea43143a424074f682bd61eace0}} 
+\index{SCB\_Type@{SCB\_Type}!CPUID@{CPUID}}
+\index{CPUID@{CPUID}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{CPUID}{CPUID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} uint32\+\_\+t C\+P\+U\+ID}
+
+Offset\+: 0x000 (R/ ) C\+P\+U\+ID Base Register \mbox{\Hypertarget{struct_s_c_b___type_a8fec9e122b923822e7f951cd48cf1d47}\label{struct_s_c_b___type_a8fec9e122b923822e7f951cd48cf1d47}} 
+\index{SCB\_Type@{SCB\_Type}!ICSR@{ICSR}}
+\index{ICSR@{ICSR}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{ICSR}{ICSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t I\+C\+SR}
+
+Offset\+: 0x004 (R/W) Interrupt Control and State Register \mbox{\Hypertarget{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}\label{struct_s_c_b___type_af86c61a5d38a4fc9cef942a12744486b}} 
+\index{SCB\_Type@{SCB\_Type}!RESERVED0@{RESERVED0}}
+\index{RESERVED0@{RESERVED0}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{RESERVED0}{RESERVED0}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D0}
+
+\mbox{\Hypertarget{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}\label{struct_s_c_b___type_ac4ac04e673b5b8320d53f7b0947db902}} 
+\index{SCB\_Type@{SCB\_Type}!RESERVED1@{RESERVED1}}
+\index{RESERVED1@{RESERVED1}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{RESERVED1}{RESERVED1}}
+{\footnotesize\ttfamily uint32\+\_\+t R\+E\+S\+E\+R\+V\+E\+D1}
+
+\mbox{\Hypertarget{struct_s_c_b___type_a64a95891ad3e904dd5548112539c1c98}\label{struct_s_c_b___type_a64a95891ad3e904dd5548112539c1c98}} 
+\index{SCB\_Type@{SCB\_Type}!SCR@{SCR}}
+\index{SCR@{SCR}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{SCR}{SCR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t S\+CR}
+
+Offset\+: 0x010 (R/W) System Control Register \mbox{\Hypertarget{struct_s_c_b___type_a04d136e5436e5fa2fb2aaa78a5f86b19}\label{struct_s_c_b___type_a04d136e5436e5fa2fb2aaa78a5f86b19}} 
+\index{SCB\_Type@{SCB\_Type}!SHCSR@{SHCSR}}
+\index{SHCSR@{SHCSR}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{SHCSR}{SHCSR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t S\+H\+C\+SR}
+
+Offset\+: 0x024 (R/W) System Handler Control and State Register \mbox{\Hypertarget{struct_s_c_b___type_a70aade06546bce9391e17d9b44beb3a7}\label{struct_s_c_b___type_a70aade06546bce9391e17d9b44beb3a7}} 
+\index{SCB\_Type@{SCB\_Type}!SHP@{SHP}}
+\index{SHP@{SHP}!SCB\_Type@{SCB\_Type}}
+\subsubsection{\texorpdfstring{SHP}{SHP}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} uint32\+\_\+t S\+HP\mbox{[}2\mbox{]}}
+
+Offset\+: 0x01C (R/W) System Handlers Priority Registers. \mbox{[}0\mbox{]} is R\+E\+S\+E\+R\+V\+ED 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/\+C\+M\+S\+I\+S/\+Include/\mbox{\hyperlink{core__cm0plus_8h}{core\+\_\+cm0plus.\+h}}\end{DoxyCompactItemize}

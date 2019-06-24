@@ -1,0 +1,112 @@
+\hypertarget{tc__interrupt_8c}{}\section{A\+S\+F/sam0/drivers/tc/tc\+\_\+interrupt.c File Reference}
+\label{tc__interrupt_8c}\index{ASF/sam0/drivers/tc/tc\_interrupt.c@{ASF/sam0/drivers/tc/tc\_interrupt.c}}
+
+
+S\+AM TC -\/ Timer Counter Callback Driver.  
+
+
+{\ttfamily \#include \char`\"{}tc\+\_\+interrupt.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tc__interrupt_8c_aa824a8cafb90ab03d965281672908aaf}{\+\_\+\+T\+C\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}(n,  m)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tc__interrupt_8c_a14be9fa4714eebd90b57e5c6c43d8a53}{\+\_\+tc\+\_\+interrupt\+\_\+handler}} (uint8\+\_\+t instance)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{tc__interrupt_8c_aa187c2a0cd50f55bb5f2c05397b9b225}{tc\+\_\+register\+\_\+callback}} (struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module, \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga2a1d57f42085001f29a6584ae8ab1bb4}{tc\+\_\+callback\+\_\+t}} callback\+\_\+func, const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga7d3fb5365e46bd4efae2885bd508067f}{tc\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Registers a callback. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{tc__interrupt_8c_ad23042511cec11c51d607b24e1df4830}{tc\+\_\+unregister\+\_\+callback}} (struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const module, const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga7d3fb5365e46bd4efae2885bd508067f}{tc\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Unregisters a callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{tc__interrupt_8c_aa21f2450f5d5e3e68f2c3acff715e2db}{\+\_\+tc\+\_\+instances}} \mbox{[}\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM TC -\/ Timer Counter Callback Driver. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tc__interrupt_8c_aa824a8cafb90ab03d965281672908aaf}\label{tc__interrupt_8c_aa824a8cafb90ab03d965281672908aaf}} 
+\index{tc\_interrupt.c@{tc\_interrupt.c}!\_TC\_INTERRUPT\_HANDLER@{\_TC\_INTERRUPT\_HANDLER}}
+\index{\_TC\_INTERRUPT\_HANDLER@{\_TC\_INTERRUPT\_HANDLER}!tc\_interrupt.c@{tc\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_TC\_INTERRUPT\_HANDLER}{\_TC\_INTERRUPT\_HANDLER}}
+{\footnotesize\ttfamily \#define \+\_\+\+T\+C\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{m }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} TC\#\#n\#\#\_Handler(\textcolor{keywordtype}{void}) \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{            \_tc\_interrupt\_handler(m); \(\backslash\)}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tc__interrupt_8c_a14be9fa4714eebd90b57e5c6c43d8a53}\label{tc__interrupt_8c_a14be9fa4714eebd90b57e5c6c43d8a53}} 
+\index{tc\_interrupt.c@{tc\_interrupt.c}!\_tc\_interrupt\_handler@{\_tc\_interrupt\_handler}}
+\index{\_tc\_interrupt\_handler@{\_tc\_interrupt\_handler}!tc\_interrupt.c@{tc\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_tc\_interrupt\_handler()}{\_tc\_interrupt\_handler()}}
+{\footnotesize\ttfamily void \+\_\+tc\+\_\+interrupt\+\_\+handler (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{instance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tc__interrupt_8c_aa187c2a0cd50f55bb5f2c05397b9b225}\label{tc__interrupt_8c_aa187c2a0cd50f55bb5f2c05397b9b225}} 
+\index{tc\_interrupt.c@{tc\_interrupt.c}!tc\_register\_callback@{tc\_register\_callback}}
+\index{tc\_register\_callback@{tc\_register\_callback}!tc\_interrupt.c@{tc\_interrupt.c}}
+\subsubsection{\texorpdfstring{tc\_register\_callback()}{tc\_register\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} tc\+\_\+register\+\_\+callback (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const}]{module,  }\item[{\mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga2a1d57f42085001f29a6584ae8ab1bb4}{tc\+\_\+callback\+\_\+t}}}]{callback\+\_\+func,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga7d3fb5365e46bd4efae2885bd508067f}{tc\+\_\+callback}}}]{callback\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Registers a callback. 
+
+Registers a callback function which is implemented by the user.
+
+\begin{DoxyNote}{Note}
+The callback must be enabled by tc\+\_\+enable\+\_\+callback, in order for the interrupt handler to call it when the conditions for the callback type is met.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to TC software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+func} & Pointer to callback function \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+type} & Callback type given by an enum \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tc__interrupt_8c_ad23042511cec11c51d607b24e1df4830}\label{tc__interrupt_8c_ad23042511cec11c51d607b24e1df4830}} 
+\index{tc\_interrupt.c@{tc\_interrupt.c}!tc\_unregister\_callback@{tc\_unregister\_callback}}
+\index{tc\_unregister\_callback@{tc\_unregister\_callback}!tc\_interrupt.c@{tc\_interrupt.c}}
+\subsubsection{\texorpdfstring{tc\_unregister\_callback()}{tc\_unregister\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} tc\+\_\+unregister\+\_\+callback (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structtc__module}{tc\+\_\+module}} $\ast$const}]{module,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__tc__group_ga7d3fb5365e46bd4efae2885bd508067f}{tc\+\_\+callback}}}]{callback\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Unregisters a callback. 
+
+Unregisters a callback function implemented by the user. The callback should be disabled before it is unregistered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em module} & Pointer to TC software instance struct \\
+\hline
+\mbox{\texttt{ in}}  & {\em callback\+\_\+type} & Callback type given by an enum \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{tc__interrupt_8c_aa21f2450f5d5e3e68f2c3acff715e2db}\label{tc__interrupt_8c_aa21f2450f5d5e3e68f2c3acff715e2db}} 
+\index{tc\_interrupt.c@{tc\_interrupt.c}!\_tc\_instances@{\_tc\_instances}}
+\index{\_tc\_instances@{\_tc\_instances}!tc\_interrupt.c@{tc\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_tc\_instances}{\_tc\_instances}}
+{\footnotesize\ttfamily void$\ast$ \+\_\+tc\+\_\+instances\mbox{[}\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga7895260bd2341a4b228dd6402c507c75}{T\+C\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}\mbox{]}}
+

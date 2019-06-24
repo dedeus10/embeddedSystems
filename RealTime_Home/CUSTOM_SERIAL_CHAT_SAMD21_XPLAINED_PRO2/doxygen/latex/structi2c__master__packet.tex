@@ -1,0 +1,75 @@
+\hypertarget{structi2c__master__packet}{}\section{i2c\+\_\+master\+\_\+packet Struct Reference}
+\label{structi2c__master__packet}\index{i2c\_master\_packet@{i2c\_master\_packet}}
+
+
+I\textsuperscript{2}C master packet for read/write.  
+
+
+
+
+{\ttfamily \#include $<$i2c\+\_\+master.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structi2c__master__packet_a643d30df67a67c5915fde941c934f9f8}{address}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structi2c__master__packet_a4984cd1ac153dd3a0b24706eb8f9b904}{data\+\_\+length}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structi2c__master__packet_abe222f6d3581e7920dcad5306cc906a8}{data}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structi2c__master__packet_a3a307f1d645980c963f88064226ac3b5}{ten\+\_\+bit\+\_\+address}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structi2c__master__packet_a8a6cc2210d6a22d91f730407470ba476}{high\+\_\+speed}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structi2c__master__packet_a5969c6aada0ef9d21a5866cd3b585c02}{hs\+\_\+master\+\_\+code}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\textsuperscript{2}C master packet for read/write. 
+
+Structure to be used when transferring I\textsuperscript{2}C master packets. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structi2c__master__packet_a643d30df67a67c5915fde941c934f9f8}\label{structi2c__master__packet_a643d30df67a67c5915fde941c934f9f8}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!address@{address}}
+\index{address@{address}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily uint16\+\_\+t address}
+
+Address to slave device \mbox{\Hypertarget{structi2c__master__packet_abe222f6d3581e7920dcad5306cc906a8}\label{structi2c__master__packet_abe222f6d3581e7920dcad5306cc906a8}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!data@{data}}
+\index{data@{data}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ data}
+
+Data array containing all data to be transferred \mbox{\Hypertarget{structi2c__master__packet_a4984cd1ac153dd3a0b24706eb8f9b904}\label{structi2c__master__packet_a4984cd1ac153dd3a0b24706eb8f9b904}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!data\_length@{data\_length}}
+\index{data\_length@{data\_length}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{data\_length}{data\_length}}
+{\footnotesize\ttfamily uint16\+\_\+t data\+\_\+length}
+
+Length of data array \mbox{\Hypertarget{structi2c__master__packet_a8a6cc2210d6a22d91f730407470ba476}\label{structi2c__master__packet_a8a6cc2210d6a22d91f730407470ba476}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!high\_speed@{high\_speed}}
+\index{high\_speed@{high\_speed}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{high\_speed}{high\_speed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} high\+\_\+speed}
+
+Use high speed transfer. Set to false if the feature is not supported by the device \mbox{\Hypertarget{structi2c__master__packet_a5969c6aada0ef9d21a5866cd3b585c02}\label{structi2c__master__packet_a5969c6aada0ef9d21a5866cd3b585c02}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!hs\_master\_code@{hs\_master\_code}}
+\index{hs\_master\_code@{hs\_master\_code}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{hs\_master\_code}{hs\_master\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t hs\+\_\+master\+\_\+code}
+
+High speed mode master code (0000 1X\+XX), valid when high\+\_\+speed is true \mbox{\Hypertarget{structi2c__master__packet_a3a307f1d645980c963f88064226ac3b5}\label{structi2c__master__packet_a3a307f1d645980c963f88064226ac3b5}} 
+\index{i2c\_master\_packet@{i2c\_master\_packet}!ten\_bit\_address@{ten\_bit\_address}}
+\index{ten\_bit\_address@{ten\_bit\_address}!i2c\_master\_packet@{i2c\_master\_packet}}
+\subsubsection{\texorpdfstring{ten\_bit\_address}{ten\_bit\_address}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ten\+\_\+bit\+\_\+address}
+
+Use 10-\/bit addressing. Set to false if the feature is not supported by the device 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/sercom/i2c/\mbox{\hyperlink{i2c__master_8h}{i2c\+\_\+master.\+h}}\end{DoxyCompactItemize}

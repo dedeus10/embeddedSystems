@@ -1,0 +1,27 @@
+var struct_dsu =
+[
+    [ "ADDR", "struct_dsu.html#a3663d6824eee85773d00a11395edd46d", null ],
+    [ "CID0", "struct_dsu.html#a16e039fe0232f95c8dc7919b2542dd48", null ],
+    [ "CID1", "struct_dsu.html#a4f595fd177580b2c838f8844c314f245", null ],
+    [ "CID2", "struct_dsu.html#ab082e3d3bf264bc5403f0c11dde2fa5e", null ],
+    [ "CID3", "struct_dsu.html#a8c297f52f243379755caaea53904ec8c", null ],
+    [ "CTRL", "struct_dsu.html#a24e11e45738520b3929f2a2e0a1baf28", null ],
+    [ "DATA", "struct_dsu.html#a5115b1876ae515f5d88ce5f9f871b66f", null ],
+    [ "DCC", "struct_dsu.html#a787f4c37b8d5b7a47e6603f6b30835d7", null ],
+    [ "DID", "struct_dsu.html#ad7c28a7eefa6630982dd18f09c7bbd32", null ],
+    [ "END", "struct_dsu.html#a4091fe3b88164b1682ee02daeb49c62a", null ],
+    [ "ENTRY", "struct_dsu.html#ace4c71db0b7538ce5f07c40883d54a8c", null ],
+    [ "LENGTH", "struct_dsu.html#aaa78c033db4ceb4d96c4250f684ef718", null ],
+    [ "MEMTYPE", "struct_dsu.html#a795f2b9189e004c3d638ee9c0c36232b", null ],
+    [ "PID0", "struct_dsu.html#a522c107da63b44519cdbbdd30f0b9b44", null ],
+    [ "PID1", "struct_dsu.html#afb83c5463380bc4b86a3ea40ad4aaab6", null ],
+    [ "PID2", "struct_dsu.html#a0d3035ce892197d08526ac79b69cd927", null ],
+    [ "PID3", "struct_dsu.html#af67380c0b807adcea9d24ae09d1d54b6", null ],
+    [ "PID4", "struct_dsu.html#aad07c9f8931eb7916a9d7db486e7a1f9", null ],
+    [ "Reserved1", "struct_dsu.html#a092866123ac46d0985136e4dca2f36f4", null ],
+    [ "Reserved2", "struct_dsu.html#ae2c627271321519d2066182e6b83317b", null ],
+    [ "Reserved3", "struct_dsu.html#ababa6cb5a34643305b6839c2ac1d5ed8", null ],
+    [ "Reserved4", "struct_dsu.html#af3a36aca215654d294560ffdd73e40b3", null ],
+    [ "STATUSA", "struct_dsu.html#a6759acda48815d98f344c56148ba52ac", null ],
+    [ "STATUSB", "struct_dsu.html#a6184b4b81bad58bef585f6ecd1dbe027", null ]
+];

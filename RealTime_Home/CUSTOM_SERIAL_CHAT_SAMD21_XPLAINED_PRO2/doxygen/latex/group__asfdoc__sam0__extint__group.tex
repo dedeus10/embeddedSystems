@@ -1,0 +1,540 @@
+\hypertarget{group__asfdoc__sam0__extint__group}{}\section{S\+AM External Interrupt (E\+X\+T\+I\+NT) Driver}
+\label{group__asfdoc__sam0__extint__group}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}}
+\begin{DoxyCompactList}\small\item\em External Interrupt Controller channel configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}}
+\begin{DoxyCompactList}\small\item\em External Interrupt event enable/disable structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}}
+\begin{DoxyCompactList}\small\item\em External Interrupt Controller N\+MI configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaacc51accf9c1d264308d704a0fa72cca}{E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+G\+C\+LK}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gac6728bce00136d52dedeffc38f0570d4}{E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+U\+L\+P32K}}~1
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga4388f6f166f07c60940ec351a8eb1bac}{E\+I\+C\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}}~16
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a6505c5a81f362fc6d2146395fa5e0641}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a62003fada64b948bb611011f2179b2fb}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+R\+I\+S\+I\+NG}} = 1, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a0477f603ca427098cd743a9919c89f43}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+F\+A\+L\+L\+I\+NG}} = 2, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aa7386678eccf0e246afa75614bfd8841}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+O\+TH}} = 3, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a9660006ada972d5b562adc15bc787767}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+H\+I\+GH}} = 4, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aace71e1f8f4ea192934bc54efa3e7af3}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+L\+OW}} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em External interrupt edge detection configuration enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}{extint\+\_\+pull}} \{ \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea622ad8b9955fb50c31f1b98df6318819}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+UP}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+UP, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853eadddb16f8c9c7160fe222de4e25733564}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea003da62f2c3410edfd555aecdbdccbd8}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE
+ \}
+\begin{DoxyCompactList}\small\item\em External interrupt internal pull configuration enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Event Management}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gadbcf557b05082e2d25111e3ad9e3385e}{extint\+\_\+enable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Enables an External Interrupt event output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga1e150eaf8dde1371cb31111f5feae5e4}{extint\+\_\+disable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Disables an External Interrupt event output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Configuration and Initialization (Channel)}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gab6dc4e3c3c0c85f96c52c130f3b63241}{extint\+\_\+chan\+\_\+get\+\_\+config\+\_\+defaults}} (struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes an External Interrupt channel configuration structure to defaults. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gace11f1168aa706f9b40f6c4d65b402a0}{extint\+\_\+chan\+\_\+set\+\_\+config}} (const uint8\+\_\+t channel, const struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt channel configuration to the hardware module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Configuration and Initialization (N\+MI)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gae6d52d3a6437598ebf56f2ad75193033}{extint\+\_\+nmi\+\_\+set\+\_\+config}} (const uint8\+\_\+t nmi\+\_\+channel, const struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt N\+MI channel configuration to the hardware module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Callback Configuration and Initialization}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} \{ \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ggaf22af5117db5d011b371b05dfa8b50e3ac2e35708fbb9eb31b2a664817f108b2d}{E\+X\+T\+I\+N\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+E\+T\+E\+CT}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gae1bedc3fd379b3dd62f88efb17a2758f}{extint\+\_\+register\+\_\+callback}} (const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}} callback, const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Registers an asynchronous callback function with the driver. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga47bd63b128d0b1799ef0386355f85f77}{extint\+\_\+unregister\+\_\+callback}} (const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}} callback, const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Unregisters an asynchronous callback function with the driver. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga1a7c8127569a9f83447f463bccd932a4}{extint\+\_\+get\+\_\+current\+\_\+channel}} (void)
+\begin{DoxyCompactList}\small\item\em Find what channel caused the callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Callback Enabling and Disabling (Channel)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga09e5568abbb3e5042b1048774a605ea4}{extint\+\_\+chan\+\_\+enable\+\_\+callback}} (const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Enables asynchronous callback generation for a given channel and type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga939803cc928def37adf4f22bc727e8f7}{extint\+\_\+chan\+\_\+disable\+\_\+callback}} (const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Disables asynchronous callback generation for a given channel and type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This driver for Atmel\textregistered{} $\vert$ S\+M\+A\+RT A\+RM\textregistered{}-\/based microcontrollers provides an interface for the configuration and management of external interrupts generated by the physical device pins, including edge detection. The following driver A\+PI modes are covered by this manual\+:
+
+
+\begin{DoxyItemize}
+\item Polled A\+P\+Is
+\end{DoxyItemize}
+
+The following peripheral is used by this module\+:
+\begin{DoxyItemize}
+\item E\+IC (External Interrupt Controller)
+\end{DoxyItemize}
+
+The following devices can use this module\+:
+\begin{DoxyItemize}
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D20/\+D21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM R21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D09/\+D10/\+D11
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM L21/\+L22
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM D\+A1
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM C20/\+C21
+\item Atmel $\vert$ S\+M\+A\+RT S\+AM H\+A1
+\end{DoxyItemize}
+
+The outline of this documentation is as follows\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_prerequisites}{Prerequisites}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview}{Module Overview}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_special_considerations}{Special Considerations}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_extra_info}{Extra Information}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_examples}{Examples}}
+\item \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_api_overview}{A\+PI Overview}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_prerequisites}{}\subsection{Prerequisites}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_prerequisites}
+There are no prerequisites for this module.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview}{}\subsection{Module Overview}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview}
+The External Interrupt (E\+X\+T\+I\+NT) module provides a method of asynchronously detecting rising edge, falling edge, or specific level detection on individual I/O pins of a device. This detection can then be used to trigger a software interrupt or event, or polled for later use if required. External interrupts can also optionally be used to automatically wake up the device from sleep mode, allowing the device to conserve power while still being able to react to an external stimulus in a timely manner.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_logical_channels}{}\subsubsection{Logical Channels}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_logical_channels}
+The External Interrupt module contains a number of logical channels, each of which is capable of being individually configured for a given pin routing, detection mode, and filtering/wake up characteristics.
+
+Each individual logical external interrupt channel may be routed to a single physical device I/O pin in order to detect a particular edge or level of the incoming signal.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_nmi_chanel}{}\subsubsection{N\+M\+I Channels}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_nmi_chanel}
+One or more Non Maskable Interrupt (N\+MI) channels are provided within each physical External Interrupt Controller module, allowing a single physical pin of the device to fire a single N\+MI interrupt in response to a particular edge or level stimulus. An N\+MI cannot, as the name suggests, be disabled in firmware and will take precedence over any in-\/progress interrupt sources.
+
+N\+M\+Is can be used to implement critical device features such as forced software reset or other functionality where the action should be executed in preference to all other running code with a minimum amount of latency.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_filtering}{}\subsubsection{Input Filtering and Detection}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_filtering}
+To reduce the possibility of noise or other transient signals causing unwanted device wake-\/ups, interrupts, and/or events via an external interrupt channel. A hardware signal filter can be enabled on individual channels. This filter provides a Majority-\/of-\/\+Three voter filter on the incoming signal, so that the input state is considered to be the majority vote of three subsequent samples of the pin input buffer. The possible sampled input and resulting filtered output when the filter is enabled is shown in \mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_filter_table}{the table below}}.
+
+\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_filter_table}%
+\Hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_filter_table}%
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\caption{Sampled Input and Resulting Filtered Output}\label{_}\\
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 1 }&\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 2 }&\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 3 }&\cellcolor{\tableheadbgcolor}\textbf{ Filtered Output  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 1 }&\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 2 }&\cellcolor{\tableheadbgcolor}\textbf{ Input Sample 3 }&\cellcolor{\tableheadbgcolor}\textbf{ Filtered Output  }\\\cline{1-4}
+\endhead
+0 &0 &0 &0  \\\cline{1-4}
+0 &0 &1 &0  \\\cline{1-4}
+0 &1 &0 &0  \\\cline{1-4}
+0 &1 &1 &1  \\\cline{1-4}
+1 &0 &0 &0  \\\cline{1-4}
+1 &0 &1 &1  \\\cline{1-4}
+1 &1 &0 &1  \\\cline{1-4}
+1 &1 &1 &1  \\\cline{1-4}
+\end{longtabu}
+\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_events}{}\subsubsection{Events and Interrupts}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_events}
+Channel detection states may be polled inside the application for synchronous detection, or events and interrupts may be used for asynchronous behavior. Each channel can be configured to give an asynchronous hardware event (which may in turn trigger actions in other hardware modules) or an asynchronous software interrupt.
+
+\begin{DoxyNote}{Note}
+The connection of events between modules requires the use of the S\+AM Event System Driver (E\+V\+E\+N\+TS) to route output event of one module to the input event of another. For more information on event routing, refer to the event driver documentation.
+\end{DoxyNote}
+\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_physical}{}\subsubsection{Physical Connection}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_module_overview_physical}
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_int_connections}{The diagram below}} shows how this module is interconnected within the device.
+
+\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_int_connections}%
+\Hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_int_connections}%
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_1}}
+\end{DoxyImageNoCaption}
+\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_special_considerations}{}\subsection{Special Considerations}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_special_considerations}
+Not all devices support disabling of the N\+MI channel(s) detection mode -\/ see your device datasheet.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_extra_info}{}\subsection{Extra Information}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_extra_info}
+For extra information, see \mbox{\hyperlink{asfdoc_sam0_extint_extra}{Extra Information for E\+X\+T\+I\+NT Driver}}. This includes\+:
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_acronyms}{Acronyms}}
+\item \mbox{\hyperlink{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_dependencies}{Dependencies}}
+\item \mbox{\hyperlink{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_errata}{Errata}}
+\item \mbox{\hyperlink{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_history}{Module History}}
+\end{DoxyItemize}\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_examples}{}\subsection{Examples}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_examples}
+For a list of examples related to this driver, see \mbox{\hyperlink{asfdoc_sam0_extint_exqsg}{Examples for E\+X\+T\+I\+NT Driver}}.\hypertarget{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_api_overview}{}\subsection{A\+P\+I Overview}\label{group__asfdoc__sam0__extint__group_asfdoc_sam0_extint_api_overview}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga4388f6f166f07c60940ec351a8eb1bac}\label{group__asfdoc__sam0__extint__group_ga4388f6f166f07c60940ec351a8eb1bac}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EIC\_NUMBER\_OF\_INTERRUPTS@{EIC\_NUMBER\_OF\_INTERRUPTS}}
+\index{EIC\_NUMBER\_OF\_INTERRUPTS@{EIC\_NUMBER\_OF\_INTERRUPTS}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{EIC\_NUMBER\_OF\_INTERRUPTS}{EIC\_NUMBER\_OF\_INTERRUPTS}}
+{\footnotesize\ttfamily \#define E\+I\+C\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS~16}
+
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gaacc51accf9c1d264308d704a0fa72cca}\label{group__asfdoc__sam0__extint__group_gaacc51accf9c1d264308d704a0fa72cca}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_CLK\_GCLK@{EXTINT\_CLK\_GCLK}}
+\index{EXTINT\_CLK\_GCLK@{EXTINT\_CLK\_GCLK}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{EXTINT\_CLK\_GCLK}{EXTINT\_CLK\_GCLK}}
+{\footnotesize\ttfamily \#define E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+G\+C\+LK~0}
+
+The E\+IC is clocked by G\+C\+L\+K\+\_\+\+E\+IC. \mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gac6728bce00136d52dedeffc38f0570d4}\label{group__asfdoc__sam0__extint__group_gac6728bce00136d52dedeffc38f0570d4}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_CLK\_ULP32K@{EXTINT\_CLK\_ULP32K}}
+\index{EXTINT\_CLK\_ULP32K@{EXTINT\_CLK\_ULP32K}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{EXTINT\_CLK\_ULP32K}{EXTINT\_CLK\_ULP32K}}
+{\footnotesize\ttfamily \#define E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+U\+L\+P32K~1}
+
+The E\+IC is clocked by C\+L\+K\+\_\+\+U\+L\+P32K. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}\label{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_callback\_t@{extint\_callback\_t}}
+\index{extint\_callback\_t@{extint\_callback\_t}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_callback\_t}{extint\_callback\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ extint\+\_\+callback\+\_\+t) (void)}
+
+Type definition for an E\+X\+T\+I\+NT module callback function 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}\label{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_callback\_type@{extint\_callback\_type}}
+\index{extint\_callback\_type@{extint\_callback\_type}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_callback\_type}{extint\_callback\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}}}
+
+Enum for the possible callback types for the E\+X\+T\+I\+NT module. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_CALLBACK\_TYPE\_DETECT@{EXTINT\_CALLBACK\_TYPE\_DETECT}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_CALLBACK\_TYPE\_DETECT@{EXTINT\_CALLBACK\_TYPE\_DETECT}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ggaf22af5117db5d011b371b05dfa8b50e3ac2e35708fbb9eb31b2a664817f108b2d}\label{group__asfdoc__sam0__extint__group_ggaf22af5117db5d011b371b05dfa8b50e3ac2e35708fbb9eb31b2a664817f108b2d}} 
+E\+X\+T\+I\+N\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+Y\+P\+E\+\_\+\+D\+E\+T\+E\+CT&Callback type for when an external interrupt detects the configured channel criteria (i.\+e. edge or level detection) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}\label{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_detect@{extint\_detect}}
+\index{extint\_detect@{extint\_detect}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_detect}{extint\_detect}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}}}
+
+
+
+External interrupt edge detection configuration enum. 
+
+Enum for the possible signal edge detection modes of the External Interrupt Controller module. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_NONE@{EXTINT\_DETECT\_NONE}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_NONE@{EXTINT\_DETECT\_NONE}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a6505c5a81f362fc6d2146395fa5e0641}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a6505c5a81f362fc6d2146395fa5e0641}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+N\+O\+NE&No edge detection. Not allowed as a N\+MI detection mode on some devices. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_RISING@{EXTINT\_DETECT\_RISING}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_RISING@{EXTINT\_DETECT\_RISING}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a62003fada64b948bb611011f2179b2fb}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a62003fada64b948bb611011f2179b2fb}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+R\+I\+S\+I\+NG&Detect rising signal edges \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_FALLING@{EXTINT\_DETECT\_FALLING}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_FALLING@{EXTINT\_DETECT\_FALLING}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a0477f603ca427098cd743a9919c89f43}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a0477f603ca427098cd743a9919c89f43}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+F\+A\+L\+L\+I\+NG&Detect falling signal edges \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_BOTH@{EXTINT\_DETECT\_BOTH}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_BOTH@{EXTINT\_DETECT\_BOTH}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aa7386678eccf0e246afa75614bfd8841}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aa7386678eccf0e246afa75614bfd8841}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+O\+TH&Detect both signal edges \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_HIGH@{EXTINT\_DETECT\_HIGH}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_HIGH@{EXTINT\_DETECT\_HIGH}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a9660006ada972d5b562adc15bc787767}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a9660006ada972d5b562adc15bc787767}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+H\+I\+GH&Detect high signal levels \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_DETECT\_LOW@{EXTINT\_DETECT\_LOW}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_DETECT\_LOW@{EXTINT\_DETECT\_LOW}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aace71e1f8f4ea192934bc54efa3e7af3}\label{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aace71e1f8f4ea192934bc54efa3e7af3}} 
+E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+L\+OW&Detect low signal levels \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}\label{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_pull@{extint\_pull}}
+\index{extint\_pull@{extint\_pull}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_pull}{extint\_pull}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}{extint\+\_\+pull}}}
+
+
+
+External interrupt internal pull configuration enum. 
+
+Enum for the possible pin internal pull configurations.
+
+\begin{DoxyNote}{Note}
+Disabling the internal pull resistor is not recommended if the driver is used in interrupt (callback) mode, due the possibility of floating inputs generating continuous interrupts. 
+\end{DoxyNote}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_PULL\_UP@{EXTINT\_PULL\_UP}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_PULL\_UP@{EXTINT\_PULL\_UP}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea622ad8b9955fb50c31f1b98df6318819}\label{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea622ad8b9955fb50c31f1b98df6318819}} 
+E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+UP&Internal pull-\/up resistor is enabled on the pin \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_PULL\_DOWN@{EXTINT\_PULL\_DOWN}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_PULL\_DOWN@{EXTINT\_PULL\_DOWN}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853eadddb16f8c9c7160fe222de4e25733564}\label{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853eadddb16f8c9c7160fe222de4e25733564}} 
+E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN&Internal pull-\/down resistor is enabled on the pin \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTINT\_PULL\_NONE@{EXTINT\_PULL\_NONE}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!EXTINT\_PULL\_NONE@{EXTINT\_PULL\_NONE}}}\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea003da62f2c3410edfd555aecdbdccbd8}\label{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea003da62f2c3410edfd555aecdbdccbd8}} 
+E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE&Internal pull resistor is disconnected from the pin \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga939803cc928def37adf4f22bc727e8f7}\label{group__asfdoc__sam0__extint__group_ga939803cc928def37adf4f22bc727e8f7}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_chan\_disable\_callback@{extint\_chan\_disable\_callback}}
+\index{extint\_chan\_disable\_callback@{extint\_chan\_disable\_callback}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_chan\_disable\_callback()}{extint\_chan\_disable\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} extint\+\_\+chan\+\_\+disable\+\_\+callback (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{channel,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Disables asynchronous callback generation for a given channel and type. 
+
+Disables asynchronous callbacks for a given logical external interrupt channel and type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em channel} & Logical channel to disable callback generation for \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Type of callback function callbacks to disable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the callback disable operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & The callback was disabled successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If an invalid callback type was supplied \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga09e5568abbb3e5042b1048774a605ea4}\label{group__asfdoc__sam0__extint__group_ga09e5568abbb3e5042b1048774a605ea4}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_chan\_enable\_callback@{extint\_chan\_enable\_callback}}
+\index{extint\_chan\_enable\_callback@{extint\_chan\_enable\_callback}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_chan\_enable\_callback()}{extint\_chan\_enable\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} extint\+\_\+chan\+\_\+enable\+\_\+callback (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{channel,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Enables asynchronous callback generation for a given channel and type. 
+
+Enables asynchronous callbacks for a given logical external interrupt channel and type. This must be called before an external interrupt channel will generate callback events.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em channel} & Logical channel to enable callback generation for \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Type of callback function callbacks to enable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the callback enable operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & The callback was enabled successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If an invalid callback type was supplied \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gab6dc4e3c3c0c85f96c52c130f3b63241}\label{group__asfdoc__sam0__extint__group_gab6dc4e3c3c0c85f96c52c130f3b63241}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_chan\_get\_config\_defaults@{extint\_chan\_get\_config\_defaults}}
+\index{extint\_chan\_get\_config\_defaults@{extint\_chan\_get\_config\_defaults}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_chan\_get\_config\_defaults()}{extint\_chan\_get\_config\_defaults()}}
+{\footnotesize\ttfamily void extint\+\_\+chan\+\_\+get\+\_\+config\+\_\+defaults (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const}]{config }\end{DoxyParamCaption})}
+
+
+
+Initializes an External Interrupt channel configuration structure to defaults. 
+
+Initializes a given External Interrupt channel configuration structure to a set of known default values. This function should be called on all new instances of these configuration structures before being modified by the user application.
+
+The default configuration is as follows\+: \begin{DoxyItemize}
+\item Wake the device if an edge detection occurs whilst in sleep \item Input filtering disabled \item Internal pull-\/up enabled \item Detect falling edges of a signal\end{DoxyItemize}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em config} & Configuration structure to initialize to default values \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gace11f1168aa706f9b40f6c4d65b402a0}\label{group__asfdoc__sam0__extint__group_gace11f1168aa706f9b40f6c4d65b402a0}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_chan\_set\_config@{extint\_chan\_set\_config}}
+\index{extint\_chan\_set\_config@{extint\_chan\_set\_config}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_chan\_set\_config()}{extint\_chan\_set\_config()}}
+{\footnotesize\ttfamily void extint\+\_\+chan\+\_\+set\+\_\+config (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{channel,  }\item[{const struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const}]{config }\end{DoxyParamCaption})}
+
+
+
+Writes an External Interrupt channel configuration to the hardware module. 
+
+Writes out a given configuration of an External Interrupt channel configuration to the hardware module. If the channel is already configured, the new configuration will replace the existing one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em channel} & External Interrupt channel to configure \\
+\hline
+\mbox{\texttt{ in}}  & {\em config} & Configuration settings for the channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga1e150eaf8dde1371cb31111f5feae5e4}\label{group__asfdoc__sam0__extint__group_ga1e150eaf8dde1371cb31111f5feae5e4}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_disable\_events@{extint\_disable\_events}}
+\index{extint\_disable\_events@{extint\_disable\_events}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_disable\_events()}{extint\_disable\_events()}}
+{\footnotesize\ttfamily void extint\+\_\+disable\+\_\+events (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const}]{events }\end{DoxyParamCaption})}
+
+
+
+Disables an External Interrupt event output. 
+
+Disables one or more output events from the External Interrupt module. See \mbox{\hyperlink{structextint__events}{here}} for a list of events this module supports.
+
+\begin{DoxyNote}{Note}
+Events cannot be altered while the module is enabled.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em events} & Struct containing flags of events to disable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gadbcf557b05082e2d25111e3ad9e3385e}\label{group__asfdoc__sam0__extint__group_gadbcf557b05082e2d25111e3ad9e3385e}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_enable\_events@{extint\_enable\_events}}
+\index{extint\_enable\_events@{extint\_enable\_events}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_enable\_events()}{extint\_enable\_events()}}
+{\footnotesize\ttfamily void extint\+\_\+enable\+\_\+events (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const}]{events }\end{DoxyParamCaption})}
+
+
+
+Enables an External Interrupt event output. 
+
+Enables one or more output events from the External Interrupt module. See \mbox{\hyperlink{structextint__events}{here}} for a list of events this module supports.
+
+\begin{DoxyNote}{Note}
+Events cannot be altered while the module is enabled.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em events} & Struct containing flags of events to enable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga1a7c8127569a9f83447f463bccd932a4}\label{group__asfdoc__sam0__extint__group_ga1a7c8127569a9f83447f463bccd932a4}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_get\_current\_channel@{extint\_get\_current\_channel}}
+\index{extint\_get\_current\_channel@{extint\_get\_current\_channel}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_get\_current\_channel()}{extint\_get\_current\_channel()}}
+{\footnotesize\ttfamily uint8\+\_\+t extint\+\_\+get\+\_\+current\+\_\+channel (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Find what channel caused the callback. 
+
+Can be used in an E\+X\+T\+I\+NT callback function to find what channel caused the callback in case the same callback is used by multiple channels.
+
+\begin{DoxyReturn}{Returns}
+Channel number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gae6d52d3a6437598ebf56f2ad75193033}\label{group__asfdoc__sam0__extint__group_gae6d52d3a6437598ebf56f2ad75193033}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_nmi\_set\_config@{extint\_nmi\_set\_config}}
+\index{extint\_nmi\_set\_config@{extint\_nmi\_set\_config}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_nmi\_set\_config()}{extint\_nmi\_set\_config()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} extint\+\_\+nmi\+\_\+set\+\_\+config (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{nmi\+\_\+channel,  }\item[{const struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}} $\ast$const}]{config }\end{DoxyParamCaption})}
+
+
+
+Writes an External Interrupt N\+MI channel configuration to the hardware module. 
+
+Writes out a given configuration of an External Interrupt N\+MI channel configuration to the hardware module. If the channel is already configured, the new configuration will replace the existing one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nmi\+\_\+channel} & External Interrupt N\+MI channel to configure \\
+\hline
+\mbox{\texttt{ in}}  & {\em config} & Configuration settings for the channel\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status code indicating the success or failure of the request. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & Configuration succeeded \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+P\+I\+N\+\_\+\+M\+U\+X\+\_\+\+I\+N\+V\+A\+L\+ID} & An invalid pinmux value was supplied \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+F\+O\+R\+M\+AT} & An invalid detection mode was requested \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_gae1bedc3fd379b3dd62f88efb17a2758f}\label{group__asfdoc__sam0__extint__group_gae1bedc3fd379b3dd62f88efb17a2758f}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_register\_callback@{extint\_register\_callback}}
+\index{extint\_register\_callback@{extint\_register\_callback}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_register\_callback()}{extint\_register\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} extint\+\_\+register\+\_\+callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}}}]{callback,  }\item[{const uint8\+\_\+t}]{channel,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Registers an asynchronous callback function with the driver. 
+
+Registers an asynchronous callback with the E\+X\+T\+I\+NT driver, fired when a channel detects the configured channel detection criteria (e.\+g. edge or level). Callbacks are fired once for each detected channel.
+
+\begin{DoxyNote}{Note}
+N\+MI channel callbacks cannot be registered via this function; the device\textquotesingle{}s N\+MI interrupt should be hooked directly in the user application and the N\+MI flags manually cleared via extint\+\_\+nmi\+\_\+clear\+\_\+detected().
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em callback} & Pointer to the callback function to register \\
+\hline
+\mbox{\texttt{ in}}  & {\em channel} & Logical channel to register callback for \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Type of callback function to register\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the registration operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & The callback was registered successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If an invalid callback type was supplied \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED} & Callback function has been registered, need unregister first \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__asfdoc__sam0__extint__group_ga47bd63b128d0b1799ef0386355f85f77}\label{group__asfdoc__sam0__extint__group_ga47bd63b128d0b1799ef0386355f85f77}} 
+\index{SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}!extint\_unregister\_callback@{extint\_unregister\_callback}}
+\index{extint\_unregister\_callback@{extint\_unregister\_callback}!SAM External Interrupt (EXTINT) Driver@{SAM External Interrupt (EXTINT) Driver}}
+\subsubsection{\texorpdfstring{extint\_unregister\_callback()}{extint\_unregister\_callback()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} extint\+\_\+unregister\+\_\+callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}}}]{callback,  }\item[{const uint8\+\_\+t}]{channel,  }\item[{const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Unregisters an asynchronous callback function with the driver. 
+
+Unregisters an asynchronous callback with the E\+X\+T\+I\+NT driver, removing it from the internal callback registration table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em callback} & Pointer to the callback function to unregister \\
+\hline
+\mbox{\texttt{ in}}  & {\em channel} & Logical channel to unregister callback for \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Type of callback function to unregister\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status of the de-\/registration operation. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em S\+T\+A\+T\+U\+S\+\_\+\+OK} & The callback was unregistered successfully \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+RG} & If an invalid callback type was supplied \\
+\hline
+{\em S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+A\+D\+D\+R\+E\+SS} & No matching entry was found in the registration table \\
+\hline
+\end{DoxyRetVals}

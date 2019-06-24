@@ -1,0 +1,291 @@
+\hypertarget{component_2wdt_8h}{}\section{A\+S\+F/sam0/utils/cmsis/samd21/include/component/wdt.h File Reference}
+\label{component_2wdt_8h}\index{ASF/sam0/utils/cmsis/samd21/include/component/wdt.h@{ASF/sam0/utils/cmsis/samd21/include/component/wdt.h}}
+
+
+Component description for W\+DT.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_w_d_t___c_t_r_l___type}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___c_o_n_f_i_g___type}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___e_w_c_t_r_l___type}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___i_n_t_e_n_c_l_r___type}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___i_n_t_e_n_s_e_t___type}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___i_n_t_f_l_a_g___type}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___s_t_a_t_u_s___type}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_w_d_t___c_l_e_a_r___type}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_wdt}{Wdt}}
+\begin{DoxyCompactList}\small\item\em W\+DT hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3ebf7f7e24bbd8ba6882f20c8be6fb5e}{W\+D\+T\+\_\+\+U2203}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga2a81abc78d42c7d555d128b152388248}{R\+E\+V\+\_\+\+W\+DT}}~0x200
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga39ce1d747040701b9eea15b5d13b143a}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL offset) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf6861aac3ab874656280252bddd092c6}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL reset\+\_\+value) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga867342c84f6255deee61f27b89cdfe4e}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL) Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga53c219e63346c837e0887d2f1c861e60}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+E\+N\+A\+B\+LE}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga542d8e878e499ddbcaa56146cacce7c2}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+W\+E\+N\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL) Watchdog Timer Window Mode Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga969cdb53a5fcc6c7a10369839fd397ec}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+W\+EN}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+W\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3a5e399d5fdcfd15ef16e4301352c99a}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+A\+L\+W\+A\+Y\+S\+O\+N\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL) Always-\/\+On \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0d7cb59dc5a756596dd5da71f95c497c}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+A\+L\+W\+A\+Y\+S\+ON}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+A\+L\+W\+A\+Y\+S\+O\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac24b0b3ec8534ad7f0bc34a49ed46a0d}{W\+D\+T\+\_\+\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x86ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0d3293445b10bdfdf733067d75f7b98c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x1
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG offset) Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga963315e6b2e0dfb513fb236eae8386b0}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x\+B\+Bul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG reset\+\_\+value) Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) Time-\/\+Out Period \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga7b17345103d170e4fc578db43ad0987e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Msk}}~(0x\+Ful $<$$<$ W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac92933c61d3b2a10b9b14e2c68dcc5c8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+ER}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga7b17345103d170e4fc578db43ad0987e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga67ff519f465a8ba261805c93764095e1}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 8 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga52fe245666225114b46c8e12492eaf75}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 16 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga476aa4a908bb10ae56345f6d05462e17}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+32\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 32 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga8052f964d85b078482756ee563b3ca89}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+64\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 64 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga98986d614bb272ac1dab43e9d98f0beb}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+128\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 128 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga12745e1d2f6572ab505a5691db652c33}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+256\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 256 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab4e89108a94b765fbe516b4b29b61abe}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+512\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 512 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6ddb8a8dbe2645d82c1647049855dc8c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+1\+K\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 1024 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0badcc8b50d4a51234b750d60fe1347e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+2\+K\+\_\+\+Val}}~0x8ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 2048 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gadf4430dc3c2be282d4fc2819030057bc}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+4\+K\+\_\+\+Val}}~0x9ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 4096 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga47d1ddf231377d6466cd3448916aea4b}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8\+K\+\_\+\+Val}}~0x\+Aul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 8192 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3a4ddeafbe076f5d3219286366c73cae}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16\+K\+\_\+\+Val}}~0x\+Bul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 16384 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaeed7d9cfb4c7440d8bd862c866c690b0}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga67ff519f465a8ba261805c93764095e1}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8\+\_\+\+Val}}          $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gafeb5d2ce72e58711c8214d03594f9407}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga52fe245666225114b46c8e12492eaf75}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac3100dd74802a47fd4c823632f0a7b8e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+32}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga476aa4a908bb10ae56345f6d05462e17}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+32\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9ce13986250d8d9bd9664c746784f3f6}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+64}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga8052f964d85b078482756ee563b3ca89}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+64\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaaa2d0d86013eff7628257b4ac65e69e0}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+128}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga98986d614bb272ac1dab43e9d98f0beb}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+128\+\_\+\+Val}}        $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga71861c6c504e3310f67da37cdfb17425}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+256}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga12745e1d2f6572ab505a5691db652c33}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+256\+\_\+\+Val}}        $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaef03f8f27885c24f55a8fd9be99e65c9}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+512}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab4e89108a94b765fbe516b4b29b61abe}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+512\+\_\+\+Val}}        $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabacf2e3fc56acee60139ab1d166cf61c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+1K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6ddb8a8dbe2645d82c1647049855dc8c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+1\+K\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6cf0be01053f9184079cad59e1f79b5f}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+2K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0badcc8b50d4a51234b750d60fe1347e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+2\+K\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga53b7282727f8048f9f99000aec748509}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+4K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gadf4430dc3c2be282d4fc2819030057bc}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+4\+K\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga191271b5cd71b2b7fdec34d1781b1f37}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga47d1ddf231377d6466cd3448916aea4b}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+8\+K\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga067b7d43db99d2cc49fa28f767b250ee}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3a4ddeafbe076f5d3219286366c73cae}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+16\+K\+\_\+\+Val}}        $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga55662a2fa7e16fd6cc7a5e0800034360}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+E\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}}~4
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) Window Mode Time-\/\+Out Period \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gadbf0e2faa64af4cac57e1279414aa8ad}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Msk}}~(0x\+Ful $<$$<$ W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gacfafc7c7ce1a04a46d9b972c667a4706}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+OW}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gadbf0e2faa64af4cac57e1279414aa8ad}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6da4155b3fd5c2b0ca611e77e6d201b2}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 8 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga94c78bd81746a104a1b22a87fce13031}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 16 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac048feb48b07a47ef67a3c255220091e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+32\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 32 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6e693c9a030d6fdc5016b0112844562b}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+64\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 64 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga51289e860f6a83d19b9d7215dc0a1a00}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+128\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 128 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga12f7753ea83612942c50361489a0b57d}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+256\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 256 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga2354a08357de39937f2bf400ce524eab}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+512\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 512 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf08a60bd2ff13f7304deb395c6fe437c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+1\+K\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 1024 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga4ebc9af4aeb8b0095afa2b837ec3dbc7}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+2\+K\+\_\+\+Val}}~0x8ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 2048 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga86b3919f592e4ea3dd1f74e0ef2ce2fa}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+4\+K\+\_\+\+Val}}~0x9ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 4096 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab9665c8a40f0898e8971b44efe68c5b2}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8\+K\+\_\+\+Val}}~0x\+Aul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 8192 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga5a8497f7d23067463f32265143a47eeb}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16\+K\+\_\+\+Val}}~0x\+Bul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) 16384 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaff1bddd833eb35105aed18be6fdf573d}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6da4155b3fd5c2b0ca611e77e6d201b2}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab816738669bb8c8883e3f0c8c73bd795}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga94c78bd81746a104a1b22a87fce13031}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9c967c3e74d9105a00a9f00dc3514207}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+32}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac048feb48b07a47ef67a3c255220091e}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+32\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaa12da21d829f44382b35aacb4674527b}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+64}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6e693c9a030d6fdc5016b0112844562b}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+64\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga80709ed551e6c4af0b1c6fe080635023}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+128}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga51289e860f6a83d19b9d7215dc0a1a00}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+128\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf80377030ae294b2ab6dacb620f7c56c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+256}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga12f7753ea83612942c50361489a0b57d}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+256\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga42f43fe44b96604cc5b49af3cafb2fa3}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+512}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga2354a08357de39937f2bf400ce524eab}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+512\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6597f7deeadccbe3a8dc7f157f361f6f}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+1K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf08a60bd2ff13f7304deb395c6fe437c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+1\+K\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0bb67ea0af8bcd3e226dd9453914eacc}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+2K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga4ebc9af4aeb8b0095afa2b837ec3dbc7}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+2\+K\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga06bf05e982ad42dba9a1ea3fc37dfd6c}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+4K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga86b3919f592e4ea3dd1f74e0ef2ce2fa}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+4\+K\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gae4a3358615c78f14f7f1b4af97d016ea}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab9665c8a40f0898e8971b44efe68c5b2}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+8\+K\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga29e680cdbd758500b129cefc8eed6861}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga5a8497f7d23067463f32265143a47eeb}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+16\+K\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab2d3263bd9ad06e3257234d9da623ef8}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf9e2843301ae8da8b2d8a3d2c93a3f88}{W\+D\+T\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+SK}}~0x\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+O\+N\+F\+IG) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6d95eafd522ac7c24f3c5bfd19e10af5}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x2
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL offset) Early Warning Interrupt Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9379b9c03732aac0dc5eacfe28fd35f8}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0\+Bul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL reset\+\_\+value) Early Warning Interrupt Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) Early Warning Interrupt Time Offset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9552ab7a09bdc45d499a65e49e3a446e}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Msk}}~(0x\+Ful $<$$<$ W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaa88d94af62577cb3a8ee526252da2818}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+ET}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9552ab7a09bdc45d499a65e49e3a446e}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab3a2db643b2227e8c7cf581e83758584}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 8 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6c0f713353049fd7965f6981bb50553f}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 16 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga2ee2c98b9dd137a03eeeabedd849b007}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+32\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 32 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabe2e31c9f9ac714aa4bfc480ead4bdcc}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+64\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 64 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0f805aaf53a790a2e0973dfa9df6d91e}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+128\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 128 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga695d61fe243838dec7d761c2d4e0450b}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+256\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 256 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga5bd63d64662a1a38e87476045ec989c0}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+512\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 512 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gae03a5647efdd09f0a25b51e47cc876ce}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+1\+K\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 1024 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gae97601bb67a5cc471b8fe5ab4eecc3ca}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+2\+K\+\_\+\+Val}}~0x8ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 2048 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga42ef5dba73e2a26456fa3f603c71d5a9}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+4\+K\+\_\+\+Val}}~0x9ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 4096 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga127f0778aefb650b00d491b2bc6c5ceb}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8\+K\+\_\+\+Val}}~0x\+Aul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 8192 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga82eddc97b0dfab85467d139347ed60d1}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16\+K\+\_\+\+Val}}~0x\+Bul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) 16384 clock cycles \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga50c556f125fd305d92e3508e05b90122}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab3a2db643b2227e8c7cf581e83758584}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga864d56748032c478ff03a5a3bdda9ae1}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6c0f713353049fd7965f6981bb50553f}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gadae2f77e5ba40f9485485436c1cea51a}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+32}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga2ee2c98b9dd137a03eeeabedd849b007}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+32\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga79688b30622e3540fa174584e82507d0}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+64}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabe2e31c9f9ac714aa4bfc480ead4bdcc}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+64\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gacd40d7e1715b88baa3efd71a871c380c}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+128}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0f805aaf53a790a2e0973dfa9df6d91e}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+128\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaa9ab3bc4d0c9f5111fe8d50318c0b5c9}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+256}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga695d61fe243838dec7d761c2d4e0450b}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+256\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga72b2b646fc5211bf965d1ce3958bf103}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+512}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga5bd63d64662a1a38e87476045ec989c0}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+512\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab56b36b15366824f7d700fc16c5eafa9}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+1K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gae03a5647efdd09f0a25b51e47cc876ce}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+1\+K\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6003ecd07cd72174e45ee4ee72a3a352}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+2K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gae97601bb67a5cc471b8fe5ab4eecc3ca}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+2\+K\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabc04f56b5e35872db574433a43787761}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+4K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga42ef5dba73e2a26456fa3f603c71d5a9}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+4\+K\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga75e228a9fd59082dd0831987b98f9c4c}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga127f0778aefb650b00d491b2bc6c5ceb}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+8\+K\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gade10519121a6cba0a45adb6730a44a11}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16K}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga82eddc97b0dfab85467d139347ed60d1}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+16\+K\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gabb7809711cdf296121c2108b55d3ad33}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+E\+W\+O\+F\+F\+S\+E\+T\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gad11e24dd62ea0905ed507f49f62c55c2}{W\+D\+T\+\_\+\+E\+W\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x0\+Ful
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+E\+W\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga98f37addcc6abfc015425013c3a39336}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x4
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+LR offset) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9e7f5a23ae81064086ecf4e877116ee0}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+LR reset\+\_\+value) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gacbfecace29fe0f43e6f3fb8799813157}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+W\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Early Warning Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3eafb419ed0c9165cf7123817e5fcf63}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+EW}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+W\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga261d65af584086a561448aeedeabbd76}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x01ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga6497c59af95b3fd1aad2b074a75e4173}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x5
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+ET offset) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9ac75e52d30478302b59583789dca453}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+ET reset\+\_\+value) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab3754e1861849b0fbb6d056b8b6ac398}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+W\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Early Warning Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga41315bef38a49717163e34abd09091bb}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+EW}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+W\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3b4c09a36c0f08d32b983e12e06c706f}{W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x01ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+E\+N\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga8ccc2de815933812cd609179de30fc5b}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x6
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+AG offset) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac9159591ef9fa9ebb4958fa38ad9b56c}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+AG reset\+\_\+value) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gad92b31e2c0815fceba1ace8b061ffe25}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+W\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+AG) Early Warning \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf010973ade015b854f7b5f12c440538d}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+EW}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+W\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga0f9add7d544318a00033f236441e048e}{W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}}~0x01ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+I\+N\+T\+F\+L\+AG) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaeee83c68c1aeb33f91a0eb8b1cd59c62}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x7
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+S\+T\+A\+T\+US offset) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga7a68bc75c4153366852382d40bf13c01}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf075cb0b6a541d650863f51dedf17630}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+S\+T\+A\+T\+US) Synchronization Busy \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac27ae5cfb6b11ab496f06fc473905ceb}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+SY}}~(0x1ul $<$$<$ W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga363d7548ef5d950b2292c611cc4ace0b}{W\+D\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x80ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gaf1f57bd7a1a8ce2ae94864a7cea2e6e4}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x8
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+L\+E\+AR offset) Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga9192db22a2c21f7afda2b8117a96d6ef}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+L\+E\+AR reset\+\_\+value) Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3059b0505f94ff8b2ff25fb53dd56999}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+L\+E\+AR) Watchdog Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac9c6223ece162be430a8f86942210ba9}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Msk}}~(0x\+F\+Ful $<$$<$ W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga5dceacac040596ca3a0941aad227e014}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+AR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac9c6223ece162be430a8f86942210ba9}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3059b0505f94ff8b2ff25fb53dd56999}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab9d83e2ecab22a9b789e5db90483a784}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+K\+E\+Y\+\_\+\+Val}}~0x\+A5ul
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+L\+E\+AR) Clear Key \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gad9b9dfd240e353ca00f7417e8cbbb637}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+K\+EY}}~(\mbox{\hyperlink{group___s_a_m_d21___w_d_t_gab9d83e2ecab22a9b789e5db90483a784}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+K\+E\+Y\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___w_d_t_ga3059b0505f94ff8b2ff25fb53dd56999}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___w_d_t_gac1d3629de6e3c37cd93d94aad9cec4e6}{W\+D\+T\+\_\+\+C\+L\+E\+A\+R\+\_\+\+M\+A\+SK}}~0x\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (W\+D\+T\+\_\+\+C\+L\+E\+AR) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Component description for W\+DT. 
+
+Copyright (c) 2016-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

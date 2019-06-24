@@ -1,0 +1,117 @@
+\hypertarget{structat__ble__dev__config__t}{}\section{at\+\_\+ble\+\_\+dev\+\_\+config\+\_\+t Struct Reference}
+\label{structat__ble__dev__config__t}\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+
+
+Device configuration.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} \mbox{\hyperlink{structat__ble__dev__config__t_a6cf060150e1e825208151bf857dd2f08}{role}}
+\begin{DoxyCompactList}\small\item\em Device Role, \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dev__config__t_a73fd1f4e7ca670060f9433df0eab0fbb}{renew\+\_\+dur}}
+\item 
+\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} \mbox{\hyperlink{structat__ble__dev__config__t_a5030c7408086a88e92da7e836aca17dc}{address}}
+\begin{DoxyCompactList}\small\item\em Device Address, \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__dev__config__t_a6976ea27c8e6eefa6ee513454dad7faa}{irk}} \mbox{[}\mbox{\hyperlink{at__ble__api_8h_a462eb50567c44d7284308fe058158e99}{A\+T\+\_\+\+B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Device I\+RK used for resolvable random BD address generation (L\+SB first) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}} \mbox{\hyperlink{structat__ble__dev__config__t_af754df6933440c98456347855a39fcbc}{att\+\_\+cfg}}
+\begin{DoxyCompactList}\small\item\em Attribute database configuration, \mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dev__config__t_a7b7b7cf963dfb1fcd5f4abcf277fde51}{gap\+\_\+start\+\_\+hdl}}
+\begin{DoxyCompactList}\small\item\em G\+AP service start handle; use \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}} for automatic allocation value. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dev__config__t_a92bcdddc063e1c24d0edee9abcdfeea7}{gatt\+\_\+start\+\_\+hdl}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT service start handle; use \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}} for automatic allocation value. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dev__config__t_a51f85ee7f22451fd162c6db42979cf36}{max\+\_\+mtu}}
+\begin{DoxyCompactList}\small\item\em Maximum M\+TU, minimum allowed value is \mbox{\hyperlink{at__ble__api_8h_a00d6694a3d0bdcc16a59e6da4d7fbb71}{A\+T\+\_\+\+M\+T\+U\+\_\+\+V\+A\+L\+\_\+\+M\+IN}} and maximum is \mbox{\hyperlink{at__ble__api_8h_aa5fe6d41c61adba5b395dafc27f35099}{A\+T\+\_\+\+M\+T\+U\+\_\+\+V\+A\+L\+\_\+\+M\+AX}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Device configuration. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__dev__config__t_a5030c7408086a88e92da7e836aca17dc}\label{structat__ble__dev__config__t_a5030c7408086a88e92da7e836aca17dc}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!address@{address}}
+\index{address@{address}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} address}
+
+
+
+Device Address, \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}}. 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_af754df6933440c98456347855a39fcbc}\label{structat__ble__dev__config__t_af754df6933440c98456347855a39fcbc}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!att\_cfg@{att\_cfg}}
+\index{att\_cfg@{att\_cfg}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{att\_cfg}{att\_cfg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}} att\+\_\+cfg}
+
+
+
+Attribute database configuration, \mbox{\hyperlink{structat__ble__att__cfg__t}{at\+\_\+ble\+\_\+att\+\_\+cfg\+\_\+t}}. 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_a7b7b7cf963dfb1fcd5f4abcf277fde51}\label{structat__ble__dev__config__t_a7b7b7cf963dfb1fcd5f4abcf277fde51}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!gap\_start\_hdl@{gap\_start\_hdl}}
+\index{gap\_start\_hdl@{gap\_start\_hdl}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{gap\_start\_hdl}{gap\_start\_hdl}}
+{\footnotesize\ttfamily uint16\+\_\+t gap\+\_\+start\+\_\+hdl}
+
+
+
+G\+AP service start handle; use \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}} for automatic allocation value. 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_a92bcdddc063e1c24d0edee9abcdfeea7}\label{structat__ble__dev__config__t_a92bcdddc063e1c24d0edee9abcdfeea7}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!gatt\_start\_hdl@{gatt\_start\_hdl}}
+\index{gatt\_start\_hdl@{gatt\_start\_hdl}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{gatt\_start\_hdl}{gatt\_start\_hdl}}
+{\footnotesize\ttfamily uint16\+\_\+t gatt\+\_\+start\+\_\+hdl}
+
+
+
+G\+A\+TT service start handle; use \mbox{\hyperlink{at__ble__api_8h_a006780a0fa215bc901071f44a732758e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+U\+T\+O\+\_\+\+A\+L\+L\+O\+C\+\_\+\+H\+A\+N\+D\+LE}} for automatic allocation value. 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_a6976ea27c8e6eefa6ee513454dad7faa}\label{structat__ble__dev__config__t_a6976ea27c8e6eefa6ee513454dad7faa}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!irk@{irk}}
+\index{irk@{irk}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{irk}{irk}}
+{\footnotesize\ttfamily uint8\+\_\+t irk\mbox{[}\mbox{\hyperlink{at__ble__api_8h_a462eb50567c44d7284308fe058158e99}{A\+T\+\_\+\+B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+K\+E\+Y\+\_\+\+L\+EN}}\mbox{]}}
+
+
+
+Device I\+RK used for resolvable random BD address generation (L\+SB first) 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_a51f85ee7f22451fd162c6db42979cf36}\label{structat__ble__dev__config__t_a51f85ee7f22451fd162c6db42979cf36}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!max\_mtu@{max\_mtu}}
+\index{max\_mtu@{max\_mtu}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{max\_mtu}{max\_mtu}}
+{\footnotesize\ttfamily uint16\+\_\+t max\+\_\+mtu}
+
+
+
+Maximum M\+TU, minimum allowed value is \mbox{\hyperlink{at__ble__api_8h_a00d6694a3d0bdcc16a59e6da4d7fbb71}{A\+T\+\_\+\+M\+T\+U\+\_\+\+V\+A\+L\+\_\+\+M\+IN}} and maximum is \mbox{\hyperlink{at__ble__api_8h_aa5fe6d41c61adba5b395dafc27f35099}{A\+T\+\_\+\+M\+T\+U\+\_\+\+V\+A\+L\+\_\+\+M\+AX}}. 
+
+\mbox{\Hypertarget{structat__ble__dev__config__t_a73fd1f4e7ca670060f9433df0eab0fbb}\label{structat__ble__dev__config__t_a73fd1f4e7ca670060f9433df0eab0fbb}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!renew\_dur@{renew\_dur}}
+\index{renew\_dur@{renew\_dur}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{renew\_dur}{renew\_dur}}
+{\footnotesize\ttfamily uint16\+\_\+t renew\+\_\+dur}
+
+Duration before regenerate device address when privacy is enabled. Resolution of 10 m\+Seconds where the minimum value is \mbox{\hyperlink{at__ble__api_8h_a50b36406164b418c4de24014c3bf2a7d}{A\+T\+\_\+\+R\+E\+N\+E\+W\+\_\+\+D\+U\+R\+\_\+\+V\+A\+L\+\_\+\+M\+IN}} \mbox{\Hypertarget{structat__ble__dev__config__t_a6cf060150e1e825208151bf857dd2f08}\label{structat__ble__dev__config__t_a6cf060150e1e825208151bf857dd2f08}} 
+\index{at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}!role@{role}}
+\index{role@{role}!at\_ble\_dev\_config\_t@{at\_ble\_dev\_config\_t}}
+\subsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} role}
+
+
+
+Device Role, \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

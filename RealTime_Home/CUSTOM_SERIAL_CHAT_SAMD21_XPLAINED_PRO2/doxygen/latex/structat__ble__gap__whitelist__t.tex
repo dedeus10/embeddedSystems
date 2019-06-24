@@ -1,0 +1,57 @@
+\hypertarget{structat__ble__gap__whitelist__t}{}\section{at\+\_\+ble\+\_\+gap\+\_\+whitelist\+\_\+t Struct Reference}
+\label{structat__ble__gap__whitelist__t}\index{at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}}
+
+
+White-\/list structure.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$$\ast$ \mbox{\hyperlink{structat__ble__gap__whitelist__t_ad6b42a15127a7440c62e539669240593}{pp\+Addrs}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__gap__whitelist__t_ae80e1585c16424d422460ae9fee89595}{addr\+Count}}
+\item 
+\mbox{\hyperlink{structat__ble__gap__irk__t}{at\+\_\+ble\+\_\+gap\+\_\+irk\+\_\+t}} $\ast$$\ast$ \mbox{\hyperlink{structat__ble__gap__whitelist__t_aaf277b9883c15b2e68b9592697389f31}{pp\+Irks}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__gap__whitelist__t_a2264bf0e31aac88b0856e018c464968a}{irk\+Count}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+White-\/list structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__gap__whitelist__t_ae80e1585c16424d422460ae9fee89595}\label{structat__ble__gap__whitelist__t_ae80e1585c16424d422460ae9fee89595}} 
+\index{at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}!addrCount@{addrCount}}
+\index{addrCount@{addrCount}!at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}}
+\subsubsection{\texorpdfstring{addrCount}{addrCount}}
+{\footnotesize\ttfamily uint8\+\_\+t addr\+Count}
+
+Count of device addresses in array. \mbox{\Hypertarget{structat__ble__gap__whitelist__t_a2264bf0e31aac88b0856e018c464968a}\label{structat__ble__gap__whitelist__t_a2264bf0e31aac88b0856e018c464968a}} 
+\index{at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}!irkCount@{irkCount}}
+\index{irkCount@{irkCount}!at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}}
+\subsubsection{\texorpdfstring{irkCount}{irkCount}}
+{\footnotesize\ttfamily uint8\+\_\+t irk\+Count}
+
+Count of I\+R\+Ks in array. \mbox{\Hypertarget{structat__ble__gap__whitelist__t_ad6b42a15127a7440c62e539669240593}\label{structat__ble__gap__whitelist__t_ad6b42a15127a7440c62e539669240593}} 
+\index{at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}!ppAddrs@{ppAddrs}}
+\index{ppAddrs@{ppAddrs}!at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}}
+\subsubsection{\texorpdfstring{ppAddrs}{ppAddrs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}}$\ast$$\ast$ pp\+Addrs}
+
+Pointer to array of device address pointers, pointing to addresses to be used in white-\/list. N\+U\+LL if none are given. \mbox{\Hypertarget{structat__ble__gap__whitelist__t_aaf277b9883c15b2e68b9592697389f31}\label{structat__ble__gap__whitelist__t_aaf277b9883c15b2e68b9592697389f31}} 
+\index{at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}!ppIrks@{ppIrks}}
+\index{ppIrks@{ppIrks}!at\_ble\_gap\_whitelist\_t@{at\_ble\_gap\_whitelist\_t}}
+\subsubsection{\texorpdfstring{ppIrks}{ppIrks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__gap__irk__t}{at\+\_\+ble\+\_\+gap\+\_\+irk\+\_\+t}}$\ast$$\ast$ pp\+Irks}
+
+Pointer to array of Identity Resolving Key (I\+RK) pointers, each pointing to an I\+RK in the white-\/list. N\+U\+LL if none are given. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

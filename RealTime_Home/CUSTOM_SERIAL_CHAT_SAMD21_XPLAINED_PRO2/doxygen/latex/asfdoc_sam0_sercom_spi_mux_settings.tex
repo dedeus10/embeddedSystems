@@ -1,0 +1,66 @@
+The following lists the possible internal S\+E\+R\+C\+OM module pad function assignments for the four S\+E\+R\+C\+OM pads in both S\+PI Master and S\+PI Slave modes. They are combinations of D\+O\+PO and D\+I\+PO in C\+T\+R\+LA. Note that this is in addition to the physical G\+P\+IO pin M\+UX of the device, and can be used in conjunction to optimize the serial data pin-\/out.\hypertarget{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_master}{}\section{Master Mode Settings}\label{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_master}
+The following table describes the S\+E\+R\+C\+OM pin functionalities for the various M\+UX settings, whilst in S\+PI Master mode.
+
+\begin{DoxyNote}{Note}
+If M\+I\+SO is unlisted, the S\+PI receiver must not be enabled for the given M\+UX setting.
+\end{DoxyNote}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Combination }&\cellcolor{\tableheadbgcolor}\textbf{ D\+O\+PO / D\+I\+PO }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}0\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}1\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}2\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}3\mbox{]}  }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Combination }&\cellcolor{\tableheadbgcolor}\textbf{ D\+O\+PO / D\+I\+PO }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}0\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}1\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}2\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}3\mbox{]}  }\\\cline{1-6}
+\endhead
+A &0x0 / 0x0 &M\+O\+SI &S\+CK &-\/ &-\/  \\\cline{1-6}
+B &0x0 / 0x1 &M\+O\+SI &S\+CK &-\/ &-\/  \\\cline{1-6}
+C &0x0 / 0x2 &M\+O\+SI &S\+CK &M\+I\+SO &-\/  \\\cline{1-6}
+D &0x0 / 0x3 &M\+O\+SI &S\+CK &-\/ &M\+I\+SO  \\\cline{1-6}
+E &0x1 / 0x0 &M\+I\+SO &-\/ &M\+O\+SI &S\+CK  \\\cline{1-6}
+F &0x1 / 0x1 &-\/ &M\+I\+SO &M\+O\+SI &S\+CK  \\\cline{1-6}
+G &0x1 / 0x2 &-\/ &-\/ &M\+O\+SI &S\+CK  \\\cline{1-6}
+H &0x1 / 0x3 &-\/ &-\/ &M\+O\+SI &S\+CK  \\\cline{1-6}
+I &0x2 / 0x0 &M\+I\+SO &S\+CK &-\/ &M\+O\+SI  \\\cline{1-6}
+J &0x2 / 0x1 &-\/ &S\+CK &-\/ &M\+O\+SI  \\\cline{1-6}
+K &0x2 / 0x2 &-\/ &S\+CK &M\+I\+SO &M\+O\+SI  \\\cline{1-6}
+L &0x2 / 0x3 &-\/ &S\+CK &-\/ &M\+O\+SI  \\\cline{1-6}
+M &0x3 / 0x0 &M\+O\+SI &-\/ &-\/ &S\+CK  \\\cline{1-6}
+N &0x3 / 0x1 &M\+O\+SI &M\+I\+SO &-\/ &S\+CK  \\\cline{1-6}
+O &0x3 / 0x2 &M\+O\+SI &-\/ &M\+I\+SO &S\+CK  \\\cline{1-6}
+P &0x3 / 0x3 &M\+O\+SI &-\/ &-\/ &S\+CK  \\\cline{1-6}
+\end{longtabu}
+\hypertarget{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_slave}{}\section{Slave Mode Settings}\label{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_slave}
+The following table describes the S\+E\+R\+C\+OM pin functionalities for the various M\+UX settings, whilst in S\+PI Slave mode.
+
+\begin{DoxyNote}{Note}
+If M\+I\+SO is unlisted, the S\+PI receiver must not be enabled for the given M\+UX setting.
+\end{DoxyNote}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Combination }&\cellcolor{\tableheadbgcolor}\textbf{ D\+O\+PO / D\+I\+PO }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}0\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}1\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}2\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}3\mbox{]}  }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Combination }&\cellcolor{\tableheadbgcolor}\textbf{ D\+O\+PO / D\+I\+PO }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}0\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}1\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}2\mbox{]} }&\cellcolor{\tableheadbgcolor}\textbf{ S\+E\+R\+C\+OM P\+AD\mbox{[}3\mbox{]}  }\\\cline{1-6}
+\endhead
+A &0x0 / 0x0 &M\+I\+SO &S\+CK &/\+SS &-\/  \\\cline{1-6}
+B &0x0 / 0x1 &M\+I\+SO &S\+CK &/\+SS &-\/  \\\cline{1-6}
+C &0x0 / 0x2 &M\+I\+SO &S\+CK &/\+SS &-\/  \\\cline{1-6}
+D &0x0 / 0x3 &M\+I\+SO &S\+CK &/\+SS &M\+O\+SI  \\\cline{1-6}
+E &0x1 / 0x0 &M\+O\+SI &/\+SS &M\+I\+SO &S\+CK  \\\cline{1-6}
+F &0x1 / 0x1 &-\/ &/\+SS &M\+I\+SO &S\+CK  \\\cline{1-6}
+G &0x1 / 0x2 &-\/ &/\+SS &M\+I\+SO &S\+CK  \\\cline{1-6}
+H &0x1 / 0x3 &-\/ &/\+SS &M\+I\+SO &S\+CK  \\\cline{1-6}
+I &0x2 / 0x0 &M\+O\+SI &S\+CK &/\+SS &M\+I\+SO  \\\cline{1-6}
+J &0x2 / 0x1 &-\/ &S\+CK &/\+SS &M\+I\+SO  \\\cline{1-6}
+K &0x2 / 0x2 &-\/ &S\+CK &/\+SS &M\+I\+SO  \\\cline{1-6}
+L &0x2 / 0x3 &-\/ &S\+CK &/\+SS &M\+I\+SO  \\\cline{1-6}
+M &0x3 / 0x0 &M\+I\+SO &/\+SS &-\/ &S\+CK  \\\cline{1-6}
+N &0x3 / 0x1 &M\+I\+SO &/\+SS &-\/ &S\+CK  \\\cline{1-6}
+O &0x3 / 0x2 &M\+I\+SO &/\+SS &M\+O\+SI &S\+CK  \\\cline{1-6}
+P &0x3 / 0x3 &M\+I\+SO &/\+SS &-\/ &S\+CK  \\\cline{1-6}
+\end{longtabu}

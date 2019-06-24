@@ -1,0 +1,164 @@
+\hypertarget{group___s_a_m_d21___p_a_c}{}\section{Peripheral Access Controller}
+\label{group___s_a_m_d21___p_a_c}\index{Peripheral Access Controller@{Peripheral Access Controller}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_p_a_c___w_p_c_l_r___type}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_a_c___w_p_s_e_t___type}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_pac}{Pac}}
+\begin{DoxyCompactList}\small\item\em P\+AC hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_ga7b4542fab3fb2b084f233d3c19ce583f}{P\+A\+C\+\_\+\+U2211}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gae5cdafc1f439a00abc501cacc09f6013}{R\+E\+V\+\_\+\+P\+AC}}~0x101
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gaa8bfe2dbd850c149b544388e5e66c047}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x0
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+C\+LR offset) Write Protection Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_ga7e4471c2307dc62051413a92921e9ad3}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+C\+LR reset\+\_\+value) Write Protection Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac893a3965fb3e10c9adeef5f32aaa077}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+C\+LR) Write Protection Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac859179771238c92c152314627e75b60}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Msk}}~(0x7\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gabb1641cc411ee007d063770088b81193}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+WP}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac859179771238c92c152314627e75b60}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac893a3965fb3e10c9adeef5f32aaa077}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gae4e15876b40798f9de30c63a21941fe2}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Eul
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_ga1f78e51c36aefe33adf2cd3e8aae712d}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x4
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+S\+ET offset) Write Protection Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_ga98a9ec65abc9267cd8450753c2242423}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+S\+ET reset\+\_\+value) Write Protection Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac6aa32046f2c00bae5a1dcc2aec55e12}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+S\+ET) Write Protection Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gaad1cd626f26b3904a3564b687c71f449}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Msk}}~(0x7\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_ga87da15384c0ecc5dd7fa5f217817b99b}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+WP}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_a_c_gaad1cd626f26b3904a3564b687c71f449}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac6aa32046f2c00bae5a1dcc2aec55e12}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gad8dcbe373d2b7cabb1ae14527fc59027}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Eul
+\begin{DoxyCompactList}\small\item\em (P\+A\+C\+\_\+\+W\+P\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR P\+AC 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_ga7b4542fab3fb2b084f233d3c19ce583f}\label{group___s_a_m_d21___p_a_c_ga7b4542fab3fb2b084f233d3c19ce583f}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_U2211@{PAC\_U2211}}
+\index{PAC\_U2211@{PAC\_U2211}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_U2211}{PAC\_U2211}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+U2211}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gae4e15876b40798f9de30c63a21941fe2}\label{group___s_a_m_d21___p_a_c_gae4e15876b40798f9de30c63a21941fe2}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_MASK@{PAC\_WPCLR\_MASK}}
+\index{PAC\_WPCLR\_MASK@{PAC\_WPCLR\_MASK}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_MASK}{PAC\_WPCLR\_MASK}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Eul}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gaa8bfe2dbd850c149b544388e5e66c047}\label{group___s_a_m_d21___p_a_c_gaa8bfe2dbd850c149b544388e5e66c047}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_OFFSET@{PAC\_WPCLR\_OFFSET}}
+\index{PAC\_WPCLR\_OFFSET@{PAC\_WPCLR\_OFFSET}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_OFFSET}{PAC\_WPCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x0}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+C\+LR offset) Write Protection Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_ga7e4471c2307dc62051413a92921e9ad3}\label{group___s_a_m_d21___p_a_c_ga7e4471c2307dc62051413a92921e9ad3}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_RESETVALUE@{PAC\_WPCLR\_RESETVALUE}}
+\index{PAC\_WPCLR\_RESETVALUE@{PAC\_WPCLR\_RESETVALUE}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_RESETVALUE}{PAC\_WPCLR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+C\+LR reset\+\_\+value) Write Protection Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gabb1641cc411ee007d063770088b81193}\label{group___s_a_m_d21___p_a_c_gabb1641cc411ee007d063770088b81193}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_WP@{PAC\_WPCLR\_WP}}
+\index{PAC\_WPCLR\_WP@{PAC\_WPCLR\_WP}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_WP}{PAC\_WPCLR\_WP}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+WP(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac859179771238c92c152314627e75b60}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac893a3965fb3e10c9adeef5f32aaa077}{P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gac859179771238c92c152314627e75b60}\label{group___s_a_m_d21___p_a_c_gac859179771238c92c152314627e75b60}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_WP\_Msk@{PAC\_WPCLR\_WP\_Msk}}
+\index{PAC\_WPCLR\_WP\_Msk@{PAC\_WPCLR\_WP\_Msk}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_WP\_Msk}{PAC\_WPCLR\_WP\_Msk}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Msk~(0x7\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gac893a3965fb3e10c9adeef5f32aaa077}\label{group___s_a_m_d21___p_a_c_gac893a3965fb3e10c9adeef5f32aaa077}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPCLR\_WP\_Pos@{PAC\_WPCLR\_WP\_Pos}}
+\index{PAC\_WPCLR\_WP\_Pos@{PAC\_WPCLR\_WP\_Pos}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPCLR\_WP\_Pos}{PAC\_WPCLR\_WP\_Pos}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+C\+L\+R\+\_\+\+W\+P\+\_\+\+Pos~1}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+C\+LR) Write Protection Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gad8dcbe373d2b7cabb1ae14527fc59027}\label{group___s_a_m_d21___p_a_c_gad8dcbe373d2b7cabb1ae14527fc59027}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_MASK@{PAC\_WPSET\_MASK}}
+\index{PAC\_WPSET\_MASK@{PAC\_WPSET\_MASK}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_MASK}{PAC\_WPSET\_MASK}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Eul}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_ga1f78e51c36aefe33adf2cd3e8aae712d}\label{group___s_a_m_d21___p_a_c_ga1f78e51c36aefe33adf2cd3e8aae712d}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_OFFSET@{PAC\_WPSET\_OFFSET}}
+\index{PAC\_WPSET\_OFFSET@{PAC\_WPSET\_OFFSET}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_OFFSET}{PAC\_WPSET\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x4}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+S\+ET offset) Write Protection Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_ga98a9ec65abc9267cd8450753c2242423}\label{group___s_a_m_d21___p_a_c_ga98a9ec65abc9267cd8450753c2242423}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_RESETVALUE@{PAC\_WPSET\_RESETVALUE}}
+\index{PAC\_WPSET\_RESETVALUE@{PAC\_WPSET\_RESETVALUE}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_RESETVALUE}{PAC\_WPSET\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+S\+ET reset\+\_\+value) Write Protection Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_ga87da15384c0ecc5dd7fa5f217817b99b}\label{group___s_a_m_d21___p_a_c_ga87da15384c0ecc5dd7fa5f217817b99b}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_WP@{PAC\_WPSET\_WP}}
+\index{PAC\_WPSET\_WP@{PAC\_WPSET\_WP}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_WP}{PAC\_WPSET\_WP}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+WP(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_a_c_gaad1cd626f26b3904a3564b687c71f449}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_a_c_gac6aa32046f2c00bae5a1dcc2aec55e12}{P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gaad1cd626f26b3904a3564b687c71f449}\label{group___s_a_m_d21___p_a_c_gaad1cd626f26b3904a3564b687c71f449}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_WP\_Msk@{PAC\_WPSET\_WP\_Msk}}
+\index{PAC\_WPSET\_WP\_Msk@{PAC\_WPSET\_WP\_Msk}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_WP\_Msk}{PAC\_WPSET\_WP\_Msk}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Msk~(0x7\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gac6aa32046f2c00bae5a1dcc2aec55e12}\label{group___s_a_m_d21___p_a_c_gac6aa32046f2c00bae5a1dcc2aec55e12}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!PAC\_WPSET\_WP\_Pos@{PAC\_WPSET\_WP\_Pos}}
+\index{PAC\_WPSET\_WP\_Pos@{PAC\_WPSET\_WP\_Pos}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{PAC\_WPSET\_WP\_Pos}{PAC\_WPSET\_WP\_Pos}}
+{\footnotesize\ttfamily \#define P\+A\+C\+\_\+\+W\+P\+S\+E\+T\+\_\+\+W\+P\+\_\+\+Pos~1}
+
+
+
+(P\+A\+C\+\_\+\+W\+P\+S\+ET) Write Protection Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_a_c_gae5cdafc1f439a00abc501cacc09f6013}\label{group___s_a_m_d21___p_a_c_gae5cdafc1f439a00abc501cacc09f6013}} 
+\index{Peripheral Access Controller@{Peripheral Access Controller}!REV\_PAC@{REV\_PAC}}
+\index{REV\_PAC@{REV\_PAC}!Peripheral Access Controller@{Peripheral Access Controller}}
+\subsubsection{\texorpdfstring{REV\_PAC}{REV\_PAC}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+P\+AC~0x101}
+

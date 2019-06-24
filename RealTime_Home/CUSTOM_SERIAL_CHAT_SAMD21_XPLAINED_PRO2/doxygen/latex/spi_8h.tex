@@ -1,0 +1,161 @@
+\hypertarget{spi_8h}{}\section{A\+S\+F/sam0/drivers/sercom/spi/spi.h File Reference}
+\label{spi_8h}\index{ASF/sam0/drivers/sercom/spi/spi.h@{ASF/sam0/drivers/sercom/spi/spi.h}}
+
+
+S\+AM Serial Peripheral Interface Driver.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$port.\+h$>$}\newline
+{\ttfamily \#include $<$sercom.\+h$>$}\newline
+{\ttfamily \#include $<$pinmux.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$conf\+\_\+spi.\+h$>$}\newline
+{\ttfamily \#include $<$sercom\+\_\+interrupt.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}}
+\begin{DoxyCompactList}\small\item\em S\+E\+R\+C\+OM S\+PI driver software device instance structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}}
+\begin{DoxyCompactList}\small\item\em S\+PI peripheral slave instance structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__inst__config}{spi\+\_\+slave\+\_\+inst\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI peripheral slave configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__master__config}{spi\+\_\+master\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI Master configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__slave__config}{spi\+\_\+slave\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI slave configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}}
+\begin{DoxyCompactList}\small\item\em S\+PI configuration structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gae7bc85650aed61f97fe3d5df9b430456}{P\+I\+N\+M\+U\+X\+\_\+\+D\+E\+F\+A\+U\+LT}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaffde9ff712058ef836127e1f3368889e}{P\+I\+N\+M\+U\+X\+\_\+\+U\+N\+U\+S\+ED}}~0x\+F\+F\+F\+F\+F\+F\+FF
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga0131f2774f4e3dd71567400683b60405}{S\+P\+I\+\_\+\+T\+I\+M\+E\+O\+UT}}~10000
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}}) (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a457c19f75d284d1664cc38b0f1e1eb81}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a7da8cc036860fc86ef36aeeffe9088ec}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+R\+E\+C\+E\+I\+V\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88ac2110b62e8233f66ccecd240e8d256a8}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+R\+A\+N\+S\+C\+E\+I\+V\+ED}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a3c76f7df3c189cd31938fcf438427051}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+E\+R\+R\+OR}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a75545a7657914031640e2890220ea2ea}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+S\+L\+A\+V\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+S\+S\+I\+O\+N\+\_\+\+C\+O\+M\+P\+L\+E\+TE}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI Callback enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}{\+\_\+spi\+\_\+direction}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a103cc0246cfe23a4bdbd9919691bab19}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+AD}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7a58378c769c218216a742f064d20afbc5}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+W\+R\+I\+TE}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aa7d6441909cdfbb860d18b6b7d78fcc0}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+B\+O\+TH}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga3790f767d410bc7d70fe0772fe7044f7aab6b2f188e1dc97b2024138ef1a45ad5}{S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+I\+D\+LE}}
+ \}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga16bab5d19c43ffb25c0d3f1e071813de}{spi\+\_\+interrupt\+\_\+flag}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deab47cccbc2e81d8af9d6c1fd777a95762}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+E\+M\+P\+TY}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+D\+RE, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deacc9db35e4654be2e4bd06d2a10fb3837}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+T\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+T\+XC, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga16bab5d19c43ffb25c0d3f1e071813deabc7fa74e9f37b6aa492ca9889e7d8a92}{S\+P\+I\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+XC
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI Interrupt Flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9c30fdfffba6be76b4044ccb17b218e5}{spi\+\_\+transfer\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5addcbccd52e926858945de2e140199027}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+0}} = 0, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5aa55ca25e3c49ff34464adc654d14cfd5}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+1}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+HA, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a29f104b5325a068ab32e652e21a1ec95}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+2}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+OL, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga9c30fdfffba6be76b4044ccb17b218e5a98dfa4850997601437f5183699d9e63c}{S\+P\+I\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+M\+O\+D\+E\+\_\+3}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+HA $\vert$ S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+P\+OL
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI transfer modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}{spi\+\_\+frame\+\_\+format}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaa9dbfeaf1014b44745b56ceda7e0d62d7}{S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+ME}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+F\+O\+RM(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4598fb059ff90fccf8c9fa5b421f1bdaaba876059c4eb058d0988262d9df8e090}{S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+S\+P\+I\+\_\+\+F\+R\+A\+M\+E\+\_\+\+A\+D\+DR}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+F\+O\+RM(2)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI frame format enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga420e19efe4a923eb9ab6dc619a23c370}{spi\+\_\+signal\+\_\+mux\+\_\+setting}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a3cdcdd92d89e38733d77ac89f1a2ddd2}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+A}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6436816e953e9435937dadd832022e23}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+B}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aedcff238d013e3a51eb6580ca3df64d1}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+C}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a157acefdb388019c788d616f5225deda}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+D}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a7234b3f4e0aa7fe723cc85edabea9816}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+E}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a578bd6b0685f742bf51e9c2a395c3ea2}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+F}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad9b9f4b431a3ac65423f57a96cac3bb9}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+G}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a63225e36d738e0cc05c08a58c7a901bd}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+H}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370ad421b8125db3d485b14470501b98066c}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+I}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370acc5588ae2498b0550997f6d647b19eda}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+J}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aa01984d81ef8cef6c34c03f27bfbd406}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+K}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a79fb82aa500712404307189ade71948f}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+L}}, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a6eba5168c427ef781eee612c99c2e7f6}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+M}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a90871c4e6ee8f90df87ce0d851c1d2a1}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+N}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370a34fc3e98645ee794eb240b84e24c2966}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+O}}, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga420e19efe4a923eb9ab6dc619a23c370aca300e01409474db47004e90d93c3fb3}{S\+P\+I\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+M\+U\+X\+\_\+\+S\+E\+T\+T\+I\+N\+G\+\_\+P}}
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI signal M\+UX settings. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}{spi\+\_\+addr\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a0031e737207555ff4de8c3f1c4cd51c7}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a1515f491a88330b601198c1792fda41a}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+I\+Q\+UE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(1), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga30bf0ce7e5f944a5d3a42d90f0ebf617a4205716bda98deed62a4c6d5c8ec9944}{S\+P\+I\+\_\+\+A\+D\+D\+R\+\_\+\+M\+O\+D\+E\+\_\+\+R\+A\+N\+GE}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+A\+M\+O\+DE(2)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI address modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ae68a8adf6e5b67a7bdbe9526b15dae99}{S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+S\+T\+ER}} = 1, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga78c1313670220bedfecdb138d4c27903ad1131ed33ad43ab3f667070b04454439}{S\+P\+I\+\_\+\+M\+O\+D\+E\+\_\+\+S\+L\+A\+VE}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI modes enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gabaa69dbc0601cb5b1e2681400598a4b2}{spi\+\_\+data\+\_\+order}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2ab016ca9032d6e9418d834514cc95b7d3}{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+L\+SB}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+A\+\_\+\+D\+O\+RD, 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ggabaa69dbc0601cb5b1e2681400598a4b2a7eb5ed4b7d6f993acd7d09a5d8db3687}{S\+P\+I\+\_\+\+D\+A\+T\+A\+\_\+\+O\+R\+D\+E\+R\+\_\+\+M\+SB}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI data order enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} \{ \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7a66283e49623ad09896942662b8221de6}{S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+8\+B\+IT}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+H\+S\+I\+ZE(0), 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga79e8becd0bcea19b99e7eb7fe8a9d6b7ab70647e252f3251aac0100b56c3d30af}{S\+P\+I\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+9\+B\+IT}} = S\+E\+R\+C\+O\+M\+\_\+\+S\+P\+I\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+H\+S\+I\+ZE(1)
+ \}
+\begin{DoxyCompactList}\small\item\em S\+PI character size enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga71091c8fcde0d526329e04f8c7b24efc}{\+\_\+spi\+\_\+interrupt\+\_\+handler}} (uint8\+\_\+t instance)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga6bc86fe61f20b414ac3ca1a74c28dd28}{spi\+\_\+set\+\_\+baudrate}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint32\+\_\+t baudrate)
+\begin{DoxyCompactList}\small\item\em Set the baudrate of the S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Driver Initialization and Configuration}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga83b840fe8c91173bfe54a13787c262e6}{spi\+\_\+init}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, \mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const hw, const struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+E\+R\+C\+OM S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Enable/\+Disable}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga65c764f92ed46f0d4845232bd4b241bc}{spi\+\_\+reset}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\begin{DoxyCompactList}\small\item\em Resets the S\+PI module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Lock/\+Unlock}\par
+\end{Indent}
+\begin{Indent}\textbf{ Ready to Write/\+Read}\par
+\end{Indent}
+\begin{Indent}\textbf{ Read/\+Write}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gae217dcf01506d2ad9ea554a14e57245f}{spi\+\_\+write\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, const uint8\+\_\+t $\ast$tx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7cdeea24cfa24ab872044c6fa1ae893f}{spi\+\_\+read\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length, uint16\+\_\+t dummy)
+\begin{DoxyCompactList}\small\item\em Reads buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3eb1d72360e67b6fef7574320a5919e6}{spi\+\_\+transceive\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint16\+\_\+t tx\+\_\+data, uint16\+\_\+t $\ast$rx\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Sends and reads a single S\+PI character. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}{spi\+\_\+transceive\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends and receives a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}{spi\+\_\+select\+\_\+slave}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}} $\ast$const slave, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} select)
+\begin{DoxyCompactList}\small\item\em Selects slave device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+S\+AM Serial Peripheral Interface Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

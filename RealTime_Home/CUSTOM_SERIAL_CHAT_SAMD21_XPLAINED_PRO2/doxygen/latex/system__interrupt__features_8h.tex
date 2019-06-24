@@ -1,0 +1,93 @@
+\hypertarget{system__interrupt__features_8h}{}\section{A\+S\+F/sam0/drivers/system/interrupt/system\+\_\+interrupt\+\_\+samd21/system\+\_\+interrupt\+\_\+features.h File Reference}
+\label{system__interrupt__features_8h}\index{ASF/sam0/drivers/system/interrupt/system\_interrupt\_samd21/system\_interrupt\_features.h@{ASF/sam0/drivers/system/interrupt/system\_interrupt\_samd21/system\_interrupt\_features.h}}
+
+
+S\+AM D21 System Interrupt Driver.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_a5f447c3c9a0b86f6921e3fdb8b2cc139}{\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+R\+Qn}}(n,  module)~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\#\#module\#\#n = module\#\#n\#\#\+\_\+\+I\+R\+Qn,
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_ab7e6af272c2eb65be15e809c4113720b}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+ES}}(name)~\mbox{\hyperlink{group__group__sam0__utils__mrepeat_ga42db715ccb877ca87d7903f5783bd104}{M\+R\+E\+P\+E\+AT}}(name\#\#\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM, \mbox{\hyperlink{system__interrupt__features_8h_a5f447c3c9a0b86f6921e3fdb8b2cc139}{\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+R\+Qn}}, name)
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_af6b4c1232c9553b11b1175bccad4f01d}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+I\+P\+S\+R\+\_\+\+M\+A\+SK}}~0x0000003f
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_a01775ec1836e737a8401f575cc71767f}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+M\+A\+SK}}~0x00000003
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_af55cfc23a39adbfbeb5f37a25dc96f77}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+S\+T\+A\+RT}}~0
+\item 
+\#define \mbox{\hyperlink{system__interrupt__features_8h_a1487f18a015d9f356dec0382b3817d31}{\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+P\+R\+I\+\_\+\+P\+OS}}~30
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_ga43378e6222cc05290c1a0c6a9ba125cf}{system\+\_\+interrupt\+\_\+vector}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa8967f7e5e661234c374fd8fe6a7c7b4a}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+N\+O\+N\+\_\+\+M\+A\+S\+K\+A\+B\+LE}} = Non\+Maskable\+Int\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfabef47b275e187a3c4cc3d79fdefeb43a}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+R\+D\+\_\+\+F\+A\+U\+LT}} = Hard\+Fault\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa91a0f47299fac0d5a4bbd776a049a7a1}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+S\+V\+\_\+\+C\+A\+LL}} = S\+V\+Call\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa9aa2c667976293c6b9a0f046984696aa}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+E\+N\+D\+I\+N\+G\+\_\+\+SV}} = Pend\+S\+V\+\_\+\+I\+R\+Qn, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfadef3a6521ea01f9fa669fa3951d97668}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+S\+Y\+S\+T\+I\+CK}} = Sys\+Tick\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa192f3323b0a11ad28690ee4c0eaa9e4c}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+PM}} = P\+M\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa04f73ceede7fafa99c7fd85524ebe323}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+S\+Y\+S\+C\+T\+RL}} = S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa02ba7488cb2e602f86b42848bff250b4}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+W\+DT}} = W\+D\+T\+\_\+\+I\+R\+Qn, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfab7c8739bd4a9cd7616ba30a9dd2ef1f8}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+R\+TC}} = R\+T\+C\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa78111f06deafa9412afd0eb7c2bf88bf}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+E\+IC}} = E\+I\+C\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfac04b00eaa6c6c9eb2bd9695fc63dd5fd}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+N\+V\+M\+C\+T\+RL}} = N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa6877b7836295a225ed562d94398c7588}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+D\+MA}} = D\+M\+A\+C\+\_\+\+I\+R\+Qn, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa15167598ce4e6982800cb394ceabf901}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+E\+V\+S\+YS}} = E\+V\+S\+Y\+S\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa6cd0b440071d2ba0baa1c10371cf1b63}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+T\+C3}} = T\+C3\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfa0b2c0ecc5d91bcafb8d486d4d4a0e6a1}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+T\+C4}} = T\+C4\+\_\+\+I\+R\+Qn, 
+\mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_gga43378e6222cc05290c1a0c6a9ba125cfad06d9f9b0614ae9a824a243326b4c892}{S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+T\+C5}} = T\+C5\+\_\+\+I\+R\+Qn
+ \}
+\begin{DoxyCompactList}\small\item\em Table of possible system interrupt/exception vector numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM D21 System Interrupt Driver. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{system__interrupt__features_8h_a5f447c3c9a0b86f6921e3fdb8b2cc139}\label{system__interrupt__features_8h_a5f447c3c9a0b86f6921e3fdb8b2cc139}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_MODULE\_IRQn@{\_MODULE\_IRQn}}
+\index{\_MODULE\_IRQn@{\_MODULE\_IRQn}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_MODULE\_IRQn}{\_MODULE\_IRQn}}
+{\footnotesize\ttfamily \#define \+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+R\+Qn(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{module }\end{DoxyParamCaption})~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\#\#module\#\#n = module\#\#n\#\#\+\_\+\+I\+R\+Qn,}
+
+\mbox{\Hypertarget{system__interrupt__features_8h_af55cfc23a39adbfbeb5f37a25dc96f77}\label{system__interrupt__features_8h_af55cfc23a39adbfbeb5f37a25dc96f77}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START@{\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START}}
+\index{\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START@{\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START}{\_SYSTEM\_INTERRUPT\_EXTERNAL\_VECTOR\_START}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+E\+X\+T\+E\+R\+N\+A\+L\+\_\+\+V\+E\+C\+T\+O\+R\+\_\+\+S\+T\+A\+RT~0}
+
+\mbox{\Hypertarget{system__interrupt__features_8h_af6b4c1232c9553b11b1175bccad4f01d}\label{system__interrupt__features_8h_af6b4c1232c9553b11b1175bccad4f01d}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_SYSTEM\_INTERRUPT\_IPSR\_MASK@{\_SYSTEM\_INTERRUPT\_IPSR\_MASK}}
+\index{\_SYSTEM\_INTERRUPT\_IPSR\_MASK@{\_SYSTEM\_INTERRUPT\_IPSR\_MASK}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_SYSTEM\_INTERRUPT\_IPSR\_MASK}{\_SYSTEM\_INTERRUPT\_IPSR\_MASK}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+I\+P\+S\+R\+\_\+\+M\+A\+SK~0x0000003f}
+
+\mbox{\Hypertarget{system__interrupt__features_8h_ab7e6af272c2eb65be15e809c4113720b}\label{system__interrupt__features_8h_ab7e6af272c2eb65be15e809c4113720b}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_SYSTEM\_INTERRUPT\_MODULES@{\_SYSTEM\_INTERRUPT\_MODULES}}
+\index{\_SYSTEM\_INTERRUPT\_MODULES@{\_SYSTEM\_INTERRUPT\_MODULES}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_SYSTEM\_INTERRUPT\_MODULES}{\_SYSTEM\_INTERRUPT\_MODULES}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+ES(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__mrepeat_ga42db715ccb877ca87d7903f5783bd104}{M\+R\+E\+P\+E\+AT}}(name\#\#\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM, \mbox{\hyperlink{system__interrupt__features_8h_a5f447c3c9a0b86f6921e3fdb8b2cc139}{\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+I\+R\+Qn}}, name)}
+
+\mbox{\Hypertarget{system__interrupt__features_8h_a01775ec1836e737a8401f575cc71767f}\label{system__interrupt__features_8h_a01775ec1836e737a8401f575cc71767f}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK@{\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK}}
+\index{\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK@{\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK}{\_SYSTEM\_INTERRUPT\_PRIORITY\_MASK}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+M\+A\+SK~0x00000003}
+
+\mbox{\Hypertarget{system__interrupt__features_8h_a1487f18a015d9f356dec0382b3817d31}\label{system__interrupt__features_8h_a1487f18a015d9f356dec0382b3817d31}} 
+\index{system\_interrupt\_features.h@{system\_interrupt\_features.h}!\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS@{\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS}}
+\index{\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS@{\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS}!system\_interrupt\_features.h@{system\_interrupt\_features.h}}
+\subsubsection{\texorpdfstring{\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS}{\_SYSTEM\_INTERRUPT\_SYSTICK\_PRI\_POS}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+\_\+\+P\+R\+I\+\_\+\+P\+OS~30}
+

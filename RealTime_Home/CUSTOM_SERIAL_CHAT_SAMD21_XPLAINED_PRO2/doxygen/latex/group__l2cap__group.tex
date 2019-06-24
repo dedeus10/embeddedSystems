@@ -1,0 +1,204 @@
+\hypertarget{group__l2cap__group}{}\section{L2\+C\+AP A\+P\+Is}
+\label{group__l2cap__group}\index{L2CAP APIs@{L2CAP APIs}}
+
+
+This group includes all L2\+C\+AP layer A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga18f4585bcee377813ff43ecd91018039}{at\+\_\+ble\+\_\+lecb\+\_\+create}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_aa1a90dfd6d45ff1a1948ea7b02821558}{at\+\_\+ble\+\_\+lecb\+\_\+sec\+\_\+level\+\_\+t}} sec\+\_\+level, uint16\+\_\+t le\+\_\+psm, uint16\+\_\+t cid, uint16\+\_\+t initial\+\_\+credit)
+\begin{DoxyCompactList}\small\item\em Initialize a credit based channel to receive a credit based connection request, this A\+PI is blocking. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga0cc998a2bb26b0dbee0f911969762299}{at\+\_\+ble\+\_\+lecb\+\_\+destroy}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t le\+\_\+psm)
+\begin{DoxyCompactList}\small\item\em Close an initialized credit based channel, this A\+PI is blocking. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga6ad32497a93633da95781e9e2000877b}{at\+\_\+ble\+\_\+lecb\+\_\+connect}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t le\+\_\+psm, uint16\+\_\+t cid, uint16\+\_\+t intial\+\_\+credit)
+\begin{DoxyCompactList}\small\item\em Initiate a credit based connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_gaa0c1f138e2cb7a4f986d6e1b31a44531}{at\+\_\+ble\+\_\+lecb\+\_\+cfm}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t le\+\_\+psm, \mbox{\hyperlink{at__ble__api_8h_ad1ded688a1b188cf8e6bac1ab97f276e}{at\+\_\+ble\+\_\+lecb\+\_\+status}} status)
+\begin{DoxyCompactList}\small\item\em Server confirms if a credit based connection is completed successfully. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga54fabd178d032ebfb0e401853563e4ae}{at\+\_\+ble\+\_\+lecb\+\_\+disconnect}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t le\+\_\+psm)
+\begin{DoxyCompactList}\small\item\em Terminate a credit based connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga48aebfd5595b6064804c582ecc554bfe}{at\+\_\+ble\+\_\+lecb\+\_\+add\+\_\+credit}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t le\+\_\+psm, uint16\+\_\+t credit)
+\begin{DoxyCompactList}\small\item\em Inform peer device that local device can receive more packets, this is a blocking A\+PI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__l2cap__group_ga5fd4f7aa543a232bd7da6eb25c1df727}{at\+\_\+ble\+\_\+lecb\+\_\+send}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, uint16\+\_\+t cid, uint16\+\_\+t len, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em Send data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all L2\+C\+AP layer A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__l2cap__group_ga48aebfd5595b6064804c582ecc554bfe}\label{group__l2cap__group_ga48aebfd5595b6064804c582ecc554bfe}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_add\_credit@{at\_ble\_lecb\_add\_credit}}
+\index{at\_ble\_lecb\_add\_credit@{at\_ble\_lecb\_add\_credit}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_add\_credit()}{at\_ble\_lecb\_add\_credit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+add\+\_\+credit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{le\+\_\+psm,  }\item[{uint16\+\_\+t}]{credit }\end{DoxyParamCaption})}
+
+
+
+Inform peer device that local device can receive more packets, this is a blocking A\+PI. 
+
+When a local device increments its credit it notifies the peer device that it\textquotesingle{}s able to receive more packets (for example after it has finished processing one or more packets) , the peer device receives an \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaf2cacdabac494c8b868713acb484e1e7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+A\+D\+D\+\_\+\+C\+R\+E\+D\+I\+T\+\_\+\+I\+ND}} event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE Protocol/\+Service Multiplexer \\
+\hline
+\mbox{\texttt{ in}}  & {\em credit} & RX credit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_gaa0c1f138e2cb7a4f986d6e1b31a44531}\label{group__l2cap__group_gaa0c1f138e2cb7a4f986d6e1b31a44531}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_cfm@{at\_ble\_lecb\_cfm}}
+\index{at\_ble\_lecb\_cfm@{at\_ble\_lecb\_cfm}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_cfm()}{at\_ble\_lecb\_cfm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+cfm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{le\+\_\+psm,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ad1ded688a1b188cf8e6bac1ab97f276e}{at\+\_\+ble\+\_\+lecb\+\_\+status}}}]{status }\end{DoxyParamCaption})}
+
+
+
+Server confirms if a credit based connection is completed successfully. 
+
+Server accepts or rejects an incoming credit based connection request , this A\+PI should be used when a connection request is received \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba459fa57065ec575b1828a2381e373cc1}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+C\+O\+N\+N\+\_\+\+R\+EQ}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE Protocol/\+Service Multiplexer \\
+\hline
+\mbox{\texttt{ in}}  & {\em status} & status of operation refer to at\+\_\+ble\+\_\+lecb\+\_\+status\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_ga6ad32497a93633da95781e9e2000877b}\label{group__l2cap__group_ga6ad32497a93633da95781e9e2000877b}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_connect@{at\_ble\_lecb\_connect}}
+\index{at\_ble\_lecb\_connect@{at\_ble\_lecb\_connect}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_connect()}{at\_ble\_lecb\_connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{le\+\_\+psm,  }\item[{uint16\+\_\+t}]{cid,  }\item[{uint16\+\_\+t}]{intial\+\_\+credit }\end{DoxyParamCaption})}
+
+
+
+Initiate a credit based connection. 
+
+Client initiates a credit based connection procedure to a server on a specific channel, in response \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8e0cc9a45665c4244a72002d4dc147a2}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}} should be received indicating successful or failed connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE Protocol/\+Service Multiplexer \\
+\hline
+\mbox{\texttt{ in}}  & {\em cid} & channel id \\
+\hline
+\mbox{\texttt{ in}}  & {\em intial\+\_\+credit} & initial credit allocated for the LE credit based connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_ga18f4585bcee377813ff43ecd91018039}\label{group__l2cap__group_ga18f4585bcee377813ff43ecd91018039}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_create@{at\_ble\_lecb\_create}}
+\index{at\_ble\_lecb\_create@{at\_ble\_lecb\_create}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_create()}{at\_ble\_lecb\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_aa1a90dfd6d45ff1a1948ea7b02821558}{at\+\_\+ble\+\_\+lecb\+\_\+sec\+\_\+level\+\_\+t}}}]{sec\+\_\+level,  }\item[{uint16\+\_\+t}]{le\+\_\+psm,  }\item[{uint16\+\_\+t}]{cid,  }\item[{uint16\+\_\+t}]{initial\+\_\+credit }\end{DoxyParamCaption})}
+
+
+
+Initialize a credit based channel to receive a credit based connection request, this A\+PI is blocking. 
+
+Server opens a channel to receive credit based connection requests
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em sec\+\_\+level} & security level refer to \mbox{\hyperlink{at__ble__api_8h_aa1a90dfd6d45ff1a1948ea7b02821558}{at\+\_\+ble\+\_\+lecb\+\_\+sec\+\_\+level\+\_\+t}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE protocol/service multiplexer, valid dynamic range falls between 0x80 -\/ 0x\+FF or a fixed S\+IG assigned psm may be used between 0x00-\/0x7F \\
+\hline
+\mbox{\texttt{ in}}  & {\em cid} & channel id should be in the range of dynamically allocated channels 0x40 -\/ 0x7F \\
+\hline
+\mbox{\texttt{ in}}  & {\em initial\+\_\+credit} & initial credit allocated for the LE credit based connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_ga0cc998a2bb26b0dbee0f911969762299}\label{group__l2cap__group_ga0cc998a2bb26b0dbee0f911969762299}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_destroy@{at\_ble\_lecb\_destroy}}
+\index{at\_ble\_lecb\_destroy@{at\_ble\_lecb\_destroy}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_destroy()}{at\_ble\_lecb\_destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{le\+\_\+psm }\end{DoxyParamCaption})}
+
+
+
+Close an initialized credit based channel, this A\+PI is blocking. 
+
+Server destroys an already initialized credit based channel
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE protocol/service multiplexer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_ga54fabd178d032ebfb0e401853563e4ae}\label{group__l2cap__group_ga54fabd178d032ebfb0e401853563e4ae}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_disconnect@{at\_ble\_lecb\_disconnect}}
+\index{at\_ble\_lecb\_disconnect@{at\_ble\_lecb\_disconnect}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_disconnect()}{at\_ble\_lecb\_disconnect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{le\+\_\+psm }\end{DoxyParamCaption})}
+
+
+
+Terminate a credit based connection. 
+
+Server or client disconnects a credit based link, in response event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebafa8c8d306855633521ea3dba779d2622}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}} should be received
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em le\+\_\+psm} & LE Protocol/\+Service Multiplexer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__l2cap__group_ga5fd4f7aa543a232bd7da6eb25c1df727}\label{group__l2cap__group_ga5fd4f7aa543a232bd7da6eb25c1df727}} 
+\index{L2CAP APIs@{L2CAP APIs}!at\_ble\_lecb\_send@{at\_ble\_lecb\_send}}
+\index{at\_ble\_lecb\_send@{at\_ble\_lecb\_send}!L2CAP APIs@{L2CAP APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_lecb\_send()}{at\_ble\_lecb\_send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+lecb\+\_\+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{uint16\+\_\+t}]{cid,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Send data. 
+
+Sends a data packet to peer with length less than \mbox{\hyperlink{at__ble__api_8h_a4c284fdb7550bdc22991f4580a88c321}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+M\+A\+X\+\_\+\+P\+K\+T\+\_\+\+S\+I\+ZE}}, in response \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba441882d6e928be9bcca0c21df3f61db7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+S\+E\+N\+D\+\_\+\+R\+E\+SP}} should be received indicating a free available buffer to send. On the other side the receiving device gets an \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba5bc7d614586ec70755e6a85c18a4147c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+C\+I\+E\+V\+ED}} event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em cid} & channel id \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & data length \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & data pointer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

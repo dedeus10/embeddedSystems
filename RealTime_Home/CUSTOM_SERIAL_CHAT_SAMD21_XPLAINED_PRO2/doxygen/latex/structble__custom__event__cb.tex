@@ -1,0 +1,77 @@
+\hypertarget{structble__custom__event__cb}{}\section{ble\+\_\+custom\+\_\+event\+\_\+cb Struct Reference}
+\label{structble__custom__event__cb}\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+
+
+{\ttfamily \#include $<$ble\+\_\+manager.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__custom__event__cb_a7dcbd675e80d7e2b00fef81e694db3d3}{custom\+\_\+event}}
+\begin{DoxyCompactList}\small\item\em Custom Event are used by application or in I\+RQ\textquotesingle{}s to post the task which can be handled at user application. \mbox{\hyperlink{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}{at\+\_\+ble\+\_\+event\+\_\+user\+\_\+defined\+\_\+post}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__custom__event__cb_a31eb831ce5e174b53908aab177569975}{device\+\_\+ready}}
+\begin{DoxyCompactList}\small\item\em Device Ready event\textquotesingle{}s are used to inform the application the B\+LE device is ready for accepting the user request, \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba4e0471236a4d570dc8e5bc42937f2dc4}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+R\+E\+A\+DY}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__custom__event__cb_abbbc9530a8c2882e78f5948698f4b564}{device\+\_\+dead}}
+\begin{DoxyCompactList}\small\item\em Device read condition occurs when the device reached condition where no request can be processed. The application must start from \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\+\_\+ble\+\_\+init}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__custom__event__cb_af8a4fcc9e342ecba89cc4f9fdb31d78a}{device\+\_\+out\+\_\+of\+\_\+sync}}
+\begin{DoxyCompactList}\small\item\em B\+LE Device is in out-\/of-\/sync due loss of message that\textquotesingle{}s not processed or not much memory pool available \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebae0cc8d4f98e3215ec1d3b43e8fac6d46}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+S\+Y\+NC}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__custom__event__cb_a2a03c6107197035010df31d1c99e4100}{event\+\_\+max}}
+\begin{DoxyCompactList}\small\item\em B\+LE Maximum events are reached \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba6ec96e354e65e3d209e0873eb5ae1a90}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+AX}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structble__custom__event__cb_a7dcbd675e80d7e2b00fef81e694db3d3}\label{structble__custom__event__cb_a7dcbd675e80d7e2b00fef81e694db3d3}} 
+\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}!custom\_event@{custom\_event}}
+\index{custom\_event@{custom\_event}!ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+\subsubsection{\texorpdfstring{custom\_event}{custom\_event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} custom\+\_\+event}
+
+
+
+Custom Event are used by application or in I\+RQ\textquotesingle{}s to post the task which can be handled at user application. \mbox{\hyperlink{group__misc__group_gadc0a033c5b84eee9ffd4c6c394be2520}{at\+\_\+ble\+\_\+event\+\_\+user\+\_\+defined\+\_\+post}}. 
+
+\mbox{\Hypertarget{structble__custom__event__cb_abbbc9530a8c2882e78f5948698f4b564}\label{structble__custom__event__cb_abbbc9530a8c2882e78f5948698f4b564}} 
+\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}!device\_dead@{device\_dead}}
+\index{device\_dead@{device\_dead}!ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+\subsubsection{\texorpdfstring{device\_dead}{device\_dead}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} device\+\_\+dead}
+
+
+
+Device read condition occurs when the device reached condition where no request can be processed. The application must start from \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\+\_\+ble\+\_\+init}}. 
+
+\mbox{\Hypertarget{structble__custom__event__cb_af8a4fcc9e342ecba89cc4f9fdb31d78a}\label{structble__custom__event__cb_af8a4fcc9e342ecba89cc4f9fdb31d78a}} 
+\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}!device\_out\_of\_sync@{device\_out\_of\_sync}}
+\index{device\_out\_of\_sync@{device\_out\_of\_sync}!ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+\subsubsection{\texorpdfstring{device\_out\_of\_sync}{device\_out\_of\_sync}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} device\+\_\+out\+\_\+of\+\_\+sync}
+
+
+
+B\+LE Device is in out-\/of-\/sync due loss of message that\textquotesingle{}s not processed or not much memory pool available \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebae0cc8d4f98e3215ec1d3b43e8fac6d46}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+S\+Y\+NC}}. 
+
+\mbox{\Hypertarget{structble__custom__event__cb_a31eb831ce5e174b53908aab177569975}\label{structble__custom__event__cb_a31eb831ce5e174b53908aab177569975}} 
+\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}!device\_ready@{device\_ready}}
+\index{device\_ready@{device\_ready}!ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+\subsubsection{\texorpdfstring{device\_ready}{device\_ready}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} device\+\_\+ready}
+
+
+
+Device Ready event\textquotesingle{}s are used to inform the application the B\+LE device is ready for accepting the user request, \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba4e0471236a4d570dc8e5bc42937f2dc4}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+R\+E\+A\+DY}}. 
+
+\mbox{\Hypertarget{structble__custom__event__cb_a2a03c6107197035010df31d1c99e4100}\label{structble__custom__event__cb_a2a03c6107197035010df31d1c99e4100}} 
+\index{ble\_custom\_event\_cb@{ble\_custom\_event\_cb}!event\_max@{event\_max}}
+\index{event\_max@{event\_max}!ble\_custom\_event\_cb@{ble\_custom\_event\_cb}}
+\subsubsection{\texorpdfstring{event\_max}{event\_max}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} event\+\_\+max}
+
+
+
+B\+LE Maximum events are reached \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba6ec96e354e65e3d209e0873eb5ae1a90}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+M\+AX}}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/ble\+\_\+mgr/\mbox{\hyperlink{ble__manager_8h}{ble\+\_\+manager.\+h}}\end{DoxyCompactItemize}

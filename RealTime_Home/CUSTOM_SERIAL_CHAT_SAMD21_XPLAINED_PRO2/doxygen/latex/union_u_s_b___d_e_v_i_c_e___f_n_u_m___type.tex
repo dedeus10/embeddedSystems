@@ -1,0 +1,65 @@
+\hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type}{}\section{U\+S\+B\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+F\+N\+U\+M\+\_\+\+Type Union Reference}
+\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type}\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+
+
+{\ttfamily \#include $<$usb.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint16\_t \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_ae1a283990e0aa3baecda4380fb9bf19e}{MFNUM}}:3\\
+\>uint16\_t \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a7df8ebe952615d830733f3f183d79dc9}{FNUM}}:11\\
+\>uint16\_t \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a77132c2c26a75f5b8751b235cda23828}{\_\_pad0\_\_}}:1\\
+\>uint16\_t \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a3a956bbb04ac866c051cee136dff18c3}{FNCERR}}:1\\
+\} \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a1e9a3ed0199f4932e79600746bcba0fa}{bit}}\\
+
+\end{tabbing}\item 
+uint16\+\_\+t \mbox{\hyperlink{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a11760f5020019f4aa8cb02e694f7cc44}{reg}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a77132c2c26a75f5b8751b235cda23828}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a77132c2c26a75f5b8751b235cda23828}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint16\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+bit\+: 14 Reserved \mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a1e9a3ed0199f4932e79600746bcba0fa}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a1e9a3ed0199f4932e79600746bcba0fa}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!bit@{bit}}
+\index{bit@{bit}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{bit}{bit}}
+{\footnotesize\ttfamily struct \{ ... \}   bit}
+
+Structure used for bit access \mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a3a956bbb04ac866c051cee136dff18c3}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a3a956bbb04ac866c051cee136dff18c3}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!FNCERR@{FNCERR}}
+\index{FNCERR@{FNCERR}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{FNCERR}{FNCERR}}
+{\footnotesize\ttfamily uint16\+\_\+t F\+N\+C\+E\+RR}
+
+bit\+: 15 Frame Number C\+RC Error \mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a7df8ebe952615d830733f3f183d79dc9}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a7df8ebe952615d830733f3f183d79dc9}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!FNUM@{FNUM}}
+\index{FNUM@{FNUM}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{FNUM}{FNUM}}
+{\footnotesize\ttfamily uint16\+\_\+t F\+N\+UM}
+
+bit\+: 3..13 Frame Number \mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_ae1a283990e0aa3baecda4380fb9bf19e}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_ae1a283990e0aa3baecda4380fb9bf19e}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!MFNUM@{MFNUM}}
+\index{MFNUM@{MFNUM}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{MFNUM}{MFNUM}}
+{\footnotesize\ttfamily uint16\+\_\+t M\+F\+N\+UM}
+
+bit\+: 0.. 2 Micro Frame Number \mbox{\Hypertarget{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a11760f5020019f4aa8cb02e694f7cc44}\label{union_u_s_b___d_e_v_i_c_e___f_n_u_m___type_a11760f5020019f4aa8cb02e694f7cc44}} 
+\index{USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}!reg@{reg}}
+\index{reg@{reg}!USB\_DEVICE\_FNUM\_Type@{USB\_DEVICE\_FNUM\_Type}}
+\subsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily uint16\+\_\+t reg}
+
+Type used for register access 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/utils/cmsis/samd21/include/component/\mbox{\hyperlink{component_2usb_8h}{usb.\+h}}\end{DoxyCompactItemize}

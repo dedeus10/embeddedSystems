@@ -1,0 +1,56 @@
+\hypertarget{at30tse75x_8c}{}\section{A\+S\+F/sam0/components/sensor/at30tse75x/at30tse75x.c File Reference}
+\label{at30tse75x_8c}\index{ASF/sam0/components/sensor/at30tse75x/at30tse75x.c@{ASF/sam0/components/sensor/at30tse75x/at30tse75x.c}}
+
+
+A\+T30\+T\+S\+E75X driver.  
+
+
+{\ttfamily \#include $<$at30tse75x.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6690a47815ec89b0c49c8a1c6ec84e08}{at30tse\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Configures the S\+E\+R\+C\+OM I2C master to be used with the A\+T30\+T\+S\+E75X device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga9b61db47b62de4af26ffc0864ae5a86a}{at30tse\+\_\+eeprom\+\_\+write}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length, uint8\+\_\+t word\+\_\+addr, uint8\+\_\+t page)
+\begin{DoxyCompactList}\small\item\em Writes the E\+E\+P\+R\+OM with data provided. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga906d79173e2ad02ce77203db458aa1ef}{at30tse\+\_\+eeprom\+\_\+read}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length, uint8\+\_\+t word\+\_\+addr, uint8\+\_\+t page)
+\begin{DoxyCompactList}\small\item\em Reads data from the E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga5c34d0f1aab15ec6899f2e01f8abaf7b}{at30tse\+\_\+set\+\_\+register\+\_\+pointer}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Sets the register pointer with specified reg value. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gaa67338170e6fcaa17f859d11c85628de}{at30tse\+\_\+read\+\_\+register}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type, uint8\+\_\+t reg\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Reads the value from the register reg. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6fd33519be27348bc7feacc8b04f0cb5}{at30tse\+\_\+write\+\_\+register}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type, uint8\+\_\+t reg\+\_\+size, uint16\+\_\+t reg\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Writes the specified register reg with the reg\+\_\+value passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga349fec0b2cdbe66a733483f4e348de73}{at30tse\+\_\+write\+\_\+config\+\_\+register}} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes the configuration register reg with the value passed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga266be5475b64f6c2167851a81567e203}{at30tse\+\_\+read\+\_\+temperature}} ()
+\begin{DoxyCompactList}\small\item\em Reads the temperature value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} \mbox{\hyperlink{at30tse75x_8c_a0b0d7c13e465f5dda9c784525c638592}{dev\+\_\+inst\+\_\+at30tse75x}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{at30tse75x_8c_a2b8bdf2ccdee1cc9e95e8ec7714b68d2}{resolution}} = \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga4e5f0fc674b13d133a36ef34add08b15}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+9\+\_\+bit}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+T30\+T\+S\+E75X driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{at30tse75x_8c_a0b0d7c13e465f5dda9c784525c638592}\label{at30tse75x_8c_a0b0d7c13e465f5dda9c784525c638592}} 
+\index{at30tse75x.c@{at30tse75x.c}!dev\_inst\_at30tse75x@{dev\_inst\_at30tse75x}}
+\index{dev\_inst\_at30tse75x@{dev\_inst\_at30tse75x}!at30tse75x.c@{at30tse75x.c}}
+\subsubsection{\texorpdfstring{dev\_inst\_at30tse75x}{dev\_inst\_at30tse75x}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} dev\+\_\+inst\+\_\+at30tse75x}
+
+\mbox{\Hypertarget{at30tse75x_8c_a2b8bdf2ccdee1cc9e95e8ec7714b68d2}\label{at30tse75x_8c_a2b8bdf2ccdee1cc9e95e8ec7714b68d2}} 
+\index{at30tse75x.c@{at30tse75x.c}!resolution@{resolution}}
+\index{resolution@{resolution}!at30tse75x.c@{at30tse75x.c}}
+\subsubsection{\texorpdfstring{resolution}{resolution}}
+{\footnotesize\ttfamily uint8\+\_\+t resolution = \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga4e5f0fc674b13d133a36ef34add08b15}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+9\+\_\+bit}}}
+

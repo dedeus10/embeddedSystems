@@ -1,0 +1,53 @@
+\hypertarget{extint__callback_8c}{}\section{A\+S\+F/sam0/drivers/extint/extint\+\_\+callback.c File Reference}
+\label{extint__callback_8c}\index{ASF/sam0/drivers/extint/extint\_callback.c@{ASF/sam0/drivers/extint/extint\_callback.c}}
+
+
+S\+AM External Interrupt Driver.  
+
+
+{\ttfamily \#include \char`\"{}extint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}extint\+\_\+callback.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gae1bedc3fd379b3dd62f88efb17a2758f}{extint\+\_\+register\+\_\+callback}} (const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}} callback, const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Registers an asynchronous callback function with the driver. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga47bd63b128d0b1799ef0386355f85f77}{extint\+\_\+unregister\+\_\+callback}} (const \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}} callback, const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Unregisters an asynchronous callback function with the driver. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga09e5568abbb3e5042b1048774a605ea4}{extint\+\_\+chan\+\_\+enable\+\_\+callback}} (const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Enables asynchronous callback generation for a given channel and type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga939803cc928def37adf4f22bc727e8f7}{extint\+\_\+chan\+\_\+disable\+\_\+callback}} (const uint8\+\_\+t channel, const enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaf22af5117db5d011b371b05dfa8b50e3}{extint\+\_\+callback\+\_\+type}} type)
+\begin{DoxyCompactList}\small\item\em Disables asynchronous callback generation for a given channel and type. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga1a7c8127569a9f83447f463bccd932a4}{extint\+\_\+get\+\_\+current\+\_\+channel}} (void)
+\begin{DoxyCompactList}\small\item\em Find what channel caused the callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___s_a_m_d21_e15_a__cmsis_gacc21e0a52a69e2503cd55a9b81409411}{E\+I\+C\+\_\+\+Handler}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}} \mbox{\hyperlink{extint__callback_8c_ac439c86bc60dd262bfe3c8be54244f7d}{\+\_\+extint\+\_\+dev}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{extint__callback_8c_a9758f7a3c49a2631d358458494979619}{\+\_\+current\+\_\+channel}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM External Interrupt Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{extint__callback_8c_a9758f7a3c49a2631d358458494979619}\label{extint__callback_8c_a9758f7a3c49a2631d358458494979619}} 
+\index{extint\_callback.c@{extint\_callback.c}!\_current\_channel@{\_current\_channel}}
+\index{\_current\_channel@{\_current\_channel}!extint\_callback.c@{extint\_callback.c}}
+\subsubsection{\texorpdfstring{\_current\_channel}{\_current\_channel}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+current\+\_\+channel}
+
+\mbox{\Hypertarget{extint__callback_8c_ac439c86bc60dd262bfe3c8be54244f7d}\label{extint__callback_8c_ac439c86bc60dd262bfe3c8be54244f7d}} 
+\index{extint\_callback.c@{extint\_callback.c}!\_extint\_dev@{\_extint\_dev}}
+\index{\_extint\_dev@{\_extint\_dev}!extint\_callback.c@{extint\_callback.c}}
+\subsubsection{\texorpdfstring{\_extint\_dev}{\_extint\_dev}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}} \+\_\+extint\+\_\+dev}
+

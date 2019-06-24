@@ -1,0 +1,46 @@
+\hypertarget{i2c__common_8h}{}\section{A\+S\+F/sam0/drivers/sercom/i2c/i2c\+\_\+common.h File Reference}
+\label{i2c__common_8h}\index{ASF/sam0/drivers/sercom/i2c/i2c\_common.h@{ASF/sam0/drivers/sercom/i2c/i2c\_common.h}}
+
+
+S\+AM S\+E\+R\+C\+OM I2C Common Driver.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$sercom.\+h$>$}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fc}{i2c\+\_\+transfer\+\_\+direction}} \{ \mbox{\hyperlink{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fcaea641e04129636c150a843d7375b9269}{I2\+C\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+W\+R\+I\+TE}} = 0, 
+\mbox{\hyperlink{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fca2b5fe52816ac7ab8ea272beb274cfd0c}{I2\+C\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+R\+E\+AD}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Transfer direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM S\+E\+R\+C\+OM I2C Common Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fc}\label{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fc}} 
+\index{i2c\_common.h@{i2c\_common.h}!i2c\_transfer\_direction@{i2c\_transfer\_direction}}
+\index{i2c\_transfer\_direction@{i2c\_transfer\_direction}!i2c\_common.h@{i2c\_common.h}}
+\subsubsection{\texorpdfstring{i2c\_transfer\_direction}{i2c\_transfer\_direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fc}{i2c\+\_\+transfer\+\_\+direction}}}
+
+
+
+Transfer direction. 
+
+For master\+: transfer direction or setting direction bit in address. For slave\+: direction of request from master. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_TRANSFER\_WRITE@{I2C\_TRANSFER\_WRITE}!i2c\_common.h@{i2c\_common.h}}\index{i2c\_common.h@{i2c\_common.h}!I2C\_TRANSFER\_WRITE@{I2C\_TRANSFER\_WRITE}}}\mbox{\Hypertarget{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fcaea641e04129636c150a843d7375b9269}\label{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fcaea641e04129636c150a843d7375b9269}} 
+I2\+C\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+W\+R\+I\+TE&Master write operation is in progress \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I2C\_TRANSFER\_READ@{I2C\_TRANSFER\_READ}!i2c\_common.h@{i2c\_common.h}}\index{i2c\_common.h@{i2c\_common.h}!I2C\_TRANSFER\_READ@{I2C\_TRANSFER\_READ}}}\mbox{\Hypertarget{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fca2b5fe52816ac7ab8ea272beb274cfd0c}\label{i2c__common_8h_ad7ea327439ceaf6931b91865d12449fca2b5fe52816ac7ab8ea272beb274cfd0c}} 
+I2\+C\+\_\+\+T\+R\+A\+N\+S\+F\+E\+R\+\_\+\+R\+E\+AD&Master read operation is in progress \\
+\hline
+
+\end{DoxyEnumFields}

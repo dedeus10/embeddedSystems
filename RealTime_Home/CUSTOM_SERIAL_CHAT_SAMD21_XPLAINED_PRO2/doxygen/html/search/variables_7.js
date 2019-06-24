@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['g_5finterrupt_5fenabled',['g_interrupt_enabled',['../group__interrupt__group.html#ga18a272af1cdb2009183461e1647f4e86',1,'g_interrupt_enabled():&#160;interrupt_sam_nvic.c'],['../group__interrupt__group.html#ga18a272af1cdb2009183461e1647f4e86',1,'g_interrupt_enabled():&#160;interrupt_sam_nvic.c']]],
+  ['gain',['GAIN',['../union_a_d_c___i_n_p_u_t_c_t_r_l___type.html#ac0eb4e570b09de284fe5ba0af42d45d1',1,'ADC_INPUTCTRL_Type::GAIN()'],['../union_s_y_s_c_t_r_l___x_o_s_c___type.html#af8050124da1730d0de52b84f67b0b94c',1,'SYSCTRL_XOSC_Type::GAIN()']]],
+  ['gaincorr',['GAINCORR',['../union_a_d_c___g_a_i_n_c_o_r_r___type.html#a8c89a5e0f788ce02b3236a5501a34c53',1,'ADC_GAINCORR_Type::GAINCORR()'],['../struct_adc.html#ad4d4aa9db75c451e2b6ecf78eac5b463',1,'Adc::GAINCORR()']]],
+  ['gap_5fstart_5fhdl',['gap_start_hdl',['../structat__ble__dev__config__t.html#a7b7b7cf963dfb1fcd5f4abcf277fde51',1,'at_ble_dev_config_t']]],
+  ['gatt_5fstart_5fhdl',['gatt_start_hdl',['../structat__ble__dev__config__t.html#a92bcdddc063e1c24d0edee9abcdfeea7',1,'at_ble_dev_config_t']]],
+  ['gclk_5f',['GCLK_',['../union_p_m___a_p_b_a_m_a_s_k___type.html#a11e26091ee645673dbb659d81cf3b0ad',1,'PM_APBAMASK_Type']]],
+  ['gclkreq',['GCLKREQ',['../union_e_v_s_y_s___c_t_r_l___type.html#aee1edc2a75b1462faacad09193f48d1b',1,'EVSYS_CTRL_Type']]],
+  ['gcmd',['GCMD',['../union_s_e_r_c_o_m___i2_c_s___c_t_r_l_b___type.html#aef48418e042792ba139d48803d664101',1,'SERCOM_I2CS_CTRLB_Type']]],
+  ['gen',['GEN',['../union_g_c_l_k___c_l_k_c_t_r_l___type.html#a78713187f96712c67640c9203c167fb8',1,'GCLK_CLKCTRL_Type']]],
+  ['gencen',['GENCEN',['../union_s_e_r_c_o_m___i2_c_s___a_d_d_r___type.html#aaf6e2f38f3115f0928f5dfee8a1eec39',1,'SERCOM_I2CS_ADDR_Type']]],
+  ['genctrl',['GENCTRL',['../struct_gclk.html#aa25fe955229fab71288dcc86fe3e672b',1,'Gclk']]],
+  ['gendiv',['GENDIV',['../struct_gclk.html#aa48268a120aa8b1327323004b3248bdc',1,'Gclk']]],
+  ['genen',['GENEN',['../union_g_c_l_k___g_e_n_c_t_r_l___type.html#a626ef4f7972b8dfa0bb03ccbe0a5323e',1,'GCLK_GENCTRL_Type']]],
+  ['generate_5fevent_5fon_5fcompare_5fchannel',['generate_event_on_compare_channel',['../structtc__events.html#a4317ebe6ee0706835fb2146672afd8c8',1,'tc_events']]],
+  ['generate_5fevent_5fon_5fdetect',['generate_event_on_detect',['../structextint__events.html#a077b997505baa51601a12b71027f1c02',1,'extint_events']]],
+  ['generate_5fevent_5fon_5foverflow',['generate_event_on_overflow',['../structtc__events.html#a94a6bf0d78fb0f99a092994a7ec6d2dd',1,'tc_events']]],
+  ['generator_5fis_5fset',['generator_is_set',['../struct__sercom__conf.html#a2ea6b54664ddb4fa40938e42f3f90c8b',1,'_sercom_conf']]],
+  ['generator_5fsource',['generator_source',['../structi2c__master__config.html#a2dba667c6d06bff254b7284d45dd02a3',1,'i2c_master_config::generator_source()'],['../struct__sercom__conf.html#a2dba667c6d06bff254b7284d45dd02a3',1,'_sercom_conf::generator_source()'],['../structspi__config.html#a2dba667c6d06bff254b7284d45dd02a3',1,'spi_config::generator_source()'],['../structusart__config.html#a2dba667c6d06bff254b7284d45dd02a3',1,'usart_config::generator_source()']]],
+  ['gnak',['GNAK',['../union_u_s_b___d_e_v_i_c_e___c_t_r_l_b___type.html#a51db4e96cb0c0e0c1aab09dfd97f1a38',1,'USB_DEVICE_CTRLB_Type']]],
+  ['gpio_5fpin',['gpio_pin',['../structextint__chan__conf.html#aaa3ba20871e508028b08eed10d08db84',1,'extint_chan_conf::gpio_pin()'],['../structextint__nmi__conf.html#aaa3ba20871e508028b08eed10d08db84',1,'extint_nmi_conf::gpio_pin()']]],
+  ['gpio_5fpin_5fmux',['gpio_pin_mux',['../structextint__chan__conf.html#ab223c84d8e5b59e9fcc8673c338a7a87',1,'extint_chan_conf::gpio_pin_mux()'],['../structextint__nmi__conf.html#ab223c84d8e5b59e9fcc8673c338a7a87',1,'extint_nmi_conf::gpio_pin_mux()']]],
+  ['gpio_5fpin_5fpull',['gpio_pin_pull',['../structextint__chan__conf.html#a2722ba2735f217f3c7e30f2e4135c134',1,'extint_chan_conf::gpio_pin_pull()'],['../structextint__nmi__conf.html#a2722ba2735f217f3c7e30f2e4135c134',1,'extint_nmi_conf::gpio_pin_pull()']]],
+  ['group',['Group',['../struct_port.html#a2835fbe01c690d47cdc62805282806c2',1,'Port']]]
+];

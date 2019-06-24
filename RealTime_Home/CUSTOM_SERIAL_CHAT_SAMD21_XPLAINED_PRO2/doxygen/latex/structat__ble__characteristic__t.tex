@@ -1,0 +1,161 @@
+\hypertarget{structat__ble__characteristic__t}{}\section{at\+\_\+ble\+\_\+characteristic\+\_\+t Struct Reference}
+\label{structat__ble__characteristic__t}\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+
+
+Characteristic structure.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a395cc1b8169d6bea42f786850fca098c}{char\+\_\+val\+\_\+handle}}
+\item 
+\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a679a8e56540040619aee07eb7a743859}{uuid}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a5f124b442695fa38f139ebe48167698d}{at\+\_\+ble\+\_\+char\+\_\+properties\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a0dafa6fd00ebd001cb8b6655e9806ed0}{properties}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structat__ble__characteristic__t_a6b60846854939357f47bec6cc755fc56}{init\+\_\+value}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__characteristic__t_a1bdee23606d013941b6df78daad85fcb}{value\+\_\+init\+\_\+len}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__characteristic__t_aa72b9c8715f94b93b1eb97309917821f}{value\+\_\+max\+\_\+len}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a7973bc0ef3b3e4a8860f82b22e515ffb}{value\+\_\+permissions}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{structat__ble__characteristic__t_af3b5cdae10fa0497c88f79ed49bc36f9}{user\+\_\+desc}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__characteristic__t_a3ff2debf9a9fb2766e86ce36d6262df6}{user\+\_\+desc\+\_\+len}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__characteristic__t_a1097a73ed510f3c33e3640e00aac3437}{user\+\_\+desc\+\_\+max\+\_\+len}}
+\item 
+\mbox{\hyperlink{structat__ble__char__presentation__t}{at\+\_\+ble\+\_\+char\+\_\+presentation\+\_\+t}} $\ast$ \mbox{\hyperlink{structat__ble__characteristic__t_a6309826fe45ca7d0688ead29f7ae01a2}{presentation\+\_\+format}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a4e7e0eada43a36e3023774eb0ea3f602}{user\+\_\+desc\+\_\+permissions}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a1568a524b40bd213a279b7c5b9450c89}{client\+\_\+config\+\_\+permissions}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a017b02aee27db11073a2d6211c0f2b92}{server\+\_\+config\+\_\+permissions}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a1038ce1b0da35d52ca426e4f494c90e9}{user\+\_\+desc\+\_\+handle}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_a78e34afb0f2fb8648bd0ef95814fe899}{client\+\_\+config\+\_\+handle}}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} \mbox{\hyperlink{structat__ble__characteristic__t_ab15ca7113a171b6391a7e88fff8e81d0}{server\+\_\+config\+\_\+handle}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Characteristic structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__characteristic__t_a395cc1b8169d6bea42f786850fca098c}\label{structat__ble__characteristic__t_a395cc1b8169d6bea42f786850fca098c}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!char\_val\_handle@{char\_val\_handle}}
+\index{char\_val\_handle@{char\_val\_handle}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{char\_val\_handle}{char\_val\_handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} char\+\_\+val\+\_\+handle}
+
+Here the stack will store the char. value handle for future use \mbox{\Hypertarget{structat__ble__characteristic__t_a78e34afb0f2fb8648bd0ef95814fe899}\label{structat__ble__characteristic__t_a78e34afb0f2fb8648bd0ef95814fe899}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!client\_config\_handle@{client\_config\_handle}}
+\index{client\_config\_handle@{client\_config\_handle}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{client\_config\_handle}{client\_config\_handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} client\+\_\+config\+\_\+handle}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_a1568a524b40bd213a279b7c5b9450c89}\label{structat__ble__characteristic__t_a1568a524b40bd213a279b7c5b9450c89}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!client\_config\_permissions@{client\_config\_permissions}}
+\index{client\_config\_permissions@{client\_config\_permissions}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{client\_config\_permissions}{client\_config\_permissions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} client\+\_\+config\+\_\+permissions}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_a6b60846854939357f47bec6cc755fc56}\label{structat__ble__characteristic__t_a6b60846854939357f47bec6cc755fc56}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!init\_value@{init\_value}}
+\index{init\_value@{init\_value}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{init\_value}{init\_value}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ init\+\_\+value}
+
+initial value of this characteristic \mbox{\Hypertarget{structat__ble__characteristic__t_a6309826fe45ca7d0688ead29f7ae01a2}\label{structat__ble__characteristic__t_a6309826fe45ca7d0688ead29f7ae01a2}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!presentation\_format@{presentation\_format}}
+\index{presentation\_format@{presentation\_format}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{presentation\_format}{presentation\_format}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__char__presentation__t}{at\+\_\+ble\+\_\+char\+\_\+presentation\+\_\+t}}$\ast$ presentation\+\_\+format}
+
+Characteristic presentation format, this value will be stored in the relevant descriptor, if no presentation format is necessary set to N\+U\+LL \mbox{\Hypertarget{structat__ble__characteristic__t_a0dafa6fd00ebd001cb8b6655e9806ed0}\label{structat__ble__characteristic__t_a0dafa6fd00ebd001cb8b6655e9806ed0}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!properties@{properties}}
+\index{properties@{properties}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a5f124b442695fa38f139ebe48167698d}{at\+\_\+ble\+\_\+char\+\_\+properties\+\_\+t}} properties}
+
+Characteristic properties, values for Client Characteristic Configuration Descriptor and Server Characteristic Configuration Descriptor will be decided from this value \mbox{\Hypertarget{structat__ble__characteristic__t_ab15ca7113a171b6391a7e88fff8e81d0}\label{structat__ble__characteristic__t_ab15ca7113a171b6391a7e88fff8e81d0}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!server\_config\_handle@{server\_config\_handle}}
+\index{server\_config\_handle@{server\_config\_handle}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{server\_config\_handle}{server\_config\_handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} server\+\_\+config\+\_\+handle}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_a017b02aee27db11073a2d6211c0f2b92}\label{structat__ble__characteristic__t_a017b02aee27db11073a2d6211c0f2b92}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!server\_config\_permissions@{server\_config\_permissions}}
+\index{server\_config\_permissions@{server\_config\_permissions}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{server\_config\_permissions}{server\_config\_permissions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} server\+\_\+config\+\_\+permissions}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_af3b5cdae10fa0497c88f79ed49bc36f9}\label{structat__ble__characteristic__t_af3b5cdae10fa0497c88f79ed49bc36f9}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!user\_desc@{user\_desc}}
+\index{user\_desc@{user\_desc}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{user\_desc}{user\_desc}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ user\+\_\+desc}
+
+a user friendly description, this value will be stored in the relevant descriptor, if no user description is desired set to N\+U\+LL \mbox{\Hypertarget{structat__ble__characteristic__t_a1038ce1b0da35d52ca426e4f494c90e9}\label{structat__ble__characteristic__t_a1038ce1b0da35d52ca426e4f494c90e9}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!user\_desc\_handle@{user\_desc\_handle}}
+\index{user\_desc\_handle@{user\_desc\_handle}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{user\_desc\_handle}{user\_desc\_handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} user\+\_\+desc\+\_\+handle}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_a3ff2debf9a9fb2766e86ce36d6262df6}\label{structat__ble__characteristic__t_a3ff2debf9a9fb2766e86ce36d6262df6}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!user\_desc\_len@{user\_desc\_len}}
+\index{user\_desc\_len@{user\_desc\_len}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{user\_desc\_len}{user\_desc\_len}}
+{\footnotesize\ttfamily uint16\+\_\+t user\+\_\+desc\+\_\+len}
+
+the user friendly description length, this value will be stored in the relevant descriptor, if no user description is desired set to 0 \mbox{\Hypertarget{structat__ble__characteristic__t_a1097a73ed510f3c33e3640e00aac3437}\label{structat__ble__characteristic__t_a1097a73ed510f3c33e3640e00aac3437}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!user\_desc\_max\_len@{user\_desc\_max\_len}}
+\index{user\_desc\_max\_len@{user\_desc\_max\_len}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{user\_desc\_max\_len}{user\_desc\_max\_len}}
+{\footnotesize\ttfamily uint16\+\_\+t user\+\_\+desc\+\_\+max\+\_\+len}
+
+Maximum possible length for the user friendly description, this value will be stored in the relevant descriptor, if no user description is desired set to 0 \mbox{\Hypertarget{structat__ble__characteristic__t_a4e7e0eada43a36e3023774eb0ea3f602}\label{structat__ble__characteristic__t_a4e7e0eada43a36e3023774eb0ea3f602}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!user\_desc\_permissions@{user\_desc\_permissions}}
+\index{user\_desc\_permissions@{user\_desc\_permissions}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{user\_desc\_permissions}{user\_desc\_permissions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} user\+\_\+desc\+\_\+permissions}
+
+\mbox{\Hypertarget{structat__ble__characteristic__t_a679a8e56540040619aee07eb7a743859}\label{structat__ble__characteristic__t_a679a8e56540040619aee07eb7a743859}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!uuid@{uuid}}
+\index{uuid@{uuid}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} uuid}
+
+Characteristic U\+U\+ID \mbox{\Hypertarget{structat__ble__characteristic__t_a1bdee23606d013941b6df78daad85fcb}\label{structat__ble__characteristic__t_a1bdee23606d013941b6df78daad85fcb}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!value\_init\_len@{value\_init\_len}}
+\index{value\_init\_len@{value\_init\_len}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{value\_init\_len}{value\_init\_len}}
+{\footnotesize\ttfamily uint16\+\_\+t value\+\_\+init\+\_\+len}
+
+initial value length \mbox{\Hypertarget{structat__ble__characteristic__t_aa72b9c8715f94b93b1eb97309917821f}\label{structat__ble__characteristic__t_aa72b9c8715f94b93b1eb97309917821f}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!value\_max\_len@{value\_max\_len}}
+\index{value\_max\_len@{value\_max\_len}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{value\_max\_len}{value\_max\_len}}
+{\footnotesize\ttfamily uint16\+\_\+t value\+\_\+max\+\_\+len}
+
+maximum possible length of the char. value \mbox{\Hypertarget{structat__ble__characteristic__t_a7973bc0ef3b3e4a8860f82b22e515ffb}\label{structat__ble__characteristic__t_a7973bc0ef3b3e4a8860f82b22e515ffb}} 
+\index{at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}!value\_permissions@{value\_permissions}}
+\index{value\_permissions@{value\_permissions}!at\_ble\_characteristic\_t@{at\_ble\_characteristic\_t}}
+\subsubsection{\texorpdfstring{value\_permissions}{value\_permissions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a5d87cd231ea3f9e11846dba7cf75eb61}{at\+\_\+ble\+\_\+attr\+\_\+permissions\+\_\+t}} value\+\_\+permissions}
+
+Value permissions 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

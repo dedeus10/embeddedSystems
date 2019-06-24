@@ -1,0 +1,65 @@
+\hypertarget{i2c__master__interrupt_8c}{}\section{A\+S\+F/sam0/drivers/sercom/i2c/i2c\+\_\+sam0/i2c\+\_\+master\+\_\+interrupt.c File Reference}
+\label{i2c__master__interrupt_8c}\index{ASF/sam0/drivers/sercom/i2c/i2c\_sam0/i2c\_master\_interrupt.c@{ASF/sam0/drivers/sercom/i2c/i2c\_sam0/i2c\_master\_interrupt.c}}
+
+
+S\+AM I2C Master Interrupt Driver.  
+
+
+{\ttfamily \#include \char`\"{}i2c\+\_\+master\+\_\+interrupt.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{i2c__master__interrupt_8c_a7d0a77ce8cb6d9c9d3ce526a549a96a9}{\+\_\+i2c\+\_\+master\+\_\+wait\+\_\+for\+\_\+bus}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{i2c__master__interrupt_8c_a34ab689f604f0a0c3fdf0313df36d895}{\+\_\+i2c\+\_\+master\+\_\+address\+\_\+response}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{i2c__master__interrupt_8c_a6f463f5dcebeadba7c123e8d17cdd750}{\+\_\+i2c\+\_\+master\+\_\+send\+\_\+hs\+\_\+master\+\_\+code}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, uint8\+\_\+t hs\+\_\+master\+\_\+code)
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_gaf3216a045490437ec87ba14ffeee5e7b}{i2c\+\_\+master\+\_\+register\+\_\+callback}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, const \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga0ef653593dbacc01735c61e59ec3f0da}{i2c\+\_\+master\+\_\+callback\+\_\+t}} callback, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga844ac2694772642cfee08a29c50bf054}{i2c\+\_\+master\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Registers callback for the specified callback type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga7432de8165fe68a4fdb1919a33b58250}{i2c\+\_\+master\+\_\+unregister\+\_\+callback}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga844ac2694772642cfee08a29c50bf054}{i2c\+\_\+master\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Unregisters callback for the specified callback type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga15590b71928847daf2826c9cc0482717}{i2c\+\_\+master\+\_\+read\+\_\+bytes}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga909337c580a4cd52dd209baaf2d399af}{i2c\+\_\+master\+\_\+read\+\_\+packet\+\_\+job}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\begin{DoxyCompactList}\small\item\em Initiates a read packet operation. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_gaa56093f3196b0f0ff368fa2ee21827f9}{i2c\+\_\+master\+\_\+read\+\_\+packet\+\_\+job\+\_\+no\+\_\+stop}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\begin{DoxyCompactList}\small\item\em Initiates a read packet operation without sending a S\+T\+OP condition when done. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_gaaff359c3a99851202a0190014d823c29}{i2c\+\_\+master\+\_\+read\+\_\+packet\+\_\+job\+\_\+no\+\_\+nack}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\begin{DoxyCompactList}\small\item\em Initiates a read packet operation without sending a N\+A\+CK signal and a S\+T\+OP condition when done. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga6f4d4f641c2bb1a905ad95a41ed3f741}{i2c\+\_\+master\+\_\+write\+\_\+bytes}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga5527434ebf5f0442a9f9ed9146005cba}{i2c\+\_\+master\+\_\+write\+\_\+packet\+\_\+job}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\begin{DoxyCompactList}\small\item\em Initiates a write packet operation. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_gaf1ee33c8f9b65ede18200b33500dae7d}{i2c\+\_\+master\+\_\+write\+\_\+packet\+\_\+job\+\_\+no\+\_\+stop}} (struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structi2c__master__packet}{i2c\+\_\+master\+\_\+packet}} $\ast$const packet)
+\begin{DoxyCompactList}\small\item\em Initiates a write packet operation without sending a S\+T\+OP condition when done. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__i2c__group_ga5ba2356881237729e03a8c4637b96306}{\+\_\+i2c\+\_\+master\+\_\+interrupt\+\_\+handler}} (uint8\+\_\+t instance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM I2C Master Interrupt Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{i2c__master__interrupt_8c_a34ab689f604f0a0c3fdf0313df36d895}\label{i2c__master__interrupt_8c_a34ab689f604f0a0c3fdf0313df36d895}} 
+\index{i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}!\_i2c\_master\_address\_response@{\_i2c\_master\_address\_response}}
+\index{\_i2c\_master\_address\_response@{\_i2c\_master\_address\_response}!i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_i2c\_master\_address\_response()}{\_i2c\_master\_address\_response()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \+\_\+i2c\+\_\+master\+\_\+address\+\_\+response (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const}]{module }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{i2c__master__interrupt_8c_a6f463f5dcebeadba7c123e8d17cdd750}\label{i2c__master__interrupt_8c_a6f463f5dcebeadba7c123e8d17cdd750}} 
+\index{i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}!\_i2c\_master\_send\_hs\_master\_code@{\_i2c\_master\_send\_hs\_master\_code}}
+\index{\_i2c\_master\_send\_hs\_master\_code@{\_i2c\_master\_send\_hs\_master\_code}!i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_i2c\_master\_send\_hs\_master\_code()}{\_i2c\_master\_send\_hs\_master\_code()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \+\_\+i2c\+\_\+master\+\_\+send\+\_\+hs\+\_\+master\+\_\+code (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const}]{module,  }\item[{uint8\+\_\+t}]{hs\+\_\+master\+\_\+code }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{i2c__master__interrupt_8c_a7d0a77ce8cb6d9c9d3ce526a549a96a9}\label{i2c__master__interrupt_8c_a7d0a77ce8cb6d9c9d3ce526a549a96a9}} 
+\index{i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}!\_i2c\_master\_wait\_for\_bus@{\_i2c\_master\_wait\_for\_bus}}
+\index{\_i2c\_master\_wait\_for\_bus@{\_i2c\_master\_wait\_for\_bus}!i2c\_master\_interrupt.c@{i2c\_master\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_i2c\_master\_wait\_for\_bus()}{\_i2c\_master\_wait\_for\_bus()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \+\_\+i2c\+\_\+master\+\_\+wait\+\_\+for\+\_\+bus (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structi2c__master__module}{i2c\+\_\+master\+\_\+module}} $\ast$const}]{module }\end{DoxyParamCaption})}
+

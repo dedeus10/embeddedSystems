@@ -1,0 +1,46 @@
+\hypertarget{spi__interrupt_8c}{}\section{A\+S\+F/sam0/drivers/sercom/spi/spi\+\_\+interrupt.c File Reference}
+\label{spi__interrupt_8c}\index{ASF/sam0/drivers/sercom/spi/spi\_interrupt.c@{ASF/sam0/drivers/sercom/spi/spi\_interrupt.c}}
+
+
+S\+AM Serial Peripheral Interface Driver.  
+
+
+{\ttfamily \#include \char`\"{}spi\+\_\+interrupt.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga9736ace2b57a6d45d3fb820aae552a48}{spi\+\_\+register\+\_\+callback}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}} callback\+\_\+func, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Registers a S\+PI callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7df7ed6a6a9d6a5e1338ceaa0d5f07b2}{spi\+\_\+unregister\+\_\+callback}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4afb8830e0197ec11f6beb8140210a88}{spi\+\_\+callback}} callback\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Unregisters a S\+PI callback function. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7a7ddeab7e3ed355e13366ed635ff152}{spi\+\_\+write\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer write. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gac5022683cb35d827578c26cf7689ae61}{spi\+\_\+read\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length, uint16\+\_\+t dummy)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer read. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaba6ac49efcf4b51fa8131d4a07071967}{spi\+\_\+transceive\+\_\+buffer\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Asynchronous buffer write and read. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga74d13a9fe3203f121664b864f68c94fd}{spi\+\_\+abort\+\_\+job}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\begin{DoxyCompactList}\small\item\em Aborts an ongoing job. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga71091c8fcde0d526329e04f8c7b24efc}{\+\_\+spi\+\_\+interrupt\+\_\+handler}} (uint8\+\_\+t instance)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{spi__interrupt_8c_a1efbd5247d4a7df65b12a85ca9c6f418}{dummy\+\_\+write}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM Serial Peripheral Interface Driver. 
+
+Copyright (c) 2013-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{spi__interrupt_8c_a1efbd5247d4a7df65b12a85ca9c6f418}\label{spi__interrupt_8c_a1efbd5247d4a7df65b12a85ca9c6f418}} 
+\index{spi\_interrupt.c@{spi\_interrupt.c}!dummy\_write@{dummy\_write}}
+\index{dummy\_write@{dummy\_write}!spi\_interrupt.c@{spi\_interrupt.c}}
+\subsubsection{\texorpdfstring{dummy\_write}{dummy\_write}}
+{\footnotesize\ttfamily uint16\+\_\+t dummy\+\_\+write}
+

@@ -1,0 +1,36 @@
+\hypertarget{group__group__common__utils__stdio__stdio__serial}{}\section{Standard serial I/O (stdio)}
+\label{group__group__common__utils__stdio__stdio__serial}\index{Standard serial I/O (stdio)@{Standard serial I/O (stdio)}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile void $\ast$volatile \mbox{\hyperlink{group__group__common__utils__stdio__stdio__serial_gad4163ee0eaa09db3b42c367fd768e737}{stdio\+\_\+base}}
+\item 
+int($\ast$ \mbox{\hyperlink{group__group__common__utils__stdio__stdio__serial_gab88750c764f1e24b95134201373aba70}{ptr\+\_\+put}} )(void volatile $\ast$, char)
+\item 
+void($\ast$ \mbox{\hyperlink{group__group__common__utils__stdio__stdio__serial_ga7332be07af3c0ab09d41a9b0b97efbe8}{ptr\+\_\+get}} )(void volatile $\ast$, char $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common standard serial I/O management driver that implements a stdio serial interface on A\+VR and S\+AM devices. 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__group__common__utils__stdio__stdio__serial_ga7332be07af3c0ab09d41a9b0b97efbe8}\label{group__group__common__utils__stdio__stdio__serial_ga7332be07af3c0ab09d41a9b0b97efbe8}} 
+\index{Standard serial I/O (stdio)@{Standard serial I/O (stdio)}!ptr\_get@{ptr\_get}}
+\index{ptr\_get@{ptr\_get}!Standard serial I/O (stdio)@{Standard serial I/O (stdio)}}
+\subsubsection{\texorpdfstring{ptr\_get}{ptr\_get}}
+{\footnotesize\ttfamily void($\ast$ ptr\+\_\+get) (void volatile $\ast$, char $\ast$)}
+
+Pointer to the external low level read function. \mbox{\Hypertarget{group__group__common__utils__stdio__stdio__serial_gab88750c764f1e24b95134201373aba70}\label{group__group__common__utils__stdio__stdio__serial_gab88750c764f1e24b95134201373aba70}} 
+\index{Standard serial I/O (stdio)@{Standard serial I/O (stdio)}!ptr\_put@{ptr\_put}}
+\index{ptr\_put@{ptr\_put}!Standard serial I/O (stdio)@{Standard serial I/O (stdio)}}
+\subsubsection{\texorpdfstring{ptr\_put}{ptr\_put}}
+{\footnotesize\ttfamily int($\ast$ ptr\+\_\+put) (void volatile $\ast$, char)}
+
+Pointer to the external low level write function. \mbox{\Hypertarget{group__group__common__utils__stdio__stdio__serial_gad4163ee0eaa09db3b42c367fd768e737}\label{group__group__common__utils__stdio__stdio__serial_gad4163ee0eaa09db3b42c367fd768e737}} 
+\index{Standard serial I/O (stdio)@{Standard serial I/O (stdio)}!stdio\_base@{stdio\_base}}
+\index{stdio\_base@{stdio\_base}!Standard serial I/O (stdio)@{Standard serial I/O (stdio)}}
+\subsubsection{\texorpdfstring{stdio\_base}{stdio\_base}}
+{\footnotesize\ttfamily volatile void$\ast$ volatile stdio\+\_\+base}
+
+Pointer to the base of the U\+S\+A\+RT module instance to use for stdio. 

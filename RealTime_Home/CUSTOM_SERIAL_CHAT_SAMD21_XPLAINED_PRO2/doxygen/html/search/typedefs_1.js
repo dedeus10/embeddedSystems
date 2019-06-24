@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['basetype_5ft',['BaseType_t',['../portmacro_8h.html#a46fb21e00ae0729d7515c0fbf2269796',1,'portmacro.h']]],
+  ['be16_5ft',['be16_t',['../group__group__sam0__utils.html#gadafc3ed99e530f27d0d954334c389748',1,'compiler.h']]],
+  ['be32_5ft',['be32_t',['../group__group__sam0__utils.html#ga3410b85f2a5afdf8b35f5c7c3414fe2d',1,'compiler.h']]],
+  ['ble_5fconnected_5fdev_5finfo_5ft',['ble_connected_dev_info_t',['../ble__manager_8h.html#aee2d00111085644e6ec9914d0c138abb',1,'ble_manager.h']]],
+  ['ble_5fcustom_5fevent_5fcb_5ft',['ble_custom_event_cb_t',['../ble__manager_8h.html#a58467f276c38f18ec0c88cf01793c720',1,'ble_manager.h']]],
+  ['ble_5fdevice_5fll_5fstate_5ft',['ble_device_ll_state_t',['../ble__manager_8h.html#ab29617fffda07fe53d18981315f6231b',1,'ble_manager.h']]],
+  ['ble_5fdevice_5fstate_5ft',['ble_device_state_t',['../ble__manager_8h.html#abcdab7066ca2dc0d328ed5e555cdcf7c',1,'ble_manager.h']]],
+  ['ble_5fdtm_5fevent_5fcb_5ft',['ble_dtm_event_cb_t',['../ble__manager_8h.html#afc85037a248ec5ce4727ca3fef4d0693',1,'ble_manager.h']]],
+  ['ble_5fevent_5fcallback_5ft',['ble_event_callback_t',['../ble__manager_8h.html#a04ce4bb8cb8282f2762e3924b1773cc9',1,'ble_manager.h']]],
+  ['ble_5fgap_5fevent_5fcb_5ft',['ble_gap_event_cb_t',['../ble__manager_8h.html#af7f9e2f48a46f0aa8601a2bea5bb23bd',1,'ble_manager.h']]],
+  ['ble_5fgatt_5fcccd_5fstatus_5ft',['ble_gatt_cccd_status_t',['../ble__manager_8h.html#a30165867ebe8e5b65d6af0c0f3cb6adb',1,'ble_manager.h']]],
+  ['ble_5fgatt_5fclient_5fevent_5fcb_5ft',['ble_gatt_client_event_cb_t',['../ble__manager_8h.html#a389a3f15abfc963526b4162979f42b9b',1,'ble_manager.h']]],
+  ['ble_5fgatt_5fserver_5fevent_5fcb_5ft',['ble_gatt_server_event_cb_t',['../ble__manager_8h.html#aa403075fa2b504206d45eb3a561e7a7f',1,'ble_manager.h']]],
+  ['ble_5fhtpt_5fevent_5fcb_5ft',['ble_htpt_event_cb_t',['../ble__manager_8h.html#aa3d240720dd4fea39fdf40f1c1279d91',1,'ble_manager.h']]],
+  ['ble_5fl2cap_5fevent_5fcb_5ft',['ble_l2cap_event_cb_t',['../ble__manager_8h.html#acaa569b24d5d598e23270f19ca3ab98b',1,'ble_manager.h']]],
+  ['bool',['bool',['../group__group__sam0__utils.html#ga97a80ca1602ebf2303258971a2c938e2',1,'compiler.h']]]
+];

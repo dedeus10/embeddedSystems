@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['heart_5frate_5fservice_5fuuid',['HEART_RATE_SERVICE_UUID',['../ble__manager_8h.html#a7a13b41faf3abfaaca0b4a29da7fae80',1,'ble_manager.h']]],
+  ['hid_5freport_5fref_5fdesc',['HID_REPORT_REF_DESC',['../ble__manager_8h.html#a5ccbbbf2191f9bfbc1aad2180e15f2b2',1,'ble_manager.h']]],
+  ['hid_5fserv_5fuuid',['HID_SERV_UUID',['../ble__manager_8h.html#af69c1824a347468766ba60cd9eb0a2f7',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fboot_5fkey_5finput_5freport',['HID_UUID_CHAR_BOOT_KEY_INPUT_REPORT',['../ble__manager_8h.html#ae0a46ad8814338abfd18cb7259dec8ef',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fboot_5fkey_5foutput_5freport',['HID_UUID_CHAR_BOOT_KEY_OUTPUT_REPORT',['../ble__manager_8h.html#a0b07eb62a0b090036c646d89d0bfd5dc',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fboot_5fmouse_5finput_5freport',['HID_UUID_CHAR_BOOT_MOUSE_INPUT_REPORT',['../ble__manager_8h.html#a30fad539a512dc242cdd3e0b427a8966',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fhid_5fcontrol_5fpoint',['HID_UUID_CHAR_HID_CONTROL_POINT',['../ble__manager_8h.html#aa20388be2820a452c26c50a5f3641291',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fhid_5finformation',['HID_UUID_CHAR_HID_INFORMATION',['../ble__manager_8h.html#a5ac9018f41bea6650cc08db70c8e1f53',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5fprotocol_5fmode',['HID_UUID_CHAR_PROTOCOL_MODE',['../ble__manager_8h.html#ac8c6e036deca37708a12914538015a07',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5freport',['HID_UUID_CHAR_REPORT',['../ble__manager_8h.html#a870720c350bf8eca55618c25787ad00a',1,'ble_manager.h']]],
+  ['hid_5fuuid_5fchar_5freport_5fmap',['HID_UUID_CHAR_REPORT_MAP',['../ble__manager_8h.html#aa34adea18b4e334a880ba2fe32a49266',1,'ble_manager.h']]],
+  ['host_5fsercom_5fmux_5fsetting',['HOST_SERCOM_MUX_SETTING',['../conf__sio2host_8h.html#af210534c24e65cd4487bee3b21978c58',1,'conf_sio2host.h']]],
+  ['host_5fsercom_5fpinmux_5fpad0',['HOST_SERCOM_PINMUX_PAD0',['../conf__sio2host_8h.html#a1c7585bca5823a4aa0229e2f5cd723f3',1,'conf_sio2host.h']]],
+  ['host_5fsercom_5fpinmux_5fpad1',['HOST_SERCOM_PINMUX_PAD1',['../conf__sio2host_8h.html#aaf325e167a2e936331c78bd69472e701',1,'conf_sio2host.h']]],
+  ['host_5fsercom_5fpinmux_5fpad2',['HOST_SERCOM_PINMUX_PAD2',['../conf__sio2host_8h.html#aa2d5d5f59010f6f9c8dc40074caa5413',1,'conf_sio2host.h']]],
+  ['host_5fsercom_5fpinmux_5fpad3',['HOST_SERCOM_PINMUX_PAD3',['../conf__sio2host_8h.html#a93451e50fe0bfa41b6dfc0b08465d50a',1,'conf_sio2host.h']]],
+  ['host_5fsystem_5fsleep_5fmode',['HOST_SYSTEM_SLEEP_MODE',['../conf__serialdrv_8h.html#a7e565059a17e2128edd58944cd97ea9d',1,'conf_serialdrv.h']]],
+  ['host_5fuart_5fbaudrate_5fconfig_5fvalue',['HOST_UART_BAUDRATE_CONFIG_VALUE',['../ble__manager_8c.html#a3407a11f19196b330a5a2a2eb445dd74',1,'ble_manager.c']]],
+  ['htpt_5fservice_5fuuid',['HTPT_SERVICE_UUID',['../ble__manager_8h.html#a62f319ba2562a71cd2e384d5132472ca',1,'ble_manager.h']]]
+];

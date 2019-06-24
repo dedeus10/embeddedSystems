@@ -1,0 +1,1646 @@
+\hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l}{}\section{Non-\/\+Volatile Memory Controller}
+\label{group___s_a_m_d21___n_v_m_c_t_r_l}\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___c_t_r_l_a___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___c_t_r_l_b___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___p_a_r_a_m___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___i_n_t_e_n_c_l_r___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___i_n_t_e_n_s_e_t___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___i_n_t_f_l_a_g___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___s_t_a_t_u_s___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___a_d_d_r___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_n_v_m_c_t_r_l___l_o_c_k___type}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_nvmctrl}{Nvmctrl}}
+\begin{DoxyCompactList}\small\item\em N\+V\+M\+C\+T\+RL A\+PB hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga3ea48740d5f4e1f68a7dd06753eb20d5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+U2207}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad91d0ed581519e0bb057ede9db891e87}{R\+E\+V\+\_\+\+N\+V\+M\+C\+T\+RL}}~0x202
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4853195148a26c13e84af06b27099a5a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+O\+F\+F\+S\+ET}}~0x00
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA offset) Control A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gafda7d874f8e5f91f9590105c7bc984b5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0000ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA reset\+\_\+value) Control A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0d19f301cea0ef37b638f1961a1abae9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Msk}}~(0x7\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1dd6561aa8e0944fda54ac91591a7672}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+MD}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0d19f301cea0ef37b638f1961a1abae9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c7936d9e4cd317170b54ffb5b3b428d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+R\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Erase Row -\/ Erases the row addressed by the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad7cfc5fc0cd04b2bbe3337a035b6d127}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+P\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga07c4451d3f3e0d0dbed551ef0c3bbd21}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+A\+R\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Erase Auxiliary Row -\/ Erases the auxiliary row addressed by the A\+D\+DR register. This command can be given only when the security bit is not set and only to the user configuration row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16088beab7d82fdbb34bac9971d21859}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+A\+P\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write Auxiliary Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. This command can be given only when the security bit is not set and only to the user configuration row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga37bc89b225c1b5d5a07bc707ef910ecb}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+F\+\_\+\+Val}}~0x\+Aul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Security Flow Command \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16cd33731304aa0ed2db58be2f6fe599}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+L\+\_\+\+Val}}~0x\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write lockbits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e738a1a6d1d0bce5caad7fce29f2e18}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+E\+R\+\_\+\+Val}}~0x1\+Aul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) R\+WW E\+E\+P\+R\+OM area Erase Row -\/ Erases the row addressed by the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6cbdf6599c74676de89836531389b7f1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+W\+P\+\_\+\+Val}}~0x1\+Cul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) R\+WW E\+E\+P\+R\+OM Write Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga30ddc4581bb1d3ba0a5dfebff3025ae6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+L\+R\+\_\+\+Val}}~0x40ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Lock Region -\/ Locks the region containing the address location in the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga594434a1450c942a3a1b8938d7f8ee50}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+U\+R\+\_\+\+Val}}~0x41ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Unlock Region -\/ Unlocks the region containing the address location in the A\+D\+DR register. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5e5184e115f92e2037793f468f07e912}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+R\+M\+\_\+\+Val}}~0x42ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Sets the power reduction mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5af4406a70755e9869cbddf9aeccba45}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+R\+M\+\_\+\+Val}}~0x43ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Clears the power reduction mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa88d2aeae32e10443a0e9dc516dfbf44}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+B\+C\+\_\+\+Val}}~0x44ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Page Buffer Clear -\/ Clears the page buffer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9192307a9292a8144f18adfe8ea0d3f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+S\+B\+\_\+\+Val}}~0x45ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Set Security Bit -\/ Sets the security bit by writing 0x00 to the first byte in the lockbit row. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0bef792b0234a40587a3dd7254e1764d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+L\+L\+\_\+\+Val}}~0x46ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Invalidate all cache lines. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaecf1953d86bef9ad9bef7309493954d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+ER}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c7936d9e4cd317170b54ffb5b3b428d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad21e753f2741af430e0a52f2a9a15eab}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+WP}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad7cfc5fc0cd04b2bbe3337a035b6d127}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+P\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac046ff781ead0748e07c007c15e41ad7}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+AR}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga07c4451d3f3e0d0dbed551ef0c3bbd21}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+A\+R\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2ce3d94a5f09832706179f27bbe94d71}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+AP}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16088beab7d82fdbb34bac9971d21859}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+A\+P\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga98dcae15125d4efee881b3964b7d23a1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+SF}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga37bc89b225c1b5d5a07bc707ef910ecb}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+F\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1986c7240415a189e9b8d5e867830354}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+WL}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16cd33731304aa0ed2db58be2f6fe599}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+L\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f1bc6847aff5a3ad6d1f247ca326aab}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+ER}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e738a1a6d1d0bce5caad7fce29f2e18}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+E\+R\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa01b2c82b6913f800fb51b1cd8f85aca}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+WP}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6cbdf6599c74676de89836531389b7f1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+W\+P\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga39f7730dc87114a29f25c569b9c78cbb}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+LR}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga30ddc4581bb1d3ba0a5dfebff3025ae6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+L\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga30fba14a1d68d389de8d0e878e9aeed5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+UR}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga594434a1450c942a3a1b8938d7f8ee50}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+U\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa9412be92f5cb4cbf868ce2532930aa}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+RM}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5e5184e115f92e2037793f468f07e912}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+R\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga682f47adcc9972101304cccbc5c112bd}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+RM}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5af4406a70755e9869cbddf9aeccba45}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+R\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga99e7d43b40b4c0db731bae7c936af4a4}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+BC}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa88d2aeae32e10443a0e9dc516dfbf44}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+B\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7c3505981ea288eb37c268fbe5320d36}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+SB}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9192307a9292a8144f18adfe8ea0d3f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+S\+B\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gafdd1495fff0fe785746334cb2b902409}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+LL}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0bef792b0234a40587a3dd7254e1764d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+L\+L\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Command Execution \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad40754e7ab3d73ad07b2fca0c4ca8de3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Msk}}~(0x\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9e234ce19fc870b1be42fad5a7183220}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+EX}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad40754e7ab3d73ad07b2fca0c4ca8de3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga22224d9a78d4033732134f8b564ba6d9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+E\+Y\+\_\+\+Val}}~0x\+A5ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Execution Key \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab13bf4c69aa0378ad5cc866fe066e8c5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+EY}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga22224d9a78d4033732134f8b564ba6d9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+E\+Y\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga59f02a3ccafaec97563b7369c88d548c}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+M\+A\+SK}}~0x\+F\+F7\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga96b31df212035cedc4f6a370222e5b67}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+O\+F\+F\+S\+ET}}~0x04
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB offset) Control B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac0a835cf0ee617133dc445147d2af448}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB reset\+\_\+value) Control B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM Read Wait States \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab5ad30e9547cbcc159748e0f014567f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Msk}}~(0x\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b3f59c294e4c40249e9b361cb580e6f}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+WS}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab5ad30e9547cbcc159748e0f014567f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga38b52d3de7998f872c54a599e4e21f25}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Single Auto Wait State \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf0413ccbb9e3c4ebfe2c2f8f2a10da6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+L\+F\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Half Auto Wait State \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga757070851f4e48ecc24b2d75da0aa6e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+A\+L\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Dual Auto Wait State \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga3011ea9db7c53bb00f357712c1d7d4b2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+LE}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga38b52d3de7998f872c54a599e4e21f25}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga49c5e1bdebf752025bc9874c096865e4}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+LF}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf0413ccbb9e3c4ebfe2c2f8f2a10da6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+L\+F\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b895ffd7c3df025c5accf229c03512e}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+AL}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga757070851f4e48ecc24b2d75da0aa6e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+A\+L\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf17fac4102804e50810c49ec470be5e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+N\+W\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Manual Write \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab926dd3f8e1a5dd7bd6ab82e32e97f00}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+NW}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+N\+W\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Power Reduction Mode during Sleep \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae19435c78d5011e7bb34cb879c66bc8b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Msk}}~(0x3ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga3fbdffb0fca7ae059f4c803d8547a0d5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+RM}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae19435c78d5011e7bb34cb879c66bc8b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa1ab6787e59eac433c25ac307dd7a2aa}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+S\+S\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM block enters low-\/power mode when entering sleep.\+N\+VM block exits low-\/power mode upon first access. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga45d3a8b31b16b2b1204de0b61e5c12fc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+N\+T\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM block enters low-\/power mode when entering sleep.\+N\+VM block exits low-\/power mode when exiting sleep. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2a6e0082abe992f41fe1e646e0b6b52a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Auto power reduction disabled. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga65e9f8270f7eaf6119d83c67049d63cc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+SS}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa1ab6787e59eac433c25ac307dd7a2aa}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+S\+S\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c32d4daa17d08d810b673df9bf3a3bf}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+NT}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga45d3a8b31b16b2b1204de0b61e5c12fc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+N\+T\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab612ef2163b9b3f3b243a5a58ebbada0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2a6e0082abe992f41fe1e646e0b6b52a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}}~16
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+V\+M\+C\+T\+RL Read Mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1a5b8a600e2d62a49984a1c75ea693a2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Msk}}~(0x3ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa05ed9df2291f44b919f5b0fa447767}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+DE}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1a5b8a600e2d62a49984a1c75ea693a2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a4b96f2109c47245bc98e69b66fff74}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+T\+Y\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) The N\+VM Controller (cache system) does not insert wait states on a cache miss. Gives the best system performance. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa992cf03ba51b466d0e1f18fba2982d2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Reduces power consumption of the cache system, but inserts a wait state each time there is a cache miss. This mode may not be relevant if C\+PU performance is required, as the application will be stalled and may lead to increase run time. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga330c07f70cd004957ce3ab80e77f06d8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+I\+C\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) The cache system ensures that a cache hit or miss takes the same amount of time, determined by the number of programmed flash wait states. This mode can be used for real-\/time applications that require deterministic execution timings. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga566f1952886163d66be5acb1d632646c}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+TY}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a4b96f2109c47245bc98e69b66fff74}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+T\+Y\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad68c23f250b571ae61e8c9ad730b42a4}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+ER}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa992cf03ba51b466d0e1f18fba2982d2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gafb30f0bebe63e725ddd44be344011985}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga330c07f70cd004957ce3ab80e77f06d8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+I\+C\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf4c3e69fb60d156a007a7edd11022b55}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+I\+S\+\_\+\+Pos}}~18
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Cache Disable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab1f4105b83a240096ef70c4a9c989907}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+IS}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+I\+S\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf2272ac3ee696dfe0d222a87bc7cbe1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+SK}}~0x0007039\+Eul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6624597605fc956079a9818778a34abe}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+O\+F\+F\+S\+ET}}~0x08
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM offset) N\+VM Parameter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga70c3c90bcb2318bb472cc9565751ff04}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM reset\+\_\+value) N\+VM Parameter \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga08f9f5de86a6c44ce2d6ecdb9f995443}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) N\+VM Pages \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga767641a1cda9faa90b0b721f356158c7}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabe03070a8e72b6577e46fa73ad53e552}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+MP}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga767641a1cda9faa90b0b721f356158c7}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga08f9f5de86a6c44ce2d6ecdb9f995443}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}}~16
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) Page Size \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacd9411e012f3e690b4e835de166dde28}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Msk}}~(0x7ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga58491f9494d89b466f85269fcdb1f26e}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+SZ}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacd9411e012f3e690b4e835de166dde28}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9a83c6574dc48ac1c69701673922d2f3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 8 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga10b4a62c2bab14a45967ee663cfbdd10}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 16 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae80b28e70177db78d7d5a0d748809192}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 32 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga464e20508682489f9283f535148c27b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 64 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac8f620598445b047b44dfc8081439744}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 128 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f53d9c6161bf83ef35275e90438e9e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 256 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac19388a03c011b81e82b35dfd7da69b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 512 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bffb82ccc9a71552882baabdfa97b13}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 1024 bytes \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga39d4fde607f28b120777885c44f2e0dd}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9a83c6574dc48ac1c69701673922d2f3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga12d78d73359d02253053b1ef6ed067c6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga10b4a62c2bab14a45967ee663cfbdd10}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a6a6748a1eda03967d73ff67d8b4e5d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae80b28e70177db78d7d5a0d748809192}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga010ee7c6ad7172ef6b2b7ff5020fa540}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga464e20508682489f9283f535148c27b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga19008e48e571c1882e4476ac5e0a53ab}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac8f620598445b047b44dfc8081439744}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4ed90755a60fe915da872cb1151170a9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f53d9c6161bf83ef35275e90438e9e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c5eba0af849936464336787aaa30734}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac19388a03c011b81e82b35dfd7da69b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga3dc7aa1196aff3381eefe55a8789ca5d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024}}~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bffb82ccc9a71552882baabdfa97b13}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gadbe4b71fb59b5853ceb8536c6292b4cc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos}}~20
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) R\+WW E\+E\+P\+R\+OM Pages \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab2b3b61e1f28ca33f16a0328fac7d9c2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Msk}}~(0x\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a74ee4bb2487c1d99869bf24e611ed5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+EP}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab2b3b61e1f28ca33f16a0328fac7d9c2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gadbe4b71fb59b5853ceb8536c6292b4cc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaadfbc70cd6cbb088b215b8e6322c4295}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F7\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf69e18ecea21ffbf47dc28f66161a768}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x0C
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR offset) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacc5d7dab614b1d4e05402a8c97de3954}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR reset\+\_\+value) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf655addcfd79db2cb6324f92209a9896}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) N\+VM Ready Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga442a07f4d8e084c114976267dfc2dc86}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+DY}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaefcc9c986918d880edfb8b05fe0a6bcb}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Error Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga21e287f2b5ff9239dd9cca1068d6a5a5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+OR}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga399cac515ae8b6bfd864314732defbe9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x03ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacbc15881a076ca6d111540304e571a20}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x10
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET offset) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad48eea420ef04c6f0c75a074991ad6d6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET reset\+\_\+value) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4eca7adfbfcaa40c9a3904c9c141058a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) N\+VM Ready Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaec9faf993409c2da8bc71efd88933666}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+DY}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaac02b4043d398b4dc876e542fda447e0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Error Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0ed8ea82f01157010d7c740abd3b80a2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+OR}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac49294b6f689477f53cabe7aba8a4975}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x03ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga28bff79f1cf058fa8a6c7072f5913862}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x14
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG offset) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2d7e54384a5f6445cc9b9769ddf32ac2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG reset\+\_\+value) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab04b4aece1f516c2e7ee00e7f29c9b69}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) N\+VM Ready \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga3c427a204dab120e2aee8839fbe1cc7c}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+DY}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad0ee9e136df1b894499ee13b6509c08f}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4dc7bd2f8228424f2f305284a0425d64}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+OR}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga77cb82e875b1988ba35455d842df74c5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}}~0x03ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa210cb991451778d9df1a804b189799a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x18
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US offset) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac30e36e00c486c218383a4d318fe59c8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0000ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab7f1c04b15d3c4fc8c9ab4bfbfd0731c}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+M\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Power Reduction Mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf0aef4e5cc8a239d347d60eec6c4cac2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+RM}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+M\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf65957fca966956aebcb205a480376cf}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+A\+D\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) N\+VM Page Buffer Active Loading \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gade5ff44980a885bebf5604ac806a2900}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+AD}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+A\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf78e886e6aa15d5f0d4324f02d46388a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+G\+E\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Programming Error Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1e724b991e54d3d59cbe47774e7c0df4}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+GE}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+G\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga425654bd99f5c0f035b444932ad9d698}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+K\+E\+\_\+\+Pos}}~3
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Lock Error Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad10b2faf4e6af34fc8a163ff96f54cc5}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+KE}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+K\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e5c4f746519844207a933b98d3fd883}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+M\+E\+\_\+\+Pos}}~4
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) N\+VM Error \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaf1648cdd416b1b9c59c36664ca71480b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+ME}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+M\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacccc823d51d05b7675cb22b0274f70c3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+B\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Security Bit Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab3f3d247dde4f7d65d04625007681f34}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+SB}}~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+B\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacb0fa540b3def00184ee02da753f171e}{N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x011\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2540268cdeb3644aa722cb8cce5546c8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x1C
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR offset) Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga150652b364483d20d947140a67e2fe25}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR reset\+\_\+value) Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7af974b171527d13bf216b3d5ef5650b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR) N\+VM Address \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e4935b01a519044aee16debc2d7118a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Msk}}~(0x3\+F\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga131b42e625db8057944d4501855bf984}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+DR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e4935b01a519044aee16debc2d7118a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7af974b171527d13bf216b3d5ef5650b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab7e62000f793147227a50fa0217a0efd}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+M\+A\+SK}}~0x003\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7cb3b7118b0cfe9f2279ccb766382275}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+O\+F\+F\+S\+ET}}~0x20
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK offset) Lock Section \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e641135617433c92419f3c6272c0856}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK) Region Lock Bits \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bd561a9c9c43c4f0272f91528fa8b55}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gadfd6303702a1ec835b3959a2001b73a2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+CK}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bd561a9c9c43c4f0272f91528fa8b55}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e641135617433c92419f3c6272c0856}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5d4ac6aa3fe484566828978a57d521c9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga709cb5f5f6372c6e6fcb8cff245900d0}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+U\+X3}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad236e440ed3bfcbe9e9aef855f891d54}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+AL}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa20a08294e753fed16b9ff464c193bb}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+B\+IT}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga8ce74f42d874759451c826206a4ae72a}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P1}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c7b108217be6703d66a3f9a4ba7cceb}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P2}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae3a3ffc2f4fc43897e4240ceee77508b}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P4}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga363fcc6e714fce240e4ab7827c1bb03b}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+T\+E\+M\+P\+\_\+\+L\+OG}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa567c13e0afc586393b8621a19247615}{S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+U\+S\+ER}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR N\+V\+M\+C\+T\+RL 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga131b42e625db8057944d4501855bf984}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga131b42e625db8057944d4501855bf984}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_ADDR@{NVMCTRL\_ADDR\_ADDR}}
+\index{NVMCTRL\_ADDR\_ADDR@{NVMCTRL\_ADDR\_ADDR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_ADDR}{NVMCTRL\_ADDR\_ADDR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+DR(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e4935b01a519044aee16debc2d7118a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7af974b171527d13bf216b3d5ef5650b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e4935b01a519044aee16debc2d7118a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e4935b01a519044aee16debc2d7118a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_ADDR\_Msk@{NVMCTRL\_ADDR\_ADDR\_Msk}}
+\index{NVMCTRL\_ADDR\_ADDR\_Msk@{NVMCTRL\_ADDR\_ADDR\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_ADDR\_Msk}{NVMCTRL\_ADDR\_ADDR\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Msk~(0x3\+F\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7af974b171527d13bf216b3d5ef5650b}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7af974b171527d13bf216b3d5ef5650b}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_ADDR\_Pos@{NVMCTRL\_ADDR\_ADDR\_Pos}}
+\index{NVMCTRL\_ADDR\_ADDR\_Pos@{NVMCTRL\_ADDR\_ADDR\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_ADDR\_Pos}{NVMCTRL\_ADDR\_ADDR\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+A\+D\+D\+R\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR) N\+VM Address 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab7e62000f793147227a50fa0217a0efd}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab7e62000f793147227a50fa0217a0efd}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_MASK@{NVMCTRL\_ADDR\_MASK}}
+\index{NVMCTRL\_ADDR\_MASK@{NVMCTRL\_ADDR\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_MASK}{NVMCTRL\_ADDR\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+M\+A\+SK~0x003\+F\+F\+F\+F\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga2540268cdeb3644aa722cb8cce5546c8}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga2540268cdeb3644aa722cb8cce5546c8}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_OFFSET@{NVMCTRL\_ADDR\_OFFSET}}
+\index{NVMCTRL\_ADDR\_OFFSET@{NVMCTRL\_ADDR\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_OFFSET}{NVMCTRL\_ADDR\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+O\+F\+F\+S\+ET~0x1C}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR offset) Address 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga150652b364483d20d947140a67e2fe25}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga150652b364483d20d947140a67e2fe25}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_ADDR\_RESETVALUE@{NVMCTRL\_ADDR\_RESETVALUE}}
+\index{NVMCTRL\_ADDR\_RESETVALUE@{NVMCTRL\_ADDR\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_ADDR\_RESETVALUE}{NVMCTRL\_ADDR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+D\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+D\+DR reset\+\_\+value) Address 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga1dd6561aa8e0944fda54ac91591a7672}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga1dd6561aa8e0944fda54ac91591a7672}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD@{NVMCTRL\_CTRLA\_CMD}}
+\index{NVMCTRL\_CTRLA\_CMD@{NVMCTRL\_CTRLA\_CMD}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD}{NVMCTRL\_CTRLA\_CMD}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+MD(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0d19f301cea0ef37b638f1961a1abae9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga682f47adcc9972101304cccbc5c112bd}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga682f47adcc9972101304cccbc5c112bd}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_CPRM@{NVMCTRL\_CTRLA\_CMD\_CPRM}}
+\index{NVMCTRL\_CTRLA\_CMD\_CPRM@{NVMCTRL\_CTRLA\_CMD\_CPRM}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_CPRM}{NVMCTRL\_CTRLA\_CMD\_CPRM}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+RM~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5af4406a70755e9869cbddf9aeccba45}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+R\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5af4406a70755e9869cbddf9aeccba45}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5af4406a70755e9869cbddf9aeccba45}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_CPRM\_Val@{NVMCTRL\_CTRLA\_CMD\_CPRM\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_CPRM\_Val@{NVMCTRL\_CTRLA\_CMD\_CPRM\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_CPRM\_Val}{NVMCTRL\_CTRLA\_CMD\_CPRM\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+C\+P\+R\+M\+\_\+\+Val~0x43ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Clears the power reduction mode. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac046ff781ead0748e07c007c15e41ad7}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac046ff781ead0748e07c007c15e41ad7}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_EAR@{NVMCTRL\_CTRLA\_CMD\_EAR}}
+\index{NVMCTRL\_CTRLA\_CMD\_EAR@{NVMCTRL\_CTRLA\_CMD\_EAR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_EAR}{NVMCTRL\_CTRLA\_CMD\_EAR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+AR~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga07c4451d3f3e0d0dbed551ef0c3bbd21}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+A\+R\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga07c4451d3f3e0d0dbed551ef0c3bbd21}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga07c4451d3f3e0d0dbed551ef0c3bbd21}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_EAR\_Val@{NVMCTRL\_CTRLA\_CMD\_EAR\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_EAR\_Val@{NVMCTRL\_CTRLA\_CMD\_EAR\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_EAR\_Val}{NVMCTRL\_CTRLA\_CMD\_EAR\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+A\+R\+\_\+\+Val~0x5ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Erase Auxiliary Row -\/ Erases the auxiliary row addressed by the A\+D\+DR register. This command can be given only when the security bit is not set and only to the user configuration row. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaecf1953d86bef9ad9bef7309493954d}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaecf1953d86bef9ad9bef7309493954d}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_ER@{NVMCTRL\_CTRLA\_CMD\_ER}}
+\index{NVMCTRL\_CTRLA\_CMD\_ER@{NVMCTRL\_CTRLA\_CMD\_ER}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_ER}{NVMCTRL\_CTRLA\_CMD\_ER}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+ER~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c7936d9e4cd317170b54ffb5b3b428d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c7936d9e4cd317170b54ffb5b3b428d}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c7936d9e4cd317170b54ffb5b3b428d}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_ER\_Val@{NVMCTRL\_CTRLA\_CMD\_ER\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_ER\_Val@{NVMCTRL\_CTRLA\_CMD\_ER\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_ER\_Val}{NVMCTRL\_CTRLA\_CMD\_ER\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+E\+R\+\_\+\+Val~0x2ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Erase Row -\/ Erases the row addressed by the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gafdd1495fff0fe785746334cb2b902409}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gafdd1495fff0fe785746334cb2b902409}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_INVALL@{NVMCTRL\_CTRLA\_CMD\_INVALL}}
+\index{NVMCTRL\_CTRLA\_CMD\_INVALL@{NVMCTRL\_CTRLA\_CMD\_INVALL}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_INVALL}{NVMCTRL\_CTRLA\_CMD\_INVALL}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+LL~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0bef792b0234a40587a3dd7254e1764d}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+L\+L\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0bef792b0234a40587a3dd7254e1764d}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0bef792b0234a40587a3dd7254e1764d}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_INVALL\_Val@{NVMCTRL\_CTRLA\_CMD\_INVALL\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_INVALL\_Val@{NVMCTRL\_CTRLA\_CMD\_INVALL\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_INVALL\_Val}{NVMCTRL\_CTRLA\_CMD\_INVALL\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+I\+N\+V\+A\+L\+L\+\_\+\+Val~0x46ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Invalidate all cache lines. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga39f7730dc87114a29f25c569b9c78cbb}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga39f7730dc87114a29f25c569b9c78cbb}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_LR@{NVMCTRL\_CTRLA\_CMD\_LR}}
+\index{NVMCTRL\_CTRLA\_CMD\_LR@{NVMCTRL\_CTRLA\_CMD\_LR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_LR}{NVMCTRL\_CTRLA\_CMD\_LR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+LR~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga30ddc4581bb1d3ba0a5dfebff3025ae6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+L\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga30ddc4581bb1d3ba0a5dfebff3025ae6}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga30ddc4581bb1d3ba0a5dfebff3025ae6}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_LR\_Val@{NVMCTRL\_CTRLA\_CMD\_LR\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_LR\_Val@{NVMCTRL\_CTRLA\_CMD\_LR\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_LR\_Val}{NVMCTRL\_CTRLA\_CMD\_LR\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+L\+R\+\_\+\+Val~0x40ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Lock Region -\/ Locks the region containing the address location in the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0d19f301cea0ef37b638f1961a1abae9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0d19f301cea0ef37b638f1961a1abae9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_Msk@{NVMCTRL\_CTRLA\_CMD\_Msk}}
+\index{NVMCTRL\_CTRLA\_CMD\_Msk@{NVMCTRL\_CTRLA\_CMD\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_Msk}{NVMCTRL\_CTRLA\_CMD\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Msk~(0x7\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga99e7d43b40b4c0db731bae7c936af4a4}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga99e7d43b40b4c0db731bae7c936af4a4}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_PBC@{NVMCTRL\_CTRLA\_CMD\_PBC}}
+\index{NVMCTRL\_CTRLA\_CMD\_PBC@{NVMCTRL\_CTRLA\_CMD\_PBC}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_PBC}{NVMCTRL\_CTRLA\_CMD\_PBC}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+BC~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa88d2aeae32e10443a0e9dc516dfbf44}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+B\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa88d2aeae32e10443a0e9dc516dfbf44}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa88d2aeae32e10443a0e9dc516dfbf44}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_PBC\_Val@{NVMCTRL\_CTRLA\_CMD\_PBC\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_PBC\_Val@{NVMCTRL\_CTRLA\_CMD\_PBC\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_PBC\_Val}{NVMCTRL\_CTRLA\_CMD\_PBC\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+P\+B\+C\+\_\+\+Val~0x44ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Page Buffer Clear -\/ Clears the page buffer. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_Pos@{NVMCTRL\_CTRLA\_CMD\_Pos}}
+\index{NVMCTRL\_CTRLA\_CMD\_Pos@{NVMCTRL\_CTRLA\_CMD\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_Pos}{NVMCTRL\_CTRLA\_CMD\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Command 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f1bc6847aff5a3ad6d1f247ca326aab}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f1bc6847aff5a3ad6d1f247ca326aab}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_RWWEEER@{NVMCTRL\_CTRLA\_CMD\_RWWEEER}}
+\index{NVMCTRL\_CTRLA\_CMD\_RWWEEER@{NVMCTRL\_CTRLA\_CMD\_RWWEEER}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_RWWEEER}{NVMCTRL\_CTRLA\_CMD\_RWWEEER}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+ER~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e738a1a6d1d0bce5caad7fce29f2e18}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+E\+R\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e738a1a6d1d0bce5caad7fce29f2e18}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e738a1a6d1d0bce5caad7fce29f2e18}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val@{NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val@{NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val}{NVMCTRL\_CTRLA\_CMD\_RWWEEER\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+E\+R\+\_\+\+Val~0x1\+Aul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) R\+WW E\+E\+P\+R\+OM area Erase Row -\/ Erases the row addressed by the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa01b2c82b6913f800fb51b1cd8f85aca}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa01b2c82b6913f800fb51b1cd8f85aca}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_RWWEEWP@{NVMCTRL\_CTRLA\_CMD\_RWWEEWP}}
+\index{NVMCTRL\_CTRLA\_CMD\_RWWEEWP@{NVMCTRL\_CTRLA\_CMD\_RWWEEWP}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_RWWEEWP}{NVMCTRL\_CTRLA\_CMD\_RWWEEWP}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+WP~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6cbdf6599c74676de89836531389b7f1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+W\+P\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga6cbdf6599c74676de89836531389b7f1}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga6cbdf6599c74676de89836531389b7f1}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val@{NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val@{NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val}{NVMCTRL\_CTRLA\_CMD\_RWWEEWP\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+R\+W\+W\+E\+E\+W\+P\+\_\+\+Val~0x1\+Cul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) R\+WW E\+E\+P\+R\+OM Write Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga98dcae15125d4efee881b3964b7d23a1}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga98dcae15125d4efee881b3964b7d23a1}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SF@{NVMCTRL\_CTRLA\_CMD\_SF}}
+\index{NVMCTRL\_CTRLA\_CMD\_SF@{NVMCTRL\_CTRLA\_CMD\_SF}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SF}{NVMCTRL\_CTRLA\_CMD\_SF}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+SF~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga37bc89b225c1b5d5a07bc707ef910ecb}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+F\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga37bc89b225c1b5d5a07bc707ef910ecb}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga37bc89b225c1b5d5a07bc707ef910ecb}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SF\_Val@{NVMCTRL\_CTRLA\_CMD\_SF\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_SF\_Val@{NVMCTRL\_CTRLA\_CMD\_SF\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SF\_Val}{NVMCTRL\_CTRLA\_CMD\_SF\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+F\+\_\+\+Val~0x\+Aul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Security Flow Command 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa9412be92f5cb4cbf868ce2532930aa}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa9412be92f5cb4cbf868ce2532930aa}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SPRM@{NVMCTRL\_CTRLA\_CMD\_SPRM}}
+\index{NVMCTRL\_CTRLA\_CMD\_SPRM@{NVMCTRL\_CTRLA\_CMD\_SPRM}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SPRM}{NVMCTRL\_CTRLA\_CMD\_SPRM}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+RM~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5e5184e115f92e2037793f468f07e912}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+R\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5e5184e115f92e2037793f468f07e912}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5e5184e115f92e2037793f468f07e912}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SPRM\_Val@{NVMCTRL\_CTRLA\_CMD\_SPRM\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_SPRM\_Val@{NVMCTRL\_CTRLA\_CMD\_SPRM\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SPRM\_Val}{NVMCTRL\_CTRLA\_CMD\_SPRM\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+P\+R\+M\+\_\+\+Val~0x42ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Sets the power reduction mode. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7c3505981ea288eb37c268fbe5320d36}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7c3505981ea288eb37c268fbe5320d36}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SSB@{NVMCTRL\_CTRLA\_CMD\_SSB}}
+\index{NVMCTRL\_CTRLA\_CMD\_SSB@{NVMCTRL\_CTRLA\_CMD\_SSB}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SSB}{NVMCTRL\_CTRLA\_CMD\_SSB}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+SB~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9192307a9292a8144f18adfe8ea0d3f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+S\+B\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga9192307a9292a8144f18adfe8ea0d3f0}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga9192307a9292a8144f18adfe8ea0d3f0}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_SSB\_Val@{NVMCTRL\_CTRLA\_CMD\_SSB\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_SSB\_Val@{NVMCTRL\_CTRLA\_CMD\_SSB\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_SSB\_Val}{NVMCTRL\_CTRLA\_CMD\_SSB\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+S\+S\+B\+\_\+\+Val~0x45ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Set Security Bit -\/ Sets the security bit by writing 0x00 to the first byte in the lockbit row. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga30fba14a1d68d389de8d0e878e9aeed5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga30fba14a1d68d389de8d0e878e9aeed5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_UR@{NVMCTRL\_CTRLA\_CMD\_UR}}
+\index{NVMCTRL\_CTRLA\_CMD\_UR@{NVMCTRL\_CTRLA\_CMD\_UR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_UR}{NVMCTRL\_CTRLA\_CMD\_UR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+UR~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga594434a1450c942a3a1b8938d7f8ee50}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+U\+R\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga594434a1450c942a3a1b8938d7f8ee50}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga594434a1450c942a3a1b8938d7f8ee50}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_UR\_Val@{NVMCTRL\_CTRLA\_CMD\_UR\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_UR\_Val@{NVMCTRL\_CTRLA\_CMD\_UR\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_UR\_Val}{NVMCTRL\_CTRLA\_CMD\_UR\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+U\+R\+\_\+\+Val~0x41ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Unlock Region -\/ Unlocks the region containing the address location in the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga2ce3d94a5f09832706179f27bbe94d71}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga2ce3d94a5f09832706179f27bbe94d71}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WAP@{NVMCTRL\_CTRLA\_CMD\_WAP}}
+\index{NVMCTRL\_CTRLA\_CMD\_WAP@{NVMCTRL\_CTRLA\_CMD\_WAP}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WAP}{NVMCTRL\_CTRLA\_CMD\_WAP}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+AP~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16088beab7d82fdbb34bac9971d21859}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+A\+P\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga16088beab7d82fdbb34bac9971d21859}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga16088beab7d82fdbb34bac9971d21859}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WAP\_Val@{NVMCTRL\_CTRLA\_CMD\_WAP\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_WAP\_Val@{NVMCTRL\_CTRLA\_CMD\_WAP\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WAP\_Val}{NVMCTRL\_CTRLA\_CMD\_WAP\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+A\+P\+\_\+\+Val~0x6ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write Auxiliary Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. This command can be given only when the security bit is not set and only to the user configuration row. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga1986c7240415a189e9b8d5e867830354}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga1986c7240415a189e9b8d5e867830354}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WL@{NVMCTRL\_CTRLA\_CMD\_WL}}
+\index{NVMCTRL\_CTRLA\_CMD\_WL@{NVMCTRL\_CTRLA\_CMD\_WL}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WL}{NVMCTRL\_CTRLA\_CMD\_WL}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+WL~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga16cd33731304aa0ed2db58be2f6fe599}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+L\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga16cd33731304aa0ed2db58be2f6fe599}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga16cd33731304aa0ed2db58be2f6fe599}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WL\_Val@{NVMCTRL\_CTRLA\_CMD\_WL\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_WL\_Val@{NVMCTRL\_CTRLA\_CMD\_WL\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WL\_Val}{NVMCTRL\_CTRLA\_CMD\_WL\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+L\+\_\+\+Val~0x\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write lockbits 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad21e753f2741af430e0a52f2a9a15eab}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad21e753f2741af430e0a52f2a9a15eab}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WP@{NVMCTRL\_CTRLA\_CMD\_WP}}
+\index{NVMCTRL\_CTRLA\_CMD\_WP@{NVMCTRL\_CTRLA\_CMD\_WP}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WP}{NVMCTRL\_CTRLA\_CMD\_WP}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+WP~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad7cfc5fc0cd04b2bbe3337a035b6d127}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+P\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga5346c6f8ba695f7cadb7f07bde6e25f8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad7cfc5fc0cd04b2bbe3337a035b6d127}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad7cfc5fc0cd04b2bbe3337a035b6d127}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMD\_WP\_Val@{NVMCTRL\_CTRLA\_CMD\_WP\_Val}}
+\index{NVMCTRL\_CTRLA\_CMD\_WP\_Val@{NVMCTRL\_CTRLA\_CMD\_WP\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMD\_WP\_Val}{NVMCTRL\_CTRLA\_CMD\_WP\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+\_\+\+W\+P\+\_\+\+Val~0x4ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Write Page -\/ Writes the contents of the page buffer to the page addressed by the A\+D\+DR register. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga9e234ce19fc870b1be42fad5a7183220}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga9e234ce19fc870b1be42fad5a7183220}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMDEX@{NVMCTRL\_CTRLA\_CMDEX}}
+\index{NVMCTRL\_CTRLA\_CMDEX@{NVMCTRL\_CTRLA\_CMDEX}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMDEX}{NVMCTRL\_CTRLA\_CMDEX}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+EX(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gad40754e7ab3d73ad07b2fca0c4ca8de3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab13bf4c69aa0378ad5cc866fe066e8c5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab13bf4c69aa0378ad5cc866fe066e8c5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMDEX\_KEY@{NVMCTRL\_CTRLA\_CMDEX\_KEY}}
+\index{NVMCTRL\_CTRLA\_CMDEX\_KEY@{NVMCTRL\_CTRLA\_CMDEX\_KEY}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMDEX\_KEY}{NVMCTRL\_CTRLA\_CMDEX\_KEY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+EY~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga22224d9a78d4033732134f8b564ba6d9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+E\+Y\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga22224d9a78d4033732134f8b564ba6d9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga22224d9a78d4033732134f8b564ba6d9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val@{NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val}}
+\index{NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val@{NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val}{NVMCTRL\_CTRLA\_CMDEX\_KEY\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+K\+E\+Y\+\_\+\+Val~0x\+A5ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Execution Key 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad40754e7ab3d73ad07b2fca0c4ca8de3}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad40754e7ab3d73ad07b2fca0c4ca8de3}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMDEX\_Msk@{NVMCTRL\_CTRLA\_CMDEX\_Msk}}
+\index{NVMCTRL\_CTRLA\_CMDEX\_Msk@{NVMCTRL\_CTRLA\_CMDEX\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMDEX\_Msk}{NVMCTRL\_CTRLA\_CMDEX\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Msk~(0x\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga6ac235db7c8301778321fa6898c7f490}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_CMDEX\_Pos@{NVMCTRL\_CTRLA\_CMDEX\_Pos}}
+\index{NVMCTRL\_CTRLA\_CMDEX\_Pos@{NVMCTRL\_CTRLA\_CMDEX\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_CMDEX\_Pos}{NVMCTRL\_CTRLA\_CMDEX\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+C\+M\+D\+E\+X\+\_\+\+Pos~8}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) Command Execution 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga59f02a3ccafaec97563b7369c88d548c}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga59f02a3ccafaec97563b7369c88d548c}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_MASK@{NVMCTRL\_CTRLA\_MASK}}
+\index{NVMCTRL\_CTRLA\_MASK@{NVMCTRL\_CTRLA\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_MASK}{NVMCTRL\_CTRLA\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+M\+A\+SK~0x\+F\+F7\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4853195148a26c13e84af06b27099a5a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4853195148a26c13e84af06b27099a5a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_OFFSET@{NVMCTRL\_CTRLA\_OFFSET}}
+\index{NVMCTRL\_CTRLA\_OFFSET@{NVMCTRL\_CTRLA\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_OFFSET}{NVMCTRL\_CTRLA\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+O\+F\+F\+S\+ET~0x00}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA offset) Control A 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gafda7d874f8e5f91f9590105c7bc984b5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gafda7d874f8e5f91f9590105c7bc984b5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLA\_RESETVALUE@{NVMCTRL\_CTRLA\_RESETVALUE}}
+\index{NVMCTRL\_CTRLA\_RESETVALUE@{NVMCTRL\_CTRLA\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLA\_RESETVALUE}{NVMCTRL\_CTRLA\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x0000ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LA reset\+\_\+value) Control A 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab1f4105b83a240096ef70c4a9c989907}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab1f4105b83a240096ef70c4a9c989907}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_CACHEDIS@{NVMCTRL\_CTRLB\_CACHEDIS}}
+\index{NVMCTRL\_CTRLB\_CACHEDIS@{NVMCTRL\_CTRLB\_CACHEDIS}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_CACHEDIS}{NVMCTRL\_CTRLB\_CACHEDIS}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+IS~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+I\+S\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf4c3e69fb60d156a007a7edd11022b55}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf4c3e69fb60d156a007a7edd11022b55}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_CACHEDIS\_Pos@{NVMCTRL\_CTRLB\_CACHEDIS\_Pos}}
+\index{NVMCTRL\_CTRLB\_CACHEDIS\_Pos@{NVMCTRL\_CTRLB\_CACHEDIS\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_CACHEDIS\_Pos}{NVMCTRL\_CTRLB\_CACHEDIS\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+C\+A\+C\+H\+E\+D\+I\+S\+\_\+\+Pos~18}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Cache Disable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab926dd3f8e1a5dd7bd6ab82e32e97f00}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab926dd3f8e1a5dd7bd6ab82e32e97f00}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_MANW@{NVMCTRL\_CTRLB\_MANW}}
+\index{NVMCTRL\_CTRLB\_MANW@{NVMCTRL\_CTRLB\_MANW}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_MANW}{NVMCTRL\_CTRLB\_MANW}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+NW~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+N\+W\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf17fac4102804e50810c49ec470be5e2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf17fac4102804e50810c49ec470be5e2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_MANW\_Pos@{NVMCTRL\_CTRLB\_MANW\_Pos}}
+\index{NVMCTRL\_CTRLB\_MANW\_Pos@{NVMCTRL\_CTRLB\_MANW\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_MANW\_Pos}{NVMCTRL\_CTRLB\_MANW\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+N\+W\+\_\+\+Pos~7}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Manual Write 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf2272ac3ee696dfe0d222a87bc7cbe1}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf2272ac3ee696dfe0d222a87bc7cbe1}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_MASK@{NVMCTRL\_CTRLB\_MASK}}
+\index{NVMCTRL\_CTRLB\_MASK@{NVMCTRL\_CTRLB\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_MASK}{NVMCTRL\_CTRLB\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+SK~0x0007039\+Eul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga96b31df212035cedc4f6a370222e5b67}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga96b31df212035cedc4f6a370222e5b67}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_OFFSET@{NVMCTRL\_CTRLB\_OFFSET}}
+\index{NVMCTRL\_CTRLB\_OFFSET@{NVMCTRL\_CTRLB\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_OFFSET}{NVMCTRL\_CTRLB\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+O\+F\+F\+S\+ET~0x04}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB offset) Control B 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa05ed9df2291f44b919f5b0fa447767}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa05ed9df2291f44b919f5b0fa447767}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE@{NVMCTRL\_CTRLB\_READMODE}}
+\index{NVMCTRL\_CTRLB\_READMODE@{NVMCTRL\_CTRLB\_READMODE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE}{NVMCTRL\_CTRLB\_READMODE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+DE(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga1a5b8a600e2d62a49984a1c75ea693a2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gafb30f0bebe63e725ddd44be344011985}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gafb30f0bebe63e725ddd44be344011985}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC@{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC}}
+\index{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC@{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC}{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+IC~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga330c07f70cd004957ce3ab80e77f06d8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+I\+C\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga330c07f70cd004957ce3ab80e77f06d8}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga330c07f70cd004957ce3ab80e77f06d8}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val@{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val}}
+\index{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val@{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val}{NVMCTRL\_CTRLB\_READMODE\_DETERMINISTIC\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+D\+E\+T\+E\+R\+M\+I\+N\+I\+S\+T\+I\+C\+\_\+\+Val~0x2ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) The cache system ensures that a cache hit or miss takes the same amount of time, determined by the number of programmed flash wait states. This mode can be used for real-\/time applications that require deterministic execution timings. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad68c23f250b571ae61e8c9ad730b42a4}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad68c23f250b571ae61e8c9ad730b42a4}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER@{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER}}
+\index{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER@{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER}{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+ER~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa992cf03ba51b466d0e1f18fba2982d2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa992cf03ba51b466d0e1f18fba2982d2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa992cf03ba51b466d0e1f18fba2982d2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val@{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val}}
+\index{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val@{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val}{NVMCTRL\_CTRLB\_READMODE\_LOW\_POWER\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+Val~0x1ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Reduces power consumption of the cache system, but inserts a wait state each time there is a cache miss. This mode may not be relevant if C\+PU performance is required, as the application will be stalled and may lead to increase run time. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga1a5b8a600e2d62a49984a1c75ea693a2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga1a5b8a600e2d62a49984a1c75ea693a2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_Msk@{NVMCTRL\_CTRLB\_READMODE\_Msk}}
+\index{NVMCTRL\_CTRLB\_READMODE\_Msk@{NVMCTRL\_CTRLB\_READMODE\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_Msk}{NVMCTRL\_CTRLB\_READMODE\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Msk~(0x3ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga566f1952886163d66be5acb1d632646c}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga566f1952886163d66be5acb1d632646c}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY@{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY}}
+\index{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY@{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY}{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+TY~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a4b96f2109c47245bc98e69b66fff74}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+T\+Y\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a4b96f2109c47245bc98e69b66fff74}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a4b96f2109c47245bc98e69b66fff74}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val@{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val}}
+\index{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val@{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val}{NVMCTRL\_CTRLB\_READMODE\_NO\_MISS\_PENALTY\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+N\+O\+\_\+\+M\+I\+S\+S\+\_\+\+P\+E\+N\+A\+L\+T\+Y\+\_\+\+Val~0x0ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) The N\+VM Controller (cache system) does not insert wait states on a cache miss. Gives the best system performance. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga46b5014db97bf5ce4da54dce52d162f9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_READMODE\_Pos@{NVMCTRL\_CTRLB\_READMODE\_Pos}}
+\index{NVMCTRL\_CTRLB\_READMODE\_Pos@{NVMCTRL\_CTRLB\_READMODE\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_READMODE\_Pos}{NVMCTRL\_CTRLB\_READMODE\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+A\+D\+M\+O\+D\+E\+\_\+\+Pos~16}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+V\+M\+C\+T\+RL Read Mode 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac0a835cf0ee617133dc445147d2af448}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac0a835cf0ee617133dc445147d2af448}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RESETVALUE@{NVMCTRL\_CTRLB\_RESETVALUE}}
+\index{NVMCTRL\_CTRLB\_RESETVALUE@{NVMCTRL\_CTRLB\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RESETVALUE}{NVMCTRL\_CTRLB\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB reset\+\_\+value) Control B 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b3f59c294e4c40249e9b361cb580e6f}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b3f59c294e4c40249e9b361cb580e6f}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS@{NVMCTRL\_CTRLB\_RWS}}
+\index{NVMCTRL\_CTRLB\_RWS@{NVMCTRL\_CTRLB\_RWS}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS}{NVMCTRL\_CTRLB\_RWS}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+WS(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab5ad30e9547cbcc159748e0f014567f0}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b895ffd7c3df025c5accf229c03512e}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5b895ffd7c3df025c5accf229c03512e}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_DUAL@{NVMCTRL\_CTRLB\_RWS\_DUAL}}
+\index{NVMCTRL\_CTRLB\_RWS\_DUAL@{NVMCTRL\_CTRLB\_RWS\_DUAL}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_DUAL}{NVMCTRL\_CTRLB\_RWS\_DUAL}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+AL~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga757070851f4e48ecc24b2d75da0aa6e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+A\+L\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga757070851f4e48ecc24b2d75da0aa6e2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga757070851f4e48ecc24b2d75da0aa6e2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_DUAL\_Val@{NVMCTRL\_CTRLB\_RWS\_DUAL\_Val}}
+\index{NVMCTRL\_CTRLB\_RWS\_DUAL\_Val@{NVMCTRL\_CTRLB\_RWS\_DUAL\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_DUAL\_Val}{NVMCTRL\_CTRLB\_RWS\_DUAL\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+D\+U\+A\+L\+\_\+\+Val~0x2ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Dual Auto Wait State 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga49c5e1bdebf752025bc9874c096865e4}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga49c5e1bdebf752025bc9874c096865e4}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_HALF@{NVMCTRL\_CTRLB\_RWS\_HALF}}
+\index{NVMCTRL\_CTRLB\_RWS\_HALF@{NVMCTRL\_CTRLB\_RWS\_HALF}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_HALF}{NVMCTRL\_CTRLB\_RWS\_HALF}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+LF~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf0413ccbb9e3c4ebfe2c2f8f2a10da6}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+L\+F\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf0413ccbb9e3c4ebfe2c2f8f2a10da6}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaf0413ccbb9e3c4ebfe2c2f8f2a10da6}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_HALF\_Val@{NVMCTRL\_CTRLB\_RWS\_HALF\_Val}}
+\index{NVMCTRL\_CTRLB\_RWS\_HALF\_Val@{NVMCTRL\_CTRLB\_RWS\_HALF\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_HALF\_Val}{NVMCTRL\_CTRLB\_RWS\_HALF\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+H\+A\+L\+F\+\_\+\+Val~0x1ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Half Auto Wait State 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab5ad30e9547cbcc159748e0f014567f0}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab5ad30e9547cbcc159748e0f014567f0}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_Msk@{NVMCTRL\_CTRLB\_RWS\_Msk}}
+\index{NVMCTRL\_CTRLB\_RWS\_Msk@{NVMCTRL\_CTRLB\_RWS\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_Msk}{NVMCTRL\_CTRLB\_RWS\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Msk~(0x\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_Pos@{NVMCTRL\_CTRLB\_RWS\_Pos}}
+\index{NVMCTRL\_CTRLB\_RWS\_Pos@{NVMCTRL\_CTRLB\_RWS\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_Pos}{NVMCTRL\_CTRLB\_RWS\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos~1}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM Read Wait States 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga3011ea9db7c53bb00f357712c1d7d4b2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga3011ea9db7c53bb00f357712c1d7d4b2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_SINGLE@{NVMCTRL\_CTRLB\_RWS\_SINGLE}}
+\index{NVMCTRL\_CTRLB\_RWS\_SINGLE@{NVMCTRL\_CTRLB\_RWS\_SINGLE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_SINGLE}{NVMCTRL\_CTRLB\_RWS\_SINGLE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+LE~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga38b52d3de7998f872c54a599e4e21f25}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga43e4b7eb29abd297bee59f003d715e26}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga38b52d3de7998f872c54a599e4e21f25}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga38b52d3de7998f872c54a599e4e21f25}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val@{NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val}}
+\index{NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val@{NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val}{NVMCTRL\_CTRLB\_RWS\_SINGLE\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+W\+S\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+Val~0x0ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Single Auto Wait State 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga3fbdffb0fca7ae059f4c803d8547a0d5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga3fbdffb0fca7ae059f4c803d8547a0d5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM@{NVMCTRL\_CTRLB\_SLEEPPRM}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM@{NVMCTRL\_CTRLB\_SLEEPPRM}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM}{NVMCTRL\_CTRLB\_SLEEPPRM}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+RM(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae19435c78d5011e7bb34cb879c66bc8b}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab612ef2163b9b3f3b243a5a58ebbada0}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab612ef2163b9b3f3b243a5a58ebbada0}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED@{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED@{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED}{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+ED~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga2a6e0082abe992f41fe1e646e0b6b52a}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga2a6e0082abe992f41fe1e646e0b6b52a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga2a6e0082abe992f41fe1e646e0b6b52a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val}{NVMCTRL\_CTRLB\_SLEEPPRM\_DISABLED\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+Val~0x3ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Auto power reduction disabled. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gae19435c78d5011e7bb34cb879c66bc8b}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gae19435c78d5011e7bb34cb879c66bc8b}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_Msk@{NVMCTRL\_CTRLB\_SLEEPPRM\_Msk}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_Msk@{NVMCTRL\_CTRLB\_SLEEPPRM\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_Msk}{NVMCTRL\_CTRLB\_SLEEPPRM\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Msk~(0x3ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_Pos@{NVMCTRL\_CTRLB\_SLEEPPRM\_Pos}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_Pos@{NVMCTRL\_CTRLB\_SLEEPPRM\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_Pos}{NVMCTRL\_CTRLB\_SLEEPPRM\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos~8}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) Power Reduction Mode during Sleep 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga65e9f8270f7eaf6119d83c67049d63cc}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga65e9f8270f7eaf6119d83c67049d63cc}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS}{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+SS~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gaa1ab6787e59eac433c25ac307dd7a2aa}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+S\+S\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa1ab6787e59eac433c25ac307dd7a2aa}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa1ab6787e59eac433c25ac307dd7a2aa}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val}{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEONACCESS\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+O\+N\+A\+C\+C\+E\+S\+S\+\_\+\+Val~0x0ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM block enters low-\/power mode when entering sleep.\+N\+VM block exits low-\/power mode upon first access. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c32d4daa17d08d810b673df9bf3a3bf}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga6c32d4daa17d08d810b673df9bf3a3bf}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT}{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+NT~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga45d3a8b31b16b2b1204de0b61e5c12fc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+N\+T\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac7d2e32d78d79b7a7b67e1f6aa1571df}{N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga45d3a8b31b16b2b1204de0b61e5c12fc}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga45d3a8b31b16b2b1204de0b61e5c12fc}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val}}
+\index{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val@{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val}{NVMCTRL\_CTRLB\_SLEEPPRM\_WAKEUPINSTANT\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+L\+B\+\_\+\+S\+L\+E\+E\+P\+P\+R\+M\+\_\+\+W\+A\+K\+E\+U\+P\+I\+N\+S\+T\+A\+N\+T\+\_\+\+Val~0x1ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+T\+R\+LB) N\+VM block enters low-\/power mode when entering sleep.\+N\+VM block exits low-\/power mode when exiting sleep. 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga21e287f2b5ff9239dd9cca1068d6a5a5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga21e287f2b5ff9239dd9cca1068d6a5a5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_ERROR@{NVMCTRL\_INTENCLR\_ERROR}}
+\index{NVMCTRL\_INTENCLR\_ERROR@{NVMCTRL\_INTENCLR\_ERROR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_ERROR}{NVMCTRL\_INTENCLR\_ERROR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+OR~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaefcc9c986918d880edfb8b05fe0a6bcb}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaefcc9c986918d880edfb8b05fe0a6bcb}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_ERROR\_Pos@{NVMCTRL\_INTENCLR\_ERROR\_Pos}}
+\index{NVMCTRL\_INTENCLR\_ERROR\_Pos@{NVMCTRL\_INTENCLR\_ERROR\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_ERROR\_Pos}{NVMCTRL\_INTENCLR\_ERROR\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos~1}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Error Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga399cac515ae8b6bfd864314732defbe9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga399cac515ae8b6bfd864314732defbe9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_MASK@{NVMCTRL\_INTENCLR\_MASK}}
+\index{NVMCTRL\_INTENCLR\_MASK@{NVMCTRL\_INTENCLR\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_MASK}{NVMCTRL\_INTENCLR\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+M\+A\+SK~0x03ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf69e18ecea21ffbf47dc28f66161a768}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf69e18ecea21ffbf47dc28f66161a768}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_OFFSET@{NVMCTRL\_INTENCLR\_OFFSET}}
+\index{NVMCTRL\_INTENCLR\_OFFSET@{NVMCTRL\_INTENCLR\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_OFFSET}{NVMCTRL\_INTENCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x0C}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR offset) Interrupt Enable Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga442a07f4d8e084c114976267dfc2dc86}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga442a07f4d8e084c114976267dfc2dc86}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_READY@{NVMCTRL\_INTENCLR\_READY}}
+\index{NVMCTRL\_INTENCLR\_READY@{NVMCTRL\_INTENCLR\_READY}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_READY}{NVMCTRL\_INTENCLR\_READY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+DY~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf655addcfd79db2cb6324f92209a9896}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf655addcfd79db2cb6324f92209a9896}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_READY\_Pos@{NVMCTRL\_INTENCLR\_READY\_Pos}}
+\index{NVMCTRL\_INTENCLR\_READY\_Pos@{NVMCTRL\_INTENCLR\_READY\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_READY\_Pos}{NVMCTRL\_INTENCLR\_READY\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR) N\+VM Ready Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gacc5d7dab614b1d4e05402a8c97de3954}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gacc5d7dab614b1d4e05402a8c97de3954}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENCLR\_RESETVALUE@{NVMCTRL\_INTENCLR\_RESETVALUE}}
+\index{NVMCTRL\_INTENCLR\_RESETVALUE@{NVMCTRL\_INTENCLR\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENCLR\_RESETVALUE}{NVMCTRL\_INTENCLR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR reset\+\_\+value) Interrupt Enable Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0ed8ea82f01157010d7c740abd3b80a2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0ed8ea82f01157010d7c740abd3b80a2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_ERROR@{NVMCTRL\_INTENSET\_ERROR}}
+\index{NVMCTRL\_INTENSET\_ERROR@{NVMCTRL\_INTENSET\_ERROR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_ERROR}{NVMCTRL\_INTENSET\_ERROR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+OR~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaac02b4043d398b4dc876e542fda447e0}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaac02b4043d398b4dc876e542fda447e0}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_ERROR\_Pos@{NVMCTRL\_INTENSET\_ERROR\_Pos}}
+\index{NVMCTRL\_INTENSET\_ERROR\_Pos@{NVMCTRL\_INTENSET\_ERROR\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_ERROR\_Pos}{NVMCTRL\_INTENSET\_ERROR\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos~1}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Error Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac49294b6f689477f53cabe7aba8a4975}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac49294b6f689477f53cabe7aba8a4975}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_MASK@{NVMCTRL\_INTENSET\_MASK}}
+\index{NVMCTRL\_INTENSET\_MASK@{NVMCTRL\_INTENSET\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_MASK}{NVMCTRL\_INTENSET\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+M\+A\+SK~0x03ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gacbc15881a076ca6d111540304e571a20}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gacbc15881a076ca6d111540304e571a20}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_OFFSET@{NVMCTRL\_INTENSET\_OFFSET}}
+\index{NVMCTRL\_INTENSET\_OFFSET@{NVMCTRL\_INTENSET\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_OFFSET}{NVMCTRL\_INTENSET\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x10}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET offset) Interrupt Enable Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaec9faf993409c2da8bc71efd88933666}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaec9faf993409c2da8bc71efd88933666}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_READY@{NVMCTRL\_INTENSET\_READY}}
+\index{NVMCTRL\_INTENSET\_READY@{NVMCTRL\_INTENSET\_READY}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_READY}{NVMCTRL\_INTENSET\_READY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+DY~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4eca7adfbfcaa40c9a3904c9c141058a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4eca7adfbfcaa40c9a3904c9c141058a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_READY\_Pos@{NVMCTRL\_INTENSET\_READY\_Pos}}
+\index{NVMCTRL\_INTENSET\_READY\_Pos@{NVMCTRL\_INTENSET\_READY\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_READY\_Pos}{NVMCTRL\_INTENSET\_READY\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET) N\+VM Ready Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad48eea420ef04c6f0c75a074991ad6d6}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad48eea420ef04c6f0c75a074991ad6d6}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTENSET\_RESETVALUE@{NVMCTRL\_INTENSET\_RESETVALUE}}
+\index{NVMCTRL\_INTENSET\_RESETVALUE@{NVMCTRL\_INTENSET\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTENSET\_RESETVALUE}{NVMCTRL\_INTENSET\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET reset\+\_\+value) Interrupt Enable Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4dc7bd2f8228424f2f305284a0425d64}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4dc7bd2f8228424f2f305284a0425d64}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_ERROR@{NVMCTRL\_INTFLAG\_ERROR}}
+\index{NVMCTRL\_INTFLAG\_ERROR@{NVMCTRL\_INTFLAG\_ERROR}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_ERROR}{NVMCTRL\_INTFLAG\_ERROR}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+OR~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad0ee9e136df1b894499ee13b6509c08f}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad0ee9e136df1b894499ee13b6509c08f}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_ERROR\_Pos@{NVMCTRL\_INTFLAG\_ERROR\_Pos}}
+\index{NVMCTRL\_INTFLAG\_ERROR\_Pos@{NVMCTRL\_INTFLAG\_ERROR\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_ERROR\_Pos}{NVMCTRL\_INTFLAG\_ERROR\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+R\+R\+O\+R\+\_\+\+Pos~1}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) Error 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga77cb82e875b1988ba35455d842df74c5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga77cb82e875b1988ba35455d842df74c5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_MASK@{NVMCTRL\_INTFLAG\_MASK}}
+\index{NVMCTRL\_INTFLAG\_MASK@{NVMCTRL\_INTFLAG\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_MASK}{NVMCTRL\_INTFLAG\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK~0x03ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga28bff79f1cf058fa8a6c7072f5913862}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga28bff79f1cf058fa8a6c7072f5913862}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_OFFSET@{NVMCTRL\_INTFLAG\_OFFSET}}
+\index{NVMCTRL\_INTFLAG\_OFFSET@{NVMCTRL\_INTFLAG\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_OFFSET}{NVMCTRL\_INTFLAG\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+O\+F\+F\+S\+ET~0x14}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG offset) Interrupt Flag Status and Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga3c427a204dab120e2aee8839fbe1cc7c}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga3c427a204dab120e2aee8839fbe1cc7c}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_READY@{NVMCTRL\_INTFLAG\_READY}}
+\index{NVMCTRL\_INTFLAG\_READY@{NVMCTRL\_INTFLAG\_READY}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_READY}{NVMCTRL\_INTFLAG\_READY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+DY~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab04b4aece1f516c2e7ee00e7f29c9b69}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab04b4aece1f516c2e7ee00e7f29c9b69}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_READY\_Pos@{NVMCTRL\_INTFLAG\_READY\_Pos}}
+\index{NVMCTRL\_INTFLAG\_READY\_Pos@{NVMCTRL\_INTFLAG\_READY\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_READY\_Pos}{NVMCTRL\_INTFLAG\_READY\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG) N\+VM Ready 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga2d7e54384a5f6445cc9b9769ddf32ac2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga2d7e54384a5f6445cc9b9769ddf32ac2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_INTFLAG\_RESETVALUE@{NVMCTRL\_INTFLAG\_RESETVALUE}}
+\index{NVMCTRL\_INTFLAG\_RESETVALUE@{NVMCTRL\_INTFLAG\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_INTFLAG\_RESETVALUE}{NVMCTRL\_INTFLAG\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG reset\+\_\+value) Interrupt Flag Status and Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gadfd6303702a1ec835b3959a2001b73a2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gadfd6303702a1ec835b3959a2001b73a2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_LOCK\_LOCK@{NVMCTRL\_LOCK\_LOCK}}
+\index{NVMCTRL\_LOCK\_LOCK@{NVMCTRL\_LOCK\_LOCK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_LOCK\_LOCK}{NVMCTRL\_LOCK\_LOCK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+CK(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bd561a9c9c43c4f0272f91528fa8b55}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e641135617433c92419f3c6272c0856}{N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bd561a9c9c43c4f0272f91528fa8b55}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bd561a9c9c43c4f0272f91528fa8b55}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_LOCK\_LOCK\_Msk@{NVMCTRL\_LOCK\_LOCK\_Msk}}
+\index{NVMCTRL\_LOCK\_LOCK\_Msk@{NVMCTRL\_LOCK\_LOCK\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_LOCK\_LOCK\_Msk}{NVMCTRL\_LOCK\_LOCK\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e641135617433c92419f3c6272c0856}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7e641135617433c92419f3c6272c0856}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_LOCK\_LOCK\_Pos@{NVMCTRL\_LOCK\_LOCK\_Pos}}
+\index{NVMCTRL\_LOCK\_LOCK\_Pos@{NVMCTRL\_LOCK\_LOCK\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_LOCK\_LOCK\_Pos}{NVMCTRL\_LOCK\_LOCK\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+L\+O\+C\+K\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK) Region Lock Bits 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga5d4ac6aa3fe484566828978a57d521c9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga5d4ac6aa3fe484566828978a57d521c9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_LOCK\_MASK@{NVMCTRL\_LOCK\_MASK}}
+\index{NVMCTRL\_LOCK\_MASK@{NVMCTRL\_LOCK\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_LOCK\_MASK}{NVMCTRL\_LOCK\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7cb3b7118b0cfe9f2279ccb766382275}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7cb3b7118b0cfe9f2279ccb766382275}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_LOCK\_OFFSET@{NVMCTRL\_LOCK\_OFFSET}}
+\index{NVMCTRL\_LOCK\_OFFSET@{NVMCTRL\_LOCK\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_LOCK\_OFFSET}{NVMCTRL\_LOCK\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+\_\+\+O\+F\+F\+S\+ET~0x20}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+CK offset) Lock Section 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaadfbc70cd6cbb088b215b8e6322c4295}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaadfbc70cd6cbb088b215b8e6322c4295}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_MASK@{NVMCTRL\_PARAM\_MASK}}
+\index{NVMCTRL\_PARAM\_MASK@{NVMCTRL\_PARAM\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_MASK}{NVMCTRL\_PARAM\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+SK~0x\+F\+F\+F7\+F\+F\+F\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gabe03070a8e72b6577e46fa73ad53e552}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gabe03070a8e72b6577e46fa73ad53e552}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_NVMP@{NVMCTRL\_PARAM\_NVMP}}
+\index{NVMCTRL\_PARAM\_NVMP@{NVMCTRL\_PARAM\_NVMP}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_NVMP}{NVMCTRL\_PARAM\_NVMP}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+MP(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga767641a1cda9faa90b0b721f356158c7}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga08f9f5de86a6c44ce2d6ecdb9f995443}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga767641a1cda9faa90b0b721f356158c7}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga767641a1cda9faa90b0b721f356158c7}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_NVMP\_Msk@{NVMCTRL\_PARAM\_NVMP\_Msk}}
+\index{NVMCTRL\_PARAM\_NVMP\_Msk@{NVMCTRL\_PARAM\_NVMP\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_NVMP\_Msk}{NVMCTRL\_PARAM\_NVMP\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga08f9f5de86a6c44ce2d6ecdb9f995443}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga08f9f5de86a6c44ce2d6ecdb9f995443}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_NVMP\_Pos@{NVMCTRL\_PARAM\_NVMP\_Pos}}
+\index{NVMCTRL\_PARAM\_NVMP\_Pos@{NVMCTRL\_PARAM\_NVMP\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_NVMP\_Pos}{NVMCTRL\_PARAM\_NVMP\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+N\+V\+M\+P\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) N\+VM Pages 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga6624597605fc956079a9818778a34abe}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga6624597605fc956079a9818778a34abe}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_OFFSET@{NVMCTRL\_PARAM\_OFFSET}}
+\index{NVMCTRL\_PARAM\_OFFSET@{NVMCTRL\_PARAM\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_OFFSET}{NVMCTRL\_PARAM\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+O\+F\+F\+S\+ET~0x08}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM offset) N\+VM Parameter 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga58491f9494d89b466f85269fcdb1f26e}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga58491f9494d89b466f85269fcdb1f26e}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ@{NVMCTRL\_PARAM\_PSZ}}
+\index{NVMCTRL\_PARAM\_PSZ@{NVMCTRL\_PARAM\_PSZ}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ}{NVMCTRL\_PARAM\_PSZ}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+SZ(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gacd9411e012f3e690b4e835de166dde28}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga3dc7aa1196aff3381eefe55a8789ca5d}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga3dc7aa1196aff3381eefe55a8789ca5d}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_1024@{NVMCTRL\_PARAM\_PSZ\_1024}}
+\index{NVMCTRL\_PARAM\_PSZ\_1024@{NVMCTRL\_PARAM\_PSZ\_1024}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_1024}{NVMCTRL\_PARAM\_PSZ\_1024}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bffb82ccc9a71552882baabdfa97b13}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bffb82ccc9a71552882baabdfa97b13}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7bffb82ccc9a71552882baabdfa97b13}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_1024\_Val@{NVMCTRL\_PARAM\_PSZ\_1024\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_1024\_Val@{NVMCTRL\_PARAM\_PSZ\_1024\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_1024\_Val}{NVMCTRL\_PARAM\_PSZ\_1024\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+1024\+\_\+\+Val~0x7ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 1024 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga19008e48e571c1882e4476ac5e0a53ab}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga19008e48e571c1882e4476ac5e0a53ab}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_128@{NVMCTRL\_PARAM\_PSZ\_128}}
+\index{NVMCTRL\_PARAM\_PSZ\_128@{NVMCTRL\_PARAM\_PSZ\_128}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_128}{NVMCTRL\_PARAM\_PSZ\_128}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac8f620598445b047b44dfc8081439744}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac8f620598445b047b44dfc8081439744}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac8f620598445b047b44dfc8081439744}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_128\_Val@{NVMCTRL\_PARAM\_PSZ\_128\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_128\_Val@{NVMCTRL\_PARAM\_PSZ\_128\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_128\_Val}{NVMCTRL\_PARAM\_PSZ\_128\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+128\+\_\+\+Val~0x4ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 128 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga12d78d73359d02253053b1ef6ed067c6}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga12d78d73359d02253053b1ef6ed067c6}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_16@{NVMCTRL\_PARAM\_PSZ\_16}}
+\index{NVMCTRL\_PARAM\_PSZ\_16@{NVMCTRL\_PARAM\_PSZ\_16}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_16}{NVMCTRL\_PARAM\_PSZ\_16}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga10b4a62c2bab14a45967ee663cfbdd10}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga10b4a62c2bab14a45967ee663cfbdd10}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga10b4a62c2bab14a45967ee663cfbdd10}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_16\_Val@{NVMCTRL\_PARAM\_PSZ\_16\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_16\_Val@{NVMCTRL\_PARAM\_PSZ\_16\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_16\_Val}{NVMCTRL\_PARAM\_PSZ\_16\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+16\+\_\+\+Val~0x1ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 16 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4ed90755a60fe915da872cb1151170a9}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4ed90755a60fe915da872cb1151170a9}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_256@{NVMCTRL\_PARAM\_PSZ\_256}}
+\index{NVMCTRL\_PARAM\_PSZ\_256@{NVMCTRL\_PARAM\_PSZ\_256}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_256}{NVMCTRL\_PARAM\_PSZ\_256}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f53d9c6161bf83ef35275e90438e9e2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f53d9c6161bf83ef35275e90438e9e2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga7f53d9c6161bf83ef35275e90438e9e2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_256\_Val@{NVMCTRL\_PARAM\_PSZ\_256\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_256\_Val@{NVMCTRL\_PARAM\_PSZ\_256\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_256\_Val}{NVMCTRL\_PARAM\_PSZ\_256\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+256\+\_\+\+Val~0x5ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 256 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a6a6748a1eda03967d73ff67d8b4e5d}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a6a6748a1eda03967d73ff67d8b4e5d}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_32@{NVMCTRL\_PARAM\_PSZ\_32}}
+\index{NVMCTRL\_PARAM\_PSZ\_32@{NVMCTRL\_PARAM\_PSZ\_32}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_32}{NVMCTRL\_PARAM\_PSZ\_32}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gae80b28e70177db78d7d5a0d748809192}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gae80b28e70177db78d7d5a0d748809192}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gae80b28e70177db78d7d5a0d748809192}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_32\_Val@{NVMCTRL\_PARAM\_PSZ\_32\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_32\_Val@{NVMCTRL\_PARAM\_PSZ\_32\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_32\_Val}{NVMCTRL\_PARAM\_PSZ\_32\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+32\+\_\+\+Val~0x2ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 32 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c5eba0af849936464336787aaa30734}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c5eba0af849936464336787aaa30734}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_512@{NVMCTRL\_PARAM\_PSZ\_512}}
+\index{NVMCTRL\_PARAM\_PSZ\_512@{NVMCTRL\_PARAM\_PSZ\_512}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_512}{NVMCTRL\_PARAM\_PSZ\_512}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gac19388a03c011b81e82b35dfd7da69b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac19388a03c011b81e82b35dfd7da69b1}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac19388a03c011b81e82b35dfd7da69b1}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_512\_Val@{NVMCTRL\_PARAM\_PSZ\_512\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_512\_Val@{NVMCTRL\_PARAM\_PSZ\_512\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_512\_Val}{NVMCTRL\_PARAM\_PSZ\_512\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+512\+\_\+\+Val~0x6ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 512 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga010ee7c6ad7172ef6b2b7ff5020fa540}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga010ee7c6ad7172ef6b2b7ff5020fa540}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_64@{NVMCTRL\_PARAM\_PSZ\_64}}
+\index{NVMCTRL\_PARAM\_PSZ\_64@{NVMCTRL\_PARAM\_PSZ\_64}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_64}{NVMCTRL\_PARAM\_PSZ\_64}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga464e20508682489f9283f535148c27b1}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64\+\_\+\+Val}}      $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga464e20508682489f9283f535148c27b1}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga464e20508682489f9283f535148c27b1}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_64\_Val@{NVMCTRL\_PARAM\_PSZ\_64\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_64\_Val@{NVMCTRL\_PARAM\_PSZ\_64\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_64\_Val}{NVMCTRL\_PARAM\_PSZ\_64\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+64\+\_\+\+Val~0x3ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 64 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga39d4fde607f28b120777885c44f2e0dd}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga39d4fde607f28b120777885c44f2e0dd}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_8@{NVMCTRL\_PARAM\_PSZ\_8}}
+\index{NVMCTRL\_PARAM\_PSZ\_8@{NVMCTRL\_PARAM\_PSZ\_8}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_8}{NVMCTRL\_PARAM\_PSZ\_8}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_ga9a83c6574dc48ac1c69701673922d2f3}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga9a83c6574dc48ac1c69701673922d2f3}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga9a83c6574dc48ac1c69701673922d2f3}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_8\_Val@{NVMCTRL\_PARAM\_PSZ\_8\_Val}}
+\index{NVMCTRL\_PARAM\_PSZ\_8\_Val@{NVMCTRL\_PARAM\_PSZ\_8\_Val}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_8\_Val}{NVMCTRL\_PARAM\_PSZ\_8\_Val}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+8\+\_\+\+Val~0x0ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) 8 bytes 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gacd9411e012f3e690b4e835de166dde28}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gacd9411e012f3e690b4e835de166dde28}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_Msk@{NVMCTRL\_PARAM\_PSZ\_Msk}}
+\index{NVMCTRL\_PARAM\_PSZ\_Msk@{NVMCTRL\_PARAM\_PSZ\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_Msk}{NVMCTRL\_PARAM\_PSZ\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Msk~(0x7ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gabec5624158a60a0f0d0b8a62afe18af8}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_PSZ\_Pos@{NVMCTRL\_PARAM\_PSZ\_Pos}}
+\index{NVMCTRL\_PARAM\_PSZ\_Pos@{NVMCTRL\_PARAM\_PSZ\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_PSZ\_Pos}{NVMCTRL\_PARAM\_PSZ\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+Z\+\_\+\+Pos~16}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) Page Size 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga70c3c90bcb2318bb472cc9565751ff04}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga70c3c90bcb2318bb472cc9565751ff04}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_RESETVALUE@{NVMCTRL\_PARAM\_RESETVALUE}}
+\index{NVMCTRL\_PARAM\_RESETVALUE@{NVMCTRL\_PARAM\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_RESETVALUE}{NVMCTRL\_PARAM\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM reset\+\_\+value) N\+VM Parameter 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a74ee4bb2487c1d99869bf24e611ed5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga4a74ee4bb2487c1d99869bf24e611ed5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_RWWEEP@{NVMCTRL\_PARAM\_RWWEEP}}
+\index{NVMCTRL\_PARAM\_RWWEEP@{NVMCTRL\_PARAM\_RWWEEP}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_RWWEEP}{NVMCTRL\_PARAM\_RWWEEP}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+EP(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gab2b3b61e1f28ca33f16a0328fac7d9c2}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___n_v_m_c_t_r_l_gadbe4b71fb59b5853ceb8536c6292b4cc}{N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab2b3b61e1f28ca33f16a0328fac7d9c2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab2b3b61e1f28ca33f16a0328fac7d9c2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_RWWEEP\_Msk@{NVMCTRL\_PARAM\_RWWEEP\_Msk}}
+\index{NVMCTRL\_PARAM\_RWWEEP\_Msk@{NVMCTRL\_PARAM\_RWWEEP\_Msk}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_RWWEEP\_Msk}{NVMCTRL\_PARAM\_RWWEEP\_Msk}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Msk~(0x\+F\+F\+Ful $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gadbe4b71fb59b5853ceb8536c6292b4cc}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gadbe4b71fb59b5853ceb8536c6292b4cc}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_PARAM\_RWWEEP\_Pos@{NVMCTRL\_PARAM\_RWWEEP\_Pos}}
+\index{NVMCTRL\_PARAM\_RWWEEP\_Pos@{NVMCTRL\_PARAM\_RWWEEP\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_PARAM\_RWWEEP\_Pos}{NVMCTRL\_PARAM\_RWWEEP\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+W\+W\+E\+E\+P\+\_\+\+Pos~20}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+P\+A\+R\+AM) R\+WW E\+E\+P\+R\+OM Pages 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gade5ff44980a885bebf5604ac806a2900}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gade5ff44980a885bebf5604ac806a2900}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_LOAD@{NVMCTRL\_STATUS\_LOAD}}
+\index{NVMCTRL\_STATUS\_LOAD@{NVMCTRL\_STATUS\_LOAD}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_LOAD}{NVMCTRL\_STATUS\_LOAD}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+AD~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+A\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf65957fca966956aebcb205a480376cf}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf65957fca966956aebcb205a480376cf}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_LOAD\_Pos@{NVMCTRL\_STATUS\_LOAD\_Pos}}
+\index{NVMCTRL\_STATUS\_LOAD\_Pos@{NVMCTRL\_STATUS\_LOAD\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_LOAD\_Pos}{NVMCTRL\_STATUS\_LOAD\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+A\+D\+\_\+\+Pos~1}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) N\+VM Page Buffer Active Loading 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad10b2faf4e6af34fc8a163ff96f54cc5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad10b2faf4e6af34fc8a163ff96f54cc5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_LOCKE@{NVMCTRL\_STATUS\_LOCKE}}
+\index{NVMCTRL\_STATUS\_LOCKE@{NVMCTRL\_STATUS\_LOCKE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_LOCKE}{NVMCTRL\_STATUS\_LOCKE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+KE~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+K\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga425654bd99f5c0f035b444932ad9d698}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga425654bd99f5c0f035b444932ad9d698}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_LOCKE\_Pos@{NVMCTRL\_STATUS\_LOCKE\_Pos}}
+\index{NVMCTRL\_STATUS\_LOCKE\_Pos@{NVMCTRL\_STATUS\_LOCKE\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_LOCKE\_Pos}{NVMCTRL\_STATUS\_LOCKE\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+L\+O\+C\+K\+E\+\_\+\+Pos~3}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Lock Error Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gacb0fa540b3def00184ee02da753f171e}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gacb0fa540b3def00184ee02da753f171e}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_MASK@{NVMCTRL\_STATUS\_MASK}}
+\index{NVMCTRL\_STATUS\_MASK@{NVMCTRL\_STATUS\_MASK}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_MASK}{NVMCTRL\_STATUS\_MASK}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~0x011\+Ful}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf1648cdd416b1b9c59c36664ca71480b}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf1648cdd416b1b9c59c36664ca71480b}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_NVME@{NVMCTRL\_STATUS\_NVME}}
+\index{NVMCTRL\_STATUS\_NVME@{NVMCTRL\_STATUS\_NVME}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_NVME}{NVMCTRL\_STATUS\_NVME}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+ME~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+M\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e5c4f746519844207a933b98d3fd883}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0e5c4f746519844207a933b98d3fd883}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_NVME\_Pos@{NVMCTRL\_STATUS\_NVME\_Pos}}
+\index{NVMCTRL\_STATUS\_NVME\_Pos@{NVMCTRL\_STATUS\_NVME\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_NVME\_Pos}{NVMCTRL\_STATUS\_NVME\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+V\+M\+E\+\_\+\+Pos~4}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) N\+VM Error 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa210cb991451778d9df1a804b189799a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa210cb991451778d9df1a804b189799a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_OFFSET@{NVMCTRL\_STATUS\_OFFSET}}
+\index{NVMCTRL\_STATUS\_OFFSET@{NVMCTRL\_STATUS\_OFFSET}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_OFFSET}{NVMCTRL\_STATUS\_OFFSET}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET~0x18}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US offset) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf0aef4e5cc8a239d347d60eec6c4cac2}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf0aef4e5cc8a239d347d60eec6c4cac2}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_PRM@{NVMCTRL\_STATUS\_PRM}}
+\index{NVMCTRL\_STATUS\_PRM@{NVMCTRL\_STATUS\_PRM}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_PRM}{NVMCTRL\_STATUS\_PRM}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+RM~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+M\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab7f1c04b15d3c4fc8c9ab4bfbfd0731c}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab7f1c04b15d3c4fc8c9ab4bfbfd0731c}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_PRM\_Pos@{NVMCTRL\_STATUS\_PRM\_Pos}}
+\index{NVMCTRL\_STATUS\_PRM\_Pos@{NVMCTRL\_STATUS\_PRM\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_PRM\_Pos}{NVMCTRL\_STATUS\_PRM\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+M\+\_\+\+Pos~0}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Power Reduction Mode 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga1e724b991e54d3d59cbe47774e7c0df4}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga1e724b991e54d3d59cbe47774e7c0df4}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_PROGE@{NVMCTRL\_STATUS\_PROGE}}
+\index{NVMCTRL\_STATUS\_PROGE@{NVMCTRL\_STATUS\_PROGE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_PROGE}{NVMCTRL\_STATUS\_PROGE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+GE~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+G\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaf78e886e6aa15d5f0d4324f02d46388a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaf78e886e6aa15d5f0d4324f02d46388a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_PROGE\_Pos@{NVMCTRL\_STATUS\_PROGE\_Pos}}
+\index{NVMCTRL\_STATUS\_PROGE\_Pos@{NVMCTRL\_STATUS\_PROGE\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_PROGE\_Pos}{NVMCTRL\_STATUS\_PROGE\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+P\+R\+O\+G\+E\+\_\+\+Pos~2}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Programming Error Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gac30e36e00c486c218383a4d318fe59c8}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gac30e36e00c486c218383a4d318fe59c8}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_RESETVALUE@{NVMCTRL\_STATUS\_RESETVALUE}}
+\index{NVMCTRL\_STATUS\_RESETVALUE@{NVMCTRL\_STATUS\_RESETVALUE}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_RESETVALUE}{NVMCTRL\_STATUS\_RESETVALUE}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x0000ul}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gab3f3d247dde4f7d65d04625007681f34}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gab3f3d247dde4f7d65d04625007681f34}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_SB@{NVMCTRL\_STATUS\_SB}}
+\index{NVMCTRL\_STATUS\_SB@{NVMCTRL\_STATUS\_SB}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_SB}{NVMCTRL\_STATUS\_SB}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+SB~(0x1ul $<$$<$ N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+B\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gacccc823d51d05b7675cb22b0274f70c3}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gacccc823d51d05b7675cb22b0274f70c3}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_STATUS\_SB\_Pos@{NVMCTRL\_STATUS\_SB\_Pos}}
+\index{NVMCTRL\_STATUS\_SB\_Pos@{NVMCTRL\_STATUS\_SB\_Pos}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_STATUS\_SB\_Pos}{NVMCTRL\_STATUS\_SB\_Pos}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+B\+\_\+\+Pos~8}
+
+
+
+(N\+V\+M\+C\+T\+R\+L\+\_\+\+S\+T\+A\+T\+US) Security Bit Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga3ea48740d5f4e1f68a7dd06753eb20d5}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga3ea48740d5f4e1f68a7dd06753eb20d5}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!NVMCTRL\_U2207@{NVMCTRL\_U2207}}
+\index{NVMCTRL\_U2207@{NVMCTRL\_U2207}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{NVMCTRL\_U2207}{NVMCTRL\_U2207}}
+{\footnotesize\ttfamily \#define N\+V\+M\+C\+T\+R\+L\+\_\+\+U2207}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad91d0ed581519e0bb057ede9db891e87}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad91d0ed581519e0bb057ede9db891e87}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!REV\_NVMCTRL@{REV\_NVMCTRL}}
+\index{REV\_NVMCTRL@{REV\_NVMCTRL}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{REV\_NVMCTRL}{REV\_NVMCTRL}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+N\+V\+M\+C\+T\+RL~0x202}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga709cb5f5f6372c6e6fcb8cff245900d0}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga709cb5f5f6372c6e6fcb8cff245900d0}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_AUX3@{SECTION\_NVMCTRL\_AUX3}}
+\index{SECTION\_NVMCTRL\_AUX3@{SECTION\_NVMCTRL\_AUX3}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_AUX3}{SECTION\_NVMCTRL\_AUX3}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+A\+U\+X3}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gad236e440ed3bfcbe9e9aef855f891d54}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gad236e440ed3bfcbe9e9aef855f891d54}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_CAL@{SECTION\_NVMCTRL\_CAL}}
+\index{SECTION\_NVMCTRL\_CAL@{SECTION\_NVMCTRL\_CAL}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_CAL}{SECTION\_NVMCTRL\_CAL}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+C\+AL}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa20a08294e753fed16b9ff464c193bb}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaaa20a08294e753fed16b9ff464c193bb}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_LOCKBIT@{SECTION\_NVMCTRL\_LOCKBIT}}
+\index{SECTION\_NVMCTRL\_LOCKBIT@{SECTION\_NVMCTRL\_LOCKBIT}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_LOCKBIT}{SECTION\_NVMCTRL\_LOCKBIT}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+L\+O\+C\+K\+B\+IT}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga8ce74f42d874759451c826206a4ae72a}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga8ce74f42d874759451c826206a4ae72a}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_OTP1@{SECTION\_NVMCTRL\_OTP1}}
+\index{SECTION\_NVMCTRL\_OTP1@{SECTION\_NVMCTRL\_OTP1}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_OTP1}{SECTION\_NVMCTRL\_OTP1}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P1}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c7b108217be6703d66a3f9a4ba7cceb}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga0c7b108217be6703d66a3f9a4ba7cceb}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_OTP2@{SECTION\_NVMCTRL\_OTP2}}
+\index{SECTION\_NVMCTRL\_OTP2@{SECTION\_NVMCTRL\_OTP2}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_OTP2}{SECTION\_NVMCTRL\_OTP2}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P2}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gae3a3ffc2f4fc43897e4240ceee77508b}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gae3a3ffc2f4fc43897e4240ceee77508b}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_OTP4@{SECTION\_NVMCTRL\_OTP4}}
+\index{SECTION\_NVMCTRL\_OTP4@{SECTION\_NVMCTRL\_OTP4}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_OTP4}{SECTION\_NVMCTRL\_OTP4}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+O\+T\+P4}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_ga363fcc6e714fce240e4ab7827c1bb03b}\label{group___s_a_m_d21___n_v_m_c_t_r_l_ga363fcc6e714fce240e4ab7827c1bb03b}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_TEMP\_LOG@{SECTION\_NVMCTRL\_TEMP\_LOG}}
+\index{SECTION\_NVMCTRL\_TEMP\_LOG@{SECTION\_NVMCTRL\_TEMP\_LOG}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_TEMP\_LOG}{SECTION\_NVMCTRL\_TEMP\_LOG}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+T\+E\+M\+P\+\_\+\+L\+OG}
+
+\mbox{\Hypertarget{group___s_a_m_d21___n_v_m_c_t_r_l_gaa567c13e0afc586393b8621a19247615}\label{group___s_a_m_d21___n_v_m_c_t_r_l_gaa567c13e0afc586393b8621a19247615}} 
+\index{Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}!SECTION\_NVMCTRL\_USER@{SECTION\_NVMCTRL\_USER}}
+\index{SECTION\_NVMCTRL\_USER@{SECTION\_NVMCTRL\_USER}!Non-\/Volatile Memory Controller@{Non-\/Volatile Memory Controller}}
+\subsubsection{\texorpdfstring{SECTION\_NVMCTRL\_USER}{SECTION\_NVMCTRL\_USER}}
+{\footnotesize\ttfamily \#define S\+E\+C\+T\+I\+O\+N\+\_\+\+N\+V\+M\+C\+T\+R\+L\+\_\+\+U\+S\+ER}
+

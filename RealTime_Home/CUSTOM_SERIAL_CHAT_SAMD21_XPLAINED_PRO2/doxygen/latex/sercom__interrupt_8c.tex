@@ -1,0 +1,81 @@
+\hypertarget{sercom__interrupt_8c}{}\section{A\+S\+F/sam0/drivers/sercom/sercom\+\_\+interrupt.c File Reference}
+\label{sercom__interrupt_8c}\index{ASF/sam0/drivers/sercom/sercom\_interrupt.c@{ASF/sam0/drivers/sercom/sercom\_interrupt.c}}
+
+
+S\+AM Serial Peripheral Interface Driver.  
+
+
+{\ttfamily \#include \char`\"{}sercom\+\_\+interrupt.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sercom__interrupt_8c_a676f40d75ddec20ed856aaf48f9a0141}{\+\_\+\+S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+V\+E\+C\+T\+\_\+\+N\+UM}}(n,  \mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}})~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+S\+E\+R\+C\+OM\#\#n,
+\item 
+\#define \mbox{\hyperlink{sercom__interrupt_8c_ab339b46508b6e3e10340b5c744538053}{\+\_\+\+S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER}}(n,  \mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sercom__interrupt_8c_abcfb9d3b6db889472deccb21790eff22}{\+\_\+sercom\+\_\+set\+\_\+handler}} (const uint8\+\_\+t instance, const \mbox{\hyperlink{sercom__interrupt_8h_a72daa529b515304ad6109add8109f9f2}{sercom\+\_\+handler\+\_\+t}} interrupt\+\_\+handler)
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_ga43378e6222cc05290c1a0c6a9ba125cf}{system\+\_\+interrupt\+\_\+vector}} \mbox{\hyperlink{sercom__interrupt_8c_a31969cd6c90114499ca6887b2a777e65}{\+\_\+sercom\+\_\+get\+\_\+interrupt\+\_\+vector}} (\mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const sercom\+\_\+instance)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{sercom__interrupt_8c_a8c878f488f03160d9adfe10dea937e55}{\+\_\+sercom\+\_\+instances}} \mbox{[}\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga75f7d8cff25db3f1353efb6f7990fce5}{S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM Serial Peripheral Interface Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{sercom__interrupt_8c_ab339b46508b6e3e10340b5c744538053}\label{sercom__interrupt_8c_ab339b46508b6e3e10340b5c744538053}} 
+\index{sercom\_interrupt.c@{sercom\_interrupt.c}!\_SERCOM\_INTERRUPT\_HANDLER@{\_SERCOM\_INTERRUPT\_HANDLER}}
+\index{\_SERCOM\_INTERRUPT\_HANDLER@{\_SERCOM\_INTERRUPT\_HANDLER}!sercom\_interrupt.c@{sercom\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_SERCOM\_INTERRUPT\_HANDLER}{\_SERCOM\_INTERRUPT\_HANDLER}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+H\+A\+N\+D\+L\+ER(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{\mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} SERCOM\#\#n\#\#\_Handler(\textcolor{keywordtype}{void}) \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{            \_sercom\_interrupt\_handlers[n](n); \(\backslash\)}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{sercom__interrupt_8c_a676f40d75ddec20ed856aaf48f9a0141}\label{sercom__interrupt_8c_a676f40d75ddec20ed856aaf48f9a0141}} 
+\index{sercom\_interrupt.c@{sercom\_interrupt.c}!\_SERCOM\_INTERRUPT\_VECT\_NUM@{\_SERCOM\_INTERRUPT\_VECT\_NUM}}
+\index{\_SERCOM\_INTERRUPT\_VECT\_NUM@{\_SERCOM\_INTERRUPT\_VECT\_NUM}!sercom\_interrupt.c@{sercom\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_SERCOM\_INTERRUPT\_VECT\_NUM}{\_SERCOM\_INTERRUPT\_VECT\_NUM}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+V\+E\+C\+T\+\_\+\+N\+UM(\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{\mbox{\hyperlink{group__group__sam0__utils_ga417dba7f63dde98dbebd6336d8af9d91}{unused}} }\end{DoxyParamCaption})~S\+Y\+S\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+S\+E\+R\+C\+OM\#\#n,}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{sercom__interrupt_8c_a31969cd6c90114499ca6887b2a777e65}\label{sercom__interrupt_8c_a31969cd6c90114499ca6887b2a777e65}} 
+\index{sercom\_interrupt.c@{sercom\_interrupt.c}!\_sercom\_get\_interrupt\_vector@{\_sercom\_get\_interrupt\_vector}}
+\index{\_sercom\_get\_interrupt\_vector@{\_sercom\_get\_interrupt\_vector}!sercom\_interrupt.c@{sercom\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_sercom\_get\_interrupt\_vector()}{\_sercom\_get\_interrupt\_vector()}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__interrupt__group_ga43378e6222cc05290c1a0c6a9ba125cf}{system\+\_\+interrupt\+\_\+vector}} \+\_\+sercom\+\_\+get\+\_\+interrupt\+\_\+vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const}]{sercom\+\_\+instance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sercom__interrupt_8c_abcfb9d3b6db889472deccb21790eff22}\label{sercom__interrupt_8c_abcfb9d3b6db889472deccb21790eff22}} 
+\index{sercom\_interrupt.c@{sercom\_interrupt.c}!\_sercom\_set\_handler@{\_sercom\_set\_handler}}
+\index{\_sercom\_set\_handler@{\_sercom\_set\_handler}!sercom\_interrupt.c@{sercom\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_sercom\_set\_handler()}{\_sercom\_set\_handler()}}
+{\footnotesize\ttfamily void \+\_\+sercom\+\_\+set\+\_\+handler (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{instance,  }\item[{const \mbox{\hyperlink{sercom__interrupt_8h_a72daa529b515304ad6109add8109f9f2}{sercom\+\_\+handler\+\_\+t}}}]{interrupt\+\_\+handler }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{sercom__interrupt_8c_a8c878f488f03160d9adfe10dea937e55}\label{sercom__interrupt_8c_a8c878f488f03160d9adfe10dea937e55}} 
+\index{sercom\_interrupt.c@{sercom\_interrupt.c}!\_sercom\_instances@{\_sercom\_instances}}
+\index{\_sercom\_instances@{\_sercom\_instances}!sercom\_interrupt.c@{sercom\_interrupt.c}}
+\subsubsection{\texorpdfstring{\_sercom\_instances}{\_sercom\_instances}}
+{\footnotesize\ttfamily void$\ast$ \+\_\+sercom\+\_\+instances\mbox{[}\mbox{\hyperlink{group___s_a_m_d21_j18_a__base_ga75f7d8cff25db3f1353efb6f7990fce5}{S\+E\+R\+C\+O\+M\+\_\+\+I\+N\+S\+T\+\_\+\+N\+UM}}\mbox{]}}
+

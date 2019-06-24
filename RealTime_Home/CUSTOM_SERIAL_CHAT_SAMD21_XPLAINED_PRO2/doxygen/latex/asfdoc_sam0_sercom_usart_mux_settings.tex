@@ -1,0 +1,26 @@
+The following lists the possible internal S\+E\+R\+C\+OM module pad function assignments, for the four S\+E\+R\+C\+OM pads when in U\+S\+A\+RT mode. Note that this is in addition to the physical G\+P\+IO pin M\+UX of the device, and can be used in conjunction to optimize the serial data pin-\/out.
+
+When TX and RX are connected to the same pin, the U\+S\+A\+RT will operate in half-\/duplex mode if both one transmitter and several receivers are enabled.
+
+\begin{DoxyNote}{Note}
+When RX and X\+CK are connected to the same pin, the receiver must not be enabled if the U\+S\+A\+RT is configured to use an external clock.
+\end{DoxyNote}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ M\+U\+X/\+Pad }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 0 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 1 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 2 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 3  }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ M\+U\+X/\+Pad }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 0 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 1 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 2 }&\cellcolor{\tableheadbgcolor}\textbf{ P\+AD 3  }\\\cline{1-5}
+\endhead
+R\+X\+\_\+0\+\_\+\+T\+X\+\_\+0\+\_\+\+X\+C\+K\+\_\+1 &TX / RX &X\+CK &-\/ &-\/  \\\cline{1-5}
+R\+X\+\_\+0\+\_\+\+T\+X\+\_\+2\+\_\+\+X\+C\+K\+\_\+3 &RX &-\/ &TX &X\+CK  \\\cline{1-5}
+R\+X\+\_\+1\+\_\+\+T\+X\+\_\+0\+\_\+\+X\+C\+K\+\_\+1 &TX &RX / X\+CK &-\/ &-\/  \\\cline{1-5}
+R\+X\+\_\+1\+\_\+\+T\+X\+\_\+2\+\_\+\+X\+C\+K\+\_\+3 &-\/ &RX &TX &X\+CK  \\\cline{1-5}
+R\+X\+\_\+2\+\_\+\+T\+X\+\_\+0\+\_\+\+X\+C\+K\+\_\+1 &TX &X\+CK &RX &-\/  \\\cline{1-5}
+R\+X\+\_\+2\+\_\+\+T\+X\+\_\+2\+\_\+\+X\+C\+K\+\_\+3 &-\/ &-\/ &TX / RX &X\+CK  \\\cline{1-5}
+R\+X\+\_\+3\+\_\+\+T\+X\+\_\+0\+\_\+\+X\+C\+K\+\_\+1 &TX &X\+CK &-\/ &RX  \\\cline{1-5}
+R\+X\+\_\+3\+\_\+\+T\+X\+\_\+2\+\_\+\+X\+C\+K\+\_\+3 &-\/ &-\/ &TX &RX / X\+CK  \\\cline{1-5}
+\end{longtabu}

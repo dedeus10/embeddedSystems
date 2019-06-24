@@ -1,0 +1,348 @@
+This is a list of the available Quick Start guides (Q\+S\+Gs) and example applications for \mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group}{S\+AM Serial U\+S\+A\+RT (S\+E\+R\+C\+OM U\+S\+A\+RT) Driver}}. Q\+S\+Gs are simple examples with step-\/by-\/step instructions to configure and use this driver in a selection of use cases. Note that a Q\+SG can be compiled as a standalone application or be added to the user application.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_usart_basic_use_case}{Quick Start Guide for S\+E\+R\+C\+OM U\+S\+A\+RT -\/ Basic}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_usart_dma_use_case}{Quick Start Guide for Using D\+MA with S\+E\+R\+C\+OM U\+S\+A\+RT}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_usart_lin_use_case}{Quick Start Guide for S\+E\+R\+C\+OM U\+S\+A\+RT L\+IN}} 
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case}{}\section{Quick Start Guide for S\+E\+R\+C\+OM U\+S\+A\+RT -\/ Basic}\label{asfdoc_sam0_sercom_usart_basic_use_case}
+This quick start will echo back characters typed into the terminal. In this use case the U\+S\+A\+RT will be configured with the following settings\+:
+\begin{DoxyItemize}
+\item Asynchronous mode
+\item 9600 Baudrate
+\item 8-\/bits, No Parity and one Stop Bit
+\item TX and RX enabled and connected to the Xplained Pro Embedded Debugger virtual C\+OM port
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_sercom_usart_basic_use_case_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_sercom_usart_basic_use_case_setup}
+\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_sercom_usart_basic_use_case_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_sercom_usart_basic_use_case_prereq}
+There are no special setup requirements for this use-\/case.\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_setup_code}
+Add to the main application source file, outside of any functions\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Copy-\/paste the following setup code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application initialization (typically the start of {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}})\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Create a module software instance structure for the U\+S\+A\+RT module to store the U\+S\+A\+RT driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should never go out of scope as long as the module is in use. In most cases, this should be global.
+\end{DoxyNote}
+
+\item Configure the U\+S\+A\+RT module.
+\begin{DoxyEnumerate}
+\item Create a U\+S\+A\+RT module configuration struct, which can be filled out to adjust the configuration of a physical U\+S\+A\+RT peripheral. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the U\+S\+A\+RT configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Alter the U\+S\+A\+RT settings to configure the physical pinout, baudrate, and other relevant parameters. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Configure the U\+S\+A\+RT module with the desired settings, retrying while the driver is busy until the configuration is stressfully set. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable the U\+S\+A\+RT module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main}
+\hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main_code}
+Copy-\/paste the following code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_basic_use_case_asfdoc_sam0_usart_basic_use_case_main_flow}
+
+\begin{DoxyEnumerate}
+\item Send a string to the U\+S\+A\+RT to show the demo is running, blocking until all characters have been sent. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enter an infinite loop to continuously echo received values on the U\+S\+A\+RT. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Perform a blocking read of the U\+S\+A\+RT, storing the received character into the previously declared temporary variable. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Echo the received variable back to the U\+S\+A\+RT via a blocking write. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case}{}\section{Quick Start Guide for Using D\+MA with S\+E\+R\+C\+OM U\+S\+A\+RT}\label{asfdoc_sam0_sercom_usart_dma_use_case}
+The supported board list\+:
+\begin{DoxyItemize}
+\item S\+AM D21 Xplained Pro
+\item S\+AM R21 Xplained Pro
+\item S\+AM D11 Xplained Pro
+\item S\+AM D\+A1 Xplained Pro
+\item S\+AM H\+A1\+G16A Xplained Pro
+\item S\+AM L21 Xplained Pro
+\item S\+AM L22 Xplained Pro
+\item S\+AM C21 Xplained Pro
+\end{DoxyItemize}
+
+This quick start will receive eight bytes of data from the PC terminal and transmit back the string to the terminal through D\+MA. In this use case the U\+S\+A\+RT will be configured with the following settings\+:
+\begin{DoxyItemize}
+\item Asynchronous mode
+\item 9600 Baudrate
+\item 8-\/bits, No Parity and one Stop Bit
+\item TX and RX enabled and connected to the Xplained Pro Embedded Debugger virtual C\+OM port
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_sercom_usart_dma_use_case_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_sercom_usart_dma_use_case_setup}
+\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_sercom_usart_dma_use_case_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_sercom_usart_dma_use_case_prereq}
+There are no special setup requirements for this use-\/case.\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_code}
+Add to the main application source file, outside of any functions\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Copy-\/paste the following setup code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application initialization (typically the start of {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}})\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow}
+\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_inst}{}\paragraph{Create variables}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_inst}
+
+\begin{DoxyEnumerate}
+\item Create a module software instance structure for the U\+S\+A\+RT module to store the U\+S\+A\+RT driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should never go out of scope as long as the module is in use. In most cases, this should be global.
+\end{DoxyNote}
+
+\item Create module software instance structures for D\+MA resources to store the D\+MA resource state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should never go out of scope as long as the module is in use. In most cases, this should be global.
+\end{DoxyNote}
+
+\item Create a buffer to store the data to be transferred /received. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create D\+MA transfer descriptors for R\+X/\+TX. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_usart}{}\paragraph{Configure the U\+S\+A\+RT}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_usart}
+
+\begin{DoxyEnumerate}
+\item Create a U\+S\+A\+RT module configuration struct, which can be filled out to adjust the configuration of a physical U\+S\+A\+RT peripheral. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the U\+S\+A\+RT configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Alter the U\+S\+A\+RT settings to configure the physical pinout, baudrate, and other relevant parameters. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Configure the U\+S\+A\+RT module with the desired settings, retrying while the driver is busy until the configuration is stressfully set. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable the U\+S\+A\+RT module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_dma}{}\paragraph{Configure D\+MA}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_setup_flow_dma}
+
+\begin{DoxyEnumerate}
+\item Create a callback function of receiver done. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a callback function of transmission done. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a D\+MA resource configuration structure, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA resource configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set extra configurations for the D\+MA resource. It is using peripheral trigger. S\+E\+R\+C\+OM TX empty trigger causes a beat transfer in this example. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Allocate a D\+MA resource with the configurations. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a D\+MA transfer descriptor configuration structure, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA transfer descriptor configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set the specific parameters for a D\+MA transfer with transfer size, source address, and destination address. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create the D\+MA transfer descriptor. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a D\+MA resource configuration structure for TX, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA resource configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set extra configurations for the D\+MA resource. It is using peripheral trigger. S\+E\+R\+C\+OM RX Ready trigger causes a beat transfer in this example. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Allocate a D\+MA resource with the configurations. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a D\+MA transfer descriptor configuration structure, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA transfer descriptor configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set the specific parameters for a D\+MA transfer with transfer size, source address, and destination address. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create the D\+MA transfer descriptor. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main}
+\hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main_code}
+Copy-\/paste the following code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_dma_use_case_asfdoc_sam0_usart_dma_use_case_main_flow}
+
+\begin{DoxyEnumerate}
+\item Wait for receiving data. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enter endless loop. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case}{}\section{Quick Start Guide for S\+E\+R\+C\+OM U\+S\+A\+RT L\+IN}\label{asfdoc_sam0_sercom_usart_lin_use_case}
+The supported board list\+:
+\begin{DoxyItemize}
+\item S\+A\+M\+C21 Xplained Pro
+\end{DoxyItemize}
+
+This quick start will set up L\+IN frame format transmission according to your configuration {\ttfamily C\+O\+N\+F\+\_\+\+L\+I\+N\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}. For L\+IN master, it will send L\+IN command after startup. For L\+IN salve, once received a format from L\+IN master with ID {\ttfamily L\+I\+N\+\_\+\+I\+D\+\_\+\+F\+I\+E\+L\+D\+\_\+\+V\+A\+L\+UE}, it will reply four data bytes plus a checksum.\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_sercom_usart_lin_use_case_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_sercom_usart_lin_use_case_setup}
+\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_sercom_usart_lin_use_case_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_sercom_usart_lin_use_case_prereq}
+When verify data transmission between L\+IN master and slave, two boards are needed\+: one is for L\+IN master and the other is for L\+IN slave. connect L\+IN master L\+IN P\+IN with L\+IN slave L\+IN P\+IN.\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_setup_code}
+Add to the main application source file, outside of any functions\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Copy-\/paste the following setup code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application initialization (typically the start of {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}})\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Create U\+S\+A\+RT C\+DC and L\+IN module software instance structure for the U\+S\+A\+RT module to store the U\+S\+A\+RT driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Define L\+IN ID field for header format. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+The ID {\ttfamily L\+I\+N\+\_\+\+I\+D\+\_\+\+F\+I\+E\+L\+D\+\_\+\+V\+A\+L\+UE} is eight bits as \mbox{[}P1,P0,I\+D5...I\+D0\mbox{]}, when it\textquotesingle{}s 0x64, the data field length is four bytes plus a checksum byte.
+\end{DoxyNote}
+
+\item Define L\+IN R\+X/\+TX buffer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+For {\ttfamily tx\+\_\+buffer} and {\ttfamily rx\+\_\+buffer}, the last byte is for checksum.
+\end{DoxyNote}
+
+\item Configure the U\+S\+A\+RT C\+DC for output message. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Configure the U\+S\+A\+RT L\+IN module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+The L\+IN frame format can be configured as master or slave, refer to {\ttfamily C\+O\+N\+F\+\_\+\+L\+I\+N\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE} .
+\end{DoxyNote}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main}
+\hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main_code}
+Copy-\/paste the following code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_usart_lin_use_case_asfdoc_sam0_usart_lin_use_case_main_flow}
+
+\begin{DoxyEnumerate}
+\item Set up U\+S\+A\+RT L\+IN module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item For L\+IN master, sending L\+IN command. For L\+IN slaver, start reading data . 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

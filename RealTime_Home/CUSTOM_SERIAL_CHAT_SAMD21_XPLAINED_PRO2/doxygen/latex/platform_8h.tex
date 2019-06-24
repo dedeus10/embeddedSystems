@@ -1,0 +1,261 @@
+\hypertarget{platform_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/platform.h File Reference}
+\label{platform_8h}\index{ASF/thirdparty/wireless/ble\_sdk/inc/platform.h@{ASF/thirdparty/wireless/ble\_sdk/inc/platform.h}}
+
+
+Platform Abstraction layer for B\+LE applications.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}at\+\_\+ble\+\_\+api.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structos__signal}{os\+\_\+signal}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{platform_8h_a702625ae2afe4a540ebb3b9061284969}{M\+A\+X\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+O\+S\+\_\+\+S\+I\+G\+N\+AL}}~(3)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structos__signal}{os\+\_\+signal}} \mbox{\hyperlink{platform_8h_aa6c52a5ec9014f462436bdcecd8d6c28}{os\+\_\+signal\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{platform_8h_aa6e2bbf3ae9baf814019fc30fcd9535f}{platform\+\_\+init}} (uint8\+\_\+t bus\+\_\+type, uint8\+\_\+t btlc1000\+\_\+module\+\_\+version)
+\begin{DoxyCompactList}\small\item\em implements platform-\/specific initialization \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{platform_8h_a50ca42f2e0a2893c837cecbabc2cc578}{platform\+\_\+configure\+\_\+primary\+\_\+uart}} (uint32\+\_\+t baudrate)
+\begin{DoxyCompactList}\small\item\em sends a message over the platform-\/specific bus and blocks until Tx Completes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{platform_8h_a5ba2929b62a30803b288bb39b1a504e9}{platform\+\_\+send\+\_\+sync}} (uint8\+\_\+t $\ast$data, uint32\+\_\+t len)
+\item 
+void \mbox{\hyperlink{platform_8h_ad37362a3b1affcce1307863e6e2c50f9}{platform\+\_\+gpio\+\_\+set}} (\mbox{\hyperlink{at__ble__api_8h_a61a821528aac297115a567966e105541}{at\+\_\+ble\+\_\+gpio\+\_\+pin\+\_\+t}} pin, \mbox{\hyperlink{at__ble__api_8h_ae8d1673bd3af8885704ebdf934979794}{at\+\_\+ble\+\_\+gpio\+\_\+status\+\_\+t}} status)
+\item 
+void \mbox{\hyperlink{platform_8h_a5b8f1fbc42282765aec1637405431635}{platform\+\_\+recv\+\_\+async}} (void($\ast$recv\+\_\+async\+\_\+callback)(uint8\+\_\+t))
+\item 
+void \mbox{\hyperlink{platform_8h_aadaf2e7f835bfa9cdc17d61ddc5fa35f}{platform\+\_\+sleep}} (uint32\+\_\+t ms)
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{platform_8h_a64e37a07e0ec2dfb3bb1c1ff357984ec}{platform\+\_\+wakeup\+\_\+pin\+\_\+status}} (void)
+\item 
+void \mbox{\hyperlink{platform_8h_a855347628ef2d7f1bb519ce04914b4da}{plaform\+\_\+ble\+\_\+rx\+\_\+callback}} (void)
+\item 
+void $\ast$ \mbox{\hyperlink{platform_8h_a35126caea3cccfb686b7efbbd22237dd}{platform\+\_\+create\+\_\+timer}} (void($\ast$timer\+\_\+cb)(void $\ast$))
+\item 
+void \mbox{\hyperlink{platform_8h_ab26581c9aa912884f528ced693b2daeb}{platform\+\_\+delete\+\_\+timer}} (void $\ast$timer\+\_\+handle)
+\item 
+void \mbox{\hyperlink{platform_8h_accb680ff0d9bdb2f25326f3e790dd98a}{platform\+\_\+stop\+\_\+timer}} (void $\ast$timer\+\_\+handle)
+\item 
+void \mbox{\hyperlink{platform_8h_a10d3a7188ab398184baa6fcacdae9d50}{platform\+\_\+start\+\_\+timer}} (void $\ast$timer\+\_\+handle, uint32\+\_\+t ms)
+\item 
+void \mbox{\hyperlink{platform_8h_a5edb9c8071d6a6894c6af20e050c8511}{platform\+\_\+configure\+\_\+hw\+\_\+fc\+\_\+uart}} (uint32\+\_\+t baudrate)
+\item 
+void \mbox{\hyperlink{platform_8h_a031b1af6941e9a6b383c44c81c0aa039}{platform\+\_\+process\+\_\+rxdata}} (uint8\+\_\+t t\+\_\+rx\+\_\+data)
+\item 
+void \mbox{\hyperlink{platform_8h_aed6fe35c7a9aa0cbe598f45579388fe6}{platform\+\_\+dma\+\_\+process\+\_\+rxdata}} (uint8\+\_\+t $\ast$buf, uint16\+\_\+t len)
+\item 
+void \mbox{\hyperlink{platform_8h_a0cdcec9ebcd3e801b2341ee30627cd5b}{platform\+\_\+enter\+\_\+sleep}} (void)
+\item 
+void \mbox{\hyperlink{platform_8h_af50f2325f0426af7a54d17be3b108a68}{platform\+\_\+host\+\_\+set\+\_\+sleep}} (\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} sleep)
+\item 
+void $\ast$ \mbox{\hyperlink{platform_8h_af6047b5db9bbdf6076816bbfb3aa2af9}{platform\+\_\+create\+\_\+signal}} (void)
+\item 
+void \mbox{\hyperlink{platform_8h_a6a14ee0a65b86edbc3d0818e37945d80}{platform\+\_\+delete\+\_\+signal}} (void $\ast$signal\+\_\+handler)
+\item 
+void \mbox{\hyperlink{platform_8h_a3c5f81a031fbf5a45620d995278d79a8}{platform\+\_\+trigger\+\_\+signal}} (void $\ast$signal\+\_\+handler)
+\item 
+void \mbox{\hyperlink{platform_8h_a6b46141e5826ab0ab42451dd46b1d140}{platform\+\_\+reset\+\_\+signal}} (void $\ast$signal\+\_\+handler)
+\item 
+void \mbox{\hyperlink{platform_8h_a27de5c1b4dde4e0e4658855b08b7b165}{platform\+\_\+wait\+\_\+for\+\_\+signal}} (uint32\+\_\+t count, void $\ast$$\ast$signal\+\_\+handler\+\_\+list)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Platform Abstraction layer for B\+LE applications. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{platform_8h_a702625ae2afe4a540ebb3b9061284969}\label{platform_8h_a702625ae2afe4a540ebb3b9061284969}} 
+\index{platform.h@{platform.h}!MAX\_PLATFORM\_OS\_SIGNAL@{MAX\_PLATFORM\_OS\_SIGNAL}}
+\index{MAX\_PLATFORM\_OS\_SIGNAL@{MAX\_PLATFORM\_OS\_SIGNAL}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{MAX\_PLATFORM\_OS\_SIGNAL}{MAX\_PLATFORM\_OS\_SIGNAL}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+P\+L\+A\+T\+F\+O\+R\+M\+\_\+\+O\+S\+\_\+\+S\+I\+G\+N\+AL~(3)}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{platform_8h_aa6c52a5ec9014f462436bdcecd8d6c28}\label{platform_8h_aa6c52a5ec9014f462436bdcecd8d6c28}} 
+\index{platform.h@{platform.h}!os\_signal\_t@{os\_signal\_t}}
+\index{os\_signal\_t@{os\_signal\_t}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{os\_signal\_t}{os\_signal\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structos__signal}{os\+\_\+signal}}  \mbox{\hyperlink{platform_8h_aa6c52a5ec9014f462436bdcecd8d6c28}{os\+\_\+signal\+\_\+t}}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{platform_8h_a855347628ef2d7f1bb519ce04914b4da}\label{platform_8h_a855347628ef2d7f1bb519ce04914b4da}} 
+\index{platform.h@{platform.h}!plaform\_ble\_rx\_callback@{plaform\_ble\_rx\_callback}}
+\index{plaform\_ble\_rx\_callback@{plaform\_ble\_rx\_callback}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{plaform\_ble\_rx\_callback()}{plaform\_ble\_rx\_callback()}}
+{\footnotesize\ttfamily void plaform\+\_\+ble\+\_\+rx\+\_\+callback (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a5edb9c8071d6a6894c6af20e050c8511}\label{platform_8h_a5edb9c8071d6a6894c6af20e050c8511}} 
+\index{platform.h@{platform.h}!platform\_configure\_hw\_fc\_uart@{platform\_configure\_hw\_fc\_uart}}
+\index{platform\_configure\_hw\_fc\_uart@{platform\_configure\_hw\_fc\_uart}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_configure\_hw\_fc\_uart()}{platform\_configure\_hw\_fc\_uart()}}
+{\footnotesize\ttfamily void platform\+\_\+configure\+\_\+hw\+\_\+fc\+\_\+uart (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{baudrate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a50ca42f2e0a2893c837cecbabc2cc578}\label{platform_8h_a50ca42f2e0a2893c837cecbabc2cc578}} 
+\index{platform.h@{platform.h}!platform\_configure\_primary\_uart@{platform\_configure\_primary\_uart}}
+\index{platform\_configure\_primary\_uart@{platform\_configure\_primary\_uart}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_configure\_primary\_uart()}{platform\_configure\_primary\_uart()}}
+{\footnotesize\ttfamily void platform\+\_\+configure\+\_\+primary\+\_\+uart (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{baudrate }\end{DoxyParamCaption})}
+
+
+
+sends a message over the platform-\/specific bus and blocks until Tx Completes 
+
+Sends a message over the platform-\/specific bus that might be U\+A\+RT, S\+PI
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & data to send over the interface \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & length of data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{platform_8h_af6047b5db9bbdf6076816bbfb3aa2af9}\label{platform_8h_af6047b5db9bbdf6076816bbfb3aa2af9}} 
+\index{platform.h@{platform.h}!platform\_create\_signal@{platform\_create\_signal}}
+\index{platform\_create\_signal@{platform\_create\_signal}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_create\_signal()}{platform\_create\_signal()}}
+{\footnotesize\ttfamily void$\ast$ platform\+\_\+create\+\_\+signal (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a35126caea3cccfb686b7efbbd22237dd}\label{platform_8h_a35126caea3cccfb686b7efbbd22237dd}} 
+\index{platform.h@{platform.h}!platform\_create\_timer@{platform\_create\_timer}}
+\index{platform\_create\_timer@{platform\_create\_timer}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_create\_timer()}{platform\_create\_timer()}}
+{\footnotesize\ttfamily void$\ast$ platform\+\_\+create\+\_\+timer (\begin{DoxyParamCaption}\item[{void($\ast$)(void $\ast$)}]{timer\+\_\+cb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a6a14ee0a65b86edbc3d0818e37945d80}\label{platform_8h_a6a14ee0a65b86edbc3d0818e37945d80}} 
+\index{platform.h@{platform.h}!platform\_delete\_signal@{platform\_delete\_signal}}
+\index{platform\_delete\_signal@{platform\_delete\_signal}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_delete\_signal()}{platform\_delete\_signal()}}
+{\footnotesize\ttfamily void platform\+\_\+delete\+\_\+signal (\begin{DoxyParamCaption}\item[{void $\ast$}]{signal\+\_\+handler }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_ab26581c9aa912884f528ced693b2daeb}\label{platform_8h_ab26581c9aa912884f528ced693b2daeb}} 
+\index{platform.h@{platform.h}!platform\_delete\_timer@{platform\_delete\_timer}}
+\index{platform\_delete\_timer@{platform\_delete\_timer}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_delete\_timer()}{platform\_delete\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+delete\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_aed6fe35c7a9aa0cbe598f45579388fe6}\label{platform_8h_aed6fe35c7a9aa0cbe598f45579388fe6}} 
+\index{platform.h@{platform.h}!platform\_dma\_process\_rxdata@{platform\_dma\_process\_rxdata}}
+\index{platform\_dma\_process\_rxdata@{platform\_dma\_process\_rxdata}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_dma\_process\_rxdata()}{platform\_dma\_process\_rxdata()}}
+{\footnotesize\ttfamily void platform\+\_\+dma\+\_\+process\+\_\+rxdata (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buf,  }\item[{uint16\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a0cdcec9ebcd3e801b2341ee30627cd5b}\label{platform_8h_a0cdcec9ebcd3e801b2341ee30627cd5b}} 
+\index{platform.h@{platform.h}!platform\_enter\_sleep@{platform\_enter\_sleep}}
+\index{platform\_enter\_sleep@{platform\_enter\_sleep}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_enter\_sleep()}{platform\_enter\_sleep()}}
+{\footnotesize\ttfamily void platform\+\_\+enter\+\_\+sleep (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_ad37362a3b1affcce1307863e6e2c50f9}\label{platform_8h_ad37362a3b1affcce1307863e6e2c50f9}} 
+\index{platform.h@{platform.h}!platform\_gpio\_set@{platform\_gpio\_set}}
+\index{platform\_gpio\_set@{platform\_gpio\_set}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_gpio\_set()}{platform\_gpio\_set()}}
+{\footnotesize\ttfamily void platform\+\_\+gpio\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_a61a821528aac297115a567966e105541}{at\+\_\+ble\+\_\+gpio\+\_\+pin\+\_\+t}}}]{pin,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ae8d1673bd3af8885704ebdf934979794}{at\+\_\+ble\+\_\+gpio\+\_\+status\+\_\+t}}}]{status }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_af50f2325f0426af7a54d17be3b108a68}\label{platform_8h_af50f2325f0426af7a54d17be3b108a68}} 
+\index{platform.h@{platform.h}!platform\_host\_set\_sleep@{platform\_host\_set\_sleep}}
+\index{platform\_host\_set\_sleep@{platform\_host\_set\_sleep}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_host\_set\_sleep()}{platform\_host\_set\_sleep()}}
+{\footnotesize\ttfamily void platform\+\_\+host\+\_\+set\+\_\+sleep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{sleep }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_aa6e2bbf3ae9baf814019fc30fcd9535f}\label{platform_8h_aa6e2bbf3ae9baf814019fc30fcd9535f}} 
+\index{platform.h@{platform.h}!platform\_init@{platform\_init}}
+\index{platform\_init@{platform\_init}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_init()}{platform\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} platform\+\_\+init (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bus\+\_\+type,  }\item[{uint8\+\_\+t}]{btlc1000\+\_\+module\+\_\+version }\end{DoxyParamCaption})}
+
+
+
+implements platform-\/specific initialization 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bus\+\_\+type} & bus type can be U\+A\+RT or S\+PI \\
+\hline
+\mbox{\texttt{ in}}  & {\em btlc1000\+\_\+module\+\_\+version} & B\+T\+L\+C1000 M\+R/\+ZR Module version\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{platform_8h_a031b1af6941e9a6b383c44c81c0aa039}\label{platform_8h_a031b1af6941e9a6b383c44c81c0aa039}} 
+\index{platform.h@{platform.h}!platform\_process\_rxdata@{platform\_process\_rxdata}}
+\index{platform\_process\_rxdata@{platform\_process\_rxdata}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_process\_rxdata()}{platform\_process\_rxdata()}}
+{\footnotesize\ttfamily void platform\+\_\+process\+\_\+rxdata (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{t\+\_\+rx\+\_\+data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a5b8f1fbc42282765aec1637405431635}\label{platform_8h_a5b8f1fbc42282765aec1637405431635}} 
+\index{platform.h@{platform.h}!platform\_recv\_async@{platform\_recv\_async}}
+\index{platform\_recv\_async@{platform\_recv\_async}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_recv\_async()}{platform\_recv\_async()}}
+{\footnotesize\ttfamily void platform\+\_\+recv\+\_\+async (\begin{DoxyParamCaption}\item[{void($\ast$)(uint8\+\_\+t)}]{recv\+\_\+async\+\_\+callback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a6b46141e5826ab0ab42451dd46b1d140}\label{platform_8h_a6b46141e5826ab0ab42451dd46b1d140}} 
+\index{platform.h@{platform.h}!platform\_reset\_signal@{platform\_reset\_signal}}
+\index{platform\_reset\_signal@{platform\_reset\_signal}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_reset\_signal()}{platform\_reset\_signal()}}
+{\footnotesize\ttfamily void platform\+\_\+reset\+\_\+signal (\begin{DoxyParamCaption}\item[{void $\ast$}]{signal\+\_\+handler }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a5ba2929b62a30803b288bb39b1a504e9}\label{platform_8h_a5ba2929b62a30803b288bb39b1a504e9}} 
+\index{platform.h@{platform.h}!platform\_send\_sync@{platform\_send\_sync}}
+\index{platform\_send\_sync@{platform\_send\_sync}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_send\_sync()}{platform\_send\_sync()}}
+{\footnotesize\ttfamily void platform\+\_\+send\+\_\+sync (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint32\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_aadaf2e7f835bfa9cdc17d61ddc5fa35f}\label{platform_8h_aadaf2e7f835bfa9cdc17d61ddc5fa35f}} 
+\index{platform.h@{platform.h}!platform\_sleep@{platform\_sleep}}
+\index{platform\_sleep@{platform\_sleep}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_sleep()}{platform\_sleep()}}
+{\footnotesize\ttfamily void platform\+\_\+sleep (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a10d3a7188ab398184baa6fcacdae9d50}\label{platform_8h_a10d3a7188ab398184baa6fcacdae9d50}} 
+\index{platform.h@{platform.h}!platform\_start\_timer@{platform\_start\_timer}}
+\index{platform\_start\_timer@{platform\_start\_timer}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_start\_timer()}{platform\_start\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+start\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle,  }\item[{uint32\+\_\+t}]{ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_accb680ff0d9bdb2f25326f3e790dd98a}\label{platform_8h_accb680ff0d9bdb2f25326f3e790dd98a}} 
+\index{platform.h@{platform.h}!platform\_stop\_timer@{platform\_stop\_timer}}
+\index{platform\_stop\_timer@{platform\_stop\_timer}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_stop\_timer()}{platform\_stop\_timer()}}
+{\footnotesize\ttfamily void platform\+\_\+stop\+\_\+timer (\begin{DoxyParamCaption}\item[{void $\ast$}]{timer\+\_\+handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a3c5f81a031fbf5a45620d995278d79a8}\label{platform_8h_a3c5f81a031fbf5a45620d995278d79a8}} 
+\index{platform.h@{platform.h}!platform\_trigger\_signal@{platform\_trigger\_signal}}
+\index{platform\_trigger\_signal@{platform\_trigger\_signal}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_trigger\_signal()}{platform\_trigger\_signal()}}
+{\footnotesize\ttfamily void platform\+\_\+trigger\+\_\+signal (\begin{DoxyParamCaption}\item[{void $\ast$}]{signal\+\_\+handler }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a27de5c1b4dde4e0e4658855b08b7b165}\label{platform_8h_a27de5c1b4dde4e0e4658855b08b7b165}} 
+\index{platform.h@{platform.h}!platform\_wait\_for\_signal@{platform\_wait\_for\_signal}}
+\index{platform\_wait\_for\_signal@{platform\_wait\_for\_signal}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_wait\_for\_signal()}{platform\_wait\_for\_signal()}}
+{\footnotesize\ttfamily void platform\+\_\+wait\+\_\+for\+\_\+signal (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{count,  }\item[{void $\ast$$\ast$}]{signal\+\_\+handler\+\_\+list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{platform_8h_a64e37a07e0ec2dfb3bb1c1ff357984ec}\label{platform_8h_a64e37a07e0ec2dfb3bb1c1ff357984ec}} 
+\index{platform.h@{platform.h}!platform\_wakeup\_pin\_status@{platform\_wakeup\_pin\_status}}
+\index{platform\_wakeup\_pin\_status@{platform\_wakeup\_pin\_status}!platform.h@{platform.h}}
+\subsubsection{\texorpdfstring{platform\_wakeup\_pin\_status()}{platform\_wakeup\_pin\_status()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} platform\+\_\+wakeup\+\_\+pin\+\_\+status (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+

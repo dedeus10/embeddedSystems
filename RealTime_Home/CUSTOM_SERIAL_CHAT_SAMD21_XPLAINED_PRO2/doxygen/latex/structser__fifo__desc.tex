@@ -1,0 +1,42 @@
+\hypertarget{structser__fifo__desc}{}\section{ser\+\_\+fifo\+\_\+desc Struct Reference}
+\label{structser__fifo__desc}\index{ser\_fifo\_desc@{ser\_fifo\_desc}}
+
+
+F\+I\+FO descriptor used by F\+I\+FO driver.  
+
+
+
+
+{\ttfamily \#include $<$serial\+\_\+fifo.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint32\_t $\ast$ \mbox{\hyperlink{group__fifo__group_ga00500224ac165192ac888251a076606d}{u32ptr}}\\
+\>\>{\em Pointer to unsigned-\/32 bits location. }\\
+\>uint16\_t $\ast$ \mbox{\hyperlink{group__fifo__group_ga15c8362aa58f36ae5de7f6180550d6b5}{u16ptr}}\\
+\>\>{\em Pointer to unsigned-\/16 bits location. }\\
+\>uint8\_t $\ast$ \mbox{\hyperlink{group__fifo__group_gacc04e057a962c975bbdf62664c52ff2c}{u8ptr}}\\
+\>\>{\em Pointer to unsigned-\/8 bits location. }\\
+\} \mbox{\hyperlink{group__fifo__group_ga83d6d4f3680146b2fed2c6cd33da9d59}{buffer}}\\
+
+\end{tabbing}\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_ga926074dbb263b916922202b938daf3ad}{read\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Read index. \end{DoxyCompactList}\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_gaa10e623e08c4046864b5c1507a97a9ed}{write\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Write index. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_gaaba88b24a21a6c70c895c0d55f4a69a0}{size}}
+\begin{DoxyCompactList}\small\item\em Size of the F\+I\+FO (unit is in number of \textquotesingle{}element\textquotesingle{}) \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__fifo__group_ga7fd850d4bb04f7410e8e2abf5f349348}{mask}}
+\begin{DoxyCompactList}\small\item\em Mask used to speed up F\+I\+FO operation (wrapping) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+I\+FO descriptor used by F\+I\+FO driver. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/services/serial\+\_\+fifo/\mbox{\hyperlink{serial__fifo_8h}{serial\+\_\+fifo.\+h}}\end{DoxyCompactItemize}

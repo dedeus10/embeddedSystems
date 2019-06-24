@@ -1,0 +1,198 @@
+\hypertarget{group__gap__sec__group}{}\section{Security A\+P\+Is}
+\label{group__gap__sec__group}\index{Security APIs@{Security APIs}}
+
+
+This group includes security A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_ga57471b414b6b1b5aa57c540db43b4453}{at\+\_\+ble\+\_\+send\+\_\+sec\+\_\+config}} (\mbox{\hyperlink{structat__ble__signature__info__t}{at\+\_\+ble\+\_\+signature\+\_\+info\+\_\+t}} $\ast$signature\+\_\+info, \mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}} authen, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} service\+\_\+changed)
+\begin{DoxyCompactList}\small\item\em Set specific link security configuration and bonding data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_ga937a2436bd501a104500420f4cf82d28}{at\+\_\+ble\+\_\+authenticate}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{structat__ble__pair__features__t}{at\+\_\+ble\+\_\+pair\+\_\+features\+\_\+t}} $\ast$features, \mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$ltk, \mbox{\hyperlink{structat__ble___c_s_r_k__t}{at\+\_\+ble\+\_\+\+C\+S\+R\+K\+\_\+t}} $\ast$csrk)
+\begin{DoxyCompactList}\small\item\em Starts Pairing procedure for a given connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_ga7cf7f701912f18b73b6f7c10e8319100}{at\+\_\+ble\+\_\+send\+\_\+slave\+\_\+sec\+\_\+request}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} mitm\+\_\+protection, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} bond)
+\begin{DoxyCompactList}\small\item\em Send slave security request to master. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_gad993133993ab7e997935ac4f6537edbe}{at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+reply}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0}{at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+type\+\_\+t}} type, uint8\+\_\+t $\ast$key)
+\begin{DoxyCompactList}\small\item\em Provides a passkey or O\+OB data that was requested via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba80a994d218165f5cf29199df84a37344}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST}} event, If key type is \mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0ab9a089dad20c1ecb68b97c16556c1f03}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+P\+A\+S\+S\+K\+EY}}, then a 6-\/byte A\+S\+C\+II string (digit 0..9 only). If key type is \mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0a08a6e4b72a5e745b4cf2700008908cc7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+O\+OB}} , then a 16-\/byte O\+OB key value in Little Endian format. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_ga5342b76c296c45a34e3e33d9181b7734}{at\+\_\+ble\+\_\+encryption\+\_\+start}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$key, \mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}} auth)
+\begin{DoxyCompactList}\small\item\em Starts encryption, once encryption starts \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaac5cdd3deee1c0cb4672efbfb9ebae75}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+H\+A\+N\+G\+ED}} event is delivered. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__sec__group_ga193b7ad378a2005d515dc92c40cfc14a}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+reply}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}} auth, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} key\+\_\+found, \mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$key)
+\begin{DoxyCompactList}\small\item\em Responds to encryption start request from master device \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebade3647c9d18213cb3e93f570c09f20c6}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+R\+E\+Q\+U\+E\+ST}}, once encryption starts \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaac5cdd3deee1c0cb4672efbfb9ebae75}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+H\+A\+N\+G\+ED}} event is delivered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes security A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__sec__group_ga937a2436bd501a104500420f4cf82d28}\label{group__gap__sec__group_ga937a2436bd501a104500420f4cf82d28}} 
+\index{Security APIs@{Security APIs}!at\_ble\_authenticate@{at\_ble\_authenticate}}
+\index{at\_ble\_authenticate@{at\_ble\_authenticate}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_authenticate()}{at\_ble\_authenticate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__pair__features__t}{at\+\_\+ble\+\_\+pair\+\_\+features\+\_\+t}} $\ast$}]{features,  }\item[{\mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$}]{ltk,  }\item[{\mbox{\hyperlink{structat__ble___c_s_r_k__t}{at\+\_\+ble\+\_\+\+C\+S\+R\+K\+\_\+t}} $\ast$}]{csrk }\end{DoxyParamCaption})}
+
+
+
+Starts Pairing procedure for a given connection. 
+
+This A\+PI will initiate the authentication procedure, given local device requirements and IO capabilities the authentication will proceed in a number of ways, progress is monitored and controlled via the events \+: \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba80a994d218165f5cf29199df84a37344}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST}} ,\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba7cd0dfd439d72bcb3ba51e77fdd993e7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+D\+O\+NE}}
+
+In the central role, this function will send an S\+MP Pairing Request, otherwise in the peripheral role, this function will reply to \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba775c3ad5c922c767189c8366205adecd}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+R\+E\+Q\+U\+E\+ST}}.
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item The authentication procedure with this A\+PI shall only be initiated after a connection has been established in master mode or as a response in case of receiving A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+R\+E\+Q\+U\+E\+ST event in slave mode.
+\item Bonding information(information exchanged during pairing)such as key, authentication level should be stored by application in order to be reused during another connection \mbox{\hyperlink{group__gap__sec__group_ga57471b414b6b1b5aa57c540db43b4453}{at\+\_\+ble\+\_\+send\+\_\+sec\+\_\+config}} .
+\item If the device acts as a master, so initiator\+\_\+keys is the device itself and responder\+\_\+keys for peer and in case of acting as a slave, responder\+\_\+keys for the device itself and initiator\+\_\+keys for peer.
+\item According to IO capabilities or Out Of Band (O\+OB), if it is possible to perform a pairing using P\+IN code or O\+OB data then \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba80a994d218165f5cf29199df84a37344}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST}} event will be received by application.
+\item If no security message is exchange during more than 30s, bonding procedure is cancelled and no new bond procedure can be started for this link. For your security and in case of a timeout error, it is optional for the application to disconnect the current connection.
+\end{DoxyItemize}
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the ongoing connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em features} & local device requirements and IO capabilities, should be N\+U\+LL to reject the pairing request in case of pairing as S\+L\+A\+VE connection O\+N\+LY. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ltk} & Local device Long Term Key, null if not available \\
+\hline
+\mbox{\texttt{ in}}  & {\em csrk} & Local device Connection Signature Resolution Key, null if not available\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__sec__group_ga193b7ad378a2005d515dc92c40cfc14a}\label{group__gap__sec__group_ga193b7ad378a2005d515dc92c40cfc14a}} 
+\index{Security APIs@{Security APIs}!at\_ble\_encryption\_request\_reply@{at\_ble\_encryption\_request\_reply}}
+\index{at\_ble\_encryption\_request\_reply@{at\_ble\_encryption\_request\_reply}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_encryption\_request\_reply()}{at\_ble\_encryption\_request\_reply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}}}]{auth,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{key\+\_\+found,  }\item[{\mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Responds to encryption start request from master device \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebade3647c9d18213cb3e93f570c09f20c6}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+R\+E\+Q\+U\+E\+ST}}, once encryption starts \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaac5cdd3deee1c0cb4672efbfb9ebae75}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+H\+A\+N\+G\+ED}} event is delivered. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection to be updated \\
+\hline
+\mbox{\texttt{ in}}  & {\em key\+\_\+found} & If true then a valid key is found in device database and will be used \\
+\hline
+\mbox{\texttt{ in}}  & {\em auth} & authentication level \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & L\+TK key used for encryption\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__sec__group_ga5342b76c296c45a34e3e33d9181b7734}\label{group__gap__sec__group_ga5342b76c296c45a34e3e33d9181b7734}} 
+\index{Security APIs@{Security APIs}!at\_ble\_encryption\_start@{at\_ble\_encryption\_start}}
+\index{at\_ble\_encryption\_start@{at\_ble\_encryption\_start}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_encryption\_start()}{at\_ble\_encryption\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+encryption\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble___l_t_k__t}{at\+\_\+ble\+\_\+\+L\+T\+K\+\_\+t}} $\ast$}]{key,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}}}]{auth }\end{DoxyParamCaption})}
+
+
+
+Starts encryption, once encryption starts \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaac5cdd3deee1c0cb4672efbfb9ebae75}{A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+H\+A\+N\+G\+ED}} event is delivered. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection to be updated \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & L\+TK key used for encryption \\
+\hline
+\mbox{\texttt{ in}}  & {\em auth} & authentication level , this information must be stored in device database after each pairing process \mbox{\hyperlink{structat__ble__pair__done__t}{at\+\_\+ble\+\_\+pair\+\_\+done\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This procedure can be initiated only by master of the connection.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__sec__group_gad993133993ab7e997935ac4f6537edbe}\label{group__gap__sec__group_gad993133993ab7e997935ac4f6537edbe}} 
+\index{Security APIs@{Security APIs}!at\_ble\_pair\_key\_reply@{at\_ble\_pair\_key\_reply}}
+\index{at\_ble\_pair\_key\_reply@{at\_ble\_pair\_key\_reply}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_pair\_key\_reply()}{at\_ble\_pair\_key\_reply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0}{at\+\_\+ble\+\_\+pair\+\_\+key\+\_\+type\+\_\+t}}}]{type,  }\item[{uint8\+\_\+t $\ast$}]{key }\end{DoxyParamCaption})}
+
+
+
+Provides a passkey or O\+OB data that was requested via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba80a994d218165f5cf29199df84a37344}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST}} event, If key type is \mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0ab9a089dad20c1ecb68b97c16556c1f03}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+P\+A\+S\+S\+K\+EY}}, then a 6-\/byte A\+S\+C\+II string (digit 0..9 only). If key type is \mbox{\hyperlink{at__ble__api_8h_a6b252fad20280faa8087d1a8776c09a0a08a6e4b72a5e745b4cf2700008908cc7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+O\+OB}} , then a 16-\/byte O\+OB key value in Little Endian format. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the ongoing connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & type of requested key, must match the one asked for in \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba80a994d218165f5cf29199df84a37344}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & the key requested, should be N\+U\+LL to reject the pairing TK exchange and terminate pairing procedure.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__sec__group_ga57471b414b6b1b5aa57c540db43b4453}\label{group__gap__sec__group_ga57471b414b6b1b5aa57c540db43b4453}} 
+\index{Security APIs@{Security APIs}!at\_ble\_send\_sec\_config@{at\_ble\_send\_sec\_config}}
+\index{at\_ble\_send\_sec\_config@{at\_ble\_send\_sec\_config}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_send\_sec\_config()}{at\_ble\_send\_sec\_config()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+send\+\_\+sec\+\_\+config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__signature__info__t}{at\+\_\+ble\+\_\+signature\+\_\+info\+\_\+t}} $\ast$}]{signature\+\_\+info,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}}}]{authen,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{service\+\_\+changed }\end{DoxyParamCaption})}
+
+
+
+Set specific link security configuration and bonding data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em signature\+\_\+info} & signature\+\_\+info, more info at \mbox{\hyperlink{structat__ble__signature__info__t}{at\+\_\+ble\+\_\+signature\+\_\+info\+\_\+t}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em authen} & Authentication value, one of \mbox{\hyperlink{at__ble__api_8h_a70253ec09a2361d16e15c37f8cb5b97c}{at\+\_\+ble\+\_\+auth\+\_\+t}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em service\+\_\+changed} & Service Changed Indication enabled\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This function must be called before signed write operation to exchange C\+SR Keys first.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__sec__group_ga7cf7f701912f18b73b6f7c10e8319100}\label{group__gap__sec__group_ga7cf7f701912f18b73b6f7c10e8319100}} 
+\index{Security APIs@{Security APIs}!at\_ble\_send\_slave\_sec\_request@{at\_ble\_send\_slave\_sec\_request}}
+\index{at\_ble\_send\_slave\_sec\_request@{at\_ble\_send\_slave\_sec\_request}!Security APIs@{Security APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_send\_slave\_sec\_request()}{at\_ble\_send\_slave\_sec\_request()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+send\+\_\+slave\+\_\+sec\+\_\+request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{mitm\+\_\+protection,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{bond }\end{DoxyParamCaption})}
+
+
+
+Send slave security request to master. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the ongoing connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em mitm\+\_\+protection} & Boolean value for Man-\/\+In-\/\+The-\/\+Middle protection F\+A\+L\+SE -\/$>$ Disable, T\+R\+UE -\/$>$ Enable \\
+\hline
+\mbox{\texttt{ in}}  & {\em bond} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item This function should be called in slave mode only to notify master to initiate a security request. In this case, the application should receive \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8ebe3dd18aa290e4daeb379850ee7b7b}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+L\+A\+V\+E\+\_\+\+S\+E\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}} and send \mbox{\hyperlink{group__gap__sec__group_ga937a2436bd501a104500420f4cf82d28}{at\+\_\+ble\+\_\+authenticate}}.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}}. 
+\end{DoxyReturn}

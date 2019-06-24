@@ -1,0 +1,28 @@
+var struct_usb_device =
+[
+    [ "CTRLA", "struct_usb_device.html#aa15f86099ea2915cc8667b8ba3980a91", null ],
+    [ "CTRLB", "struct_usb_device.html#a7d9e693fc058a456305b0e11e25af69b", null ],
+    [ "DADD", "struct_usb_device.html#a7fb6fd524c4acb28f87678e680bb0cb8", null ],
+    [ "DESCADD", "struct_usb_device.html#a4e4a634e8fbb0f0489872f7a9ee41bc4", null ],
+    [ "DeviceEndpoint", "struct_usb_device.html#a755b1ba1712add80d2a9193087b93baa", null ],
+    [ "EPINTSMRY", "struct_usb_device.html#ab82d39ece90a8a9b80e0952a599bfdd9", null ],
+    [ "FNUM", "struct_usb_device.html#a08a6bd7c8e060195bdeeec9d2355384a", null ],
+    [ "FSMSTATUS", "struct_usb_device.html#a96bd1d241ecd0cfafc7b234d2d76f769", null ],
+    [ "INTENCLR", "struct_usb_device.html#a569c897d10b13f70fb9bfba1f33b3171", null ],
+    [ "INTENSET", "struct_usb_device.html#a9f694751d75c05c3156be03cf92e39bd", null ],
+    [ "INTFLAG", "struct_usb_device.html#a2aff6e5d29d7634e892def505df651f3", null ],
+    [ "PADCAL", "struct_usb_device.html#a446e7b83e50d200ac238425577a31e5a", null ],
+    [ "QOSCTRL", "struct_usb_device.html#a9df8751b364843c227b690917f10a4b4", null ],
+    [ "Reserved1", "struct_usb_device.html#a092866123ac46d0985136e4dca2f36f4", null ],
+    [ "Reserved10", "struct_usb_device.html#ac615b366d825327aa7079ef09c4b51ad", null ],
+    [ "Reserved2", "struct_usb_device.html#a78f3c89e13bd565a077e9418f43aaa04", null ],
+    [ "Reserved3", "struct_usb_device.html#ae12c3e940f27988a085afebe2f779a21", null ],
+    [ "Reserved4", "struct_usb_device.html#aec3221203f6f367a8473128fc2f5429e", null ],
+    [ "Reserved5", "struct_usb_device.html#a5771b852409b146285e223c4265972b8", null ],
+    [ "Reserved6", "struct_usb_device.html#a8e9dcdbe22cc3e20d4b45b25938767e2", null ],
+    [ "Reserved7", "struct_usb_device.html#a635230c3dfb24d3467a4d50456a3483c", null ],
+    [ "Reserved8", "struct_usb_device.html#a61a0842f78678970cfc266608a1d201e", null ],
+    [ "Reserved9", "struct_usb_device.html#a7dfdc057ed9939b6708cf88cd831a0cc", null ],
+    [ "STATUS", "struct_usb_device.html#a97fe06199efe371e3f946da99598987f", null ],
+    [ "SYNCBUSY", "struct_usb_device.html#a207c0e2e615d2c9a63a3cd1f81d252f7", null ]
+];

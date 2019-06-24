@@ -1,0 +1,56 @@
+\hypertarget{structport__config}{}\section{port\+\_\+config Struct Reference}
+\label{structport__config}\index{port\_config@{port\_config}}
+
+
+\mbox{\hyperlink{struct_port}{Port}} pin configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$port.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_gabe12893c067f9b011ece79c1bf1b128a}{port\+\_\+pin\+\_\+dir}} \mbox{\hyperlink{structport__config_a71df9fe8b2cc6b6ba920473cc3783fdd}{direction}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_ga1f47828261f5b7ac5f864b42981a2004}{port\+\_\+pin\+\_\+pull}} \mbox{\hyperlink{structport__config_a6f6186e550173a51258e1a2167160761}{input\+\_\+pull}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structport__config_afbc3e052896051a278a5ad17f6a6e2bb}{powersave}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{struct_port}{Port}} pin configuration structure. 
+
+Configuration structure for a port pin instance. This structure should be initialized by the port\+\_\+get\+\_\+config\+\_\+defaults() function before being modified by the user application. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structport__config_a71df9fe8b2cc6b6ba920473cc3783fdd}\label{structport__config_a71df9fe8b2cc6b6ba920473cc3783fdd}} 
+\index{port\_config@{port\_config}!direction@{direction}}
+\index{direction@{direction}!port\_config@{port\_config}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_gabe12893c067f9b011ece79c1bf1b128a}{port\+\_\+pin\+\_\+dir}} direction}
+
+\mbox{\hyperlink{struct_port}{Port}} buffer input/output direction \mbox{\Hypertarget{structport__config_a6f6186e550173a51258e1a2167160761}\label{structport__config_a6f6186e550173a51258e1a2167160761}} 
+\index{port\_config@{port\_config}!input\_pull@{input\_pull}}
+\index{input\_pull@{input\_pull}!port\_config@{port\_config}}
+\subsubsection{\texorpdfstring{input\_pull}{input\_pull}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__port__group_ga1f47828261f5b7ac5f864b42981a2004}{port\+\_\+pin\+\_\+pull}} input\+\_\+pull}
+
+\mbox{\hyperlink{struct_port}{Port}} pull-\/up/pull-\/down for input pins \mbox{\Hypertarget{structport__config_afbc3e052896051a278a5ad17f6a6e2bb}\label{structport__config_afbc3e052896051a278a5ad17f6a6e2bb}} 
+\index{port\_config@{port\_config}!powersave@{powersave}}
+\index{powersave@{powersave}!port\_config@{port\_config}}
+\subsubsection{\texorpdfstring{powersave}{powersave}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} powersave}
+
+Enable lowest possible powerstate on the pin
+
+\begin{DoxyNote}{Note}
+All other configurations will be ignored, the pin will be disabled. 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/port/\mbox{\hyperlink{drivers_2port_2port_8h}{port.\+h}}\end{DoxyCompactItemize}

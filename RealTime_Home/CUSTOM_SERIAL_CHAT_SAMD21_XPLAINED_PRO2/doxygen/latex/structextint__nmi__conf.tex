@@ -1,0 +1,67 @@
+\hypertarget{structextint__nmi__conf}{}\section{extint\+\_\+nmi\+\_\+conf Struct Reference}
+\label{structextint__nmi__conf}\index{extint\_nmi\_conf@{extint\_nmi\_conf}}
+
+
+External Interrupt Controller N\+MI configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$extint.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structextint__nmi__conf_aaa3ba20871e508028b08eed10d08db84}{gpio\+\_\+pin}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structextint__nmi__conf_ab223c84d8e5b59e9fcc8673c338a7a87}{gpio\+\_\+pin\+\_\+mux}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}{extint\+\_\+pull}} \mbox{\hyperlink{structextint__nmi__conf_a2722ba2735f217f3c7e30f2e4135c134}{gpio\+\_\+pin\+\_\+pull}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structextint__nmi__conf_a1a59d546b8bc80f31e5350a490c5b718}{filter\+\_\+input\+\_\+signal}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}} \mbox{\hyperlink{structextint__nmi__conf_a275ebcf2d5de2b96132c05744345a34c}{detection\+\_\+criteria}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+External Interrupt Controller N\+MI configuration structure. 
+
+Configuration structure for the edge detection mode of an external interrupt N\+MI channel. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structextint__nmi__conf_a275ebcf2d5de2b96132c05744345a34c}\label{structextint__nmi__conf_a275ebcf2d5de2b96132c05744345a34c}} 
+\index{extint\_nmi\_conf@{extint\_nmi\_conf}!detection\_criteria@{detection\_criteria}}
+\index{detection\_criteria@{detection\_criteria}!extint\_nmi\_conf@{extint\_nmi\_conf}}
+\subsubsection{\texorpdfstring{detection\_criteria}{detection\_criteria}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}} detection\+\_\+criteria}
+
+Edge detection mode to use. Not all devices support all possible detection modes for N\+M\+Is. \mbox{\Hypertarget{structextint__nmi__conf_a1a59d546b8bc80f31e5350a490c5b718}\label{structextint__nmi__conf_a1a59d546b8bc80f31e5350a490c5b718}} 
+\index{extint\_nmi\_conf@{extint\_nmi\_conf}!filter\_input\_signal@{filter\_input\_signal}}
+\index{filter\_input\_signal@{filter\_input\_signal}!extint\_nmi\_conf@{extint\_nmi\_conf}}
+\subsubsection{\texorpdfstring{filter\_input\_signal}{filter\_input\_signal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} filter\+\_\+input\+\_\+signal}
+
+Filter the raw input signal to prevent noise from triggering an interrupt accidentally, using a three sample majority filter \mbox{\Hypertarget{structextint__nmi__conf_aaa3ba20871e508028b08eed10d08db84}\label{structextint__nmi__conf_aaa3ba20871e508028b08eed10d08db84}} 
+\index{extint\_nmi\_conf@{extint\_nmi\_conf}!gpio\_pin@{gpio\_pin}}
+\index{gpio\_pin@{gpio\_pin}!extint\_nmi\_conf@{extint\_nmi\_conf}}
+\subsubsection{\texorpdfstring{gpio\_pin}{gpio\_pin}}
+{\footnotesize\ttfamily uint32\+\_\+t gpio\+\_\+pin}
+
+G\+P\+IO pin the N\+MI should be connected to \mbox{\Hypertarget{structextint__nmi__conf_ab223c84d8e5b59e9fcc8673c338a7a87}\label{structextint__nmi__conf_ab223c84d8e5b59e9fcc8673c338a7a87}} 
+\index{extint\_nmi\_conf@{extint\_nmi\_conf}!gpio\_pin\_mux@{gpio\_pin\_mux}}
+\index{gpio\_pin\_mux@{gpio\_pin\_mux}!extint\_nmi\_conf@{extint\_nmi\_conf}}
+\subsubsection{\texorpdfstring{gpio\_pin\_mux}{gpio\_pin\_mux}}
+{\footnotesize\ttfamily uint32\+\_\+t gpio\+\_\+pin\+\_\+mux}
+
+M\+UX position the G\+P\+IO pin should be configured to \mbox{\Hypertarget{structextint__nmi__conf_a2722ba2735f217f3c7e30f2e4135c134}\label{structextint__nmi__conf_a2722ba2735f217f3c7e30f2e4135c134}} 
+\index{extint\_nmi\_conf@{extint\_nmi\_conf}!gpio\_pin\_pull@{gpio\_pin\_pull}}
+\index{gpio\_pin\_pull@{gpio\_pin\_pull}!extint\_nmi\_conf@{extint\_nmi\_conf}}
+\subsubsection{\texorpdfstring{gpio\_pin\_pull}{gpio\_pin\_pull}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}{extint\+\_\+pull}} gpio\+\_\+pin\+\_\+pull}
+
+Internal pull to enable on the input pin 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/extint/\mbox{\hyperlink{extint_8h}{extint.\+h}}\end{DoxyCompactItemize}

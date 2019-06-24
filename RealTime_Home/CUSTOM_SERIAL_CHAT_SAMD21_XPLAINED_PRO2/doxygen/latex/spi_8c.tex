@@ -1,0 +1,35 @@
+\hypertarget{spi_8c}{}\section{A\+S\+F/sam0/drivers/sercom/spi/spi.c File Reference}
+\label{spi_8c}\index{ASF/sam0/drivers/sercom/spi/spi.c@{ASF/sam0/drivers/sercom/spi/spi.c}}
+
+
+S\+AM Serial Peripheral Interface Driver.  
+
+
+{\ttfamily \#include \char`\"{}spi.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga65c764f92ed46f0d4845232bd4b241bc}{spi\+\_\+reset}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module)
+\begin{DoxyCompactList}\small\item\em Resets the S\+PI module. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga6bc86fe61f20b414ac3ca1a74c28dd28}{spi\+\_\+set\+\_\+baudrate}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint32\+\_\+t baudrate)
+\begin{DoxyCompactList}\small\item\em Set the baudrate of the S\+PI module. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga83b840fe8c91173bfe54a13787c262e6}{spi\+\_\+init}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, \mbox{\hyperlink{union_sercom}{Sercom}} $\ast$const hw, const struct \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes the S\+E\+R\+C\+OM S\+PI module. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga7cdeea24cfa24ab872044c6fa1ae893f}{spi\+\_\+read\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length, uint16\+\_\+t dummy)
+\begin{DoxyCompactList}\small\item\em Reads buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3eb1d72360e67b6fef7574320a5919e6}{spi\+\_\+transceive\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint16\+\_\+t tx\+\_\+data, uint16\+\_\+t $\ast$rx\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Sends and reads a single S\+PI character. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gaff6f75d83ec5251e6d1d42830b8af05f}{spi\+\_\+select\+\_\+slave}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, struct \mbox{\hyperlink{structspi__slave__inst}{spi\+\_\+slave\+\_\+inst}} $\ast$const slave, const \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} select)
+\begin{DoxyCompactList}\small\item\em Selects slave device. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gae217dcf01506d2ad9ea554a14e57245f}{spi\+\_\+write\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, const uint8\+\_\+t $\ast$tx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gad784fee69a16acef8e4e3b8be4a4d61d}{spi\+\_\+transceive\+\_\+buffer\+\_\+wait}} (struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} $\ast$const module, uint8\+\_\+t $\ast$tx\+\_\+data, uint8\+\_\+t $\ast$rx\+\_\+data, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Sends and receives a buffer of {\ttfamily length} S\+PI characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM Serial Peripheral Interface Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

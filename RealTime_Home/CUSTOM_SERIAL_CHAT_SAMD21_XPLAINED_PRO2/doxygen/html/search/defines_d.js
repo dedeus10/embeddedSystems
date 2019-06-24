@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['next_5fdst_5fservice_5fuuid',['NEXT_DST_SERVICE_UUID',['../ble__manager_8h.html#a9bc7042df186092b255a1d5e95a48bd7',1,'ble_manager.h']]],
+  ['nibble2ascii',['NIBBLE2ASCII',['../ble__utils_8h.html#a00061d76273ac2e64cb17313e147adc2',1,'ble_utils.h']]],
+  ['nvm_5fdfll_5fcoarse_5fpos',['NVM_DFLL_COARSE_POS',['../clock_8c.html#a7322bdb38c13660d8b2e086c39566ba8',1,'clock.c']]],
+  ['nvm_5fdfll_5fcoarse_5fsize',['NVM_DFLL_COARSE_SIZE',['../clock_8c.html#af3db97c848314d070173441f6d189e22',1,'clock.c']]],
+  ['nvmctrl_5faux0_5faddress',['NVMCTRL_AUX0_ADDRESS',['../instance_2nvmctrl_8h.html#a9fc5ea6c4b6774ad71e9b64d3f13f170',1,'nvmctrl.h']]],
+  ['nvmctrl_5faux1_5faddress',['NVMCTRL_AUX1_ADDRESS',['../instance_2nvmctrl_8h.html#a4cf6829cf98d3ec951ea6fe99bed3012',1,'nvmctrl.h']]],
+  ['nvmctrl_5faux2_5faddress',['NVMCTRL_AUX2_ADDRESS',['../instance_2nvmctrl_8h.html#a184030ea50c4ee7f5262dd29fd120e41',1,'nvmctrl.h']]],
+  ['nvmctrl_5faux3_5faddress',['NVMCTRL_AUX3_ADDRESS',['../instance_2nvmctrl_8h.html#a79b26b743e30ff8cdd6036e1e333b331',1,'nvmctrl.h']]],
+  ['nvmctrl_5fclk_5fahb_5fid',['NVMCTRL_CLK_AHB_ID',['../instance_2nvmctrl_8h.html#a25796ecc82f426f8c8b6f0773d3b42b2',1,'nvmctrl.h']]],
+  ['nvmctrl_5ffactory_5fword_5fimplemented_5fmask',['NVMCTRL_FACTORY_WORD_IMPLEMENTED_MASK',['../instance_2nvmctrl_8h.html#a0c0426c0e7ea2ba948c49ee09baf67df',1,'nvmctrl.h']]],
+  ['nvmctrl_5fflash_5fsize',['NVMCTRL_FLASH_SIZE',['../instance_2nvmctrl_8h.html#a5bb6ffda2c63d700028a19f8538dace2',1,'nvmctrl.h']]],
+  ['nvmctrl_5flockbit_5faddress',['NVMCTRL_LOCKBIT_ADDRESS',['../instance_2nvmctrl_8h.html#a5b843a34e77ed74083eb955085e479ad',1,'nvmctrl.h']]],
+  ['nvmctrl_5fpage_5fhw',['NVMCTRL_PAGE_HW',['../instance_2nvmctrl_8h.html#a075b9411de117460959ca7f66a49aceb',1,'nvmctrl.h']]],
+  ['nvmctrl_5fpage_5fsize',['NVMCTRL_PAGE_SIZE',['../instance_2nvmctrl_8h.html#a08f254d9f22c3d8a36cc3d821d8f1e09',1,'nvmctrl.h']]],
+  ['nvmctrl_5fpage_5fw',['NVMCTRL_PAGE_W',['../instance_2nvmctrl_8h.html#ace97fc68120d5503611b51c310d293c1',1,'nvmctrl.h']]],
+  ['nvmctrl_5fpmsb',['NVMCTRL_PMSB',['../instance_2nvmctrl_8h.html#a2420eebc8e2458070c9e6143614d7a63',1,'nvmctrl.h']]],
+  ['nvmctrl_5fpsz_5fbits',['NVMCTRL_PSZ_BITS',['../instance_2nvmctrl_8h.html#a2b48cc170e8b25ad6e64794e385291c4',1,'nvmctrl.h']]],
+  ['nvmctrl_5frow_5fpages',['NVMCTRL_ROW_PAGES',['../instance_2nvmctrl_8h.html#af4ce200243703bd1e8001a6a3f0481c7',1,'nvmctrl.h']]],
+  ['nvmctrl_5frow_5fsize',['NVMCTRL_ROW_SIZE',['../instance_2nvmctrl_8h.html#aaab28ff20eaa0a68bdd92bad8bedb1a7',1,'nvmctrl.h']]],
+  ['nvmctrl_5frww_5feeprom_5faddr',['NVMCTRL_RWW_EEPROM_ADDR',['../instance_2nvmctrl_8h.html#a56e2a03081111170346063dada09c746',1,'nvmctrl.h']]],
+  ['nvmctrl_5frwwee_5fpages',['NVMCTRL_RWWEE_PAGES',['../instance_2nvmctrl_8h.html#a469dd765dff9e1dcc1bfaa2c9ca469c6',1,'nvmctrl.h']]],
+  ['nvmctrl_5fuser_5fpage_5faddress',['NVMCTRL_USER_PAGE_ADDRESS',['../instance_2nvmctrl_8h.html#aaecac1866ef74764582d1dbb4ded1828',1,'nvmctrl.h']]],
+  ['nvmctrl_5fuser_5fpage_5foffset',['NVMCTRL_USER_PAGE_OFFSET',['../instance_2nvmctrl_8h.html#a6de8f0637db4b10a3f9c818806e89239',1,'nvmctrl.h']]],
+  ['nvmctrl_5fuser_5fword_5fimplemented_5fmask',['NVMCTRL_USER_WORD_IMPLEMENTED_MASK',['../instance_2nvmctrl_8h.html#a874269d714d904fa775cbd55cb348d23',1,'nvmctrl.h']]]
+];

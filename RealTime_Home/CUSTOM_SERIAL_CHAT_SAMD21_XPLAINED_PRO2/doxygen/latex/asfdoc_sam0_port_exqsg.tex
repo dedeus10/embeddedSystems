@@ -1,0 +1,67 @@
+This is a list of the available Quick Start guides (Q\+S\+Gs) and example applications for \mbox{\hyperlink{group__asfdoc__sam0__port__group}{S\+AM Port (P\+O\+RT) Driver}}. Q\+S\+Gs are simple examples with step-\/by-\/step instructions to configure and use this driver in a selection of use cases. Note that a Q\+SG can be compiled as a standalone application or be added to the user application.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_sam0_port_basic_use_case}{Quick Start Guide for P\+O\+RT -\/ Basic}} 
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_port_basic_use_case}{}\section{Quick Start Guide for P\+O\+RT -\/ Basic}\label{asfdoc_sam0_port_basic_use_case}
+In this use case, the P\+O\+RT module is configured for\+: \begin{DoxyItemize}
+\item One pin in input mode, with pull-\/up enabled \item One pin in output mode\end{DoxyItemize}
+This use case sets up the P\+O\+RT to read the current state of a G\+P\+IO pin set as an input, and mirrors the opposite logical state on a pin configured as an output.\hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup}{}\subsection{Setup}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup}
+\hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_prereq}
+There are no special setup requirements for this use-\/case.\hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_code}
+Copy-\/paste the following setup code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application initialization (typically the start of {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}})\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Create a P\+O\+RT module pin configuration struct, which can be filled out to adjust the configuration of a single port pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the pin configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Adjust the configuration struct to request an input pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Configure push button pin with the initialized pin configuration struct, to enable the input sampler on the pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Adjust the configuration struct to request an output pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+The existing configuration struct may be re-\/used, as long as any values that have been altered from the default settings are taken into account by the user application.
+\end{DoxyNote}
+
+\item Configure L\+ED pin with the initialized pin configuration struct, to enable the output driver on the pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_use_main}{}\subsection{Use Case}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_use_main}
+\hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_code}{}\subsubsection{Code}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_code}
+Copy-\/paste the following code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_port_basic_use_case_asfdoc_sam0_port_basic_use_case_flow}
+
+\begin{DoxyEnumerate}
+\item Read in the current input sampler state of push button pin, which has been configured as an input in the use-\/case setup code. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Write the inverted pin level state to L\+ED pin, which has been configured as an output in the use-\/case setup code. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

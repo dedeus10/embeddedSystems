@@ -1,0 +1,152 @@
+\hypertarget{structspi__module}{}\section{spi\+\_\+module Struct Reference}
+\label{structspi__module}\index{spi\_module@{spi\_module}}
+
+
+S\+E\+R\+C\+OM S\+PI driver software device instance structure.  
+
+
+
+
+{\ttfamily \#include $<$spi.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{union_sercom}{Sercom}} $\ast$ \mbox{\hyperlink{structspi__module_a0c1e47f7408dce5f667a53398c82d13a}{hw}}
+\item 
+volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structspi__module_a765892434f9329ded45a5287eeb75957}{locked}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} \mbox{\hyperlink{structspi__module_aa56044693231ac71d809d1c28e94800a}{mode}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} \mbox{\hyperlink{structspi__module_a7ca9bf5df3e678e26819ff8444041797}{character\+\_\+size}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structspi__module_aa555f88ee76a65a51c526b3e912b711d}{receiver\+\_\+enabled}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}{\+\_\+spi\+\_\+direction}} \mbox{\hyperlink{structspi__module_af071d306856d4f8f2f0ef443d334f5bb}{dir}}
+\item 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structspi__module_a575b1df3b35bc459cf4165cc2af8f692}{callback}} \mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}
+\item 
+volatile uint8\+\_\+t $\ast$ \mbox{\hyperlink{structspi__module_a20cb7f37889a2de5bcd383a2257905f4}{rx\+\_\+buffer\+\_\+ptr}}
+\item 
+volatile uint8\+\_\+t $\ast$ \mbox{\hyperlink{structspi__module_ad4f5e977169e703291bab5e3483ff5dd}{tx\+\_\+buffer\+\_\+ptr}}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{structspi__module_adbc4f86e8d157a19a354c981e1486865}{remaining\+\_\+rx\+\_\+buffer\+\_\+length}}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{structspi__module_a62c8fcf3ca37424b59c093dd9f56af3b}{remaining\+\_\+dummy\+\_\+buffer\+\_\+length}}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{structspi__module_a8031a02be57635012242eb4c9fb21934}{remaining\+\_\+tx\+\_\+buffer\+\_\+length}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structspi__module_a635e5d3373f317370711cc10ec77e0f9}{registered\+\_\+callback}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structspi__module_a3bde421512cd5c809ecee069b5914a80}{enabled\+\_\+callback}}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{structspi__module_a30c0453c8af1896546c1ab0142be3181}{status}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+E\+R\+C\+OM S\+PI driver software device instance structure. 
+
+S\+E\+R\+C\+OM S\+PI driver software instance structure, used to retain software state information of an associated hardware module instance.
+
+\begin{DoxyNote}{Note}
+The fields of this structure should not be altered by the user application; they are reserved for module-\/internal use only. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structspi__module_a575b1df3b35bc459cf4165cc2af8f692}\label{structspi__module_a575b1df3b35bc459cf4165cc2af8f692}} 
+\index{spi\_module@{spi\_module}!callback@{callback}}
+\index{callback@{callback}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga88d771c03a254735de0053be3fa513ca}{spi\+\_\+callback\+\_\+t}} callback\mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_gga4afb8830e0197ec11f6beb8140210a88a5941b69aff1bf66f116be84ddf1c1218}{S\+P\+I\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}}
+
+Array to store callback function pointers in \mbox{\Hypertarget{structspi__module_a7ca9bf5df3e678e26819ff8444041797}\label{structspi__module_a7ca9bf5df3e678e26819ff8444041797}} 
+\index{spi\_module@{spi\_module}!character\_size@{character\_size}}
+\index{character\_size@{character\_size}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{character\_size}{character\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga79e8becd0bcea19b99e7eb7fe8a9d6b7}{spi\+\_\+character\+\_\+size}} character\+\_\+size}
+
+S\+PI character size \mbox{\Hypertarget{structspi__module_af071d306856d4f8f2f0ef443d334f5bb}\label{structspi__module_af071d306856d4f8f2f0ef443d334f5bb}} 
+\index{spi\_module@{spi\_module}!dir@{dir}}
+\index{dir@{dir}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga3790f767d410bc7d70fe0772fe7044f7}{\+\_\+spi\+\_\+direction}} dir}
+
+Direction of transaction \mbox{\Hypertarget{structspi__module_a3bde421512cd5c809ecee069b5914a80}\label{structspi__module_a3bde421512cd5c809ecee069b5914a80}} 
+\index{spi\_module@{spi\_module}!enabled\_callback@{enabled\_callback}}
+\index{enabled\_callback@{enabled\_callback}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{enabled\_callback}{enabled\_callback}}
+{\footnotesize\ttfamily uint8\+\_\+t enabled\+\_\+callback}
+
+Bit mask for callbacks enabled \mbox{\Hypertarget{structspi__module_a0c1e47f7408dce5f667a53398c82d13a}\label{structspi__module_a0c1e47f7408dce5f667a53398c82d13a}} 
+\index{spi\_module@{spi\_module}!hw@{hw}}
+\index{hw@{hw}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{hw}{hw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_sercom}{Sercom}}$\ast$ hw}
+
+S\+E\+R\+C\+OM hardware module \mbox{\Hypertarget{structspi__module_a765892434f9329ded45a5287eeb75957}\label{structspi__module_a765892434f9329ded45a5287eeb75957}} 
+\index{spi\_module@{spi\_module}!locked@{locked}}
+\index{locked@{locked}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} locked}
+
+Module lock \mbox{\Hypertarget{structspi__module_aa56044693231ac71d809d1c28e94800a}\label{structspi__module_aa56044693231ac71d809d1c28e94800a}} 
+\index{spi\_module@{spi\_module}!mode@{mode}}
+\index{mode@{mode}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga78c1313670220bedfecdb138d4c27903}{spi\+\_\+mode}} mode}
+
+S\+PI mode \mbox{\Hypertarget{structspi__module_aa555f88ee76a65a51c526b3e912b711d}\label{structspi__module_aa555f88ee76a65a51c526b3e912b711d}} 
+\index{spi\_module@{spi\_module}!receiver\_enabled@{receiver\_enabled}}
+\index{receiver\_enabled@{receiver\_enabled}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{receiver\_enabled}{receiver\_enabled}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} receiver\+\_\+enabled}
+
+Receiver enabled \mbox{\Hypertarget{structspi__module_a635e5d3373f317370711cc10ec77e0f9}\label{structspi__module_a635e5d3373f317370711cc10ec77e0f9}} 
+\index{spi\_module@{spi\_module}!registered\_callback@{registered\_callback}}
+\index{registered\_callback@{registered\_callback}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{registered\_callback}{registered\_callback}}
+{\footnotesize\ttfamily uint8\+\_\+t registered\+\_\+callback}
+
+Bit mask for callbacks registered \mbox{\Hypertarget{structspi__module_a62c8fcf3ca37424b59c093dd9f56af3b}\label{structspi__module_a62c8fcf3ca37424b59c093dd9f56af3b}} 
+\index{spi\_module@{spi\_module}!remaining\_dummy\_buffer\_length@{remaining\_dummy\_buffer\_length}}
+\index{remaining\_dummy\_buffer\_length@{remaining\_dummy\_buffer\_length}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{remaining\_dummy\_buffer\_length}{remaining\_dummy\_buffer\_length}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t remaining\+\_\+dummy\+\_\+buffer\+\_\+length}
+
+Remaining dummy characters to send when reading \mbox{\Hypertarget{structspi__module_adbc4f86e8d157a19a354c981e1486865}\label{structspi__module_adbc4f86e8d157a19a354c981e1486865}} 
+\index{spi\_module@{spi\_module}!remaining\_rx\_buffer\_length@{remaining\_rx\_buffer\_length}}
+\index{remaining\_rx\_buffer\_length@{remaining\_rx\_buffer\_length}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{remaining\_rx\_buffer\_length}{remaining\_rx\_buffer\_length}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t remaining\+\_\+rx\+\_\+buffer\+\_\+length}
+
+Remaining characters to receive \mbox{\Hypertarget{structspi__module_a8031a02be57635012242eb4c9fb21934}\label{structspi__module_a8031a02be57635012242eb4c9fb21934}} 
+\index{spi\_module@{spi\_module}!remaining\_tx\_buffer\_length@{remaining\_tx\_buffer\_length}}
+\index{remaining\_tx\_buffer\_length@{remaining\_tx\_buffer\_length}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{remaining\_tx\_buffer\_length}{remaining\_tx\_buffer\_length}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t remaining\+\_\+tx\+\_\+buffer\+\_\+length}
+
+Remaining characters to transmit \mbox{\Hypertarget{structspi__module_a20cb7f37889a2de5bcd383a2257905f4}\label{structspi__module_a20cb7f37889a2de5bcd383a2257905f4}} 
+\index{spi\_module@{spi\_module}!rx\_buffer\_ptr@{rx\_buffer\_ptr}}
+\index{rx\_buffer\_ptr@{rx\_buffer\_ptr}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{rx\_buffer\_ptr}{rx\_buffer\_ptr}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ rx\+\_\+buffer\+\_\+ptr}
+
+Buffer pointer to where the next received character will be put \mbox{\Hypertarget{structspi__module_a30c0453c8af1896546c1ab0142be3181}\label{structspi__module_a30c0453c8af1896546c1ab0142be3181}} 
+\index{spi\_module@{spi\_module}!status@{status}}
+\index{status@{status}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} status}
+
+Holds the status of the ongoing or last operation \mbox{\Hypertarget{structspi__module_ad4f5e977169e703291bab5e3483ff5dd}\label{structspi__module_ad4f5e977169e703291bab5e3483ff5dd}} 
+\index{spi\_module@{spi\_module}!tx\_buffer\_ptr@{tx\_buffer\_ptr}}
+\index{tx\_buffer\_ptr@{tx\_buffer\_ptr}!spi\_module@{spi\_module}}
+\subsubsection{\texorpdfstring{tx\_buffer\_ptr}{tx\_buffer\_ptr}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ tx\+\_\+buffer\+\_\+ptr}
+
+Buffer pointer to where the next character will be transmitted from 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/sercom/spi/\mbox{\hyperlink{spi_8h}{spi.\+h}}\end{DoxyCompactItemize}

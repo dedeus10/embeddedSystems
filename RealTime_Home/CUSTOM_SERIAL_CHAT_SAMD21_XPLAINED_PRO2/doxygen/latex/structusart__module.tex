@@ -1,0 +1,144 @@
+\hypertarget{structusart__module}{}\section{usart\+\_\+module Struct Reference}
+\label{structusart__module}\index{usart\_module@{usart\_module}}
+
+
+S\+E\+R\+C\+OM U\+S\+A\+RT driver software device instance structure.  
+
+
+
+
+{\ttfamily \#include $<$usart.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{union_sercom}{Sercom}} $\ast$ \mbox{\hyperlink{structusart__module_a0c1e47f7408dce5f667a53398c82d13a}{hw}}
+\item 
+volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structusart__module_a765892434f9329ded45a5287eeb75957}{locked}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ga631ce7b4f60dccd392e6d6ef7d3cd4e2}{usart\+\_\+character\+\_\+size}} \mbox{\hyperlink{structusart__module_a30702e47861220f8092295e86df57e3b}{character\+\_\+size}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structusart__module_aa555f88ee76a65a51c526b3e912b711d}{receiver\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structusart__module_a4502b69abc393bd7a0217d1bdd28a200}{transmitter\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ga1d3e2901d0cf76f20aae271f7122c67d}{usart\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structusart__module_acb4f50636ea728b711008ba58b2e3ecc}{callback}} \mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ggae257d5c9ac64a6835db020aa2458439dad6e55cb6f0f87b63292fe063d76405b5}{U\+S\+A\+R\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}
+\item 
+volatile uint8\+\_\+t $\ast$ \mbox{\hyperlink{structusart__module_a20cb7f37889a2de5bcd383a2257905f4}{rx\+\_\+buffer\+\_\+ptr}}
+\item 
+volatile uint8\+\_\+t $\ast$ \mbox{\hyperlink{structusart__module_ad4f5e977169e703291bab5e3483ff5dd}{tx\+\_\+buffer\+\_\+ptr}}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{structusart__module_adbc4f86e8d157a19a354c981e1486865}{remaining\+\_\+rx\+\_\+buffer\+\_\+length}}
+\item 
+volatile uint16\+\_\+t \mbox{\hyperlink{structusart__module_a8031a02be57635012242eb4c9fb21934}{remaining\+\_\+tx\+\_\+buffer\+\_\+length}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structusart__module_aca598a13daa631f2acaf10fd14cddd9b}{callback\+\_\+reg\+\_\+mask}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structusart__module_afad7acb8781b0158f430dbd3eec23325}{callback\+\_\+enable\+\_\+mask}}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{structusart__module_a8ffaa16cd35ae2c8e84e357f35ef5aff}{rx\+\_\+status}}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{structusart__module_af379c1d4517e118aa4b38c987c7f6d1e}{tx\+\_\+status}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+E\+R\+C\+OM U\+S\+A\+RT driver software device instance structure. 
+
+S\+E\+R\+C\+OM U\+S\+A\+RT driver software instance structure, used to retain software state information of an associated hardware module instance.
+
+\begin{DoxyNote}{Note}
+The fields of this structure should not be altered by the user application; they are reserved for module-\/internal use only. 
+\end{DoxyNote}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structusart__module_acb4f50636ea728b711008ba58b2e3ecc}\label{structusart__module_acb4f50636ea728b711008ba58b2e3ecc}} 
+\index{usart\_module@{usart\_module}!callback@{callback}}
+\index{callback@{callback}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ga1d3e2901d0cf76f20aae271f7122c67d}{usart\+\_\+callback\+\_\+t}} callback\mbox{[}\mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ggae257d5c9ac64a6835db020aa2458439dad6e55cb6f0f87b63292fe063d76405b5}{U\+S\+A\+R\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+N}}\mbox{]}}
+
+Array to store callback function pointers in \mbox{\Hypertarget{structusart__module_afad7acb8781b0158f430dbd3eec23325}\label{structusart__module_afad7acb8781b0158f430dbd3eec23325}} 
+\index{usart\_module@{usart\_module}!callback\_enable\_mask@{callback\_enable\_mask}}
+\index{callback\_enable\_mask@{callback\_enable\_mask}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{callback\_enable\_mask}{callback\_enable\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t callback\+\_\+enable\+\_\+mask}
+
+Bit mask for callbacks enabled \mbox{\Hypertarget{structusart__module_aca598a13daa631f2acaf10fd14cddd9b}\label{structusart__module_aca598a13daa631f2acaf10fd14cddd9b}} 
+\index{usart\_module@{usart\_module}!callback\_reg\_mask@{callback\_reg\_mask}}
+\index{callback\_reg\_mask@{callback\_reg\_mask}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{callback\_reg\_mask}{callback\_reg\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t callback\+\_\+reg\+\_\+mask}
+
+Bit mask for callbacks registered \mbox{\Hypertarget{structusart__module_a30702e47861220f8092295e86df57e3b}\label{structusart__module_a30702e47861220f8092295e86df57e3b}} 
+\index{usart\_module@{usart\_module}!character\_size@{character\_size}}
+\index{character\_size@{character\_size}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{character\_size}{character\_size}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__usart__group_ga631ce7b4f60dccd392e6d6ef7d3cd4e2}{usart\+\_\+character\+\_\+size}} character\+\_\+size}
+
+Character size of the data being transferred \mbox{\Hypertarget{structusart__module_a0c1e47f7408dce5f667a53398c82d13a}\label{structusart__module_a0c1e47f7408dce5f667a53398c82d13a}} 
+\index{usart\_module@{usart\_module}!hw@{hw}}
+\index{hw@{hw}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{hw}{hw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{union_sercom}{Sercom}}$\ast$ hw}
+
+Pointer to the hardware instance \mbox{\Hypertarget{structusart__module_a765892434f9329ded45a5287eeb75957}\label{structusart__module_a765892434f9329ded45a5287eeb75957}} 
+\index{usart\_module@{usart\_module}!locked@{locked}}
+\index{locked@{locked}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} locked}
+
+Module lock \mbox{\Hypertarget{structusart__module_aa555f88ee76a65a51c526b3e912b711d}\label{structusart__module_aa555f88ee76a65a51c526b3e912b711d}} 
+\index{usart\_module@{usart\_module}!receiver\_enabled@{receiver\_enabled}}
+\index{receiver\_enabled@{receiver\_enabled}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{receiver\_enabled}{receiver\_enabled}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} receiver\+\_\+enabled}
+
+Receiver enabled \mbox{\Hypertarget{structusart__module_adbc4f86e8d157a19a354c981e1486865}\label{structusart__module_adbc4f86e8d157a19a354c981e1486865}} 
+\index{usart\_module@{usart\_module}!remaining\_rx\_buffer\_length@{remaining\_rx\_buffer\_length}}
+\index{remaining\_rx\_buffer\_length@{remaining\_rx\_buffer\_length}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{remaining\_rx\_buffer\_length}{remaining\_rx\_buffer\_length}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t remaining\+\_\+rx\+\_\+buffer\+\_\+length}
+
+Remaining characters to receive \mbox{\Hypertarget{structusart__module_a8031a02be57635012242eb4c9fb21934}\label{structusart__module_a8031a02be57635012242eb4c9fb21934}} 
+\index{usart\_module@{usart\_module}!remaining\_tx\_buffer\_length@{remaining\_tx\_buffer\_length}}
+\index{remaining\_tx\_buffer\_length@{remaining\_tx\_buffer\_length}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{remaining\_tx\_buffer\_length}{remaining\_tx\_buffer\_length}}
+{\footnotesize\ttfamily volatile uint16\+\_\+t remaining\+\_\+tx\+\_\+buffer\+\_\+length}
+
+Remaining characters to transmit \mbox{\Hypertarget{structusart__module_a20cb7f37889a2de5bcd383a2257905f4}\label{structusart__module_a20cb7f37889a2de5bcd383a2257905f4}} 
+\index{usart\_module@{usart\_module}!rx\_buffer\_ptr@{rx\_buffer\_ptr}}
+\index{rx\_buffer\_ptr@{rx\_buffer\_ptr}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{rx\_buffer\_ptr}{rx\_buffer\_ptr}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ rx\+\_\+buffer\+\_\+ptr}
+
+Buffer pointer to where the next received character will be put \mbox{\Hypertarget{structusart__module_a8ffaa16cd35ae2c8e84e357f35ef5aff}\label{structusart__module_a8ffaa16cd35ae2c8e84e357f35ef5aff}} 
+\index{usart\_module@{usart\_module}!rx\_status@{rx\_status}}
+\index{rx\_status@{rx\_status}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{rx\_status}{rx\_status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} rx\+\_\+status}
+
+Holds the status of the ongoing or last read operation \mbox{\Hypertarget{structusart__module_a4502b69abc393bd7a0217d1bdd28a200}\label{structusart__module_a4502b69abc393bd7a0217d1bdd28a200}} 
+\index{usart\_module@{usart\_module}!transmitter\_enabled@{transmitter\_enabled}}
+\index{transmitter\_enabled@{transmitter\_enabled}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{transmitter\_enabled}{transmitter\_enabled}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} transmitter\+\_\+enabled}
+
+Transmitter enabled \mbox{\Hypertarget{structusart__module_ad4f5e977169e703291bab5e3483ff5dd}\label{structusart__module_ad4f5e977169e703291bab5e3483ff5dd}} 
+\index{usart\_module@{usart\_module}!tx\_buffer\_ptr@{tx\_buffer\_ptr}}
+\index{tx\_buffer\_ptr@{tx\_buffer\_ptr}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{tx\_buffer\_ptr}{tx\_buffer\_ptr}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ tx\+\_\+buffer\+\_\+ptr}
+
+Buffer pointer to where the next character will be transmitted from \mbox{\Hypertarget{structusart__module_af379c1d4517e118aa4b38c987c7f6d1e}\label{structusart__module_af379c1d4517e118aa4b38c987c7f6d1e}} 
+\index{usart\_module@{usart\_module}!tx\_status@{tx\_status}}
+\index{tx\_status@{tx\_status}!usart\_module@{usart\_module}}
+\subsubsection{\texorpdfstring{tx\_status}{tx\_status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} tx\+\_\+status}
+
+Holds the status of the ongoing or last write operation 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/sercom/usart/\mbox{\hyperlink{usart_8h}{usart.\+h}}\end{DoxyCompactItemize}

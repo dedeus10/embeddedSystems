@@ -1,0 +1,476 @@
+\hypertarget{instance_2sysctrl_8h}{}\section{A\+S\+F/sam0/utils/cmsis/samd21/include/instance/sysctrl.h File Reference}
+\label{instance_2sysctrl_8h}\index{ASF/sam0/utils/cmsis/samd21/include/instance/sysctrl.h@{ASF/sam0/utils/cmsis/samd21/include/instance/sysctrl.h}}
+
+
+Instance description for S\+Y\+S\+C\+T\+RL.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a6006b084273ae310e684b8b9b44f43a0}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000800\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_af505c31a83965402b5d1c3a6c2068439}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000804\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_aa3f5ddf6fcf1ccf821e0255b84970a23}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000808\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_acac86f09d2d0c8136da448ce3da17010}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+P\+C\+L\+K\+SR}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga5d556f8391af4141be23f7334ac9dd68}{Ro\+Reg}}  $\ast$)0x4000080\+C\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Power and Clocks Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a94bbef144398338a768286f497c62ae0}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+SC}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000810\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) External Multipurpose Crystal Oscillator (X\+O\+SC) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_aeb80eb4be64db5308fbd20c1f761ee7a}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C32K}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000814\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) 32k\+Hz External Crystal Oscillator (X\+O\+S\+C32K) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_afeb0b1a3d126442a03bb36f6c90f56d6}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32K}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000818\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) 32k\+Hz Internal Oscillator (O\+S\+C32K) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_ac3086f377ebab6122db0827d05bcff36}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C\+U\+L\+P32K}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x4000081\+C\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) 32k\+Hz Ultra Low Power Internal Oscillator (O\+S\+C\+U\+L\+P32K) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a3d2d429d9bd5e0f6401ba1fe945332e9}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C8M}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000820\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) 8M\+Hz Internal Oscillator (O\+S\+C8M) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a3f17aba6ccb0a0d6c55eb1844c11f342}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+C\+T\+RL}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000824\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a743b8d7ebc725e89e73105d1d28af1b5}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+V\+AL}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000828\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a31581eaaad80edf024ca76e57ac16b34}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+M\+UL}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x4000082\+C\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Multiplier \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_ac03474ce937b86cdc25c27df15aea89b}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+S\+Y\+NC}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x40000830\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Synchronization \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_aa8c7252a1945f2506792c99d667f1f7a}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000834\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) 3.\+3V Brown-\/\+Out Detector (B\+O\+D33) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a8341cd3e787998db69338e676568ed97}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+EG}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x4000083\+C\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Voltage Regulator System (V\+R\+EG) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a64345d3151ece1059db8b111c7c01dca}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+EF}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000840\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) Voltage References System (V\+R\+EF) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a469c6df9239ed11d14b0ef5c21643eba}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+C\+T\+R\+LA}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x40000844\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+P\+LL Control A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a30a06c3c6b32c6c278364d91aa00de41}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+R\+A\+T\+IO}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000848\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+P\+LL Ratio Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a903e2c65482204e16b671a5c6118589e}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+C\+T\+R\+LB}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x4000084\+C\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+P\+LL Control B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a136d590779e6432e52d51bb3ea100f1c}{R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+S\+T\+A\+T\+US}}~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} $\ast$)0x40000850\+U)
+\begin{DoxyCompactList}\small\item\em (S\+Y\+S\+C\+T\+RL) D\+P\+LL Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a003f140321754b89492a35b62b9c478b}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+G\+A\+P\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB}}~11
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_abccfc350f400ff591d53376ff7193485}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB}}~5
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a3db65d494b7acf85dbffdbd5a0b0f53c}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+M\+SB}}~5
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a121bcb73c0d70508de83623075f3f263}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+F\+I\+N\+E\+\_\+\+M\+SB}}~9
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a4b55a1972d831b262a69c1cc81d93389}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48}}~0
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_ae77910be63b360228172afb3717176a5}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+F\+D\+P\+LL}}~1
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a75d2d5bb84d73954e00bd0ee2e92b86a}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32K}}~2
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a683c73dc615aa070c08c4712c6b0bfc5}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32\+K\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB}}~6
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a61c07e9354dc3a03e54f94c7a41ad20f}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+P\+O\+R33\+\_\+\+E\+N\+T\+E\+S\+T\+\_\+\+M\+SB}}~1
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a4f06d96012cb7e6e54e7d71705f80876}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK}}~1000000
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a765c69f6f1cdd156ecd275e36509ede5}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+F\+\_\+\+D\+I\+V\+L\+E\+V\+\_\+\+M\+SB}}~3
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_afc3ede2c950e70d61f3c03fd979e322f}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+G\+\_\+\+F\+O\+R\+C\+E\+G\+A\+I\+N\+\_\+\+M\+SB}}~1
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a6b481778546e73a3ac72c33dca42eec2}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+G\+\_\+\+R\+A\+M\+R\+E\+F\+S\+E\+L\+\_\+\+M\+SB}}~2
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a48fd48a08b0beb105466b435c290b939}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+SB}}~48
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_aeeeaf0310b81ddc17590034530c417f4}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SB}}~7
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a86e64a3a133789cdd9b4b571e786ef50}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+SB}}~2
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a019d133165866990446f4ec121b0db35}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D12\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x112
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a8e044842e29f98e209568529f4bfaa65}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x112
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_adad0e7a96bca44a5313797e109e60504}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x301
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a157ce59dd2857efdfc76226c0e8f53b2}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+F\+D\+P\+L\+L\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x111
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a612e8d1bf76f3d1e42b49da8a183fdd9}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x111
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a98fdd3a6b96920be249aa8ef26d6d74a}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C8\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x120
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_ac05024d5da03639711a49f26127d6272}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x112
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_ad5007266c622309d883ba0000bfab3e8}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x201
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_a0bd6cd2ddb7fa6ef30e7533b90b8d035}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+G\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x201
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_aa2a9f5f1652ebe05ed74459bf47aa0a5}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x114
+\item 
+\#define \mbox{\hyperlink{instance_2sysctrl_8h_abc8af20e70c06a96dc0dc92ffcd41001}{S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x113
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance description for S\+Y\+S\+C\+T\+RL. 
+
+Copyright (c) 2016-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{instance_2sysctrl_8h_aa8c7252a1945f2506792c99d667f1f7a}\label{instance_2sysctrl_8h_aa8c7252a1945f2506792c99d667f1f7a}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_BOD33@{REG\_SYSCTRL\_BOD33}}
+\index{REG\_SYSCTRL\_BOD33@{REG\_SYSCTRL\_BOD33}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_BOD33}{REG\_SYSCTRL\_BOD33}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000834\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) 3.\+3V Brown-\/\+Out Detector (B\+O\+D33) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a3f17aba6ccb0a0d6c55eb1844c11f342}\label{instance_2sysctrl_8h_a3f17aba6ccb0a0d6c55eb1844c11f342}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DFLLCTRL@{REG\_SYSCTRL\_DFLLCTRL}}
+\index{REG\_SYSCTRL\_DFLLCTRL@{REG\_SYSCTRL\_DFLLCTRL}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DFLLCTRL}{REG\_SYSCTRL\_DFLLCTRL}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+C\+T\+RL~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000824\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a31581eaaad80edf024ca76e57ac16b34}\label{instance_2sysctrl_8h_a31581eaaad80edf024ca76e57ac16b34}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DFLLMUL@{REG\_SYSCTRL\_DFLLMUL}}
+\index{REG\_SYSCTRL\_DFLLMUL@{REG\_SYSCTRL\_DFLLMUL}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DFLLMUL}{REG\_SYSCTRL\_DFLLMUL}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+M\+UL~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x4000082\+C\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Multiplier 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_ac03474ce937b86cdc25c27df15aea89b}\label{instance_2sysctrl_8h_ac03474ce937b86cdc25c27df15aea89b}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DFLLSYNC@{REG\_SYSCTRL\_DFLLSYNC}}
+\index{REG\_SYSCTRL\_DFLLSYNC@{REG\_SYSCTRL\_DFLLSYNC}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DFLLSYNC}{REG\_SYSCTRL\_DFLLSYNC}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+S\+Y\+NC~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x40000830\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Synchronization 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a743b8d7ebc725e89e73105d1d28af1b5}\label{instance_2sysctrl_8h_a743b8d7ebc725e89e73105d1d28af1b5}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DFLLVAL@{REG\_SYSCTRL\_DFLLVAL}}
+\index{REG\_SYSCTRL\_DFLLVAL@{REG\_SYSCTRL\_DFLLVAL}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DFLLVAL}{REG\_SYSCTRL\_DFLLVAL}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L\+V\+AL~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000828\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+F\+L\+L48M Value 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a469c6df9239ed11d14b0ef5c21643eba}\label{instance_2sysctrl_8h_a469c6df9239ed11d14b0ef5c21643eba}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DPLLCTRLA@{REG\_SYSCTRL\_DPLLCTRLA}}
+\index{REG\_SYSCTRL\_DPLLCTRLA@{REG\_SYSCTRL\_DPLLCTRLA}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DPLLCTRLA}{REG\_SYSCTRL\_DPLLCTRLA}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+C\+T\+R\+LA~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x40000844\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+P\+LL Control A 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a903e2c65482204e16b671a5c6118589e}\label{instance_2sysctrl_8h_a903e2c65482204e16b671a5c6118589e}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DPLLCTRLB@{REG\_SYSCTRL\_DPLLCTRLB}}
+\index{REG\_SYSCTRL\_DPLLCTRLB@{REG\_SYSCTRL\_DPLLCTRLB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DPLLCTRLB}{REG\_SYSCTRL\_DPLLCTRLB}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+C\+T\+R\+LB~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x4000084\+C\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+P\+LL Control B 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a30a06c3c6b32c6c278364d91aa00de41}\label{instance_2sysctrl_8h_a30a06c3c6b32c6c278364d91aa00de41}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DPLLRATIO@{REG\_SYSCTRL\_DPLLRATIO}}
+\index{REG\_SYSCTRL\_DPLLRATIO@{REG\_SYSCTRL\_DPLLRATIO}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DPLLRATIO}{REG\_SYSCTRL\_DPLLRATIO}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+R\+A\+T\+IO~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000848\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+P\+LL Ratio Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a136d590779e6432e52d51bb3ea100f1c}\label{instance_2sysctrl_8h_a136d590779e6432e52d51bb3ea100f1c}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_DPLLSTATUS@{REG\_SYSCTRL\_DPLLSTATUS}}
+\index{REG\_SYSCTRL\_DPLLSTATUS@{REG\_SYSCTRL\_DPLLSTATUS}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_DPLLSTATUS}{REG\_SYSCTRL\_DPLLSTATUS}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+P\+L\+L\+S\+T\+A\+T\+US~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} $\ast$)0x40000850\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) D\+P\+LL Status 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a6006b084273ae310e684b8b9b44f43a0}\label{instance_2sysctrl_8h_a6006b084273ae310e684b8b9b44f43a0}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_INTENCLR@{REG\_SYSCTRL\_INTENCLR}}
+\index{REG\_SYSCTRL\_INTENCLR@{REG\_SYSCTRL\_INTENCLR}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_INTENCLR}{REG\_SYSCTRL\_INTENCLR}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+C\+LR~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000800\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Interrupt Enable Clear 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_af505c31a83965402b5d1c3a6c2068439}\label{instance_2sysctrl_8h_af505c31a83965402b5d1c3a6c2068439}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_INTENSET@{REG\_SYSCTRL\_INTENSET}}
+\index{REG\_SYSCTRL\_INTENSET@{REG\_SYSCTRL\_INTENSET}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_INTENSET}{REG\_SYSCTRL\_INTENSET}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+E\+N\+S\+ET~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000804\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Interrupt Enable Set 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_aa3f5ddf6fcf1ccf821e0255b84970a23}\label{instance_2sysctrl_8h_aa3f5ddf6fcf1ccf821e0255b84970a23}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_INTFLAG@{REG\_SYSCTRL\_INTFLAG}}
+\index{REG\_SYSCTRL\_INTFLAG@{REG\_SYSCTRL\_INTFLAG}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_INTFLAG}{REG\_SYSCTRL\_INTFLAG}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+I\+N\+T\+F\+L\+AG~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000808\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Interrupt Flag Status and Clear 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_afeb0b1a3d126442a03bb36f6c90f56d6}\label{instance_2sysctrl_8h_afeb0b1a3d126442a03bb36f6c90f56d6}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_OSC32K@{REG\_SYSCTRL\_OSC32K}}
+\index{REG\_SYSCTRL\_OSC32K@{REG\_SYSCTRL\_OSC32K}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_OSC32K}{REG\_SYSCTRL\_OSC32K}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32K~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000818\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) 32k\+Hz Internal Oscillator (O\+S\+C32K) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a3d2d429d9bd5e0f6401ba1fe945332e9}\label{instance_2sysctrl_8h_a3d2d429d9bd5e0f6401ba1fe945332e9}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_OSC8M@{REG\_SYSCTRL\_OSC8M}}
+\index{REG\_SYSCTRL\_OSC8M@{REG\_SYSCTRL\_OSC8M}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_OSC8M}{REG\_SYSCTRL\_OSC8M}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C8M~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000820\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) 8M\+Hz Internal Oscillator (O\+S\+C8M) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_ac3086f377ebab6122db0827d05bcff36}\label{instance_2sysctrl_8h_ac3086f377ebab6122db0827d05bcff36}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_OSCULP32K@{REG\_SYSCTRL\_OSCULP32K}}
+\index{REG\_SYSCTRL\_OSCULP32K@{REG\_SYSCTRL\_OSCULP32K}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_OSCULP32K}{REG\_SYSCTRL\_OSCULP32K}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C\+U\+L\+P32K~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gae361754be775bb192f85821d3ab33c17}{Rw\+Reg8}} $\ast$)0x4000081\+C\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) 32k\+Hz Ultra Low Power Internal Oscillator (O\+S\+C\+U\+L\+P32K) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_acac86f09d2d0c8136da448ce3da17010}\label{instance_2sysctrl_8h_acac86f09d2d0c8136da448ce3da17010}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_PCLKSR@{REG\_SYSCTRL\_PCLKSR}}
+\index{REG\_SYSCTRL\_PCLKSR@{REG\_SYSCTRL\_PCLKSR}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_PCLKSR}{REG\_SYSCTRL\_PCLKSR}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+P\+C\+L\+K\+SR~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga5d556f8391af4141be23f7334ac9dd68}{Ro\+Reg}}  $\ast$)0x4000080\+C\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Power and Clocks Status 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a64345d3151ece1059db8b111c7c01dca}\label{instance_2sysctrl_8h_a64345d3151ece1059db8b111c7c01dca}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_VREF@{REG\_SYSCTRL\_VREF}}
+\index{REG\_SYSCTRL\_VREF@{REG\_SYSCTRL\_VREF}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_VREF}{REG\_SYSCTRL\_VREF}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+EF~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacf1496e3bbe303e55f627fc7558a68c7}{Rw\+Reg}}  $\ast$)0x40000840\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Voltage References System (V\+R\+EF) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a8341cd3e787998db69338e676568ed97}\label{instance_2sysctrl_8h_a8341cd3e787998db69338e676568ed97}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_VREG@{REG\_SYSCTRL\_VREG}}
+\index{REG\_SYSCTRL\_VREG@{REG\_SYSCTRL\_VREG}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_VREG}{REG\_SYSCTRL\_VREG}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+EG~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x4000083\+C\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) Voltage Regulator System (V\+R\+EG) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a94bbef144398338a768286f497c62ae0}\label{instance_2sysctrl_8h_a94bbef144398338a768286f497c62ae0}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_XOSC@{REG\_SYSCTRL\_XOSC}}
+\index{REG\_SYSCTRL\_XOSC@{REG\_SYSCTRL\_XOSC}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_XOSC}{REG\_SYSCTRL\_XOSC}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+SC~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000810\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) External Multipurpose Crystal Oscillator (X\+O\+SC) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_aeb80eb4be64db5308fbd20c1f761ee7a}\label{instance_2sysctrl_8h_aeb80eb4be64db5308fbd20c1f761ee7a}} 
+\index{sysctrl.h@{sysctrl.h}!REG\_SYSCTRL\_XOSC32K@{REG\_SYSCTRL\_XOSC32K}}
+\index{REG\_SYSCTRL\_XOSC32K@{REG\_SYSCTRL\_XOSC32K}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{REG\_SYSCTRL\_XOSC32K}{REG\_SYSCTRL\_XOSC32K}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C32K~($\ast$(\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_gacce07556c80fc352ae607f225f19fed5}{Rw\+Reg16}}$\ast$)0x40000814\+U)}
+
+
+
+(S\+Y\+S\+C\+T\+RL) 32k\+Hz External Crystal Oscillator (X\+O\+S\+C32K) Control 
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a003f140321754b89492a35b62b9c478b}\label{instance_2sysctrl_8h_a003f140321754b89492a35b62b9c478b}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_BGAP\_CALIB\_MSB@{SYSCTRL\_BGAP\_CALIB\_MSB}}
+\index{SYSCTRL\_BGAP\_CALIB\_MSB@{SYSCTRL\_BGAP\_CALIB\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_BGAP\_CALIB\_MSB}{SYSCTRL\_BGAP\_CALIB\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+G\+A\+P\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB~11}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a019d133165866990446f4ec121b0db35}\label{instance_2sysctrl_8h_a019d133165866990446f4ec121b0db35}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_BOD12\_VERSION@{SYSCTRL\_BOD12\_VERSION}}
+\index{SYSCTRL\_BOD12\_VERSION@{SYSCTRL\_BOD12\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_BOD12\_VERSION}{SYSCTRL\_BOD12\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D12\+\_\+\+V\+E\+R\+S\+I\+ON~0x112}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_abccfc350f400ff591d53376ff7193485}\label{instance_2sysctrl_8h_abccfc350f400ff591d53376ff7193485}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_BOD33\_CALIB\_MSB@{SYSCTRL\_BOD33\_CALIB\_MSB}}
+\index{SYSCTRL\_BOD33\_CALIB\_MSB@{SYSCTRL\_BOD33\_CALIB\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_BOD33\_CALIB\_MSB}{SYSCTRL\_BOD33\_CALIB\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB~5}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a8e044842e29f98e209568529f4bfaa65}\label{instance_2sysctrl_8h_a8e044842e29f98e209568529f4bfaa65}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_BOD33\_VERSION@{SYSCTRL\_BOD33\_VERSION}}
+\index{SYSCTRL\_BOD33\_VERSION@{SYSCTRL\_BOD33\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_BOD33\_VERSION}{SYSCTRL\_BOD33\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+B\+O\+D33\+\_\+\+V\+E\+R\+S\+I\+ON~0x112}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a3db65d494b7acf85dbffdbd5a0b0f53c}\label{instance_2sysctrl_8h_a3db65d494b7acf85dbffdbd5a0b0f53c}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_DFLL48M\_COARSE\_MSB@{SYSCTRL\_DFLL48M\_COARSE\_MSB}}
+\index{SYSCTRL\_DFLL48M\_COARSE\_MSB@{SYSCTRL\_DFLL48M\_COARSE\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_DFLL48M\_COARSE\_MSB}{SYSCTRL\_DFLL48M\_COARSE\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+M\+SB~5}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a121bcb73c0d70508de83623075f3f263}\label{instance_2sysctrl_8h_a121bcb73c0d70508de83623075f3f263}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_DFLL48M\_FINE\_MSB@{SYSCTRL\_DFLL48M\_FINE\_MSB}}
+\index{SYSCTRL\_DFLL48M\_FINE\_MSB@{SYSCTRL\_DFLL48M\_FINE\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_DFLL48M\_FINE\_MSB}{SYSCTRL\_DFLL48M\_FINE\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+F\+I\+N\+E\+\_\+\+M\+SB~9}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_adad0e7a96bca44a5313797e109e60504}\label{instance_2sysctrl_8h_adad0e7a96bca44a5313797e109e60504}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_DFLL48M\_VERSION@{SYSCTRL\_DFLL48M\_VERSION}}
+\index{SYSCTRL\_DFLL48M\_VERSION@{SYSCTRL\_DFLL48M\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_DFLL48M\_VERSION}{SYSCTRL\_DFLL48M\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+V\+E\+R\+S\+I\+ON~0x301}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a157ce59dd2857efdfc76226c0e8f53b2}\label{instance_2sysctrl_8h_a157ce59dd2857efdfc76226c0e8f53b2}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_FDPLL\_VERSION@{SYSCTRL\_FDPLL\_VERSION}}
+\index{SYSCTRL\_FDPLL\_VERSION@{SYSCTRL\_FDPLL\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_FDPLL\_VERSION}{SYSCTRL\_FDPLL\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+F\+D\+P\+L\+L\+\_\+\+V\+E\+R\+S\+I\+ON~0x111}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a4b55a1972d831b262a69c1cc81d93389}\label{instance_2sysctrl_8h_a4b55a1972d831b262a69c1cc81d93389}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_GCLK\_ID\_DFLL48@{SYSCTRL\_GCLK\_ID\_DFLL48}}
+\index{SYSCTRL\_GCLK\_ID\_DFLL48@{SYSCTRL\_GCLK\_ID\_DFLL48}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_GCLK\_ID\_DFLL48}{SYSCTRL\_GCLK\_ID\_DFLL48}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48~0}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_ae77910be63b360228172afb3717176a5}\label{instance_2sysctrl_8h_ae77910be63b360228172afb3717176a5}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_GCLK\_ID\_FDPLL@{SYSCTRL\_GCLK\_ID\_FDPLL}}
+\index{SYSCTRL\_GCLK\_ID\_FDPLL@{SYSCTRL\_GCLK\_ID\_FDPLL}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_GCLK\_ID\_FDPLL}{SYSCTRL\_GCLK\_ID\_FDPLL}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+F\+D\+P\+LL~1}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a75d2d5bb84d73954e00bd0ee2e92b86a}\label{instance_2sysctrl_8h_a75d2d5bb84d73954e00bd0ee2e92b86a}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_GCLK\_ID\_FDPLL32K@{SYSCTRL\_GCLK\_ID\_FDPLL32K}}
+\index{SYSCTRL\_GCLK\_ID\_FDPLL32K@{SYSCTRL\_GCLK\_ID\_FDPLL32K}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_GCLK\_ID\_FDPLL32K}{SYSCTRL\_GCLK\_ID\_FDPLL32K}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+G\+C\+L\+K\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32K~2}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a683c73dc615aa070c08c4712c6b0bfc5}\label{instance_2sysctrl_8h_a683c73dc615aa070c08c4712c6b0bfc5}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB@{SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB}}
+\index{SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB@{SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB}{SYSCTRL\_OSC32K\_COARSE\_CALIB\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32\+K\+\_\+\+C\+O\+A\+R\+S\+E\+\_\+\+C\+A\+L\+I\+B\+\_\+\+M\+SB~6}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_ac05024d5da03639711a49f26127d6272}\label{instance_2sysctrl_8h_ac05024d5da03639711a49f26127d6272}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_OSC32K\_VERSION@{SYSCTRL\_OSC32K\_VERSION}}
+\index{SYSCTRL\_OSC32K\_VERSION@{SYSCTRL\_OSC32K\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_OSC32K\_VERSION}{SYSCTRL\_OSC32K\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C32\+K\+\_\+\+V\+E\+R\+S\+I\+ON~0x112}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a98fdd3a6b96920be249aa8ef26d6d74a}\label{instance_2sysctrl_8h_a98fdd3a6b96920be249aa8ef26d6d74a}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_OSC8M\_VERSION@{SYSCTRL\_OSC8M\_VERSION}}
+\index{SYSCTRL\_OSC8M\_VERSION@{SYSCTRL\_OSC8M\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_OSC8M\_VERSION}{SYSCTRL\_OSC8M\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C8\+M\+\_\+\+V\+E\+R\+S\+I\+ON~0x120}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a612e8d1bf76f3d1e42b49da8a183fdd9}\label{instance_2sysctrl_8h_a612e8d1bf76f3d1e42b49da8a183fdd9}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_OSCULP32K\_VERSION@{SYSCTRL\_OSCULP32K\_VERSION}}
+\index{SYSCTRL\_OSCULP32K\_VERSION@{SYSCTRL\_OSCULP32K\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_OSCULP32K\_VERSION}{SYSCTRL\_OSCULP32K\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+V\+E\+R\+S\+I\+ON~0x111}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a61c07e9354dc3a03e54f94c7a41ad20f}\label{instance_2sysctrl_8h_a61c07e9354dc3a03e54f94c7a41ad20f}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_POR33\_ENTEST\_MSB@{SYSCTRL\_POR33\_ENTEST\_MSB}}
+\index{SYSCTRL\_POR33\_ENTEST\_MSB@{SYSCTRL\_POR33\_ENTEST\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_POR33\_ENTEST\_MSB}{SYSCTRL\_POR33\_ENTEST\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+P\+O\+R33\+\_\+\+E\+N\+T\+E\+S\+T\+\_\+\+M\+SB~1}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a4f06d96012cb7e6e54e7d71705f80876}\label{instance_2sysctrl_8h_a4f06d96012cb7e6e54e7d71705f80876}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_SYSTEM\_CLOCK@{SYSCTRL\_SYSTEM\_CLOCK}}
+\index{SYSCTRL\_SYSTEM\_CLOCK@{SYSCTRL\_SYSTEM\_CLOCK}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_SYSTEM\_CLOCK}{SYSCTRL\_SYSTEM\_CLOCK}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+C\+L\+O\+CK~1000000}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a765c69f6f1cdd156ecd275e36509ede5}\label{instance_2sysctrl_8h_a765c69f6f1cdd156ecd275e36509ede5}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_ULPVREF\_DIVLEV\_MSB@{SYSCTRL\_ULPVREF\_DIVLEV\_MSB}}
+\index{SYSCTRL\_ULPVREF\_DIVLEV\_MSB@{SYSCTRL\_ULPVREF\_DIVLEV\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_ULPVREF\_DIVLEV\_MSB}{SYSCTRL\_ULPVREF\_DIVLEV\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+F\+\_\+\+D\+I\+V\+L\+E\+V\+\_\+\+M\+SB~3}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_afc3ede2c950e70d61f3c03fd979e322f}\label{instance_2sysctrl_8h_afc3ede2c950e70d61f3c03fd979e322f}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB@{SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB}}
+\index{SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB@{SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB}{SYSCTRL\_ULPVREG\_FORCEGAIN\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+G\+\_\+\+F\+O\+R\+C\+E\+G\+A\+I\+N\+\_\+\+M\+SB~1}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a6b481778546e73a3ac72c33dca42eec2}\label{instance_2sysctrl_8h_a6b481778546e73a3ac72c33dca42eec2}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB@{SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB}}
+\index{SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB@{SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB}{SYSCTRL\_ULPVREG\_RAMREFSEL\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+U\+L\+P\+V\+R\+E\+G\+\_\+\+R\+A\+M\+R\+E\+F\+S\+E\+L\+\_\+\+M\+SB~2}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a48fd48a08b0beb105466b435c290b939}\label{instance_2sysctrl_8h_a48fd48a08b0beb105466b435c290b939}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_VREF\_CONTROL\_MSB@{SYSCTRL\_VREF\_CONTROL\_MSB}}
+\index{SYSCTRL\_VREF\_CONTROL\_MSB@{SYSCTRL\_VREF\_CONTROL\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_VREF\_CONTROL\_MSB}{SYSCTRL\_VREF\_CONTROL\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+SB~48}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_aeeeaf0310b81ddc17590034530c417f4}\label{instance_2sysctrl_8h_aeeeaf0310b81ddc17590034530c417f4}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_VREF\_STATUS\_MSB@{SYSCTRL\_VREF\_STATUS\_MSB}}
+\index{SYSCTRL\_VREF\_STATUS\_MSB@{SYSCTRL\_VREF\_STATUS\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_VREF\_STATUS\_MSB}{SYSCTRL\_VREF\_STATUS\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+SB~7}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_ad5007266c622309d883ba0000bfab3e8}\label{instance_2sysctrl_8h_ad5007266c622309d883ba0000bfab3e8}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_VREF\_VERSION@{SYSCTRL\_VREF\_VERSION}}
+\index{SYSCTRL\_VREF\_VERSION@{SYSCTRL\_VREF\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_VREF\_VERSION}{SYSCTRL\_VREF\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+F\+\_\+\+V\+E\+R\+S\+I\+ON~0x201}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a86e64a3a133789cdd9b4b571e786ef50}\label{instance_2sysctrl_8h_a86e64a3a133789cdd9b4b571e786ef50}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_VREG\_LEVEL\_MSB@{SYSCTRL\_VREG\_LEVEL\_MSB}}
+\index{SYSCTRL\_VREG\_LEVEL\_MSB@{SYSCTRL\_VREG\_LEVEL\_MSB}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_VREG\_LEVEL\_MSB}{SYSCTRL\_VREG\_LEVEL\_MSB}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+M\+SB~2}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_a0bd6cd2ddb7fa6ef30e7533b90b8d035}\label{instance_2sysctrl_8h_a0bd6cd2ddb7fa6ef30e7533b90b8d035}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_VREG\_VERSION@{SYSCTRL\_VREG\_VERSION}}
+\index{SYSCTRL\_VREG\_VERSION@{SYSCTRL\_VREG\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_VREG\_VERSION}{SYSCTRL\_VREG\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+V\+R\+E\+G\+\_\+\+V\+E\+R\+S\+I\+ON~0x201}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_abc8af20e70c06a96dc0dc92ffcd41001}\label{instance_2sysctrl_8h_abc8af20e70c06a96dc0dc92ffcd41001}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_XOSC32K\_VERSION@{SYSCTRL\_XOSC32K\_VERSION}}
+\index{SYSCTRL\_XOSC32K\_VERSION@{SYSCTRL\_XOSC32K\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_XOSC32K\_VERSION}{SYSCTRL\_XOSC32K\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+V\+E\+R\+S\+I\+ON~0x113}
+
+\mbox{\Hypertarget{instance_2sysctrl_8h_aa2a9f5f1652ebe05ed74459bf47aa0a5}\label{instance_2sysctrl_8h_aa2a9f5f1652ebe05ed74459bf47aa0a5}} 
+\index{sysctrl.h@{sysctrl.h}!SYSCTRL\_XOSC\_VERSION@{SYSCTRL\_XOSC\_VERSION}}
+\index{SYSCTRL\_XOSC\_VERSION@{SYSCTRL\_XOSC\_VERSION}!sysctrl.h@{sysctrl.h}}
+\subsubsection{\texorpdfstring{SYSCTRL\_XOSC\_VERSION}{SYSCTRL\_XOSC\_VERSION}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+C\+T\+R\+L\+\_\+\+X\+O\+S\+C\+\_\+\+V\+E\+R\+S\+I\+ON~0x114}
+

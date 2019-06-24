@@ -1,0 +1,1460 @@
+\hypertarget{group___s_a_m_d21___p_o_r_t}{}\section{Port Module}
+\label{group___s_a_m_d21___p_o_r_t}\index{Port Module@{Port Module}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___d_i_r___type}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___d_i_r_c_l_r___type}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___d_i_r_s_e_t___type}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___d_i_r_t_g_l___type}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___o_u_t___type}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___o_u_t_c_l_r___type}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___o_u_t_s_e_t___type}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___o_u_t_t_g_l___type}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___i_n___type}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___c_t_r_l___type}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___w_r_c_o_n_f_i_g___type}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___p_m_u_x___type}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_p_o_r_t___p_i_n_c_f_g___type}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_port_group}{Port\+Group}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_port_group}{Port\+Group}} hardware registers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_port}{Port}}
+\begin{DoxyCompactList}\small\item\em P\+O\+RT hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5f5568d546a890f14a2dfa54f417a233}{P\+O\+R\+T\+\_\+\+U2210}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga48cafc8c658dd3e36eb503cd8069ff00}{R\+E\+V\+\_\+\+P\+O\+RT}}~0x100
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae80e64be75702d9047a0150d9c6eafb1}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x00
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+IR offset) Data Direction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga63e44bc52961c08e11fd93c736cdf35c}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+IR reset\+\_\+value) Data Direction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga24c8369138b85d0fa6b7acdf9f8c8734}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+IR) \mbox{\hyperlink{struct_port}{Port}} Data Direction \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga37edf1972fbe60184737440da12c0a7f}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga87c01006429d0cd3c7d19b2ec7512231}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+IR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga37edf1972fbe60184737440da12c0a7f}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga24c8369138b85d0fa6b7acdf9f8c8734}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1ac033c587515efaff3b5002747b1295}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+IR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga6617757b2b2a4873ca225341c0350b6b}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x04
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR offset) Data Direction Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae97e35763f237bbf69af7623183891a1}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR reset\+\_\+value) Data Direction Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaab58ac44a417949e78c7e743c2b6cb8e}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR) \mbox{\hyperlink{struct_port}{Port}} Data Direction Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5c1e3f46819a99640cb16a7e16298c97}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga0d5423999a4724201584a4388c8d23c1}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+LR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5c1e3f46819a99640cb16a7e16298c97}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaab58ac44a417949e78c7e743c2b6cb8e}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf03d21b4e469df93029d2e6a017c7e9e}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gacbe953a0e93e6e780964524f176fc408}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x08
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET offset) Data Direction Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gacff4d1ab9a1fe8e242ebd247d5de9c7d}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET reset\+\_\+value) Data Direction Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa2c0a845406e6ca4e31556d413108aeb}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET) \mbox{\hyperlink{struct_port}{Port}} Data Direction Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga0b4a8e93964c1bedc8f48b0fa037e500}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga75a539d2c42e4d5058181a8700b8e9c0}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+ET}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga0b4a8e93964c1bedc8f48b0fa037e500}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa2c0a845406e6ca4e31556d413108aeb}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab1abf1381a08ea14af8f13dc141993e4}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga527f45d84e80e23f0545616308328337}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x0C
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL offset) Data Direction Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gabf69bb8e2dcdb2658c393352c4ab1451}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL reset\+\_\+value) Data Direction Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae76952ebb5d27345861883e92a0b4580}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL) \mbox{\hyperlink{struct_port}{Port}} Data Direction Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3f760de671e765111e9c760fdec994f5}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab6900b708762f7a3aaef111ac5929366}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+GL}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3f760de671e765111e9c760fdec994f5}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae76952ebb5d27345861883e92a0b4580}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaad67e44b66d1e6d214a468d19fe5c37b}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga613c002dd1466d78b367184b2e8d5702}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x10
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+UT offset) Data Output Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf021492775d0fe23716f66e5ee65ef34}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+UT reset\+\_\+value) Data Output Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2311d33aa22995c6371e1a7f8fbf4b8b}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+UT) \mbox{\hyperlink{struct_port}{Port}} Data Output Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c23adb5d24fc6e1b2f4eeaa5b14bfa6}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga089cc4f40a2dbf3abb393017317fdf5d}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+UT}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c23adb5d24fc6e1b2f4eeaa5b14bfa6}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2311d33aa22995c6371e1a7f8fbf4b8b}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga14d208ae2f33fb3a123593bc0ee91b5c}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+UT) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gabfa9579bd1cebd85dc745bfd430a6453}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x14
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR offset) Data Output Value Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad9e9f2f4052c8c9a19937ade97602106}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR reset\+\_\+value) Data Output Value Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa448fb60871992079921f4c31b2ab0a0}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaece9af6cd305c4d43772a0fbd4288de2}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga770d56801d959c8fb260e82d5df7ce60}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+LR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaece9af6cd305c4d43772a0fbd4288de2}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa448fb60871992079921f4c31b2ab0a0}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga600b1512b7fcc7de565adb38783650fd}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2836c334826cf0fa63d6be8319f3eaa4}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x18
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET offset) Data Output Value Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga703a3d3fb11897242e5edbdda11d3e01}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET reset\+\_\+value) Data Output Value Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab15b9d26363709ae77584b0f8140ba42}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga090fd7414eb6fa473a4036f84f853dca}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad55b0fcb6f9df9920cdd1e23cb809b31}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+ET}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga090fd7414eb6fa473a4036f84f853dca}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab15b9d26363709ae77584b0f8140ba42}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac9419f71279d6ec7826fd713af780d7c}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga661859dca022c7deb7a367616d203747}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x1C
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL offset) Data Output Value Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga487997310b5fc1ce56e003c201da8df2}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL reset\+\_\+value) Data Output Value Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9cccd9f68244563b806d73204ee44c3e}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Toggle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad9024ad4caab786a0f4074a8e28f9638}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga41c33bcdaaea793dc1ee8f7b34ee05dd}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+GL}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad9024ad4caab786a0f4074a8e28f9638}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9cccd9f68244563b806d73204ee44c3e}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gabaf3cbe8835ddcd94e55d99946aa9c4c}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga7ce997c987c624b541986263e20a5c43}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+O\+F\+F\+S\+ET}}~0x20
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+IN offset) Data Input Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga439d1273dd238888045148efebac2333}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+IN reset\+\_\+value) Data Input Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga39fa578b833d4c48b8090804a97c918b}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+IN) \mbox{\hyperlink{struct_port}{Port}} Data Input Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafc8e8de4e1098dd2f63a5fb99e7a915f}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf81b4172c78721d9834973dddc4841cf}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+IN}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafc8e8de4e1098dd2f63a5fb99e7a915f}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga39fa578b833d4c48b8090804a97c918b}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac632cdcc705e953c0b1040681bb7056a}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+IN) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3a53a2a2a7695aa20f7827ceafcec8d5}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x24
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+C\+T\+RL offset) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga24912324fee45dc65e6d91dce8b908c3}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+C\+T\+RL reset\+\_\+value) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf27535115d3c255e443dbe76e1e1a03c}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+C\+T\+RL) Input Sampling Mode \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1ca0c4a14f1f5fdcecb663287a093638}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga8992de32f5013d24b45021d6e972ff87}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1ca0c4a14f1f5fdcecb663287a093638}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf27535115d3c255e443dbe76e1e1a03c}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c5aed68de5b7c9dd9239edbd64af23b}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9d707b59cf1ecab326071c79a1334f67}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x28
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG offset) Write Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1962785a10daf1e85b2bab4203bc0f30}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG reset\+\_\+value) Write Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab1a78a8f36fb7fceed5ec4b2f821670e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Pin Mask for Multiple Pin Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga55c432605b18507992b4540265c1768a}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga434339fe8cb966a1a3f96d1904e799a6}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+SK}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga55c432605b18507992b4540265c1768a}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab1a78a8f36fb7fceed5ec4b2f821670e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaafa832687961ca48e5dacadda81a6371}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos}}~16
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Peripheral Multiplexer Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga6ab07d485a3b9379cf529664d618e768}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga54ebbb830cf16e6a9fc18bbc5879684a}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos}}~17
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Input Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gadd5762cfb19c27a0831497111b8bf99f}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga69f7af299459c5a15bccf50da8b5240d}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos}}~18
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Pull Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1b7efe7fb02e3da8402e319f0bd4314a}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae2dd656b888ede1553412037840d6ac4}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos}}~22
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Output Driver Strength Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaaa9cec94d7f7ebc2df0d6ce88456c797}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+TR}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad821493573ea6954861bdb5007458439}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos}}~24
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Peripheral Multiplexing \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaed50ce1ba0629befed40ccf940ea623e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Msk}}~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga79d664bf70f1494ebd35f75905b98ca3}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+UX}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaed50ce1ba0629befed40ccf940ea623e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad821493573ea6954861bdb5007458439}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf5c01e870b3cd28ea4b5d16e0970f641}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+U\+X\+\_\+\+Pos}}~28
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Write P\+M\+UX \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga41389a6f616a685fbca4a6cbb6e48206}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+UX}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+U\+X\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac9e9a5084c654419e2762a4557fc0fe0}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+F\+G\+\_\+\+Pos}}~30
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Write P\+I\+N\+C\+FG \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf100527c943f5f4af1132a46c7d2340f}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+FG}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+F\+G\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac3b5f0e8062dcbecbc11d515cbc11dd1}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+E\+L\+\_\+\+Pos}}~31
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Half-\/\+Word Select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga4b024ac159d2b916326b97c1db752185}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+EL}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+E\+L\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3d16ca9f7506e69958fe01fcffb6f8fd}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+SK}}~0x\+D\+F47\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2b2cfb87664f62a60eb5f01a7fbf4e9a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+O\+F\+F\+S\+ET}}~0x30
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX offset) Peripheral Multiplexing n \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga4a150e2f7e2344a8a2f7e3d08ef6c39f}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX reset\+\_\+value) Peripheral Multiplexing n \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral Multiplexing Even \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae955cb77e730b16d702cd0fcdb156ec4}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Msk}}~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1a0548ef99b601e76ee01c5de4b8f32b}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+XE}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae955cb77e730b16d702cd0fcdb156ec4}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac2904834a0243c812025b5da13235658}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+A\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function A selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad247fef8f025e05eca4c88968a7c4ba3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+B\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function B selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab47780ac1a22bc26130c2d72803aaf4a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+C\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function C selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga934efa06dffb41353e14a0d649351797}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+D\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function D selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaea30c71f5bc91714c57780b5ff2b2211}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+E\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function E selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga7ef931d6a0d370d5ee0b1b4eb87c5e80}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+F\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function F selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf640a2651a423568c43db1fe4f09296c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+G\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function G selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga19bc58bfed10fdb5eb07d690e361bc73}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+H\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function H selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9b4f9a2d8bac840309923085990a59aa}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+A}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac2904834a0243c812025b5da13235658}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+A\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga93019501e64801268cae9b58feee0c9a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+B}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad247fef8f025e05eca4c88968a7c4ba3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+B\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2dfaf48078b6c1ca36e8a3f0dbf04e3f}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+C}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab47780ac1a22bc26130c2d72803aaf4a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+C\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga8db62e7045ce8186a3e3c84408fec41f}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+D}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga934efa06dffb41353e14a0d649351797}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+D\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga4254995439f919e403cb2f6f2a9a726b}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+E}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaea30c71f5bc91714c57780b5ff2b2211}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+E\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga35ca2fd02cfd84af0d0a2d1f417bc342}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+F}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga7ef931d6a0d370d5ee0b1b4eb87c5e80}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+F\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2fc8ecf2f999e23a5bfd539423bb9286}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+G}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf640a2651a423568c43db1fe4f09296c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+G\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad9686d726a7681fc752c67ed7ab3a38d}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+H}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga19bc58bfed10fdb5eb07d690e361bc73}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+H\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}}~4
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral Multiplexing Odd \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafd360b4eecfb7fb93fde5c9e1c6da3a0}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Msk}}~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9e83be4ac2a68323e1910518c9290f21}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+XO}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafd360b4eecfb7fb93fde5c9e1c6da3a0}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae64ac445d72b81e07bb7d3bf3613ed96}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+A\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function A selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga06b7e4be19fba8f8880387c1628470c3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+B\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function B selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c7f14d03da0e7c0328246467f19ae4c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+C\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function C selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf734acd7133d2ca63b25d22ac88b8c82}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+D\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function D selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga45edb06df6af2d9ff6db7b1945080670}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+E\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function E selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5adef49ac6b2852a4ff20cf6ba38c660}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+F\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function F selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga88f1c9d7168ccf18b04ec62d78f05698}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+G\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function G selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3809d955d07edd57731098d963d4856a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+H\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function H selected \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga15add9b744cbeaf6bf9aa899e7a126b0}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+A}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae64ac445d72b81e07bb7d3bf3613ed96}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+A\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga69fd67bf5fdd920953222862ce469a0c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+B}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga06b7e4be19fba8f8880387c1628470c3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+B\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf3e8d700bb19245b7dd12527fe983264}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+C}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c7f14d03da0e7c0328246467f19ae4c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+C\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga27b8f2350fefc4aa13a4875b02a1c8e6}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+D}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf734acd7133d2ca63b25d22ac88b8c82}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+D\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga866ded214067f1df089a87754ec520a6}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+E}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga45edb06df6af2d9ff6db7b1945080670}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+E\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga78785e05d92cb0eb0ff1444a8ea20e60}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+F}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5adef49ac6b2852a4ff20cf6ba38c660}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+F\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2d37482b7664ee109ca8938c2cfe7188}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+G}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga88f1c9d7168ccf18b04ec62d78f05698}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+G\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5f57408b76430659c5cd863bd3cdaf23}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+H}}~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3809d955d07edd57731098d963d4856a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+H\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1b48850f8861140de4eb5b75544f05e7}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+M\+A\+SK}}~0x\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+M\+UX) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5329a91f7ccfbc23850b5be176724aec}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x40
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG offset) Pin Configuration n \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga4e8b3dae5451509a2d436e492ecc4f52}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG reset\+\_\+value) Pin Configuration n \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1b62eff2451a3e0cfe61e19024900c17}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Peripheral Multiplexer Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga312407fd71d21257ff3770fe06a2b243}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga485a99f4d0377f2ab8f26a2f79ef6604}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Input Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaee13569a0c6188a200494aa3ea1997a6}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga686c2d965f888e1538721fee55c89fb5}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Pull Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9b0b89d777ef1d50467b1db310d9f9ab}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+EN}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga42ef9392a67cfdc9f6d712f9d758f379}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos}}~6
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Output Driver Strength Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac288754ea6b7640bc385b595c4c41849}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+TR}}~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga6e82d11b9330c18aa786f4f4693fa55c}{P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+M\+A\+SK}}~0x47ul
+\begin{DoxyCompactList}\small\item\em (P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR P\+O\+RT 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9c5aed68de5b7c9dd9239edbd64af23b}\label{group___s_a_m_d21___p_o_r_t_ga9c5aed68de5b7c9dd9239edbd64af23b}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_MASK@{PORT\_CTRL\_MASK}}
+\index{PORT\_CTRL\_MASK@{PORT\_CTRL\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_MASK}{PORT\_CTRL\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga3a53a2a2a7695aa20f7827ceafcec8d5}\label{group___s_a_m_d21___p_o_r_t_ga3a53a2a2a7695aa20f7827ceafcec8d5}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_OFFSET@{PORT\_CTRL\_OFFSET}}
+\index{PORT\_CTRL\_OFFSET@{PORT\_CTRL\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_OFFSET}{PORT\_CTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x24}
+
+
+
+(P\+O\+R\+T\+\_\+\+C\+T\+RL offset) Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga24912324fee45dc65e6d91dce8b908c3}\label{group___s_a_m_d21___p_o_r_t_ga24912324fee45dc65e6d91dce8b908c3}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_RESETVALUE@{PORT\_CTRL\_RESETVALUE}}
+\index{PORT\_CTRL\_RESETVALUE@{PORT\_CTRL\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_RESETVALUE}{PORT\_CTRL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+C\+T\+RL reset\+\_\+value) Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga8992de32f5013d24b45021d6e972ff87}\label{group___s_a_m_d21___p_o_r_t_ga8992de32f5013d24b45021d6e972ff87}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_SAMPLING@{PORT\_CTRL\_SAMPLING}}
+\index{PORT\_CTRL\_SAMPLING@{PORT\_CTRL\_SAMPLING}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_SAMPLING}{PORT\_CTRL\_SAMPLING}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+NG(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga1ca0c4a14f1f5fdcecb663287a093638}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf27535115d3c255e443dbe76e1e1a03c}{P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1ca0c4a14f1f5fdcecb663287a093638}\label{group___s_a_m_d21___p_o_r_t_ga1ca0c4a14f1f5fdcecb663287a093638}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_SAMPLING\_Msk@{PORT\_CTRL\_SAMPLING\_Msk}}
+\index{PORT\_CTRL\_SAMPLING\_Msk@{PORT\_CTRL\_SAMPLING\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_SAMPLING\_Msk}{PORT\_CTRL\_SAMPLING\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf27535115d3c255e443dbe76e1e1a03c}\label{group___s_a_m_d21___p_o_r_t_gaf27535115d3c255e443dbe76e1e1a03c}} 
+\index{Port Module@{Port Module}!PORT\_CTRL\_SAMPLING\_Pos@{PORT\_CTRL\_SAMPLING\_Pos}}
+\index{PORT\_CTRL\_SAMPLING\_Pos@{PORT\_CTRL\_SAMPLING\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_CTRL\_SAMPLING\_Pos}{PORT\_CTRL\_SAMPLING\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+T\+R\+L\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+C\+T\+RL) Input Sampling Mode 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga87c01006429d0cd3c7d19b2ec7512231}\label{group___s_a_m_d21___p_o_r_t_ga87c01006429d0cd3c7d19b2ec7512231}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_DIR@{PORT\_DIR\_DIR}}
+\index{PORT\_DIR\_DIR@{PORT\_DIR\_DIR}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_DIR}{PORT\_DIR\_DIR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+IR(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga37edf1972fbe60184737440da12c0a7f}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga24c8369138b85d0fa6b7acdf9f8c8734}{P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga37edf1972fbe60184737440da12c0a7f}\label{group___s_a_m_d21___p_o_r_t_ga37edf1972fbe60184737440da12c0a7f}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_DIR\_Msk@{PORT\_DIR\_DIR\_Msk}}
+\index{PORT\_DIR\_DIR\_Msk@{PORT\_DIR\_DIR\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_DIR\_Msk}{PORT\_DIR\_DIR\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga24c8369138b85d0fa6b7acdf9f8c8734}\label{group___s_a_m_d21___p_o_r_t_ga24c8369138b85d0fa6b7acdf9f8c8734}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_DIR\_Pos@{PORT\_DIR\_DIR\_Pos}}
+\index{PORT\_DIR\_DIR\_Pos@{PORT\_DIR\_DIR\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_DIR\_Pos}{PORT\_DIR\_DIR\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+D\+I\+R\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+IR) \mbox{\hyperlink{struct_port}{Port}} Data Direction 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1ac033c587515efaff3b5002747b1295}\label{group___s_a_m_d21___p_o_r_t_ga1ac033c587515efaff3b5002747b1295}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_MASK@{PORT\_DIR\_MASK}}
+\index{PORT\_DIR\_MASK@{PORT\_DIR\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_MASK}{PORT\_DIR\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+IR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae80e64be75702d9047a0150d9c6eafb1}\label{group___s_a_m_d21___p_o_r_t_gae80e64be75702d9047a0150d9c6eafb1}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_OFFSET@{PORT\_DIR\_OFFSET}}
+\index{PORT\_DIR\_OFFSET@{PORT\_DIR\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_OFFSET}{PORT\_DIR\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+O\+F\+F\+S\+ET~0x00}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+IR offset) Data Direction 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga63e44bc52961c08e11fd93c736cdf35c}\label{group___s_a_m_d21___p_o_r_t_ga63e44bc52961c08e11fd93c736cdf35c}} 
+\index{Port Module@{Port Module}!PORT\_DIR\_RESETVALUE@{PORT\_DIR\_RESETVALUE}}
+\index{PORT\_DIR\_RESETVALUE@{PORT\_DIR\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIR\_RESETVALUE}{PORT\_DIR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+IR reset\+\_\+value) Data Direction 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga0d5423999a4724201584a4388c8d23c1}\label{group___s_a_m_d21___p_o_r_t_ga0d5423999a4724201584a4388c8d23c1}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_DIRCLR@{PORT\_DIRCLR\_DIRCLR}}
+\index{PORT\_DIRCLR\_DIRCLR@{PORT\_DIRCLR\_DIRCLR}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_DIRCLR}{PORT\_DIRCLR\_DIRCLR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+LR(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5c1e3f46819a99640cb16a7e16298c97}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaab58ac44a417949e78c7e743c2b6cb8e}{P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga5c1e3f46819a99640cb16a7e16298c97}\label{group___s_a_m_d21___p_o_r_t_ga5c1e3f46819a99640cb16a7e16298c97}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_DIRCLR\_Msk@{PORT\_DIRCLR\_DIRCLR\_Msk}}
+\index{PORT\_DIRCLR\_DIRCLR\_Msk@{PORT\_DIRCLR\_DIRCLR\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_DIRCLR\_Msk}{PORT\_DIRCLR\_DIRCLR\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaab58ac44a417949e78c7e743c2b6cb8e}\label{group___s_a_m_d21___p_o_r_t_gaab58ac44a417949e78c7e743c2b6cb8e}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_DIRCLR\_Pos@{PORT\_DIRCLR\_DIRCLR\_Pos}}
+\index{PORT\_DIRCLR\_DIRCLR\_Pos@{PORT\_DIRCLR\_DIRCLR\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_DIRCLR\_Pos}{PORT\_DIRCLR\_DIRCLR\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR) \mbox{\hyperlink{struct_port}{Port}} Data Direction Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf03d21b4e469df93029d2e6a017c7e9e}\label{group___s_a_m_d21___p_o_r_t_gaf03d21b4e469df93029d2e6a017c7e9e}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_MASK@{PORT\_DIRCLR\_MASK}}
+\index{PORT\_DIRCLR\_MASK@{PORT\_DIRCLR\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_MASK}{PORT\_DIRCLR\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga6617757b2b2a4873ca225341c0350b6b}\label{group___s_a_m_d21___p_o_r_t_ga6617757b2b2a4873ca225341c0350b6b}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_OFFSET@{PORT\_DIRCLR\_OFFSET}}
+\index{PORT\_DIRCLR\_OFFSET@{PORT\_DIRCLR\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_OFFSET}{PORT\_DIRCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x04}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR offset) Data Direction Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae97e35763f237bbf69af7623183891a1}\label{group___s_a_m_d21___p_o_r_t_gae97e35763f237bbf69af7623183891a1}} 
+\index{Port Module@{Port Module}!PORT\_DIRCLR\_RESETVALUE@{PORT\_DIRCLR\_RESETVALUE}}
+\index{PORT\_DIRCLR\_RESETVALUE@{PORT\_DIRCLR\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRCLR\_RESETVALUE}{PORT\_DIRCLR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+C\+LR reset\+\_\+value) Data Direction Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga75a539d2c42e4d5058181a8700b8e9c0}\label{group___s_a_m_d21___p_o_r_t_ga75a539d2c42e4d5058181a8700b8e9c0}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_DIRSET@{PORT\_DIRSET\_DIRSET}}
+\index{PORT\_DIRSET\_DIRSET@{PORT\_DIRSET\_DIRSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_DIRSET}{PORT\_DIRSET\_DIRSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+ET(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga0b4a8e93964c1bedc8f48b0fa037e500}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa2c0a845406e6ca4e31556d413108aeb}{P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga0b4a8e93964c1bedc8f48b0fa037e500}\label{group___s_a_m_d21___p_o_r_t_ga0b4a8e93964c1bedc8f48b0fa037e500}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_DIRSET\_Msk@{PORT\_DIRSET\_DIRSET\_Msk}}
+\index{PORT\_DIRSET\_DIRSET\_Msk@{PORT\_DIRSET\_DIRSET\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_DIRSET\_Msk}{PORT\_DIRSET\_DIRSET\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaa2c0a845406e6ca4e31556d413108aeb}\label{group___s_a_m_d21___p_o_r_t_gaa2c0a845406e6ca4e31556d413108aeb}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_DIRSET\_Pos@{PORT\_DIRSET\_DIRSET\_Pos}}
+\index{PORT\_DIRSET\_DIRSET\_Pos@{PORT\_DIRSET\_DIRSET\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_DIRSET\_Pos}{PORT\_DIRSET\_DIRSET\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET) \mbox{\hyperlink{struct_port}{Port}} Data Direction Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gab1abf1381a08ea14af8f13dc141993e4}\label{group___s_a_m_d21___p_o_r_t_gab1abf1381a08ea14af8f13dc141993e4}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_MASK@{PORT\_DIRSET\_MASK}}
+\index{PORT\_DIRSET\_MASK@{PORT\_DIRSET\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_MASK}{PORT\_DIRSET\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gacbe953a0e93e6e780964524f176fc408}\label{group___s_a_m_d21___p_o_r_t_gacbe953a0e93e6e780964524f176fc408}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_OFFSET@{PORT\_DIRSET\_OFFSET}}
+\index{PORT\_DIRSET\_OFFSET@{PORT\_DIRSET\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_OFFSET}{PORT\_DIRSET\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x08}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET offset) Data Direction Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gacff4d1ab9a1fe8e242ebd247d5de9c7d}\label{group___s_a_m_d21___p_o_r_t_gacff4d1ab9a1fe8e242ebd247d5de9c7d}} 
+\index{Port Module@{Port Module}!PORT\_DIRSET\_RESETVALUE@{PORT\_DIRSET\_RESETVALUE}}
+\index{PORT\_DIRSET\_RESETVALUE@{PORT\_DIRSET\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRSET\_RESETVALUE}{PORT\_DIRSET\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+S\+ET reset\+\_\+value) Data Direction Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gab6900b708762f7a3aaef111ac5929366}\label{group___s_a_m_d21___p_o_r_t_gab6900b708762f7a3aaef111ac5929366}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_DIRTGL@{PORT\_DIRTGL\_DIRTGL}}
+\index{PORT\_DIRTGL\_DIRTGL@{PORT\_DIRTGL\_DIRTGL}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_DIRTGL}{PORT\_DIRTGL\_DIRTGL}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+GL(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3f760de671e765111e9c760fdec994f5}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae76952ebb5d27345861883e92a0b4580}{P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga3f760de671e765111e9c760fdec994f5}\label{group___s_a_m_d21___p_o_r_t_ga3f760de671e765111e9c760fdec994f5}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_DIRTGL\_Msk@{PORT\_DIRTGL\_DIRTGL\_Msk}}
+\index{PORT\_DIRTGL\_DIRTGL\_Msk@{PORT\_DIRTGL\_DIRTGL\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_DIRTGL\_Msk}{PORT\_DIRTGL\_DIRTGL\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae76952ebb5d27345861883e92a0b4580}\label{group___s_a_m_d21___p_o_r_t_gae76952ebb5d27345861883e92a0b4580}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_DIRTGL\_Pos@{PORT\_DIRTGL\_DIRTGL\_Pos}}
+\index{PORT\_DIRTGL\_DIRTGL\_Pos@{PORT\_DIRTGL\_DIRTGL\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_DIRTGL\_Pos}{PORT\_DIRTGL\_DIRTGL\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL) \mbox{\hyperlink{struct_port}{Port}} Data Direction Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaad67e44b66d1e6d214a468d19fe5c37b}\label{group___s_a_m_d21___p_o_r_t_gaad67e44b66d1e6d214a468d19fe5c37b}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_MASK@{PORT\_DIRTGL\_MASK}}
+\index{PORT\_DIRTGL\_MASK@{PORT\_DIRTGL\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_MASK}{PORT\_DIRTGL\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga527f45d84e80e23f0545616308328337}\label{group___s_a_m_d21___p_o_r_t_ga527f45d84e80e23f0545616308328337}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_OFFSET@{PORT\_DIRTGL\_OFFSET}}
+\index{PORT\_DIRTGL\_OFFSET@{PORT\_DIRTGL\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_OFFSET}{PORT\_DIRTGL\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+O\+F\+F\+S\+ET~0x0C}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL offset) Data Direction Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gabf69bb8e2dcdb2658c393352c4ab1451}\label{group___s_a_m_d21___p_o_r_t_gabf69bb8e2dcdb2658c393352c4ab1451}} 
+\index{Port Module@{Port Module}!PORT\_DIRTGL\_RESETVALUE@{PORT\_DIRTGL\_RESETVALUE}}
+\index{PORT\_DIRTGL\_RESETVALUE@{PORT\_DIRTGL\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_DIRTGL\_RESETVALUE}{PORT\_DIRTGL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+G\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+D\+I\+R\+T\+GL reset\+\_\+value) Data Direction Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf81b4172c78721d9834973dddc4841cf}\label{group___s_a_m_d21___p_o_r_t_gaf81b4172c78721d9834973dddc4841cf}} 
+\index{Port Module@{Port Module}!PORT\_IN\_IN@{PORT\_IN\_IN}}
+\index{PORT\_IN\_IN@{PORT\_IN\_IN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_IN}{PORT\_IN\_IN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+IN(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafc8e8de4e1098dd2f63a5fb99e7a915f}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga39fa578b833d4c48b8090804a97c918b}{P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gafc8e8de4e1098dd2f63a5fb99e7a915f}\label{group___s_a_m_d21___p_o_r_t_gafc8e8de4e1098dd2f63a5fb99e7a915f}} 
+\index{Port Module@{Port Module}!PORT\_IN\_IN\_Msk@{PORT\_IN\_IN\_Msk}}
+\index{PORT\_IN\_IN\_Msk@{PORT\_IN\_IN\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_IN\_Msk}{PORT\_IN\_IN\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga39fa578b833d4c48b8090804a97c918b}\label{group___s_a_m_d21___p_o_r_t_ga39fa578b833d4c48b8090804a97c918b}} 
+\index{Port Module@{Port Module}!PORT\_IN\_IN\_Pos@{PORT\_IN\_IN\_Pos}}
+\index{PORT\_IN\_IN\_Pos@{PORT\_IN\_IN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_IN\_Pos}{PORT\_IN\_IN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+I\+N\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+IN) \mbox{\hyperlink{struct_port}{Port}} Data Input Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac632cdcc705e953c0b1040681bb7056a}\label{group___s_a_m_d21___p_o_r_t_gac632cdcc705e953c0b1040681bb7056a}} 
+\index{Port Module@{Port Module}!PORT\_IN\_MASK@{PORT\_IN\_MASK}}
+\index{PORT\_IN\_MASK@{PORT\_IN\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_MASK}{PORT\_IN\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+IN) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga7ce997c987c624b541986263e20a5c43}\label{group___s_a_m_d21___p_o_r_t_ga7ce997c987c624b541986263e20a5c43}} 
+\index{Port Module@{Port Module}!PORT\_IN\_OFFSET@{PORT\_IN\_OFFSET}}
+\index{PORT\_IN\_OFFSET@{PORT\_IN\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_OFFSET}{PORT\_IN\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+O\+F\+F\+S\+ET~0x20}
+
+
+
+(P\+O\+R\+T\+\_\+\+IN offset) Data Input Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga439d1273dd238888045148efebac2333}\label{group___s_a_m_d21___p_o_r_t_ga439d1273dd238888045148efebac2333}} 
+\index{Port Module@{Port Module}!PORT\_IN\_RESETVALUE@{PORT\_IN\_RESETVALUE}}
+\index{PORT\_IN\_RESETVALUE@{PORT\_IN\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_IN\_RESETVALUE}{PORT\_IN\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+IN reset\+\_\+value) Data Input Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga14d208ae2f33fb3a123593bc0ee91b5c}\label{group___s_a_m_d21___p_o_r_t_ga14d208ae2f33fb3a123593bc0ee91b5c}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_MASK@{PORT\_OUT\_MASK}}
+\index{PORT\_OUT\_MASK@{PORT\_OUT\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_MASK}{PORT\_OUT\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+UT) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga613c002dd1466d78b367184b2e8d5702}\label{group___s_a_m_d21___p_o_r_t_ga613c002dd1466d78b367184b2e8d5702}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_OFFSET@{PORT\_OUT\_OFFSET}}
+\index{PORT\_OUT\_OFFSET@{PORT\_OUT\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_OFFSET}{PORT\_OUT\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+F\+F\+S\+ET~0x10}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+UT offset) Data Output Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga089cc4f40a2dbf3abb393017317fdf5d}\label{group___s_a_m_d21___p_o_r_t_ga089cc4f40a2dbf3abb393017317fdf5d}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_OUT@{PORT\_OUT\_OUT}}
+\index{PORT\_OUT\_OUT@{PORT\_OUT\_OUT}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_OUT}{PORT\_OUT\_OUT}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+UT(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c23adb5d24fc6e1b2f4eeaa5b14bfa6}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga2311d33aa22995c6371e1a7f8fbf4b8b}{P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9c23adb5d24fc6e1b2f4eeaa5b14bfa6}\label{group___s_a_m_d21___p_o_r_t_ga9c23adb5d24fc6e1b2f4eeaa5b14bfa6}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_OUT\_Msk@{PORT\_OUT\_OUT\_Msk}}
+\index{PORT\_OUT\_OUT\_Msk@{PORT\_OUT\_OUT\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_OUT\_Msk}{PORT\_OUT\_OUT\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2311d33aa22995c6371e1a7f8fbf4b8b}\label{group___s_a_m_d21___p_o_r_t_ga2311d33aa22995c6371e1a7f8fbf4b8b}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_OUT\_Pos@{PORT\_OUT\_OUT\_Pos}}
+\index{PORT\_OUT\_OUT\_Pos@{PORT\_OUT\_OUT\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_OUT\_Pos}{PORT\_OUT\_OUT\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+O\+U\+T\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+UT) \mbox{\hyperlink{struct_port}{Port}} Data Output Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf021492775d0fe23716f66e5ee65ef34}\label{group___s_a_m_d21___p_o_r_t_gaf021492775d0fe23716f66e5ee65ef34}} 
+\index{Port Module@{Port Module}!PORT\_OUT\_RESETVALUE@{PORT\_OUT\_RESETVALUE}}
+\index{PORT\_OUT\_RESETVALUE@{PORT\_OUT\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUT\_RESETVALUE}{PORT\_OUT\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+UT reset\+\_\+value) Data Output Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga600b1512b7fcc7de565adb38783650fd}\label{group___s_a_m_d21___p_o_r_t_ga600b1512b7fcc7de565adb38783650fd}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_MASK@{PORT\_OUTCLR\_MASK}}
+\index{PORT\_OUTCLR\_MASK@{PORT\_OUTCLR\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_MASK}{PORT\_OUTCLR\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gabfa9579bd1cebd85dc745bfd430a6453}\label{group___s_a_m_d21___p_o_r_t_gabfa9579bd1cebd85dc745bfd430a6453}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_OFFSET@{PORT\_OUTCLR\_OFFSET}}
+\index{PORT\_OUTCLR\_OFFSET@{PORT\_OUTCLR\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_OFFSET}{PORT\_OUTCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x14}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR offset) Data Output Value Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga770d56801d959c8fb260e82d5df7ce60}\label{group___s_a_m_d21___p_o_r_t_ga770d56801d959c8fb260e82d5df7ce60}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_OUTCLR@{PORT\_OUTCLR\_OUTCLR}}
+\index{PORT\_OUTCLR\_OUTCLR@{PORT\_OUTCLR\_OUTCLR}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_OUTCLR}{PORT\_OUTCLR\_OUTCLR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+LR(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaece9af6cd305c4d43772a0fbd4288de2}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaa448fb60871992079921f4c31b2ab0a0}{P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaece9af6cd305c4d43772a0fbd4288de2}\label{group___s_a_m_d21___p_o_r_t_gaece9af6cd305c4d43772a0fbd4288de2}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_OUTCLR\_Msk@{PORT\_OUTCLR\_OUTCLR\_Msk}}
+\index{PORT\_OUTCLR\_OUTCLR\_Msk@{PORT\_OUTCLR\_OUTCLR\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_OUTCLR\_Msk}{PORT\_OUTCLR\_OUTCLR\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaa448fb60871992079921f4c31b2ab0a0}\label{group___s_a_m_d21___p_o_r_t_gaa448fb60871992079921f4c31b2ab0a0}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_OUTCLR\_Pos@{PORT\_OUTCLR\_OUTCLR\_Pos}}
+\index{PORT\_OUTCLR\_OUTCLR\_Pos@{PORT\_OUTCLR\_OUTCLR\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_OUTCLR\_Pos}{PORT\_OUTCLR\_OUTCLR\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad9e9f2f4052c8c9a19937ade97602106}\label{group___s_a_m_d21___p_o_r_t_gad9e9f2f4052c8c9a19937ade97602106}} 
+\index{Port Module@{Port Module}!PORT\_OUTCLR\_RESETVALUE@{PORT\_OUTCLR\_RESETVALUE}}
+\index{PORT\_OUTCLR\_RESETVALUE@{PORT\_OUTCLR\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTCLR\_RESETVALUE}{PORT\_OUTCLR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+C\+LR reset\+\_\+value) Data Output Value Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac9419f71279d6ec7826fd713af780d7c}\label{group___s_a_m_d21___p_o_r_t_gac9419f71279d6ec7826fd713af780d7c}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_MASK@{PORT\_OUTSET\_MASK}}
+\index{PORT\_OUTSET\_MASK@{PORT\_OUTSET\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_MASK}{PORT\_OUTSET\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2836c334826cf0fa63d6be8319f3eaa4}\label{group___s_a_m_d21___p_o_r_t_ga2836c334826cf0fa63d6be8319f3eaa4}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_OFFSET@{PORT\_OUTSET\_OFFSET}}
+\index{PORT\_OUTSET\_OFFSET@{PORT\_OUTSET\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_OFFSET}{PORT\_OUTSET\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x18}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET offset) Data Output Value Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad55b0fcb6f9df9920cdd1e23cb809b31}\label{group___s_a_m_d21___p_o_r_t_gad55b0fcb6f9df9920cdd1e23cb809b31}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_OUTSET@{PORT\_OUTSET\_OUTSET}}
+\index{PORT\_OUTSET\_OUTSET@{PORT\_OUTSET\_OUTSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_OUTSET}{PORT\_OUTSET\_OUTSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+ET(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga090fd7414eb6fa473a4036f84f853dca}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab15b9d26363709ae77584b0f8140ba42}{P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga090fd7414eb6fa473a4036f84f853dca}\label{group___s_a_m_d21___p_o_r_t_ga090fd7414eb6fa473a4036f84f853dca}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_OUTSET\_Msk@{PORT\_OUTSET\_OUTSET\_Msk}}
+\index{PORT\_OUTSET\_OUTSET\_Msk@{PORT\_OUTSET\_OUTSET\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_OUTSET\_Msk}{PORT\_OUTSET\_OUTSET\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gab15b9d26363709ae77584b0f8140ba42}\label{group___s_a_m_d21___p_o_r_t_gab15b9d26363709ae77584b0f8140ba42}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_OUTSET\_Pos@{PORT\_OUTSET\_OUTSET\_Pos}}
+\index{PORT\_OUTSET\_OUTSET\_Pos@{PORT\_OUTSET\_OUTSET\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_OUTSET\_Pos}{PORT\_OUTSET\_OUTSET\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga703a3d3fb11897242e5edbdda11d3e01}\label{group___s_a_m_d21___p_o_r_t_ga703a3d3fb11897242e5edbdda11d3e01}} 
+\index{Port Module@{Port Module}!PORT\_OUTSET\_RESETVALUE@{PORT\_OUTSET\_RESETVALUE}}
+\index{PORT\_OUTSET\_RESETVALUE@{PORT\_OUTSET\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTSET\_RESETVALUE}{PORT\_OUTSET\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+S\+ET reset\+\_\+value) Data Output Value Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gabaf3cbe8835ddcd94e55d99946aa9c4c}\label{group___s_a_m_d21___p_o_r_t_gabaf3cbe8835ddcd94e55d99946aa9c4c}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_MASK@{PORT\_OUTTGL\_MASK}}
+\index{PORT\_OUTTGL\_MASK@{PORT\_OUTTGL\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_MASK}{PORT\_OUTTGL\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga661859dca022c7deb7a367616d203747}\label{group___s_a_m_d21___p_o_r_t_ga661859dca022c7deb7a367616d203747}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_OFFSET@{PORT\_OUTTGL\_OFFSET}}
+\index{PORT\_OUTTGL\_OFFSET@{PORT\_OUTTGL\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_OFFSET}{PORT\_OUTTGL\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+F\+F\+S\+ET~0x1C}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL offset) Data Output Value Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga41c33bcdaaea793dc1ee8f7b34ee05dd}\label{group___s_a_m_d21___p_o_r_t_ga41c33bcdaaea793dc1ee8f7b34ee05dd}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_OUTTGL@{PORT\_OUTTGL\_OUTTGL}}
+\index{PORT\_OUTTGL\_OUTTGL@{PORT\_OUTTGL\_OUTTGL}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_OUTTGL}{PORT\_OUTTGL\_OUTTGL}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+GL(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad9024ad4caab786a0f4074a8e28f9638}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9cccd9f68244563b806d73204ee44c3e}{P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad9024ad4caab786a0f4074a8e28f9638}\label{group___s_a_m_d21___p_o_r_t_gad9024ad4caab786a0f4074a8e28f9638}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_OUTTGL\_Msk@{PORT\_OUTTGL\_OUTTGL\_Msk}}
+\index{PORT\_OUTTGL\_OUTTGL\_Msk@{PORT\_OUTTGL\_OUTTGL\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_OUTTGL\_Msk}{PORT\_OUTTGL\_OUTTGL\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9cccd9f68244563b806d73204ee44c3e}\label{group___s_a_m_d21___p_o_r_t_ga9cccd9f68244563b806d73204ee44c3e}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_OUTTGL\_Pos@{PORT\_OUTTGL\_OUTTGL\_Pos}}
+\index{PORT\_OUTTGL\_OUTTGL\_Pos@{PORT\_OUTTGL\_OUTTGL\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_OUTTGL\_Pos}{PORT\_OUTTGL\_OUTTGL\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL) \mbox{\hyperlink{struct_port}{Port}} Data Output Value Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga487997310b5fc1ce56e003c201da8df2}\label{group___s_a_m_d21___p_o_r_t_ga487997310b5fc1ce56e003c201da8df2}} 
+\index{Port Module@{Port Module}!PORT\_OUTTGL\_RESETVALUE@{PORT\_OUTTGL\_RESETVALUE}}
+\index{PORT\_OUTTGL\_RESETVALUE@{PORT\_OUTTGL\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_OUTTGL\_RESETVALUE}{PORT\_OUTTGL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+G\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+O\+U\+T\+T\+GL reset\+\_\+value) Data Output Value Toggle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac288754ea6b7640bc385b595c4c41849}\label{group___s_a_m_d21___p_o_r_t_gac288754ea6b7640bc385b595c4c41849}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_DRVSTR@{PORT\_PINCFG\_DRVSTR}}
+\index{PORT\_PINCFG\_DRVSTR@{PORT\_PINCFG\_DRVSTR}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_DRVSTR}{PORT\_PINCFG\_DRVSTR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+TR~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga42ef9392a67cfdc9f6d712f9d758f379}\label{group___s_a_m_d21___p_o_r_t_ga42ef9392a67cfdc9f6d712f9d758f379}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_DRVSTR\_Pos@{PORT\_PINCFG\_DRVSTR\_Pos}}
+\index{PORT\_PINCFG\_DRVSTR\_Pos@{PORT\_PINCFG\_DRVSTR\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_DRVSTR\_Pos}{PORT\_PINCFG\_DRVSTR\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos~6}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Output Driver Strength Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaee13569a0c6188a200494aa3ea1997a6}\label{group___s_a_m_d21___p_o_r_t_gaee13569a0c6188a200494aa3ea1997a6}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_INEN@{PORT\_PINCFG\_INEN}}
+\index{PORT\_PINCFG\_INEN@{PORT\_PINCFG\_INEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_INEN}{PORT\_PINCFG\_INEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga485a99f4d0377f2ab8f26a2f79ef6604}\label{group___s_a_m_d21___p_o_r_t_ga485a99f4d0377f2ab8f26a2f79ef6604}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_INEN\_Pos@{PORT\_PINCFG\_INEN\_Pos}}
+\index{PORT\_PINCFG\_INEN\_Pos@{PORT\_PINCFG\_INEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_INEN\_Pos}{PORT\_PINCFG\_INEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos~1}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Input Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga6e82d11b9330c18aa786f4f4693fa55c}\label{group___s_a_m_d21___p_o_r_t_ga6e82d11b9330c18aa786f4f4693fa55c}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_MASK@{PORT\_PINCFG\_MASK}}
+\index{PORT\_PINCFG\_MASK@{PORT\_PINCFG\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_MASK}{PORT\_PINCFG\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+M\+A\+SK~0x47ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga5329a91f7ccfbc23850b5be176724aec}\label{group___s_a_m_d21___p_o_r_t_ga5329a91f7ccfbc23850b5be176724aec}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_OFFSET@{PORT\_PINCFG\_OFFSET}}
+\index{PORT\_PINCFG\_OFFSET@{PORT\_PINCFG\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_OFFSET}{PORT\_PINCFG\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+O\+F\+F\+S\+ET~0x40}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG offset) Pin Configuration n 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga312407fd71d21257ff3770fe06a2b243}\label{group___s_a_m_d21___p_o_r_t_ga312407fd71d21257ff3770fe06a2b243}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_PMUXEN@{PORT\_PINCFG\_PMUXEN}}
+\index{PORT\_PINCFG\_PMUXEN@{PORT\_PINCFG\_PMUXEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_PMUXEN}{PORT\_PINCFG\_PMUXEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1b62eff2451a3e0cfe61e19024900c17}\label{group___s_a_m_d21___p_o_r_t_ga1b62eff2451a3e0cfe61e19024900c17}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_PMUXEN\_Pos@{PORT\_PINCFG\_PMUXEN\_Pos}}
+\index{PORT\_PINCFG\_PMUXEN\_Pos@{PORT\_PINCFG\_PMUXEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_PMUXEN\_Pos}{PORT\_PINCFG\_PMUXEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Peripheral Multiplexer Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9b0b89d777ef1d50467b1db310d9f9ab}\label{group___s_a_m_d21___p_o_r_t_ga9b0b89d777ef1d50467b1db310d9f9ab}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_PULLEN@{PORT\_PINCFG\_PULLEN}}
+\index{PORT\_PINCFG\_PULLEN@{PORT\_PINCFG\_PULLEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_PULLEN}{PORT\_PINCFG\_PULLEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga686c2d965f888e1538721fee55c89fb5}\label{group___s_a_m_d21___p_o_r_t_ga686c2d965f888e1538721fee55c89fb5}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_PULLEN\_Pos@{PORT\_PINCFG\_PULLEN\_Pos}}
+\index{PORT\_PINCFG\_PULLEN\_Pos@{PORT\_PINCFG\_PULLEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_PULLEN\_Pos}{PORT\_PINCFG\_PULLEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos~2}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG) Pull Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga4e8b3dae5451509a2d436e492ecc4f52}\label{group___s_a_m_d21___p_o_r_t_ga4e8b3dae5451509a2d436e492ecc4f52}} 
+\index{Port Module@{Port Module}!PORT\_PINCFG\_RESETVALUE@{PORT\_PINCFG\_RESETVALUE}}
+\index{PORT\_PINCFG\_RESETVALUE@{PORT\_PINCFG\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PINCFG\_RESETVALUE}{PORT\_PINCFG\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+F\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+I\+N\+C\+FG reset\+\_\+value) Pin Configuration n 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1b48850f8861140de4eb5b75544f05e7}\label{group___s_a_m_d21___p_o_r_t_ga1b48850f8861140de4eb5b75544f05e7}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_MASK@{PORT\_PMUX\_MASK}}
+\index{PORT\_PMUX\_MASK@{PORT\_PMUX\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_MASK}{PORT\_PMUX\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+M\+A\+SK~0x\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2b2cfb87664f62a60eb5f01a7fbf4e9a}\label{group___s_a_m_d21___p_o_r_t_ga2b2cfb87664f62a60eb5f01a7fbf4e9a}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_OFFSET@{PORT\_PMUX\_OFFSET}}
+\index{PORT\_PMUX\_OFFSET@{PORT\_PMUX\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_OFFSET}{PORT\_PMUX\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+O\+F\+F\+S\+ET~0x30}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX offset) Peripheral Multiplexing n 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1a0548ef99b601e76ee01c5de4b8f32b}\label{group___s_a_m_d21___p_o_r_t_ga1a0548ef99b601e76ee01c5de4b8f32b}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE@{PORT\_PMUX\_PMUXE}}
+\index{PORT\_PMUX\_PMUXE@{PORT\_PMUX\_PMUXE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE}{PORT\_PMUX\_PMUXE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+XE(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae955cb77e730b16d702cd0fcdb156ec4}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9b4f9a2d8bac840309923085990a59aa}\label{group___s_a_m_d21___p_o_r_t_ga9b4f9a2d8bac840309923085990a59aa}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_A@{PORT\_PMUX\_PMUXE\_A}}
+\index{PORT\_PMUX\_PMUXE\_A@{PORT\_PMUX\_PMUXE\_A}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_A}{PORT\_PMUX\_PMUXE\_A}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+A~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gac2904834a0243c812025b5da13235658}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+A\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac2904834a0243c812025b5da13235658}\label{group___s_a_m_d21___p_o_r_t_gac2904834a0243c812025b5da13235658}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_A\_Val@{PORT\_PMUX\_PMUXE\_A\_Val}}
+\index{PORT\_PMUX\_PMUXE\_A\_Val@{PORT\_PMUX\_PMUXE\_A\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_A\_Val}{PORT\_PMUX\_PMUXE\_A\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+A\+\_\+\+Val~0x0ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function A selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga93019501e64801268cae9b58feee0c9a}\label{group___s_a_m_d21___p_o_r_t_ga93019501e64801268cae9b58feee0c9a}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_B@{PORT\_PMUX\_PMUXE\_B}}
+\index{PORT\_PMUX\_PMUXE\_B@{PORT\_PMUX\_PMUXE\_B}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_B}{PORT\_PMUX\_PMUXE\_B}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+B~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad247fef8f025e05eca4c88968a7c4ba3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+B\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad247fef8f025e05eca4c88968a7c4ba3}\label{group___s_a_m_d21___p_o_r_t_gad247fef8f025e05eca4c88968a7c4ba3}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_B\_Val@{PORT\_PMUX\_PMUXE\_B\_Val}}
+\index{PORT\_PMUX\_PMUXE\_B\_Val@{PORT\_PMUX\_PMUXE\_B\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_B\_Val}{PORT\_PMUX\_PMUXE\_B\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+B\+\_\+\+Val~0x1ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function B selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2dfaf48078b6c1ca36e8a3f0dbf04e3f}\label{group___s_a_m_d21___p_o_r_t_ga2dfaf48078b6c1ca36e8a3f0dbf04e3f}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_C@{PORT\_PMUX\_PMUXE\_C}}
+\index{PORT\_PMUX\_PMUXE\_C@{PORT\_PMUX\_PMUXE\_C}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_C}{PORT\_PMUX\_PMUXE\_C}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+C~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab47780ac1a22bc26130c2d72803aaf4a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+C\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gab47780ac1a22bc26130c2d72803aaf4a}\label{group___s_a_m_d21___p_o_r_t_gab47780ac1a22bc26130c2d72803aaf4a}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_C\_Val@{PORT\_PMUX\_PMUXE\_C\_Val}}
+\index{PORT\_PMUX\_PMUXE\_C\_Val@{PORT\_PMUX\_PMUXE\_C\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_C\_Val}{PORT\_PMUX\_PMUXE\_C\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+C\+\_\+\+Val~0x2ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function C selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga8db62e7045ce8186a3e3c84408fec41f}\label{group___s_a_m_d21___p_o_r_t_ga8db62e7045ce8186a3e3c84408fec41f}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_D@{PORT\_PMUX\_PMUXE\_D}}
+\index{PORT\_PMUX\_PMUXE\_D@{PORT\_PMUX\_PMUXE\_D}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_D}{PORT\_PMUX\_PMUXE\_D}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+D~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga934efa06dffb41353e14a0d649351797}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+D\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga934efa06dffb41353e14a0d649351797}\label{group___s_a_m_d21___p_o_r_t_ga934efa06dffb41353e14a0d649351797}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_D\_Val@{PORT\_PMUX\_PMUXE\_D\_Val}}
+\index{PORT\_PMUX\_PMUXE\_D\_Val@{PORT\_PMUX\_PMUXE\_D\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_D\_Val}{PORT\_PMUX\_PMUXE\_D\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+D\+\_\+\+Val~0x3ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function D selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga4254995439f919e403cb2f6f2a9a726b}\label{group___s_a_m_d21___p_o_r_t_ga4254995439f919e403cb2f6f2a9a726b}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_E@{PORT\_PMUX\_PMUXE\_E}}
+\index{PORT\_PMUX\_PMUXE\_E@{PORT\_PMUX\_PMUXE\_E}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_E}{PORT\_PMUX\_PMUXE\_E}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+E~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaea30c71f5bc91714c57780b5ff2b2211}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+E\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaea30c71f5bc91714c57780b5ff2b2211}\label{group___s_a_m_d21___p_o_r_t_gaea30c71f5bc91714c57780b5ff2b2211}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_E\_Val@{PORT\_PMUX\_PMUXE\_E\_Val}}
+\index{PORT\_PMUX\_PMUXE\_E\_Val@{PORT\_PMUX\_PMUXE\_E\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_E\_Val}{PORT\_PMUX\_PMUXE\_E\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+E\+\_\+\+Val~0x4ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function E selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga35ca2fd02cfd84af0d0a2d1f417bc342}\label{group___s_a_m_d21___p_o_r_t_ga35ca2fd02cfd84af0d0a2d1f417bc342}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_F@{PORT\_PMUX\_PMUXE\_F}}
+\index{PORT\_PMUX\_PMUXE\_F@{PORT\_PMUX\_PMUXE\_F}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_F}{PORT\_PMUX\_PMUXE\_F}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+F~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga7ef931d6a0d370d5ee0b1b4eb87c5e80}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+F\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga7ef931d6a0d370d5ee0b1b4eb87c5e80}\label{group___s_a_m_d21___p_o_r_t_ga7ef931d6a0d370d5ee0b1b4eb87c5e80}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_F\_Val@{PORT\_PMUX\_PMUXE\_F\_Val}}
+\index{PORT\_PMUX\_PMUXE\_F\_Val@{PORT\_PMUX\_PMUXE\_F\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_F\_Val}{PORT\_PMUX\_PMUXE\_F\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+F\+\_\+\+Val~0x5ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function F selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2fc8ecf2f999e23a5bfd539423bb9286}\label{group___s_a_m_d21___p_o_r_t_ga2fc8ecf2f999e23a5bfd539423bb9286}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_G@{PORT\_PMUX\_PMUXE\_G}}
+\index{PORT\_PMUX\_PMUXE\_G@{PORT\_PMUX\_PMUXE\_G}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_G}{PORT\_PMUX\_PMUXE\_G}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+G~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf640a2651a423568c43db1fe4f09296c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+G\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf640a2651a423568c43db1fe4f09296c}\label{group___s_a_m_d21___p_o_r_t_gaf640a2651a423568c43db1fe4f09296c}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_G\_Val@{PORT\_PMUX\_PMUXE\_G\_Val}}
+\index{PORT\_PMUX\_PMUXE\_G\_Val@{PORT\_PMUX\_PMUXE\_G\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_G\_Val}{PORT\_PMUX\_PMUXE\_G\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+G\+\_\+\+Val~0x6ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function G selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad9686d726a7681fc752c67ed7ab3a38d}\label{group___s_a_m_d21___p_o_r_t_gad9686d726a7681fc752c67ed7ab3a38d}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_H@{PORT\_PMUX\_PMUXE\_H}}
+\index{PORT\_PMUX\_PMUXE\_H@{PORT\_PMUX\_PMUXE\_H}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_H}{PORT\_PMUX\_PMUXE\_H}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+H~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga19bc58bfed10fdb5eb07d690e361bc73}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+H\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga19bc58bfed10fdb5eb07d690e361bc73}\label{group___s_a_m_d21___p_o_r_t_ga19bc58bfed10fdb5eb07d690e361bc73}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_H\_Val@{PORT\_PMUX\_PMUXE\_H\_Val}}
+\index{PORT\_PMUX\_PMUXE\_H\_Val@{PORT\_PMUX\_PMUXE\_H\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_H\_Val}{PORT\_PMUX\_PMUXE\_H\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+H\+\_\+\+Val~0x7ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function H selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae955cb77e730b16d702cd0fcdb156ec4}\label{group___s_a_m_d21___p_o_r_t_gae955cb77e730b16d702cd0fcdb156ec4}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_Msk@{PORT\_PMUX\_PMUXE\_Msk}}
+\index{PORT\_PMUX\_PMUXE\_Msk@{PORT\_PMUX\_PMUXE\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_Msk}{PORT\_PMUX\_PMUXE\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Msk~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}\label{group___s_a_m_d21___p_o_r_t_ga38a4c4871ecabeb4ad36398b73685bac}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXE\_Pos@{PORT\_PMUX\_PMUXE\_Pos}}
+\index{PORT\_PMUX\_PMUXE\_Pos@{PORT\_PMUX\_PMUXE\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXE\_Pos}{PORT\_PMUX\_PMUXE\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+E\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral Multiplexing Even 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9e83be4ac2a68323e1910518c9290f21}\label{group___s_a_m_d21___p_o_r_t_ga9e83be4ac2a68323e1910518c9290f21}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO@{PORT\_PMUX\_PMUXO}}
+\index{PORT\_PMUX\_PMUXO@{PORT\_PMUX\_PMUXO}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO}{PORT\_PMUX\_PMUXO}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+XO(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gafd360b4eecfb7fb93fde5c9e1c6da3a0}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga15add9b744cbeaf6bf9aa899e7a126b0}\label{group___s_a_m_d21___p_o_r_t_ga15add9b744cbeaf6bf9aa899e7a126b0}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_A@{PORT\_PMUX\_PMUXO\_A}}
+\index{PORT\_PMUX\_PMUXO\_A@{PORT\_PMUX\_PMUXO\_A}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_A}{PORT\_PMUX\_PMUXO\_A}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+A~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gae64ac445d72b81e07bb7d3bf3613ed96}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+A\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae64ac445d72b81e07bb7d3bf3613ed96}\label{group___s_a_m_d21___p_o_r_t_gae64ac445d72b81e07bb7d3bf3613ed96}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_A\_Val@{PORT\_PMUX\_PMUXO\_A\_Val}}
+\index{PORT\_PMUX\_PMUXO\_A\_Val@{PORT\_PMUX\_PMUXO\_A\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_A\_Val}{PORT\_PMUX\_PMUXO\_A\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+A\+\_\+\+Val~0x0ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function A selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga69fd67bf5fdd920953222862ce469a0c}\label{group___s_a_m_d21___p_o_r_t_ga69fd67bf5fdd920953222862ce469a0c}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_B@{PORT\_PMUX\_PMUXO\_B}}
+\index{PORT\_PMUX\_PMUXO\_B@{PORT\_PMUX\_PMUXO\_B}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_B}{PORT\_PMUX\_PMUXO\_B}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+B~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga06b7e4be19fba8f8880387c1628470c3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+B\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga06b7e4be19fba8f8880387c1628470c3}\label{group___s_a_m_d21___p_o_r_t_ga06b7e4be19fba8f8880387c1628470c3}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_B\_Val@{PORT\_PMUX\_PMUXO\_B\_Val}}
+\index{PORT\_PMUX\_PMUXO\_B\_Val@{PORT\_PMUX\_PMUXO\_B\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_B\_Val}{PORT\_PMUX\_PMUXO\_B\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+B\+\_\+\+Val~0x1ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function B selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf3e8d700bb19245b7dd12527fe983264}\label{group___s_a_m_d21___p_o_r_t_gaf3e8d700bb19245b7dd12527fe983264}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_C@{PORT\_PMUX\_PMUXO\_C}}
+\index{PORT\_PMUX\_PMUXO\_C@{PORT\_PMUX\_PMUXO\_C}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_C}{PORT\_PMUX\_PMUXO\_C}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+C~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga9c7f14d03da0e7c0328246467f19ae4c}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+C\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9c7f14d03da0e7c0328246467f19ae4c}\label{group___s_a_m_d21___p_o_r_t_ga9c7f14d03da0e7c0328246467f19ae4c}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_C\_Val@{PORT\_PMUX\_PMUXO\_C\_Val}}
+\index{PORT\_PMUX\_PMUXO\_C\_Val@{PORT\_PMUX\_PMUXO\_C\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_C\_Val}{PORT\_PMUX\_PMUXO\_C\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+C\+\_\+\+Val~0x2ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function C selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga27b8f2350fefc4aa13a4875b02a1c8e6}\label{group___s_a_m_d21___p_o_r_t_ga27b8f2350fefc4aa13a4875b02a1c8e6}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_D@{PORT\_PMUX\_PMUXO\_D}}
+\index{PORT\_PMUX\_PMUXO\_D@{PORT\_PMUX\_PMUXO\_D}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_D}{PORT\_PMUX\_PMUXO\_D}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+D~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaf734acd7133d2ca63b25d22ac88b8c82}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+D\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf734acd7133d2ca63b25d22ac88b8c82}\label{group___s_a_m_d21___p_o_r_t_gaf734acd7133d2ca63b25d22ac88b8c82}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_D\_Val@{PORT\_PMUX\_PMUXO\_D\_Val}}
+\index{PORT\_PMUX\_PMUXO\_D\_Val@{PORT\_PMUX\_PMUXO\_D\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_D\_Val}{PORT\_PMUX\_PMUXO\_D\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+D\+\_\+\+Val~0x3ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function D selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga866ded214067f1df089a87754ec520a6}\label{group___s_a_m_d21___p_o_r_t_ga866ded214067f1df089a87754ec520a6}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_E@{PORT\_PMUX\_PMUXO\_E}}
+\index{PORT\_PMUX\_PMUXO\_E@{PORT\_PMUX\_PMUXO\_E}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_E}{PORT\_PMUX\_PMUXO\_E}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+E~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga45edb06df6af2d9ff6db7b1945080670}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+E\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga45edb06df6af2d9ff6db7b1945080670}\label{group___s_a_m_d21___p_o_r_t_ga45edb06df6af2d9ff6db7b1945080670}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_E\_Val@{PORT\_PMUX\_PMUXO\_E\_Val}}
+\index{PORT\_PMUX\_PMUXO\_E\_Val@{PORT\_PMUX\_PMUXO\_E\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_E\_Val}{PORT\_PMUX\_PMUXO\_E\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+E\+\_\+\+Val~0x4ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function E selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga78785e05d92cb0eb0ff1444a8ea20e60}\label{group___s_a_m_d21___p_o_r_t_ga78785e05d92cb0eb0ff1444a8ea20e60}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_F@{PORT\_PMUX\_PMUXO\_F}}
+\index{PORT\_PMUX\_PMUXO\_F@{PORT\_PMUX\_PMUXO\_F}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_F}{PORT\_PMUX\_PMUXO\_F}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+F~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga5adef49ac6b2852a4ff20cf6ba38c660}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+F\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga5adef49ac6b2852a4ff20cf6ba38c660}\label{group___s_a_m_d21___p_o_r_t_ga5adef49ac6b2852a4ff20cf6ba38c660}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_F\_Val@{PORT\_PMUX\_PMUXO\_F\_Val}}
+\index{PORT\_PMUX\_PMUXO\_F\_Val@{PORT\_PMUX\_PMUXO\_F\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_F\_Val}{PORT\_PMUX\_PMUXO\_F\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+F\+\_\+\+Val~0x5ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function F selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga2d37482b7664ee109ca8938c2cfe7188}\label{group___s_a_m_d21___p_o_r_t_ga2d37482b7664ee109ca8938c2cfe7188}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_G@{PORT\_PMUX\_PMUXO\_G}}
+\index{PORT\_PMUX\_PMUXO\_G@{PORT\_PMUX\_PMUXO\_G}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_G}{PORT\_PMUX\_PMUXO\_G}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+G~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga88f1c9d7168ccf18b04ec62d78f05698}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+G\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga88f1c9d7168ccf18b04ec62d78f05698}\label{group___s_a_m_d21___p_o_r_t_ga88f1c9d7168ccf18b04ec62d78f05698}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_G\_Val@{PORT\_PMUX\_PMUXO\_G\_Val}}
+\index{PORT\_PMUX\_PMUXO\_G\_Val@{PORT\_PMUX\_PMUXO\_G\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_G\_Val}{PORT\_PMUX\_PMUXO\_G\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+G\+\_\+\+Val~0x6ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function G selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga5f57408b76430659c5cd863bd3cdaf23}\label{group___s_a_m_d21___p_o_r_t_ga5f57408b76430659c5cd863bd3cdaf23}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_H@{PORT\_PMUX\_PMUXO\_H}}
+\index{PORT\_PMUX\_PMUXO\_H@{PORT\_PMUX\_PMUXO\_H}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_H}{PORT\_PMUX\_PMUXO\_H}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+H~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga3809d955d07edd57731098d963d4856a}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+H\+\_\+\+Val}}         $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}{P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga3809d955d07edd57731098d963d4856a}\label{group___s_a_m_d21___p_o_r_t_ga3809d955d07edd57731098d963d4856a}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_H\_Val@{PORT\_PMUX\_PMUXO\_H\_Val}}
+\index{PORT\_PMUX\_PMUXO\_H\_Val@{PORT\_PMUX\_PMUXO\_H\_Val}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_H\_Val}{PORT\_PMUX\_PMUXO\_H\_Val}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+H\+\_\+\+Val~0x7ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral function H selected 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gafd360b4eecfb7fb93fde5c9e1c6da3a0}\label{group___s_a_m_d21___p_o_r_t_gafd360b4eecfb7fb93fde5c9e1c6da3a0}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_Msk@{PORT\_PMUX\_PMUXO\_Msk}}
+\index{PORT\_PMUX\_PMUXO\_Msk@{PORT\_PMUX\_PMUXO\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_Msk}{PORT\_PMUX\_PMUXO\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Msk~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}\label{group___s_a_m_d21___p_o_r_t_ga80a28619ad2db553b64d4ce4545368d3}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_PMUXO\_Pos@{PORT\_PMUX\_PMUXO\_Pos}}
+\index{PORT\_PMUX\_PMUXO\_Pos@{PORT\_PMUX\_PMUXO\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_PMUXO\_Pos}{PORT\_PMUX\_PMUXO\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+P\+M\+U\+X\+O\+\_\+\+Pos~4}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX) Peripheral Multiplexing Odd 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga4a150e2f7e2344a8a2f7e3d08ef6c39f}\label{group___s_a_m_d21___p_o_r_t_ga4a150e2f7e2344a8a2f7e3d08ef6c39f}} 
+\index{Port Module@{Port Module}!PORT\_PMUX\_RESETVALUE@{PORT\_PMUX\_RESETVALUE}}
+\index{PORT\_PMUX\_RESETVALUE@{PORT\_PMUX\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_PMUX\_RESETVALUE}{PORT\_PMUX\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+M\+U\+X\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+P\+M\+UX reset\+\_\+value) Peripheral Multiplexing n 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga5f5568d546a890f14a2dfa54f417a233}\label{group___s_a_m_d21___p_o_r_t_ga5f5568d546a890f14a2dfa54f417a233}} 
+\index{Port Module@{Port Module}!PORT\_U2210@{PORT\_U2210}}
+\index{PORT\_U2210@{PORT\_U2210}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_U2210}{PORT\_U2210}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+U2210}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaaa9cec94d7f7ebc2df0d6ce88456c797}\label{group___s_a_m_d21___p_o_r_t_gaaa9cec94d7f7ebc2df0d6ce88456c797}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_DRVSTR@{PORT\_WRCONFIG\_DRVSTR}}
+\index{PORT\_WRCONFIG\_DRVSTR@{PORT\_WRCONFIG\_DRVSTR}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_DRVSTR}{PORT\_WRCONFIG\_DRVSTR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+TR~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gae2dd656b888ede1553412037840d6ac4}\label{group___s_a_m_d21___p_o_r_t_gae2dd656b888ede1553412037840d6ac4}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_DRVSTR\_Pos@{PORT\_WRCONFIG\_DRVSTR\_Pos}}
+\index{PORT\_WRCONFIG\_DRVSTR\_Pos@{PORT\_WRCONFIG\_DRVSTR\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_DRVSTR\_Pos}{PORT\_WRCONFIG\_DRVSTR\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+D\+R\+V\+S\+T\+R\+\_\+\+Pos~22}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Output Driver Strength Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga4b024ac159d2b916326b97c1db752185}\label{group___s_a_m_d21___p_o_r_t_ga4b024ac159d2b916326b97c1db752185}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_HWSEL@{PORT\_WRCONFIG\_HWSEL}}
+\index{PORT\_WRCONFIG\_HWSEL@{PORT\_WRCONFIG\_HWSEL}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_HWSEL}{PORT\_WRCONFIG\_HWSEL}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+EL~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+E\+L\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac3b5f0e8062dcbecbc11d515cbc11dd1}\label{group___s_a_m_d21___p_o_r_t_gac3b5f0e8062dcbecbc11d515cbc11dd1}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_HWSEL\_Pos@{PORT\_WRCONFIG\_HWSEL\_Pos}}
+\index{PORT\_WRCONFIG\_HWSEL\_Pos@{PORT\_WRCONFIG\_HWSEL\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_HWSEL\_Pos}{PORT\_WRCONFIG\_HWSEL\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+H\+W\+S\+E\+L\+\_\+\+Pos~31}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Half-\/\+Word Select 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gadd5762cfb19c27a0831497111b8bf99f}\label{group___s_a_m_d21___p_o_r_t_gadd5762cfb19c27a0831497111b8bf99f}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_INEN@{PORT\_WRCONFIG\_INEN}}
+\index{PORT\_WRCONFIG\_INEN@{PORT\_WRCONFIG\_INEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_INEN}{PORT\_WRCONFIG\_INEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga54ebbb830cf16e6a9fc18bbc5879684a}\label{group___s_a_m_d21___p_o_r_t_ga54ebbb830cf16e6a9fc18bbc5879684a}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_INEN\_Pos@{PORT\_WRCONFIG\_INEN\_Pos}}
+\index{PORT\_WRCONFIG\_INEN\_Pos@{PORT\_WRCONFIG\_INEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_INEN\_Pos}{PORT\_WRCONFIG\_INEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+I\+N\+E\+N\+\_\+\+Pos~17}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Input Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga3d16ca9f7506e69958fe01fcffb6f8fd}\label{group___s_a_m_d21___p_o_r_t_ga3d16ca9f7506e69958fe01fcffb6f8fd}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_MASK@{PORT\_WRCONFIG\_MASK}}
+\index{PORT\_WRCONFIG\_MASK@{PORT\_WRCONFIG\_MASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_MASK}{PORT\_WRCONFIG\_MASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+M\+A\+SK~0x\+D\+F47\+F\+F\+F\+Ful}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga9d707b59cf1ecab326071c79a1334f67}\label{group___s_a_m_d21___p_o_r_t_ga9d707b59cf1ecab326071c79a1334f67}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_OFFSET@{PORT\_WRCONFIG\_OFFSET}}
+\index{PORT\_WRCONFIG\_OFFSET@{PORT\_WRCONFIG\_OFFSET}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_OFFSET}{PORT\_WRCONFIG\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+O\+F\+F\+S\+ET~0x28}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG offset) Write Configuration 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga434339fe8cb966a1a3f96d1904e799a6}\label{group___s_a_m_d21___p_o_r_t_ga434339fe8cb966a1a3f96d1904e799a6}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PINMASK@{PORT\_WRCONFIG\_PINMASK}}
+\index{PORT\_WRCONFIG\_PINMASK@{PORT\_WRCONFIG\_PINMASK}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PINMASK}{PORT\_WRCONFIG\_PINMASK}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+SK(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_ga55c432605b18507992b4540265c1768a}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gab1a78a8f36fb7fceed5ec4b2f821670e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga55c432605b18507992b4540265c1768a}\label{group___s_a_m_d21___p_o_r_t_ga55c432605b18507992b4540265c1768a}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PINMASK\_Msk@{PORT\_WRCONFIG\_PINMASK\_Msk}}
+\index{PORT\_WRCONFIG\_PINMASK\_Msk@{PORT\_WRCONFIG\_PINMASK\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PINMASK\_Msk}{PORT\_WRCONFIG\_PINMASK\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gab1a78a8f36fb7fceed5ec4b2f821670e}\label{group___s_a_m_d21___p_o_r_t_gab1a78a8f36fb7fceed5ec4b2f821670e}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PINMASK\_Pos@{PORT\_WRCONFIG\_PINMASK\_Pos}}
+\index{PORT\_WRCONFIG\_PINMASK\_Pos@{PORT\_WRCONFIG\_PINMASK\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PINMASK\_Pos}{PORT\_WRCONFIG\_PINMASK\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+I\+N\+M\+A\+S\+K\+\_\+\+Pos~0}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Pin Mask for Multiple Pin Configuration 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga79d664bf70f1494ebd35f75905b98ca3}\label{group___s_a_m_d21___p_o_r_t_ga79d664bf70f1494ebd35f75905b98ca3}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PMUX@{PORT\_WRCONFIG\_PMUX}}
+\index{PORT\_WRCONFIG\_PMUX@{PORT\_WRCONFIG\_PMUX}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PMUX}{PORT\_WRCONFIG\_PMUX}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+UX(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gaed50ce1ba0629befed40ccf940ea623e}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___p_o_r_t_gad821493573ea6954861bdb5007458439}{P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaed50ce1ba0629befed40ccf940ea623e}\label{group___s_a_m_d21___p_o_r_t_gaed50ce1ba0629befed40ccf940ea623e}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PMUX\_Msk@{PORT\_WRCONFIG\_PMUX\_Msk}}
+\index{PORT\_WRCONFIG\_PMUX\_Msk@{PORT\_WRCONFIG\_PMUX\_Msk}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PMUX\_Msk}{PORT\_WRCONFIG\_PMUX\_Msk}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Msk~(0x\+Ful $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gad821493573ea6954861bdb5007458439}\label{group___s_a_m_d21___p_o_r_t_gad821493573ea6954861bdb5007458439}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PMUX\_Pos@{PORT\_WRCONFIG\_PMUX\_Pos}}
+\index{PORT\_WRCONFIG\_PMUX\_Pos@{PORT\_WRCONFIG\_PMUX\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PMUX\_Pos}{PORT\_WRCONFIG\_PMUX\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+\_\+\+Pos~24}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Peripheral Multiplexing 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga6ab07d485a3b9379cf529664d618e768}\label{group___s_a_m_d21___p_o_r_t_ga6ab07d485a3b9379cf529664d618e768}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PMUXEN@{PORT\_WRCONFIG\_PMUXEN}}
+\index{PORT\_WRCONFIG\_PMUXEN@{PORT\_WRCONFIG\_PMUXEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PMUXEN}{PORT\_WRCONFIG\_PMUXEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaafa832687961ca48e5dacadda81a6371}\label{group___s_a_m_d21___p_o_r_t_gaafa832687961ca48e5dacadda81a6371}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PMUXEN\_Pos@{PORT\_WRCONFIG\_PMUXEN\_Pos}}
+\index{PORT\_WRCONFIG\_PMUXEN\_Pos@{PORT\_WRCONFIG\_PMUXEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PMUXEN\_Pos}{PORT\_WRCONFIG\_PMUXEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+M\+U\+X\+E\+N\+\_\+\+Pos~16}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Peripheral Multiplexer Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1b7efe7fb02e3da8402e319f0bd4314a}\label{group___s_a_m_d21___p_o_r_t_ga1b7efe7fb02e3da8402e319f0bd4314a}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PULLEN@{PORT\_WRCONFIG\_PULLEN}}
+\index{PORT\_WRCONFIG\_PULLEN@{PORT\_WRCONFIG\_PULLEN}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PULLEN}{PORT\_WRCONFIG\_PULLEN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+EN~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga69f7af299459c5a15bccf50da8b5240d}\label{group___s_a_m_d21___p_o_r_t_ga69f7af299459c5a15bccf50da8b5240d}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_PULLEN\_Pos@{PORT\_WRCONFIG\_PULLEN\_Pos}}
+\index{PORT\_WRCONFIG\_PULLEN\_Pos@{PORT\_WRCONFIG\_PULLEN\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_PULLEN\_Pos}{PORT\_WRCONFIG\_PULLEN\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+P\+U\+L\+L\+E\+N\+\_\+\+Pos~18}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Pull Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga1962785a10daf1e85b2bab4203bc0f30}\label{group___s_a_m_d21___p_o_r_t_ga1962785a10daf1e85b2bab4203bc0f30}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_RESETVALUE@{PORT\_WRCONFIG\_RESETVALUE}}
+\index{PORT\_WRCONFIG\_RESETVALUE@{PORT\_WRCONFIG\_RESETVALUE}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_RESETVALUE}{PORT\_WRCONFIG\_RESETVALUE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG reset\+\_\+value) Write Configuration 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf100527c943f5f4af1132a46c7d2340f}\label{group___s_a_m_d21___p_o_r_t_gaf100527c943f5f4af1132a46c7d2340f}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_WRPINCFG@{PORT\_WRCONFIG\_WRPINCFG}}
+\index{PORT\_WRCONFIG\_WRPINCFG@{PORT\_WRCONFIG\_WRPINCFG}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_WRPINCFG}{PORT\_WRCONFIG\_WRPINCFG}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+FG~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+F\+G\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gac9e9a5084c654419e2762a4557fc0fe0}\label{group___s_a_m_d21___p_o_r_t_gac9e9a5084c654419e2762a4557fc0fe0}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_WRPINCFG\_Pos@{PORT\_WRCONFIG\_WRPINCFG\_Pos}}
+\index{PORT\_WRCONFIG\_WRPINCFG\_Pos@{PORT\_WRCONFIG\_WRPINCFG\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_WRPINCFG\_Pos}{PORT\_WRCONFIG\_WRPINCFG\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+I\+N\+C\+F\+G\+\_\+\+Pos~30}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Write P\+I\+N\+C\+FG 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga41389a6f616a685fbca4a6cbb6e48206}\label{group___s_a_m_d21___p_o_r_t_ga41389a6f616a685fbca4a6cbb6e48206}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_WRPMUX@{PORT\_WRCONFIG\_WRPMUX}}
+\index{PORT\_WRCONFIG\_WRPMUX@{PORT\_WRCONFIG\_WRPMUX}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_WRPMUX}{PORT\_WRCONFIG\_WRPMUX}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+UX~(0x1ul $<$$<$ P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+U\+X\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_gaf5c01e870b3cd28ea4b5d16e0970f641}\label{group___s_a_m_d21___p_o_r_t_gaf5c01e870b3cd28ea4b5d16e0970f641}} 
+\index{Port Module@{Port Module}!PORT\_WRCONFIG\_WRPMUX\_Pos@{PORT\_WRCONFIG\_WRPMUX\_Pos}}
+\index{PORT\_WRCONFIG\_WRPMUX\_Pos@{PORT\_WRCONFIG\_WRPMUX\_Pos}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{PORT\_WRCONFIG\_WRPMUX\_Pos}{PORT\_WRCONFIG\_WRPMUX\_Pos}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+I\+G\+\_\+\+W\+R\+P\+M\+U\+X\+\_\+\+Pos~28}
+
+
+
+(P\+O\+R\+T\+\_\+\+W\+R\+C\+O\+N\+F\+IG) Write P\+M\+UX 
+
+\mbox{\Hypertarget{group___s_a_m_d21___p_o_r_t_ga48cafc8c658dd3e36eb503cd8069ff00}\label{group___s_a_m_d21___p_o_r_t_ga48cafc8c658dd3e36eb503cd8069ff00}} 
+\index{Port Module@{Port Module}!REV\_PORT@{REV\_PORT}}
+\index{REV\_PORT@{REV\_PORT}!Port Module@{Port Module}}
+\subsubsection{\texorpdfstring{REV\_PORT}{REV\_PORT}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+P\+O\+RT~0x100}
+

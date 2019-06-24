@@ -1,0 +1,174 @@
+\hypertarget{group__gap__conn__group}{}\section{Connecting Procedure A\+P\+Is}
+\label{group__gap__conn__group}\index{Connecting Procedure APIs@{Connecting Procedure APIs}}
+
+
+This group includes connections A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_ga3be5e29faec448c3fa62376482e9bc71}{at\+\_\+ble\+\_\+set\+\_\+conn\+\_\+mode}} (\mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379}{at\+\_\+ble\+\_\+conn\+\_\+mode\+\_\+t}} mode)
+\begin{DoxyCompactList}\small\item\em Set connection mode parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_ga87664cf89bb5c704324c36417cc2ffd5}{at\+\_\+ble\+\_\+connect}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} peers\mbox{[}$\,$\mbox{]}, uint8\+\_\+t peer\+\_\+count, uint16\+\_\+t scan\+\_\+interval, uint16\+\_\+t scan\+\_\+window, \mbox{\hyperlink{structat__ble__connection__params__t}{at\+\_\+ble\+\_\+connection\+\_\+params\+\_\+t}} $\ast$connection\+\_\+params)
+\begin{DoxyCompactList}\small\item\em Connect to a peer device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_ga54f5ff89635b213302a4354f3923b2ba}{at\+\_\+ble\+\_\+connect\+\_\+cancel}} (void)
+\begin{DoxyCompactList}\small\item\em Cancels an ongoing connection attempt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_gae41a6e7e9c4631e83414e2bdd5089d31}{at\+\_\+ble\+\_\+disconnect}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle, \mbox{\hyperlink{at__ble__api_8h_a948b817ef7031101d54fdae327ca45ef}{at\+\_\+ble\+\_\+disconnect\+\_\+reason\+\_\+t}} reason)
+\begin{DoxyCompactList}\small\item\em Disconnect a connected peer device and receive response through \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac472d13b7a89e80f7c5ba3907b761d7a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}} event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_ga9e6ead4f518554d09fee5f458ff7b988}{at\+\_\+ble\+\_\+connection\+\_\+param\+\_\+update}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle, \mbox{\hyperlink{structat__ble__connection__params__t}{at\+\_\+ble\+\_\+connection\+\_\+params\+\_\+t}} $\ast$connection\+\_\+params)
+\begin{DoxyCompactList}\small\item\em Update the connection parameters of an ongoing connection. ~\newline
+ Connection parameter update command can be used by both master and slave of the connection. ~\newline
+ For master of the connection, new connection parameters will be applied immediately.~\newline
+ For slave of the connection, a connection update message request will be send to master. Then master will be able to accept or refuse those parameters within 30 seconds otherwise link is automatically disconnected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__conn__group_gaf569678c3c460affa1d42d406322aa40}{at\+\_\+ble\+\_\+conn\+\_\+update\+\_\+reply}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} accept, uint16\+\_\+t ce\+\_\+len\+\_\+min, uint16\+\_\+t ce\+\_\+len\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Reply to connection parameters update request \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebabcde15cbd78da60babb61d623b0cf2b5}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+\_\+\+P\+A\+R\+A\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes connections A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__conn__group_gaf569678c3c460affa1d42d406322aa40}\label{group__gap__conn__group_gaf569678c3c460affa1d42d406322aa40}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_conn\_update\_reply@{at\_ble\_conn\_update\_reply}}
+\index{at\_ble\_conn\_update\_reply@{at\_ble\_conn\_update\_reply}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_conn\_update\_reply()}{at\_ble\_conn\_update\_reply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+conn\+\_\+update\+\_\+reply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{accept,  }\item[{uint16\+\_\+t}]{ce\+\_\+len\+\_\+min,  }\item[{uint16\+\_\+t}]{ce\+\_\+len\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Reply to connection parameters update request \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebabcde15cbd78da60babb61d623b0cf2b5}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+\_\+\+P\+A\+R\+A\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+E\+ST}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & handle of the connection to be updated \\
+\hline
+\mbox{\texttt{ in}}  & {\em accept} & accept or refuse connection parameters proposed by peer slave device \\
+\hline
+\mbox{\texttt{ in}}  & {\em ce\+\_\+len\+\_\+min} & Minimum CE length \\
+\hline
+\mbox{\texttt{ in}}  & {\em ce\+\_\+len\+\_\+max} & Maximum CE length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__conn__group_ga87664cf89bb5c704324c36417cc2ffd5}\label{group__gap__conn__group_ga87664cf89bb5c704324c36417cc2ffd5}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_connect@{at\_ble\_connect}}
+\index{at\_ble\_connect@{at\_ble\_connect}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_connect()}{at\_ble\_connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}}}]{peers\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t}]{peer\+\_\+count,  }\item[{uint16\+\_\+t}]{scan\+\_\+interval,  }\item[{uint16\+\_\+t}]{scan\+\_\+window,  }\item[{\mbox{\hyperlink{structat__ble__connection__params__t}{at\+\_\+ble\+\_\+connection\+\_\+params\+\_\+t}} $\ast$}]{connection\+\_\+params }\end{DoxyParamCaption})}
+
+
+
+Connect to a peer device. 
+
+Connecting to a peer device, implicitly starting the necessary scan operation then connecting if a device in the peers list is found in case of using default mode \mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379a98150c41a7e15b8a8bf97eee18ed9d9e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+A\+U\+TO}}. In case of using \mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379a43c036d56abb3965ae9f19020f45c335}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+R\+E\+CT}} mode, device will try to connect directly to provided peer address only without scanning. This A\+PI returns immediately after the operation is programmed, actual connection establishment or failure is marked with \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaae3a144ac3c727e9437afd84824e3952}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}} event
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em peers} & List of peers\textquotesingle{} addresses that the device will connect to one of them \\
+\hline
+\mbox{\texttt{ in}}  & {\em peer\+\_\+count} & Number peers trying to connect with. In case of using \mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379a43c036d56abb3965ae9f19020f45c335}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+R\+E\+CT}} mode, peer\+\_\+count should be 1. \\
+\hline
+\mbox{\texttt{ in}}  & {\em scan\+\_\+interval} & Scan interval in 625us units \\
+\hline
+\mbox{\texttt{ in}}  & {\em scan\+\_\+window} & Scan window in 625us units \\
+\hline
+\mbox{\texttt{ in}}  & {\em connection\+\_\+params} & Parameters of the established connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Default connection mode is \mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379a98150c41a7e15b8a8bf97eee18ed9d9e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+A\+U\+TO}}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__gap__conn__group_ga3be5e29faec448c3fa62376482e9bc71}{at\+\_\+ble\+\_\+set\+\_\+conn\+\_\+mode}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__conn__group_ga54f5ff89635b213302a4354f3923b2ba}\label{group__gap__conn__group_ga54f5ff89635b213302a4354f3923b2ba}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_connect\_cancel@{at\_ble\_connect\_cancel}}
+\index{at\_ble\_connect\_cancel@{at\_ble\_connect\_cancel}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_connect\_cancel()}{at\_ble\_connect\_cancel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+connect\+\_\+cancel (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Cancels an ongoing connection attempt. 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__conn__group_ga9e6ead4f518554d09fee5f458ff7b988}\label{group__gap__conn__group_ga9e6ead4f518554d09fee5f458ff7b988}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_connection\_param\_update@{at\_ble\_connection\_param\_update}}
+\index{at\_ble\_connection\_param\_update@{at\_ble\_connection\_param\_update}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_connection\_param\_update()}{at\_ble\_connection\_param\_update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+connection\+\_\+param\+\_\+update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle,  }\item[{\mbox{\hyperlink{structat__ble__connection__params__t}{at\+\_\+ble\+\_\+connection\+\_\+params\+\_\+t}} $\ast$}]{connection\+\_\+params }\end{DoxyParamCaption})}
+
+
+
+Update the connection parameters of an ongoing connection. ~\newline
+ Connection parameter update command can be used by both master and slave of the connection. ~\newline
+ For master of the connection, new connection parameters will be applied immediately.~\newline
+ For slave of the connection, a connection update message request will be send to master. Then master will be able to accept or refuse those parameters within 30 seconds otherwise link is automatically disconnected. 
+
+\begin{DoxyNote}{Note}
+This A\+PI returns after programming the new values but before they take effect, actual effect of the parameters is marked by the event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba7df1bb1367b95933f4fcaeb425c2962b}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+\_\+\+P\+A\+R\+A\+M\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+D\+O\+NE}}
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & handle of the connection to be updated \\
+\hline
+\mbox{\texttt{ in}}  & {\em connection\+\_\+params} & new parameters to be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__conn__group_gae41a6e7e9c4631e83414e2bdd5089d31}\label{group__gap__conn__group_gae41a6e7e9c4631e83414e2bdd5089d31}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_disconnect@{at\_ble\_disconnect}}
+\index{at\_ble\_disconnect@{at\_ble\_disconnect}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_disconnect()}{at\_ble\_disconnect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_a948b817ef7031101d54fdae327ca45ef}{at\+\_\+ble\+\_\+disconnect\+\_\+reason\+\_\+t}}}]{reason }\end{DoxyParamCaption})}
+
+
+
+Disconnect a connected peer device and receive response through \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac472d13b7a89e80f7c5ba3907b761d7a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}} event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & handle of the connection to be terminated \\
+\hline
+\mbox{\texttt{ in}}  & {\em reason} & disconnection reason, more info at \mbox{\hyperlink{at__ble__api_8h_a948b817ef7031101d54fdae327ca45ef}{at\+\_\+ble\+\_\+disconnect\+\_\+reason\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item At \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac472d13b7a89e80f7c5ba3907b761d7a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}} event, for reason of disconnection see Bluetooth error code at Bluetooth core specification; vol 2, Core System Package \mbox{[}B\+R/\+E\+DR Controller volume\mbox{]}, Part D
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__conn__group_ga3be5e29faec448c3fa62376482e9bc71}\label{group__gap__conn__group_ga3be5e29faec448c3fa62376482e9bc71}} 
+\index{Connecting Procedure APIs@{Connecting Procedure APIs}!at\_ble\_set\_conn\_mode@{at\_ble\_set\_conn\_mode}}
+\index{at\_ble\_set\_conn\_mode@{at\_ble\_set\_conn\_mode}!Connecting Procedure APIs@{Connecting Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_set\_conn\_mode()}{at\_ble\_set\_conn\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+set\+\_\+conn\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379}{at\+\_\+ble\+\_\+conn\+\_\+mode\+\_\+t}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Set connection mode parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mode} & selected mode, one of \mbox{\hyperlink{at__ble__api_8h_a53f9993d9d4520af74f601a867e1d379}{at\+\_\+ble\+\_\+conn\+\_\+mode\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

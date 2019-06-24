@@ -1,0 +1,1670 @@
+\hypertarget{group___s_a_m_d21___g_c_l_k}{}\section{Generic Clock Generator}
+\label{group___s_a_m_d21___g_c_l_k}\index{Generic Clock Generator@{Generic Clock Generator}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_g_c_l_k___c_t_r_l___type}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_g_c_l_k___s_t_a_t_u_s___type}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_g_c_l_k___c_l_k_c_t_r_l___type}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_g_c_l_k___g_e_n_c_t_r_l___type}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_g_c_l_k___g_e_n_d_i_v___type}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_gclk}{Gclk}}
+\begin{DoxyCompactList}\small\item\em G\+C\+LK hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaca1c1ddf305857f452121b055f1dc890}{G\+C\+L\+K\+\_\+\+U2102}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad1c1468b7c6ed891f5711fedfef9ec67}{R\+E\+V\+\_\+\+G\+C\+LK}}~0x210
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1e4155316409181e6ee6e88d12cdc90d}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x0
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+T\+RL offset) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga83d8721ae78e319dd3b6ab2e350a189b}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+T\+RL reset\+\_\+value) Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4efebabb229142324a17a17d178c8494}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+T\+RL) Software Reset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga279d0e7833263a0907ddf09e3600df70}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+ST}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1149580344c769b492a3965710f14319}{G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x01ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1829e59ccf51b247d4c84f4b53356e59}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x1
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US offset) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga178a91eb9f5aa21feeb1b126b05dd8cd}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga8ef544f7407509465d3512c48226cab4}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US) Synchronization Busy Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9e593aac5e38d17fcb837662afa6f6f6}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+SY}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaeb39d54d6d2ecc2bdaafb2a846930171}{G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x80ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga8a266827d508cecf79c9b27ab8596f0f}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x2
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL offset) Generic Clock Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad11334da452920f4d446c1615751b8c8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0000ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL reset\+\_\+value) Generic Clock Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic Clock Selection ID \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gacfb6324cf6ce3d532d189e935af7eab1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}}~(0x3\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6ca62f336958b605840843748ae83806}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+ID}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gacfb6324cf6ce3d532d189e935af7eab1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab1b72b8b751c1bd1d0994d731a79ee82}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) D\+F\+L\+L48 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga63b5e4e7d95cdf03dda642e327ed47f5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) F\+D\+P\+LL \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab8b800b562675cc84f402818aebcd947}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32\+K\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) F\+D\+P\+L\+L32K \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf55824f940b869be173bf84b368d5107}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+D\+T\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) W\+DT \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa79509ffa7f18da70d4ae344a3d3d70b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+T\+C\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) R\+TC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad482e84c3781695e980c8d1bcb9300f6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+I\+C\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+IC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5bff2fb927a4b63837aec5ea464ba61b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+S\+B\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) U\+SB \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga24b8d07991d73b984d3ee5dbbfa43de1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga33cf2ca39bd86e29c71d2d46e23419b5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1\+\_\+\+Val}}~0x8ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2a41efb893147142a523da4ffd9b6e4e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2\+\_\+\+Val}}~0x9ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf3e4dae1c92305f72ab76d6574385b69}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3\+\_\+\+Val}}~0x\+Aul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga25bf241f7a00a504aeff5f694369c419}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4\+\_\+\+Val}}~0x\+Bul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga40c7990c5913976e60b394ef65aa506e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5\+\_\+\+Val}}~0x\+Cul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5c81fa460cfafd2cc80c0b65a7159b02}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6\+\_\+\+Val}}~0x\+Dul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+6 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5473e48e8fafbc87545b3363feda6e0b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7\+\_\+\+Val}}~0x\+Eul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4ec8917d7084d3f9634881abd59e9976}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8\+\_\+\+Val}}~0x\+Ful
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+8 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa16d3052520645978635ac4c5cf7cae6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9\+\_\+\+Val}}~0x10ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+9 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a5dad9a02f829080ec0d0c07e0f44a5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10\+\_\+\+Val}}~0x11ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+10 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae046a3b63da8327bfa71268d66b516eb}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11\+\_\+\+Val}}~0x12ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+11 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga153a5b6024c662b8f816b368ccd1bdc6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+O\+W\+\_\+\+Val}}~0x13ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+OW \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa73a1f52ac12d73c9b415d0cf7c129d8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x14ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga687c5b5b6f9d24d699c20826dae07ea1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x15ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6c190884b0ecb6df1e282e9f52fc9625}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x16ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafd61fc115b2df35b8362117d56e585f8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x17ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6abe19ed53416097da5b95e3dca3d98d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x18ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gadf32722a43710ff062d0581131ed71df}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+R\+E\+\_\+\+Val}}~0x19ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+RE \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga186870cd8d31d127b17008e778ab1599}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1\+\_\+\+Val}}~0x1\+Aul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C\+C0\+\_\+\+T\+C\+C1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga855fa017d163420dc1a347eb24876d65}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3\+\_\+\+Val}}~0x1\+Bul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C\+C2\+\_\+\+T\+C3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6e2e800404f3b2e6948ced5f489aa557}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5\+\_\+\+Val}}~0x1\+Cul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C4\+\_\+\+T\+C5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga540d3e213ae8c696000670dbc1ea3721}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7\+\_\+\+Val}}~0x1\+Dul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C6\+\_\+\+T\+C7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafa044a1103ba6b6a8bc6d7f7d44c4cea}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+D\+C\+\_\+\+Val}}~0x1\+Eul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+DC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4f314ff01d05a73788706a3e0cf98363}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+I\+G\+\_\+\+Val}}~0x1\+Ful
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+C\+\_\+\+D\+IG \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a296324385e4617069890aa675632ff}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+N\+A\+\_\+\+Val}}~0x20ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+C\+\_\+\+A\+NA \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1dc77a3784a3e8021336bbe6a492ebe0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+A\+C\+\_\+\+Val}}~0x21ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) D\+AC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac44e99202775c88a813b1416a66c7469}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+T\+C\+\_\+\+Val}}~0x22ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) P\+TC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6f4f283f31ba4afece3ce58302c3eca7}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0\+\_\+\+Val}}~0x23ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) I2\+S\+\_\+0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab85ca6d48229a8290fe2c5d57e8c2396}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1\+\_\+\+Val}}~0x24ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) I2\+S\+\_\+1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2bfe3f168083a5cea3e4d121050f204b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab1b72b8b751c1bd1d0994d731a79ee82}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa752be57793ed4297614f3263a179604}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+LL}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga63b5e4e7d95cdf03dda642e327ed47f5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae4e4e5bd7bae453e5f9c6ed591f5c73f}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32K}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab8b800b562675cc84f402818aebcd947}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32\+K\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad1d23dd963c350b90a57071774226139}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+DT}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf55824f940b869be173bf84b368d5107}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+D\+T\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9f6d0b84756809caf3a79dc6365c92b1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+TC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa79509ffa7f18da70d4ae344a3d3d70b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+T\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad77060cfb0eb7327062765a6d48c7b07}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+IC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad482e84c3781695e980c8d1bcb9300f6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+I\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga8260e7bdb03e8421e8e8aeeafcc073f3}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+SB}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5bff2fb927a4b63837aec5ea464ba61b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+S\+B\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3a091994ea0d246cac926f9387f5f60e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga24b8d07991d73b984d3ee5dbbfa43de1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7b413cbf9a0a4a5261a629ff4b02eb1d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga33cf2ca39bd86e29c71d2d46e23419b5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga130e1eafd6a515744428291c962bb3c3}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2a41efb893147142a523da4ffd9b6e4e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga08ec8d0eddcfaeefdfb1cec9fac63fd8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf3e4dae1c92305f72ab76d6574385b69}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9059252b9702e6519e9b4b20690cfd69}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga25bf241f7a00a504aeff5f694369c419}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gabc156b1d73efa6d1ead344ecfe1416ef}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga40c7990c5913976e60b394ef65aa506e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2f124b5ee8e55d71761a4601fa0d4787}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5c81fa460cfafd2cc80c0b65a7159b02}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2ca3f1951c516276e97377372375edd7}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5473e48e8fafbc87545b3363feda6e0b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae68e3b6b3fa982dafd72b1aab6dc8a5e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4ec8917d7084d3f9634881abd59e9976}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4ede600281c007318b45ec1e089261c9}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa16d3052520645978635ac4c5cf7cae6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1b7252db50ef7df848058c9260c5d0b6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a5dad9a02f829080ec0d0c07e0f44a5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga01be2101b081be2ba462c3f0ba75b8b5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae046a3b63da8327bfa71268d66b516eb}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7279413efcc5ac32980861d9429c706c}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+OW}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga153a5b6024c662b8f816b368ccd1bdc6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+O\+W\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga86630fdf442f4facc7163cb9aa75f9d1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa73a1f52ac12d73c9b415d0cf7c129d8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafe689938b955391c668778733840ecd3}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga687c5b5b6f9d24d699c20826dae07ea1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac59ac7a1db5f20ac4713e9a0a6ac8213}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6c190884b0ecb6df1e282e9f52fc9625}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga69a0eb6cd690c2289c8f89983369f0f5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafd61fc115b2df35b8362117d56e585f8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3f65493fe90eff0eb5ae50293a7d00e4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6abe19ed53416097da5b95e3dca3d98d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa959102644aa8515990b2dc2907fa87e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+RE}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gadf32722a43710ff062d0581131ed71df}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga8e0a203b672c5344e8e9cad84d5a6f9e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga186870cd8d31d127b17008e778ab1599}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac1cb609eb4263251367be6d5ce60e528}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga855fa017d163420dc1a347eb24876d65}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5316e2928a72fe2b59814f09a6b3f498}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6e2e800404f3b2e6948ced5f489aa557}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga34f73ae7c50fbe4bbffc3e3a8836786a}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga540d3e213ae8c696000670dbc1ea3721}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad652342e4d51127ddc598eccd3cb0af6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+DC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafa044a1103ba6b6a8bc6d7f7d44c4cea}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+D\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3d7ccc160db5a2cb9f19e79869b88539}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+IG}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4f314ff01d05a73788706a3e0cf98363}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+I\+G\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad49f926f054ba98edb18f7d010a955f4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+NA}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a296324385e4617069890aa675632ff}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+N\+A\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae348ba128f8ec10c82cef8959ed5b11f}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+AC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1dc77a3784a3e8021336bbe6a492ebe0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+A\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga98870a8ee31be24b60b67a5253a5fa2a}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+TC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac44e99202775c88a813b1416a66c7469}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+T\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga49631bf6e4807e2bf1620ddc193fef27}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6f4f283f31ba4afece3ce58302c3eca7}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2dcb44e7dcd4149f8672baf08dd8de8d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab85ca6d48229a8290fe2c5d57e8c2396}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic Clock Generator \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5e33bef05f719c937bab8824ec26ed20}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Msk}}~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga78548c9373fc66d3d48155222c508728}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+EN}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5e33bef05f719c937bab8824ec26ed20}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gace6212456debec86346f66fdd9e345f0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 0 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga272c6846fcd4c313d7cc25dd48c4e46c}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 1 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga01572700eb8f9b256b2823b08d413467}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 2 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac93b1c3cf93221ec87c773f5b2fa87e4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 3 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9cab1760fd8855cd9e9b6d78279dd090}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 4 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga14e18a1b5c8919f1a3e8c679b3b17f9d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 5 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaffc6f215a6671305caaeb6f9e38264d6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 6 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf0ef8769af1146d5f756a515bba69892}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 7 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6a4d655d51f1b3cf37364d7cf3f676b4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gace6212456debec86346f66fdd9e345f0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf7743e399861fff0cc001b53cf033b4d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga272c6846fcd4c313d7cc25dd48c4e46c}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae4b72e89dfafc309aa02915fa1ee463b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga01572700eb8f9b256b2823b08d413467}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7cf498a0e03dcb86cc24dbbc79c6c076}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac93b1c3cf93221ec87c773f5b2fa87e4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1b6febf4fe9842823e99663cc13ee0fd}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9cab1760fd8855cd9e9b6d78279dd090}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5d2ab62c417f641f9c0050b64ef35696}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga14e18a1b5c8919f1a3e8c679b3b17f9d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6cd3d90c7a49aee40e1b8157b3eb516a}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaffc6f215a6671305caaeb6f9e38264d6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae42e43dfe46961959902cb893ce69121}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf0ef8769af1146d5f756a515bba69892}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga988366053ec34c5f63659a49e0f20d3e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+E\+N\+\_\+\+Pos}}~14
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Clock Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf59d41452f57905af7c54ef67d5e5349}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+EN}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga380347dc132352716e030880aba8b807}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+C\+K\+\_\+\+Pos}}~15
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Write Lock \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf103e645170000a9aa8af219a63d54c5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+CK}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+C\+K\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7cd3bae1a32142ecb56cff34f18b856f}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x\+C\+F3\+Ful
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga93d991084be98b48eb3bd242d2114042}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x4
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL offset) Generic Clock Generator Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6fe333c528ab24313886414224566cfc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL reset\+\_\+value) Generic Clock Generator Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a60c72f4513306209ee3853e022a8ec}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic Clock Generator Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7f828f420efccc8f0524f5fccb07a7db}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}}~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gacd482b8619c8d7d70d181e958bea77cb}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+ID}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7f828f420efccc8f0524f5fccb07a7db}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a60c72f4513306209ee3853e022a8ec}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Source Select \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1341d6ea0cb6d9dc6bb42710ac632eed}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Msk}}~(0x1\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3a6ecbe6a1395577e386ee2046c5e3a5}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+RC}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1341d6ea0cb6d9dc6bb42710ac632eed}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad48c4f5ba6b5112eef4d978cf2ae73bc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) X\+O\+SC oscillator output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4c279c59a26c988991b63eb2682e8acc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+I\+N\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generator input pad \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2774be4de7707cea940a2b7ec37f30e3}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic clock generator 1 output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga42e2c1ea6d7f04f75657e31791336ec6}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+Val}}~0x3ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C\+U\+L\+P32K oscillator output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga79a91b96132812e2d8fec7fb79dc6cde}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32\+K\+\_\+\+Val}}~0x4ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C32K oscillator output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga087326ba1d0ac766f2835e5460c72ef0}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+Val}}~0x5ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) X\+O\+S\+C32K oscillator output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7b00616bd4afa72d171e9ad317b208ac}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8\+M\+\_\+\+Val}}~0x6ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C8M oscillator output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga70357963bac751c47a0b097568f1ec34}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+Val}}~0x7ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) D\+F\+L\+L48M output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga87f8f30846939c09a6d982c14bf3aa3c}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}~0x8ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) F\+D\+P\+LL output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad224796335cb16ec3d64a68efeb5c9b7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+SC}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad48c4f5ba6b5112eef4d978cf2ae73bc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae54fac01315c959abdf2f2396a9ff0bf}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+IN}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4c279c59a26c988991b63eb2682e8acc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+I\+N\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad3c6aba8780393019af9aa777041eecc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2774be4de7707cea940a2b7ec37f30e3}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaeefd6f0d9789f9f1c1ee07d1a256f93c}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32K}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga42e2c1ea6d7f04f75657e31791336ec6}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gabdada430076745a99ece643763c5b14b}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32K}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga79a91b96132812e2d8fec7fb79dc6cde}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32\+K\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf2db90c4ecefc9b935dd47d82968eb27}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32K}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga087326ba1d0ac766f2835e5460c72ef0}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga53a17a2e7173521f90740b1f632c7863}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8M}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7b00616bd4afa72d171e9ad317b208ac}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa23918b1d8f76e45db3cbec26eb70973}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48M}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga70357963bac751c47a0b097568f1ec34}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad4a5c9ae337e9e8572d765dc77310ea7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+LL}}~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga87f8f30846939c09a6d982c14bf3aa3c}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gacf206c291132d560c6f857c74d042b09}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+E\+N\+\_\+\+Pos}}~16
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic Clock Generator Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaaff89a081b47174a1ebf7893d638d911}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+EN}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gadd1c684492c64ddc0b937c7571028381}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+C\+\_\+\+Pos}}~17
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Improve Duty Cycle \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga20defe310838ae549c7f9820de38e1bb}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+DC}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+C\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga511f960dfd2a4afa6dc073dc909389ac}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+O\+V\+\_\+\+Pos}}~18
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Output Off Value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga80c2684d81c5b9433098ae98bd7cc989}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+OV}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+O\+V\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga463727f09be9f9cf1f26c55e954eaf0e}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+E\+\_\+\+Pos}}~19
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Output Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2d6d57ade8be094e5b3076e347eaabd7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+OE}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae17e18184623ee038ce57b64c63e4f9a}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+E\+L\+\_\+\+Pos}}~20
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Divide Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5b38723ccce77a0257a48ce83389b204}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+EL}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+E\+L\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga74904f6bd2b8ead6cfffae549a41b869}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos}}~21
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Run in Standby \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga892b6d79b97157d48d189804f91df4fa}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+BY}}~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab6d617a227f5a570e43959099ae10b1d}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x003\+F1\+F0\+Ful
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2922a2f237f943cf8a023d3311ca5128}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+O\+F\+F\+S\+ET}}~0x8
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV offset) Generic Clock Generator Division \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga886387ce3e41b7ca629a0b6a2292a6c0}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV reset\+\_\+value) Generic Clock Generator Division \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga26ff4637fd9d6b561a910aeee96a4f88}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) Generic Clock Generator Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a0c53611d4a82e0c2dbb7b6f4a19d01}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Msk}}~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga121c30a908238bacb3fefa4e5b301aa5}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+ID}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a0c53611d4a82e0c2dbb7b6f4a19d01}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga26ff4637fd9d6b561a910aeee96a4f88}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga182a17bda5373cb761e1bee891a03477}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) Division Factor \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae95d79b8cfc28a501dce0f4767e20dc7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga030bddfec3401b61cabd3fd51b98624d}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+IV}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae95d79b8cfc28a501dce0f4767e20dc7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga182a17bda5373cb761e1bee891a03477}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf693b6342bd310d59956220a059f6e4a}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+M\+A\+SK}}~0x00\+F\+F\+F\+F0\+Ful
+\begin{DoxyCompactList}\small\item\em (G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR G\+C\+LK 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf59d41452f57905af7c54ef67d5e5349}\label{group___s_a_m_d21___g_c_l_k_gaf59d41452f57905af7c54ef67d5e5349}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_CLKEN@{GCLK\_CLKCTRL\_CLKEN}}
+\index{GCLK\_CLKCTRL\_CLKEN@{GCLK\_CLKCTRL\_CLKEN}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_CLKEN}{GCLK\_CLKCTRL\_CLKEN}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+EN~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga988366053ec34c5f63659a49e0f20d3e}\label{group___s_a_m_d21___g_c_l_k_ga988366053ec34c5f63659a49e0f20d3e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_CLKEN\_Pos@{GCLK\_CLKCTRL\_CLKEN\_Pos}}
+\index{GCLK\_CLKCTRL\_CLKEN\_Pos@{GCLK\_CLKCTRL\_CLKEN\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_CLKEN\_Pos}{GCLK\_CLKCTRL\_CLKEN\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+C\+L\+K\+E\+N\+\_\+\+Pos~14}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Clock Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga78548c9373fc66d3d48155222c508728}\label{group___s_a_m_d21___g_c_l_k_ga78548c9373fc66d3d48155222c508728}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN@{GCLK\_CLKCTRL\_GEN}}
+\index{GCLK\_CLKCTRL\_GEN@{GCLK\_CLKCTRL\_GEN}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN}{GCLK\_CLKCTRL\_GEN}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+EN(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5e33bef05f719c937bab8824ec26ed20}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6a4d655d51f1b3cf37364d7cf3f676b4}\label{group___s_a_m_d21___g_c_l_k_ga6a4d655d51f1b3cf37364d7cf3f676b4}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK0@{GCLK\_CLKCTRL\_GEN\_GCLK0}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK0@{GCLK\_CLKCTRL\_GEN\_GCLK0}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK0}{GCLK\_CLKCTRL\_GEN\_GCLK0}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gace6212456debec86346f66fdd9e345f0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gace6212456debec86346f66fdd9e345f0}\label{group___s_a_m_d21___g_c_l_k_gace6212456debec86346f66fdd9e345f0}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK0\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK0\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK0\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK0\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK0\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK0\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K0\+\_\+\+Val~0x0ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 0 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf7743e399861fff0cc001b53cf033b4d}\label{group___s_a_m_d21___g_c_l_k_gaf7743e399861fff0cc001b53cf033b4d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK1@{GCLK\_CLKCTRL\_GEN\_GCLK1}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK1@{GCLK\_CLKCTRL\_GEN\_GCLK1}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK1}{GCLK\_CLKCTRL\_GEN\_GCLK1}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga272c6846fcd4c313d7cc25dd48c4e46c}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga272c6846fcd4c313d7cc25dd48c4e46c}\label{group___s_a_m_d21___g_c_l_k_ga272c6846fcd4c313d7cc25dd48c4e46c}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK1\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK1\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK1\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK1\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK1\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK1\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K1\+\_\+\+Val~0x1ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 1 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae4b72e89dfafc309aa02915fa1ee463b}\label{group___s_a_m_d21___g_c_l_k_gae4b72e89dfafc309aa02915fa1ee463b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK2@{GCLK\_CLKCTRL\_GEN\_GCLK2}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK2@{GCLK\_CLKCTRL\_GEN\_GCLK2}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK2}{GCLK\_CLKCTRL\_GEN\_GCLK2}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga01572700eb8f9b256b2823b08d413467}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga01572700eb8f9b256b2823b08d413467}\label{group___s_a_m_d21___g_c_l_k_ga01572700eb8f9b256b2823b08d413467}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK2\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK2\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK2\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK2\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK2\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK2\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K2\+\_\+\+Val~0x2ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 2 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7cf498a0e03dcb86cc24dbbc79c6c076}\label{group___s_a_m_d21___g_c_l_k_ga7cf498a0e03dcb86cc24dbbc79c6c076}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK3@{GCLK\_CLKCTRL\_GEN\_GCLK3}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK3@{GCLK\_CLKCTRL\_GEN\_GCLK3}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK3}{GCLK\_CLKCTRL\_GEN\_GCLK3}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac93b1c3cf93221ec87c773f5b2fa87e4}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gac93b1c3cf93221ec87c773f5b2fa87e4}\label{group___s_a_m_d21___g_c_l_k_gac93b1c3cf93221ec87c773f5b2fa87e4}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK3\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK3\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK3\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK3\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK3\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK3\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K3\+\_\+\+Val~0x3ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 3 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1b6febf4fe9842823e99663cc13ee0fd}\label{group___s_a_m_d21___g_c_l_k_ga1b6febf4fe9842823e99663cc13ee0fd}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK4@{GCLK\_CLKCTRL\_GEN\_GCLK4}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK4@{GCLK\_CLKCTRL\_GEN\_GCLK4}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK4}{GCLK\_CLKCTRL\_GEN\_GCLK4}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga9cab1760fd8855cd9e9b6d78279dd090}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga9cab1760fd8855cd9e9b6d78279dd090}\label{group___s_a_m_d21___g_c_l_k_ga9cab1760fd8855cd9e9b6d78279dd090}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK4\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK4\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK4\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK4\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK4\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK4\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K4\+\_\+\+Val~0x4ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 4 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5d2ab62c417f641f9c0050b64ef35696}\label{group___s_a_m_d21___g_c_l_k_ga5d2ab62c417f641f9c0050b64ef35696}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK5@{GCLK\_CLKCTRL\_GEN\_GCLK5}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK5@{GCLK\_CLKCTRL\_GEN\_GCLK5}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK5}{GCLK\_CLKCTRL\_GEN\_GCLK5}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga14e18a1b5c8919f1a3e8c679b3b17f9d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga14e18a1b5c8919f1a3e8c679b3b17f9d}\label{group___s_a_m_d21___g_c_l_k_ga14e18a1b5c8919f1a3e8c679b3b17f9d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK5\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK5\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK5\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK5\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK5\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK5\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K5\+\_\+\+Val~0x5ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 5 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6cd3d90c7a49aee40e1b8157b3eb516a}\label{group___s_a_m_d21___g_c_l_k_ga6cd3d90c7a49aee40e1b8157b3eb516a}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK6@{GCLK\_CLKCTRL\_GEN\_GCLK6}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK6@{GCLK\_CLKCTRL\_GEN\_GCLK6}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK6}{GCLK\_CLKCTRL\_GEN\_GCLK6}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaffc6f215a6671305caaeb6f9e38264d6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaffc6f215a6671305caaeb6f9e38264d6}\label{group___s_a_m_d21___g_c_l_k_gaffc6f215a6671305caaeb6f9e38264d6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK6\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK6\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK6\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK6\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK6\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK6\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K6\+\_\+\+Val~0x6ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 6 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae42e43dfe46961959902cb893ce69121}\label{group___s_a_m_d21___g_c_l_k_gae42e43dfe46961959902cb893ce69121}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK7@{GCLK\_CLKCTRL\_GEN\_GCLK7}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK7@{GCLK\_CLKCTRL\_GEN\_GCLK7}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK7}{GCLK\_CLKCTRL\_GEN\_GCLK7}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf0ef8769af1146d5f756a515bba69892}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf0ef8769af1146d5f756a515bba69892}\label{group___s_a_m_d21___g_c_l_k_gaf0ef8769af1146d5f756a515bba69892}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_GCLK7\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK7\_Val}}
+\index{GCLK\_CLKCTRL\_GEN\_GCLK7\_Val@{GCLK\_CLKCTRL\_GEN\_GCLK7\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_GCLK7\_Val}{GCLK\_CLKCTRL\_GEN\_GCLK7\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+G\+C\+L\+K7\+\_\+\+Val~0x7ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic clock generator 7 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5e33bef05f719c937bab8824ec26ed20}\label{group___s_a_m_d21___g_c_l_k_ga5e33bef05f719c937bab8824ec26ed20}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_Msk@{GCLK\_CLKCTRL\_GEN\_Msk}}
+\index{GCLK\_CLKCTRL\_GEN\_Msk@{GCLK\_CLKCTRL\_GEN\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_Msk}{GCLK\_CLKCTRL\_GEN\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Msk~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}\label{group___s_a_m_d21___g_c_l_k_gae80d1faef3b42edf73de73feef846841}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_GEN\_Pos@{GCLK\_CLKCTRL\_GEN\_Pos}}
+\index{GCLK\_CLKCTRL\_GEN\_Pos@{GCLK\_CLKCTRL\_GEN\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_GEN\_Pos}{GCLK\_CLKCTRL\_GEN\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+G\+E\+N\+\_\+\+Pos~8}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic Clock Generator 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6ca62f336958b605840843748ae83806}\label{group___s_a_m_d21___g_c_l_k_ga6ca62f336958b605840843748ae83806}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID@{GCLK\_CLKCTRL\_ID}}
+\index{GCLK\_CLKCTRL\_ID@{GCLK\_CLKCTRL\_ID}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID}{GCLK\_CLKCTRL\_ID}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+ID(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gacfb6324cf6ce3d532d189e935af7eab1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad49f926f054ba98edb18f7d010a955f4}\label{group___s_a_m_d21___g_c_l_k_gad49f926f054ba98edb18f7d010a955f4}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_AC\_ANA@{GCLK\_CLKCTRL\_ID\_AC\_ANA}}
+\index{GCLK\_CLKCTRL\_ID\_AC\_ANA@{GCLK\_CLKCTRL\_ID\_AC\_ANA}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_AC\_ANA}{GCLK\_CLKCTRL\_ID\_AC\_ANA}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+NA~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a296324385e4617069890aa675632ff}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+N\+A\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5a296324385e4617069890aa675632ff}\label{group___s_a_m_d21___g_c_l_k_ga5a296324385e4617069890aa675632ff}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val@{GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val@{GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val}{GCLK\_CLKCTRL\_ID\_AC\_ANA\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+A\+N\+A\+\_\+\+Val~0x20ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+C\+\_\+\+A\+NA 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga3d7ccc160db5a2cb9f19e79869b88539}\label{group___s_a_m_d21___g_c_l_k_ga3d7ccc160db5a2cb9f19e79869b88539}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_AC\_DIG@{GCLK\_CLKCTRL\_ID\_AC\_DIG}}
+\index{GCLK\_CLKCTRL\_ID\_AC\_DIG@{GCLK\_CLKCTRL\_ID\_AC\_DIG}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_AC\_DIG}{GCLK\_CLKCTRL\_ID\_AC\_DIG}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+IG~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4f314ff01d05a73788706a3e0cf98363}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+I\+G\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4f314ff01d05a73788706a3e0cf98363}\label{group___s_a_m_d21___g_c_l_k_ga4f314ff01d05a73788706a3e0cf98363}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val@{GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val@{GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val}{GCLK\_CLKCTRL\_ID\_AC\_DIG\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+C\+\_\+\+D\+I\+G\+\_\+\+Val~0x1\+Ful}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+C\+\_\+\+D\+IG 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad652342e4d51127ddc598eccd3cb0af6}\label{group___s_a_m_d21___g_c_l_k_gad652342e4d51127ddc598eccd3cb0af6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_ADC@{GCLK\_CLKCTRL\_ID\_ADC}}
+\index{GCLK\_CLKCTRL\_ID\_ADC@{GCLK\_CLKCTRL\_ID\_ADC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_ADC}{GCLK\_CLKCTRL\_ID\_ADC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+DC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafa044a1103ba6b6a8bc6d7f7d44c4cea}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+D\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gafa044a1103ba6b6a8bc6d7f7d44c4cea}\label{group___s_a_m_d21___g_c_l_k_gafa044a1103ba6b6a8bc6d7f7d44c4cea}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_ADC\_Val@{GCLK\_CLKCTRL\_ID\_ADC\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_ADC\_Val@{GCLK\_CLKCTRL\_ID\_ADC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_ADC\_Val}{GCLK\_CLKCTRL\_ID\_ADC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+A\+D\+C\+\_\+\+Val~0x1\+Eul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) A\+DC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae348ba128f8ec10c82cef8959ed5b11f}\label{group___s_a_m_d21___g_c_l_k_gae348ba128f8ec10c82cef8959ed5b11f}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_DAC@{GCLK\_CLKCTRL\_ID\_DAC}}
+\index{GCLK\_CLKCTRL\_ID\_DAC@{GCLK\_CLKCTRL\_ID\_DAC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_DAC}{GCLK\_CLKCTRL\_ID\_DAC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+AC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1dc77a3784a3e8021336bbe6a492ebe0}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+A\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1dc77a3784a3e8021336bbe6a492ebe0}\label{group___s_a_m_d21___g_c_l_k_ga1dc77a3784a3e8021336bbe6a492ebe0}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_DAC\_Val@{GCLK\_CLKCTRL\_ID\_DAC\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_DAC\_Val@{GCLK\_CLKCTRL\_ID\_DAC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_DAC\_Val}{GCLK\_CLKCTRL\_ID\_DAC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+A\+C\+\_\+\+Val~0x21ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) D\+AC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2bfe3f168083a5cea3e4d121050f204b}\label{group___s_a_m_d21___g_c_l_k_ga2bfe3f168083a5cea3e4d121050f204b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_DFLL48@{GCLK\_CLKCTRL\_ID\_DFLL48}}
+\index{GCLK\_CLKCTRL\_ID\_DFLL48@{GCLK\_CLKCTRL\_ID\_DFLL48}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_DFLL48}{GCLK\_CLKCTRL\_ID\_DFLL48}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab1b72b8b751c1bd1d0994d731a79ee82}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gab1b72b8b751c1bd1d0994d731a79ee82}\label{group___s_a_m_d21___g_c_l_k_gab1b72b8b751c1bd1d0994d731a79ee82}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_DFLL48\_Val@{GCLK\_CLKCTRL\_ID\_DFLL48\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_DFLL48\_Val@{GCLK\_CLKCTRL\_ID\_DFLL48\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_DFLL48\_Val}{GCLK\_CLKCTRL\_ID\_DFLL48\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+D\+F\+L\+L48\+\_\+\+Val~0x0ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) D\+F\+L\+L48 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad77060cfb0eb7327062765a6d48c7b07}\label{group___s_a_m_d21___g_c_l_k_gad77060cfb0eb7327062765a6d48c7b07}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EIC@{GCLK\_CLKCTRL\_ID\_EIC}}
+\index{GCLK\_CLKCTRL\_ID\_EIC@{GCLK\_CLKCTRL\_ID\_EIC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EIC}{GCLK\_CLKCTRL\_ID\_EIC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+IC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad482e84c3781695e980c8d1bcb9300f6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+I\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad482e84c3781695e980c8d1bcb9300f6}\label{group___s_a_m_d21___g_c_l_k_gad482e84c3781695e980c8d1bcb9300f6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EIC\_Val@{GCLK\_CLKCTRL\_ID\_EIC\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EIC\_Val@{GCLK\_CLKCTRL\_ID\_EIC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EIC\_Val}{GCLK\_CLKCTRL\_ID\_EIC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+I\+C\+\_\+\+Val~0x5ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+IC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga3a091994ea0d246cac926f9387f5f60e}\label{group___s_a_m_d21___g_c_l_k_ga3a091994ea0d246cac926f9387f5f60e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_0@{GCLK\_CLKCTRL\_ID\_EVSYS\_0}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_0@{GCLK\_CLKCTRL\_ID\_EVSYS\_0}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_0}{GCLK\_CLKCTRL\_ID\_EVSYS\_0}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga24b8d07991d73b984d3ee5dbbfa43de1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga24b8d07991d73b984d3ee5dbbfa43de1}\label{group___s_a_m_d21___g_c_l_k_ga24b8d07991d73b984d3ee5dbbfa43de1}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_0\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+0\+\_\+\+Val~0x7ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+0 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7b413cbf9a0a4a5261a629ff4b02eb1d}\label{group___s_a_m_d21___g_c_l_k_ga7b413cbf9a0a4a5261a629ff4b02eb1d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_1@{GCLK\_CLKCTRL\_ID\_EVSYS\_1}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_1@{GCLK\_CLKCTRL\_ID\_EVSYS\_1}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_1}{GCLK\_CLKCTRL\_ID\_EVSYS\_1}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga33cf2ca39bd86e29c71d2d46e23419b5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1b7252db50ef7df848058c9260c5d0b6}\label{group___s_a_m_d21___g_c_l_k_ga1b7252db50ef7df848058c9260c5d0b6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_10@{GCLK\_CLKCTRL\_ID\_EVSYS\_10}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_10@{GCLK\_CLKCTRL\_ID\_EVSYS\_10}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_10}{GCLK\_CLKCTRL\_ID\_EVSYS\_10}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a5dad9a02f829080ec0d0c07e0f44a5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4a5dad9a02f829080ec0d0c07e0f44a5}\label{group___s_a_m_d21___g_c_l_k_ga4a5dad9a02f829080ec0d0c07e0f44a5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_10\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+10\+\_\+\+Val~0x11ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+10 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga01be2101b081be2ba462c3f0ba75b8b5}\label{group___s_a_m_d21___g_c_l_k_ga01be2101b081be2ba462c3f0ba75b8b5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_11@{GCLK\_CLKCTRL\_ID\_EVSYS\_11}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_11@{GCLK\_CLKCTRL\_ID\_EVSYS\_11}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_11}{GCLK\_CLKCTRL\_ID\_EVSYS\_11}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae046a3b63da8327bfa71268d66b516eb}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae046a3b63da8327bfa71268d66b516eb}\label{group___s_a_m_d21___g_c_l_k_gae046a3b63da8327bfa71268d66b516eb}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_11\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+11\+\_\+\+Val~0x12ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+11 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga33cf2ca39bd86e29c71d2d46e23419b5}\label{group___s_a_m_d21___g_c_l_k_ga33cf2ca39bd86e29c71d2d46e23419b5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_1\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+1\+\_\+\+Val~0x8ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+1 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga130e1eafd6a515744428291c962bb3c3}\label{group___s_a_m_d21___g_c_l_k_ga130e1eafd6a515744428291c962bb3c3}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_2@{GCLK\_CLKCTRL\_ID\_EVSYS\_2}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_2@{GCLK\_CLKCTRL\_ID\_EVSYS\_2}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_2}{GCLK\_CLKCTRL\_ID\_EVSYS\_2}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2a41efb893147142a523da4ffd9b6e4e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2a41efb893147142a523da4ffd9b6e4e}\label{group___s_a_m_d21___g_c_l_k_ga2a41efb893147142a523da4ffd9b6e4e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_2\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+2\+\_\+\+Val~0x9ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+2 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga08ec8d0eddcfaeefdfb1cec9fac63fd8}\label{group___s_a_m_d21___g_c_l_k_ga08ec8d0eddcfaeefdfb1cec9fac63fd8}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_3@{GCLK\_CLKCTRL\_ID\_EVSYS\_3}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_3@{GCLK\_CLKCTRL\_ID\_EVSYS\_3}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_3}{GCLK\_CLKCTRL\_ID\_EVSYS\_3}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf3e4dae1c92305f72ab76d6574385b69}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf3e4dae1c92305f72ab76d6574385b69}\label{group___s_a_m_d21___g_c_l_k_gaf3e4dae1c92305f72ab76d6574385b69}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_3\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+3\+\_\+\+Val~0x\+Aul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+3 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga9059252b9702e6519e9b4b20690cfd69}\label{group___s_a_m_d21___g_c_l_k_ga9059252b9702e6519e9b4b20690cfd69}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_4@{GCLK\_CLKCTRL\_ID\_EVSYS\_4}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_4@{GCLK\_CLKCTRL\_ID\_EVSYS\_4}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_4}{GCLK\_CLKCTRL\_ID\_EVSYS\_4}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga25bf241f7a00a504aeff5f694369c419}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga25bf241f7a00a504aeff5f694369c419}\label{group___s_a_m_d21___g_c_l_k_ga25bf241f7a00a504aeff5f694369c419}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_4\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+4\+\_\+\+Val~0x\+Bul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+4 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gabc156b1d73efa6d1ead344ecfe1416ef}\label{group___s_a_m_d21___g_c_l_k_gabc156b1d73efa6d1ead344ecfe1416ef}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_5@{GCLK\_CLKCTRL\_ID\_EVSYS\_5}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_5@{GCLK\_CLKCTRL\_ID\_EVSYS\_5}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_5}{GCLK\_CLKCTRL\_ID\_EVSYS\_5}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga40c7990c5913976e60b394ef65aa506e}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga40c7990c5913976e60b394ef65aa506e}\label{group___s_a_m_d21___g_c_l_k_ga40c7990c5913976e60b394ef65aa506e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_5\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+5\+\_\+\+Val~0x\+Cul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+5 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2f124b5ee8e55d71761a4601fa0d4787}\label{group___s_a_m_d21___g_c_l_k_ga2f124b5ee8e55d71761a4601fa0d4787}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_6@{GCLK\_CLKCTRL\_ID\_EVSYS\_6}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_6@{GCLK\_CLKCTRL\_ID\_EVSYS\_6}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_6}{GCLK\_CLKCTRL\_ID\_EVSYS\_6}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5c81fa460cfafd2cc80c0b65a7159b02}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5c81fa460cfafd2cc80c0b65a7159b02}\label{group___s_a_m_d21___g_c_l_k_ga5c81fa460cfafd2cc80c0b65a7159b02}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_6\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+6\+\_\+\+Val~0x\+Dul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+6 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2ca3f1951c516276e97377372375edd7}\label{group___s_a_m_d21___g_c_l_k_ga2ca3f1951c516276e97377372375edd7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_7@{GCLK\_CLKCTRL\_ID\_EVSYS\_7}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_7@{GCLK\_CLKCTRL\_ID\_EVSYS\_7}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_7}{GCLK\_CLKCTRL\_ID\_EVSYS\_7}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5473e48e8fafbc87545b3363feda6e0b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5473e48e8fafbc87545b3363feda6e0b}\label{group___s_a_m_d21___g_c_l_k_ga5473e48e8fafbc87545b3363feda6e0b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_7\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+7\+\_\+\+Val~0x\+Eul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+7 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae68e3b6b3fa982dafd72b1aab6dc8a5e}\label{group___s_a_m_d21___g_c_l_k_gae68e3b6b3fa982dafd72b1aab6dc8a5e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_8@{GCLK\_CLKCTRL\_ID\_EVSYS\_8}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_8@{GCLK\_CLKCTRL\_ID\_EVSYS\_8}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_8}{GCLK\_CLKCTRL\_ID\_EVSYS\_8}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4ec8917d7084d3f9634881abd59e9976}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4ec8917d7084d3f9634881abd59e9976}\label{group___s_a_m_d21___g_c_l_k_ga4ec8917d7084d3f9634881abd59e9976}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_8\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+8\+\_\+\+Val~0x\+Ful}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+8 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4ede600281c007318b45ec1e089261c9}\label{group___s_a_m_d21___g_c_l_k_ga4ede600281c007318b45ec1e089261c9}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_9@{GCLK\_CLKCTRL\_ID\_EVSYS\_9}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_9@{GCLK\_CLKCTRL\_ID\_EVSYS\_9}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_9}{GCLK\_CLKCTRL\_ID\_EVSYS\_9}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa16d3052520645978635ac4c5cf7cae6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa16d3052520645978635ac4c5cf7cae6}\label{group___s_a_m_d21___g_c_l_k_gaa16d3052520645978635ac4c5cf7cae6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val@{GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val}{GCLK\_CLKCTRL\_ID\_EVSYS\_9\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+E\+V\+S\+Y\+S\+\_\+9\+\_\+\+Val~0x10ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) E\+V\+S\+Y\+S\+\_\+9 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa752be57793ed4297614f3263a179604}\label{group___s_a_m_d21___g_c_l_k_gaa752be57793ed4297614f3263a179604}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_FDPLL@{GCLK\_CLKCTRL\_ID\_FDPLL}}
+\index{GCLK\_CLKCTRL\_ID\_FDPLL@{GCLK\_CLKCTRL\_ID\_FDPLL}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_FDPLL}{GCLK\_CLKCTRL\_ID\_FDPLL}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+LL~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga63b5e4e7d95cdf03dda642e327ed47f5}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae4e4e5bd7bae453e5f9c6ed591f5c73f}\label{group___s_a_m_d21___g_c_l_k_gae4e4e5bd7bae453e5f9c6ed591f5c73f}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_FDPLL32K@{GCLK\_CLKCTRL\_ID\_FDPLL32K}}
+\index{GCLK\_CLKCTRL\_ID\_FDPLL32K@{GCLK\_CLKCTRL\_ID\_FDPLL32K}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_FDPLL32K}{GCLK\_CLKCTRL\_ID\_FDPLL32K}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32K~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab8b800b562675cc84f402818aebcd947}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32\+K\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gab8b800b562675cc84f402818aebcd947}\label{group___s_a_m_d21___g_c_l_k_gab8b800b562675cc84f402818aebcd947}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val@{GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val@{GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val}{GCLK\_CLKCTRL\_ID\_FDPLL32K\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L32\+K\+\_\+\+Val~0x2ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) F\+D\+P\+L\+L32K 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga63b5e4e7d95cdf03dda642e327ed47f5}\label{group___s_a_m_d21___g_c_l_k_ga63b5e4e7d95cdf03dda642e327ed47f5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_FDPLL\_Val@{GCLK\_CLKCTRL\_ID\_FDPLL\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_FDPLL\_Val@{GCLK\_CLKCTRL\_ID\_FDPLL\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_FDPLL\_Val}{GCLK\_CLKCTRL\_ID\_FDPLL\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val~0x1ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) F\+D\+P\+LL 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga49631bf6e4807e2bf1620ddc193fef27}\label{group___s_a_m_d21___g_c_l_k_ga49631bf6e4807e2bf1620ddc193fef27}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_I2S\_0@{GCLK\_CLKCTRL\_ID\_I2S\_0}}
+\index{GCLK\_CLKCTRL\_ID\_I2S\_0@{GCLK\_CLKCTRL\_ID\_I2S\_0}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_I2S\_0}{GCLK\_CLKCTRL\_ID\_I2S\_0}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6f4f283f31ba4afece3ce58302c3eca7}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6f4f283f31ba4afece3ce58302c3eca7}\label{group___s_a_m_d21___g_c_l_k_ga6f4f283f31ba4afece3ce58302c3eca7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_I2S\_0\_Val@{GCLK\_CLKCTRL\_ID\_I2S\_0\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_I2S\_0\_Val@{GCLK\_CLKCTRL\_ID\_I2S\_0\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_I2S\_0\_Val}{GCLK\_CLKCTRL\_ID\_I2S\_0\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+0\+\_\+\+Val~0x23ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) I2\+S\+\_\+0 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2dcb44e7dcd4149f8672baf08dd8de8d}\label{group___s_a_m_d21___g_c_l_k_ga2dcb44e7dcd4149f8672baf08dd8de8d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_I2S\_1@{GCLK\_CLKCTRL\_ID\_I2S\_1}}
+\index{GCLK\_CLKCTRL\_ID\_I2S\_1@{GCLK\_CLKCTRL\_ID\_I2S\_1}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_I2S\_1}{GCLK\_CLKCTRL\_ID\_I2S\_1}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gab85ca6d48229a8290fe2c5d57e8c2396}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gab85ca6d48229a8290fe2c5d57e8c2396}\label{group___s_a_m_d21___g_c_l_k_gab85ca6d48229a8290fe2c5d57e8c2396}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_I2S\_1\_Val@{GCLK\_CLKCTRL\_ID\_I2S\_1\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_I2S\_1\_Val@{GCLK\_CLKCTRL\_ID\_I2S\_1\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_I2S\_1\_Val}{GCLK\_CLKCTRL\_ID\_I2S\_1\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+I2\+S\+\_\+1\+\_\+\+Val~0x24ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) I2\+S\+\_\+1 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gacfb6324cf6ce3d532d189e935af7eab1}\label{group___s_a_m_d21___g_c_l_k_gacfb6324cf6ce3d532d189e935af7eab1}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_Msk@{GCLK\_CLKCTRL\_ID\_Msk}}
+\index{GCLK\_CLKCTRL\_ID\_Msk@{GCLK\_CLKCTRL\_ID\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_Msk}{GCLK\_CLKCTRL\_ID\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk~(0x3\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}\label{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_Pos@{GCLK\_CLKCTRL\_ID\_Pos}}
+\index{GCLK\_CLKCTRL\_ID\_Pos@{GCLK\_CLKCTRL\_ID\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_Pos}{GCLK\_CLKCTRL\_ID\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos~0}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Generic Clock Selection ID 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga98870a8ee31be24b60b67a5253a5fa2a}\label{group___s_a_m_d21___g_c_l_k_ga98870a8ee31be24b60b67a5253a5fa2a}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_PTC@{GCLK\_CLKCTRL\_ID\_PTC}}
+\index{GCLK\_CLKCTRL\_ID\_PTC@{GCLK\_CLKCTRL\_ID\_PTC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_PTC}{GCLK\_CLKCTRL\_ID\_PTC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+TC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gac44e99202775c88a813b1416a66c7469}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+T\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gac44e99202775c88a813b1416a66c7469}\label{group___s_a_m_d21___g_c_l_k_gac44e99202775c88a813b1416a66c7469}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_PTC\_Val@{GCLK\_CLKCTRL\_ID\_PTC\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_PTC\_Val@{GCLK\_CLKCTRL\_ID\_PTC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_PTC\_Val}{GCLK\_CLKCTRL\_ID\_PTC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+P\+T\+C\+\_\+\+Val~0x22ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) P\+TC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga9f6d0b84756809caf3a79dc6365c92b1}\label{group___s_a_m_d21___g_c_l_k_ga9f6d0b84756809caf3a79dc6365c92b1}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_RTC@{GCLK\_CLKCTRL\_ID\_RTC}}
+\index{GCLK\_CLKCTRL\_ID\_RTC@{GCLK\_CLKCTRL\_ID\_RTC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_RTC}{GCLK\_CLKCTRL\_ID\_RTC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+TC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa79509ffa7f18da70d4ae344a3d3d70b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+T\+C\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa79509ffa7f18da70d4ae344a3d3d70b}\label{group___s_a_m_d21___g_c_l_k_gaa79509ffa7f18da70d4ae344a3d3d70b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_RTC\_Val@{GCLK\_CLKCTRL\_ID\_RTC\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_RTC\_Val@{GCLK\_CLKCTRL\_ID\_RTC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_RTC\_Val}{GCLK\_CLKCTRL\_ID\_RTC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+R\+T\+C\+\_\+\+Val~0x4ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) R\+TC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga86630fdf442f4facc7163cb9aa75f9d1}\label{group___s_a_m_d21___g_c_l_k_ga86630fdf442f4facc7163cb9aa75f9d1}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaa73a1f52ac12d73c9b415d0cf7c129d8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa73a1f52ac12d73c9b415d0cf7c129d8}\label{group___s_a_m_d21___g_c_l_k_gaa73a1f52ac12d73c9b415d0cf7c129d8}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM0\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x14ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M0\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gafe689938b955391c668778733840ecd3}\label{group___s_a_m_d21___g_c_l_k_gafe689938b955391c668778733840ecd3}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga687c5b5b6f9d24d699c20826dae07ea1}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga687c5b5b6f9d24d699c20826dae07ea1}\label{group___s_a_m_d21___g_c_l_k_ga687c5b5b6f9d24d699c20826dae07ea1}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM1\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x15ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M1\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gac59ac7a1db5f20ac4713e9a0a6ac8213}\label{group___s_a_m_d21___g_c_l_k_gac59ac7a1db5f20ac4713e9a0a6ac8213}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6c190884b0ecb6df1e282e9f52fc9625}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6c190884b0ecb6df1e282e9f52fc9625}\label{group___s_a_m_d21___g_c_l_k_ga6c190884b0ecb6df1e282e9f52fc9625}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM2\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x16ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M2\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga69a0eb6cd690c2289c8f89983369f0f5}\label{group___s_a_m_d21___g_c_l_k_ga69a0eb6cd690c2289c8f89983369f0f5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gafd61fc115b2df35b8362117d56e585f8}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gafd61fc115b2df35b8362117d56e585f8}\label{group___s_a_m_d21___g_c_l_k_gafd61fc115b2df35b8362117d56e585f8}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM3\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x17ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M3\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga3f65493fe90eff0eb5ae50293a7d00e4}\label{group___s_a_m_d21___g_c_l_k_ga3f65493fe90eff0eb5ae50293a7d00e4}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6abe19ed53416097da5b95e3dca3d98d}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6abe19ed53416097da5b95e3dca3d98d}\label{group___s_a_m_d21___g_c_l_k_ga6abe19ed53416097da5b95e3dca3d98d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM4\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x18ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M4\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa959102644aa8515990b2dc2907fa87e}\label{group___s_a_m_d21___g_c_l_k_gaa959102644aa8515990b2dc2907fa87e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE@{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE}{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+RE~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gadf32722a43710ff062d0581131ed71df}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+R\+E\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gadf32722a43710ff062d0581131ed71df}\label{group___s_a_m_d21___g_c_l_k_gadf32722a43710ff062d0581131ed71df}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val@{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val}{GCLK\_CLKCTRL\_ID\_SERCOM5\_CORE\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+R\+E\+\_\+\+Val~0x19ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M5\+\_\+\+C\+O\+RE 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7279413efcc5ac32980861d9429c706c}\label{group___s_a_m_d21___g_c_l_k_ga7279413efcc5ac32980861d9429c706c}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW@{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW@{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW}{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+OW~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga153a5b6024c662b8f816b368ccd1bdc6}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+O\+W\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga153a5b6024c662b8f816b368ccd1bdc6}\label{group___s_a_m_d21___g_c_l_k_ga153a5b6024c662b8f816b368ccd1bdc6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val@{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val@{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val}{GCLK\_CLKCTRL\_ID\_SERCOMX\_SLOW\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+O\+W\+\_\+\+Val~0x13ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) S\+E\+R\+C\+O\+M\+X\+\_\+\+S\+L\+OW 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5316e2928a72fe2b59814f09a6b3f498}\label{group___s_a_m_d21___g_c_l_k_ga5316e2928a72fe2b59814f09a6b3f498}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TC4\_TC5@{GCLK\_CLKCTRL\_ID\_TC4\_TC5}}
+\index{GCLK\_CLKCTRL\_ID\_TC4\_TC5@{GCLK\_CLKCTRL\_ID\_TC4\_TC5}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TC4\_TC5}{GCLK\_CLKCTRL\_ID\_TC4\_TC5}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga6e2e800404f3b2e6948ced5f489aa557}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6e2e800404f3b2e6948ced5f489aa557}\label{group___s_a_m_d21___g_c_l_k_ga6e2e800404f3b2e6948ced5f489aa557}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val@{GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val@{GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val}{GCLK\_CLKCTRL\_ID\_TC4\_TC5\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C4\+\_\+\+T\+C5\+\_\+\+Val~0x1\+Cul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C4\+\_\+\+T\+C5 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga34f73ae7c50fbe4bbffc3e3a8836786a}\label{group___s_a_m_d21___g_c_l_k_ga34f73ae7c50fbe4bbffc3e3a8836786a}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TC6\_TC7@{GCLK\_CLKCTRL\_ID\_TC6\_TC7}}
+\index{GCLK\_CLKCTRL\_ID\_TC6\_TC7@{GCLK\_CLKCTRL\_ID\_TC6\_TC7}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TC6\_TC7}{GCLK\_CLKCTRL\_ID\_TC6\_TC7}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga540d3e213ae8c696000670dbc1ea3721}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga540d3e213ae8c696000670dbc1ea3721}\label{group___s_a_m_d21___g_c_l_k_ga540d3e213ae8c696000670dbc1ea3721}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val@{GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val@{GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val}{GCLK\_CLKCTRL\_ID\_TC6\_TC7\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C6\+\_\+\+T\+C7\+\_\+\+Val~0x1\+Dul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C6\+\_\+\+T\+C7 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga8e0a203b672c5344e8e9cad84d5a6f9e}\label{group___s_a_m_d21___g_c_l_k_ga8e0a203b672c5344e8e9cad84d5a6f9e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TCC0\_TCC1@{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1}}
+\index{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1@{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1}{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga186870cd8d31d127b17008e778ab1599}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga186870cd8d31d127b17008e778ab1599}\label{group___s_a_m_d21___g_c_l_k_ga186870cd8d31d127b17008e778ab1599}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val@{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val@{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val}{GCLK\_CLKCTRL\_ID\_TCC0\_TCC1\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C0\+\_\+\+T\+C\+C1\+\_\+\+Val~0x1\+Aul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C\+C0\+\_\+\+T\+C\+C1 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gac1cb609eb4263251367be6d5ce60e528}\label{group___s_a_m_d21___g_c_l_k_gac1cb609eb4263251367be6d5ce60e528}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TCC2\_TC3@{GCLK\_CLKCTRL\_ID\_TCC2\_TC3}}
+\index{GCLK\_CLKCTRL\_ID\_TCC2\_TC3@{GCLK\_CLKCTRL\_ID\_TCC2\_TC3}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TCC2\_TC3}{GCLK\_CLKCTRL\_ID\_TCC2\_TC3}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga855fa017d163420dc1a347eb24876d65}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga855fa017d163420dc1a347eb24876d65}\label{group___s_a_m_d21___g_c_l_k_ga855fa017d163420dc1a347eb24876d65}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val@{GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val@{GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val}{GCLK\_CLKCTRL\_ID\_TCC2\_TC3\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+T\+C\+C2\+\_\+\+T\+C3\+\_\+\+Val~0x1\+Bul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) T\+C\+C2\+\_\+\+T\+C3 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga8260e7bdb03e8421e8e8aeeafcc073f3}\label{group___s_a_m_d21___g_c_l_k_ga8260e7bdb03e8421e8e8aeeafcc073f3}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_USB@{GCLK\_CLKCTRL\_ID\_USB}}
+\index{GCLK\_CLKCTRL\_ID\_USB@{GCLK\_CLKCTRL\_ID\_USB}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_USB}{GCLK\_CLKCTRL\_ID\_USB}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+SB~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5bff2fb927a4b63837aec5ea464ba61b}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+S\+B\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5bff2fb927a4b63837aec5ea464ba61b}\label{group___s_a_m_d21___g_c_l_k_ga5bff2fb927a4b63837aec5ea464ba61b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_USB\_Val@{GCLK\_CLKCTRL\_ID\_USB\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_USB\_Val@{GCLK\_CLKCTRL\_ID\_USB\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_USB\_Val}{GCLK\_CLKCTRL\_ID\_USB\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+U\+S\+B\+\_\+\+Val~0x6ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) U\+SB 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad1d23dd963c350b90a57071774226139}\label{group___s_a_m_d21___g_c_l_k_gad1d23dd963c350b90a57071774226139}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_WDT@{GCLK\_CLKCTRL\_ID\_WDT}}
+\index{GCLK\_CLKCTRL\_ID\_WDT@{GCLK\_CLKCTRL\_ID\_WDT}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_WDT}{GCLK\_CLKCTRL\_ID\_WDT}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+DT~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gaf55824f940b869be173bf84b368d5107}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+D\+T\+\_\+\+Val}}       $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga882860b306b819b8bb342bebd55c23aa}{G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf55824f940b869be173bf84b368d5107}\label{group___s_a_m_d21___g_c_l_k_gaf55824f940b869be173bf84b368d5107}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_ID\_WDT\_Val@{GCLK\_CLKCTRL\_ID\_WDT\_Val}}
+\index{GCLK\_CLKCTRL\_ID\_WDT\_Val@{GCLK\_CLKCTRL\_ID\_WDT\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_ID\_WDT\_Val}{GCLK\_CLKCTRL\_ID\_WDT\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+W\+D\+T\+\_\+\+Val~0x3ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) W\+DT 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7cd3bae1a32142ecb56cff34f18b856f}\label{group___s_a_m_d21___g_c_l_k_ga7cd3bae1a32142ecb56cff34f18b856f}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_MASK@{GCLK\_CLKCTRL\_MASK}}
+\index{GCLK\_CLKCTRL\_MASK@{GCLK\_CLKCTRL\_MASK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_MASK}{GCLK\_CLKCTRL\_MASK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x\+C\+F3\+Ful}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga8a266827d508cecf79c9b27ab8596f0f}\label{group___s_a_m_d21___g_c_l_k_ga8a266827d508cecf79c9b27ab8596f0f}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_OFFSET@{GCLK\_CLKCTRL\_OFFSET}}
+\index{GCLK\_CLKCTRL\_OFFSET@{GCLK\_CLKCTRL\_OFFSET}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_OFFSET}{GCLK\_CLKCTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x2}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL offset) Generic Clock Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad11334da452920f4d446c1615751b8c8}\label{group___s_a_m_d21___g_c_l_k_gad11334da452920f4d446c1615751b8c8}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_RESETVALUE@{GCLK\_CLKCTRL\_RESETVALUE}}
+\index{GCLK\_CLKCTRL\_RESETVALUE@{GCLK\_CLKCTRL\_RESETVALUE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_RESETVALUE}{GCLK\_CLKCTRL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x0000ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL reset\+\_\+value) Generic Clock Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf103e645170000a9aa8af219a63d54c5}\label{group___s_a_m_d21___g_c_l_k_gaf103e645170000a9aa8af219a63d54c5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_WRTLOCK@{GCLK\_CLKCTRL\_WRTLOCK}}
+\index{GCLK\_CLKCTRL\_WRTLOCK@{GCLK\_CLKCTRL\_WRTLOCK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_WRTLOCK}{GCLK\_CLKCTRL\_WRTLOCK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+CK~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+C\+K\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga380347dc132352716e030880aba8b807}\label{group___s_a_m_d21___g_c_l_k_ga380347dc132352716e030880aba8b807}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CLKCTRL\_WRTLOCK\_Pos@{GCLK\_CLKCTRL\_WRTLOCK\_Pos}}
+\index{GCLK\_CLKCTRL\_WRTLOCK\_Pos@{GCLK\_CLKCTRL\_WRTLOCK\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CLKCTRL\_WRTLOCK\_Pos}{GCLK\_CLKCTRL\_WRTLOCK\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+R\+L\+\_\+\+W\+R\+T\+L\+O\+C\+K\+\_\+\+Pos~15}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+L\+K\+C\+T\+RL) Write Lock 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1149580344c769b492a3965710f14319}\label{group___s_a_m_d21___g_c_l_k_ga1149580344c769b492a3965710f14319}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CTRL\_MASK@{GCLK\_CTRL\_MASK}}
+\index{GCLK\_CTRL\_MASK@{GCLK\_CTRL\_MASK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CTRL\_MASK}{GCLK\_CTRL\_MASK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x01ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1e4155316409181e6ee6e88d12cdc90d}\label{group___s_a_m_d21___g_c_l_k_ga1e4155316409181e6ee6e88d12cdc90d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CTRL\_OFFSET@{GCLK\_CTRL\_OFFSET}}
+\index{GCLK\_CTRL\_OFFSET@{GCLK\_CTRL\_OFFSET}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CTRL\_OFFSET}{GCLK\_CTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x0}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+T\+RL offset) Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga83d8721ae78e319dd3b6ab2e350a189b}\label{group___s_a_m_d21___g_c_l_k_ga83d8721ae78e319dd3b6ab2e350a189b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CTRL\_RESETVALUE@{GCLK\_CTRL\_RESETVALUE}}
+\index{GCLK\_CTRL\_RESETVALUE@{GCLK\_CTRL\_RESETVALUE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CTRL\_RESETVALUE}{GCLK\_CTRL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+T\+RL reset\+\_\+value) Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga279d0e7833263a0907ddf09e3600df70}\label{group___s_a_m_d21___g_c_l_k_ga279d0e7833263a0907ddf09e3600df70}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CTRL\_SWRST@{GCLK\_CTRL\_SWRST}}
+\index{GCLK\_CTRL\_SWRST@{GCLK\_CTRL\_SWRST}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CTRL\_SWRST}{GCLK\_CTRL\_SWRST}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+ST~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4efebabb229142324a17a17d178c8494}\label{group___s_a_m_d21___g_c_l_k_ga4efebabb229142324a17a17d178c8494}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_CTRL\_SWRST\_Pos@{GCLK\_CTRL\_SWRST\_Pos}}
+\index{GCLK\_CTRL\_SWRST\_Pos@{GCLK\_CTRL\_SWRST\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_CTRL\_SWRST\_Pos}{GCLK\_CTRL\_SWRST\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+C\+T\+R\+L\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos~0}
+
+
+
+(G\+C\+L\+K\+\_\+\+C\+T\+RL) Software Reset 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5b38723ccce77a0257a48ce83389b204}\label{group___s_a_m_d21___g_c_l_k_ga5b38723ccce77a0257a48ce83389b204}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_DIVSEL@{GCLK\_GENCTRL\_DIVSEL}}
+\index{GCLK\_GENCTRL\_DIVSEL@{GCLK\_GENCTRL\_DIVSEL}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_DIVSEL}{GCLK\_GENCTRL\_DIVSEL}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+EL~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+E\+L\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae17e18184623ee038ce57b64c63e4f9a}\label{group___s_a_m_d21___g_c_l_k_gae17e18184623ee038ce57b64c63e4f9a}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_DIVSEL\_Pos@{GCLK\_GENCTRL\_DIVSEL\_Pos}}
+\index{GCLK\_GENCTRL\_DIVSEL\_Pos@{GCLK\_GENCTRL\_DIVSEL\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_DIVSEL\_Pos}{GCLK\_GENCTRL\_DIVSEL\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+D\+I\+V\+S\+E\+L\+\_\+\+Pos~20}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Divide Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaaff89a081b47174a1ebf7893d638d911}\label{group___s_a_m_d21___g_c_l_k_gaaff89a081b47174a1ebf7893d638d911}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_GENEN@{GCLK\_GENCTRL\_GENEN}}
+\index{GCLK\_GENCTRL\_GENEN@{GCLK\_GENCTRL\_GENEN}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_GENEN}{GCLK\_GENCTRL\_GENEN}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+EN~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gacf206c291132d560c6f857c74d042b09}\label{group___s_a_m_d21___g_c_l_k_gacf206c291132d560c6f857c74d042b09}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_GENEN\_Pos@{GCLK\_GENCTRL\_GENEN\_Pos}}
+\index{GCLK\_GENCTRL\_GENEN\_Pos@{GCLK\_GENCTRL\_GENEN\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_GENEN\_Pos}{GCLK\_GENCTRL\_GENEN\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+G\+E\+N\+E\+N\+\_\+\+Pos~16}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic Clock Generator Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gacd482b8619c8d7d70d181e958bea77cb}\label{group___s_a_m_d21___g_c_l_k_gacd482b8619c8d7d70d181e958bea77cb}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_ID@{GCLK\_GENCTRL\_ID}}
+\index{GCLK\_GENCTRL\_ID@{GCLK\_GENCTRL\_ID}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_ID}{GCLK\_GENCTRL\_ID}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+ID(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7f828f420efccc8f0524f5fccb07a7db}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4a60c72f4513306209ee3853e022a8ec}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7f828f420efccc8f0524f5fccb07a7db}\label{group___s_a_m_d21___g_c_l_k_ga7f828f420efccc8f0524f5fccb07a7db}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_ID\_Msk@{GCLK\_GENCTRL\_ID\_Msk}}
+\index{GCLK\_GENCTRL\_ID\_Msk@{GCLK\_GENCTRL\_ID\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_ID\_Msk}{GCLK\_GENCTRL\_ID\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Msk~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4a60c72f4513306209ee3853e022a8ec}\label{group___s_a_m_d21___g_c_l_k_ga4a60c72f4513306209ee3853e022a8ec}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_ID\_Pos@{GCLK\_GENCTRL\_ID\_Pos}}
+\index{GCLK\_GENCTRL\_ID\_Pos@{GCLK\_GENCTRL\_ID\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_ID\_Pos}{GCLK\_GENCTRL\_ID\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+\_\+\+Pos~0}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic Clock Generator Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga20defe310838ae549c7f9820de38e1bb}\label{group___s_a_m_d21___g_c_l_k_ga20defe310838ae549c7f9820de38e1bb}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_IDC@{GCLK\_GENCTRL\_IDC}}
+\index{GCLK\_GENCTRL\_IDC@{GCLK\_GENCTRL\_IDC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_IDC}{GCLK\_GENCTRL\_IDC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+DC~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+C\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gadd1c684492c64ddc0b937c7571028381}\label{group___s_a_m_d21___g_c_l_k_gadd1c684492c64ddc0b937c7571028381}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_IDC\_Pos@{GCLK\_GENCTRL\_IDC\_Pos}}
+\index{GCLK\_GENCTRL\_IDC\_Pos@{GCLK\_GENCTRL\_IDC\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_IDC\_Pos}{GCLK\_GENCTRL\_IDC\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+I\+D\+C\+\_\+\+Pos~17}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Improve Duty Cycle 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gab6d617a227f5a570e43959099ae10b1d}\label{group___s_a_m_d21___g_c_l_k_gab6d617a227f5a570e43959099ae10b1d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_MASK@{GCLK\_GENCTRL\_MASK}}
+\index{GCLK\_GENCTRL\_MASK@{GCLK\_GENCTRL\_MASK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_MASK}{GCLK\_GENCTRL\_MASK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x003\+F1\+F0\+Ful}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2d6d57ade8be094e5b3076e347eaabd7}\label{group___s_a_m_d21___g_c_l_k_ga2d6d57ade8be094e5b3076e347eaabd7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_OE@{GCLK\_GENCTRL\_OE}}
+\index{GCLK\_GENCTRL\_OE@{GCLK\_GENCTRL\_OE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_OE}{GCLK\_GENCTRL\_OE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+OE~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga463727f09be9f9cf1f26c55e954eaf0e}\label{group___s_a_m_d21___g_c_l_k_ga463727f09be9f9cf1f26c55e954eaf0e}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_OE\_Pos@{GCLK\_GENCTRL\_OE\_Pos}}
+\index{GCLK\_GENCTRL\_OE\_Pos@{GCLK\_GENCTRL\_OE\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_OE\_Pos}{GCLK\_GENCTRL\_OE\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+E\+\_\+\+Pos~19}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Output Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga93d991084be98b48eb3bd242d2114042}\label{group___s_a_m_d21___g_c_l_k_ga93d991084be98b48eb3bd242d2114042}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_OFFSET@{GCLK\_GENCTRL\_OFFSET}}
+\index{GCLK\_GENCTRL\_OFFSET@{GCLK\_GENCTRL\_OFFSET}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_OFFSET}{GCLK\_GENCTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x4}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL offset) Generic Clock Generator Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga80c2684d81c5b9433098ae98bd7cc989}\label{group___s_a_m_d21___g_c_l_k_ga80c2684d81c5b9433098ae98bd7cc989}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_OOV@{GCLK\_GENCTRL\_OOV}}
+\index{GCLK\_GENCTRL\_OOV@{GCLK\_GENCTRL\_OOV}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_OOV}{GCLK\_GENCTRL\_OOV}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+OV~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+O\+V\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga511f960dfd2a4afa6dc073dc909389ac}\label{group___s_a_m_d21___g_c_l_k_ga511f960dfd2a4afa6dc073dc909389ac}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_OOV\_Pos@{GCLK\_GENCTRL\_OOV\_Pos}}
+\index{GCLK\_GENCTRL\_OOV\_Pos@{GCLK\_GENCTRL\_OOV\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_OOV\_Pos}{GCLK\_GENCTRL\_OOV\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+O\+O\+V\+\_\+\+Pos~18}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Output Off Value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga6fe333c528ab24313886414224566cfc}\label{group___s_a_m_d21___g_c_l_k_ga6fe333c528ab24313886414224566cfc}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_RESETVALUE@{GCLK\_GENCTRL\_RESETVALUE}}
+\index{GCLK\_GENCTRL\_RESETVALUE@{GCLK\_GENCTRL\_RESETVALUE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_RESETVALUE}{GCLK\_GENCTRL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL reset\+\_\+value) Generic Clock Generator Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga892b6d79b97157d48d189804f91df4fa}\label{group___s_a_m_d21___g_c_l_k_ga892b6d79b97157d48d189804f91df4fa}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_RUNSTDBY@{GCLK\_GENCTRL\_RUNSTDBY}}
+\index{GCLK\_GENCTRL\_RUNSTDBY@{GCLK\_GENCTRL\_RUNSTDBY}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_RUNSTDBY}{GCLK\_GENCTRL\_RUNSTDBY}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+BY~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga74904f6bd2b8ead6cfffae549a41b869}\label{group___s_a_m_d21___g_c_l_k_ga74904f6bd2b8ead6cfffae549a41b869}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_RUNSTDBY\_Pos@{GCLK\_GENCTRL\_RUNSTDBY\_Pos}}
+\index{GCLK\_GENCTRL\_RUNSTDBY\_Pos@{GCLK\_GENCTRL\_RUNSTDBY\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_RUNSTDBY\_Pos}{GCLK\_GENCTRL\_RUNSTDBY\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos~21}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Run in Standby 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga3a6ecbe6a1395577e386ee2046c5e3a5}\label{group___s_a_m_d21___g_c_l_k_ga3a6ecbe6a1395577e386ee2046c5e3a5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC@{GCLK\_GENCTRL\_SRC}}
+\index{GCLK\_GENCTRL\_SRC@{GCLK\_GENCTRL\_SRC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC}{GCLK\_GENCTRL\_SRC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+RC(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga1341d6ea0cb6d9dc6bb42710ac632eed}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaa23918b1d8f76e45db3cbec26eb70973}\label{group___s_a_m_d21___g_c_l_k_gaa23918b1d8f76e45db3cbec26eb70973}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_DFLL48M@{GCLK\_GENCTRL\_SRC\_DFLL48M}}
+\index{GCLK\_GENCTRL\_SRC\_DFLL48M@{GCLK\_GENCTRL\_SRC\_DFLL48M}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_DFLL48M}{GCLK\_GENCTRL\_SRC\_DFLL48M}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48M~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga70357963bac751c47a0b097568f1ec34}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga70357963bac751c47a0b097568f1ec34}\label{group___s_a_m_d21___g_c_l_k_ga70357963bac751c47a0b097568f1ec34}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_DFLL48M\_Val@{GCLK\_GENCTRL\_SRC\_DFLL48M\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_DFLL48M\_Val@{GCLK\_GENCTRL\_SRC\_DFLL48M\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_DFLL48M\_Val}{GCLK\_GENCTRL\_SRC\_DFLL48M\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+D\+F\+L\+L48\+M\+\_\+\+Val~0x7ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) D\+F\+L\+L48M output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad4a5c9ae337e9e8572d765dc77310ea7}\label{group___s_a_m_d21___g_c_l_k_gad4a5c9ae337e9e8572d765dc77310ea7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_FDPLL@{GCLK\_GENCTRL\_SRC\_FDPLL}}
+\index{GCLK\_GENCTRL\_SRC\_FDPLL@{GCLK\_GENCTRL\_SRC\_FDPLL}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_FDPLL}{GCLK\_GENCTRL\_SRC\_FDPLL}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+LL~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga87f8f30846939c09a6d982c14bf3aa3c}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga87f8f30846939c09a6d982c14bf3aa3c}\label{group___s_a_m_d21___g_c_l_k_ga87f8f30846939c09a6d982c14bf3aa3c}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_FDPLL\_Val@{GCLK\_GENCTRL\_SRC\_FDPLL\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_FDPLL\_Val@{GCLK\_GENCTRL\_SRC\_FDPLL\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_FDPLL\_Val}{GCLK\_GENCTRL\_SRC\_FDPLL\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+F\+D\+P\+L\+L\+\_\+\+Val~0x8ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) F\+D\+P\+LL output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad3c6aba8780393019af9aa777041eecc}\label{group___s_a_m_d21___g_c_l_k_gad3c6aba8780393019af9aa777041eecc}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_GCLKGEN1@{GCLK\_GENCTRL\_SRC\_GCLKGEN1}}
+\index{GCLK\_GENCTRL\_SRC\_GCLKGEN1@{GCLK\_GENCTRL\_SRC\_GCLKGEN1}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_GCLKGEN1}{GCLK\_GENCTRL\_SRC\_GCLKGEN1}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga2774be4de7707cea940a2b7ec37f30e3}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2774be4de7707cea940a2b7ec37f30e3}\label{group___s_a_m_d21___g_c_l_k_ga2774be4de7707cea940a2b7ec37f30e3}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val@{GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val@{GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val}{GCLK\_GENCTRL\_SRC\_GCLKGEN1\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+G\+E\+N1\+\_\+\+Val~0x2ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generic clock generator 1 output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae54fac01315c959abdf2f2396a9ff0bf}\label{group___s_a_m_d21___g_c_l_k_gae54fac01315c959abdf2f2396a9ff0bf}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_GCLKIN@{GCLK\_GENCTRL\_SRC\_GCLKIN}}
+\index{GCLK\_GENCTRL\_SRC\_GCLKIN@{GCLK\_GENCTRL\_SRC\_GCLKIN}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_GCLKIN}{GCLK\_GENCTRL\_SRC\_GCLKIN}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+IN~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga4c279c59a26c988991b63eb2682e8acc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+I\+N\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga4c279c59a26c988991b63eb2682e8acc}\label{group___s_a_m_d21___g_c_l_k_ga4c279c59a26c988991b63eb2682e8acc}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_GCLKIN\_Val@{GCLK\_GENCTRL\_SRC\_GCLKIN\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_GCLKIN\_Val@{GCLK\_GENCTRL\_SRC\_GCLKIN\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_GCLKIN\_Val}{GCLK\_GENCTRL\_SRC\_GCLKIN\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+G\+C\+L\+K\+I\+N\+\_\+\+Val~0x1ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Generator input pad 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1341d6ea0cb6d9dc6bb42710ac632eed}\label{group___s_a_m_d21___g_c_l_k_ga1341d6ea0cb6d9dc6bb42710ac632eed}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_Msk@{GCLK\_GENCTRL\_SRC\_Msk}}
+\index{GCLK\_GENCTRL\_SRC\_Msk@{GCLK\_GENCTRL\_SRC\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_Msk}{GCLK\_GENCTRL\_SRC\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Msk~(0x1\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gabdada430076745a99ece643763c5b14b}\label{group___s_a_m_d21___g_c_l_k_gabdada430076745a99ece643763c5b14b}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSC32K@{GCLK\_GENCTRL\_SRC\_OSC32K}}
+\index{GCLK\_GENCTRL\_SRC\_OSC32K@{GCLK\_GENCTRL\_SRC\_OSC32K}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSC32K}{GCLK\_GENCTRL\_SRC\_OSC32K}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32K~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga79a91b96132812e2d8fec7fb79dc6cde}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32\+K\+\_\+\+Val}}   $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga79a91b96132812e2d8fec7fb79dc6cde}\label{group___s_a_m_d21___g_c_l_k_ga79a91b96132812e2d8fec7fb79dc6cde}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSC32K\_Val@{GCLK\_GENCTRL\_SRC\_OSC32K\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_OSC32K\_Val@{GCLK\_GENCTRL\_SRC\_OSC32K\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSC32K\_Val}{GCLK\_GENCTRL\_SRC\_OSC32K\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C32\+K\+\_\+\+Val~0x4ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C32K oscillator output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga53a17a2e7173521f90740b1f632c7863}\label{group___s_a_m_d21___g_c_l_k_ga53a17a2e7173521f90740b1f632c7863}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSC8M@{GCLK\_GENCTRL\_SRC\_OSC8M}}
+\index{GCLK\_GENCTRL\_SRC\_OSC8M@{GCLK\_GENCTRL\_SRC\_OSC8M}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSC8M}{GCLK\_GENCTRL\_SRC\_OSC8M}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8M~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga7b00616bd4afa72d171e9ad317b208ac}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8\+M\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga7b00616bd4afa72d171e9ad317b208ac}\label{group___s_a_m_d21___g_c_l_k_ga7b00616bd4afa72d171e9ad317b208ac}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSC8M\_Val@{GCLK\_GENCTRL\_SRC\_OSC8M\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_OSC8M\_Val@{GCLK\_GENCTRL\_SRC\_OSC8M\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSC8M\_Val}{GCLK\_GENCTRL\_SRC\_OSC8M\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C8\+M\+\_\+\+Val~0x6ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C8M oscillator output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaeefd6f0d9789f9f1c1ee07d1a256f93c}\label{group___s_a_m_d21___g_c_l_k_gaeefd6f0d9789f9f1c1ee07d1a256f93c}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSCULP32K@{GCLK\_GENCTRL\_SRC\_OSCULP32K}}
+\index{GCLK\_GENCTRL\_SRC\_OSCULP32K@{GCLK\_GENCTRL\_SRC\_OSCULP32K}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSCULP32K}{GCLK\_GENCTRL\_SRC\_OSCULP32K}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32K~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga42e2c1ea6d7f04f75657e31791336ec6}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+Val}} $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga42e2c1ea6d7f04f75657e31791336ec6}\label{group___s_a_m_d21___g_c_l_k_ga42e2c1ea6d7f04f75657e31791336ec6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val@{GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val@{GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val}{GCLK\_GENCTRL\_SRC\_OSCULP32K\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+O\+S\+C\+U\+L\+P32\+K\+\_\+\+Val~0x3ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) O\+S\+C\+U\+L\+P32K oscillator output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}\label{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_Pos@{GCLK\_GENCTRL\_SRC\_Pos}}
+\index{GCLK\_GENCTRL\_SRC\_Pos@{GCLK\_GENCTRL\_SRC\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_Pos}{GCLK\_GENCTRL\_SRC\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos~8}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) Source Select 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad224796335cb16ec3d64a68efeb5c9b7}\label{group___s_a_m_d21___g_c_l_k_gad224796335cb16ec3d64a68efeb5c9b7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_XOSC@{GCLK\_GENCTRL\_SRC\_XOSC}}
+\index{GCLK\_GENCTRL\_SRC\_XOSC@{GCLK\_GENCTRL\_SRC\_XOSC}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_XOSC}{GCLK\_GENCTRL\_SRC\_XOSC}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+SC~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gad48c4f5ba6b5112eef4d978cf2ae73bc}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf2db90c4ecefc9b935dd47d82968eb27}\label{group___s_a_m_d21___g_c_l_k_gaf2db90c4ecefc9b935dd47d82968eb27}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_XOSC32K@{GCLK\_GENCTRL\_SRC\_XOSC32K}}
+\index{GCLK\_GENCTRL\_SRC\_XOSC32K@{GCLK\_GENCTRL\_SRC\_XOSC32K}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_XOSC32K}{GCLK\_GENCTRL\_SRC\_XOSC32K}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32K~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga087326ba1d0ac766f2835e5460c72ef0}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+Val}}  $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga3ca6fb0d36a0f1194282d2517b22965f}{G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga087326ba1d0ac766f2835e5460c72ef0}\label{group___s_a_m_d21___g_c_l_k_ga087326ba1d0ac766f2835e5460c72ef0}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_XOSC32K\_Val@{GCLK\_GENCTRL\_SRC\_XOSC32K\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_XOSC32K\_Val@{GCLK\_GENCTRL\_SRC\_XOSC32K\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_XOSC32K\_Val}{GCLK\_GENCTRL\_SRC\_XOSC32K\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C32\+K\+\_\+\+Val~0x5ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) X\+O\+S\+C32K oscillator output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad48c4f5ba6b5112eef4d978cf2ae73bc}\label{group___s_a_m_d21___g_c_l_k_gad48c4f5ba6b5112eef4d978cf2ae73bc}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENCTRL\_SRC\_XOSC\_Val@{GCLK\_GENCTRL\_SRC\_XOSC\_Val}}
+\index{GCLK\_GENCTRL\_SRC\_XOSC\_Val@{GCLK\_GENCTRL\_SRC\_XOSC\_Val}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENCTRL\_SRC\_XOSC\_Val}{GCLK\_GENCTRL\_SRC\_XOSC\_Val}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+R\+L\+\_\+\+S\+R\+C\+\_\+\+X\+O\+S\+C\+\_\+\+Val~0x0ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+C\+T\+RL) X\+O\+SC oscillator output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga030bddfec3401b61cabd3fd51b98624d}\label{group___s_a_m_d21___g_c_l_k_ga030bddfec3401b61cabd3fd51b98624d}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_DIV@{GCLK\_GENDIV\_DIV}}
+\index{GCLK\_GENDIV\_DIV@{GCLK\_GENDIV\_DIV}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_DIV}{GCLK\_GENDIV\_DIV}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+IV(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_gae95d79b8cfc28a501dce0f4767e20dc7}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga182a17bda5373cb761e1bee891a03477}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gae95d79b8cfc28a501dce0f4767e20dc7}\label{group___s_a_m_d21___g_c_l_k_gae95d79b8cfc28a501dce0f4767e20dc7}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_DIV\_Msk@{GCLK\_GENDIV\_DIV\_Msk}}
+\index{GCLK\_GENDIV\_DIV\_Msk@{GCLK\_GENDIV\_DIV\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_DIV\_Msk}{GCLK\_GENDIV\_DIV\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga182a17bda5373cb761e1bee891a03477}\label{group___s_a_m_d21___g_c_l_k_ga182a17bda5373cb761e1bee891a03477}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_DIV\_Pos@{GCLK\_GENDIV\_DIV\_Pos}}
+\index{GCLK\_GENDIV\_DIV\_Pos@{GCLK\_GENDIV\_DIV\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_DIV\_Pos}{GCLK\_GENDIV\_DIV\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+D\+I\+V\+\_\+\+Pos~8}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) Division Factor 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga121c30a908238bacb3fefa4e5b301aa5}\label{group___s_a_m_d21___g_c_l_k_ga121c30a908238bacb3fefa4e5b301aa5}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_ID@{GCLK\_GENDIV\_ID}}
+\index{GCLK\_GENDIV\_ID@{GCLK\_GENDIV\_ID}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_ID}{GCLK\_GENDIV\_ID}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+ID(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga5a0c53611d4a82e0c2dbb7b6f4a19d01}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___g_c_l_k_ga26ff4637fd9d6b561a910aeee96a4f88}{G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga5a0c53611d4a82e0c2dbb7b6f4a19d01}\label{group___s_a_m_d21___g_c_l_k_ga5a0c53611d4a82e0c2dbb7b6f4a19d01}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_ID\_Msk@{GCLK\_GENDIV\_ID\_Msk}}
+\index{GCLK\_GENDIV\_ID\_Msk@{GCLK\_GENDIV\_ID\_Msk}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_ID\_Msk}{GCLK\_GENDIV\_ID\_Msk}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Msk~(0x\+Ful $<$$<$ G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga26ff4637fd9d6b561a910aeee96a4f88}\label{group___s_a_m_d21___g_c_l_k_ga26ff4637fd9d6b561a910aeee96a4f88}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_ID\_Pos@{GCLK\_GENDIV\_ID\_Pos}}
+\index{GCLK\_GENDIV\_ID\_Pos@{GCLK\_GENDIV\_ID\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_ID\_Pos}{GCLK\_GENDIV\_ID\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+I\+D\+\_\+\+Pos~0}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) Generic Clock Generator Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaf693b6342bd310d59956220a059f6e4a}\label{group___s_a_m_d21___g_c_l_k_gaf693b6342bd310d59956220a059f6e4a}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_MASK@{GCLK\_GENDIV\_MASK}}
+\index{GCLK\_GENDIV\_MASK@{GCLK\_GENDIV\_MASK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_MASK}{GCLK\_GENDIV\_MASK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+M\+A\+SK~0x00\+F\+F\+F\+F0\+Ful}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga2922a2f237f943cf8a023d3311ca5128}\label{group___s_a_m_d21___g_c_l_k_ga2922a2f237f943cf8a023d3311ca5128}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_OFFSET@{GCLK\_GENDIV\_OFFSET}}
+\index{GCLK\_GENDIV\_OFFSET@{GCLK\_GENDIV\_OFFSET}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_OFFSET}{GCLK\_GENDIV\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+O\+F\+F\+S\+ET~0x8}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV offset) Generic Clock Generator Division 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga886387ce3e41b7ca629a0b6a2292a6c0}\label{group___s_a_m_d21___g_c_l_k_ga886387ce3e41b7ca629a0b6a2292a6c0}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_GENDIV\_RESETVALUE@{GCLK\_GENDIV\_RESETVALUE}}
+\index{GCLK\_GENDIV\_RESETVALUE@{GCLK\_GENDIV\_RESETVALUE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_GENDIV\_RESETVALUE}{GCLK\_GENDIV\_RESETVALUE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+I\+V\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+G\+E\+N\+D\+IV reset\+\_\+value) Generic Clock Generator Division 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaeb39d54d6d2ecc2bdaafb2a846930171}\label{group___s_a_m_d21___g_c_l_k_gaeb39d54d6d2ecc2bdaafb2a846930171}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_STATUS\_MASK@{GCLK\_STATUS\_MASK}}
+\index{GCLK\_STATUS\_MASK@{GCLK\_STATUS\_MASK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_STATUS\_MASK}{GCLK\_STATUS\_MASK}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~0x80ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga1829e59ccf51b247d4c84f4b53356e59}\label{group___s_a_m_d21___g_c_l_k_ga1829e59ccf51b247d4c84f4b53356e59}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_STATUS\_OFFSET@{GCLK\_STATUS\_OFFSET}}
+\index{GCLK\_STATUS\_OFFSET@{GCLK\_STATUS\_OFFSET}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_STATUS\_OFFSET}{GCLK\_STATUS\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET~0x1}
+
+
+
+(G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US offset) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga178a91eb9f5aa21feeb1b126b05dd8cd}\label{group___s_a_m_d21___g_c_l_k_ga178a91eb9f5aa21feeb1b126b05dd8cd}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_STATUS\_RESETVALUE@{GCLK\_STATUS\_RESETVALUE}}
+\index{GCLK\_STATUS\_RESETVALUE@{GCLK\_STATUS\_RESETVALUE}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_STATUS\_RESETVALUE}{GCLK\_STATUS\_RESETVALUE}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga9e593aac5e38d17fcb837662afa6f6f6}\label{group___s_a_m_d21___g_c_l_k_ga9e593aac5e38d17fcb837662afa6f6f6}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_STATUS\_SYNCBUSY@{GCLK\_STATUS\_SYNCBUSY}}
+\index{GCLK\_STATUS\_SYNCBUSY@{GCLK\_STATUS\_SYNCBUSY}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_STATUS\_SYNCBUSY}{GCLK\_STATUS\_SYNCBUSY}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+SY~(0x1ul $<$$<$ G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_ga8ef544f7407509465d3512c48226cab4}\label{group___s_a_m_d21___g_c_l_k_ga8ef544f7407509465d3512c48226cab4}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_STATUS\_SYNCBUSY\_Pos@{GCLK\_STATUS\_SYNCBUSY\_Pos}}
+\index{GCLK\_STATUS\_SYNCBUSY\_Pos@{GCLK\_STATUS\_SYNCBUSY\_Pos}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_STATUS\_SYNCBUSY\_Pos}{GCLK\_STATUS\_SYNCBUSY\_Pos}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos~7}
+
+
+
+(G\+C\+L\+K\+\_\+\+S\+T\+A\+T\+US) Synchronization Busy Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gaca1c1ddf305857f452121b055f1dc890}\label{group___s_a_m_d21___g_c_l_k_gaca1c1ddf305857f452121b055f1dc890}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!GCLK\_U2102@{GCLK\_U2102}}
+\index{GCLK\_U2102@{GCLK\_U2102}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{GCLK\_U2102}{GCLK\_U2102}}
+{\footnotesize\ttfamily \#define G\+C\+L\+K\+\_\+\+U2102}
+
+\mbox{\Hypertarget{group___s_a_m_d21___g_c_l_k_gad1c1468b7c6ed891f5711fedfef9ec67}\label{group___s_a_m_d21___g_c_l_k_gad1c1468b7c6ed891f5711fedfef9ec67}} 
+\index{Generic Clock Generator@{Generic Clock Generator}!REV\_GCLK@{REV\_GCLK}}
+\index{REV\_GCLK@{REV\_GCLK}!Generic Clock Generator@{Generic Clock Generator}}
+\subsubsection{\texorpdfstring{REV\_GCLK}{REV\_GCLK}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+G\+C\+LK~0x210}
+

@@ -1,0 +1,424 @@
+\hypertarget{group__gatt__client__group}{}\section{G\+A\+TT Client A\+P\+Is}
+\label{group__gatt__client__group}\index{GATT Client APIs@{GATT Client APIs}}
+
+
+This group includes all G\+A\+TT Client A\+P\+Is; Discover, Read, Write, ...  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga5bf7a23fc6f8b6fbc30de8ca5ed7d159}{at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+discover\+\_\+all}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Discover all Primary services in a peer device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gadf352205d818cf47fc659824232bed9a}{at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+discover\+\_\+by\+\_\+uuid}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle, \mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$uuid)
+\begin{DoxyCompactList}\small\item\em Discover Primary service of a given U\+U\+ID declared and located in a peer device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga1937df46ff17c4490585d1ca540bc8fe}{at\+\_\+ble\+\_\+included\+\_\+service\+\_\+discover\+\_\+all}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Discover all included services declared in a connected device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga219f9e312abd98aa41c5cce56fcc1dde}{at\+\_\+ble\+\_\+characteristic\+\_\+discover\+\_\+all}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Discover all Characteristics declared in a connected device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga5bd8e51454cede0adcbf0b99eda34f0a}{at\+\_\+ble\+\_\+characteristic\+\_\+discover\+\_\+by\+\_\+uuid}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle, \mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$uuid)
+\begin{DoxyCompactList}\small\item\em Discover all Characteristics of a given U\+U\+ID declared in a connected device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gabc3b59303cef6377ee364c7be4f27bb8}{at\+\_\+ble\+\_\+descriptor\+\_\+discover\+\_\+all}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Discover all Descriptors declared in a connected device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gad285cc2e31fbacc50d11a1c0ff6eb9e4}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+by\+\_\+uuid}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} start\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} end\+\_\+handle, \mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$uuid)
+\begin{DoxyCompactList}\small\item\em Read a characteristic given its U\+U\+ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gabae315596f9e0b85a5f4f1df0b5bf78d}{at\+\_\+ble\+\_\+characteristic\+\_\+read}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} char\+\_\+handle, uint16\+\_\+t offset, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Read a characteristic given its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gaa7786450afbfc00a8a7f990c8c9bbc22}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+long}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} char\+\_\+handle, uint16\+\_\+t offset, uint16\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Long read a characteristic given its handle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga00850152d4bd51ad41611d5792e0ae15}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+multiple}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{structat__ble__char__list}{at\+\_\+ble\+\_\+char\+\_\+list}} $\ast$char\+\_\+handle\+\_\+list, uint8\+\_\+t char\+\_\+handle\+\_\+count)
+\begin{DoxyCompactList}\small\item\em Read a list of characteristics given their handles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga68ed4c6179da222ba25a61487a7926b9}{at\+\_\+ble\+\_\+characteristic\+\_\+write}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} char\+\_\+handle, uint16\+\_\+t offset, uint16\+\_\+t length, uint8\+\_\+t $\ast$data, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} signed\+\_\+write, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} with\+\_\+response)
+\begin{DoxyCompactList}\small\item\em Write a characteristic value in peer device and write completion will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0ca3bb3c57359b42fd8d578907e6c315}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+M\+D\+\_\+\+C\+MP}} event after firmware handling. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_gaeaad17e6de538db2f9db638a0fef0310}{at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+prepare}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} char\+\_\+handle, uint16\+\_\+t offset, uint16\+\_\+t length, uint8\+\_\+t $\ast$data)
+\begin{DoxyCompactList}\small\item\em add a new prepared write request \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga9a3982336528fec5ec5c59f8937075cc}{at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+execute}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Executes a pending prepared write operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga7d89d0a874b956a99356ca8aa7764ff8}{at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+cancel}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Cancels a pending prepared reliable write operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gatt__client__group_ga26fc3ac24ee5eb33237dfba027818238}{at\+\_\+ble\+\_\+exchange\+\_\+mtu}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em send the M\+TU exchange command to peer device \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all G\+A\+TT Client A\+P\+Is; Discover, Read, Write, ... 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gatt__client__group_ga219f9e312abd98aa41c5cce56fcc1dde}\label{group__gatt__client__group_ga219f9e312abd98aa41c5cce56fcc1dde}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_discover\_all@{at\_ble\_characteristic\_discover\_all}}
+\index{at\_ble\_characteristic\_discover\_all@{at\_ble\_characteristic\_discover\_all}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_discover\_all()}{at\_ble\_characteristic\_discover\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+discover\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Discover all Characteristics declared in a connected device. 
+
+Search will go from start\+\_\+handle to end\+\_\+handle, whenever a characteristic is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad01cd835d1b797b8ea155581470c91b8}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a1230f90f19a65149edebd1e10fb9928e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga5bd8e51454cede0adcbf0b99eda34f0a}\label{group__gatt__client__group_ga5bd8e51454cede0adcbf0b99eda34f0a}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_discover\_by\_uuid@{at\_ble\_characteristic\_discover\_by\_uuid}}
+\index{at\_ble\_characteristic\_discover\_by\_uuid@{at\_ble\_characteristic\_discover\_by\_uuid}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_discover\_by\_uuid()}{at\_ble\_characteristic\_discover\_by\_uuid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+discover\+\_\+by\+\_\+uuid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Discover all Characteristics of a given U\+U\+ID declared in a connected device. 
+
+search will go from start\+\_\+handle to end\+\_\+handle, whenever a characteristic of matching U\+U\+ID is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad01cd835d1b797b8ea155581470c91b8}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em uuid} & U\+U\+ID of the characteristic to be found, with L\+SB byte First in U\+U\+ID value member\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a1230f90f19a65149edebd1e10fb9928e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gabae315596f9e0b85a5f4f1df0b5bf78d}\label{group__gatt__client__group_gabae315596f9e0b85a5f4f1df0b5bf78d}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_read@{at\_ble\_characteristic\_read}}
+\index{at\_ble\_characteristic\_read@{at\_ble\_characteristic\_read}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_read()}{at\_ble\_characteristic\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{char\+\_\+handle,  }\item[{uint16\+\_\+t}]{offset,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Read a characteristic given its handle. 
+
+Read value will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaddcc3177f031993ee6003ec1a2983952}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} event
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle} & handle of the characteristic \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & offset at where to start reading \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & = 0 then the response will retrieve the full length of the characteristic (read all) $>$ 0 \&\& $<$ full length then the passed length will be red by == full length $\vert$$\vert$ $>$ full length full length will be retrieved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gad285cc2e31fbacc50d11a1c0ff6eb9e4}\label{group__gatt__client__group_gad285cc2e31fbacc50d11a1c0ff6eb9e4}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_read\_by\_uuid@{at\_ble\_characteristic\_read\_by\_uuid}}
+\index{at\_ble\_characteristic\_read\_by\_uuid@{at\_ble\_characteristic\_read\_by\_uuid}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_read\_by\_uuid()}{at\_ble\_characteristic\_read\_by\_uuid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+by\+\_\+uuid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Read a characteristic given its U\+U\+ID. 
+
+search will go from start\+\_\+handle to end\+\_\+handle, whenever a descriptor with given U\+U\+ID is found its value will be read and reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba75f3f1f4b92e0be8234f9f785bf6f5f7}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+R\+E\+A\+D\+\_\+\+B\+Y\+\_\+\+U\+U\+I\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} event
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em uuid} & U\+U\+ID of the read characteristic, with L\+SB byte First in U\+U\+ID value member\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a1230f90f19a65149edebd1e10fb9928e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gaa7786450afbfc00a8a7f990c8c9bbc22}\label{group__gatt__client__group_gaa7786450afbfc00a8a7f990c8c9bbc22}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_read\_long@{at\_ble\_characteristic\_read\_long}}
+\index{at\_ble\_characteristic\_read\_long@{at\_ble\_characteristic\_read\_long}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_read\_long()}{at\_ble\_characteristic\_read\_long()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{char\+\_\+handle,  }\item[{uint16\+\_\+t}]{offset,  }\item[{uint16\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Long read a characteristic given its handle. 
+
+read value will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaddcc3177f031993ee6003ec1a2983952}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} event
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle} & handle of the characteristic \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & offset at where to start reading \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & $\ast$\\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & = 0 then the response will retrieve the full length of the characteristic (read all) $>$ 0 \&\& $<$ full length then the passed length will be red by == full length $\vert$$\vert$ $>$ full length full length will be retrieved (read all)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga00850152d4bd51ad41611d5792e0ae15}\label{group__gatt__client__group_ga00850152d4bd51ad41611d5792e0ae15}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_read\_multiple@{at\_ble\_characteristic\_read\_multiple}}
+\index{at\_ble\_characteristic\_read\_multiple@{at\_ble\_characteristic\_read\_multiple}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_read\_multiple()}{at\_ble\_characteristic\_read\_multiple()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+multiple (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__char__list}{at\+\_\+ble\+\_\+char\+\_\+list}} $\ast$}]{char\+\_\+handle\+\_\+list,  }\item[{uint8\+\_\+t}]{char\+\_\+handle\+\_\+count }\end{DoxyParamCaption})}
+
+
+
+Read a list of characteristics given their handles. 
+
+read values will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaddcc3177f031993ee6003ec1a2983952}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+R\+E\+A\+D\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} event after delivering all requested value the the user will receive \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba2ec151b03f1a346a832449e2a5f87b58}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+R\+E\+A\+D\+\_\+\+M\+U\+L\+T\+I\+B\+L\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}} to indicate end of procedure
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle\+\_\+list} & list of structures of characteristic handles and their lengths \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle\+\_\+count} & number of characteristic handles fro more info, refer to \mbox{\hyperlink{structat__ble__char__list}{at\+\_\+ble\+\_\+char\+\_\+list}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga7d89d0a874b956a99356ca8aa7764ff8}\label{group__gatt__client__group_ga7d89d0a874b956a99356ca8aa7764ff8}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_reliable\_write\_cancel@{at\_ble\_characteristic\_reliable\_write\_cancel}}
+\index{at\_ble\_characteristic\_reliable\_write\_cancel@{at\_ble\_characteristic\_reliable\_write\_cancel}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_reliable\_write\_cancel()}{at\_ble\_characteristic\_reliable\_write\_cancel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+cancel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Cancels a pending prepared reliable write operation. 
+
+Cancels a pending prepared reliable write operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga9a3982336528fec5ec5c59f8937075cc}\label{group__gatt__client__group_ga9a3982336528fec5ec5c59f8937075cc}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_reliable\_write\_execute@{at\_ble\_characteristic\_reliable\_write\_execute}}
+\index{at\_ble\_characteristic\_reliable\_write\_execute@{at\_ble\_characteristic\_reliable\_write\_execute}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_reliable\_write\_execute()}{at\_ble\_characteristic\_reliable\_write\_execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Executes a pending prepared write operation. 
+
+send write Execute to peer device to Execute pending prepared write operation, write completion will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0ca3bb3c57359b42fd8d578907e6c315}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+M\+D\+\_\+\+C\+MP}} event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gaeaad17e6de538db2f9db638a0fef0310}\label{group__gatt__client__group_gaeaad17e6de538db2f9db638a0fef0310}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_reliable\_write\_prepare@{at\_ble\_characteristic\_reliable\_write\_prepare}}
+\index{at\_ble\_characteristic\_reliable\_write\_prepare@{at\_ble\_characteristic\_reliable\_write\_prepare}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_reliable\_write\_prepare()}{at\_ble\_characteristic\_reliable\_write\_prepare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+reliable\+\_\+write\+\_\+prepare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{char\+\_\+handle,  }\item[{uint16\+\_\+t}]{offset,  }\item[{uint16\+\_\+t}]{length,  }\item[{uint8\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+add a new prepared write request 
+
+Adds a new request to a pending prepared write operation, or starts a new prepared write operation if none was started before
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle} & handle of the characteristic \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & offset at where to start write \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & length of data to write \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & a buffer where write data is stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga68ed4c6179da222ba25a61487a7926b9}\label{group__gatt__client__group_ga68ed4c6179da222ba25a61487a7926b9}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_characteristic\_write@{at\_ble\_characteristic\_write}}
+\index{at\_ble\_characteristic\_write@{at\_ble\_characteristic\_write}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_characteristic\_write()}{at\_ble\_characteristic\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+characteristic\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{char\+\_\+handle,  }\item[{uint16\+\_\+t}]{offset,  }\item[{uint16\+\_\+t}]{length,  }\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{signed\+\_\+write,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{with\+\_\+response }\end{DoxyParamCaption})}
+
+
+
+Write a characteristic value in peer device and write completion will be reported via \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0ca3bb3c57359b42fd8d578907e6c315}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+M\+D\+\_\+\+C\+MP}} event after firmware handling. 
+
+In case of signed write and write without response \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0ca3bb3c57359b42fd8d578907e6c315}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+M\+D\+\_\+\+C\+MP}} is triggered as soon as packet has been sent over the air. In case of write with response \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba0ca3bb3c57359b42fd8d578907e6c315}{A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+I\+S\+T\+I\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+M\+D\+\_\+\+C\+MP}} is triggered if error happened or when response is received from peer device. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+handle} & handle of the characteristic \\
+\hline
+\mbox{\texttt{ in}}  & {\em offset} & offset at where to start write \\
+\hline
+\mbox{\texttt{ in}}  & {\em length} & length of data to write \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & a buffer where write data is stored \\
+\hline
+\mbox{\texttt{ in}}  & {\em signed\+\_\+write} & if true, perform a signed write \\
+\hline
+\mbox{\texttt{ in}}  & {\em with\+\_\+response} & if true, perform a write with response procedure, otherwise perform write with no response procedure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If data length $>$ M\+T\+U-\/3 then the write operation will be converted to long write instead of normal write operation, this scenario will be taken over by B\+LE stack firmware.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gabc3b59303cef6377ee364c7be4f27bb8}\label{group__gatt__client__group_gabc3b59303cef6377ee364c7be4f27bb8}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_descriptor\_discover\_all@{at\_ble\_descriptor\_discover\_all}}
+\index{at\_ble\_descriptor\_discover\_all@{at\_ble\_descriptor\_discover\_all}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_descriptor\_discover\_all()}{at\_ble\_descriptor\_discover\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+descriptor\+\_\+discover\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Discover all Descriptors declared in a connected device. 
+
+Search will go from start\+\_\+handle to end\+\_\+handle, whenever a descriptor is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba6d2cd50a39d4ba666c653440d01b6b52}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+E\+S\+C\+R\+I\+P\+T\+O\+R\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a1230f90f19a65149edebd1e10fb9928e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga26fc3ac24ee5eb33237dfba027818238}\label{group__gatt__client__group_ga26fc3ac24ee5eb33237dfba027818238}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_exchange\_mtu@{at\_ble\_exchange\_mtu}}
+\index{at\_ble\_exchange\_mtu@{at\_ble\_exchange\_mtu}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_exchange\_mtu()}{at\_ble\_exchange\_mtu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+exchange\+\_\+mtu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+send the M\+TU exchange command to peer device 
+
+Sends the M\+TU Exchange command to peer device to start exchanging the M\+Tu maximum allowed length (Octet). if the peer device changes his M\+TU value according to the sender\textquotesingle{}s M\+TU. the sender will receive the indication \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba7a75a767cfcc82e35d8d2a27e7650c2f}{A\+T\+\_\+\+B\+L\+E\+\_\+\+M\+T\+U\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+ON}} with the exchanged M\+TU value then receive \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba2bad87182eba7b5c315d5a22cc5eff23}{A\+T\+\_\+\+B\+L\+E\+\_\+\+M\+T\+U\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+C\+M\+D\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} . if the peer device didn\textquotesingle{}t accept the M\+TU value \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba2bad87182eba7b5c315d5a22cc5eff23}{A\+T\+\_\+\+B\+L\+E\+\_\+\+M\+T\+U\+\_\+\+C\+H\+A\+N\+G\+E\+D\+\_\+\+C\+M\+D\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} will be sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga1937df46ff17c4490585d1ca540bc8fe}\label{group__gatt__client__group_ga1937df46ff17c4490585d1ca540bc8fe}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_included\_service\_discover\_all@{at\_ble\_included\_service\_discover\_all}}
+\index{at\_ble\_included\_service\_discover\_all@{at\_ble\_included\_service\_discover\_all}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_included\_service\_discover\_all()}{at\_ble\_included\_service\_discover\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+included\+\_\+service\+\_\+discover\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Discover all included services declared in a connected device. 
+
+Search will go from start\+\_\+handle to end\+\_\+handle, whenever a service is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebac1056aa659844d1455c7be27a2d23626}{A\+T\+\_\+\+B\+L\+E\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a1230f90f19a65149edebd1e10fb9928e}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_ga5bf7a23fc6f8b6fbc30de8ca5ed7d159}\label{group__gatt__client__group_ga5bf7a23fc6f8b6fbc30de8ca5ed7d159}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_primary\_service\_discover\_all@{at\_ble\_primary\_service\_discover\_all}}
+\index{at\_ble\_primary\_service\_discover\_all@{at\_ble\_primary\_service\_discover\_all}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_primary\_service\_discover\_all()}{at\_ble\_primary\_service\_discover\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+discover\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+Discover all Primary services in a peer device. 
+
+Discover all Primary services in a peer device from a specified start\+\_\+handle to a specified end\+\_\+handle, whenever a service is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba4c0167af2e174418c2f5b9dda91f6486}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at the end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connected peer \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gatt__client__group_gadf352205d818cf47fc659824232bed9a}\label{group__gatt__client__group_gadf352205d818cf47fc659824232bed9a}} 
+\index{GATT Client APIs@{GATT Client APIs}!at\_ble\_primary\_service\_discover\_by\_uuid@{at\_ble\_primary\_service\_discover\_by\_uuid}}
+\index{at\_ble\_primary\_service\_discover\_by\_uuid@{at\_ble\_primary\_service\_discover\_by\_uuid}!GATT Client APIs@{GATT Client APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_primary\_service\_discover\_by\_uuid()}{at\_ble\_primary\_service\_discover\_by\_uuid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+primary\+\_\+service\+\_\+discover\+\_\+by\+\_\+uuid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{start\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{end\+\_\+handle,  }\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{uuid }\end{DoxyParamCaption})}
+
+
+
+Discover Primary service of a given U\+U\+ID declared and located in a peer device. 
+
+Search will go from start\+\_\+handle to end\+\_\+handle, whenever a service of matching U\+U\+ID is found \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba4c0167af2e174418c2f5b9dda91f6486}{A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+R\+I\+M\+A\+R\+Y\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+F\+O\+U\+ND}} event is sent and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba8229c390a23c583fa2971431fae60717}{A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+Y\+\_\+\+C\+O\+M\+P\+L\+E\+TE}} is sent at end of discover operation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connected peer \\
+\hline
+\mbox{\texttt{ in}}  & {\em start\+\_\+handle} & start of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em end\+\_\+handle} & end of the searched range \\
+\hline
+\mbox{\texttt{ in}}  & {\em uuid} & U\+U\+ID of the service to be found, with L\+SB byte First in U\+U\+ID value member\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

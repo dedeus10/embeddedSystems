@@ -1,0 +1,428 @@
+\hypertarget{demotasks_8c}{}\section{demotasks.\+c File Reference}
+\label{demotasks_8c}\index{demotasks.c@{demotasks.c}}
+{\ttfamily \#include $<$asf.\+h$>$}\newline
+{\ttfamily \#include $<$conf\+\_\+demo.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}demotasks.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}console\+\_\+serial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}at\+\_\+ble\+\_\+api.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ble\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}csc\+\_\+app.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cscp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cscs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}conf\+\_\+extint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sio2host.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}conf\+\_\+at25dfx.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structficha__user}{ficha\+\_\+user}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_aa056b81ab4a7fc81df5b0018a0aa57e0}{B\+L\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 2)
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_a6653fab9e15053b5c99ce0db8b6b41c6}{B\+L\+E\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}}~(200 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_ac99ee6e5ae1f55bd2f245263da7ad19d}{A\+N\+Y\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 1)
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_ab46ad54a0de4c2ec5f17751602435a22}{T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}}~(100 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_aa0b397575b46a2852b53d416ee4f1288}{G\+T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 3)
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_ab226b10415119c0170aa62e90537af9b}{G\+T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}}~(100 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_ad111e603bbebe5d87f6bc39264ce4733}{E\+X\+IT}}~0
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_a10bed19ceedeb2c12c5aad6de1d3b1a1}{T\+E\+MP}}~1
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_afb212d6c7153207eaa622fb59e8b0898}{A\+B\+O\+UT}}~2
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_aacd2cf60f504e45efada9aec028ee3cd}{S\+T\+A\+TE}}~3
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_a3d9c5ecfe79540687eadeb0c794001c2}{L\+ON}}~4
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_abb4faa9cfd0d710c0b6311baf45f506f}{L\+O\+FF}}~5
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_ada74e7db007a68e763f20c17f2985356}{R\+E\+AD}}~6
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_aecd69d9a67487cc45c38eb184c50538a}{SP}}~7
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_a59da1d65e87a723efe808dbabb4fc205}{S\+ET}}~8
+\item 
+\#define \mbox{\hyperlink{demotasks_8c_aad1dc60a04a1d8cfc8b3ded13601e361}{E\+C\+HO}}~9
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{demotasks_8c_a05d69c7d638b0c8f4f3b86606f30d71e}{write\+\_\+info}} (uint8\+\_\+t $\ast$aux1, uint8\+\_\+t $\ast$aux2)
+\begin{DoxyCompactList}\small\item\em =========================== P\+R\+O\+T\+O\+T\+Y\+P\+ES OF A\+UX F\+U\+N\+C\+I\+T\+O\+NS ============================================================ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{demotasks_8c_af8c609250d5b31d6a4d91f6cbbe2de3a}{read\+\_\+info}} (void)
+\item 
+void \mbox{\hyperlink{demotasks_8c_a1308478f3b9e8045e6c7dc0763e5ca04}{configure\+\_\+ficha}} (void)
+\item 
+void \mbox{\hyperlink{demotasks_8c_af7166221e3c4023af3773e5f84cb49c6}{demotasks\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Função inicia alguns periféricos e cria tarefas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{demotasks_8c_ab69e1ceb372f15f245f420bf1ad86e67}{ble\+\_\+event\+\_\+params}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_ad339283f9c9acae6eb9cf549223be918}{B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}/sizeof(uint32\+\_\+t)\mbox{]}
+\item 
+char \mbox{\hyperlink{demotasks_8c_ac3ff56a3bb6a37ba3e20a859520470b0}{palavra}} \mbox{[}20\mbox{]}
+\begin{DoxyCompactList}\small\item\em =========================== G\+L\+O\+B\+A\+LS ============================================================ \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{demotasks_8c_a7f9fa3f4cfbfae951dc993ce8d03bf68}{T\+A\+M\+\_\+data}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{demotasks_8c_a460d2a258e12748154e5602c3067bec2}{received\+\_\+data}} = 0
+\item 
+char \mbox{\hyperlink{demotasks_8c_a189f4b74d9dd4e7561d76e58c28606cc}{temperature}} \mbox{[}5\mbox{]} = \char`\"{}\char`\"{}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{demotasks_8c_a52f3632b48ec86da31022b69139ac6e6}{light}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{demotasks_8c_a258890b78e2a675573bac599e6b52316}{setpoint}} = 0
+\item 
+\mbox{\hyperlink{cscp_8h_a27166c1f1bb384e1f366261c77aec7b6}{csc\+\_\+report\+\_\+ntf\+\_\+t}} \mbox{\hyperlink{demotasks_8c_a48af83eb5413c46174aee2ebe1987318}{recv\+\_\+ntf\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Received notification data structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} \mbox{\hyperlink{demotasks_8c_a44541979a5aae41b972ddaf4a319e1ce}{at25dfx\+\_\+spi}}
+\begin{DoxyCompactList}\small\item\em Driver\+\_\+instances. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} \mbox{\hyperlink{demotasks_8c_a23cf8a6d0d512731995e2ceda804ef4f}{at25dfx\+\_\+chip}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{demotasks_8c_aed2717747840780f062a42a2fe45a4fc}{send\+\_\+length}} = 0
+\begin{DoxyCompactList}\small\item\em Data length to be send over the air. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{demotasks_8c_a84ed33a02d3a61598c28786e8f9e6244}{send\+\_\+data}} \mbox{[}\mbox{\hyperlink{csc__app_8h_a9e6e26f3b1576402b650da86d62e0ea9}{A\+P\+P\+\_\+\+T\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Buffer data to be send over the air. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structficha__user}{ficha\+\_\+user}} \mbox{\hyperlink{demotasks_8c_a0b3529840d714a07fe7bdaa254916d82}{ficha}} \mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{demotasks_8c_afb212d6c7153207eaa622fb59e8b0898}\label{demotasks_8c_afb212d6c7153207eaa622fb59e8b0898}} 
+\index{demotasks.c@{demotasks.c}!ABOUT@{ABOUT}}
+\index{ABOUT@{ABOUT}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{ABOUT}{ABOUT}}
+{\footnotesize\ttfamily \#define A\+B\+O\+UT~2}
+
+\mbox{\Hypertarget{demotasks_8c_ac99ee6e5ae1f55bd2f245263da7ad19d}\label{demotasks_8c_ac99ee6e5ae1f55bd2f245263da7ad19d}} 
+\index{demotasks.c@{demotasks.c}!ANY\_TASK\_PRIORITY@{ANY\_TASK\_PRIORITY}}
+\index{ANY\_TASK\_PRIORITY@{ANY\_TASK\_PRIORITY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{ANY\_TASK\_PRIORITY}{ANY\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define A\+N\+Y\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 1)}
+
+\mbox{\Hypertarget{demotasks_8c_a6653fab9e15053b5c99ce0db8b6b41c6}\label{demotasks_8c_a6653fab9e15053b5c99ce0db8b6b41c6}} 
+\index{demotasks.c@{demotasks.c}!BLE\_TASK\_DELAY@{BLE\_TASK\_DELAY}}
+\index{BLE\_TASK\_DELAY@{BLE\_TASK\_DELAY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{BLE\_TASK\_DELAY}{BLE\_TASK\_DELAY}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY~(200 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})}
+
+\mbox{\Hypertarget{demotasks_8c_aa056b81ab4a7fc81df5b0018a0aa57e0}\label{demotasks_8c_aa056b81ab4a7fc81df5b0018a0aa57e0}} 
+\index{demotasks.c@{demotasks.c}!BLE\_TASK\_PRIORITY@{BLE\_TASK\_PRIORITY}}
+\index{BLE\_TASK\_PRIORITY@{BLE\_TASK\_PRIORITY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{BLE\_TASK\_PRIORITY}{BLE\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 2)}
+
+\mbox{\Hypertarget{demotasks_8c_aad1dc60a04a1d8cfc8b3ded13601e361}\label{demotasks_8c_aad1dc60a04a1d8cfc8b3ded13601e361}} 
+\index{demotasks.c@{demotasks.c}!ECHO@{ECHO}}
+\index{ECHO@{ECHO}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{ECHO}{ECHO}}
+{\footnotesize\ttfamily \#define E\+C\+HO~9}
+
+\mbox{\Hypertarget{demotasks_8c_ad111e603bbebe5d87f6bc39264ce4733}\label{demotasks_8c_ad111e603bbebe5d87f6bc39264ce4733}} 
+\index{demotasks.c@{demotasks.c}!EXIT@{EXIT}}
+\index{EXIT@{EXIT}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{EXIT}{EXIT}}
+{\footnotesize\ttfamily \#define E\+X\+IT~0}
+
+\mbox{\Hypertarget{demotasks_8c_ab226b10415119c0170aa62e90537af9b}\label{demotasks_8c_ab226b10415119c0170aa62e90537af9b}} 
+\index{demotasks.c@{demotasks.c}!GTEMP\_TASK\_DELAY@{GTEMP\_TASK\_DELAY}}
+\index{GTEMP\_TASK\_DELAY@{GTEMP\_TASK\_DELAY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{GTEMP\_TASK\_DELAY}{GTEMP\_TASK\_DELAY}}
+{\footnotesize\ttfamily \#define G\+T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY~(100 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})}
+
+\mbox{\Hypertarget{demotasks_8c_aa0b397575b46a2852b53d416ee4f1288}\label{demotasks_8c_aa0b397575b46a2852b53d416ee4f1288}} 
+\index{demotasks.c@{demotasks.c}!GTEMP\_TASK\_PRIORITY@{GTEMP\_TASK\_PRIORITY}}
+\index{GTEMP\_TASK\_PRIORITY@{GTEMP\_TASK\_PRIORITY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{GTEMP\_TASK\_PRIORITY}{GTEMP\_TASK\_PRIORITY}}
+{\footnotesize\ttfamily \#define G\+T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+TY~(\mbox{\hyperlink{task_8h_a94ed0b9b3b4e8ccc859c322f18583e67}{tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}} + 3)}
+
+\mbox{\Hypertarget{demotasks_8c_abb4faa9cfd0d710c0b6311baf45f506f}\label{demotasks_8c_abb4faa9cfd0d710c0b6311baf45f506f}} 
+\index{demotasks.c@{demotasks.c}!LOFF@{LOFF}}
+\index{LOFF@{LOFF}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{LOFF}{LOFF}}
+{\footnotesize\ttfamily \#define L\+O\+FF~5}
+
+\mbox{\Hypertarget{demotasks_8c_a3d9c5ecfe79540687eadeb0c794001c2}\label{demotasks_8c_a3d9c5ecfe79540687eadeb0c794001c2}} 
+\index{demotasks.c@{demotasks.c}!LON@{LON}}
+\index{LON@{LON}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{LON}{LON}}
+{\footnotesize\ttfamily \#define L\+ON~4}
+
+\mbox{\Hypertarget{demotasks_8c_ada74e7db007a68e763f20c17f2985356}\label{demotasks_8c_ada74e7db007a68e763f20c17f2985356}} 
+\index{demotasks.c@{demotasks.c}!READ@{READ}}
+\index{READ@{READ}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{READ}{READ}}
+{\footnotesize\ttfamily \#define R\+E\+AD~6}
+
+\mbox{\Hypertarget{demotasks_8c_a59da1d65e87a723efe808dbabb4fc205}\label{demotasks_8c_a59da1d65e87a723efe808dbabb4fc205}} 
+\index{demotasks.c@{demotasks.c}!SET@{SET}}
+\index{SET@{SET}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{SET}{SET}}
+{\footnotesize\ttfamily \#define S\+ET~8}
+
+\mbox{\Hypertarget{demotasks_8c_aecd69d9a67487cc45c38eb184c50538a}\label{demotasks_8c_aecd69d9a67487cc45c38eb184c50538a}} 
+\index{demotasks.c@{demotasks.c}!SP@{SP}}
+\index{SP@{SP}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{SP}{SP}}
+{\footnotesize\ttfamily \#define SP~7}
+
+\mbox{\Hypertarget{demotasks_8c_aacd2cf60f504e45efada9aec028ee3cd}\label{demotasks_8c_aacd2cf60f504e45efada9aec028ee3cd}} 
+\index{demotasks.c@{demotasks.c}!STATE@{STATE}}
+\index{STATE@{STATE}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{STATE}{STATE}}
+{\footnotesize\ttfamily \#define S\+T\+A\+TE~3}
+
+\mbox{\Hypertarget{demotasks_8c_a10bed19ceedeb2c12c5aad6de1d3b1a1}\label{demotasks_8c_a10bed19ceedeb2c12c5aad6de1d3b1a1}} 
+\index{demotasks.c@{demotasks.c}!TEMP@{TEMP}}
+\index{TEMP@{TEMP}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{TEMP}{TEMP}}
+{\footnotesize\ttfamily \#define T\+E\+MP~1}
+
+\mbox{\Hypertarget{demotasks_8c_ab46ad54a0de4c2ec5f17751602435a22}\label{demotasks_8c_ab46ad54a0de4c2ec5f17751602435a22}} 
+\index{demotasks.c@{demotasks.c}!TEMP\_TASK\_DELAY@{TEMP\_TASK\_DELAY}}
+\index{TEMP\_TASK\_DELAY@{TEMP\_TASK\_DELAY}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{TEMP\_TASK\_DELAY}{TEMP\_TASK\_DELAY}}
+{\footnotesize\ttfamily \#define T\+E\+M\+P\+\_\+\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY~(100 / \mbox{\hyperlink{_free_r_t_o_s_8h_a8689cad2afb0c5f65d866e2c356378bf}{port\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+MS}})}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{demotasks_8c_a1308478f3b9e8045e6c7dc0763e5ca04}\label{demotasks_8c_a1308478f3b9e8045e6c7dc0763e5ca04}} 
+\index{demotasks.c@{demotasks.c}!configure\_ficha@{configure\_ficha}}
+\index{configure\_ficha@{configure\_ficha}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{configure\_ficha()}{configure\_ficha()}}
+{\footnotesize\ttfamily void configure\+\_\+ficha (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}erase\+\_\+block\mbox{]}
+
+\mbox{[}erase\+\_\+block\mbox{]}
+
+\mbox{[}write\+\_\+buffer\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]} \mbox{\Hypertarget{demotasks_8c_af7166221e3c4023af3773e5f84cb49c6}\label{demotasks_8c_af7166221e3c4023af3773e5f84cb49c6}} 
+\index{demotasks.c@{demotasks.c}!demotasks\_init@{demotasks\_init}}
+\index{demotasks\_init@{demotasks\_init}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{demotasks\_init()}{demotasks\_init()}}
+{\footnotesize\ttfamily void demotasks\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Função inicia alguns periféricos e cria tarefas. 
+
+=========================== I\+N\+I\+T\+I\+A\+L\+I\+ZE DE P\+E\+R\+I\+P\+H\+E\+R\+A\+LS A\+ND C\+R\+E\+A\+TE T\+HE T\+A\+SK\textquotesingle{}S ============================================================ 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Initialize serial console
+
+Initialize the buffer address and buffer length based on user input
+
+initialize the ble chip and Set the device mac address
+
+Initializing the profile
+
+Started advertisement
+
+Register the notification handler
+
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]} \mbox{\Hypertarget{demotasks_8c_af8c609250d5b31d6a4d91f6cbbe2de3a}\label{demotasks_8c_af8c609250d5b31d6a4d91f6cbbe2de3a}} 
+\index{demotasks.c@{demotasks.c}!read\_info@{read\_info}}
+\index{read\_info@{read\_info}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{read\_info()}{read\_info()}}
+{\footnotesize\ttfamily void read\+\_\+info (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+=========================== R\+E\+AD I\+N\+F\+O\+R\+M\+A\+T\+I\+ON F\+R\+OM S\+E\+R\+I\+AL F\+L\+A\+SH ============================================================ 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]}
+
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]} \mbox{\Hypertarget{demotasks_8c_a05d69c7d638b0c8f4f3b86606f30d71e}\label{demotasks_8c_a05d69c7d638b0c8f4f3b86606f30d71e}} 
+\index{demotasks.c@{demotasks.c}!write\_info@{write\_info}}
+\index{write\_info@{write\_info}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{write\_info()}{write\_info()}}
+{\footnotesize\ttfamily void write\+\_\+info (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{aux1,  }\item[{uint8\+\_\+t $\ast$}]{aux2 }\end{DoxyParamCaption})}
+
+
+
+=========================== P\+R\+O\+T\+O\+T\+Y\+P\+ES OF A\+UX F\+U\+N\+C\+I\+T\+O\+NS ============================================================ 
+
+=========================== W\+R\+I\+TE T\+HE I\+N\+FO IN S\+E\+R\+I\+AL F\+L\+A\+SH ============================================================ 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$aux1} & ponteiro para informação do estado da lampada \\
+\hline
+{\em $\ast$aux2} & ponteiro para informação do set point da temperatura \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}wake\+\_\+chip\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]}
+
+\mbox{[}check\+\_\+presence\mbox{]}
+
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}unprotect\+\_\+sector\mbox{]}
+
+\mbox{[}erase\+\_\+block\mbox{]}
+
+\mbox{[}erase\+\_\+block\mbox{]}
+
+\mbox{[}write\+\_\+buffer\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]}
+
+\mbox{[}global\+\_\+protect\mbox{]} 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{demotasks_8c_a23cf8a6d0d512731995e2ceda804ef4f}\label{demotasks_8c_a23cf8a6d0d512731995e2ceda804ef4f}} 
+\index{demotasks.c@{demotasks.c}!at25dfx\_chip@{at25dfx\_chip}}
+\index{at25dfx\_chip@{at25dfx\_chip}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{at25dfx\_chip}{at25dfx\_chip}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structat25dfx__chip__module}{at25dfx\+\_\+chip\+\_\+module}} at25dfx\+\_\+chip}
+
+\mbox{\Hypertarget{demotasks_8c_a44541979a5aae41b972ddaf4a319e1ce}\label{demotasks_8c_a44541979a5aae41b972ddaf4a319e1ce}} 
+\index{demotasks.c@{demotasks.c}!at25dfx\_spi@{at25dfx\_spi}}
+\index{at25dfx\_spi@{at25dfx\_spi}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{at25dfx\_spi}{at25dfx\_spi}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structspi__module}{spi\+\_\+module}} at25dfx\+\_\+spi}
+
+
+
+Driver\+\_\+instances. 
+
+\mbox{\Hypertarget{demotasks_8c_ab69e1ceb372f15f245f420bf1ad86e67}\label{demotasks_8c_ab69e1ceb372f15f245f420bf1ad86e67}} 
+\index{demotasks.c@{demotasks.c}!ble\_event\_params@{ble\_event\_params}}
+\index{ble\_event\_params@{ble\_event\_params}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{ble\_event\_params}{ble\_event\_params}}
+{\footnotesize\ttfamily uint32\+\_\+t ble\+\_\+event\+\_\+params\mbox{[}\mbox{\hyperlink{ble__manager_8h_ad339283f9c9acae6eb9cf549223be918}{B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}/sizeof(uint32\+\_\+t)\mbox{]}}
+
+\mbox{\Hypertarget{demotasks_8c_a0b3529840d714a07fe7bdaa254916d82}\label{demotasks_8c_a0b3529840d714a07fe7bdaa254916d82}} 
+\index{demotasks.c@{demotasks.c}!ficha@{ficha}}
+\index{ficha@{ficha}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{ficha}{ficha}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structficha__user}{ficha\+\_\+user}} ficha\mbox{[}1\mbox{]}}
+
+\mbox{\Hypertarget{demotasks_8c_a52f3632b48ec86da31022b69139ac6e6}\label{demotasks_8c_a52f3632b48ec86da31022b69139ac6e6}} 
+\index{demotasks.c@{demotasks.c}!light@{light}}
+\index{light@{light}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{light}{light}}
+{\footnotesize\ttfamily uint8\+\_\+t light = 0}
+
+\mbox{\Hypertarget{demotasks_8c_ac3ff56a3bb6a37ba3e20a859520470b0}\label{demotasks_8c_ac3ff56a3bb6a37ba3e20a859520470b0}} 
+\index{demotasks.c@{demotasks.c}!palavra@{palavra}}
+\index{palavra@{palavra}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{palavra}{palavra}}
+{\footnotesize\ttfamily char palavra\mbox{[}20\mbox{]}}
+
+
+
+=========================== G\+L\+O\+B\+A\+LS ============================================================ 
+
+\mbox{\Hypertarget{demotasks_8c_a460d2a258e12748154e5602c3067bec2}\label{demotasks_8c_a460d2a258e12748154e5602c3067bec2}} 
+\index{demotasks.c@{demotasks.c}!received\_data@{received\_data}}
+\index{received\_data@{received\_data}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{received\_data}{received\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t received\+\_\+data = 0}
+
+\mbox{\Hypertarget{demotasks_8c_a48af83eb5413c46174aee2ebe1987318}\label{demotasks_8c_a48af83eb5413c46174aee2ebe1987318}} 
+\index{demotasks.c@{demotasks.c}!recv\_ntf\_info@{recv\_ntf\_info}}
+\index{recv\_ntf\_info@{recv\_ntf\_info}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{recv\_ntf\_info}{recv\_ntf\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cscp_8h_a27166c1f1bb384e1f366261c77aec7b6}{csc\+\_\+report\+\_\+ntf\+\_\+t}} recv\+\_\+ntf\+\_\+info}
+
+
+
+Received notification data structure. 
+
+\mbox{\Hypertarget{demotasks_8c_a84ed33a02d3a61598c28786e8f9e6244}\label{demotasks_8c_a84ed33a02d3a61598c28786e8f9e6244}} 
+\index{demotasks.c@{demotasks.c}!send\_data@{send\_data}}
+\index{send\_data@{send\_data}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{send\_data}{send\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t send\+\_\+data\mbox{[}\mbox{\hyperlink{csc__app_8h_a9e6e26f3b1576402b650da86d62e0ea9}{A\+P\+P\+\_\+\+T\+X\+\_\+\+B\+U\+F\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Buffer data to be send over the air. 
+
+\mbox{\Hypertarget{demotasks_8c_aed2717747840780f062a42a2fe45a4fc}\label{demotasks_8c_aed2717747840780f062a42a2fe45a4fc}} 
+\index{demotasks.c@{demotasks.c}!send\_length@{send\_length}}
+\index{send\_length@{send\_length}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{send\_length}{send\_length}}
+{\footnotesize\ttfamily uint16\+\_\+t send\+\_\+length = 0}
+
+
+
+Data length to be send over the air. 
+
+\mbox{\Hypertarget{demotasks_8c_a258890b78e2a675573bac599e6b52316}\label{demotasks_8c_a258890b78e2a675573bac599e6b52316}} 
+\index{demotasks.c@{demotasks.c}!setpoint@{setpoint}}
+\index{setpoint@{setpoint}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{setpoint}{setpoint}}
+{\footnotesize\ttfamily uint8\+\_\+t setpoint = 0}
+
+\mbox{\Hypertarget{demotasks_8c_a7f9fa3f4cfbfae951dc993ce8d03bf68}\label{demotasks_8c_a7f9fa3f4cfbfae951dc993ce8d03bf68}} 
+\index{demotasks.c@{demotasks.c}!TAM\_data@{TAM\_data}}
+\index{TAM\_data@{TAM\_data}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{TAM\_data}{TAM\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t T\+A\+M\+\_\+data = 0}
+
+\mbox{\Hypertarget{demotasks_8c_a189f4b74d9dd4e7561d76e58c28606cc}\label{demotasks_8c_a189f4b74d9dd4e7561d76e58c28606cc}} 
+\index{demotasks.c@{demotasks.c}!temperature@{temperature}}
+\index{temperature@{temperature}!demotasks.c@{demotasks.c}}
+\subsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily char temperature\mbox{[}5\mbox{]} = \char`\"{}\char`\"{}}
+

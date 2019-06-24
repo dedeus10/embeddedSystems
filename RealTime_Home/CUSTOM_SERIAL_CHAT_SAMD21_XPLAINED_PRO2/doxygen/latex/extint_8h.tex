@@ -1,0 +1,88 @@
+\hypertarget{extint_8h}{}\section{A\+S\+F/sam0/drivers/extint/extint.h File Reference}
+\label{extint_8h}\index{ASF/sam0/drivers/extint/extint.h@{ASF/sam0/drivers/extint/extint.h}}
+
+
+S\+AM External Interrupt Driver.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$pinmux.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}extint\+\_\+callback.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}}
+\begin{DoxyCompactList}\small\item\em External Interrupt Controller channel configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}}
+\begin{DoxyCompactList}\small\item\em External Interrupt event enable/disable structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}}
+\begin{DoxyCompactList}\small\item\em External Interrupt Controller N\+MI configuration structure. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gaacc51accf9c1d264308d704a0fa72cca}{E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+G\+C\+LK}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gac6728bce00136d52dedeffc38f0570d4}{E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+K\+\_\+\+U\+L\+P32K}}~1
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga4388f6f166f07c60940ec351a8eb1bac}{E\+I\+C\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS}}~16
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga0faa88198c196060baeecb40061daaa5}{extint\+\_\+callback\+\_\+t}}) (void)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}} \{ \newline
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a6505c5a81f362fc6d2146395fa5e0641}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a62003fada64b948bb611011f2179b2fb}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+R\+I\+S\+I\+NG}} = 1, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a0477f603ca427098cd743a9919c89f43}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+F\+A\+L\+L\+I\+NG}} = 2, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aa7386678eccf0e246afa75614bfd8841}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+B\+O\+TH}} = 3, 
+\newline
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a9660006ada972d5b562adc15bc787767}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+H\+I\+GH}} = 4, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aace71e1f8f4ea192934bc54efa3e7af3}{E\+X\+T\+I\+N\+T\+\_\+\+D\+E\+T\+E\+C\+T\+\_\+\+L\+OW}} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em External interrupt edge detection configuration enum. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga01b49a5a87ca71359c5a9bc2ee02853e}{extint\+\_\+pull}} \{ \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea622ad8b9955fb50c31f1b98df6318819}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+UP}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+UP, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853eadddb16f8c9c7160fe222de4e25733564}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+D\+O\+WN, 
+\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga01b49a5a87ca71359c5a9bc2ee02853ea003da62f2c3410edfd555aecdbdccbd8}{E\+X\+T\+I\+N\+T\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE}} = S\+Y\+S\+T\+E\+M\+\_\+\+P\+I\+N\+M\+U\+X\+\_\+\+P\+I\+N\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE
+ \}
+\begin{DoxyCompactList}\small\item\em External interrupt internal pull configuration enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}\textbf{ Event Management}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gadbcf557b05082e2d25111e3ad9e3385e}{extint\+\_\+enable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Enables an External Interrupt event output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga1e150eaf8dde1371cb31111f5feae5e4}{extint\+\_\+disable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Disables an External Interrupt event output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Configuration and Initialization (Channel)}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gab6dc4e3c3c0c85f96c52c130f3b63241}{extint\+\_\+chan\+\_\+get\+\_\+config\+\_\+defaults}} (struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes an External Interrupt channel configuration structure to defaults. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gace11f1168aa706f9b40f6c4d65b402a0}{extint\+\_\+chan\+\_\+set\+\_\+config}} (const uint8\+\_\+t channel, const struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt channel configuration to the hardware module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Configuration and Initialization (N\+MI)}\par
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gae6d52d3a6437598ebf56f2ad75193033}{extint\+\_\+nmi\+\_\+set\+\_\+config}} (const uint8\+\_\+t nmi\+\_\+channel, const struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt N\+MI channel configuration to the hardware module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Detection testing and clearing (channel)}\par
+\end{Indent}
+\begin{Indent}\textbf{ Detection Testing and Clearing (N\+MI)}\par
+\end{Indent}
+
+
+\subsection{Detailed Description}
+S\+AM External Interrupt Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

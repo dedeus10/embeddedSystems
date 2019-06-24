@@ -1,0 +1,168 @@
+\hypertarget{group__group__sam0__utils__tpaste}{}\section{Preprocessor -\/ Token Paste}
+\label{group__group__sam0__utils__tpaste}\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsection*{Token Paste}
+\label{_amgrp95fd98b9acf33b4f1f1cfa86699bc1f2}%
+Paste N preprocessing tokens together, these tokens being allowed to be \#defined.
+
+May be used only within macros with the tokens passed as arguments if the tokens are \#defined.
+
+For example, writing \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2(\+U, W\+I\+D\+T\+H)}} within a macro \#defined by U\+T\+Y\+P\+E(\+W\+I\+D\+T\+H) and invoked as U\+T\+Y\+P\+E(\+U\+L\+\_\+\+W\+I\+D\+T\+H) with U\+L\+\_\+\+W\+I\+D\+TH \#defined as 32 is equivalent to writing U32. \begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2}}(a,  b)~a\#\#b
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}{T\+P\+A\+S\+T\+E3}}(a,  b,  c)~a\#\#b\#\#c
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga7df52ac8ee04480944ef404ef9418b38}{T\+P\+A\+S\+T\+E4}}(a,  b,  c,  d)~a\#\#b\#\#c\#\#d
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gac9624b958617cbb3281de7ec41f53230}{T\+P\+A\+S\+T\+E5}}(a,  b,  c,  d,  e)~a\#\#b\#\#c\#\#d\#\#e
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga2c4dbcf9049d7553366bbf9b9bc4e801}{T\+P\+A\+S\+T\+E6}}(a,  b,  c,  d,  e,  f)~a\#\#b\#\#c\#\#d\#\#e\#\#f
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gad36c0d6224338a4f8738aa25659afc14}{T\+P\+A\+S\+T\+E7}}(a,  b,  c,  d,  e,  f,  g)~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gaf7aff743d5c0d66a81a13268b1a7e222}{T\+P\+A\+S\+T\+E8}}(a,  b,  c,  d,  e,  f,  g,  h)~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga5440e5a665d859bec7c3527312d0889d}{T\+P\+A\+S\+T\+E9}}(a,  b,  c,  d,  e,  f,  g,  h,  i)~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h\#\#i
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga0235b2e4ccf7a5b1d022a729a17a78a2}{T\+P\+A\+S\+T\+E10}}(a,  b,  c,  d,  e,  f,  g,  h,  i,  j)~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h\#\#i\#\#j
+\end{DoxyCompactItemize}
+\subsection*{Absolute Token Paste}
+\label{_amgrp61c59096cd4b7958303a985954baa7ca}%
+Paste N preprocessing tokens together, these tokens being allowed to be \#defined.
+
+No restriction of use if the tokens are \#defined.
+
+For example, writing \mbox{\hyperlink{group__group__sam0__utils__tpaste_gafd3b4e313492a0862292dc3072d8e347}{A\+T\+P\+A\+S\+T\+E2(\+U, U\+L\+\_\+\+W\+I\+D\+T\+H)}} anywhere with U\+L\+\_\+\+W\+I\+D\+TH \#defined as 32 is equivalent to writing U32. \begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gafd3b4e313492a0862292dc3072d8e347}{A\+T\+P\+A\+S\+T\+E2}}(a,  b)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2}}( a, b)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga80b7594516326045fbcaec54d7759c20}{A\+T\+P\+A\+S\+T\+E3}}(a,  b,  c)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}{T\+P\+A\+S\+T\+E3}}( a, b, c)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gad9dcc51074148a4ff01810033a41e282}{A\+T\+P\+A\+S\+T\+E4}}(a,  b,  c,  d)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga7df52ac8ee04480944ef404ef9418b38}{T\+P\+A\+S\+T\+E4}}( a, b, c, d)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga4e4994267872724c11e31f1274c1a84c}{A\+T\+P\+A\+S\+T\+E5}}(a,  b,  c,  d,  e)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gac9624b958617cbb3281de7ec41f53230}{T\+P\+A\+S\+T\+E5}}( a, b, c, d, e)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga5bbd1842581ea1fa81616d3222bda308}{A\+T\+P\+A\+S\+T\+E6}}(a,  b,  c,  d,  e,  f)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga2c4dbcf9049d7553366bbf9b9bc4e801}{T\+P\+A\+S\+T\+E6}}( a, b, c, d, e, f)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_gabecc8ad964051f6f877f14dd13919b18}{A\+T\+P\+A\+S\+T\+E7}}(a,  b,  c,  d,  e,  f,  g)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gad36c0d6224338a4f8738aa25659afc14}{T\+P\+A\+S\+T\+E7}}( a, b, c, d, e, f, g)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga303651436fcc8283bd17c13578476c8e}{A\+T\+P\+A\+S\+T\+E8}}(a,  b,  c,  d,  e,  f,  g,  h)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gaf7aff743d5c0d66a81a13268b1a7e222}{T\+P\+A\+S\+T\+E8}}( a, b, c, d, e, f, g, h)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga5305e79258b2256febfac6ebec8838c2}{A\+T\+P\+A\+S\+T\+E9}}(a,  b,  c,  d,  e,  f,  g,  h,  i)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga5440e5a665d859bec7c3527312d0889d}{T\+P\+A\+S\+T\+E9}}( a, b, c, d, e, f, g, h, i)
+\item 
+\#define \mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3b9c4ca2ffbcec13ec3083ab95664ac9}{A\+T\+P\+A\+S\+T\+E10}}(a,  b,  c,  d,  e,  f,  g,  h,  i,  j)~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga0235b2e4ccf7a5b1d022a729a17a78a2}{T\+P\+A\+S\+T\+E10}}(a, b, c, d, e, f, g, h, i, j)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga3b9c4ca2ffbcec13ec3083ab95664ac9}\label{group__group__sam0__utils__tpaste_ga3b9c4ca2ffbcec13ec3083ab95664ac9}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE10@{ATPASTE10}}
+\index{ATPASTE10@{ATPASTE10}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE10}{ATPASTE10}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E10(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h,  }\item[{}]{i,  }\item[{}]{j }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga0235b2e4ccf7a5b1d022a729a17a78a2}{T\+P\+A\+S\+T\+E10}}(a, b, c, d, e, f, g, h, i, j)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gafd3b4e313492a0862292dc3072d8e347}\label{group__group__sam0__utils__tpaste_gafd3b4e313492a0862292dc3072d8e347}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE2@{ATPASTE2}}
+\index{ATPASTE2@{ATPASTE2}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE2}{ATPASTE2}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E2(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}{T\+P\+A\+S\+T\+E2}}( a, b)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga80b7594516326045fbcaec54d7759c20}\label{group__group__sam0__utils__tpaste_ga80b7594516326045fbcaec54d7759c20}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE3@{ATPASTE3}}
+\index{ATPASTE3@{ATPASTE3}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE3}{ATPASTE3}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E3(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}{T\+P\+A\+S\+T\+E3}}( a, b, c)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gad9dcc51074148a4ff01810033a41e282}\label{group__group__sam0__utils__tpaste_gad9dcc51074148a4ff01810033a41e282}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE4@{ATPASTE4}}
+\index{ATPASTE4@{ATPASTE4}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE4}{ATPASTE4}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E4(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga7df52ac8ee04480944ef404ef9418b38}{T\+P\+A\+S\+T\+E4}}( a, b, c, d)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga4e4994267872724c11e31f1274c1a84c}\label{group__group__sam0__utils__tpaste_ga4e4994267872724c11e31f1274c1a84c}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE5@{ATPASTE5}}
+\index{ATPASTE5@{ATPASTE5}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE5}{ATPASTE5}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E5(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gac9624b958617cbb3281de7ec41f53230}{T\+P\+A\+S\+T\+E5}}( a, b, c, d, e)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga5bbd1842581ea1fa81616d3222bda308}\label{group__group__sam0__utils__tpaste_ga5bbd1842581ea1fa81616d3222bda308}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE6@{ATPASTE6}}
+\index{ATPASTE6@{ATPASTE6}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE6}{ATPASTE6}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E6(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga2c4dbcf9049d7553366bbf9b9bc4e801}{T\+P\+A\+S\+T\+E6}}( a, b, c, d, e, f)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gabecc8ad964051f6f877f14dd13919b18}\label{group__group__sam0__utils__tpaste_gabecc8ad964051f6f877f14dd13919b18}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE7@{ATPASTE7}}
+\index{ATPASTE7@{ATPASTE7}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE7}{ATPASTE7}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E7(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gad36c0d6224338a4f8738aa25659afc14}{T\+P\+A\+S\+T\+E7}}( a, b, c, d, e, f, g)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga303651436fcc8283bd17c13578476c8e}\label{group__group__sam0__utils__tpaste_ga303651436fcc8283bd17c13578476c8e}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE8@{ATPASTE8}}
+\index{ATPASTE8@{ATPASTE8}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE8}{ATPASTE8}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E8(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_gaf7aff743d5c0d66a81a13268b1a7e222}{T\+P\+A\+S\+T\+E8}}( a, b, c, d, e, f, g, h)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga5305e79258b2256febfac6ebec8838c2}\label{group__group__sam0__utils__tpaste_ga5305e79258b2256febfac6ebec8838c2}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!ATPASTE9@{ATPASTE9}}
+\index{ATPASTE9@{ATPASTE9}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{ATPASTE9}{ATPASTE9}}
+{\footnotesize\ttfamily \#define A\+T\+P\+A\+S\+T\+E9(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h,  }\item[{}]{i }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils__tpaste_ga5440e5a665d859bec7c3527312d0889d}{T\+P\+A\+S\+T\+E9}}( a, b, c, d, e, f, g, h, i)}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga0235b2e4ccf7a5b1d022a729a17a78a2}\label{group__group__sam0__utils__tpaste_ga0235b2e4ccf7a5b1d022a729a17a78a2}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE10@{TPASTE10}}
+\index{TPASTE10@{TPASTE10}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE10}{TPASTE10}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E10(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h,  }\item[{}]{i,  }\item[{}]{j }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h\#\#i\#\#j}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}\label{group__group__sam0__utils__tpaste_ga55fb148844f5ba993a992b609728e82e}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE2@{TPASTE2}}
+\index{TPASTE2@{TPASTE2}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE2}{TPASTE2}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E2(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~a\#\#b}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}\label{group__group__sam0__utils__tpaste_ga3774e5e321825e6ab4a27fef2a0deb14}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE3@{TPASTE3}}
+\index{TPASTE3@{TPASTE3}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE3}{TPASTE3}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E3(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c }\end{DoxyParamCaption})~a\#\#b\#\#c}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga7df52ac8ee04480944ef404ef9418b38}\label{group__group__sam0__utils__tpaste_ga7df52ac8ee04480944ef404ef9418b38}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE4@{TPASTE4}}
+\index{TPASTE4@{TPASTE4}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE4}{TPASTE4}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E4(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gac9624b958617cbb3281de7ec41f53230}\label{group__group__sam0__utils__tpaste_gac9624b958617cbb3281de7ec41f53230}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE5@{TPASTE5}}
+\index{TPASTE5@{TPASTE5}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE5}{TPASTE5}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E5(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga2c4dbcf9049d7553366bbf9b9bc4e801}\label{group__group__sam0__utils__tpaste_ga2c4dbcf9049d7553366bbf9b9bc4e801}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE6@{TPASTE6}}
+\index{TPASTE6@{TPASTE6}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE6}{TPASTE6}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E6(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e\#\#f}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gad36c0d6224338a4f8738aa25659afc14}\label{group__group__sam0__utils__tpaste_gad36c0d6224338a4f8738aa25659afc14}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE7@{TPASTE7}}
+\index{TPASTE7@{TPASTE7}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE7}{TPASTE7}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E7(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_gaf7aff743d5c0d66a81a13268b1a7e222}\label{group__group__sam0__utils__tpaste_gaf7aff743d5c0d66a81a13268b1a7e222}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE8@{TPASTE8}}
+\index{TPASTE8@{TPASTE8}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE8}{TPASTE8}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E8(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h}
+
+\mbox{\Hypertarget{group__group__sam0__utils__tpaste_ga5440e5a665d859bec7c3527312d0889d}\label{group__group__sam0__utils__tpaste_ga5440e5a665d859bec7c3527312d0889d}} 
+\index{Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}!TPASTE9@{TPASTE9}}
+\index{TPASTE9@{TPASTE9}!Preprocessor -\/ Token Paste@{Preprocessor -\/ Token Paste}}
+\subsubsection{\texorpdfstring{TPASTE9}{TPASTE9}}
+{\footnotesize\ttfamily \#define T\+P\+A\+S\+T\+E9(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{f,  }\item[{}]{g,  }\item[{}]{h,  }\item[{}]{i }\end{DoxyParamCaption})~a\#\#b\#\#c\#\#d\#\#e\#\#f\#\#g\#\#h\#\#i}
+

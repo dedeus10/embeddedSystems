@@ -1,0 +1,57 @@
+\hypertarget{group__dbg__logs__group__examples}{}\section{Examples}
+\label{group__dbg__logs__group__examples}\index{Examples@{Examples}}
+\hypertarget{group__dbg__logs__group__examples_example1}{}\subsection{Example 1}\label{group__dbg__logs__group__examples_example1}
+This example illustrates how to enable and disable trace logs. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{platform_8h}{platform.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{at__ble__api_8h}{at\_ble\_api.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{at__ble__trace_8h}{at\_ble\_trace.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\_ble\_status\_t}} enuStatus;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga8ed207793866a85cd64883e538573fb4}{trace\_register\_printFn}}(\&printf);}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga6659e7cfd41f22f3d2c070c4c1156da4}{trace\_set\_level}}(\mbox{\hyperlink{group__dbg__logs__group__macros_gaf16c69802e204beafd674a0dbe695d2a}{TRACE\_LVL\_ERR}}|\mbox{\hyperlink{group__dbg__logs__group__macros_ga6c483b2388f6352f68b9a9be81474a74}{TRACE\_LVL\_FUN}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{    enuStatus = \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\_ble\_init}}(\&\mbox{\hyperlink{ble__manager_8c_a9fc4e95b4195eb63f88df00d0cf53747}{pf\_cfg}});}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{group__dbg__logs__group__examples_example2}{}\subsection{Example 2}\label{group__dbg__logs__group__examples_example2}
+This example illustrates how to use different levels of trace logs. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{platform_8h}{platform.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{at__ble__api_8h}{at\_ble\_api.h}}"}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{at__ble__trace_8h}{at\_ble\_trace.h}}"}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\_ble\_status\_t}} enuStatus;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga8ed207793866a85cd64883e538573fb4}{trace\_register\_printFn}}(\&printf);}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga6659e7cfd41f22f3d2c070c4c1156da4}{trace\_set\_level}}(\mbox{\hyperlink{group__dbg__logs__group__macros_gaf16c69802e204beafd674a0dbe695d2a}{TRACE\_LVL\_ERR}}|\mbox{\hyperlink{group__dbg__logs__group__macros_ga6c483b2388f6352f68b9a9be81474a74}{TRACE\_LVL\_FUN}});  \textcolor{comment}{//ONLY, Errors and Functions entrys will be displayed}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    enuStatus = \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\_ble\_init}}(\&\mbox{\hyperlink{ble__manager_8c_a9fc4e95b4195eb63f88df00d0cf53747}{pf\_cfg}});}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga6659e7cfd41f22f3d2c070c4c1156da4}{trace\_set\_level}}(\mbox{\hyperlink{group__dbg__logs__group__macros_ga0d0272a070477f118748192f15de8bbd}{TRACE\_LVL\_INFO}});               \textcolor{comment}{//ONLY, info logs will be displayed}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    enuStatus = \mbox{\hyperlink{group__gap__addr__mgmt__group_gaef7a696c0237045a4f8ffd0c3bd242c9}{at\_ble\_addr\_set}}(\&addr);}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga6659e7cfd41f22f3d2c070c4c1156da4}{trace\_set\_level}}(\mbox{\hyperlink{group__dbg__logs__group__macros_gad537d4d9e95c7c0b8df1b63c9675b69f}{TRACE\_LVL\_ALL}});                \textcolor{comment}{//All logs will be displayed}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    enuStatus = \mbox{\hyperlink{group__gap__addr__mgmt__group_gaef7a696c0237045a4f8ffd0c3bd242c9}{at\_ble\_addr\_set}}(\&addr);}
+\DoxyCodeLine{    \mbox{\hyperlink{group__dbg__logs__group__functions_ga6659e7cfd41f22f3d2c070c4c1156da4}{trace\_set\_level}}(\mbox{\hyperlink{group__dbg__logs__group__macros_gace8cb4d27850d1dd4f033141b8453e7e}{TRACE\_LVL\_DISABLE}});            \textcolor{comment}{//None will be displayed}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{    ...}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

@@ -1,0 +1,99 @@
+\hypertarget{group__gap__addr__mgmt__group}{}\section{Address Management A\+P\+Is}
+\label{group__gap__addr__mgmt__group}\index{Address Management APIs@{Address Management APIs}}
+
+
+This group includes G\+AP address A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__addr__mgmt__group_gaef7a696c0237045a4f8ffd0c3bd242c9}{at\+\_\+ble\+\_\+addr\+\_\+set}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Set device BT Address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__addr__mgmt__group_ga755bea90a1b103d981b9d3ebdd6686c1}{at\+\_\+ble\+\_\+addr\+\_\+get}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$address)
+\begin{DoxyCompactList}\small\item\em Get device BT Address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__addr__mgmt__group_ga74bf064bb0ddf4a507013c844089088f}{at\+\_\+ble\+\_\+random\+\_\+address\+\_\+resolve}} (uint8\+\_\+t nb\+\_\+key, \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$rand\+\_\+addr, uint8\+\_\+t $\ast$irk\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Handles request of resolving a resolvable random address ,\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1b84638285f1a4f393f5c057fadfe440}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+E\+S\+O\+L\+V\+\_\+\+R\+A\+N\+D\+\_\+\+A\+D\+D\+R\+\_\+\+S\+T\+A\+T\+US}} event is used to inform which key has been used to perform resolution for the returned address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes G\+AP address A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__addr__mgmt__group_ga755bea90a1b103d981b9d3ebdd6686c1}\label{group__gap__addr__mgmt__group_ga755bea90a1b103d981b9d3ebdd6686c1}} 
+\index{Address Management APIs@{Address Management APIs}!at\_ble\_addr\_get@{at\_ble\_addr\_get}}
+\index{at\_ble\_addr\_get@{at\_ble\_addr\_get}!Address Management APIs@{Address Management APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_addr\_get()}{at\_ble\_addr\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+addr\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Get device BT Address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em address} & pointer to save returned BT Address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__addr__mgmt__group_gaef7a696c0237045a4f8ffd0c3bd242c9}\label{group__gap__addr__mgmt__group_gaef7a696c0237045a4f8ffd0c3bd242c9}} 
+\index{Address Management APIs@{Address Management APIs}!at\_ble\_addr\_set@{at\_ble\_addr\_set}}
+\index{at\_ble\_addr\_set@{at\_ble\_addr\_set}!Address Management APIs@{Address Management APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_addr\_set()}{at\_ble\_addr\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+addr\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{address }\end{DoxyParamCaption})}
+
+
+
+Set device BT Address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em address} & the new BT address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+In case of using resolvable random address, \mbox{\hyperlink{group__gap__dev__config__group_ga6d329f50553f677f15cb89a823be9dc1}{at\+\_\+ble\+\_\+set\+\_\+dev\+\_\+config}} is used to set device I\+RK key otherwise default randomness I\+RK key values will be used.
+\end{DoxyPrecond}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item If address type is \mbox{\hyperlink{at__ble__api_8h_aab076e537bd99ea1be0fbf95a2d16be4a971384228c4141e2ea44ef62666b36a4}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+V\+A\+B\+LE}} or \mbox{\hyperlink{at__ble__api_8h_aab076e537bd99ea1be0fbf95a2d16be4a200d7bc6ab4567902a93ec426c5e177a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+D\+R\+E\+S\+S\+\_\+\+R\+A\+N\+D\+O\+M\+\_\+\+P\+R\+I\+V\+A\+T\+E\+\_\+\+N\+O\+N\+\_\+\+R\+E\+S\+O\+L\+V\+A\+B\+LE}}, the given address is ignored and address will be auto generated.
+\item If address type is random , then \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebaf3fc7c0a6e3bbc9852c59a9ecaed1749}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+A\+N\+D\+\_\+\+A\+D\+D\+R\+\_\+\+C\+H\+A\+N\+G\+ED}} event is triggered after first air operation either advertising, connecting, or scanning to inform application about the used random address.
+\item The default duration before regenerating device address is \mbox{\hyperlink{at__ble__api_8h_a50b36406164b418c4de24014c3bf2a7d}{A\+T\+\_\+\+R\+E\+N\+E\+W\+\_\+\+D\+U\+R\+\_\+\+V\+A\+L\+\_\+\+M\+IN}}, to change renew address duration use \mbox{\hyperlink{group__gap__dev__config__group_ga6d329f50553f677f15cb89a823be9dc1}{at\+\_\+ble\+\_\+set\+\_\+dev\+\_\+config}}.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__addr__mgmt__group_ga74bf064bb0ddf4a507013c844089088f}\label{group__gap__addr__mgmt__group_ga74bf064bb0ddf4a507013c844089088f}} 
+\index{Address Management APIs@{Address Management APIs}!at\_ble\_random\_address\_resolve@{at\_ble\_random\_address\_resolve}}
+\index{at\_ble\_random\_address\_resolve@{at\_ble\_random\_address\_resolve}!Address Management APIs@{Address Management APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_random\_address\_resolve()}{at\_ble\_random\_address\_resolve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+random\+\_\+address\+\_\+resolve (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{nb\+\_\+key,  }\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{rand\+\_\+addr,  }\item[{uint8\+\_\+t $\ast$}]{irk\+\_\+key }\end{DoxyParamCaption})}
+
+
+
+Handles request of resolving a resolvable random address ,\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1b84638285f1a4f393f5c057fadfe440}{A\+T\+\_\+\+B\+L\+E\+\_\+\+R\+E\+S\+O\+L\+V\+\_\+\+R\+A\+N\+D\+\_\+\+A\+D\+D\+R\+\_\+\+S\+T\+A\+T\+US}} event is used to inform which key has been used to perform resolution for the returned address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb\+\_\+key} & number of provided I\+RK \\
+\hline
+\mbox{\texttt{ in}}  & {\em rand\+\_\+addr} & pointer to the random address \\
+\hline
+\mbox{\texttt{ in}}  & {\em irk\+\_\+key} & array of I\+RK used for address resolution\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item irk\+\_\+key argument, should be known after exchanging keys at security level (bonding).
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

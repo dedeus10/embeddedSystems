@@ -1,0 +1,67 @@
+\hypertarget{structspi__slave__config}{}\section{spi\+\_\+slave\+\_\+config Struct Reference}
+\label{structspi__slave__config}\index{spi\_slave\_config@{spi\_slave\_config}}
+
+
+S\+PI slave configuration structure.  
+
+
+
+
+{\ttfamily \#include $<$spi.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}{spi\+\_\+frame\+\_\+format}} \mbox{\hyperlink{structspi__slave__config_a74521dd3e152916391c75b1d5842aed5}{frame\+\_\+format}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}{spi\+\_\+addr\+\_\+mode}} \mbox{\hyperlink{structspi__slave__config_ab51e723c0861a0d74da7dbd7a314a597}{address\+\_\+mode}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structspi__slave__config_af3f726014b044194def151079f1f2d89}{address}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structspi__slave__config_aef3149bd852a6bfc8c9146a309d8500c}{address\+\_\+mask}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structspi__slave__config_aebfa9df0ccca8fafada776f75e74da90}{preload\+\_\+enable}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+PI slave configuration structure. 
+
+S\+PI slave configuration structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structspi__slave__config_af3f726014b044194def151079f1f2d89}\label{structspi__slave__config_af3f726014b044194def151079f1f2d89}} 
+\index{spi\_slave\_config@{spi\_slave\_config}!address@{address}}
+\index{address@{address}!spi\_slave\_config@{spi\_slave\_config}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily uint8\+\_\+t address}
+
+Address \mbox{\Hypertarget{structspi__slave__config_aef3149bd852a6bfc8c9146a309d8500c}\label{structspi__slave__config_aef3149bd852a6bfc8c9146a309d8500c}} 
+\index{spi\_slave\_config@{spi\_slave\_config}!address\_mask@{address\_mask}}
+\index{address\_mask@{address\_mask}!spi\_slave\_config@{spi\_slave\_config}}
+\subsubsection{\texorpdfstring{address\_mask}{address\_mask}}
+{\footnotesize\ttfamily uint8\+\_\+t address\+\_\+mask}
+
+Address mask \mbox{\Hypertarget{structspi__slave__config_ab51e723c0861a0d74da7dbd7a314a597}\label{structspi__slave__config_ab51e723c0861a0d74da7dbd7a314a597}} 
+\index{spi\_slave\_config@{spi\_slave\_config}!address\_mode@{address\_mode}}
+\index{address\_mode@{address\_mode}!spi\_slave\_config@{spi\_slave\_config}}
+\subsubsection{\texorpdfstring{address\_mode}{address\_mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga30bf0ce7e5f944a5d3a42d90f0ebf617}{spi\+\_\+addr\+\_\+mode}} address\+\_\+mode}
+
+Address mode \mbox{\Hypertarget{structspi__slave__config_a74521dd3e152916391c75b1d5842aed5}\label{structspi__slave__config_a74521dd3e152916391c75b1d5842aed5}} 
+\index{spi\_slave\_config@{spi\_slave\_config}!frame\_format@{frame\_format}}
+\index{frame\_format@{frame\_format}!spi\_slave\_config@{spi\_slave\_config}}
+\subsubsection{\texorpdfstring{frame\_format}{frame\_format}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group_ga4598fb059ff90fccf8c9fa5b421f1bda}{spi\+\_\+frame\+\_\+format}} frame\+\_\+format}
+
+Frame format \mbox{\Hypertarget{structspi__slave__config_aebfa9df0ccca8fafada776f75e74da90}\label{structspi__slave__config_aebfa9df0ccca8fafada776f75e74da90}} 
+\index{spi\_slave\_config@{spi\_slave\_config}!preload\_enable@{preload\_enable}}
+\index{preload\_enable@{preload\_enable}!spi\_slave\_config@{spi\_slave\_config}}
+\subsubsection{\texorpdfstring{preload\_enable}{preload\_enable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} preload\+\_\+enable}
+
+Preload data to the shift register while SS is high 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/sercom/spi/\mbox{\hyperlink{spi_8h}{spi.\+h}}\end{DoxyCompactItemize}

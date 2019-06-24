@@ -1,0 +1,210 @@
+\hypertarget{group__interrupt__group}{}\section{Global interrupt management}
+\label{group__interrupt__group}\index{Global interrupt management@{Global interrupt management}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__interrupt__deprecated__group}{Deprecated interrupt definitions}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__interrupt__group_ga2b5f1a58b98aea52fbe094636054d910}{cpu\+\_\+irq\+\_\+enter\+\_\+critical}} (void)
+\item 
+void \mbox{\hyperlink{group__interrupt__group_gad9a7e953e4e3eb6bde58eb1c81092b43}{cpu\+\_\+irq\+\_\+leave\+\_\+critical}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{group__interrupt__group_ga18a272af1cdb2009183461e1647f4e86}{g\+\_\+interrupt\+\_\+enabled}}
+\end{DoxyCompactItemize}
+\subsection*{Interrupt Service Routine definition}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__interrupt__group_ga0da0a19156773eca7070722f26ff66a6}{I\+SR}}(func)~void func (void)
+\begin{DoxyCompactList}\small\item\em Define service routine. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__group_ga931b667f6490ad3d8905fa25bebb24b1}{irq\+\_\+initialize\+\_\+vectors}}()
+\begin{DoxyCompactList}\small\item\em Initialize interrupt vectors. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__group_gaa746642b1132af054826fb169f541965}{irq\+\_\+register\+\_\+handler}}(int\+\_\+num,  int\+\_\+prio)
+\begin{DoxyCompactList}\small\item\em Register handler for interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Global interrupt flags}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{group__interrupt__group_ga9aa1f52defc97531b6343233abeea613}{irqflags\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Type used for holding state of interrupt flag. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__group_gae4922a4bd8ba4150211fbc7f2302403c}{cpu\+\_\+irq\+\_\+enable}}()
+\begin{DoxyCompactList}\small\item\em Enable interrupts globally. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__group_ga7b77391ed86e2e027f9ee1dd99a06980}{cpu\+\_\+irq\+\_\+disable}}()
+\begin{DoxyCompactList}\small\item\em Disable interrupts globally. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__group_gae1545a2473614564550b9c4015c94978}{cpu\+\_\+irq\+\_\+is\+\_\+enabled}}()~(\+\_\+\+\_\+get\+\_\+\+P\+R\+I\+M\+A\+SK() == 0)
+\begin{DoxyCompactList}\small\item\em Check if interrupts are globally enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a driver for global enabling and disabling of interrupts. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__interrupt__group_ga7b77391ed86e2e027f9ee1dd99a06980}\label{group__interrupt__group_ga7b77391ed86e2e027f9ee1dd99a06980}} 
+\index{Global interrupt management@{Global interrupt management}!cpu\_irq\_disable@{cpu\_irq\_disable}}
+\index{cpu\_irq\_disable@{cpu\_irq\_disable}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{cpu\_irq\_disable}{cpu\_irq\_disable}}
+{\footnotesize\ttfamily \#define cpu\+\_\+irq\+\_\+disable(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                       \(\backslash\)}
+\DoxyCodeLine{        \_\_disable\_irq();                       \(\backslash\)}
+\DoxyCodeLine{        \_\_DMB();                               \(\backslash\)}
+\DoxyCodeLine{        g\_interrupt\_enabled = \textcolor{keyword}{false};           \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Disable interrupts globally. 
+
+\mbox{\Hypertarget{group__interrupt__group_gae4922a4bd8ba4150211fbc7f2302403c}\label{group__interrupt__group_gae4922a4bd8ba4150211fbc7f2302403c}} 
+\index{Global interrupt management@{Global interrupt management}!cpu\_irq\_enable@{cpu\_irq\_enable}}
+\index{cpu\_irq\_enable@{cpu\_irq\_enable}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{cpu\_irq\_enable}{cpu\_irq\_enable}}
+{\footnotesize\ttfamily \#define cpu\+\_\+irq\+\_\+enable(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                                       \(\backslash\)}
+\DoxyCodeLine{        g\_interrupt\_enabled = \textcolor{keyword}{true};            \(\backslash\)}
+\DoxyCodeLine{        \_\_DMB();                               \(\backslash\)}
+\DoxyCodeLine{        \_\_enable\_irq();                        \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Enable interrupts globally. 
+
+\mbox{\Hypertarget{group__interrupt__group_gae1545a2473614564550b9c4015c94978}\label{group__interrupt__group_gae1545a2473614564550b9c4015c94978}} 
+\index{Global interrupt management@{Global interrupt management}!cpu\_irq\_is\_enabled@{cpu\_irq\_is\_enabled}}
+\index{cpu\_irq\_is\_enabled@{cpu\_irq\_is\_enabled}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{cpu\_irq\_is\_enabled}{cpu\_irq\_is\_enabled}}
+{\footnotesize\ttfamily \#define cpu\+\_\+irq\+\_\+is\+\_\+enabled(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~(\+\_\+\+\_\+get\+\_\+\+P\+R\+I\+M\+A\+SK() == 0)}
+
+
+
+Check if interrupts are globally enabled. 
+
+\begin{DoxyReturn}{Returns}
+True if interrupts are enabled. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__interrupt__group_ga931b667f6490ad3d8905fa25bebb24b1}\label{group__interrupt__group_ga931b667f6490ad3d8905fa25bebb24b1}} 
+\index{Global interrupt management@{Global interrupt management}!irq\_initialize\_vectors@{irq\_initialize\_vectors}}
+\index{irq\_initialize\_vectors@{irq\_initialize\_vectors}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{irq\_initialize\_vectors}{irq\_initialize\_vectors}}
+{\footnotesize\ttfamily \#define irq\+\_\+initialize\+\_\+vectors(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do} \{                             \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+Initialize interrupt vectors. 
+
+For N\+V\+IC the interrupt vectors are put in vector table. So nothing to do to initialize them, except defined the vector function with right name.
+
+This must be called prior to \mbox{\hyperlink{group__interrupt__group_gaa746642b1132af054826fb169f541965}{irq\+\_\+register\+\_\+handler}}. \mbox{\Hypertarget{group__interrupt__group_gaa746642b1132af054826fb169f541965}\label{group__interrupt__group_gaa746642b1132af054826fb169f541965}} 
+\index{Global interrupt management@{Global interrupt management}!irq\_register\_handler@{irq\_register\_handler}}
+\index{irq\_register\_handler@{irq\_register\_handler}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{irq\_register\_handler}{irq\_register\_handler}}
+{\footnotesize\ttfamily \#define irq\+\_\+register\+\_\+handler(\begin{DoxyParamCaption}\item[{}]{int\+\_\+num,  }\item[{}]{int\+\_\+prio }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___c_m_s_i_s___core___n_v_i_c_functions_ga332e10ef9605dc6eb10b9e14511930f8}{NVIC\_ClearPendingIRQ}}(    (\mbox{\hyperlink{group___s_a_m_d21_e15_a__cmsis_gac3af4a32370fb28c4ade8bf2add80251}{IRQn\_Type}})int\_num);                      \(\backslash\)}
+\DoxyCodeLine{    NVIC\_SetPriority(    (\mbox{\hyperlink{group___s_a_m_d21_e15_a__cmsis_gac3af4a32370fb28c4ade8bf2add80251}{IRQn\_Type}})int\_num, int\_prio);                \(\backslash\)}
+\DoxyCodeLine{    NVIC\_EnableIRQ(      (\mbox{\hyperlink{group___s_a_m_d21_e15_a__cmsis_gac3af4a32370fb28c4ade8bf2add80251}{IRQn\_Type}})int\_num);                          \(\backslash\)}
+
+\end{DoxyCode}
+
+
+Register handler for interrupt. 
+
+For N\+V\+IC the interrupt vectors are put in vector table. So nothing to do to register them, except defined the vector function with right name.
+
+Usage\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__interrupt__group_ga931b667f6490ad3d8905fa25bebb24b1}{irq\_initialize\_vectors}}();}
+\DoxyCodeLine{\mbox{\hyperlink{group__interrupt__group_gaa746642b1132af054826fb169f541965}{irq\_register\_handler}}(foo\_irq\_handler);}
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+The function {\itshape func} must be defined with the \mbox{\hyperlink{group__interrupt__group_ga0da0a19156773eca7070722f26ff66a6}{I\+SR}} macro. 
+
+The functions prototypes can be found in the device exception header files (exceptions.\+h). 
+\end{DoxyNote}
+\mbox{\Hypertarget{group__interrupt__group_ga0da0a19156773eca7070722f26ff66a6}\label{group__interrupt__group_ga0da0a19156773eca7070722f26ff66a6}} 
+\index{Global interrupt management@{Global interrupt management}!ISR@{ISR}}
+\index{ISR@{ISR}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{ISR}{ISR}}
+{\footnotesize\ttfamily \#define I\+SR(\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})~void func (void)}
+
+
+
+Define service routine. 
+
+\begin{DoxyNote}{Note}
+For N\+V\+IC devices the interrupt service routines are predefined to add to vector table in binary generation, so there is no service register at run time. The routine collections are in exceptions.\+h.
+\end{DoxyNote}
+Usage\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__interrupt__group_ga0da0a19156773eca7070722f26ff66a6}{ISR}}(foo\_irq\_handler)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{     \textcolor{comment}{// Function definition}}
+\DoxyCodeLine{     ...}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Name for the function. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__interrupt__group_ga9aa1f52defc97531b6343233abeea613}\label{group__interrupt__group_ga9aa1f52defc97531b6343233abeea613}} 
+\index{Global interrupt management@{Global interrupt management}!irqflags\_t@{irqflags\_t}}
+\index{irqflags\_t@{irqflags\_t}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{irqflags\_t}{irqflags\_t}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__interrupt__group_ga9aa1f52defc97531b6343233abeea613}{irqflags\+\_\+t}}}
+
+
+
+Type used for holding state of interrupt flag. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__interrupt__group_ga2b5f1a58b98aea52fbe094636054d910}\label{group__interrupt__group_ga2b5f1a58b98aea52fbe094636054d910}} 
+\index{Global interrupt management@{Global interrupt management}!cpu\_irq\_enter\_critical@{cpu\_irq\_enter\_critical}}
+\index{cpu\_irq\_enter\_critical@{cpu\_irq\_enter\_critical}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{cpu\_irq\_enter\_critical()}{cpu\_irq\_enter\_critical()}}
+{\footnotesize\ttfamily void cpu\+\_\+irq\+\_\+enter\+\_\+critical (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__interrupt__group_gad9a7e953e4e3eb6bde58eb1c81092b43}\label{group__interrupt__group_gad9a7e953e4e3eb6bde58eb1c81092b43}} 
+\index{Global interrupt management@{Global interrupt management}!cpu\_irq\_leave\_critical@{cpu\_irq\_leave\_critical}}
+\index{cpu\_irq\_leave\_critical@{cpu\_irq\_leave\_critical}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{cpu\_irq\_leave\_critical()}{cpu\_irq\_leave\_critical()}}
+{\footnotesize\ttfamily void cpu\+\_\+irq\+\_\+leave\+\_\+critical (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__interrupt__group_ga18a272af1cdb2009183461e1647f4e86}\label{group__interrupt__group_ga18a272af1cdb2009183461e1647f4e86}} 
+\index{Global interrupt management@{Global interrupt management}!g\_interrupt\_enabled@{g\_interrupt\_enabled}}
+\index{g\_interrupt\_enabled@{g\_interrupt\_enabled}!Global interrupt management@{Global interrupt management}}
+\subsubsection{\texorpdfstring{g\_interrupt\_enabled}{g\_interrupt\_enabled}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} g\+\_\+interrupt\+\_\+enabled}
+

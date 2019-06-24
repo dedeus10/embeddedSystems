@@ -1,0 +1,48 @@
+\hypertarget{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_acronyms}{}\section{Acronyms}\label{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_acronyms}
+Below is a table listing the acronyms used in this module, along with their intended meanings.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Acronym }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Acronym }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+S\+E\+R\+C\+OM &Serial Communication Interface  \\\cline{1-2}
+S\+PI &Serial Peripheral Interface  \\\cline{1-2}
+S\+CK &Serial Clock  \\\cline{1-2}
+M\+O\+SI &Master Output Slave Input  \\\cline{1-2}
+M\+I\+SO &Master Input Slave Output  \\\cline{1-2}
+SS &Slave Select  \\\cline{1-2}
+D\+IO &Data Input Output  \\\cline{1-2}
+DO &Data Output  \\\cline{1-2}
+DI &Data Input  \\\cline{1-2}
+D\+MA &Direct Memory Access  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_dependencies}{}\section{Dependencies}\label{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_dependencies}
+The S\+PI driver has the following dependencies\+: \begin{DoxyItemize}
+\item \mbox{\hyperlink{group__asfdoc__sam0__system__pinmux__group}{System Pin Multiplexer Driver}}\end{DoxyItemize}
+\hypertarget{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_workarounds}{}\section{Workarounds Implemented by Driver}\label{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_workarounds}
+No workarounds in driver.\hypertarget{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_history}{}\section{Module History}\label{asfdoc_sam0_sercom_spi_extra_asfdoc_sam0_sercom_spi_extra_history}
+An overview of the module history is presented in the table below, with details on the enhancements and fixes made to the module since its first release. The current version of this corresponds to the newest version in the table.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Changelog  }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Changelog  }\\\cline{1-1}
+\endhead
+Added new features as below\+: \begin{DoxyItemize}
+\item Slave select low detect \item Hardware slave select \item D\+MA support   \end{DoxyItemize}
+\\\cline{1-1}
+Edited slave part of write and transceive buffer functions to ensure that second character is sent at the right time  \\\cline{1-1}
+Renamed the anonymous union in {\ttfamily struct} \mbox{\hyperlink{structspi__config}{spi\+\_\+config}} to {\ttfamily mode\+\_\+specific}   \\\cline{1-1}
+Initial Release  \\\cline{1-1}
+\end{longtabu}

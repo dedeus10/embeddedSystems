@@ -1,0 +1,970 @@
+\hypertarget{group___s_a_m_d21___m_t_b}{}\section{Cortex-\/\+M0+ Micro-\/\+Trace Buffer}
+\label{group___s_a_m_d21___m_t_b}\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_o_s_i_t_i_o_n___type}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___m_a_s_t_e_r___type}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___f_l_o_w___type}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___b_a_s_e___type}{M\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___i_t_c_t_r_l___type}{M\+T\+B\+\_\+\+I\+T\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_l_a_i_m_s_e_t___type}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_l_a_i_m_c_l_r___type}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___l_o_c_k_a_c_c_e_s_s___type}{M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+S\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___l_o_c_k_s_t_a_t_u_s___type}{M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___a_u_t_h_s_t_a_t_u_s___type}{M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___d_e_v_a_r_c_h___type}{M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+C\+H\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___d_e_v_i_d___type}{M\+T\+B\+\_\+\+D\+E\+V\+I\+D\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___d_e_v_t_y_p_e___type}{M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+P\+E\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d4___type}{M\+T\+B\+\_\+\+P\+I\+D4\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d5___type}{M\+T\+B\+\_\+\+P\+I\+D5\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d6___type}{M\+T\+B\+\_\+\+P\+I\+D6\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d7___type}{M\+T\+B\+\_\+\+P\+I\+D7\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d0___type}{M\+T\+B\+\_\+\+P\+I\+D0\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d1___type}{M\+T\+B\+\_\+\+P\+I\+D1\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d2___type}{M\+T\+B\+\_\+\+P\+I\+D2\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___p_i_d3___type}{M\+T\+B\+\_\+\+P\+I\+D3\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_i_d0___type}{M\+T\+B\+\_\+\+C\+I\+D0\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_i_d1___type}{M\+T\+B\+\_\+\+C\+I\+D1\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_i_d2___type}{M\+T\+B\+\_\+\+C\+I\+D2\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_m_t_b___c_i_d3___type}{M\+T\+B\+\_\+\+C\+I\+D3\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_mtb}{Mtb}}
+\begin{DoxyCompactList}\small\item\em M\+TB hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga2d1f0c359b5a3e5564403203a61ad9f0}{M\+T\+B\+\_\+\+U2002}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga596b20f15d56213a44961489dfefafd0}{R\+E\+V\+\_\+\+M\+TB}}~0x100
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gacf736a2cfd54247fce8d341e4083bc65}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+O\+F\+F\+S\+ET}}~0x000
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON offset) M\+TB Position \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gae36946e901f21af399790c801131a24d}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+A\+P\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) Pointer Value Wraps \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga3d831001edb7b1b2b965fa994a62ae42}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+AP}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+A\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa28512e5fb745a251e5d1d36942f62ea}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos}}~3
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) Trace Packet Location Pointer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga013976edca9647c438955dd2fbf24ec2}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Msk}}~(0x1\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac83f3ecf8be77e14dace064def6cc5a4}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+ER}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga013976edca9647c438955dd2fbf24ec2}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa28512e5fb745a251e5d1d36942f62ea}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga8b3e0774e0074b7912373bb10ff53d2c}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Cul
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac842229fe0e49e4bbcc3513eceef11f4}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x004
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER offset) M\+TB Master \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga2a89518994d6e0ab1cfd84e5ced03e50}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER reset\+\_\+value) M\+TB Master \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabbdb10176810b7faca2550878c30e445}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Maximum Value of the Trace Buffer in S\+R\+AM \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa7536d183a155d43ff29a4758f03c990}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Msk}}~(0x1\+Ful $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabefa741208d170818ff7e0ecab803440}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+SK}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa7536d183a155d43ff29a4758f03c990}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabbdb10176810b7faca2550878c30e445}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga3f03df82dc77e5930c3898c92e666900}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+E\+N\+\_\+\+Pos}}~5
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Trace Start Input Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5e6ecc0b0af324a43225a11681a7d31e}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+EN}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga537be1d3321b4266e5ef48b785a4668f}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+E\+N\+\_\+\+Pos}}~6
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Trace Stop Input Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac7aa980eeecbf5544fea667b1f2f183a}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+EN}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5a86f212f89ce854b43eb935c6441208}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+I\+V\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Special Function Register Write Privilege \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga632ffa908823ac480375ac19d3cb5250}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+IV}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+I\+V\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga00ba898e29ce885b476cec508780fdf9}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+I\+V\+\_\+\+Pos}}~8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) S\+R\+AM Privilege \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga578ef21836ea1ee0a56f0af70d22ce97}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+IV}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+I\+V\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga8a330adc9c36475c68783bf9bc740278}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+E\+Q\+\_\+\+Pos}}~9
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Halt Request \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabbf8f04a1362e3988c6a5bf7638a5b7f}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+EQ}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+E\+Q\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5c8356e28b7c4274d86b6342a4022a2d}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+E\+N\+\_\+\+Pos}}~31
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Main Trace Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga3df3a47e8efa848f87d4805b4d6f497c}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+EN}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gab7418dbbb685e7ec4206ffaf98668c72}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+}}~0x800003\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga9d744a4798477f7c3262eee5c896acf5}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+O\+F\+F\+S\+ET}}~0x008
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW offset) M\+TB Flow \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga409fc345c6a2fa1d9b5979473041ddb9}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW reset\+\_\+value) M\+TB Flow \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac3124ae07b05d0b5b3705e930a6b95c0}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+O\+P\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW) Auto Stop Tracing \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga46cc1df575220a9779a4a967e8e5a7e0}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+OP}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+O\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac5491bf0138a340d2c227f2761af6fcb}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+L\+T\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW) Auto Halt Request \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga037061e2773e10666bf6caf6f5797ae7}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+LT}}~(0x1ul $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+L\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5047b754b723c5d838de576f2fe36ea6}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos}}~3
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW) Watermark value \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga49657c927dfe9f148f53c055c52d486e}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Msk}}~(0x1\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga0f03b8d04398169f94530728a93c3cbf}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+RK}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga49657c927dfe9f148f53c055c52d486e}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5047b754b723c5d838de576f2fe36ea6}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga807afadf5425d38a2743d4ecfb5416cd}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Bul
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+F\+L\+OW) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga0af6267c34da71a91a6b17b39d3d17ec}{M\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+O\+F\+F\+S\+ET}}~0x00C
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+B\+A\+SE offset) M\+TB Base \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaf69153abeeed342b1f4195254d116031}{M\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+B\+A\+SE) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga219a5fa201bee0a15aa0bf923873d8a2}{M\+T\+B\+\_\+\+I\+T\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F00
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+I\+T\+C\+T\+RL offset) M\+TB Integration Mode Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga17b76a70b93cab6a850ebe5b5e3ea062}{M\+T\+B\+\_\+\+I\+T\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+I\+T\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga7e79518eba97b6b37cb1c8adc23172c9}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+A0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+ET offset) M\+TB Claim Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga180ef9f48857f0d749d022ee00c8bf28}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga769dd66441d3225bad19869a8af32ca5}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+A4
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+LR offset) M\+TB Claim Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga0fcec3fe7a6aedc66116beb287a403bd}{M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga6848fd67964e48dea5e8aab4c5f6ee6d}{M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+S\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+B0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+SS offset) M\+TB Lock Access \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga8660020c643126005e5c89e4aac34281}{M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+S\+S\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+SS) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga10490c8254804606534f9dc2a3955b56}{M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+B4
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+US offset) M\+TB Lock Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gae1ca719b631edc5b3bbe331b2455f679}{M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga0958bb6ff58fa5cf43ee41739fe6979b}{M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+B8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+US offset) M\+TB Authentication Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaea4ff98accd4f231bc421f0604013c4c}{M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga559db03301afdc97a00b560f8169de48}{M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+C\+H\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+BC
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+CH offset) M\+TB Device Architecture \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga39b932be70b072fab63541b0424e3176}{M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+C\+H\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+CH) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaab7147dd924e18946637db8903a1aff6}{M\+T\+B\+\_\+\+D\+E\+V\+I\+D\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+C8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+ID offset) M\+TB Device Configuration \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga147985e87253b34031d2211adc4dc56f}{M\+T\+B\+\_\+\+D\+E\+V\+I\+D\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+ID) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga87deaa0bed137100030f719bd78e41da}{M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+P\+E\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+CC
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+PE offset) M\+TB Device Type \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga244b3a615fef938ce78209f57b7c93e1}{M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+P\+E\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+PE) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabbad22967e64b48b6925a9dcff4a9ea8}{M\+T\+B\+\_\+\+P\+I\+D4\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+D0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D4 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa392cc96fa9dc29bba3512293a81f1dd}{M\+T\+B\+\_\+\+P\+I\+D4\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D4) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa963a280721b3e1007d6e36bb3d5d522}{M\+T\+B\+\_\+\+P\+I\+D5\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+D4
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D5 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga31b4cd998c91073723497dab877ea316}{M\+T\+B\+\_\+\+P\+I\+D5\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D5) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gae61271ff24ec3878348f10678f1d271b}{M\+T\+B\+\_\+\+P\+I\+D6\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+D8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D6 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gacb630031f7b28faf52c8f6bf82da6b16}{M\+T\+B\+\_\+\+P\+I\+D6\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D6) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga1fc275c8eb95588a8087dddf88ce0fd1}{M\+T\+B\+\_\+\+P\+I\+D7\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+DC
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D7 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga1e42e23c8053324cc941accb82fae2f0}{M\+T\+B\+\_\+\+P\+I\+D7\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D7) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gad03f4fd792b587adbd717f3255dc528e}{M\+T\+B\+\_\+\+P\+I\+D0\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+E0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D0 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac18d6f5c996cccee534a4590f3b0e9d8}{M\+T\+B\+\_\+\+P\+I\+D0\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D0) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac8accff9ba83615614e067bbd8dcf329}{M\+T\+B\+\_\+\+P\+I\+D1\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+E4
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D1 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga79fe1f4f5ada0501536d4bd991b4b69f}{M\+T\+B\+\_\+\+P\+I\+D1\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D1) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5874b570f2bf940372a6a3a9ba8d787d}{M\+T\+B\+\_\+\+P\+I\+D2\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+E8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D2 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5999232178e1cf4fbd656413827f2a0c}{M\+T\+B\+\_\+\+P\+I\+D2\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D2) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga1d873b31755ae6e7f7d67f946d740cc7}{M\+T\+B\+\_\+\+P\+I\+D3\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+EC
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D3 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaccb41542d8ea9c7a2e17e754b3491bf4}{M\+T\+B\+\_\+\+P\+I\+D3\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+P\+I\+D3) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga6455f5f813f3e0c3e81803b8db5ac512}{M\+T\+B\+\_\+\+C\+I\+D0\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+F0
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D0 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga9e7f0e674b34967de0b0f12095baa2fe}{M\+T\+B\+\_\+\+C\+I\+D0\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D0) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga3472f9c9e1f0a1661aba5ef3337ba1e5}{M\+T\+B\+\_\+\+C\+I\+D1\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+F4
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D1 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gab04ffc43b8ff46bbec4d124cfbe309e7}{M\+T\+B\+\_\+\+C\+I\+D1\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D1) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga478c06e0d8728bf541a09d9cf376d90d}{M\+T\+B\+\_\+\+C\+I\+D2\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+F8
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D2 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga669c770fd44f285415b226ec5d3a7baa}{M\+T\+B\+\_\+\+C\+I\+D2\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D2) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gac81a28a777cce5ef1678c92438d75ebe}{M\+T\+B\+\_\+\+C\+I\+D3\+\_\+\+O\+F\+F\+S\+ET}}~0x\+F\+FC
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D3 offset) Core\+Sight \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga1e712ff567cb3de2c31b02bff55545b0}{M\+T\+B\+\_\+\+C\+I\+D3\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (M\+T\+B\+\_\+\+C\+I\+D3) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR M\+TB 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaea4ff98accd4f231bc421f0604013c4c}\label{group___s_a_m_d21___m_t_b_gaea4ff98accd4f231bc421f0604013c4c}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_AUTHSTATUS\_MASK@{MTB\_AUTHSTATUS\_MASK}}
+\index{MTB\_AUTHSTATUS\_MASK@{MTB\_AUTHSTATUS\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_AUTHSTATUS\_MASK}{MTB\_AUTHSTATUS\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+US) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga0958bb6ff58fa5cf43ee41739fe6979b}\label{group___s_a_m_d21___m_t_b_ga0958bb6ff58fa5cf43ee41739fe6979b}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_AUTHSTATUS\_OFFSET@{MTB\_AUTHSTATUS\_OFFSET}}
+\index{MTB\_AUTHSTATUS\_OFFSET@{MTB\_AUTHSTATUS\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_AUTHSTATUS\_OFFSET}{MTB\_AUTHSTATUS\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+B8}
+
+
+
+(M\+T\+B\+\_\+\+A\+U\+T\+H\+S\+T\+A\+T\+US offset) M\+TB Authentication Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaf69153abeeed342b1f4195254d116031}\label{group___s_a_m_d21___m_t_b_gaf69153abeeed342b1f4195254d116031}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_BASE\_MASK@{MTB\_BASE\_MASK}}
+\index{MTB\_BASE\_MASK@{MTB\_BASE\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_BASE\_MASK}{MTB\_BASE\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+B\+A\+SE) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga0af6267c34da71a91a6b17b39d3d17ec}\label{group___s_a_m_d21___m_t_b_ga0af6267c34da71a91a6b17b39d3d17ec}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_BASE\_OFFSET@{MTB\_BASE\_OFFSET}}
+\index{MTB\_BASE\_OFFSET@{MTB\_BASE\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_BASE\_OFFSET}{MTB\_BASE\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+O\+F\+F\+S\+ET~0x00C}
+
+
+
+(M\+T\+B\+\_\+\+B\+A\+SE offset) M\+TB Base 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga9e7f0e674b34967de0b0f12095baa2fe}\label{group___s_a_m_d21___m_t_b_ga9e7f0e674b34967de0b0f12095baa2fe}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID0\_MASK@{MTB\_CID0\_MASK}}
+\index{MTB\_CID0\_MASK@{MTB\_CID0\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID0\_MASK}{MTB\_CID0\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D0\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D0) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga6455f5f813f3e0c3e81803b8db5ac512}\label{group___s_a_m_d21___m_t_b_ga6455f5f813f3e0c3e81803b8db5ac512}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID0\_OFFSET@{MTB\_CID0\_OFFSET}}
+\index{MTB\_CID0\_OFFSET@{MTB\_CID0\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID0\_OFFSET}{MTB\_CID0\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D0\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+F0}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D0 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gab04ffc43b8ff46bbec4d124cfbe309e7}\label{group___s_a_m_d21___m_t_b_gab04ffc43b8ff46bbec4d124cfbe309e7}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID1\_MASK@{MTB\_CID1\_MASK}}
+\index{MTB\_CID1\_MASK@{MTB\_CID1\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID1\_MASK}{MTB\_CID1\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D1\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D1) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga3472f9c9e1f0a1661aba5ef3337ba1e5}\label{group___s_a_m_d21___m_t_b_ga3472f9c9e1f0a1661aba5ef3337ba1e5}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID1\_OFFSET@{MTB\_CID1\_OFFSET}}
+\index{MTB\_CID1\_OFFSET@{MTB\_CID1\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID1\_OFFSET}{MTB\_CID1\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D1\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+F4}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D1 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga669c770fd44f285415b226ec5d3a7baa}\label{group___s_a_m_d21___m_t_b_ga669c770fd44f285415b226ec5d3a7baa}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID2\_MASK@{MTB\_CID2\_MASK}}
+\index{MTB\_CID2\_MASK@{MTB\_CID2\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID2\_MASK}{MTB\_CID2\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D2\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D2) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga478c06e0d8728bf541a09d9cf376d90d}\label{group___s_a_m_d21___m_t_b_ga478c06e0d8728bf541a09d9cf376d90d}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID2\_OFFSET@{MTB\_CID2\_OFFSET}}
+\index{MTB\_CID2\_OFFSET@{MTB\_CID2\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID2\_OFFSET}{MTB\_CID2\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D2\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+F8}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D2 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga1e712ff567cb3de2c31b02bff55545b0}\label{group___s_a_m_d21___m_t_b_ga1e712ff567cb3de2c31b02bff55545b0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID3\_MASK@{MTB\_CID3\_MASK}}
+\index{MTB\_CID3\_MASK@{MTB\_CID3\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID3\_MASK}{MTB\_CID3\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D3\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D3) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac81a28a777cce5ef1678c92438d75ebe}\label{group___s_a_m_d21___m_t_b_gac81a28a777cce5ef1678c92438d75ebe}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CID3\_OFFSET@{MTB\_CID3\_OFFSET}}
+\index{MTB\_CID3\_OFFSET@{MTB\_CID3\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CID3\_OFFSET}{MTB\_CID3\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+I\+D3\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+FC}
+
+
+
+(M\+T\+B\+\_\+\+C\+I\+D3 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga0fcec3fe7a6aedc66116beb287a403bd}\label{group___s_a_m_d21___m_t_b_ga0fcec3fe7a6aedc66116beb287a403bd}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CLAIMCLR\_MASK@{MTB\_CLAIMCLR\_MASK}}
+\index{MTB\_CLAIMCLR\_MASK@{MTB\_CLAIMCLR\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CLAIMCLR\_MASK}{MTB\_CLAIMCLR\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+L\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga769dd66441d3225bad19869a8af32ca5}\label{group___s_a_m_d21___m_t_b_ga769dd66441d3225bad19869a8af32ca5}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CLAIMCLR\_OFFSET@{MTB\_CLAIMCLR\_OFFSET}}
+\index{MTB\_CLAIMCLR\_OFFSET@{MTB\_CLAIMCLR\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CLAIMCLR\_OFFSET}{MTB\_CLAIMCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+A4}
+
+
+
+(M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+C\+LR offset) M\+TB Claim Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga180ef9f48857f0d749d022ee00c8bf28}\label{group___s_a_m_d21___m_t_b_ga180ef9f48857f0d749d022ee00c8bf28}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CLAIMSET\_MASK@{MTB\_CLAIMSET\_MASK}}
+\index{MTB\_CLAIMSET\_MASK@{MTB\_CLAIMSET\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CLAIMSET\_MASK}{MTB\_CLAIMSET\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+E\+T\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga7e79518eba97b6b37cb1c8adc23172c9}\label{group___s_a_m_d21___m_t_b_ga7e79518eba97b6b37cb1c8adc23172c9}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_CLAIMSET\_OFFSET@{MTB\_CLAIMSET\_OFFSET}}
+\index{MTB\_CLAIMSET\_OFFSET@{MTB\_CLAIMSET\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_CLAIMSET\_OFFSET}{MTB\_CLAIMSET\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+A0}
+
+
+
+(M\+T\+B\+\_\+\+C\+L\+A\+I\+M\+S\+ET offset) M\+TB Claim Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga39b932be70b072fab63541b0424e3176}\label{group___s_a_m_d21___m_t_b_ga39b932be70b072fab63541b0424e3176}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVARCH\_MASK@{MTB\_DEVARCH\_MASK}}
+\index{MTB\_DEVARCH\_MASK@{MTB\_DEVARCH\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVARCH\_MASK}{MTB\_DEVARCH\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+C\+H\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+CH) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga559db03301afdc97a00b560f8169de48}\label{group___s_a_m_d21___m_t_b_ga559db03301afdc97a00b560f8169de48}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVARCH\_OFFSET@{MTB\_DEVARCH\_OFFSET}}
+\index{MTB\_DEVARCH\_OFFSET@{MTB\_DEVARCH\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVARCH\_OFFSET}{MTB\_DEVARCH\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+C\+H\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+BC}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+A\+R\+CH offset) M\+TB Device Architecture 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga147985e87253b34031d2211adc4dc56f}\label{group___s_a_m_d21___m_t_b_ga147985e87253b34031d2211adc4dc56f}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVID\_MASK@{MTB\_DEVID\_MASK}}
+\index{MTB\_DEVID\_MASK@{MTB\_DEVID\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVID\_MASK}{MTB\_DEVID\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+I\+D\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+ID) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaab7147dd924e18946637db8903a1aff6}\label{group___s_a_m_d21___m_t_b_gaab7147dd924e18946637db8903a1aff6}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVID\_OFFSET@{MTB\_DEVID\_OFFSET}}
+\index{MTB\_DEVID\_OFFSET@{MTB\_DEVID\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVID\_OFFSET}{MTB\_DEVID\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+I\+D\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+C8}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+ID offset) M\+TB Device Configuration 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga244b3a615fef938ce78209f57b7c93e1}\label{group___s_a_m_d21___m_t_b_ga244b3a615fef938ce78209f57b7c93e1}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVTYPE\_MASK@{MTB\_DEVTYPE\_MASK}}
+\index{MTB\_DEVTYPE\_MASK@{MTB\_DEVTYPE\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVTYPE\_MASK}{MTB\_DEVTYPE\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+P\+E\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+PE) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga87deaa0bed137100030f719bd78e41da}\label{group___s_a_m_d21___m_t_b_ga87deaa0bed137100030f719bd78e41da}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_DEVTYPE\_OFFSET@{MTB\_DEVTYPE\_OFFSET}}
+\index{MTB\_DEVTYPE\_OFFSET@{MTB\_DEVTYPE\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_DEVTYPE\_OFFSET}{MTB\_DEVTYPE\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+P\+E\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+CC}
+
+
+
+(M\+T\+B\+\_\+\+D\+E\+V\+T\+Y\+PE offset) M\+TB Device Type 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga037061e2773e10666bf6caf6f5797ae7}\label{group___s_a_m_d21___m_t_b_ga037061e2773e10666bf6caf6f5797ae7}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_AUTOHALT@{MTB\_FLOW\_AUTOHALT}}
+\index{MTB\_FLOW\_AUTOHALT@{MTB\_FLOW\_AUTOHALT}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_AUTOHALT}{MTB\_FLOW\_AUTOHALT}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+LT~(0x1ul $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+L\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac5491bf0138a340d2c227f2761af6fcb}\label{group___s_a_m_d21___m_t_b_gac5491bf0138a340d2c227f2761af6fcb}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_AUTOHALT\_Pos@{MTB\_FLOW\_AUTOHALT\_Pos}}
+\index{MTB\_FLOW\_AUTOHALT\_Pos@{MTB\_FLOW\_AUTOHALT\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_AUTOHALT\_Pos}{MTB\_FLOW\_AUTOHALT\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+H\+A\+L\+T\+\_\+\+Pos~1}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW) Auto Halt Request 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga46cc1df575220a9779a4a967e8e5a7e0}\label{group___s_a_m_d21___m_t_b_ga46cc1df575220a9779a4a967e8e5a7e0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_AUTOSTOP@{MTB\_FLOW\_AUTOSTOP}}
+\index{MTB\_FLOW\_AUTOSTOP@{MTB\_FLOW\_AUTOSTOP}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_AUTOSTOP}{MTB\_FLOW\_AUTOSTOP}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+OP~(0x1ul $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+O\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac3124ae07b05d0b5b3705e930a6b95c0}\label{group___s_a_m_d21___m_t_b_gac3124ae07b05d0b5b3705e930a6b95c0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_AUTOSTOP\_Pos@{MTB\_FLOW\_AUTOSTOP\_Pos}}
+\index{MTB\_FLOW\_AUTOSTOP\_Pos@{MTB\_FLOW\_AUTOSTOP\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_AUTOSTOP\_Pos}{MTB\_FLOW\_AUTOSTOP\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+A\+U\+T\+O\+S\+T\+O\+P\+\_\+\+Pos~0}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW) Auto Stop Tracing 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga807afadf5425d38a2743d4ecfb5416cd}\label{group___s_a_m_d21___m_t_b_ga807afadf5425d38a2743d4ecfb5416cd}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_MASK@{MTB\_FLOW\_MASK}}
+\index{MTB\_FLOW\_MASK@{MTB\_FLOW\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_MASK}{MTB\_FLOW\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Bul}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga9d744a4798477f7c3262eee5c896acf5}\label{group___s_a_m_d21___m_t_b_ga9d744a4798477f7c3262eee5c896acf5}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_OFFSET@{MTB\_FLOW\_OFFSET}}
+\index{MTB\_FLOW\_OFFSET@{MTB\_FLOW\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_OFFSET}{MTB\_FLOW\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+O\+F\+F\+S\+ET~0x008}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW offset) M\+TB Flow 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga409fc345c6a2fa1d9b5979473041ddb9}\label{group___s_a_m_d21___m_t_b_ga409fc345c6a2fa1d9b5979473041ddb9}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_RESETVALUE@{MTB\_FLOW\_RESETVALUE}}
+\index{MTB\_FLOW\_RESETVALUE@{MTB\_FLOW\_RESETVALUE}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_RESETVALUE}{MTB\_FLOW\_RESETVALUE}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW reset\+\_\+value) M\+TB Flow 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga0f03b8d04398169f94530728a93c3cbf}\label{group___s_a_m_d21___m_t_b_ga0f03b8d04398169f94530728a93c3cbf}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_WATERMARK@{MTB\_FLOW\_WATERMARK}}
+\index{MTB\_FLOW\_WATERMARK@{MTB\_FLOW\_WATERMARK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_WATERMARK}{MTB\_FLOW\_WATERMARK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+RK(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga49657c927dfe9f148f53c055c52d486e}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga5047b754b723c5d838de576f2fe36ea6}{M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga49657c927dfe9f148f53c055c52d486e}\label{group___s_a_m_d21___m_t_b_ga49657c927dfe9f148f53c055c52d486e}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_WATERMARK\_Msk@{MTB\_FLOW\_WATERMARK\_Msk}}
+\index{MTB\_FLOW\_WATERMARK\_Msk@{MTB\_FLOW\_WATERMARK\_Msk}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_WATERMARK\_Msk}{MTB\_FLOW\_WATERMARK\_Msk}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Msk~(0x1\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5047b754b723c5d838de576f2fe36ea6}\label{group___s_a_m_d21___m_t_b_ga5047b754b723c5d838de576f2fe36ea6}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_FLOW\_WATERMARK\_Pos@{MTB\_FLOW\_WATERMARK\_Pos}}
+\index{MTB\_FLOW\_WATERMARK\_Pos@{MTB\_FLOW\_WATERMARK\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_FLOW\_WATERMARK\_Pos}{MTB\_FLOW\_WATERMARK\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+F\+L\+O\+W\+\_\+\+W\+A\+T\+E\+R\+M\+A\+R\+K\+\_\+\+Pos~3}
+
+
+
+(M\+T\+B\+\_\+\+F\+L\+OW) Watermark value 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga17b76a70b93cab6a850ebe5b5e3ea062}\label{group___s_a_m_d21___m_t_b_ga17b76a70b93cab6a850ebe5b5e3ea062}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_ITCTRL\_MASK@{MTB\_ITCTRL\_MASK}}
+\index{MTB\_ITCTRL\_MASK@{MTB\_ITCTRL\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_ITCTRL\_MASK}{MTB\_ITCTRL\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+I\+T\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+I\+T\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga219a5fa201bee0a15aa0bf923873d8a2}\label{group___s_a_m_d21___m_t_b_ga219a5fa201bee0a15aa0bf923873d8a2}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_ITCTRL\_OFFSET@{MTB\_ITCTRL\_OFFSET}}
+\index{MTB\_ITCTRL\_OFFSET@{MTB\_ITCTRL\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_ITCTRL\_OFFSET}{MTB\_ITCTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+I\+T\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x\+F00}
+
+
+
+(M\+T\+B\+\_\+\+I\+T\+C\+T\+RL offset) M\+TB Integration Mode Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga8660020c643126005e5c89e4aac34281}\label{group___s_a_m_d21___m_t_b_ga8660020c643126005e5c89e4aac34281}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_LOCKACCESS\_MASK@{MTB\_LOCKACCESS\_MASK}}
+\index{MTB\_LOCKACCESS\_MASK@{MTB\_LOCKACCESS\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_LOCKACCESS\_MASK}{MTB\_LOCKACCESS\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+S\+S\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+SS) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga6848fd67964e48dea5e8aab4c5f6ee6d}\label{group___s_a_m_d21___m_t_b_ga6848fd67964e48dea5e8aab4c5f6ee6d}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_LOCKACCESS\_OFFSET@{MTB\_LOCKACCESS\_OFFSET}}
+\index{MTB\_LOCKACCESS\_OFFSET@{MTB\_LOCKACCESS\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_LOCKACCESS\_OFFSET}{MTB\_LOCKACCESS\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+S\+S\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+B0}
+
+
+
+(M\+T\+B\+\_\+\+L\+O\+C\+K\+A\+C\+C\+E\+SS offset) M\+TB Lock Access 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gae1ca719b631edc5b3bbe331b2455f679}\label{group___s_a_m_d21___m_t_b_gae1ca719b631edc5b3bbe331b2455f679}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_LOCKSTATUS\_MASK@{MTB\_LOCKSTATUS\_MASK}}
+\index{MTB\_LOCKSTATUS\_MASK@{MTB\_LOCKSTATUS\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_LOCKSTATUS\_MASK}{MTB\_LOCKSTATUS\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+US) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga10490c8254804606534f9dc2a3955b56}\label{group___s_a_m_d21___m_t_b_ga10490c8254804606534f9dc2a3955b56}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_LOCKSTATUS\_OFFSET@{MTB\_LOCKSTATUS\_OFFSET}}
+\index{MTB\_LOCKSTATUS\_OFFSET@{MTB\_LOCKSTATUS\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_LOCKSTATUS\_OFFSET}{MTB\_LOCKSTATUS\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+B4}
+
+
+
+(M\+T\+B\+\_\+\+L\+O\+C\+K\+S\+T\+A\+T\+US offset) M\+TB Lock Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga3df3a47e8efa848f87d4805b4d6f497c}\label{group___s_a_m_d21___m_t_b_ga3df3a47e8efa848f87d4805b4d6f497c}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_EN@{MTB\_MASTER\_EN}}
+\index{MTB\_MASTER\_EN@{MTB\_MASTER\_EN}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_EN}{MTB\_MASTER\_EN}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+EN~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5c8356e28b7c4274d86b6342a4022a2d}\label{group___s_a_m_d21___m_t_b_ga5c8356e28b7c4274d86b6342a4022a2d}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_EN\_Pos@{MTB\_MASTER\_EN\_Pos}}
+\index{MTB\_MASTER\_EN\_Pos@{MTB\_MASTER\_EN\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_EN\_Pos}{MTB\_MASTER\_EN\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+E\+N\+\_\+\+Pos~31}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Main Trace Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gabbf8f04a1362e3988c6a5bf7638a5b7f}\label{group___s_a_m_d21___m_t_b_gabbf8f04a1362e3988c6a5bf7638a5b7f}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_HALTREQ@{MTB\_MASTER\_HALTREQ}}
+\index{MTB\_MASTER\_HALTREQ@{MTB\_MASTER\_HALTREQ}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_HALTREQ}{MTB\_MASTER\_HALTREQ}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+EQ~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+E\+Q\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga8a330adc9c36475c68783bf9bc740278}\label{group___s_a_m_d21___m_t_b_ga8a330adc9c36475c68783bf9bc740278}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_HALTREQ\_Pos@{MTB\_MASTER\_HALTREQ\_Pos}}
+\index{MTB\_MASTER\_HALTREQ\_Pos@{MTB\_MASTER\_HALTREQ\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_HALTREQ\_Pos}{MTB\_MASTER\_HALTREQ\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+H\+A\+L\+T\+R\+E\+Q\+\_\+\+Pos~9}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Halt Request 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gabefa741208d170818ff7e0ecab803440}\label{group___s_a_m_d21___m_t_b_gabefa741208d170818ff7e0ecab803440}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_MASK@{MTB\_MASTER\_MASK}}
+\index{MTB\_MASTER\_MASK@{MTB\_MASTER\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_MASK}{MTB\_MASTER\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+SK(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa7536d183a155d43ff29a4758f03c990}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gabbdb10176810b7faca2550878c30e445}{M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gab7418dbbb685e7ec4206ffaf98668c72}\label{group___s_a_m_d21___m_t_b_gab7418dbbb685e7ec4206ffaf98668c72}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_MASK\_@{MTB\_MASTER\_MASK\_}}
+\index{MTB\_MASTER\_MASK\_@{MTB\_MASTER\_MASK\_}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_MASK\_}{MTB\_MASTER\_MASK\_}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+~0x800003\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaa7536d183a155d43ff29a4758f03c990}\label{group___s_a_m_d21___m_t_b_gaa7536d183a155d43ff29a4758f03c990}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_MASK\_Msk@{MTB\_MASTER\_MASK\_Msk}}
+\index{MTB\_MASTER\_MASK\_Msk@{MTB\_MASTER\_MASK\_Msk}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_MASK\_Msk}{MTB\_MASTER\_MASK\_Msk}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Msk~(0x1\+Ful $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gabbdb10176810b7faca2550878c30e445}\label{group___s_a_m_d21___m_t_b_gabbdb10176810b7faca2550878c30e445}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_MASK\_Pos@{MTB\_MASTER\_MASK\_Pos}}
+\index{MTB\_MASTER\_MASK\_Pos@{MTB\_MASTER\_MASK\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_MASK\_Pos}{MTB\_MASTER\_MASK\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+Pos~0}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Maximum Value of the Trace Buffer in S\+R\+AM 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac842229fe0e49e4bbcc3513eceef11f4}\label{group___s_a_m_d21___m_t_b_gac842229fe0e49e4bbcc3513eceef11f4}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_OFFSET@{MTB\_MASTER\_OFFSET}}
+\index{MTB\_MASTER\_OFFSET@{MTB\_MASTER\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_OFFSET}{MTB\_MASTER\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+O\+F\+F\+S\+ET~0x004}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER offset) M\+TB Master 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga578ef21836ea1ee0a56f0af70d22ce97}\label{group___s_a_m_d21___m_t_b_ga578ef21836ea1ee0a56f0af70d22ce97}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_RAMPRIV@{MTB\_MASTER\_RAMPRIV}}
+\index{MTB\_MASTER\_RAMPRIV@{MTB\_MASTER\_RAMPRIV}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_RAMPRIV}{MTB\_MASTER\_RAMPRIV}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+IV~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+I\+V\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga00ba898e29ce885b476cec508780fdf9}\label{group___s_a_m_d21___m_t_b_ga00ba898e29ce885b476cec508780fdf9}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_RAMPRIV\_Pos@{MTB\_MASTER\_RAMPRIV\_Pos}}
+\index{MTB\_MASTER\_RAMPRIV\_Pos@{MTB\_MASTER\_RAMPRIV\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_RAMPRIV\_Pos}{MTB\_MASTER\_RAMPRIV\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+A\+M\+P\+R\+I\+V\+\_\+\+Pos~8}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) S\+R\+AM Privilege 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga2a89518994d6e0ab1cfd84e5ced03e50}\label{group___s_a_m_d21___m_t_b_ga2a89518994d6e0ab1cfd84e5ced03e50}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_RESETVALUE@{MTB\_MASTER\_RESETVALUE}}
+\index{MTB\_MASTER\_RESETVALUE@{MTB\_MASTER\_RESETVALUE}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_RESETVALUE}{MTB\_MASTER\_RESETVALUE}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER reset\+\_\+value) M\+TB Master 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga632ffa908823ac480375ac19d3cb5250}\label{group___s_a_m_d21___m_t_b_ga632ffa908823ac480375ac19d3cb5250}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_SFRWPRIV@{MTB\_MASTER\_SFRWPRIV}}
+\index{MTB\_MASTER\_SFRWPRIV@{MTB\_MASTER\_SFRWPRIV}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_SFRWPRIV}{MTB\_MASTER\_SFRWPRIV}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+IV~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+I\+V\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5a86f212f89ce854b43eb935c6441208}\label{group___s_a_m_d21___m_t_b_ga5a86f212f89ce854b43eb935c6441208}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_SFRWPRIV\_Pos@{MTB\_MASTER\_SFRWPRIV\_Pos}}
+\index{MTB\_MASTER\_SFRWPRIV\_Pos@{MTB\_MASTER\_SFRWPRIV\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_SFRWPRIV\_Pos}{MTB\_MASTER\_SFRWPRIV\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+S\+F\+R\+W\+P\+R\+I\+V\+\_\+\+Pos~7}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Special Function Register Write Privilege 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5e6ecc0b0af324a43225a11681a7d31e}\label{group___s_a_m_d21___m_t_b_ga5e6ecc0b0af324a43225a11681a7d31e}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_TSTARTEN@{MTB\_MASTER\_TSTARTEN}}
+\index{MTB\_MASTER\_TSTARTEN@{MTB\_MASTER\_TSTARTEN}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_TSTARTEN}{MTB\_MASTER\_TSTARTEN}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+EN~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga3f03df82dc77e5930c3898c92e666900}\label{group___s_a_m_d21___m_t_b_ga3f03df82dc77e5930c3898c92e666900}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_TSTARTEN\_Pos@{MTB\_MASTER\_TSTARTEN\_Pos}}
+\index{MTB\_MASTER\_TSTARTEN\_Pos@{MTB\_MASTER\_TSTARTEN\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_TSTARTEN\_Pos}{MTB\_MASTER\_TSTARTEN\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+A\+R\+T\+E\+N\+\_\+\+Pos~5}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Trace Start Input Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac7aa980eeecbf5544fea667b1f2f183a}\label{group___s_a_m_d21___m_t_b_gac7aa980eeecbf5544fea667b1f2f183a}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_TSTOPEN@{MTB\_MASTER\_TSTOPEN}}
+\index{MTB\_MASTER\_TSTOPEN@{MTB\_MASTER\_TSTOPEN}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_TSTOPEN}{MTB\_MASTER\_TSTOPEN}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+EN~(0x1ul $<$$<$ M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga537be1d3321b4266e5ef48b785a4668f}\label{group___s_a_m_d21___m_t_b_ga537be1d3321b4266e5ef48b785a4668f}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_MASTER\_TSTOPEN\_Pos@{MTB\_MASTER\_TSTOPEN\_Pos}}
+\index{MTB\_MASTER\_TSTOPEN\_Pos@{MTB\_MASTER\_TSTOPEN\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_MASTER\_TSTOPEN\_Pos}{MTB\_MASTER\_TSTOPEN\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+M\+A\+S\+T\+E\+R\+\_\+\+T\+S\+T\+O\+P\+E\+N\+\_\+\+Pos~6}
+
+
+
+(M\+T\+B\+\_\+\+M\+A\+S\+T\+ER) Trace Stop Input Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac18d6f5c996cccee534a4590f3b0e9d8}\label{group___s_a_m_d21___m_t_b_gac18d6f5c996cccee534a4590f3b0e9d8}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID0\_MASK@{MTB\_PID0\_MASK}}
+\index{MTB\_PID0\_MASK@{MTB\_PID0\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID0\_MASK}{MTB\_PID0\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D0\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D0) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gad03f4fd792b587adbd717f3255dc528e}\label{group___s_a_m_d21___m_t_b_gad03f4fd792b587adbd717f3255dc528e}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID0\_OFFSET@{MTB\_PID0\_OFFSET}}
+\index{MTB\_PID0\_OFFSET@{MTB\_PID0\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID0\_OFFSET}{MTB\_PID0\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D0\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+E0}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D0 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga79fe1f4f5ada0501536d4bd991b4b69f}\label{group___s_a_m_d21___m_t_b_ga79fe1f4f5ada0501536d4bd991b4b69f}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID1\_MASK@{MTB\_PID1\_MASK}}
+\index{MTB\_PID1\_MASK@{MTB\_PID1\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID1\_MASK}{MTB\_PID1\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D1\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D1) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac8accff9ba83615614e067bbd8dcf329}\label{group___s_a_m_d21___m_t_b_gac8accff9ba83615614e067bbd8dcf329}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID1\_OFFSET@{MTB\_PID1\_OFFSET}}
+\index{MTB\_PID1\_OFFSET@{MTB\_PID1\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID1\_OFFSET}{MTB\_PID1\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D1\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+E4}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D1 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5999232178e1cf4fbd656413827f2a0c}\label{group___s_a_m_d21___m_t_b_ga5999232178e1cf4fbd656413827f2a0c}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID2\_MASK@{MTB\_PID2\_MASK}}
+\index{MTB\_PID2\_MASK@{MTB\_PID2\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID2\_MASK}{MTB\_PID2\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D2\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D2) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga5874b570f2bf940372a6a3a9ba8d787d}\label{group___s_a_m_d21___m_t_b_ga5874b570f2bf940372a6a3a9ba8d787d}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID2\_OFFSET@{MTB\_PID2\_OFFSET}}
+\index{MTB\_PID2\_OFFSET@{MTB\_PID2\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID2\_OFFSET}{MTB\_PID2\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D2\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+E8}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D2 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaccb41542d8ea9c7a2e17e754b3491bf4}\label{group___s_a_m_d21___m_t_b_gaccb41542d8ea9c7a2e17e754b3491bf4}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID3\_MASK@{MTB\_PID3\_MASK}}
+\index{MTB\_PID3\_MASK@{MTB\_PID3\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID3\_MASK}{MTB\_PID3\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D3\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D3) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga1d873b31755ae6e7f7d67f946d740cc7}\label{group___s_a_m_d21___m_t_b_ga1d873b31755ae6e7f7d67f946d740cc7}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID3\_OFFSET@{MTB\_PID3\_OFFSET}}
+\index{MTB\_PID3\_OFFSET@{MTB\_PID3\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID3\_OFFSET}{MTB\_PID3\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D3\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+EC}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D3 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaa392cc96fa9dc29bba3512293a81f1dd}\label{group___s_a_m_d21___m_t_b_gaa392cc96fa9dc29bba3512293a81f1dd}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID4\_MASK@{MTB\_PID4\_MASK}}
+\index{MTB\_PID4\_MASK@{MTB\_PID4\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID4\_MASK}{MTB\_PID4\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D4\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D4) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gabbad22967e64b48b6925a9dcff4a9ea8}\label{group___s_a_m_d21___m_t_b_gabbad22967e64b48b6925a9dcff4a9ea8}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID4\_OFFSET@{MTB\_PID4\_OFFSET}}
+\index{MTB\_PID4\_OFFSET@{MTB\_PID4\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID4\_OFFSET}{MTB\_PID4\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D4\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+D0}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D4 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga31b4cd998c91073723497dab877ea316}\label{group___s_a_m_d21___m_t_b_ga31b4cd998c91073723497dab877ea316}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID5\_MASK@{MTB\_PID5\_MASK}}
+\index{MTB\_PID5\_MASK@{MTB\_PID5\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID5\_MASK}{MTB\_PID5\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D5\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D5) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaa963a280721b3e1007d6e36bb3d5d522}\label{group___s_a_m_d21___m_t_b_gaa963a280721b3e1007d6e36bb3d5d522}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID5\_OFFSET@{MTB\_PID5\_OFFSET}}
+\index{MTB\_PID5\_OFFSET@{MTB\_PID5\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID5\_OFFSET}{MTB\_PID5\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D5\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+D4}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D5 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gacb630031f7b28faf52c8f6bf82da6b16}\label{group___s_a_m_d21___m_t_b_gacb630031f7b28faf52c8f6bf82da6b16}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID6\_MASK@{MTB\_PID6\_MASK}}
+\index{MTB\_PID6\_MASK@{MTB\_PID6\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID6\_MASK}{MTB\_PID6\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D6\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D6) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gae61271ff24ec3878348f10678f1d271b}\label{group___s_a_m_d21___m_t_b_gae61271ff24ec3878348f10678f1d271b}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID6\_OFFSET@{MTB\_PID6\_OFFSET}}
+\index{MTB\_PID6\_OFFSET@{MTB\_PID6\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID6\_OFFSET}{MTB\_PID6\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D6\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+D8}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D6 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga1e42e23c8053324cc941accb82fae2f0}\label{group___s_a_m_d21___m_t_b_ga1e42e23c8053324cc941accb82fae2f0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID7\_MASK@{MTB\_PID7\_MASK}}
+\index{MTB\_PID7\_MASK@{MTB\_PID7\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID7\_MASK}{MTB\_PID7\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D7\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D7) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga1fc275c8eb95588a8087dddf88ce0fd1}\label{group___s_a_m_d21___m_t_b_ga1fc275c8eb95588a8087dddf88ce0fd1}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_PID7\_OFFSET@{MTB\_PID7\_OFFSET}}
+\index{MTB\_PID7\_OFFSET@{MTB\_PID7\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_PID7\_OFFSET}{MTB\_PID7\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+I\+D7\+\_\+\+O\+F\+F\+S\+ET~0x\+F\+DC}
+
+
+
+(M\+T\+B\+\_\+\+P\+I\+D7 offset) Core\+Sight 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga8b3e0774e0074b7912373bb10ff53d2c}\label{group___s_a_m_d21___m_t_b_ga8b3e0774e0074b7912373bb10ff53d2c}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_MASK@{MTB\_POSITION\_MASK}}
+\index{MTB\_POSITION\_MASK@{MTB\_POSITION\_MASK}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_MASK}{MTB\_POSITION\_MASK}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Cul}
+
+
+
+(M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gacf736a2cfd54247fce8d341e4083bc65}\label{group___s_a_m_d21___m_t_b_gacf736a2cfd54247fce8d341e4083bc65}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_OFFSET@{MTB\_POSITION\_OFFSET}}
+\index{MTB\_POSITION\_OFFSET@{MTB\_POSITION\_OFFSET}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_OFFSET}{MTB\_POSITION\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+O\+F\+F\+S\+ET~0x000}
+
+
+
+(M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON offset) M\+TB Position 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gac83f3ecf8be77e14dace064def6cc5a4}\label{group___s_a_m_d21___m_t_b_gac83f3ecf8be77e14dace064def6cc5a4}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_POINTER@{MTB\_POSITION\_POINTER}}
+\index{MTB\_POSITION\_POINTER@{MTB\_POSITION\_POINTER}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_POINTER}{MTB\_POSITION\_POINTER}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+ER(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___m_t_b_ga013976edca9647c438955dd2fbf24ec2}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___m_t_b_gaa28512e5fb745a251e5d1d36942f62ea}{M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga013976edca9647c438955dd2fbf24ec2}\label{group___s_a_m_d21___m_t_b_ga013976edca9647c438955dd2fbf24ec2}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_POINTER\_Msk@{MTB\_POSITION\_POINTER\_Msk}}
+\index{MTB\_POSITION\_POINTER\_Msk@{MTB\_POSITION\_POINTER\_Msk}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_POINTER\_Msk}{MTB\_POSITION\_POINTER\_Msk}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Msk~(0x1\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gaa28512e5fb745a251e5d1d36942f62ea}\label{group___s_a_m_d21___m_t_b_gaa28512e5fb745a251e5d1d36942f62ea}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_POINTER\_Pos@{MTB\_POSITION\_POINTER\_Pos}}
+\index{MTB\_POSITION\_POINTER\_Pos@{MTB\_POSITION\_POINTER\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_POINTER\_Pos}{MTB\_POSITION\_POINTER\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+P\+O\+I\+N\+T\+E\+R\+\_\+\+Pos~3}
+
+
+
+(M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) Trace Packet Location Pointer 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga3d831001edb7b1b2b965fa994a62ae42}\label{group___s_a_m_d21___m_t_b_ga3d831001edb7b1b2b965fa994a62ae42}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_WRAP@{MTB\_POSITION\_WRAP}}
+\index{MTB\_POSITION\_WRAP@{MTB\_POSITION\_WRAP}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_WRAP}{MTB\_POSITION\_WRAP}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+AP~(0x1ul $<$$<$ M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+A\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_gae36946e901f21af399790c801131a24d}\label{group___s_a_m_d21___m_t_b_gae36946e901f21af399790c801131a24d}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_POSITION\_WRAP\_Pos@{MTB\_POSITION\_WRAP\_Pos}}
+\index{MTB\_POSITION\_WRAP\_Pos@{MTB\_POSITION\_WRAP\_Pos}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_POSITION\_WRAP\_Pos}{MTB\_POSITION\_WRAP\_Pos}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+W\+R\+A\+P\+\_\+\+Pos~2}
+
+
+
+(M\+T\+B\+\_\+\+P\+O\+S\+I\+T\+I\+ON) Pointer Value Wraps 
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga2d1f0c359b5a3e5564403203a61ad9f0}\label{group___s_a_m_d21___m_t_b_ga2d1f0c359b5a3e5564403203a61ad9f0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!MTB\_U2002@{MTB\_U2002}}
+\index{MTB\_U2002@{MTB\_U2002}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{MTB\_U2002}{MTB\_U2002}}
+{\footnotesize\ttfamily \#define M\+T\+B\+\_\+\+U2002}
+
+\mbox{\Hypertarget{group___s_a_m_d21___m_t_b_ga596b20f15d56213a44961489dfefafd0}\label{group___s_a_m_d21___m_t_b_ga596b20f15d56213a44961489dfefafd0}} 
+\index{Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}!REV\_MTB@{REV\_MTB}}
+\index{REV\_MTB@{REV\_MTB}!Cortex-\/M0+ Micro-\/Trace Buffer@{Cortex-\/M0+ Micro-\/Trace Buffer}}
+\subsubsection{\texorpdfstring{REV\_MTB}{REV\_MTB}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+M\+TB~0x100}
+

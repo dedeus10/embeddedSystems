@@ -1,0 +1,82 @@
+\hypertarget{group__calib__group}{}\section{Calibration A\+P\+Is}
+\label{group__calib__group}\index{Calibration APIs@{Calibration APIs}}
+
+
+This group includes all the Calibration related A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__calib__group_ga9ead57dad973b4c7ebe1e199e64356e7}{at\+\_\+ble\+\_\+calib\+\_\+config}} (int calib\+\_\+enable, uint32\+\_\+t no\+\_\+samples, uint32\+\_\+t cal\+\_\+freq)
+\begin{DoxyCompactList}\small\item\em Configures periodic Vbat/\+Vtemp calibration\+: enable/disable, number of A\+DC samples needed for averaging, frequency of the calibration in seconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__calib__group_gabbca0578e51667ffaf6f7027745991ee}{at\+\_\+ble\+\_\+calib\+\_\+get\+\_\+voltage}} (float $\ast$voltage)
+\begin{DoxyCompactList}\small\item\em Retrieves voltage value in volts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__calib__group_ga5e41fece70f7b83cbdfb24773a4835f6}{at\+\_\+ble\+\_\+calib\+\_\+get\+\_\+temp}} (int $\ast$\mbox{\hyperlink{demotasks_8c_a189f4b74d9dd4e7561d76e58c28606cc}{temperature}})
+\begin{DoxyCompactList}\small\item\em Retrieves temperature value in Celsius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes all the Calibration related A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__calib__group_ga9ead57dad973b4c7ebe1e199e64356e7}\label{group__calib__group_ga9ead57dad973b4c7ebe1e199e64356e7}} 
+\index{Calibration APIs@{Calibration APIs}!at\_ble\_calib\_config@{at\_ble\_calib\_config}}
+\index{at\_ble\_calib\_config@{at\_ble\_calib\_config}!Calibration APIs@{Calibration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_calib\_config()}{at\_ble\_calib\_config()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+calib\+\_\+config (\begin{DoxyParamCaption}\item[{int}]{calib\+\_\+enable,  }\item[{uint32\+\_\+t}]{no\+\_\+samples,  }\item[{uint32\+\_\+t}]{cal\+\_\+freq }\end{DoxyParamCaption})}
+
+
+
+Configures periodic Vbat/\+Vtemp calibration\+: enable/disable, number of A\+DC samples needed for averaging, frequency of the calibration in seconds. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em calib\+\_\+enable} & enables calibration if set to 1 and disables it if set to 0. Calibration is enabled by default. \\
+\hline
+\mbox{\texttt{ in}}  & {\em no\+\_\+samples} & number of A\+DC samples needed to calculate the average A\+DC output, recommended range from 1 to 16 sample. Default number of samples is 2. \\
+\hline
+\mbox{\texttt{ in}}  & {\em cal\+\_\+freq} & frequency of the calibration in seconds, recommended range from 1 to 60 seconds. Default frequency is 2s.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__calib__group_ga5e41fece70f7b83cbdfb24773a4835f6}\label{group__calib__group_ga5e41fece70f7b83cbdfb24773a4835f6}} 
+\index{Calibration APIs@{Calibration APIs}!at\_ble\_calib\_get\_temp@{at\_ble\_calib\_get\_temp}}
+\index{at\_ble\_calib\_get\_temp@{at\_ble\_calib\_get\_temp}!Calibration APIs@{Calibration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_calib\_get\_temp()}{at\_ble\_calib\_get\_temp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+calib\+\_\+get\+\_\+temp (\begin{DoxyParamCaption}\item[{int $\ast$}]{temperature }\end{DoxyParamCaption})}
+
+
+
+Retrieves temperature value in Celsius. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em temperature} & variable passed to the function to store the retrieved temperature value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__calib__group_gabbca0578e51667ffaf6f7027745991ee}\label{group__calib__group_gabbca0578e51667ffaf6f7027745991ee}} 
+\index{Calibration APIs@{Calibration APIs}!at\_ble\_calib\_get\_voltage@{at\_ble\_calib\_get\_voltage}}
+\index{at\_ble\_calib\_get\_voltage@{at\_ble\_calib\_get\_voltage}!Calibration APIs@{Calibration APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_calib\_get\_voltage()}{at\_ble\_calib\_get\_voltage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+calib\+\_\+get\+\_\+voltage (\begin{DoxyParamCaption}\item[{float $\ast$}]{voltage }\end{DoxyParamCaption})}
+
+
+
+Retrieves voltage value in volts. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em voltage} & variable passed to the function to store the retrieved voltage value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

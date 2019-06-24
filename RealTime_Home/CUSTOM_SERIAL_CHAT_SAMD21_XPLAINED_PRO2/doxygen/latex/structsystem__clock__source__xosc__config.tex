@@ -1,0 +1,75 @@
+\hypertarget{structsystem__clock__source__xosc__config}{}\section{system\+\_\+clock\+\_\+source\+\_\+xosc\+\_\+config Struct Reference}
+\label{structsystem__clock__source__xosc__config}\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+
+
+Configuration structure for X\+O\+SC.  
+
+
+
+
+{\ttfamily \#include $<$clock\+\_\+feature.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gab463f9d80799466f12321e6252493e70}{system\+\_\+clock\+\_\+external}} \mbox{\hyperlink{structsystem__clock__source__xosc__config_aeced8f86ac9232f6fba8a4a13e5eae27}{external\+\_\+clock}}
+\item 
+enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga93797ad2901b27dd84fa8b7edc9bb5c5}{system\+\_\+xosc\+\_\+startup}} \mbox{\hyperlink{structsystem__clock__source__xosc__config_a147400a478d23555be9e54624a0251ca}{startup\+\_\+time}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__xosc__config_ad22a6285703ad7cd0a9febbc8d8ecde9}{auto\+\_\+gain\+\_\+control}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structsystem__clock__source__xosc__config_ab632fb0b4d5156ea4df0b1e15410e913}{frequency}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__xosc__config_a514964d5c2a8da4dd96bac82a53477f2}{run\+\_\+in\+\_\+standby}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{structsystem__clock__source__xosc__config_a23620c12634b9230d2325ec5c245cf32}{on\+\_\+demand}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration structure for X\+O\+SC. 
+
+External oscillator clock configuration structure. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structsystem__clock__source__xosc__config_ad22a6285703ad7cd0a9febbc8d8ecde9}\label{structsystem__clock__source__xosc__config_ad22a6285703ad7cd0a9febbc8d8ecde9}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!auto\_gain\_control@{auto\_gain\_control}}
+\index{auto\_gain\_control@{auto\_gain\_control}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{auto\_gain\_control}{auto\_gain\_control}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} auto\+\_\+gain\+\_\+control}
+
+Enable automatic amplitude gain control \mbox{\Hypertarget{structsystem__clock__source__xosc__config_aeced8f86ac9232f6fba8a4a13e5eae27}\label{structsystem__clock__source__xosc__config_aeced8f86ac9232f6fba8a4a13e5eae27}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!external\_clock@{external\_clock}}
+\index{external\_clock@{external\_clock}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{external\_clock}{external\_clock}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gab463f9d80799466f12321e6252493e70}{system\+\_\+clock\+\_\+external}} external\+\_\+clock}
+
+External clock type \mbox{\Hypertarget{structsystem__clock__source__xosc__config_ab632fb0b4d5156ea4df0b1e15410e913}\label{structsystem__clock__source__xosc__config_ab632fb0b4d5156ea4df0b1e15410e913}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!frequency@{frequency}}
+\index{frequency@{frequency}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{frequency}{frequency}}
+{\footnotesize\ttfamily uint32\+\_\+t frequency}
+
+External clock/crystal frequency \mbox{\Hypertarget{structsystem__clock__source__xosc__config_a23620c12634b9230d2325ec5c245cf32}\label{structsystem__clock__source__xosc__config_a23620c12634b9230d2325ec5c245cf32}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!on\_demand@{on\_demand}}
+\index{on\_demand@{on\_demand}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{on\_demand}{on\_demand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} on\+\_\+demand}
+
+Run On Demand. If this is set the X\+O\+SC won\textquotesingle{}t run until requested by a peripheral. \mbox{\Hypertarget{structsystem__clock__source__xosc__config_a514964d5c2a8da4dd96bac82a53477f2}\label{structsystem__clock__source__xosc__config_a514964d5c2a8da4dd96bac82a53477f2}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!run\_in\_standby@{run\_in\_standby}}
+\index{run\_in\_standby@{run\_in\_standby}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{run\_in\_standby}{run\_in\_standby}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} run\+\_\+in\+\_\+standby}
+
+Keep the X\+O\+SC enabled in standby sleep mode \mbox{\Hypertarget{structsystem__clock__source__xosc__config_a147400a478d23555be9e54624a0251ca}\label{structsystem__clock__source__xosc__config_a147400a478d23555be9e54624a0251ca}} 
+\index{system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}!startup\_time@{startup\_time}}
+\index{startup\_time@{startup\_time}!system\_clock\_source\_xosc\_config@{system\_clock\_source\_xosc\_config}}
+\subsubsection{\texorpdfstring{startup\_time}{startup\_time}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_ga93797ad2901b27dd84fa8b7edc9bb5c5}{system\+\_\+xosc\+\_\+startup}} startup\+\_\+time}
+
+Crystal oscillator start-\/up time 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/drivers/system/clock/clock\+\_\+samd21\+\_\+r21\+\_\+da\+\_\+ha1/\mbox{\hyperlink{clock__feature_8h}{clock\+\_\+feature.\+h}}\end{DoxyCompactItemize}

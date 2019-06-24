@@ -1,0 +1,87 @@
+\hypertarget{union_a_c___s_t_a_t_u_s_b___type}{}\section{A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+B\+\_\+\+Type Union Reference}
+\label{union_a_c___s_t_a_t_u_s_b___type}\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+
+
+{\ttfamily \#include $<$ac.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_afd00570f2f05cccc4376892b4aa16774}{READY0}}:1\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a960615924a5af2e6165088391b19271c}{READY1}}:1\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}:5\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_abb30254758e23bd24824e436a1aa8716}{SYNCBUSY}}:1\\
+\} \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a2fa5fe37adbad41d864c40ea8864a14c}{bit}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a87c971ad119330af2fdb7bca4011addb}{READY}}:2\\
+\>uint8\_t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a8b4eebe79ded0459acec2f4950102ba3}{\_\_pad0\_\_}}:6\\
+\} \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_aea207f933470fb93821b99c2beabba83}{vec}}\\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{union_a_c___s_t_a_t_u_s_b___type_a9428adc9af4653a2050e2536b55dec8d}{reg}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_a8b4eebe79ded0459acec2f4950102ba3}\label{union_a_c___s_t_a_t_u_s_b___type_a8b4eebe79ded0459acec2f4950102ba3}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!\_\_pad0\_\_@{\_\_pad0\_\_}}
+\index{\_\_pad0\_\_@{\_\_pad0\_\_}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{\_\_pad0\_\_}{\_\_pad0\_\_}}
+{\footnotesize\ttfamily uint8\+\_\+t \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+
+bit\+: 2.. 6 Reserved
+
+bit\+: 2.. 7 Reserved \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_a2fa5fe37adbad41d864c40ea8864a14c}\label{union_a_c___s_t_a_t_u_s_b___type_a2fa5fe37adbad41d864c40ea8864a14c}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!bit@{bit}}
+\index{bit@{bit}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{bit}{bit}}
+{\footnotesize\ttfamily struct \{ ... \}   bit}
+
+Structure used for bit access \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_a87c971ad119330af2fdb7bca4011addb}\label{union_a_c___s_t_a_t_u_s_b___type_a87c971ad119330af2fdb7bca4011addb}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!READY@{READY}}
+\index{READY@{READY}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{READY}{READY}}
+{\footnotesize\ttfamily uint8\+\_\+t R\+E\+A\+DY}
+
+bit\+: 0.. 1 Comparator x Ready \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_afd00570f2f05cccc4376892b4aa16774}\label{union_a_c___s_t_a_t_u_s_b___type_afd00570f2f05cccc4376892b4aa16774}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!READY0@{READY0}}
+\index{READY0@{READY0}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{READY0}{READY0}}
+{\footnotesize\ttfamily uint8\+\_\+t R\+E\+A\+D\+Y0}
+
+bit\+: 0 Comparator 0 Ready \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_a960615924a5af2e6165088391b19271c}\label{union_a_c___s_t_a_t_u_s_b___type_a960615924a5af2e6165088391b19271c}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!READY1@{READY1}}
+\index{READY1@{READY1}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{READY1}{READY1}}
+{\footnotesize\ttfamily uint8\+\_\+t R\+E\+A\+D\+Y1}
+
+bit\+: 1 Comparator 1 Ready \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_a9428adc9af4653a2050e2536b55dec8d}\label{union_a_c___s_t_a_t_u_s_b___type_a9428adc9af4653a2050e2536b55dec8d}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!reg@{reg}}
+\index{reg@{reg}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily uint8\+\_\+t reg}
+
+Type used for register access \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_abb30254758e23bd24824e436a1aa8716}\label{union_a_c___s_t_a_t_u_s_b___type_abb30254758e23bd24824e436a1aa8716}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!SYNCBUSY@{SYNCBUSY}}
+\index{SYNCBUSY@{SYNCBUSY}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{SYNCBUSY}{SYNCBUSY}}
+{\footnotesize\ttfamily uint8\+\_\+t S\+Y\+N\+C\+B\+U\+SY}
+
+bit\+: 7 Synchronization Busy \mbox{\Hypertarget{union_a_c___s_t_a_t_u_s_b___type_aea207f933470fb93821b99c2beabba83}\label{union_a_c___s_t_a_t_u_s_b___type_aea207f933470fb93821b99c2beabba83}} 
+\index{AC\_STATUSB\_Type@{AC\_STATUSB\_Type}!vec@{vec}}
+\index{vec@{vec}!AC\_STATUSB\_Type@{AC\_STATUSB\_Type}}
+\subsubsection{\texorpdfstring{vec}{vec}}
+{\footnotesize\ttfamily struct \{ ... \}   vec}
+
+Structure used for vec access 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/utils/cmsis/samd21/include/component/\mbox{\hyperlink{component_2ac_8h}{ac.\+h}}\end{DoxyCompactItemize}

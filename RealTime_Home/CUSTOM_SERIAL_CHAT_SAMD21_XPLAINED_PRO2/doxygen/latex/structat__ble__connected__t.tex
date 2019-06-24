@@ -1,0 +1,113 @@
+\hypertarget{structat__ble__connected__t}{}\section{at\+\_\+ble\+\_\+connected\+\_\+t Struct Reference}
+\label{structat__ble__connected__t}\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+
+
+A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED message format. This message is sent to the A\+PP when the link request is complete.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} \mbox{\hyperlink{structat__ble__connected__t_a262f2982177c35fb3a051c22da655052}{peer\+\_\+addr}}
+\begin{DoxyCompactList}\small\item\em Peer address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} \mbox{\hyperlink{structat__ble__connected__t_ab8b0f353cb6a8d85f0822900e3b7cf35}{handle}}
+\begin{DoxyCompactList}\small\item\em connection handle \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{structat__ble__connected__t_ac84e32b45685da99c4d77127bdaf58c8}{conn\+\_\+status}}
+\begin{DoxyCompactList}\small\item\em connection status, refer to \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint16\_t \mbox{\hyperlink{structat__ble__connected__t_a99a245058c41cb5762cc6b6dead42c10}{con\_interval}}\\
+\>\>{\em Connection interval. }\\
+\>uint16\_t \mbox{\hyperlink{structat__ble__connected__t_a7a288732b0f90cff943de752cbeb8df4}{con\_latency}}\\
+\>\>{\em Connection latency. }\\
+\>uint16\_t \mbox{\hyperlink{structat__ble__connected__t_aecd2f769dafdf871d7c6d25c13cd831d}{sup\_to}}\\
+\>\>{\em Link supervision timeout. }\\
+\} \mbox{\hyperlink{structat__ble__connected__t_a40f48e35c4726408c3146d89949d5823}{conn\_params}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Structure to save slave connection parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+T\+\_\+\+B\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED message format. This message is sent to the A\+PP when the link request is complete. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__connected__t_a99a245058c41cb5762cc6b6dead42c10}\label{structat__ble__connected__t_a99a245058c41cb5762cc6b6dead42c10}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!con\_interval@{con\_interval}}
+\index{con\_interval@{con\_interval}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{con\_interval}{con\_interval}}
+{\footnotesize\ttfamily uint16\+\_\+t con\+\_\+interval}
+
+
+
+Connection interval. 
+
+\mbox{\Hypertarget{structat__ble__connected__t_a7a288732b0f90cff943de752cbeb8df4}\label{structat__ble__connected__t_a7a288732b0f90cff943de752cbeb8df4}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!con\_latency@{con\_latency}}
+\index{con\_latency@{con\_latency}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{con\_latency}{con\_latency}}
+{\footnotesize\ttfamily uint16\+\_\+t con\+\_\+latency}
+
+
+
+Connection latency. 
+
+\mbox{\Hypertarget{structat__ble__connected__t_a40f48e35c4726408c3146d89949d5823}\label{structat__ble__connected__t_a40f48e35c4726408c3146d89949d5823}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!conn\_params@{conn\_params}}
+\index{conn\_params@{conn\_params}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{conn\_params}{conn\_params}}
+{\footnotesize\ttfamily struct \{ ... \}   conn\+\_\+params}
+
+
+
+Structure to save slave connection parameters. 
+
+\mbox{\Hypertarget{structat__ble__connected__t_ac84e32b45685da99c4d77127bdaf58c8}\label{structat__ble__connected__t_ac84e32b45685da99c4d77127bdaf58c8}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!conn\_status@{conn\_status}}
+\index{conn\_status@{conn\_status}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{conn\_status}{conn\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} conn\+\_\+status}
+
+
+
+connection status, refer to \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+
+\mbox{\Hypertarget{structat__ble__connected__t_ab8b0f353cb6a8d85f0822900e3b7cf35}\label{structat__ble__connected__t_ab8b0f353cb6a8d85f0822900e3b7cf35}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!handle@{handle}}
+\index{handle@{handle}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{handle}{handle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle}
+
+
+
+connection handle 
+
+\mbox{\Hypertarget{structat__ble__connected__t_a262f2982177c35fb3a051c22da655052}\label{structat__ble__connected__t_a262f2982177c35fb3a051c22da655052}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!peer\_addr@{peer\_addr}}
+\index{peer\_addr@{peer\_addr}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{peer\_addr}{peer\_addr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} peer\+\_\+addr}
+
+
+
+Peer address. 
+
+\mbox{\Hypertarget{structat__ble__connected__t_aecd2f769dafdf871d7c6d25c13cd831d}\label{structat__ble__connected__t_aecd2f769dafdf871d7c6d25c13cd831d}} 
+\index{at\_ble\_connected\_t@{at\_ble\_connected\_t}!sup\_to@{sup\_to}}
+\index{sup\_to@{sup\_to}!at\_ble\_connected\_t@{at\_ble\_connected\_t}}
+\subsubsection{\texorpdfstring{sup\_to}{sup\_to}}
+{\footnotesize\ttfamily uint16\+\_\+t sup\+\_\+to}
+
+
+
+Link supervision timeout. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

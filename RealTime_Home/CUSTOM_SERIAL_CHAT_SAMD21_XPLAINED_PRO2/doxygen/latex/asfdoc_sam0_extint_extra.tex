@@ -1,0 +1,44 @@
+\hypertarget{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_acronyms}{}\section{Acronyms}\label{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_acronyms}
+The table below presents the acronyms used in this module\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Acronym }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Acronym }&\cellcolor{\tableheadbgcolor}\textbf{ Description  }\\\cline{1-2}
+\endhead
+E\+IC &External Interrupt Controller  \\\cline{1-2}
+M\+UX &Multiplexer  \\\cline{1-2}
+N\+MI &Non-\/\+Maskable Interrupt  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_dependencies}{}\section{Dependencies}\label{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_dependencies}
+This driver has the following dependencies\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__asfdoc__sam0__system__pinmux__group}{System Pin Multiplexer Driver}}
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_errata}{}\section{Errata}\label{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_errata}
+There are no errata related to this driver.\hypertarget{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_history}{}\section{Module History}\label{asfdoc_sam0_extint_extra_asfdoc_sam0_extint_extra_history}
+An overview of the module history is presented in the table below, with details on the enhancements and fixes made to the module since its first release. The current version of this corresponds to the newest version in the table.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Changelog  }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Changelog  }\\\cline{1-1}
+\endhead
+\begin{DoxyItemize}
+\item Driver updated to follow driver type convention \item Removed {\ttfamily extint\+\_\+reset}(), {\ttfamily extint\+\_\+disable}() and {\ttfamily extint\+\_\+enable()} functions. Added internal function {\ttfamily \+\_\+system\+\_\+extint\+\_\+init}(). \item Added configuration E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE in \mbox{\hyperlink{conf__extint_8h}{conf\+\_\+extint.\+h}} \item Removed configuration E\+X\+T\+I\+N\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+S\+\_\+\+M\+AX in \mbox{\hyperlink{conf__extint_8h}{conf\+\_\+extint.\+h}}, and added channel parameter in the register functions {\ttfamily extint\+\_\+register\+\_\+callback}() and {\ttfamily extint\+\_\+unregister\+\_\+callback}()   \end{DoxyItemize}
+\\\cline{1-1}
+Updated interrupt handler to clear interrupt flag before calling callback function  \\\cline{1-1}
+Updated initialization function to also enable the digital interface clock to the module if it is disabled  \\\cline{1-1}
+Initial Release  \\\cline{1-1}
+\end{longtabu}

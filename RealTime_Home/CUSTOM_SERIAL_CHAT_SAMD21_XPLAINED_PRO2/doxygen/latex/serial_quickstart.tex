@@ -1,0 +1,211 @@
+This is the quick start guide for the \mbox{\hyperlink{group__serial__group}{Serial Interface module}}, with step-\/by-\/step instructions on how to configure and use the serial in a selection of use cases.
+
+The use cases contain several code fragments. The code fragments in the steps for setup can be copied into a custom initialization function, while the steps for usage can be copied into, e.\+g., the main application function.\hypertarget{serial_quickstart_serial_use_cases}{}\section{Serial use cases}\label{serial_quickstart_serial_use_cases}
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{serial_quickstart_serial_basic_use_case}{Basic use case -\/ transmit a character}}
+\item \mbox{\hyperlink{serial_use_case_1}{Advanced use case -\/ Send a packet of serial data}}
+\end{DoxyItemize}\hypertarget{serial_quickstart_serial_basic_use_case}{}\section{Basic use case -\/ transmit a character}\label{serial_quickstart_serial_basic_use_case}
+In this use case, the serial module is configured for\+:
+\begin{DoxyItemize}
+\item Using U\+S\+A\+R\+T\+D0
+\item Baudrate\+: 9600
+\item Character length\+: 8 bit
+\item Parity mode\+: Disabled
+\item Stop bit\+: None
+\item R\+S232 mode
+\end{DoxyItemize}
+
+The use case waits for a received character on the configured U\+S\+A\+RT and echoes the character back to the same U\+S\+A\+RT.\hypertarget{serial_quickstart_serial_basic_use_case_setup}{}\section{Setup steps}\label{serial_quickstart_serial_basic_use_case_setup}
+\hypertarget{serial_quickstart_serial_basic_use_case_setup_prereq}{}\subsection{Prerequisites}\label{serial_quickstart_serial_basic_use_case_setup_prereq}
+
+\begin{DoxyEnumerate}
+\item System Clock Management (sysclk)
+\end{DoxyEnumerate}\hypertarget{serial_quickstart_serial_basic_use_case_setup_code}{}\subsection{Example code}\label{serial_quickstart_serial_basic_use_case_setup_code}
+The following configuration must be added to the project (typically to a conf\+\_\+uart\+\_\+serial.\+h file, but it can also be added to your main application file.)
+
+\begin{DoxyNote}{Note}
+The following takes S\+A\+M3X configuration for example, other devices have similar configuration, but their parameters may be different, refer to corresponding header files.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL                     \&USARTD0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_BAUDRATE            9600}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_CHAR\_LENGTH         US\_MR\_CHRL\_8\_BIT}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_PARITY              US\_MR\_PAR\_NO}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_STOP\_BIT            false}}
+\end{DoxyCode}
+
+
+A variable for the received byte must be added\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{uint8\_t received\_byte; }
+\end{DoxyCode}
+
+
+Add to application initialization\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sysclk\_init();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{static} usart\_serial\_options\_t usart\_options = \{}
+\DoxyCodeLine{   .baudrate = USART\_SERIAL\_BAUDRATE,}
+\DoxyCodeLine{   .charlength = USART\_SERIAL\_CHAR\_LENGTH,}
+\DoxyCodeLine{   .paritytype = USART\_SERIAL\_PARITY,}
+\DoxyCodeLine{   .stopbits = USART\_SERIAL\_STOP\_BIT}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{usart\_serial\_init(USART\_SERIAL, \&usart\_options);}
+\end{DoxyCode}
+\hypertarget{serial_quickstart_serial_basic_use_case_setup_flow}{}\subsection{Workflow}\label{serial_quickstart_serial_basic_use_case_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Initialize system clock\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sysclk\_init(); }
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\item Create serial U\+S\+A\+RT options struct\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} usart\_serial\_options\_t usart\_options = \{}
+\DoxyCodeLine{   .baudrate = USART\_SERIAL\_BAUDRATE,}
+\DoxyCodeLine{   .charlength = USART\_SERIAL\_CHAR\_LENGTH,}
+\DoxyCodeLine{   .paritytype = USART\_SERIAL\_PARITY,}
+\DoxyCodeLine{   .stopbits = USART\_SERIAL\_STOP\_BIT}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\item Initialize the serial service\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_init(USART\_SERIAL, \&usart\_options);}
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{serial_quickstart_serial_basic_use_case_usage}{}\section{Usage steps}\label{serial_quickstart_serial_basic_use_case_usage}
+\hypertarget{serial_quickstart_serial_basic_use_case_usage_code}{}\subsection{Example code}\label{serial_quickstart_serial_basic_use_case_usage_code}
+Add to application C-\/file\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_getchar(USART\_SERIAL, \&received\_byte);}
+\DoxyCodeLine{usart\_serial\_putchar(USART\_SERIAL, received\_byte);}
+\end{DoxyCode}
+\hypertarget{serial_quickstart_serial_basic_use_case_usage_flow}{}\subsection{Workflow}\label{serial_quickstart_serial_basic_use_case_usage_flow}
+
+\begin{DoxyEnumerate}
+\item Wait for reception of a character\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_getchar(USART\_SERIAL, \&received\_byte); }
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\item Echo the character back\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_putchar(USART\_SERIAL, received\_byte); }
+\end{DoxyCode}
+ 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{serial_use_case_1}{}\section{Advanced use case -\/ Send a packet of serial data}\label{serial_use_case_1}
+In this use case, the U\+S\+A\+RT module is configured for\+:
+\begin{DoxyItemize}
+\item Using U\+S\+A\+R\+T\+D0
+\item Baudrate\+: 9600
+\item Character length\+: 8 bit
+\item Parity mode\+: Disabled
+\item Stop bit\+: None
+\item R\+S232 mode
+\end{DoxyItemize}
+
+The use case sends a string of text through the U\+S\+A\+RT.\hypertarget{serial_use_case_1_serial_use_case_1_setup}{}\subsection{Setup steps}\label{serial_use_case_1_serial_use_case_1_setup}
+\hypertarget{serial_use_case_1_serial_use_case_1_setup_prereq}{}\subsubsection{Prerequisites}\label{serial_use_case_1_serial_use_case_1_setup_prereq}
+
+\begin{DoxyEnumerate}
+\item System Clock Management (sysclk)
+\end{DoxyEnumerate}\hypertarget{serial_use_case_1_serial_use_case_1_setup_code}{}\subsubsection{Example code}\label{serial_use_case_1_serial_use_case_1_setup_code}
+The following configuration must be added to the project (typically to a conf\+\_\+uart\+\_\+serial.\+h file, but it can also be added to your main application file.)\+:
+
+\begin{DoxyNote}{Note}
+The following takes S\+A\+M3X configuration for example, other devices have similar configuration, but their parameters may be different, refer to corresponding header files.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL                     \&USARTD0}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_BAUDRATE            9600}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_CHAR\_LENGTH         US\_MR\_CHRL\_8\_BIT}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_PARITY              US\_MR\_PAR\_NO}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define USART\_SERIAL\_STOP\_BIT            false}}
+\end{DoxyCode}
+
+
+Add to application initialization\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sysclk\_init();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{static} usart\_serial\_options\_t usart\_options = \{}
+\DoxyCodeLine{   .baudrate = USART\_SERIAL\_BAUDRATE,}
+\DoxyCodeLine{   .charlength = USART\_SERIAL\_CHAR\_LENGTH,}
+\DoxyCodeLine{   .paritytype = USART\_SERIAL\_PARITY,}
+\DoxyCodeLine{   .stopbits = USART\_SERIAL\_STOP\_BIT}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{usart\_serial\_init(USART\_SERIAL, \&usart\_options);}
+\end{DoxyCode}
+\hypertarget{serial_use_case_1_serial_use_case_1_setup_flow}{}\subsubsection{Workflow}\label{serial_use_case_1_serial_use_case_1_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Initialize system clock\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sysclk\_init(); }
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\item Create U\+S\+A\+RT options struct\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} usart\_serial\_options\_t usart\_options = \{}
+\DoxyCodeLine{   .baudrate = USART\_SERIAL\_BAUDRATE,}
+\DoxyCodeLine{   .charlength = USART\_SERIAL\_CHAR\_LENGTH,}
+\DoxyCodeLine{   .paritytype = USART\_SERIAL\_PARITY,}
+\DoxyCodeLine{   .stopbits = USART\_SERIAL\_STOP\_BIT}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\item Initialize in R\+S232 mode\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_init(USART\_SERIAL\_EXAMPLE, \&usart\_options); }
+\end{DoxyCode}
+
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{serial_use_case_1_serial_use_case_1_usage}{}\subsection{Usage steps}\label{serial_use_case_1_serial_use_case_1_usage}
+\hypertarget{serial_use_case_1_serial_use_case_1_usage_code}{}\subsubsection{Example code}\label{serial_use_case_1_serial_use_case_1_usage_code}
+Add to, e.\+g., main loop in application C-\/file\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_write\_packet(USART\_SERIAL, \textcolor{stringliteral}{"Test String"}, strlen(\textcolor{stringliteral}{"Test String"}));}
+\end{DoxyCode}
+\hypertarget{serial_use_case_1_serial_use_case_1_usage_flow}{}\subsubsection{Workflow}\label{serial_use_case_1_serial_use_case_1_usage_flow}
+
+\begin{DoxyEnumerate}
+\item Write a string of text to the U\+S\+A\+RT\+:
+\begin{DoxyItemize}
+\item 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{usart\_serial\_write\_packet(USART\_SERIAL, \textcolor{stringliteral}{"Test String"}, strlen(\textcolor{stringliteral}{"Test String"})); }
+\end{DoxyCode}
+ 
+\end{DoxyItemize}
+\end{DoxyEnumerate}

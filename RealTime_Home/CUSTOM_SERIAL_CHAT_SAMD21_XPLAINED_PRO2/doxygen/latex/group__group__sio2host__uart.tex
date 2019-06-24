@@ -1,0 +1,115 @@
+\hypertarget{group__group__sio2host__uart}{}\section{S\+I\+O2\+H\+O\+ST -\/ U\+A\+RT}
+\label{group__group__sio2host__uart}\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_ga6d7d78548e59b7991d13d5a1fa3c5440}{sio2host\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the Serial IO Module. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gaf6c11e140f6115317c42db35a9262e0f}{sio2host\+\_\+tx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Transmits data via U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_ga627cf2cfc75197c5c927315bdf1b6449}{sio2host\+\_\+rx}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t max\+\_\+length)
+\begin{DoxyCompactList}\small\item\em Receives data from U\+A\+RT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__group__sio2host__uart_gabbb6def1150d2663a675bd384ae816d0}{sio2host\+\_\+getchar}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a blocking character receive functionality. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__group__sio2host__uart_gabb543e29f8fd3f02734f54838811f91e}{sio2host\+\_\+putchar}} (uint8\+\_\+t)
+\begin{DoxyCompactList}\small\item\em This function prints the character to the host. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__group__sio2host__uart_ga14c4b363b78d5be00daa0bdd56e6a4a9}{sio2host\+\_\+getchar\+\_\+nowait}} (void)
+\begin{DoxyCompactList}\small\item\em This function performs a non-\/blocking character receive functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module performs serial input/output functionalities via U\+A\+RT 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__group__sio2host__uart_gabbb6def1150d2663a675bd384ae816d0}\label{group__group__sio2host__uart_gabbb6def1150d2663a675bd384ae816d0}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_getchar@{sio2host\_getchar}}
+\index{sio2host\_getchar@{sio2host\_getchar}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_getchar()}{sio2host\_getchar()}}
+{\footnotesize\ttfamily uint8\+\_\+t sio2host\+\_\+getchar (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function performs a blocking character receive functionality. 
+
+\begin{DoxyReturn}{Returns}
+returns the data which is received 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__group__sio2host__uart_ga14c4b363b78d5be00daa0bdd56e6a4a9}\label{group__group__sio2host__uart_ga14c4b363b78d5be00daa0bdd56e6a4a9}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_getchar\_nowait@{sio2host\_getchar\_nowait}}
+\index{sio2host\_getchar\_nowait@{sio2host\_getchar\_nowait}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_getchar\_nowait()}{sio2host\_getchar\_nowait()}}
+{\footnotesize\ttfamily int sio2host\+\_\+getchar\+\_\+nowait (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function performs a non-\/blocking character receive functionality. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}-\/1\textquotesingle{} if no data is recieved or returns the data if a character is received 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__group__sio2host__uart_ga6d7d78548e59b7991d13d5a1fa3c5440}\label{group__group__sio2host__uart_ga6d7d78548e59b7991d13d5a1fa3c5440}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_init@{sio2host\_init}}
+\index{sio2host\_init@{sio2host\_init}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_init()}{sio2host\_init()}}
+{\footnotesize\ttfamily void sio2host\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the Serial IO Module. 
+
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+U\+S\+\_\+\+OK for successful initialization and F\+A\+I\+L\+U\+RE incase the IO is not initialized 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__group__sio2host__uart_gabb543e29f8fd3f02734f54838811f91e}\label{group__group__sio2host__uart_gabb543e29f8fd3f02734f54838811f91e}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_putchar@{sio2host\_putchar}}
+\index{sio2host\_putchar@{sio2host\_putchar}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_putchar()}{sio2host\_putchar()}}
+{\footnotesize\ttfamily void sio2host\+\_\+putchar (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{ }\end{DoxyParamCaption})}
+
+
+
+This function prints the character to the host. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__group__sio2host__uart_ga627cf2cfc75197c5c927315bdf1b6449}\label{group__group__sio2host__uart_ga627cf2cfc75197c5c927315bdf1b6449}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_rx@{sio2host\_rx}}
+\index{sio2host\_rx@{sio2host\_rx}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_rx()}{sio2host\_rx()}}
+{\footnotesize\ttfamily uint8\+\_\+t sio2host\+\_\+rx (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint8\+\_\+t}]{max\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+Receives data from U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & pointer to the buffer where the received data is to be stored \\
+\hline
+{\em max\+\_\+length} & maximum length of data to be received\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+actual number of bytes received 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__group__sio2host__uart_gaf6c11e140f6115317c42db35a9262e0f}\label{group__group__sio2host__uart_gaf6c11e140f6115317c42db35a9262e0f}} 
+\index{SIO2HOST -\/ UART@{SIO2HOST -\/ UART}!sio2host\_tx@{sio2host\_tx}}
+\index{sio2host\_tx@{sio2host\_tx}!SIO2HOST -\/ UART@{SIO2HOST -\/ UART}}
+\subsubsection{\texorpdfstring{sio2host\_tx()}{sio2host\_tx()}}
+{\footnotesize\ttfamily uint8\+\_\+t sio2host\+\_\+tx (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint8\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Transmits data via U\+A\+RT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the buffer where the data to be transmitted is present \\
+\hline
+{\em length} & Number of bytes to be transmitted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes actually transmitted 
+\end{DoxyReturn}

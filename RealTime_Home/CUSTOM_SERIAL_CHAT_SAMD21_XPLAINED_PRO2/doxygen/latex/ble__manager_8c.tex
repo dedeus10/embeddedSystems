@@ -1,0 +1,922 @@
+\hypertarget{ble__manager_8c}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/ble\+\_\+mgr/ble\+\_\+manager.c File Reference}
+\label{ble__manager_8c}\index{ASF/thirdparty/wireless/ble\_sdk/ble\_services/ble\_mgr/ble\_manager.c@{ASF/thirdparty/wireless/ble\_sdk/ble\_services/ble\_mgr/ble\_manager.c}}
+
+
+B\+LE Manager.  
+
+
+{\ttfamily \#include $<$asf.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}at\+\_\+ble\+\_\+api.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}at\+\_\+ble\+\_\+trace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ble\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ble\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}platform.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ble__manager_8c_a40e7a74b02515fe2b481b9597dd81bf2}{A\+T\+T\+\_\+\+D\+B\+\_\+\+M\+E\+M\+O\+RY}}
+\item 
+\#define \mbox{\hyperlink{ble__manager_8c_a3407a11f19196b330a5a2a2eb445dd74}{H\+O\+S\+T\+\_\+\+U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+A\+L\+UE}}~115200
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_abaf941e5ea485cbf3d6b6afc198c1007}{ble\+\_\+event\+\_\+task}} (void)
+\begin{DoxyCompactList}\small\item\em function to get event from stack \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_ac2475d958ebe931c1f7adbb9c75d5f12}{ble\+\_\+sdk\+\_\+version}} (void)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+sdk\+\_\+version gets the version of Blu\+S\+DK and also checks the S\+DK and Library version compatibility \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ble__manager_8c_af7195968d70f62081ea17d15a17a81e5}{ble\+\_\+device\+\_\+init}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$addr)
+\begin{DoxyCompactList}\small\item\em B\+LE device initialization. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a913e03506a1e2b2ddf2bdb9625448f1a}{ble\+\_\+set\+\_\+device\+\_\+name}} (uint8\+\_\+t $\ast$name, uint8\+\_\+t name\+\_\+len)
+\begin{DoxyCompactList}\small\item\em set device name to B\+LE Device \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{ble__manager_8c_a265683bdb9c75900e86ec1e18fa997d7}{ble\+\_\+mgr\+\_\+events\+\_\+callback\+\_\+handler}} (\mbox{\hyperlink{ble__manager_8h_a1a822a3c499c0b4bcecfe5acbab1f800}{ble\+\_\+mgr\+\_\+event\+\_\+cb\+\_\+t}} event\+\_\+cb\+\_\+type, \mbox{\hyperlink{ble__manager_8h_adcf4c543746abc2c97dba89d52b7de49}{ble\+\_\+mgr\+\_\+event\+\_\+t}} event\+\_\+type, const void $\ast$ble\+\_\+event\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em The structure of B\+LE Event callback pointer will be registered or unregistered dynamically. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_aeac5e0b2e38c2f4ca005e07b81d479fe}{ble\+\_\+undefined\+\_\+event\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+undefined\+\_\+event\+\_\+handler handler for undefined events which is not expected in Library \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a2ddbfd503bbd51ac1ba6e5ebea3f9d7b}{gap\+\_\+dev\+\_\+connect}} (\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$dev\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em request the peer device for connection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a30ffa64579c883ffafb46410479d837d}{gap\+\_\+dev\+\_\+scan}} (void)
+\begin{DoxyCompactList}\small\item\em instructs device to start scanning \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_af7788149a297644d16f1e0869336281e}{ble\+\_\+scan\+\_\+info\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handling scaned information \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a2f3a4ce68b3d38eb40d276407a3fada9}{ble\+\_\+scan\+\_\+report\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles scan report \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a27557cfacb8b764cc482b44659762080}{scan\+\_\+info\+\_\+parse}} (\mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}} $\ast$scan\+\_\+info\+\_\+data, \mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$ble\+\_\+service\+\_\+uuid, uint8\+\_\+t adv\+\_\+type)
+\begin{DoxyCompactList}\small\item\em function parses the received advertising data for service and local name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_ab50629b4a1a3093ad8389e194c5c1840}{ble\+\_\+send\+\_\+slave\+\_\+sec\+\_\+request}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em function to send slave security request \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{ble__manager_8c_aada85fa2a8ea9ed025ecc415331e0754}{ble\+\_\+check\+\_\+ispheripheral}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Check the passed connection handle of the device is peripheral or central device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{ble__manager_8c_a23e736064d0ec6cc33f0ab8bdc968f44}{ble\+\_\+check\+\_\+iscentral}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Check the passed connection handle of the device is central device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{ble__manager_8c_a34b6ae72acb4ac6d36ad4e7873b84387}{ble\+\_\+check\+\_\+disconnected\+\_\+iscentral}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Check the passed connection handle of the device is disconnected and central device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} \mbox{\hyperlink{ble__manager_8c_aedc4e7f20c329be9f97df1745da5948e}{ble\+\_\+check\+\_\+disconnected\+\_\+isperipheral}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} handle)
+\begin{DoxyCompactList}\small\item\em Check the passed connection handle of the device is disconnected and peripheral device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a485a0e3444c14358c75d45661d39706a}{ble\+\_\+connected\+\_\+device\+\_\+role}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} $\ast$dev\+\_\+role)
+\begin{DoxyCompactList}\small\item\em Get the passed connection handle device role. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a4bae74f58f471d16593e0bca6138b668}{ble\+\_\+disconnected\+\_\+device\+\_\+role}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} $\ast$dev\+\_\+role)
+\begin{DoxyCompactList}\small\item\em Get the device role of disconnected device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_ab819077df2aa87b4c97ea5a2f827f4f7}{ble\+\_\+check\+\_\+device\+\_\+state}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, \mbox{\hyperlink{ble__manager_8h_abcdab7066ca2dc0d328ed5e555cdcf7c}{ble\+\_\+device\+\_\+state\+\_\+t}} state)
+\begin{DoxyCompactList}\small\item\em Check the device state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a3cfd917773fee0cd2d6fab7290b4a184}{ble\+\_\+connected\+\_\+state\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function to handle connected event received from stack \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a3a8b1a7c2808da95ba9cb7f50ff9217b}{ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+handler handles the resolved random address event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a48e600cd36423873eca8ea2a35bf426d}{ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler handler for Peer device M\+TU size change \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a14da8c40303d17eb203188fd4511d649}{ble\+\_\+mtu\+\_\+changed\+\_\+cmd\+\_\+complete\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler handler for Peer device M\+TU size change \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a4bc05b6362587b580a3f297c4b2cbdd3}{ble\+\_\+characteristic\+\_\+write\+\_\+cmd\+\_\+complete\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+characteristic\+\_\+write\+\_\+cmd\+\_\+complete\+\_\+handler handler for Char write command complete event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a38932acd9dcd57032d89f27c8bbe3e9f}{ble\+\_\+disconnected\+\_\+state\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles disconnection event received from stack \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a2e2daf9104c8190f4b530cbaf9f9a8b4}{ble\+\_\+conn\+\_\+param\+\_\+update}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em connection update parameter function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a7dfc1bb14655048215a35ab34a90e365}{ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+req}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function triggered on receiving a connection parameter update request from the peer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_afc27fe1f7025caf9952dcfca6c185d23}{ble\+\_\+slave\+\_\+security\+\_\+request\+\_\+handler}} (void $\ast$params)
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a869e2728ee1d34877c0c0eef407188dd}{ble\+\_\+pair\+\_\+request\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles pair request \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a74fba8f1be994e2ca88026d99ad89c27}{ble\+\_\+pair\+\_\+key\+\_\+request\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles pair key request \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_ae1acfa878f9de1f08991e9e85de37a12}{ble\+\_\+pair\+\_\+done\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles pair done event \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_ab78416e29811d492b9d54dbadee8df10}{ble\+\_\+encryption\+\_\+status\+\_\+change\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles encryption status change \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a3f75d9ddd42b500866a87f7203e4c455}{ble\+\_\+encryption\+\_\+request\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em function handles encryption requests \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a023d4b533a4fca764cba71c80fcaecf6}{ble\+\_\+device\+\_\+dead\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+device\+\_\+dead\+\_\+handler handler for B\+LE device dead indication handler. When the application receives \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a856809ed63b43497fa2ef1fc469c0de8}{ble\+\_\+device\+\_\+out\+\_\+of\+\_\+sync\+\_\+handler}} (void $\ast$params)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+device\+\_\+out\+\_\+of\+\_\+sync\+\_\+handler handler for out of sync indication handler. When device starts missing few events \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ble__manager_8c_a99132260e9d888b7229453de14f9e87d}{ble\+\_\+event\+\_\+manager}} (\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}} events, void $\ast$event\+\_\+params)
+\begin{DoxyCompactList}\small\item\em function handling all the events from the stack, responsible for calling the respective functions initialized for the events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a0591939f16285ae5b9f84d5118bbe595}{ble\+\_\+advertisement\+\_\+data\+\_\+set}} (void)
+\begin{DoxyCompactList}\small\item\em ble\+\_\+advertisement\+\_\+data\+\_\+set set the B\+LE advertisement data based on the available \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_ab9192b5b6e832a021fd4d6135a2b43ec}{att\+\_\+db\+\_\+data}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_af1bde561fb9718f6c45b49bb9306f085}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+B\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE}}/4\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} volatile \mbox{\hyperlink{ble__manager_8c_a15749277af611ab1df474f6d8710ba97}{send\+\_\+slave\+\_\+security\+\_\+flag}} = \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\item 
+volatile uint8\+\_\+t \mbox{\hyperlink{ble__manager_8c_a879b2e7d8fa7a91298d9dd4a834cd285}{ble\+\_\+device\+\_\+count}}
+\item 
+\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} volatile \mbox{\hyperlink{ble__manager_8c_a96714195a5d73c75557ec6378ce55c66}{resolve\+\_\+addr\+\_\+flag}} = \mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}
+\item 
+\mbox{\hyperlink{structble__connected__dev__info__t}{ble\+\_\+connected\+\_\+dev\+\_\+info\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a6b9d4d8c4a339a7baa6f833b38731c75}{ble\+\_\+dev\+\_\+info}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_a7b56efa3fcb5f232ffc3b4d98e2fbd63}{B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}}\mbox{]}
+\item 
+volatile \mbox{\hyperlink{ble__manager_8h_ab29617fffda07fe53d18981315f6231b}{ble\+\_\+device\+\_\+ll\+\_\+state\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a6bb41cc5f720f0a38a01b642e4162dec}{ble\+\_\+device\+\_\+current\+\_\+state}} = \mbox{\hyperlink{ble__manager_8h_a6d91845fa8a62c3d7995771cbddc7111a90bb170db5dde02dbea9614cc44e7567}{B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+TE}}
+\item 
+\mbox{\hyperlink{structat__ble__connected__t}{at\+\_\+ble\+\_\+connected\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a3335a4dd1ed8942c719c36830713af21}{connected\+\_\+state\+\_\+info}}
+\item 
+\mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_af7ed87ef62b3b987233ffd293a44dd7c}{temp\+\_\+param}} \mbox{[}sizeof(\mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}})\mbox{]}
+\item 
+const \mbox{\hyperlink{structble__gap__event__cb__t}{ble\+\_\+gap\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_acae231e6391d29ad67d280fff53ded5c}{ble\+\_\+mgr\+\_\+gap\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_adc4a9c24a5772072c9cb04e66cc5c24c}{M\+A\+X\+\_\+\+G\+A\+P\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__gatt__client__event__cb__t}{ble\+\_\+gatt\+\_\+client\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_ae3e00dc21ea5f46cd93b0cb7d75f6add}{ble\+\_\+mgr\+\_\+gatt\+\_\+client\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_ac2fe46ea452d04603a0a3ff926cabdf6}{M\+A\+X\+\_\+\+G\+A\+T\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__gatt__server__event__cb__t}{ble\+\_\+gatt\+\_\+server\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_ad98ba7c21d5eeaac60b1c729ded97cdc}{ble\+\_\+mgr\+\_\+gatt\+\_\+server\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_a14cadc11d1ca99eef50149adb9d92a81}{M\+A\+X\+\_\+\+G\+A\+T\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__l2cap__event__cb__t}{ble\+\_\+l2cap\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_af26d3f946d6b01dc6638b4a3ccff0d02}{ble\+\_\+mgr\+\_\+l2cap\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_ac745fe87e3bc2d1edf2cd23995a1b312}{M\+A\+X\+\_\+\+L2\+C\+A\+P\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__htpt__event__cb__t}{ble\+\_\+htpt\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_a6c15241c2e9aac630a6180b64227300d}{ble\+\_\+mgr\+\_\+htpt\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_a3374909d1489f00bcbce57d754f5530e}{M\+A\+X\+\_\+\+H\+T\+P\+T\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__dtm__event__cb__t}{ble\+\_\+dtm\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_aa01b490056f8796d0b52db08700bdd84}{ble\+\_\+mgr\+\_\+dtm\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_a404c1cd504fc902b0642e48d1c41a318}{M\+A\+X\+\_\+\+D\+T\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+const \mbox{\hyperlink{structble__custom__event__cb__t}{ble\+\_\+custom\+\_\+event\+\_\+cb\+\_\+t}} $\ast$ \mbox{\hyperlink{ble__manager_8c_a5fecee5e0ee368c8d9c31b5a3e693796}{ble\+\_\+mgr\+\_\+custom\+\_\+event\+\_\+cb}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_ae47c4daab2a763a7bce2fb47d12bd1ef}{M\+A\+X\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}
+\item 
+volatile uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_a25388053876443c00cb885cdb50ce453}{scan\+\_\+response\+\_\+count}} = 0
+\item 
+\mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a20814d27ed15ac40d3816e458b4fd1f2}{scan\+\_\+info}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_a98298a840aa13838ea127a011f2f03a9}{M\+A\+X\+\_\+\+S\+C\+A\+N\+\_\+\+D\+E\+V\+I\+CE}}\mbox{]}
+\item 
+\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a7f4fdb26d292561b95cac0359f75d1e3}{event}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_ab69e1ceb372f15f245f420bf1ad86e67}{ble\+\_\+event\+\_\+params}} \mbox{[}\mbox{\hyperlink{ble__manager_8h_ad339283f9c9acae6eb9cf549223be918}{B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}/sizeof(uint32\+\_\+t)\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_a9329c2b6417db7a3815c382b831999db}{event\+\_\+pool\+\_\+memory}} \mbox{[}256\mbox{]} = \{0\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_ac7207927bb9ac8d29b9bb17f298622ee}{event\+\_\+params\+\_\+memory}} \mbox{[}1024\mbox{]} = \{0\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ble__manager_8c_acfa09fcc15cde06c9dee9f4e912ede95}{rx\+\_\+fifo\+\_\+memory}} \mbox{[}256\mbox{]} = \{0\}
+\item 
+\mbox{\hyperlink{structat__ble__init__config__t}{at\+\_\+ble\+\_\+init\+\_\+config\+\_\+t}} \mbox{\hyperlink{ble__manager_8c_a9fc4e95b4195eb63f88df00d0cf53747}{pf\+\_\+cfg}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+B\+LE Manager. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ble__manager_8c_a40e7a74b02515fe2b481b9597dd81bf2}\label{ble__manager_8c_a40e7a74b02515fe2b481b9597dd81bf2}} 
+\index{ble\_manager.c@{ble\_manager.c}!ATT\_DB\_MEMORY@{ATT\_DB\_MEMORY}}
+\index{ATT\_DB\_MEMORY@{ATT\_DB\_MEMORY}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ATT\_DB\_MEMORY}{ATT\_DB\_MEMORY}}
+{\footnotesize\ttfamily \#define A\+T\+T\+\_\+\+D\+B\+\_\+\+M\+E\+M\+O\+RY}
+
+\mbox{\Hypertarget{ble__manager_8c_a3407a11f19196b330a5a2a2eb445dd74}\label{ble__manager_8c_a3407a11f19196b330a5a2a2eb445dd74}} 
+\index{ble\_manager.c@{ble\_manager.c}!HOST\_UART\_BAUDRATE\_CONFIG\_VALUE@{HOST\_UART\_BAUDRATE\_CONFIG\_VALUE}}
+\index{HOST\_UART\_BAUDRATE\_CONFIG\_VALUE@{HOST\_UART\_BAUDRATE\_CONFIG\_VALUE}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{HOST\_UART\_BAUDRATE\_CONFIG\_VALUE}{HOST\_UART\_BAUDRATE\_CONFIG\_VALUE}}
+{\footnotesize\ttfamily \#define H\+O\+S\+T\+\_\+\+U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+V\+A\+L\+UE~115200}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ble__manager_8c_a0591939f16285ae5b9f84d5118bbe595}\label{ble__manager_8c_a0591939f16285ae5b9f84d5118bbe595}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_advertisement\_data\_set@{ble\_advertisement\_data\_set}}
+\index{ble\_advertisement\_data\_set@{ble\_advertisement\_data\_set}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_advertisement\_data\_set()}{ble\_advertisement\_data\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+advertisement\+\_\+data\+\_\+set (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+advertisement\+\_\+data\+\_\+set set the B\+LE advertisement data based on the available 
+
+available services and profiles which is present in the current application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} B\+LE advertisement data set successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} Failed to set the advertisement data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a4bc05b6362587b580a3f297c4b2cbdd3}\label{ble__manager_8c_a4bc05b6362587b580a3f297c4b2cbdd3}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_characteristic\_write\_cmd\_complete\_handler@{ble\_characteristic\_write\_cmd\_complete\_handler}}
+\index{ble\_characteristic\_write\_cmd\_complete\_handler@{ble\_characteristic\_write\_cmd\_complete\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_characteristic\_write\_cmd\_complete\_handler()}{ble\_characteristic\_write\_cmd\_complete\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+characteristic\+\_\+write\+\_\+cmd\+\_\+complete\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+characteristic\+\_\+write\+\_\+cmd\+\_\+complete\+\_\+handler handler for Char write command complete event 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}} type, Refer to \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_ab819077df2aa87b4c97ea5a2f827f4f7}\label{ble__manager_8c_ab819077df2aa87b4c97ea5a2f827f4f7}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_check\_device\_state@{ble\_check\_device\_state}}
+\index{ble\_check\_device\_state@{ble\_check\_device\_state}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_check\_device\_state()}{ble\_check\_device\_state()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+check\+\_\+device\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{ble__manager_8h_abcdab7066ca2dc0d328ed5e555cdcf7c}{ble\+\_\+device\+\_\+state\+\_\+t}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Check the device state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle \\
+\hline
+\mbox{\texttt{ in}}  & {\em state} & \mbox{\hyperlink{ble__manager_8h_abcdab7066ca2dc0d328ed5e555cdcf7c}{ble\+\_\+device\+\_\+state\+\_\+t}} device state\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} if the passed handle of device states are matches 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} if the passed handle of device states are doesn\textquotesingle{}t matches 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a34b6ae72acb4ac6d36ad4e7873b84387}\label{ble__manager_8c_a34b6ae72acb4ac6d36ad4e7873b84387}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_check\_disconnected\_iscentral@{ble\_check\_disconnected\_iscentral}}
+\index{ble\_check\_disconnected\_iscentral@{ble\_check\_disconnected\_iscentral}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_check\_disconnected\_iscentral()}{ble\_check\_disconnected\_iscentral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ble\+\_\+check\+\_\+disconnected\+\_\+iscentral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle }\end{DoxyParamCaption})}
+
+
+
+Check the passed connection handle of the device is disconnected and central device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} if the passed handle of the device is disconnected and central 
+
+\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}} if the passed handle of the device is not central or not disconnected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_aedc4e7f20c329be9f97df1745da5948e}\label{ble__manager_8c_aedc4e7f20c329be9f97df1745da5948e}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_check\_disconnected\_isperipheral@{ble\_check\_disconnected\_isperipheral}}
+\index{ble\_check\_disconnected\_isperipheral@{ble\_check\_disconnected\_isperipheral}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_check\_disconnected\_isperipheral()}{ble\_check\_disconnected\_isperipheral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ble\+\_\+check\+\_\+disconnected\+\_\+isperipheral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle }\end{DoxyParamCaption})}
+
+
+
+Check the passed connection handle of the device is disconnected and peripheral device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} if the passed handle of the device is disconnected and peripheral 
+
+\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}} if the passed handle of the device is not peripheral or not disconnected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a23e736064d0ec6cc33f0ab8bdc968f44}\label{ble__manager_8c_a23e736064d0ec6cc33f0ab8bdc968f44}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_check\_iscentral@{ble\_check\_iscentral}}
+\index{ble\_check\_iscentral@{ble\_check\_iscentral}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_check\_iscentral()}{ble\_check\_iscentral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ble\+\_\+check\+\_\+iscentral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle }\end{DoxyParamCaption})}
+
+
+
+Check the passed connection handle of the device is central device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} if the passed handle of the device is central 
+
+\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}} if the passed handle of the device is not central. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_aada85fa2a8ea9ed025ecc415331e0754}\label{ble__manager_8c_aada85fa2a8ea9ed025ecc415331e0754}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_check\_ispheripheral@{ble\_check\_ispheripheral}}
+\index{ble\_check\_ispheripheral@{ble\_check\_ispheripheral}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_check\_ispheripheral()}{ble\_check\_ispheripheral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ble\+\_\+check\+\_\+ispheripheral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{handle }\end{DoxyParamCaption})}
+
+
+
+Check the passed connection handle of the device is peripheral or central device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} if the passed handle of the device is peripheral 
+
+\mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}} if the passed handle of the device is not peripheral. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a2e2daf9104c8190f4b530cbaf9f9a8b4}\label{ble__manager_8c_a2e2daf9104c8190f4b530cbaf9f9a8b4}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_conn\_param\_update@{ble\_conn\_param\_update}}
+\index{ble\_conn\_param\_update@{ble\_conn\_param\_update}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_conn\_param\_update()}{ble\_conn\_param\_update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+conn\+\_\+param\+\_\+update (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+connection update parameter function 
+
+function used to update the connection parameter. \mbox{\Hypertarget{ble__manager_8c_a7dfc1bb14655048215a35ab34a90e365}\label{ble__manager_8c_a7dfc1bb14655048215a35ab34a90e365}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_conn\_param\_update\_req@{ble\_conn\_param\_update\_req}}
+\index{ble\_conn\_param\_update\_req@{ble\_conn\_param\_update\_req}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_conn\_param\_update\_req()}{ble\_conn\_param\_update\_req()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+req (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function triggered on receiving a connection parameter update request from the peer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+param\+\_\+req} & \mbox{\hyperlink{structat__ble__conn__param__update__request__t}{at\+\_\+ble\+\_\+conn\+\_\+param\+\_\+update\+\_\+request\+\_\+t}} parameters received.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} operation completed successfully. 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} Generic error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a485a0e3444c14358c75d45661d39706a}\label{ble__manager_8c_a485a0e3444c14358c75d45661d39706a}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_connected\_device\_role@{ble\_connected\_device\_role}}
+\index{ble\_connected\_device\_role@{ble\_connected\_device\_role}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_connected\_device\_role()}{ble\_connected\_device\_role()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+connected\+\_\+device\+\_\+role (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} $\ast$}]{dev\+\_\+role }\end{DoxyParamCaption})}
+
+
+
+Get the passed connection handle device role. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle \\
+\hline
+\mbox{\texttt{ in}}  & {\em dev\+\_\+role} & \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} device role Central or Peripheral\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} if the passed handle of the device gets the device role 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} if the passed handle doesn\textquotesingle{}t match and failure of getting device role 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a3cfd917773fee0cd2d6fab7290b4a184}\label{ble__manager_8c_a3cfd917773fee0cd2d6fab7290b4a184}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_connected\_state\_handler@{ble\_connected\_state\_handler}}
+\index{ble\_connected\_state\_handler@{ble\_connected\_state\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_connected\_state\_handler()}{ble\_connected\_state\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+connected\+\_\+state\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function to handle connected event received from stack 
+
+ble\+\_\+connected\+\_\+state\+\_\+handler handles the connected event. stores the peer device information into device info table \mbox{\Hypertarget{ble__manager_8c_a023d4b533a4fca764cba71c80fcaecf6}\label{ble__manager_8c_a023d4b533a4fca764cba71c80fcaecf6}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_device\_dead\_handler@{ble\_device\_dead\_handler}}
+\index{ble\_device\_dead\_handler@{ble\_device\_dead\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_device\_dead\_handler()}{ble\_device\_dead\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+device\+\_\+dead\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+device\+\_\+dead\+\_\+handler handler for B\+LE device dead indication handler. When the application receives 
+
+this event that means B\+LE device is not responding. The application may start the B\+LE device from beginning by calling the at\+\_\+ble\+\_\+init, Refer to \mbox{\hyperlink{group__gap__dev__config__group_gaa972214071cfa8767b5145eacfa03a90}{at\+\_\+ble\+\_\+init}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of void $\ast$ type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_af7195968d70f62081ea17d15a17a81e5}\label{ble__manager_8c_af7195968d70f62081ea17d15a17a81e5}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_device\_init@{ble\_device\_init}}
+\index{ble\_device\_init@{ble\_device\_init}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_device\_init()}{ble\_device\_init()}}
+{\footnotesize\ttfamily void ble\+\_\+device\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+B\+LE device initialization. 
+
+function sets both device address and device name which are exposed to all other devices. Select B\+T\+L\+C1000 G\+P\+IO for host wakeup, for Wing board select B\+T\+L\+C1000\+\_\+\+E\+X\+T\+\_\+\+P\+I\+N9 only, for SoC use the enum values
+
+U\+A\+RT baudrate value one of \mbox{\hyperlink{at__ble__api_8h_af9f45be471328ddc873fa3b6d3fe865a}{at\+\_\+ble\+\_\+uart\+\_\+baudrate\+\_\+tag}} values \mbox{\Hypertarget{ble__manager_8c_a856809ed63b43497fa2ef1fc469c0de8}\label{ble__manager_8c_a856809ed63b43497fa2ef1fc469c0de8}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_device\_out\_of\_sync\_handler@{ble\_device\_out\_of\_sync\_handler}}
+\index{ble\_device\_out\_of\_sync\_handler@{ble\_device\_out\_of\_sync\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_device\_out\_of\_sync\_handler()}{ble\_device\_out\_of\_sync\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+device\+\_\+out\+\_\+of\+\_\+sync\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+device\+\_\+out\+\_\+of\+\_\+sync\+\_\+handler handler for out of sync indication handler. When device starts missing few events 
+
+or U\+A\+RT B\+LE event data
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of void $\ast$ type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a4bae74f58f471d16593e0bca6138b668}\label{ble__manager_8c_a4bae74f58f471d16593e0bca6138b668}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_disconnected\_device\_role@{ble\_disconnected\_device\_role}}
+\index{ble\_disconnected\_device\_role@{ble\_disconnected\_device\_role}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_disconnected\_device\_role()}{ble\_disconnected\_device\_role()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+disconnected\+\_\+device\+\_\+role (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{\mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} $\ast$}]{dev\+\_\+role }\end{DoxyParamCaption})}
+
+
+
+Get the device role of disconnected device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & \mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} Device connection handle \\
+\hline
+\mbox{\texttt{ in}}  & {\em dev\+\_\+role} & \mbox{\hyperlink{at__ble__api_8h_ad15e38aadd54f5fc3ab8a75b35ae476a}{at\+\_\+ble\+\_\+dev\+\_\+role\+\_\+t}} device role Central or Peripheral\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} if the passed handle of the device gets the device role 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} if the passed handle doesn\textquotesingle{}t match and failure of getting device role 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a38932acd9dcd57032d89f27c8bbe3e9f}\label{ble__manager_8c_a38932acd9dcd57032d89f27c8bbe3e9f}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_disconnected\_state\_handler@{ble\_disconnected\_state\_handler}}
+\index{ble\_disconnected\_state\_handler@{ble\_disconnected\_state\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_disconnected\_state\_handler()}{ble\_disconnected\_state\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+disconnected\+\_\+state\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles disconnection event received from stack 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED event is received from the stack. \mbox{\Hypertarget{ble__manager_8c_a3f75d9ddd42b500866a87f7203e4c455}\label{ble__manager_8c_a3f75d9ddd42b500866a87f7203e4c455}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_encryption\_request\_handler@{ble\_encryption\_request\_handler}}
+\index{ble\_encryption\_request\_handler@{ble\_encryption\_request\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_encryption\_request\_handler()}{ble\_encryption\_request\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+encryption\+\_\+request\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles encryption requests 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+R\+E\+Q\+U\+E\+ST event is received from stack. \mbox{\Hypertarget{ble__manager_8c_ab78416e29811d492b9d54dbadee8df10}\label{ble__manager_8c_ab78416e29811d492b9d54dbadee8df10}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_encryption\_status\_change\_handler@{ble\_encryption\_status\_change\_handler}}
+\index{ble\_encryption\_status\_change\_handler@{ble\_encryption\_status\_change\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_encryption\_status\_change\_handler()}{ble\_encryption\_status\_change\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+encryption\+\_\+status\+\_\+change\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles encryption status change 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+E\+N\+C\+R\+Y\+P\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+H\+A\+N\+G\+ED event is received from stack. \mbox{\Hypertarget{ble__manager_8c_a99132260e9d888b7229453de14f9e87d}\label{ble__manager_8c_a99132260e9d888b7229453de14f9e87d}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_event\_manager@{ble\_event\_manager}}
+\index{ble\_event\_manager@{ble\_event\_manager}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_event\_manager()}{ble\_event\_manager()}}
+{\footnotesize\ttfamily void ble\+\_\+event\+\_\+manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}}}]{events,  }\item[{void $\ast$}]{event\+\_\+params }\end{DoxyParamCaption})}
+
+
+
+function handling all the events from the stack, responsible for calling the respective functions initialized for the events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em events} & events received from the stack \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em event\+\_\+params} & data received from stack for the respective event received.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_abaf941e5ea485cbf3d6b6afc198c1007}\label{ble__manager_8c_abaf941e5ea485cbf3d6b6afc198c1007}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_event\_task@{ble\_event\_task}}
+\index{ble\_event\_task@{ble\_event\_task}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_event\_task()}{ble\_event\_task()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+event\+\_\+task (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function to get event from stack 
+
+function to handle the B\+LE event task. \mbox{\Hypertarget{ble__manager_8c_a265683bdb9c75900e86ec1e18fa997d7}\label{ble__manager_8c_a265683bdb9c75900e86ec1e18fa997d7}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_events\_callback\_handler@{ble\_mgr\_events\_callback\_handler}}
+\index{ble\_mgr\_events\_callback\_handler@{ble\_mgr\_events\_callback\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_events\_callback\_handler()}{ble\_mgr\_events\_callback\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} ble\+\_\+mgr\+\_\+events\+\_\+callback\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ble__manager_8h_a1a822a3c499c0b4bcecfe5acbab1f800}{ble\+\_\+mgr\+\_\+event\+\_\+cb\+\_\+t}}}]{event\+\_\+cb\+\_\+type,  }\item[{\mbox{\hyperlink{ble__manager_8h_adcf4c543746abc2c97dba89d52b7de49}{ble\+\_\+mgr\+\_\+event\+\_\+t}}}]{event\+\_\+type,  }\item[{const void $\ast$}]{ble\+\_\+event\+\_\+handler }\end{DoxyParamCaption})}
+
+
+
+The structure of B\+LE Event callback pointer will be registered or unregistered dynamically. 
+
+ble\+\_\+mgr\+\_\+events\+\_\+callback\+\_\+handler handler for Profile/\+Service/application to register the B\+LE events callbacks
+
+The callback pointers are registered according to the group type of B\+LE Events request is received \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba459fa57065ec575b1828a2381e373cc1}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+C\+B\+\_\+\+C\+O\+N\+N\+\_\+\+R\+EQ}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event\+\_\+cb\+\_\+type} & Register/\+Unregister the callback functions \\
+\hline
+\mbox{\texttt{ in}}  & {\em event\+\_\+type} & type of B\+LE event \\
+\hline
+\mbox{\texttt{ in}}  & {\em ble\+\_\+event\+\_\+handler} & structure of function pointers for the event\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}, Otherwise the function shall return \mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a14da8c40303d17eb203188fd4511d649}\label{ble__manager_8c_a14da8c40303d17eb203188fd4511d649}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mtu\_changed\_cmd\_complete\_handler@{ble\_mtu\_changed\_cmd\_complete\_handler}}
+\index{ble\_mtu\_changed\_cmd\_complete\_handler@{ble\_mtu\_changed\_cmd\_complete\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mtu\_changed\_cmd\_complete\_handler()}{ble\_mtu\_changed\_cmd\_complete\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+mtu\+\_\+changed\+\_\+cmd\+\_\+complete\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler handler for Peer device M\+TU size change 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}} type, Refer to \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a48e600cd36423873eca8ea2a35bf426d}\label{ble__manager_8c_a48e600cd36423873eca8ea2a35bf426d}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mtu\_changed\_indication\_handler@{ble\_mtu\_changed\_indication\_handler}}
+\index{ble\_mtu\_changed\_indication\_handler@{ble\_mtu\_changed\_indication\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mtu\_changed\_indication\_handler()}{ble\_mtu\_changed\_indication\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+mtu\+\_\+changed\+\_\+indication\+\_\+handler handler for Peer device M\+TU size change 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}} type, Refer to \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_ae1acfa878f9de1f08991e9e85de37a12}\label{ble__manager_8c_ae1acfa878f9de1f08991e9e85de37a12}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_pair\_done\_handler@{ble\_pair\_done\_handler}}
+\index{ble\_pair\_done\_handler@{ble\_pair\_done\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_pair\_done\_handler()}{ble\_pair\_done\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+pair\+\_\+done\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles pair done event 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+D\+O\+NE event is received from stack. \mbox{\Hypertarget{ble__manager_8c_a74fba8f1be994e2ca88026d99ad89c27}\label{ble__manager_8c_a74fba8f1be994e2ca88026d99ad89c27}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_pair\_key\_request\_handler@{ble\_pair\_key\_request\_handler}}
+\index{ble\_pair\_key\_request\_handler@{ble\_pair\_key\_request\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_pair\_key\_request\_handler()}{ble\_pair\_key\_request\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+pair\+\_\+key\+\_\+request\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles pair key request 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+K\+E\+Y\+\_\+\+R\+E\+Q\+U\+E\+ST event is received from stack. \mbox{\Hypertarget{ble__manager_8c_a869e2728ee1d34877c0c0eef407188dd}\label{ble__manager_8c_a869e2728ee1d34877c0c0eef407188dd}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_pair\_request\_handler@{ble\_pair\_request\_handler}}
+\index{ble\_pair\_request\_handler@{ble\_pair\_request\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_pair\_request\_handler()}{ble\_pair\_request\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+pair\+\_\+request\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles pair request 
+
+function called when the A\+T\+\_\+\+B\+L\+E\+\_\+\+P\+A\+I\+R\+\_\+\+R\+E\+Q\+U\+E\+ST event is received from stack. \mbox{\Hypertarget{ble__manager_8c_a3a8b1a7c2808da95ba9cb7f50ff9217b}\label{ble__manager_8c_a3a8b1a7c2808da95ba9cb7f50ff9217b}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_resolv\_rand\_addr\_handler@{ble\_resolv\_rand\_addr\_handler}}
+\index{ble\_resolv\_rand\_addr\_handler@{ble\_resolv\_rand\_addr\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_resolv\_rand\_addr\_handler()}{ble\_resolv\_rand\_addr\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+handler handles the resolved random address event 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of \mbox{\hyperlink{structat__ble__resolv__rand__addr__status__t}{at\+\_\+ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+status\+\_\+t}} type, Refer to \mbox{\hyperlink{structat__ble__resolv__rand__addr__status__t}{at\+\_\+ble\+\_\+resolv\+\_\+rand\+\_\+addr\+\_\+status\+\_\+t}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} Resolved random address matches with existing device 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} Resolved random address doesn\textquotesingle{}t match with any device 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_af7788149a297644d16f1e0869336281e}\label{ble__manager_8c_af7788149a297644d16f1e0869336281e}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_scan\_info\_handler@{ble\_scan\_info\_handler}}
+\index{ble\_scan\_info\_handler@{ble\_scan\_info\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_scan\_info\_handler()}{ble\_scan\_info\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+scan\+\_\+info\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handling scaned information 
+
+function to handle the scan information. \mbox{\Hypertarget{ble__manager_8c_a2f3a4ce68b3d38eb40d276407a3fada9}\label{ble__manager_8c_a2f3a4ce68b3d38eb40d276407a3fada9}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_scan\_report\_handler@{ble\_scan\_report\_handler}}
+\index{ble\_scan\_report\_handler@{ble\_scan\_report\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_scan\_report\_handler()}{ble\_scan\_report\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+scan\+\_\+report\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+function handles scan report 
+
+function to handle the scan status. \mbox{\Hypertarget{ble__manager_8c_ac2475d958ebe931c1f7adbb9c75d5f12}\label{ble__manager_8c_ac2475d958ebe931c1f7adbb9c75d5f12}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_sdk\_version@{ble\_sdk\_version}}
+\index{ble\_sdk\_version@{ble\_sdk\_version}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_sdk\_version()}{ble\_sdk\_version()}}
+{\footnotesize\ttfamily uint32\+\_\+t ble\+\_\+sdk\+\_\+version (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+sdk\+\_\+version gets the version of Blu\+S\+DK and also checks the S\+DK and Library version compatibility 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Blu\+S\+DK version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_ab50629b4a1a3093ad8389e194c5c1840}\label{ble__manager_8c_ab50629b4a1a3093ad8389e194c5c1840}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_send\_slave\_sec\_request@{ble\_send\_slave\_sec\_request}}
+\index{ble\_send\_slave\_sec\_request@{ble\_send\_slave\_sec\_request}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_send\_slave\_sec\_request()}{ble\_send\_slave\_sec\_request()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+send\+\_\+slave\+\_\+sec\+\_\+request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle }\end{DoxyParamCaption})}
+
+
+
+function to send slave security request 
+
+function to send slave security request. \mbox{\Hypertarget{ble__manager_8c_a913e03506a1e2b2ddf2bdb9625448f1a}\label{ble__manager_8c_a913e03506a1e2b2ddf2bdb9625448f1a}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_set\_device\_name@{ble\_set\_device\_name}}
+\index{ble\_set\_device\_name@{ble\_set\_device\_name}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_set\_device\_name()}{ble\_set\_device\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+set\+\_\+device\+\_\+name (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{name,  }\item[{uint8\+\_\+t}]{name\+\_\+len }\end{DoxyParamCaption})}
+
+
+
+set device name to B\+LE Device 
+
+function to set the device name. \mbox{\Hypertarget{ble__manager_8c_afc27fe1f7025caf9952dcfca6c185d23}\label{ble__manager_8c_afc27fe1f7025caf9952dcfca6c185d23}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_slave\_security\_request\_handler@{ble\_slave\_security\_request\_handler}}
+\index{ble\_slave\_security\_request\_handler@{ble\_slave\_security\_request\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_slave\_security\_request\_handler()}{ble\_slave\_security\_request\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+slave\+\_\+security\+\_\+request\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ble__manager_8c_aeac5e0b2e38c2f4ca005e07b81d479fe}\label{ble__manager_8c_aeac5e0b2e38c2f4ca005e07b81d479fe}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_undefined\_event\_handler@{ble\_undefined\_event\_handler}}
+\index{ble\_undefined\_event\_handler@{ble\_undefined\_event\_handler}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_undefined\_event\_handler()}{ble\_undefined\_event\_handler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} ble\+\_\+undefined\+\_\+event\+\_\+handler (\begin{DoxyParamCaption}\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+ble\+\_\+undefined\+\_\+event\+\_\+handler handler for undefined events which is not expected in Library 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em params} & of void $\ast$ type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} event handled successfully 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} event with error status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ble__manager_8c_a2ddbfd503bbd51ac1ba6e5ebea3f9d7b}\label{ble__manager_8c_a2ddbfd503bbd51ac1ba6e5ebea3f9d7b}} 
+\index{ble\_manager.c@{ble\_manager.c}!gap\_dev\_connect@{gap\_dev\_connect}}
+\index{gap\_dev\_connect@{gap\_dev\_connect}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{gap\_dev\_connect()}{gap\_dev\_connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} gap\+\_\+dev\+\_\+connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__addr__t}{at\+\_\+ble\+\_\+addr\+\_\+t}} $\ast$}]{dev\+\_\+addr }\end{DoxyParamCaption})}
+
+
+
+request the peer device for connection 
+
+\mbox{\Hypertarget{ble__manager_8c_a30ffa64579c883ffafb46410479d837d}\label{ble__manager_8c_a30ffa64579c883ffafb46410479d837d}} 
+\index{ble\_manager.c@{ble\_manager.c}!gap\_dev\_scan@{gap\_dev\_scan}}
+\index{gap\_dev\_scan@{gap\_dev\_scan}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{gap\_dev\_scan()}{gap\_dev\_scan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} gap\+\_\+dev\+\_\+scan (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+instructs device to start scanning 
+
+function to start scan. \mbox{\Hypertarget{ble__manager_8c_a27557cfacb8b764cc482b44659762080}\label{ble__manager_8c_a27557cfacb8b764cc482b44659762080}} 
+\index{ble\_manager.c@{ble\_manager.c}!scan\_info\_parse@{scan\_info\_parse}}
+\index{scan\_info\_parse@{scan\_info\_parse}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{scan\_info\_parse()}{scan\_info\_parse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} scan\+\_\+info\+\_\+parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}} $\ast$}]{scan\+\_\+info\+\_\+data,  }\item[{\mbox{\hyperlink{structat__ble__uuid__t}{at\+\_\+ble\+\_\+uuid\+\_\+t}} $\ast$}]{ble\+\_\+service\+\_\+uuid,  }\item[{uint8\+\_\+t}]{adv\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+function parses the received advertising data for service and local name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em scan\+\_\+info\+\_\+data} & the received data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ble\+\_\+service\+\_\+uuid} & uuid to be searched in the received data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em adv\+\_\+type} & advertisement type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}} operation completed successfully. 
+
+\mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988ac345aa57ea63207c65158bfac760799c}{A\+T\+\_\+\+B\+L\+E\+\_\+\+F\+A\+I\+L\+U\+RE}} Generic error. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ble__manager_8c_ab9192b5b6e832a021fd4d6135a2b43ec}\label{ble__manager_8c_ab9192b5b6e832a021fd4d6135a2b43ec}} 
+\index{ble\_manager.c@{ble\_manager.c}!att\_db\_data@{att\_db\_data}}
+\index{att\_db\_data@{att\_db\_data}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{att\_db\_data}{att\_db\_data}}
+{\footnotesize\ttfamily uint32\+\_\+t att\+\_\+db\+\_\+data\mbox{[}\mbox{\hyperlink{ble__manager_8h_af1bde561fb9718f6c45b49bb9306f085}{B\+L\+E\+\_\+\+A\+T\+T\+\_\+\+D\+B\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+S\+I\+ZE}}/4\mbox{]} = \{0\}}
+
+\mbox{\Hypertarget{ble__manager_8c_a6b9d4d8c4a339a7baa6f833b38731c75}\label{ble__manager_8c_a6b9d4d8c4a339a7baa6f833b38731c75}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_dev\_info@{ble\_dev\_info}}
+\index{ble\_dev\_info@{ble\_dev\_info}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_dev\_info}{ble\_dev\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structble__connected__dev__info__t}{ble\+\_\+connected\+\_\+dev\+\_\+info\+\_\+t}} ble\+\_\+dev\+\_\+info\mbox{[}\mbox{\hyperlink{ble__manager_8h_a7b56efa3fcb5f232ffc3b4d98e2fbd63}{B\+L\+E\+\_\+\+M\+A\+X\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}}\mbox{]}}
+
+\mbox{\Hypertarget{ble__manager_8c_a879b2e7d8fa7a91298d9dd4a834cd285}\label{ble__manager_8c_a879b2e7d8fa7a91298d9dd4a834cd285}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_device\_count@{ble\_device\_count}}
+\index{ble\_device\_count@{ble\_device\_count}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_device\_count}{ble\_device\_count}}
+{\footnotesize\ttfamily volatile uint8\+\_\+t ble\+\_\+device\+\_\+count}
+
+\mbox{\Hypertarget{ble__manager_8c_a6bb41cc5f720f0a38a01b642e4162dec}\label{ble__manager_8c_a6bb41cc5f720f0a38a01b642e4162dec}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_device\_current\_state@{ble\_device\_current\_state}}
+\index{ble\_device\_current\_state@{ble\_device\_current\_state}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_device\_current\_state}{ble\_device\_current\_state}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{ble__manager_8h_ab29617fffda07fe53d18981315f6231b}{ble\+\_\+device\+\_\+ll\+\_\+state\+\_\+t}} ble\+\_\+device\+\_\+current\+\_\+state = \mbox{\hyperlink{ble__manager_8h_a6d91845fa8a62c3d7995771cbddc7111a90bb170db5dde02dbea9614cc44e7567}{B\+L\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+TE}}}
+
+\mbox{\Hypertarget{ble__manager_8c_ab69e1ceb372f15f245f420bf1ad86e67}\label{ble__manager_8c_ab69e1ceb372f15f245f420bf1ad86e67}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_event\_params@{ble\_event\_params}}
+\index{ble\_event\_params@{ble\_event\_params}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_event\_params}{ble\_event\_params}}
+{\footnotesize\ttfamily uint32\+\_\+t ble\+\_\+event\+\_\+params\mbox{[}\mbox{\hyperlink{ble__manager_8h_ad339283f9c9acae6eb9cf549223be918}{B\+L\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}}/sizeof(uint32\+\_\+t)\mbox{]}}
+
+\mbox{\Hypertarget{ble__manager_8c_a5fecee5e0ee368c8d9c31b5a3e693796}\label{ble__manager_8c_a5fecee5e0ee368c8d9c31b5a3e693796}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_custom\_event\_cb@{ble\_mgr\_custom\_event\_cb}}
+\index{ble\_mgr\_custom\_event\_cb@{ble\_mgr\_custom\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_custom\_event\_cb}{ble\_mgr\_custom\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__custom__event__cb__t}{ble\+\_\+custom\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+custom\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_ae47c4daab2a763a7bce2fb47d12bd1ef}{M\+A\+X\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_aa01b490056f8796d0b52db08700bdd84}\label{ble__manager_8c_aa01b490056f8796d0b52db08700bdd84}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_dtm\_event\_cb@{ble\_mgr\_dtm\_event\_cb}}
+\index{ble\_mgr\_dtm\_event\_cb@{ble\_mgr\_dtm\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_dtm\_event\_cb}{ble\_mgr\_dtm\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__dtm__event__cb__t}{ble\+\_\+dtm\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+dtm\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_a404c1cd504fc902b0642e48d1c41a318}{M\+A\+X\+\_\+\+D\+T\+M\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_acae231e6391d29ad67d280fff53ded5c}\label{ble__manager_8c_acae231e6391d29ad67d280fff53ded5c}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_gap\_event\_cb@{ble\_mgr\_gap\_event\_cb}}
+\index{ble\_mgr\_gap\_event\_cb@{ble\_mgr\_gap\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_gap\_event\_cb}{ble\_mgr\_gap\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__gap__event__cb__t}{ble\+\_\+gap\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+gap\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_adc4a9c24a5772072c9cb04e66cc5c24c}{M\+A\+X\+\_\+\+G\+A\+P\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_ae3e00dc21ea5f46cd93b0cb7d75f6add}\label{ble__manager_8c_ae3e00dc21ea5f46cd93b0cb7d75f6add}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_gatt\_client\_event\_cb@{ble\_mgr\_gatt\_client\_event\_cb}}
+\index{ble\_mgr\_gatt\_client\_event\_cb@{ble\_mgr\_gatt\_client\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_gatt\_client\_event\_cb}{ble\_mgr\_gatt\_client\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__gatt__client__event__cb__t}{ble\+\_\+gatt\+\_\+client\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+gatt\+\_\+client\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_ac2fe46ea452d04603a0a3ff926cabdf6}{M\+A\+X\+\_\+\+G\+A\+T\+T\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_ad98ba7c21d5eeaac60b1c729ded97cdc}\label{ble__manager_8c_ad98ba7c21d5eeaac60b1c729ded97cdc}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_gatt\_server\_event\_cb@{ble\_mgr\_gatt\_server\_event\_cb}}
+\index{ble\_mgr\_gatt\_server\_event\_cb@{ble\_mgr\_gatt\_server\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_gatt\_server\_event\_cb}{ble\_mgr\_gatt\_server\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__gatt__server__event__cb__t}{ble\+\_\+gatt\+\_\+server\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+gatt\+\_\+server\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_a14cadc11d1ca99eef50149adb9d92a81}{M\+A\+X\+\_\+\+G\+A\+T\+T\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_a6c15241c2e9aac630a6180b64227300d}\label{ble__manager_8c_a6c15241c2e9aac630a6180b64227300d}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_htpt\_event\_cb@{ble\_mgr\_htpt\_event\_cb}}
+\index{ble\_mgr\_htpt\_event\_cb@{ble\_mgr\_htpt\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_htpt\_event\_cb}{ble\_mgr\_htpt\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__htpt__event__cb__t}{ble\+\_\+htpt\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+htpt\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_a3374909d1489f00bcbce57d754f5530e}{M\+A\+X\+\_\+\+H\+T\+P\+T\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_af26d3f946d6b01dc6638b4a3ccff0d02}\label{ble__manager_8c_af26d3f946d6b01dc6638b4a3ccff0d02}} 
+\index{ble\_manager.c@{ble\_manager.c}!ble\_mgr\_l2cap\_event\_cb@{ble\_mgr\_l2cap\_event\_cb}}
+\index{ble\_mgr\_l2cap\_event\_cb@{ble\_mgr\_l2cap\_event\_cb}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{ble\_mgr\_l2cap\_event\_cb}{ble\_mgr\_l2cap\_event\_cb}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structble__l2cap__event__cb__t}{ble\+\_\+l2cap\+\_\+event\+\_\+cb\+\_\+t}}$\ast$ ble\+\_\+mgr\+\_\+l2cap\+\_\+event\+\_\+cb\mbox{[}\mbox{\hyperlink{ble__manager_8h_ac745fe87e3bc2d1edf2cd23995a1b312}{M\+A\+X\+\_\+\+L2\+C\+A\+P\+\_\+\+E\+V\+E\+N\+T\+\_\+\+S\+U\+B\+S\+C\+R\+I\+B\+E\+RS}}\mbox{]} = \{N\+U\+LL, \}}
+
+\mbox{\Hypertarget{ble__manager_8c_a3335a4dd1ed8942c719c36830713af21}\label{ble__manager_8c_a3335a4dd1ed8942c719c36830713af21}} 
+\index{ble\_manager.c@{ble\_manager.c}!connected\_state\_info@{connected\_state\_info}}
+\index{connected\_state\_info@{connected\_state\_info}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{connected\_state\_info}{connected\_state\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__connected__t}{at\+\_\+ble\+\_\+connected\+\_\+t}} connected\+\_\+state\+\_\+info}
+
+\mbox{\Hypertarget{ble__manager_8c_a7f4fdb26d292561b95cac0359f75d1e3}\label{ble__manager_8c_a7f4fdb26d292561b95cac0359f75d1e3}} 
+\index{ble\_manager.c@{ble\_manager.c}!event@{event}}
+\index{event@{event}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeb}{at\+\_\+ble\+\_\+events\+\_\+t}} event}
+
+\mbox{\Hypertarget{ble__manager_8c_ac7207927bb9ac8d29b9bb17f298622ee}\label{ble__manager_8c_ac7207927bb9ac8d29b9bb17f298622ee}} 
+\index{ble\_manager.c@{ble\_manager.c}!event\_params\_memory@{event\_params\_memory}}
+\index{event\_params\_memory@{event\_params\_memory}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{event\_params\_memory}{event\_params\_memory}}
+{\footnotesize\ttfamily uint32\+\_\+t event\+\_\+params\+\_\+memory\mbox{[}1024\mbox{]} = \{0\}}
+
+\mbox{\Hypertarget{ble__manager_8c_a9329c2b6417db7a3815c382b831999db}\label{ble__manager_8c_a9329c2b6417db7a3815c382b831999db}} 
+\index{ble\_manager.c@{ble\_manager.c}!event\_pool\_memory@{event\_pool\_memory}}
+\index{event\_pool\_memory@{event\_pool\_memory}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{event\_pool\_memory}{event\_pool\_memory}}
+{\footnotesize\ttfamily uint32\+\_\+t event\+\_\+pool\+\_\+memory\mbox{[}256\mbox{]} = \{0\}}
+
+\mbox{\Hypertarget{ble__manager_8c_a9fc4e95b4195eb63f88df00d0cf53747}\label{ble__manager_8c_a9fc4e95b4195eb63f88df00d0cf53747}} 
+\index{ble\_manager.c@{ble\_manager.c}!pf\_cfg@{pf\_cfg}}
+\index{pf\_cfg@{pf\_cfg}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{pf\_cfg}{pf\_cfg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__init__config__t}{at\+\_\+ble\+\_\+init\+\_\+config\+\_\+t}} pf\+\_\+cfg}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_create\_timer = \mbox{\hyperlink{platform_8h_a35126caea3cccfb686b7efbbd22237dd}{platform\_create\_timer}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_delete\_timer = \mbox{\hyperlink{platform_8h_ab26581c9aa912884f528ced693b2daeb}{platform\_delete\_timer}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_start\_timer = \mbox{\hyperlink{platform_8h_a10d3a7188ab398184baa6fcacdae9d50}{platform\_start\_timer}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_stop\_timer = \mbox{\hyperlink{platform_8h_accb680ff0d9bdb2f25326f3e790dd98a}{platform\_stop\_timer}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_sleep = \mbox{\hyperlink{platform_8h_aadaf2e7f835bfa9cdc17d61ddc5fa35f}{platform\_sleep}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_gpio\_set = \mbox{\hyperlink{platform_8h_ad37362a3b1affcce1307863e6e2c50f9}{platform\_gpio\_set}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_send\_sync = \mbox{\hyperlink{platform_8h_a5ba2929b62a30803b288bb39b1a504e9}{platform\_send\_sync}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_recv\_async = \mbox{\hyperlink{platform_8h_a5b8f1fbc42282765aec1637405431635}{platform\_recv\_async}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_reconfigure\_usart = \mbox{\hyperlink{platform_8h_a5edb9c8071d6a6894c6af20e050c8511}{platform\_configure\_hw\_fc\_uart}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_wait\_for\_signal = \mbox{\hyperlink{platform_8h_a27de5c1b4dde4e0e4658855b08b7b165}{platform\_wait\_for\_signal}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_create\_signal = \mbox{\hyperlink{platform_8h_af6047b5db9bbdf6076816bbfb3aa2af9}{platform\_create\_signal}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_delete\_signal = \mbox{\hyperlink{platform_8h_a6a14ee0a65b86edbc3d0818e37945d80}{platform\_delete\_signal}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_trigger\_signal = \mbox{\hyperlink{platform_8h_a3c5f81a031fbf5a45620d995278d79a8}{platform\_trigger\_signal}},}
+\DoxyCodeLine{    .platform\_api\_list.at\_ble\_reset\_signal = \mbox{\hyperlink{platform_8h_a6b46141e5826ab0ab42451dd46b1d140}{platform\_reset\_signal}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ble__manager_8c_a96714195a5d73c75557ec6378ce55c66}\label{ble__manager_8c_a96714195a5d73c75557ec6378ce55c66}} 
+\index{ble\_manager.c@{ble\_manager.c}!resolve\_addr\_flag@{resolve\_addr\_flag}}
+\index{resolve\_addr\_flag@{resolve\_addr\_flag}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{resolve\_addr\_flag}{resolve\_addr\_flag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} volatile resolve\+\_\+addr\+\_\+flag = \mbox{\hyperlink{group__group__sam0__utils_ga65e9886d74aaee76545e83dd09011727}{false}}}
+
+\mbox{\Hypertarget{ble__manager_8c_acfa09fcc15cde06c9dee9f4e912ede95}\label{ble__manager_8c_acfa09fcc15cde06c9dee9f4e912ede95}} 
+\index{ble\_manager.c@{ble\_manager.c}!rx\_fifo\_memory@{rx\_fifo\_memory}}
+\index{rx\_fifo\_memory@{rx\_fifo\_memory}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{rx\_fifo\_memory}{rx\_fifo\_memory}}
+{\footnotesize\ttfamily uint32\+\_\+t rx\+\_\+fifo\+\_\+memory\mbox{[}256\mbox{]} = \{0\}}
+
+\mbox{\Hypertarget{ble__manager_8c_a20814d27ed15ac40d3816e458b4fd1f2}\label{ble__manager_8c_a20814d27ed15ac40d3816e458b4fd1f2}} 
+\index{ble\_manager.c@{ble\_manager.c}!scan\_info@{scan\_info}}
+\index{scan\_info@{scan\_info}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{scan\_info}{scan\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__scan__info__t}{at\+\_\+ble\+\_\+scan\+\_\+info\+\_\+t}} scan\+\_\+info\mbox{[}\mbox{\hyperlink{ble__manager_8h_a98298a840aa13838ea127a011f2f03a9}{M\+A\+X\+\_\+\+S\+C\+A\+N\+\_\+\+D\+E\+V\+I\+CE}}\mbox{]}}
+
+\mbox{\Hypertarget{ble__manager_8c_a25388053876443c00cb885cdb50ce453}\label{ble__manager_8c_a25388053876443c00cb885cdb50ce453}} 
+\index{ble\_manager.c@{ble\_manager.c}!scan\_response\_count@{scan\_response\_count}}
+\index{scan\_response\_count@{scan\_response\_count}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{scan\_response\_count}{scan\_response\_count}}
+{\footnotesize\ttfamily volatile uint32\+\_\+t scan\+\_\+response\+\_\+count = 0}
+
+\mbox{\Hypertarget{ble__manager_8c_a15749277af611ab1df474f6d8710ba97}\label{ble__manager_8c_a15749277af611ab1df474f6d8710ba97}} 
+\index{ble\_manager.c@{ble\_manager.c}!send\_slave\_security\_flag@{send\_slave\_security\_flag}}
+\index{send\_slave\_security\_flag@{send\_slave\_security\_flag}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{send\_slave\_security\_flag}{send\_slave\_security\_flag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} volatile send\+\_\+slave\+\_\+security\+\_\+flag = \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+\mbox{\Hypertarget{ble__manager_8c_af7ed87ef62b3b987233ffd293a44dd7c}\label{ble__manager_8c_af7ed87ef62b3b987233ffd293a44dd7c}} 
+\index{ble\_manager.c@{ble\_manager.c}!temp\_param@{temp\_param}}
+\index{temp\_param@{temp\_param}!ble\_manager.c@{ble\_manager.c}}
+\subsubsection{\texorpdfstring{temp\_param}{temp\_param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}} temp\+\_\+param\mbox{[}sizeof(\mbox{\hyperlink{structat__ble__encryption__request__t}{at\+\_\+ble\+\_\+encryption\+\_\+request\+\_\+t}})\mbox{]}}
+

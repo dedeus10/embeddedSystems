@@ -1,0 +1,573 @@
+This is a list of the available Quick Start guides (Q\+S\+Gs) and example applications for \mbox{\hyperlink{group__asfdoc__sam0__sercom__spi__group}{S\+AM Serial Peripheral Interface (S\+E\+R\+C\+OM S\+PI) Driver}}. Q\+S\+Gs are simple examples with step-\/by-\/step instructions to configure and use this driver in a selection of use cases. Note that a Q\+SG can be compiled as a standalone application or be added to the user application.
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_master_basic_use}{Quick Start Guide for S\+E\+R\+C\+OM S\+PI Master -\/ Polled}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_slave_basic_use}{Quick Start Guide for S\+E\+R\+C\+OM S\+PI Slave -\/ Polled}}
+\item \mbox{\hyperlink{asfdoc_sam0_sercom_spi_dma_use_case}{Quick Start Guide for Using D\+MA with S\+E\+R\+C\+OM S\+PI}} 
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use}{}\section{Quick Start Guide for S\+E\+R\+C\+OM S\+PI Master -\/ Polled}\label{asfdoc_sam0_sercom_spi_master_basic_use}
+In this use case, the S\+PI on extension header 1 of the Xplained Pro board will be configured with the following settings\+:
+\begin{DoxyItemize}
+\item Master Mode enabled
+\item M\+SB of the data is transmitted first
+\item Transfer mode 0
+\item S\+PI M\+UX Setting E (see \mbox{\hyperlink{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_master}{Master Mode Settings}})
+\item 8-\/bit character size
+\item Not enabled in sleep mode
+\item Baudrate 100000
+\item G\+L\+CK generator 0
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_setup}
+\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_prereq}
+There are no special setup requirements for this use-\/case.\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_setup_code}
+The following must be added to the user application\+:
+
+A sample buffer to send via S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+Number of entries in the sample buffer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+G\+P\+IO pin to use as Slave Select. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A globally available software device instance struct to store the S\+PI driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A globally available peripheral slave software device instance struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A function for configuring the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_workflow}
+
+\begin{DoxyEnumerate}
+\item Initialize system. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set-\/up the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyEnumerate}
+\item Create configuration struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create peripheral slave configuration struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create peripheral slave software device instance struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Get default peripheral slave configuration. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set Slave Select pin. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize peripheral slave software instance with configuration. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Get default configuration to edit. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set M\+UX setting E. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 0 (data in (M\+I\+SO)). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 1 as unused, so the pin can be used for other purposes. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 2 (data out (M\+O\+SI)). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 3 (S\+CK). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize S\+PI module with configuration. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable S\+PI module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case}
+\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case_code}
+Add the following to your user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case_workflow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_spi_master_basic_use_asfdoc_sam0_sercom_spi_master_basic_use_case_workflow}
+
+\begin{DoxyEnumerate}
+\item Select slave. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Write buffer to S\+PI slave. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Deselect slave. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Light up. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Infinite loop. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use}{}\section{Quick Start Guide for S\+E\+R\+C\+OM S\+PI Slave -\/ Polled}\label{asfdoc_sam0_sercom_spi_slave_basic_use}
+In this use case, the S\+PI on extension header 1 of the Xplained Pro board will configured with the following settings\+:
+\begin{DoxyItemize}
+\item Slave mode enabled
+\item Preloading of shift register enabled
+\item M\+SB of the data is transmitted first
+\item Transfer mode 0
+\item S\+PI M\+UX Setting E (see \mbox{\hyperlink{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_slave}{Slave Mode Settings}})
+\item 8-\/bit character size
+\item Not enabled in sleep mode
+\item G\+L\+CK generator 0
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_setup}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_prereq}
+The device must be connected to an S\+PI master which must read from the device.\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_setup_code}
+The following must be added to the user application source file, outside any functions\+:
+
+A sample buffer to send via S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+Number of entries in the sample buffer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A globally available software device instance struct to store the S\+PI driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A function for configuring the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_workflow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_workflow}
+
+\begin{DoxyEnumerate}
+\item Initialize system. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set-\/up the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyEnumerate}
+\item Create configuration struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Get default configuration to edit. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set the S\+PI in slave mode. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable preloading of shift register. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set frame format to S\+PI frame. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set M\+UX setting E. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 0 (data in M\+O\+SI). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 1 (slave select). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 2 (data out M\+I\+SO). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 3 (S\+CK). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize S\+PI module with configuration. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable S\+PI module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case_code}
+Add the following to your user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case_workflow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_spi_slave_basic_use_asfdoc_sam0_sercom_spi_slave_basic_use_case_workflow}
+
+\begin{DoxyEnumerate}
+\item Read data from S\+PI master. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Compare the received data with the transmitted data from S\+PI master. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Infinite loop. If the data is matched, L\+E\+D0 will flash slowly. Otherwise, L\+ED will flash quickly. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case}{}\section{Quick Start Guide for Using D\+MA with S\+E\+R\+C\+OM S\+PI}\label{asfdoc_sam0_sercom_spi_dma_use_case}
+The supported board list\+:
+\begin{DoxyItemize}
+\item S\+AM D21 Xplained Pro
+\item S\+AM R21 Xplained Pro
+\item S\+AM L21 Xplained Pro
+\item S\+AM L22 Xplained Pro
+\item S\+AM D\+A1 Xplained Pro
+\item S\+AM C21 Xplained Pro
+\item S\+AM R30 Xplained Pro
+\end{DoxyItemize}
+
+This quick start will transmit a buffer data from master to slave through D\+MA. In this use case the S\+PI master will be configured with the following settings on S\+AM Xplained Pro\+:
+\begin{DoxyItemize}
+\item Master Mode enabled
+\item M\+SB of the data is transmitted first
+\item Transfer mode 0
+\item S\+PI M\+UX Setting E
+\item 8-\/bit character size
+\item Not enabled in sleep mode
+\item Baudrate 100000
+\item G\+L\+CK generator 0
+\end{DoxyItemize}
+
+The S\+PI slave will be configured with the following settings\+:
+\begin{DoxyItemize}
+\item Slave mode enabled
+\item Preloading of shift register enabled
+\item M\+SB of the data is transmitted first
+\item Transfer mode 0
+\item S\+PI M\+UX Setting E
+\item 8-\/bit character size
+\item Not enabled in sleep mode
+\item G\+L\+CK generator 0
+\end{DoxyItemize}
+
+Note that the pinouts on other boards may different, see next sector for details.\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_sercom_spi_dma_use_case_setup}{}\subsection{Setup}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_sercom_spi_dma_use_case_setup}
+\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_sercom_spi_dma_use_case_prereq}{}\subsubsection{Prerequisites}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_sercom_spi_dma_use_case_prereq}
+The following connections has to be made using wires\+:
+\begin{DoxyItemize}
+\item S\+AM D21/\+D\+A1 Xplained Pro.
+\begin{DoxyItemize}
+\item {\bfseries{S\+S\+\_\+0\+:}} E\+X\+T1 P\+I\+N15 (P\+A05) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N15 (P\+A17)
+\item {\bfseries{D\+O/\+DI}}\+: E\+X\+T1 P\+I\+N16 (P\+A06) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N17 (P\+A16)
+\item {\bfseries{D\+I/\+DO}}\+: E\+X\+T1 P\+I\+N17 (P\+A04) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N16 (P\+A18)
+\item {\bfseries{S\+CK\+:}} E\+X\+T1 P\+I\+N18 (P\+A07) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N18 (P\+A19)
+\end{DoxyItemize}
+\item S\+AM R21 Xplained Pro.
+\begin{DoxyItemize}
+\item {\bfseries{S\+S\+\_\+0\+:}} E\+X\+T1 P\+I\+N15 (P\+B03) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N10 (P\+A23)
+\item {\bfseries{D\+O/\+DI}}\+: E\+X\+T1 P\+I\+N16 (P\+B22) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N9 (P\+A22)
+\item {\bfseries{D\+I/\+DO}}\+: E\+X\+T1 P\+I\+N17 (P\+B02) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N7 (P\+A18)
+\item {\bfseries{S\+CK\+:}} E\+X\+T1 P\+I\+N18 (P\+B23) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N8 (P\+A19)
+\end{DoxyItemize}
+\item S\+AM L21 Xplained Pro.
+\begin{DoxyItemize}
+\item {\bfseries{S\+S\+\_\+0\+:}} E\+X\+T1 P\+I\+N15 (P\+A05) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N12 (P\+A09)
+\item {\bfseries{D\+O/\+DI}}\+: E\+X\+T1 P\+I\+N16 (P\+A06) $<$-\/-\/$>$ E\+X\+T1 P\+I\+N11 (P\+A08)
+\item {\bfseries{D\+I/\+DO}}\+: E\+X\+T1 P\+I\+N17 (P\+A04) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N03 (P\+A10)
+\item {\bfseries{S\+CK\+:}} E\+X\+T1 P\+I\+N18 (P\+A07) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N04 (P\+A11)
+\end{DoxyItemize}
+\item S\+AM L22 Xplained Pro.
+\begin{DoxyItemize}
+\item {\bfseries{S\+S\+\_\+0\+:}} E\+X\+T1 P\+I\+N15 (P\+B21) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N15 (P\+A17)
+\item {\bfseries{D\+O/\+DI}}\+: E\+X\+T1 P\+I\+N16 (P\+B00) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N17 (P\+A16)
+\item {\bfseries{D\+I/\+DO}}\+: E\+X\+T1 P\+I\+N17 (P\+B02) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N16 (P\+A18)
+\item {\bfseries{S\+CK\+:}} E\+X\+T1 P\+I\+N18 (P\+B01) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N18 (P\+A19)
+\end{DoxyItemize}
+\item S\+AM C21 Xplained Pro.
+\begin{DoxyItemize}
+\item {\bfseries{S\+S\+\_\+0\+:}} E\+X\+T1 P\+I\+N15 (P\+A17) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N15 (P\+B03)
+\item {\bfseries{D\+O/\+DI}}\+: E\+X\+T1 P\+I\+N16 (P\+A18) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N17 (P\+B02)
+\item {\bfseries{D\+I/\+DO}}\+: E\+X\+T1 P\+I\+N17 (P\+A16) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N16 (P\+B00)
+\item {\bfseries{S\+CK\+:}} E\+X\+T1 P\+I\+N18 (P\+A19) $<$-\/-\/$>$ E\+X\+T2 P\+I\+N18 (P\+B01)
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_setup_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_setup_code}
+Add to the main application source file, before user definitions and functions according to your board\+:
+
+For S\+AM D21 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+For S\+AM R21 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+For S\+AM L21 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+For S\+AM L22 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+For S\+AM D\+A1 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+For S\+AM C21 Xplained Pro\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to the main application source file, outside of any functions\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Copy-\/paste the following setup code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application initialization (typically the start of {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}})\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_setup_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_setup_flow}
+
+\begin{DoxyEnumerate}
+\item Create a module software instance structure for the S\+PI module to store the S\+PI driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should never go out of scope as long as the module is in use. In most cases, this should be global.
+\end{DoxyNote}
+
+\item Create a module software instance structure for D\+MA resource to store the D\+MA resource state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should never go out of scope as long as the module is in use. In most cases, this should be global.
+\end{DoxyNote}
+
+\item Create transfer done flag to indication D\+MA transfer done. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Define the buffer length for T\+X/\+RX. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create buffer to store the data to be transferred. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create the S\+PI module configuration struct, which can be filled out to adjust the configuration of a physical S\+PI peripheral. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the S\+PI configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Alter the S\+PI settings to configure the physical pinout, baudrate, and other relevant parameters. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Configure the S\+PI module with the desired settings, retrying while the driver is busy until the configuration is stressfully set. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable the S\+PI module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create the D\+MA resource configuration structure, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA resource configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set extra configurations for the D\+MA resource. It is using peripheral trigger. S\+E\+R\+C\+OM TX empty and RX complete trigger causes a beat transfer in this example. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Allocate a D\+MA resource with the configurations. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create a D\+MA transfer descriptor configuration structure, which can be filled out to adjust the configuration of a single D\+MA transfer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize the D\+MA transfer descriptor configuration struct with the module\textquotesingle{}s default values. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \begin{DoxyNote}{Note}
+This should always be performed before using the configuration struct to ensure that all values are initialized to known default settings.
+\end{DoxyNote}
+
+\item Set the specific parameters for a D\+MA transfer with transfer size, source address, and destination address. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Create the D\+MA transfer descriptor. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main}{}\subsection{Use Case}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main}
+\hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main_code}{}\subsubsection{Code}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main_code}
+Copy-\/paste the following code to your user application\+: 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main_flow}{}\subsubsection{Workflow}\label{asfdoc_sam0_sercom_spi_dma_use_case_asfdoc_sam0_spi_dma_use_case_main_flow}
+
+\begin{DoxyEnumerate}
+\item Select the slave. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Start the transfer job. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Wait for transfer done. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Deselect the slave. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enter endless loop. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

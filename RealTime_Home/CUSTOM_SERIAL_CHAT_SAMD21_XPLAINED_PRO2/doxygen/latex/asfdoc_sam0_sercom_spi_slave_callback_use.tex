@@ -1,0 +1,147 @@
+In this use case, the S\+PI on extension header 1 of the Xplained Pro board will configured with the following settings\+:
+\begin{DoxyItemize}
+\item Slave mode enabled
+\item Preloading of shift register enabled
+\item M\+SB of the data is transmitted first
+\item Transfer mode 0
+\item S\+PI M\+UX Setting E (see \mbox{\hyperlink{asfdoc_sam0_sercom_spi_mux_settings_asfdoc_sam0_sercom_spi_mux_settings_slave}{Slave Mode Settings}})
+\item 8-\/bit character size
+\item Not enabled in sleep mode
+\item G\+L\+CK generator 0
+\end{DoxyItemize}\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_setup}{}\section{Setup}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_setup}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_useprereq}{}\subsection{Prerequisites}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_useprereq}
+The device must be connected to a S\+PI master, which must read from the device.\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_setup_code}{}\subsection{Code}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_setup_code}
+The following must be added to the user application source file, outside any functions.
+
+A sample buffer to send via S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+Number of entries in the sample buffer. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A globally available software device instance struct to store the S\+PI driver state while it is in use. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A function for configuring the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A function for configuring the callback functionality of the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+A global variable that can flag to the application that the buffer has been transferred. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+Callback function. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ Add to user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ \hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_workflow}
+
+\begin{DoxyEnumerate}
+\item Initialize system. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set-\/up the S\+PI. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyEnumerate}
+\item Create configuration struct. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Get default configuration to edit. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set the S\+PI in slave mode. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable preloading of shift register. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set frame format to S\+PI frame. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set M\+UX setting E. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 0 (data in M\+O\+SI). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 1 (slave select). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 2 (data out M\+I\+SO). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Set pinmux for pad 3 (S\+CK). 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Initialize S\+PI module with configuration. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable S\+PI module. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}
+\item Setup of the callback functionality. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\begin{DoxyEnumerate}
+\item Register callback function for buffer transmitted. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Enable callback for buffer transmitted. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase}{}\section{Use Case}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase_code}{}\subsection{Code}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase_code}
+Add the following to your user application {\ttfamily \mbox{\hyperlink{csc__app_8c_a840291bc02cba5474a4cb46a9b9566fe}{main()}}}. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_usecase_workflow}
+
+\begin{DoxyEnumerate}
+\item Initiate a read buffer job. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Wait for the transfer to be complete. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Compare the received data with the transmitted data from S\+PI master. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\item Infinite loop. If the data is matched, L\+E\+D0 will flash slowly. Otherwise, L\+ED will flash quickly. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+ 
+\end{DoxyEnumerate}\hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_callback}{}\section{Callback}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_callback}
+When the buffer is successfully transmitted from the master, the callback function will be called. \hypertarget{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_callback_workflow}{}\subsection{Workflow}\label{asfdoc_sam0_sercom_spi_slave_callback_use_asfdoc_sam0_sercom_spi_slave_callback_use_callback_workflow}
+
+\begin{DoxyEnumerate}
+\item Let the application know that the buffer is transmitted by setting the global variable to true. 
+\begin{DoxyCodeInclude}{0}
+\end{DoxyCodeInclude}
+
+\end{DoxyEnumerate}

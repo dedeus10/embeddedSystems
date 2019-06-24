@@ -1,0 +1,115 @@
+\hypertarget{at30tse75x_8h}{}\section{A\+S\+F/sam0/components/sensor/at30tse75x/at30tse75x.h File Reference}
+\label{at30tse75x_8h}\index{ASF/sam0/components/sensor/at30tse75x/at30tse75x.h@{ASF/sam0/components/sensor/at30tse75x/at30tse75x.h}}
+
+
+A\+T30\+T\+S\+E75X driver.  
+
+
+{\ttfamily \#include $<$compiler.\+h$>$}\newline
+{\ttfamily \#include $<$i2c\+\_\+common.\+h$>$}\newline
+{\ttfamily \#include $<$i2c\+\_\+master.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}conf\+\_\+at30tse75x.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga9b968e6171eecbba7f209350b2d960c0}{A\+T30\+T\+S\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+T\+W\+I\+\_\+\+A\+D\+DR}}~0x4F
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6074db17014e07451ee90efd9630b7e9}{A\+T30\+T\+S\+E758\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+T\+W\+I\+\_\+\+A\+D\+DR}}~0x54
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8b8bb2fa6259495c3062fe1e5ab6c5bb}{A\+T30\+T\+S\+E754\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+T\+W\+I\+\_\+\+A\+D\+DR}}~0x56
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gaed3314d17a2aa78e44b0d6db8731927c}{A\+T30\+T\+S\+E752\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+T\+W\+I\+\_\+\+A\+D\+DR}}~0x57
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga090733c713266adcbd9ad2b1eff38570}{A\+T30\+T\+S\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+R\+EG}}~0x00
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gadae7457b32e4d7b787e075ddfc0bc77d}{A\+T30\+T\+S\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+R\+E\+G\+\_\+\+S\+I\+ZE}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gab7d5ef157346bca010113793bcccd23e}{A\+T30\+T\+S\+E\+\_\+\+N\+O\+N\+\_\+\+V\+O\+L\+A\+T\+I\+L\+E\+\_\+\+R\+EG}}~0x00
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga67f0773dae984b401271f813570f1de1}{A\+T30\+T\+S\+E\+\_\+\+V\+O\+L\+A\+T\+I\+L\+E\+\_\+\+R\+EG}}~0x10
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8500fbe1c8bb5121ec9a33f2f71ed596}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+EG}}~0x01
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gaf87ad6495bb2f835c523b47694b5740a}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+G\+\_\+\+S\+I\+ZE}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga2aacaff9d9a6bd333a681539e0756359}{A\+T30\+T\+S\+E\+\_\+\+T\+L\+O\+W\+\_\+\+R\+EG}}~0x02
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gaa4a3ee1d2c653eb7efa74fb7655894cd}{A\+T30\+T\+S\+E\+\_\+\+T\+L\+O\+W\+\_\+\+R\+E\+G\+\_\+\+S\+I\+ZE}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga2178fe985bde76a394a76abcd7789a51}{A\+T30\+T\+S\+E\+\_\+\+T\+H\+I\+G\+H\+\_\+\+R\+EG}}~0x03
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga7ea89f95b2e5a62eccd37469548787e3}{A\+T30\+T\+S\+E\+\_\+\+T\+H\+I\+G\+H\+\_\+\+R\+E\+G\+\_\+\+S\+I\+ZE}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga202a4ed53e4ba0b1d3ca505bdb51e97a}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+\+Pos}}~13
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gacb3754e3b12b4c8d09609d9634593a50}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+\+Msk}}~(0x03 $<$$<$ A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga2b140eecdde3fe4bf8db7d6ce6d508fe}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+ES}}(value)~((\mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gacb3754e3b12b4c8d09609d9634593a50}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga202a4ed53e4ba0b1d3ca505bdb51e97a}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+\+Pos}})))
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga4e5f0fc674b13d133a36ef34add08b15}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+9\+\_\+bit}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6ab232a1353c01457da285281fc42fb7}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+10\+\_\+bit}}~1
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga31556e6637deb2130dbc2b533a35f9d9}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+11\+\_\+bit}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6cbb4ff33aee4e6deb13422abdec1233}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+12\+\_\+bit}}~3
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8595f22c4a3580d296b0d159041ce447}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+\+Pos}}~13
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8c73ddfe3e58e3afe7f50b2b3559bc66}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+\+Msk}}~(0x03 $<$$<$ A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6293aa81435afcf8a68329b72803e0a7}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+TQ}}(value)~((\mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8c73ddfe3e58e3afe7f50b2b3559bc66}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga8595f22c4a3580d296b0d159041ce447}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+\+Pos}})))
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga2b394c32c20643a08b236bc702ea40f4}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T\+Q\+\_\+1\+\_\+fault}}~0
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga271a3118e4ea11d43df2598f27daef0a}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+2\+\_\+fault}}~1
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga56b8d704f34a546adc733d3587004128}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+4\+\_\+fault}}~2
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gadf4429af2c47d70bda424d6dae856725}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R\+E\+S\+\_\+6\+\_\+fault}}~3
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gadc1872fbf4ccc1693b2b2ee5be14cbbc}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+OS}}~(1 $<$$<$ 15)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga3395a27ab984c84a49b64fa6aacc2f4d}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R1}}~(1 $<$$<$ 14)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gab02f4554bd9ca4dc9cee32bd8e0af60c}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+R0}}~(1 $<$$<$ 13)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga5bf9cdaa93fdb068cb0b23c4e149ce50}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T1}}~(1 $<$$<$ 12)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga3236ffc8f5b1841c73902b99d538022b}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+F\+T0}}~(1 $<$$<$ 11)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga1aeeb274b000033dc7fd0315125a099a}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+OL}}~(1 $<$$<$ 10)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga52b23fd497c9a5f1b6079e92fd738e5d}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+C\+M\+P\+\_\+\+I\+NT}}~(1 $<$$<$ 9)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga875e303c472d1da2d3b5353873bfeecf}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+SD}}~(1 $<$$<$ 8)
+\item 
+\#define \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga44a8ecfd38eaef742aaf5810219e6e58}{A\+T30\+T\+S\+E\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+V\+R\+B\+SY}}~(1 $<$$<$ 0)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6690a47815ec89b0c49c8a1c6ec84e08}{at30tse\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em Configures the S\+E\+R\+C\+OM I2C master to be used with the A\+T30\+T\+S\+E75X device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga9b61db47b62de4af26ffc0864ae5a86a}{at30tse\+\_\+eeprom\+\_\+write}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length, uint8\+\_\+t word\+\_\+addr, uint8\+\_\+t page)
+\begin{DoxyCompactList}\small\item\em Writes the E\+E\+P\+R\+OM with data provided. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga906d79173e2ad02ce77203db458aa1ef}{at30tse\+\_\+eeprom\+\_\+read}} (uint8\+\_\+t $\ast$data, uint8\+\_\+t length, uint8\+\_\+t word\+\_\+addr, uint8\+\_\+t page)
+\begin{DoxyCompactList}\small\item\em Reads data from the E\+E\+P\+R\+OM. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga266be5475b64f6c2167851a81567e203}{at30tse\+\_\+read\+\_\+temperature}} (void)
+\begin{DoxyCompactList}\small\item\em Reads the temperature value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga349fec0b2cdbe66a733483f4e348de73}{at30tse\+\_\+write\+\_\+config\+\_\+register}} (uint16\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes the configuration register reg with the value passed. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_gaa67338170e6fcaa17f859d11c85628de}{at30tse\+\_\+read\+\_\+register}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type, uint8\+\_\+t reg\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Reads the value from the register reg. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga6fd33519be27348bc7feacc8b04f0cb5}{at30tse\+\_\+write\+\_\+register}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type, uint8\+\_\+t reg\+\_\+size, uint16\+\_\+t reg\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Writes the specified register reg with the reg\+\_\+value passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__at30tse75x__group_ga5c34d0f1aab15ec6899f2e01f8abaf7b}{at30tse\+\_\+set\+\_\+register\+\_\+pointer}} (uint8\+\_\+t reg, uint8\+\_\+t reg\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Sets the register pointer with specified reg value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+T30\+T\+S\+E75X driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 

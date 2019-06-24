@@ -1,0 +1,176 @@
+\hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b}{}\section{H\+SB Matrix}
+\label{group___s_a_m_d21___h_m_a_t_r_i_x_b}\index{HSB Matrix@{HSB Matrix}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_h_m_a_t_r_i_x_b___p_r_a_s___type}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_h_m_a_t_r_i_x_b___p_r_b_s___type}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_h_m_a_t_r_i_x_b___s_f_r___type}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_hmatrixb_prs}{Hmatrixb\+Prs}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_hmatrixb_prs}{Hmatrixb\+Prs}} hardware registers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_hmatrixb}{Hmatrixb}}
+\begin{DoxyCompactList}\small\item\em H\+M\+A\+T\+R\+I\+XB hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga8913ac76d91200aaaf9a1bc9ddeddd9f}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+I7638}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_gaa1e45777fd379ef2f3cff0401ddaf674}{R\+E\+V\+\_\+\+H\+M\+A\+T\+R\+I\+XB}}~0x212
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_gada8f35a5ebe92757fe031cde38a7761c}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x080
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS offset) Priority A for Slave \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga2bdb9b1fece4ef8d1a1b1b4e87573191}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS reset\+\_\+value) Priority A for Slave \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0b91fa322894f20c4280a0b9e76c9359}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+M\+A\+SK}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga6885cd77fd1330b5c5d63f0fd50221be}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x084
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS offset) Priority B for Slave \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga27bcb999749a62644f8eb6ec5f2503d7}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS reset\+\_\+value) Priority B for Slave \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga55be008834b446b516397e7a279be596}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+M\+A\+SK}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad78eab472a708dc0737f8e9af6fbdb52}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x110
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR offset) Special Function \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga95ba9b5ac1ee7150547d552e80d562cd}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00000000ul
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR reset\+\_\+value) Special Function \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0cea7beda28a2ce9ed68288054ed78e2}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR) Special Function Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga9db3c5b8bf5c84b7fe3f7805d528287d}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Msk}}~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad5546ade174352c506f43daa70d6f66c}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+FR}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga9db3c5b8bf5c84b7fe3f7805d528287d}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0cea7beda28a2ce9ed68288054ed78e2}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga24827a0f81d62099abddfd9bf3d3fb3b}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+F\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR H\+M\+A\+T\+R\+I\+XB 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga8913ac76d91200aaaf9a1bc9ddeddd9f}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga8913ac76d91200aaaf9a1bc9ddeddd9f}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_I7638@{HMATRIXB\_I7638}}
+\index{HMATRIXB\_I7638@{HMATRIXB\_I7638}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_I7638}{HMATRIXB\_I7638}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+I7638}
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0b91fa322894f20c4280a0b9e76c9359}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0b91fa322894f20c4280a0b9e76c9359}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRAS\_MASK@{HMATRIXB\_PRAS\_MASK}}
+\index{HMATRIXB\_PRAS\_MASK@{HMATRIXB\_PRAS\_MASK}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRAS\_MASK}{HMATRIXB\_PRAS\_MASK}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+M\+A\+SK~0x00000000ul}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_gada8f35a5ebe92757fe031cde38a7761c}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_gada8f35a5ebe92757fe031cde38a7761c}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRAS\_OFFSET@{HMATRIXB\_PRAS\_OFFSET}}
+\index{HMATRIXB\_PRAS\_OFFSET@{HMATRIXB\_PRAS\_OFFSET}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRAS\_OFFSET}{HMATRIXB\_PRAS\_OFFSET}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+O\+F\+F\+S\+ET~0x080}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS offset) Priority A for Slave 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga2bdb9b1fece4ef8d1a1b1b4e87573191}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga2bdb9b1fece4ef8d1a1b1b4e87573191}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRAS\_RESETVALUE@{HMATRIXB\_PRAS\_RESETVALUE}}
+\index{HMATRIXB\_PRAS\_RESETVALUE@{HMATRIXB\_PRAS\_RESETVALUE}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRAS\_RESETVALUE}{HMATRIXB\_PRAS\_RESETVALUE}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+A\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+AS reset\+\_\+value) Priority A for Slave 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga55be008834b446b516397e7a279be596}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga55be008834b446b516397e7a279be596}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRBS\_MASK@{HMATRIXB\_PRBS\_MASK}}
+\index{HMATRIXB\_PRBS\_MASK@{HMATRIXB\_PRBS\_MASK}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRBS\_MASK}{HMATRIXB\_PRBS\_MASK}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+M\+A\+SK~0x00000000ul}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga6885cd77fd1330b5c5d63f0fd50221be}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga6885cd77fd1330b5c5d63f0fd50221be}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRBS\_OFFSET@{HMATRIXB\_PRBS\_OFFSET}}
+\index{HMATRIXB\_PRBS\_OFFSET@{HMATRIXB\_PRBS\_OFFSET}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRBS\_OFFSET}{HMATRIXB\_PRBS\_OFFSET}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+O\+F\+F\+S\+ET~0x084}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS offset) Priority B for Slave 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga27bcb999749a62644f8eb6ec5f2503d7}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga27bcb999749a62644f8eb6ec5f2503d7}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_PRBS\_RESETVALUE@{HMATRIXB\_PRBS\_RESETVALUE}}
+\index{HMATRIXB\_PRBS\_RESETVALUE@{HMATRIXB\_PRBS\_RESETVALUE}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_PRBS\_RESETVALUE}{HMATRIXB\_PRBS\_RESETVALUE}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+B\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+P\+R\+BS reset\+\_\+value) Priority B for Slave 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga24827a0f81d62099abddfd9bf3d3fb3b}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga24827a0f81d62099abddfd9bf3d3fb3b}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_MASK@{HMATRIXB\_SFR\_MASK}}
+\index{HMATRIXB\_SFR\_MASK@{HMATRIXB\_SFR\_MASK}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_MASK}{HMATRIXB\_SFR\_MASK}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+F\+F\+F\+F\+Ful}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad78eab472a708dc0737f8e9af6fbdb52}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad78eab472a708dc0737f8e9af6fbdb52}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_OFFSET@{HMATRIXB\_SFR\_OFFSET}}
+\index{HMATRIXB\_SFR\_OFFSET@{HMATRIXB\_SFR\_OFFSET}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_OFFSET}{HMATRIXB\_SFR\_OFFSET}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+O\+F\+F\+S\+ET~0x110}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR offset) Special Function 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga95ba9b5ac1ee7150547d552e80d562cd}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga95ba9b5ac1ee7150547d552e80d562cd}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_RESETVALUE@{HMATRIXB\_SFR\_RESETVALUE}}
+\index{HMATRIXB\_SFR\_RESETVALUE@{HMATRIXB\_SFR\_RESETVALUE}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_RESETVALUE}{HMATRIXB\_SFR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00000000ul}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR reset\+\_\+value) Special Function 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad5546ade174352c506f43daa70d6f66c}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_gad5546ade174352c506f43daa70d6f66c}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_SFR@{HMATRIXB\_SFR\_SFR}}
+\index{HMATRIXB\_SFR\_SFR@{HMATRIXB\_SFR\_SFR}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_SFR}{HMATRIXB\_SFR\_SFR}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+FR(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga9db3c5b8bf5c84b7fe3f7805d528287d}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0cea7beda28a2ce9ed68288054ed78e2}{H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga9db3c5b8bf5c84b7fe3f7805d528287d}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga9db3c5b8bf5c84b7fe3f7805d528287d}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_SFR\_Msk@{HMATRIXB\_SFR\_SFR\_Msk}}
+\index{HMATRIXB\_SFR\_SFR\_Msk@{HMATRIXB\_SFR\_SFR\_Msk}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_SFR\_Msk}{HMATRIXB\_SFR\_SFR\_Msk}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Msk~(0x\+F\+F\+F\+F\+F\+F\+F\+Ful $<$$<$ H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0cea7beda28a2ce9ed68288054ed78e2}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_ga0cea7beda28a2ce9ed68288054ed78e2}} 
+\index{HSB Matrix@{HSB Matrix}!HMATRIXB\_SFR\_SFR\_Pos@{HMATRIXB\_SFR\_SFR\_Pos}}
+\index{HMATRIXB\_SFR\_SFR\_Pos@{HMATRIXB\_SFR\_SFR\_Pos}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{HMATRIXB\_SFR\_SFR\_Pos}{HMATRIXB\_SFR\_SFR\_Pos}}
+{\footnotesize\ttfamily \#define H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+F\+R\+\_\+\+S\+F\+R\+\_\+\+Pos~0}
+
+
+
+(H\+M\+A\+T\+R\+I\+X\+B\+\_\+\+S\+FR) Special Function Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___h_m_a_t_r_i_x_b_gaa1e45777fd379ef2f3cff0401ddaf674}\label{group___s_a_m_d21___h_m_a_t_r_i_x_b_gaa1e45777fd379ef2f3cff0401ddaf674}} 
+\index{HSB Matrix@{HSB Matrix}!REV\_HMATRIXB@{REV\_HMATRIXB}}
+\index{REV\_HMATRIXB@{REV\_HMATRIXB}!HSB Matrix@{HSB Matrix}}
+\subsubsection{\texorpdfstring{REV\_HMATRIXB}{REV\_HMATRIXB}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+H\+M\+A\+T\+R\+I\+XB~0x212}
+

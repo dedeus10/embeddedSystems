@@ -1,0 +1,177 @@
+\hypertarget{group__gap__misc__group}{}\section{Misc A\+P\+Is}
+\label{group__gap__misc__group}\index{Misc APIs@{Misc APIs}}
+
+
+This group includes other G\+AP related A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_ga157b800cc43266a7c8afb90df9443796}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+set}} (\mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}} power)
+\begin{DoxyCompactList}\small\item\em Sets TX power value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_gada18b50c32fb96be593fa15c245dc5c9}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+get}} (\mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}} $\ast$power)
+\begin{DoxyCompactList}\small\item\em Gets TX power value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_gad0b3d4bdff9b2778397f2fe65fc5efa1}{at\+\_\+ble\+\_\+rx\+\_\+power\+\_\+get}} (\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}} conn\+\_\+handle, int8\+\_\+t $\ast$rx\+\_\+power)
+\begin{DoxyCompactList}\small\item\em Gets RX power of a given connection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_ga88911a96609744ebd24b3b00edfb2a06}{at\+\_\+ble\+\_\+chip\+\_\+id\+\_\+get}} (uint32\+\_\+t $\ast$chip\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Gets B\+T\+L\+C1000 Chip ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_gafbcae7ff40f05d01e17b41430ae2987f}{read\+\_\+32\+\_\+from\+\_\+\+B\+T\+L\+C1000}} (uint32\+\_\+t address, uint32\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Raeds 32 bit from B\+T\+L\+C1000. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_ga2ad880a04d258b285c8a53a0d6008abb}{at\+\_\+ble\+\_\+firmware\+\_\+version\+\_\+get}} (uint32\+\_\+t $\ast$fw\+\_\+version)
+\begin{DoxyCompactList}\small\item\em Gets B\+T\+L\+C1000 Firmware version. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__misc__group_gae548b85d5a03b4e15990da3f829f6220}{at\+\_\+ble\+\_\+rf\+\_\+version\+\_\+get}} (uint32\+\_\+t $\ast$rf\+\_\+version)
+\begin{DoxyCompactList}\small\item\em Gets B\+T\+L\+C1000 RF version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes other G\+AP related A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__misc__group_ga88911a96609744ebd24b3b00edfb2a06}\label{group__gap__misc__group_ga88911a96609744ebd24b3b00edfb2a06}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_chip\_id\_get@{at\_ble\_chip\_id\_get}}
+\index{at\_ble\_chip\_id\_get@{at\_ble\_chip\_id\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_chip\_id\_get()}{at\_ble\_chip\_id\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+chip\+\_\+id\+\_\+get (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{chip\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Gets B\+T\+L\+C1000 Chip ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em chip\+\_\+id} & B\+T\+L\+C1000 chip id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Not Supported before release version 2.\+5
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_ga2ad880a04d258b285c8a53a0d6008abb}\label{group__gap__misc__group_ga2ad880a04d258b285c8a53a0d6008abb}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_firmware\_version\_get@{at\_ble\_firmware\_version\_get}}
+\index{at\_ble\_firmware\_version\_get@{at\_ble\_firmware\_version\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_firmware\_version\_get()}{at\_ble\_firmware\_version\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+firmware\+\_\+version\+\_\+get (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{fw\+\_\+version }\end{DoxyParamCaption})}
+
+
+
+Gets B\+T\+L\+C1000 Firmware version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em fw\+\_\+version} & B\+T\+L\+C1000 firmware version\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Not Supported before release version 2.\+5
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_gae548b85d5a03b4e15990da3f829f6220}\label{group__gap__misc__group_gae548b85d5a03b4e15990da3f829f6220}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_rf\_version\_get@{at\_ble\_rf\_version\_get}}
+\index{at\_ble\_rf\_version\_get@{at\_ble\_rf\_version\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_rf\_version\_get()}{at\_ble\_rf\_version\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+rf\+\_\+version\+\_\+get (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{rf\+\_\+version }\end{DoxyParamCaption})}
+
+
+
+Gets B\+T\+L\+C1000 RF version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em rf\+\_\+version} & B\+T\+L\+C1000 RF version\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Not Supported before release version 6.\+1
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_gad0b3d4bdff9b2778397f2fe65fc5efa1}\label{group__gap__misc__group_gad0b3d4bdff9b2778397f2fe65fc5efa1}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_rx\_power\_get@{at\_ble\_rx\_power\_get}}
+\index{at\_ble\_rx\_power\_get@{at\_ble\_rx\_power\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_rx\_power\_get()}{at\_ble\_rx\_power\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+rx\+\_\+power\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_abd23646d0c662860741f787efc8456f2}{at\+\_\+ble\+\_\+handle\+\_\+t}}}]{conn\+\_\+handle,  }\item[{int8\+\_\+t $\ast$}]{rx\+\_\+power }\end{DoxyParamCaption})}
+
+
+
+Gets RX power of a given connection. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em conn\+\_\+handle} & handle of the connection \\
+\hline
+\mbox{\texttt{ out}}  & {\em rx\+\_\+power} & RX power value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Not Supported in release version 2.\+0
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_gada18b50c32fb96be593fa15c245dc5c9}\label{group__gap__misc__group_gada18b50c32fb96be593fa15c245dc5c9}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_tx\_power\_get@{at\_ble\_tx\_power\_get}}
+\index{at\_ble\_tx\_power\_get@{at\_ble\_tx\_power\_get}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_tx\_power\_get()}{at\_ble\_tx\_power\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}} $\ast$}]{power }\end{DoxyParamCaption})}
+
+
+
+Gets TX power value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em power} & TX power value \mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}}. Default is 0 d\+Bm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_ga157b800cc43266a7c8afb90df9443796}\label{group__gap__misc__group_ga157b800cc43266a7c8afb90df9443796}} 
+\index{Misc APIs@{Misc APIs}!at\_ble\_tx\_power\_set@{at\_ble\_tx\_power\_set}}
+\index{at\_ble\_tx\_power\_set@{at\_ble\_tx\_power\_set}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_tx\_power\_set()}{at\_ble\_tx\_power\_set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}}}]{power }\end{DoxyParamCaption})}
+
+
+
+Sets TX power value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em power} & TX power value \mbox{\hyperlink{at__ble__api_8h_ad386e054a6ad3e11fc538a0796061404}{at\+\_\+ble\+\_\+tx\+\_\+power\+\_\+level\+\_\+t}}. Default is 0 d\+Bm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__misc__group_gafbcae7ff40f05d01e17b41430ae2987f}\label{group__gap__misc__group_gafbcae7ff40f05d01e17b41430ae2987f}} 
+\index{Misc APIs@{Misc APIs}!read\_32\_from\_BTLC1000@{read\_32\_from\_BTLC1000}}
+\index{read\_32\_from\_BTLC1000@{read\_32\_from\_BTLC1000}!Misc APIs@{Misc APIs}}
+\subsubsection{\texorpdfstring{read\_32\_from\_BTLC1000()}{read\_32\_from\_BTLC1000()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} read\+\_\+32\+\_\+from\+\_\+\+B\+T\+L\+C1000 (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{address,  }\item[{uint32\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Raeds 32 bit from B\+T\+L\+C1000. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em address} & Address to read from \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & Value stored in B\+T\+L\+C1000 memory\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Not Supported before release version 2.\+5
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}

@@ -1,0 +1,59 @@
+\hypertarget{union_i_p_s_r___type}{}\section{I\+P\+S\+R\+\_\+\+Type Union Reference}
+\label{union_i_p_s_r___type}\index{IPSR\_Type@{IPSR\_Type}}
+
+
+Union type to access the Interrupt Program Status Register (I\+P\+SR).  
+
+
+
+
+{\ttfamily \#include $<$core\+\_\+cm0plus.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint32\_t \mbox{\hyperlink{union_i_p_s_r___type_ad502ba7dbb2aab5f87c782b28f02622d}{ISR}}:9\\
+\>uint32\_t \mbox{\hyperlink{union_i_p_s_r___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}{\_reserved0}}:23\\
+\} \mbox{\hyperlink{union_i_p_s_r___type_a42e56daeef77340dea5ecca578bc9179}{b}}\\
+
+\end{tabbing}\item 
+uint32\+\_\+t \mbox{\hyperlink{union_i_p_s_r___type_ad0fb62e7a08e70fc5e0a76b67809f84b}{w}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Union type to access the Interrupt Program Status Register (I\+P\+SR). 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{union_i_p_s_r___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}\label{union_i_p_s_r___type_ac8a6a13838a897c8d0b8bc991bbaf7c1}} 
+\index{IPSR\_Type@{IPSR\_Type}!\_reserved0@{\_reserved0}}
+\index{\_reserved0@{\_reserved0}!IPSR\_Type@{IPSR\_Type}}
+\subsubsection{\texorpdfstring{\_reserved0}{\_reserved0}}
+{\footnotesize\ttfamily uint32\+\_\+t \+\_\+reserved0}
+
+bit\+: 9..31 Reserved \mbox{\Hypertarget{union_i_p_s_r___type_a42e56daeef77340dea5ecca578bc9179}\label{union_i_p_s_r___type_a42e56daeef77340dea5ecca578bc9179}} 
+\index{IPSR\_Type@{IPSR\_Type}!b@{b}}
+\index{b@{b}!IPSR\_Type@{IPSR\_Type}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily struct \{ ... \}   b}
+
+Structure used for bit access \mbox{\Hypertarget{union_i_p_s_r___type_ad502ba7dbb2aab5f87c782b28f02622d}\label{union_i_p_s_r___type_ad502ba7dbb2aab5f87c782b28f02622d}} 
+\index{IPSR\_Type@{IPSR\_Type}!ISR@{ISR}}
+\index{ISR@{ISR}!IPSR\_Type@{IPSR\_Type}}
+\subsubsection{\texorpdfstring{ISR}{ISR}}
+{\footnotesize\ttfamily uint32\+\_\+t I\+SR}
+
+bit\+: 0.. 8 Exception number \mbox{\Hypertarget{union_i_p_s_r___type_ad0fb62e7a08e70fc5e0a76b67809f84b}\label{union_i_p_s_r___type_ad0fb62e7a08e70fc5e0a76b67809f84b}} 
+\index{IPSR\_Type@{IPSR\_Type}!w@{w}}
+\index{w@{w}!IPSR\_Type@{IPSR\_Type}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily uint32\+\_\+t w}
+
+Type used for word access 
+
+The documentation for this union was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/\+C\+M\+S\+I\+S/\+Include/\mbox{\hyperlink{core__cm0plus_8h}{core\+\_\+cm0plus.\+h}}\end{DoxyCompactItemize}

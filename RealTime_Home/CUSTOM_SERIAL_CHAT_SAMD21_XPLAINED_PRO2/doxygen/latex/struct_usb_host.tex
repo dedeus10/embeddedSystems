@@ -1,0 +1,297 @@
+\hypertarget{struct_usb_host}{}\section{Usb\+Host Struct Reference}
+\label{struct_usb_host}\index{UsbHost@{UsbHost}}
+
+
+U\+S\+B\+\_\+\+H\+O\+ST hardware registers.  
+
+
+
+
+{\ttfamily \#include $<$usb.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___c_t_r_l_a___type}{U\+S\+B\+\_\+\+C\+T\+R\+L\+A\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_aa15f86099ea2915cc8667b8ba3980a91}{C\+T\+R\+LA}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x000 (R/W 8) Control A. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a092866123ac46d0985136e4dca2f36f4}{Reserved1}} \mbox{[}0x1\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___s_y_n_c_b_u_s_y___type}{U\+S\+B\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a207c0e2e615d2c9a63a3cd1f81d252f7}{S\+Y\+N\+C\+B\+U\+SY}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x002 (R/ 8) Synchronization Busy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___q_o_s_c_t_r_l___type}{U\+S\+B\+\_\+\+Q\+O\+S\+C\+T\+R\+L\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a9df8751b364843c227b690917f10a4b4}{Q\+O\+S\+C\+T\+RL}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x003 (R/W 8) U\+SB Quality Of Service. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a78f3c89e13bd565a077e9418f43aaa04}{Reserved2}} \mbox{[}0x4\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___c_t_r_l_b___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+C\+T\+R\+L\+B\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_abf548d767462ac8a8c067e067d688798}{C\+T\+R\+LB}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x008 (R/W 16) H\+O\+ST Control B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___h_s_o_f_c___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+H\+S\+O\+F\+C\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a275b218a05da429a550ae72e392a570d}{H\+S\+O\+FC}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x00A (R/W 8) H\+O\+ST Host Start Of Frame Control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_ae12c3e940f27988a085afebe2f779a21}{Reserved3}} \mbox{[}0x1\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___s_t_a_t_u_s___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a27b024fc9d1a50ffd83cb5a02acaeae4}{S\+T\+A\+T\+US}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x00C (R/W 8) H\+O\+ST Status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___f_s_m_s_t_a_t_u_s___type}{U\+S\+B\+\_\+\+F\+S\+M\+S\+T\+A\+T\+U\+S\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a96bd1d241ecd0cfafc7b234d2d76f769}{F\+S\+M\+S\+T\+A\+T\+US}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x00D (R/ 8) Finite State Machine Status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_aec3221203f6f367a8473128fc2f5429e}{Reserved4}} \mbox{[}0x2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___f_n_u_m___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+F\+N\+U\+M\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_ab81f4ba4820ccbeeddd23394d96aa981}{F\+N\+UM}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x010 (R/W 16) H\+O\+ST Host Frame Number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___f_l_e_n_h_i_g_h___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+F\+L\+E\+N\+H\+I\+G\+H\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a9804b2524fcb19f158a965f1e3856ba3}{F\+L\+E\+N\+H\+I\+GH}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x012 (R/ 8) H\+O\+ST Host Frame Length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a7321f81c873f0c6c846004e246ac204d}{Reserved5}} \mbox{[}0x1\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_e_n_c_l_r___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_aafd20ac677f26b7ae351e011ce8453d9}{I\+N\+T\+E\+N\+C\+LR}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x014 (R/W 16) H\+O\+ST Host Interrupt Enable Clear. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a8e9dcdbe22cc3e20d4b45b25938767e2}{Reserved6}} \mbox{[}0x2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_e_n_s_e_t___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a42b381acfa790828dcbf1f08c09467b0}{I\+N\+T\+E\+N\+S\+ET}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x018 (R/W 16) H\+O\+ST Host Interrupt Enable Set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a635230c3dfb24d3467a4d50456a3483c}{Reserved7}} \mbox{[}0x2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_f_l_a_g___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a5a5d6b646599bd8af79f47b297f5552f}{I\+N\+T\+F\+L\+AG}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x01C (R/W 16) H\+O\+ST Host Interrupt Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a61a0842f78678970cfc266608a1d201e}{Reserved8}} \mbox{[}0x2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___p_i_n_t_s_m_r_y___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+P\+I\+N\+T\+S\+M\+R\+Y\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_aaa834c6a6fd2e59e91fcf7571fe92b0d}{P\+I\+N\+T\+S\+M\+RY}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x020 (R/ 16) H\+O\+ST Pipe Interrupt Summary. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_a7dfdc057ed9939b6708cf88cd831a0cc}{Reserved9}} \mbox{[}0x2\mbox{]}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___d_e_s_c_a_d_d___type}{U\+S\+B\+\_\+\+D\+E\+S\+C\+A\+D\+D\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a4e4a634e8fbb0f0489872f7a9ee41bc4}{D\+E\+S\+C\+A\+DD}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x024 (R/W 32) Descriptor Address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___p_a_d_c_a_l___type}{U\+S\+B\+\_\+\+P\+A\+D\+C\+A\+L\+\_\+\+Type}} \mbox{\hyperlink{struct_usb_host_a446e7b83e50d200ac238425577a31e5a}{P\+A\+D\+C\+AL}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x028 (R/W 16) U\+SB P\+AD Calibration. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} \mbox{\hyperlink{struct_usb_host_ac615b366d825327aa7079ef09c4b51ad}{Reserved10}} \mbox{[}0x\+D6\mbox{]}
+\item 
+\mbox{\hyperlink{struct_usb_host_pipe}{Usb\+Host\+Pipe}} \mbox{\hyperlink{struct_usb_host_a922ba18f1b5ccc8f9f8e36166fe874e9}{Host\+Pipe}} \mbox{[}8\mbox{]}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x100 \mbox{\hyperlink{struct_usb_host_pipe}{Usb\+Host\+Pipe}} groups \mbox{[}E\+P\+T\+\_\+\+N\+U\+M$\ast$\+H\+O\+S\+T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+ED\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\+S\+B\+\_\+\+H\+O\+ST hardware registers. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_usb_host_aa15f86099ea2915cc8667b8ba3980a91}\label{struct_usb_host_aa15f86099ea2915cc8667b8ba3980a91}} 
+\index{UsbHost@{UsbHost}!CTRLA@{CTRLA}}
+\index{CTRLA@{CTRLA}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{CTRLA}{CTRLA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___c_t_r_l_a___type}{U\+S\+B\+\_\+\+C\+T\+R\+L\+A\+\_\+\+Type}} C\+T\+R\+LA}
+
+
+
+Offset\+: 0x000 (R/W 8) Control A. 
+
+\mbox{\Hypertarget{struct_usb_host_abf548d767462ac8a8c067e067d688798}\label{struct_usb_host_abf548d767462ac8a8c067e067d688798}} 
+\index{UsbHost@{UsbHost}!CTRLB@{CTRLB}}
+\index{CTRLB@{CTRLB}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{CTRLB}{CTRLB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___c_t_r_l_b___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+C\+T\+R\+L\+B\+\_\+\+Type}} C\+T\+R\+LB}
+
+
+
+Offset\+: 0x008 (R/W 16) H\+O\+ST Control B. 
+
+\mbox{\Hypertarget{struct_usb_host_a4e4a634e8fbb0f0489872f7a9ee41bc4}\label{struct_usb_host_a4e4a634e8fbb0f0489872f7a9ee41bc4}} 
+\index{UsbHost@{UsbHost}!DESCADD@{DESCADD}}
+\index{DESCADD@{DESCADD}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{DESCADD}{DESCADD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___d_e_s_c_a_d_d___type}{U\+S\+B\+\_\+\+D\+E\+S\+C\+A\+D\+D\+\_\+\+Type}} D\+E\+S\+C\+A\+DD}
+
+
+
+Offset\+: 0x024 (R/W 32) Descriptor Address. 
+
+\mbox{\Hypertarget{struct_usb_host_a9804b2524fcb19f158a965f1e3856ba3}\label{struct_usb_host_a9804b2524fcb19f158a965f1e3856ba3}} 
+\index{UsbHost@{UsbHost}!FLENHIGH@{FLENHIGH}}
+\index{FLENHIGH@{FLENHIGH}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{FLENHIGH}{FLENHIGH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___f_l_e_n_h_i_g_h___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+F\+L\+E\+N\+H\+I\+G\+H\+\_\+\+Type}} F\+L\+E\+N\+H\+I\+GH}
+
+
+
+Offset\+: 0x012 (R/ 8) H\+O\+ST Host Frame Length. 
+
+\mbox{\Hypertarget{struct_usb_host_ab81f4ba4820ccbeeddd23394d96aa981}\label{struct_usb_host_ab81f4ba4820ccbeeddd23394d96aa981}} 
+\index{UsbHost@{UsbHost}!FNUM@{FNUM}}
+\index{FNUM@{FNUM}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{FNUM}{FNUM}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___f_n_u_m___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+F\+N\+U\+M\+\_\+\+Type}} F\+N\+UM}
+
+
+
+Offset\+: 0x010 (R/W 16) H\+O\+ST Host Frame Number. 
+
+\mbox{\Hypertarget{struct_usb_host_a96bd1d241ecd0cfafc7b234d2d76f769}\label{struct_usb_host_a96bd1d241ecd0cfafc7b234d2d76f769}} 
+\index{UsbHost@{UsbHost}!FSMSTATUS@{FSMSTATUS}}
+\index{FSMSTATUS@{FSMSTATUS}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{FSMSTATUS}{FSMSTATUS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___f_s_m_s_t_a_t_u_s___type}{U\+S\+B\+\_\+\+F\+S\+M\+S\+T\+A\+T\+U\+S\+\_\+\+Type}} F\+S\+M\+S\+T\+A\+T\+US}
+
+
+
+Offset\+: 0x00D (R/ 8) Finite State Machine Status. 
+
+\mbox{\Hypertarget{struct_usb_host_a922ba18f1b5ccc8f9f8e36166fe874e9}\label{struct_usb_host_a922ba18f1b5ccc8f9f8e36166fe874e9}} 
+\index{UsbHost@{UsbHost}!HostPipe@{HostPipe}}
+\index{HostPipe@{HostPipe}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{HostPipe}{HostPipe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_usb_host_pipe}{Usb\+Host\+Pipe}} Host\+Pipe\mbox{[}8\mbox{]}}
+
+
+
+Offset\+: 0x100 \mbox{\hyperlink{struct_usb_host_pipe}{Usb\+Host\+Pipe}} groups \mbox{[}E\+P\+T\+\_\+\+N\+U\+M$\ast$\+H\+O\+S\+T\+\_\+\+I\+M\+P\+L\+E\+M\+E\+N\+T\+ED\mbox{]}. 
+
+\mbox{\Hypertarget{struct_usb_host_a275b218a05da429a550ae72e392a570d}\label{struct_usb_host_a275b218a05da429a550ae72e392a570d}} 
+\index{UsbHost@{UsbHost}!HSOFC@{HSOFC}}
+\index{HSOFC@{HSOFC}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{HSOFC}{HSOFC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___h_s_o_f_c___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+H\+S\+O\+F\+C\+\_\+\+Type}} H\+S\+O\+FC}
+
+
+
+Offset\+: 0x00A (R/W 8) H\+O\+ST Host Start Of Frame Control. 
+
+\mbox{\Hypertarget{struct_usb_host_aafd20ac677f26b7ae351e011ce8453d9}\label{struct_usb_host_aafd20ac677f26b7ae351e011ce8453d9}} 
+\index{UsbHost@{UsbHost}!INTENCLR@{INTENCLR}}
+\index{INTENCLR@{INTENCLR}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{INTENCLR}{INTENCLR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_e_n_c_l_r___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+Type}} I\+N\+T\+E\+N\+C\+LR}
+
+
+
+Offset\+: 0x014 (R/W 16) H\+O\+ST Host Interrupt Enable Clear. 
+
+\mbox{\Hypertarget{struct_usb_host_a42b381acfa790828dcbf1f08c09467b0}\label{struct_usb_host_a42b381acfa790828dcbf1f08c09467b0}} 
+\index{UsbHost@{UsbHost}!INTENSET@{INTENSET}}
+\index{INTENSET@{INTENSET}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{INTENSET}{INTENSET}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_e_n_s_e_t___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+Type}} I\+N\+T\+E\+N\+S\+ET}
+
+
+
+Offset\+: 0x018 (R/W 16) H\+O\+ST Host Interrupt Enable Set. 
+
+\mbox{\Hypertarget{struct_usb_host_a5a5d6b646599bd8af79f47b297f5552f}\label{struct_usb_host_a5a5d6b646599bd8af79f47b297f5552f}} 
+\index{UsbHost@{UsbHost}!INTFLAG@{INTFLAG}}
+\index{INTFLAG@{INTFLAG}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{INTFLAG}{INTFLAG}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___i_n_t_f_l_a_g___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+Type}} I\+N\+T\+F\+L\+AG}
+
+
+
+Offset\+: 0x01C (R/W 16) H\+O\+ST Host Interrupt Flag. 
+
+\mbox{\Hypertarget{struct_usb_host_a446e7b83e50d200ac238425577a31e5a}\label{struct_usb_host_a446e7b83e50d200ac238425577a31e5a}} 
+\index{UsbHost@{UsbHost}!PADCAL@{PADCAL}}
+\index{PADCAL@{PADCAL}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{PADCAL}{PADCAL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___p_a_d_c_a_l___type}{U\+S\+B\+\_\+\+P\+A\+D\+C\+A\+L\+\_\+\+Type}} P\+A\+D\+C\+AL}
+
+
+
+Offset\+: 0x028 (R/W 16) U\+SB P\+AD Calibration. 
+
+\mbox{\Hypertarget{struct_usb_host_aaa834c6a6fd2e59e91fcf7571fe92b0d}\label{struct_usb_host_aaa834c6a6fd2e59e91fcf7571fe92b0d}} 
+\index{UsbHost@{UsbHost}!PINTSMRY@{PINTSMRY}}
+\index{PINTSMRY@{PINTSMRY}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{PINTSMRY}{PINTSMRY}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___p_i_n_t_s_m_r_y___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+P\+I\+N\+T\+S\+M\+R\+Y\+\_\+\+Type}} P\+I\+N\+T\+S\+M\+RY}
+
+
+
+Offset\+: 0x020 (R/ 16) H\+O\+ST Pipe Interrupt Summary. 
+
+\mbox{\Hypertarget{struct_usb_host_a9df8751b364843c227b690917f10a4b4}\label{struct_usb_host_a9df8751b364843c227b690917f10a4b4}} 
+\index{UsbHost@{UsbHost}!QOSCTRL@{QOSCTRL}}
+\index{QOSCTRL@{QOSCTRL}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{QOSCTRL}{QOSCTRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___q_o_s_c_t_r_l___type}{U\+S\+B\+\_\+\+Q\+O\+S\+C\+T\+R\+L\+\_\+\+Type}} Q\+O\+S\+C\+T\+RL}
+
+
+
+Offset\+: 0x003 (R/W 8) U\+SB Quality Of Service. 
+
+\mbox{\Hypertarget{struct_usb_host_a092866123ac46d0985136e4dca2f36f4}\label{struct_usb_host_a092866123ac46d0985136e4dca2f36f4}} 
+\index{UsbHost@{UsbHost}!Reserved1@{Reserved1}}
+\index{Reserved1@{Reserved1}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved1}{Reserved1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved1\mbox{[}0x1\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_ac615b366d825327aa7079ef09c4b51ad}\label{struct_usb_host_ac615b366d825327aa7079ef09c4b51ad}} 
+\index{UsbHost@{UsbHost}!Reserved10@{Reserved10}}
+\index{Reserved10@{Reserved10}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved10}{Reserved10}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved10\mbox{[}0x\+D6\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a78f3c89e13bd565a077e9418f43aaa04}\label{struct_usb_host_a78f3c89e13bd565a077e9418f43aaa04}} 
+\index{UsbHost@{UsbHost}!Reserved2@{Reserved2}}
+\index{Reserved2@{Reserved2}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved2}{Reserved2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved2\mbox{[}0x4\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_ae12c3e940f27988a085afebe2f779a21}\label{struct_usb_host_ae12c3e940f27988a085afebe2f779a21}} 
+\index{UsbHost@{UsbHost}!Reserved3@{Reserved3}}
+\index{Reserved3@{Reserved3}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved3}{Reserved3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved3\mbox{[}0x1\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_aec3221203f6f367a8473128fc2f5429e}\label{struct_usb_host_aec3221203f6f367a8473128fc2f5429e}} 
+\index{UsbHost@{UsbHost}!Reserved4@{Reserved4}}
+\index{Reserved4@{Reserved4}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved4}{Reserved4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved4\mbox{[}0x2\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a7321f81c873f0c6c846004e246ac204d}\label{struct_usb_host_a7321f81c873f0c6c846004e246ac204d}} 
+\index{UsbHost@{UsbHost}!Reserved5@{Reserved5}}
+\index{Reserved5@{Reserved5}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved5}{Reserved5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved5\mbox{[}0x1\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a8e9dcdbe22cc3e20d4b45b25938767e2}\label{struct_usb_host_a8e9dcdbe22cc3e20d4b45b25938767e2}} 
+\index{UsbHost@{UsbHost}!Reserved6@{Reserved6}}
+\index{Reserved6@{Reserved6}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved6}{Reserved6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved6\mbox{[}0x2\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a635230c3dfb24d3467a4d50456a3483c}\label{struct_usb_host_a635230c3dfb24d3467a4d50456a3483c}} 
+\index{UsbHost@{UsbHost}!Reserved7@{Reserved7}}
+\index{Reserved7@{Reserved7}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved7}{Reserved7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved7\mbox{[}0x2\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a61a0842f78678970cfc266608a1d201e}\label{struct_usb_host_a61a0842f78678970cfc266608a1d201e}} 
+\index{UsbHost@{UsbHost}!Reserved8@{Reserved8}}
+\index{Reserved8@{Reserved8}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved8}{Reserved8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved8\mbox{[}0x2\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a7dfdc057ed9939b6708cf88cd831a0cc}\label{struct_usb_host_a7dfdc057ed9939b6708cf88cd831a0cc}} 
+\index{UsbHost@{UsbHost}!Reserved9@{Reserved9}}
+\index{Reserved9@{Reserved9}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{Reserved9}{Reserved9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___s_a_m_d21_e15_a__definitions_ga0d957f1433aaf5d70e4dc2b68288442d}{Ro\+Reg8}} Reserved9\mbox{[}0x2\mbox{]}}
+
+\mbox{\Hypertarget{struct_usb_host_a27b024fc9d1a50ffd83cb5a02acaeae4}\label{struct_usb_host_a27b024fc9d1a50ffd83cb5a02acaeae4}} 
+\index{UsbHost@{UsbHost}!STATUS@{STATUS}}
+\index{STATUS@{STATUS}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{STATUS}{STATUS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_u_s_b___h_o_s_t___s_t_a_t_u_s___type}{U\+S\+B\+\_\+\+H\+O\+S\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}} S\+T\+A\+T\+US}
+
+
+
+Offset\+: 0x00C (R/W 8) H\+O\+ST Status. 
+
+\mbox{\Hypertarget{struct_usb_host_a207c0e2e615d2c9a63a3cd1f81d252f7}\label{struct_usb_host_a207c0e2e615d2c9a63a3cd1f81d252f7}} 
+\index{UsbHost@{UsbHost}!SYNCBUSY@{SYNCBUSY}}
+\index{SYNCBUSY@{SYNCBUSY}!UsbHost@{UsbHost}}
+\subsubsection{\texorpdfstring{SYNCBUSY}{SYNCBUSY}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_af63697ed9952cc71e1225efe205f6cd3}{\+\_\+\+\_\+I}} \mbox{\hyperlink{union_u_s_b___s_y_n_c_b_u_s_y___type}{U\+S\+B\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Type}} S\+Y\+N\+C\+B\+U\+SY}
+
+
+
+Offset\+: 0x002 (R/ 8) Synchronization Busy. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/utils/cmsis/samd21/include/component/\mbox{\hyperlink{component_2usb_8h}{usb.\+h}}\end{DoxyCompactItemize}

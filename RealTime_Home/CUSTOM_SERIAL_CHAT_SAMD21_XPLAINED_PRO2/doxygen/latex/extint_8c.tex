@@ -1,0 +1,97 @@
+\hypertarget{extint_8c}{}\section{A\+S\+F/sam0/drivers/extint/extint\+\_\+sam\+\_\+d\+\_\+r\+\_\+h/extint.c File Reference}
+\label{extint_8c}\index{ASF/sam0/drivers/extint/extint\_sam\_d\_r\_h/extint.c@{ASF/sam0/drivers/extint/extint\_sam\_d\_r\_h/extint.c}}
+
+
+S\+AM External Interrupt Driver.  
+
+
+{\ttfamily \#include $<$system.\+h$>$}\newline
+{\ttfamily \#include $<$system\+\_\+interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$extint.\+h$>$}\newline
+{\ttfamily \#include $<$conf\+\_\+extint.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{extint_8c_aef7a12a69f19f50cfe79629c7035785d}{E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE}}~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga1ab9bb87560ad127ed982591b7d67311a66f60c7b34b5fc16a9845d83370f7231}{G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+0}}
+\item 
+\#define \mbox{\hyperlink{extint_8c_af8e6ffd50e0cedca779f4e1b925b6687}{\+\_\+extint\+\_\+is\+\_\+gclk\+\_\+required}}(filter\+\_\+input\+\_\+signal,  detection\+\_\+criteria)
+\begin{DoxyCompactList}\small\item\em Determin if the general clock is required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{extint_8c_a597d446295a54db8c8edd2f15b81216e}{\+\_\+system\+\_\+extint\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gab6dc4e3c3c0c85f96c52c130f3b63241}{extint\+\_\+chan\+\_\+get\+\_\+config\+\_\+defaults}} (struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Initializes an External Interrupt channel configuration structure to defaults. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gace11f1168aa706f9b40f6c4d65b402a0}{extint\+\_\+chan\+\_\+set\+\_\+config}} (const uint8\+\_\+t channel, const struct \mbox{\hyperlink{structextint__chan__conf}{extint\+\_\+chan\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt channel configuration to the hardware module. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group__group__sam0__utils__status__codes_ga751c892e5a46b8e7d282085a5a5bf151}{status\+\_\+code}} \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gae6d52d3a6437598ebf56f2ad75193033}{extint\+\_\+nmi\+\_\+set\+\_\+config}} (const uint8\+\_\+t nmi\+\_\+channel, const struct \mbox{\hyperlink{structextint__nmi__conf}{extint\+\_\+nmi\+\_\+conf}} $\ast$const config)
+\begin{DoxyCompactList}\small\item\em Writes an External Interrupt N\+MI channel configuration to the hardware module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_gadbcf557b05082e2d25111e3ad9e3385e}{extint\+\_\+enable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Enables an External Interrupt event output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga1e150eaf8dde1371cb31111f5feae5e4}{extint\+\_\+disable\+\_\+events}} (struct \mbox{\hyperlink{structextint__events}{extint\+\_\+events}} $\ast$const events)
+\begin{DoxyCompactList}\small\item\em Disables an External Interrupt event output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}} \mbox{\hyperlink{extint_8c_ac439c86bc60dd262bfe3c8be54244f7d}{\+\_\+extint\+\_\+dev}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AM External Interrupt Driver. 
+
+Copyright (c) 2012-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{extint_8c_af8e6ffd50e0cedca779f4e1b925b6687}\label{extint_8c_af8e6ffd50e0cedca779f4e1b925b6687}} 
+\index{extint.c@{extint.c}!\_extint\_is\_gclk\_required@{\_extint\_is\_gclk\_required}}
+\index{\_extint\_is\_gclk\_required@{\_extint\_is\_gclk\_required}!extint.c@{extint.c}}
+\subsubsection{\texorpdfstring{\_extint\_is\_gclk\_required}{\_extint\_is\_gclk\_required}}
+{\footnotesize\ttfamily \#define \+\_\+extint\+\_\+is\+\_\+gclk\+\_\+required(\begin{DoxyParamCaption}\item[{}]{filter\+\_\+input\+\_\+signal,  }\item[{}]{detection\+\_\+criteria }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((filter\_input\_signal) ? \textcolor{keyword}{true} : (\(\backslash\)}
+\DoxyCodeLine{            (\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a62003fada64b948bb611011f2179b2fb}{EXTINT\_DETECT\_RISING}} == (detection\_criteria)) ? \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} : (\(\backslash\)}
+\DoxyCodeLine{            (\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2a0477f603ca427098cd743a9919c89f43}{EXTINT\_DETECT\_FALLING}} == (detection\_criteria)) ? \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} : (\(\backslash\)}
+\DoxyCodeLine{            (\mbox{\hyperlink{group__asfdoc__sam0__extint__group_gga920ab9931e047b548d07ad29dedfcca2aa7386678eccf0e246afa75614bfd8841}{EXTINT\_DETECT\_BOTH}} == (detection\_criteria)) ? \mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}} : \textcolor{keyword}{false}))))}
+
+\end{DoxyCode}
+
+
+Determin if the general clock is required. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filter\+\_\+input\+\_\+signal} & Filter the raw input signal to prevent noise \\
+\hline
+\mbox{\texttt{ in}}  & {\em detection\+\_\+criteria} & Edge detection mode to use (\mbox{\hyperlink{group__asfdoc__sam0__extint__group_ga920ab9931e047b548d07ad29dedfcca2}{extint\+\_\+detect}}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{extint_8c_aef7a12a69f19f50cfe79629c7035785d}\label{extint_8c_aef7a12a69f19f50cfe79629c7035785d}} 
+\index{extint.c@{extint.c}!EXTINT\_CLOCK\_SOURCE@{EXTINT\_CLOCK\_SOURCE}}
+\index{EXTINT\_CLOCK\_SOURCE@{EXTINT\_CLOCK\_SOURCE}!extint.c@{extint.c}}
+\subsubsection{\texorpdfstring{EXTINT\_CLOCK\_SOURCE}{EXTINT\_CLOCK\_SOURCE}}
+{\footnotesize\ttfamily \#define E\+X\+T\+I\+N\+T\+\_\+\+C\+L\+O\+C\+K\+\_\+\+S\+O\+U\+R\+CE~\mbox{\hyperlink{group__asfdoc__sam0__system__clock__group_gga1ab9bb87560ad127ed982591b7d67311a66f60c7b34b5fc16a9845d83370f7231}{G\+C\+L\+K\+\_\+\+G\+E\+N\+E\+R\+A\+T\+O\+R\+\_\+0}}}
+
+Configuration option, setting the E\+IC clock source which can be used for E\+IC edge detection or filtering. This option may be overridden in the module configuration header file {\ttfamily \mbox{\hyperlink{conf__extint_8h}{conf\+\_\+extint.\+h}}}. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{extint_8c_a597d446295a54db8c8edd2f15b81216e}\label{extint_8c_a597d446295a54db8c8edd2f15b81216e}} 
+\index{extint.c@{extint.c}!\_system\_extint\_init@{\_system\_extint\_init}}
+\index{\_system\_extint\_init@{\_system\_extint\_init}!extint.c@{extint.c}}
+\subsubsection{\texorpdfstring{\_system\_extint\_init()}{\_system\_extint\_init()}}
+{\footnotesize\ttfamily void \+\_\+system\+\_\+extint\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{extint_8c_ac439c86bc60dd262bfe3c8be54244f7d}\label{extint_8c_ac439c86bc60dd262bfe3c8be54244f7d}} 
+\index{extint.c@{extint.c}!\_extint\_dev@{\_extint\_dev}}
+\index{\_extint\_dev@{\_extint\_dev}!extint.c@{extint.c}}
+\subsubsection{\texorpdfstring{\_extint\_dev}{\_extint\_dev}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct__extint__module}{\+\_\+extint\+\_\+module}} \+\_\+extint\+\_\+dev}
+

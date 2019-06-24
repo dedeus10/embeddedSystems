@@ -1,0 +1,54 @@
+\hypertarget{structat__ble__dtm__t}{}\section{at\+\_\+ble\+\_\+dtm\+\_\+t Struct Reference}
+\label{structat__ble__dtm__t}\index{at\_ble\_dtm\_t@{at\_ble\_dtm\_t}}
+
+
+data type of D\+MT status and report, \char`\"{}number\+\_\+of\+\_\+packets\char`\"{} will be used only in case of receiving the event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} after calling the A\+PI  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dtm__t_a9ae90dd1d8198ce61dd0cac01efe7611}{op\+\_\+code}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structat__ble__dtm__t_ade818037fd6c985038ff29656089758d}{status}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__dtm__t_a4ae16b3de55d53c6613d86b65fa2ffe7}{number\+\_\+of\+\_\+packets}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+data type of D\+MT status and report, \char`\"{}number\+\_\+of\+\_\+packets\char`\"{} will be used only in case of receiving the event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} after calling the A\+PI 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__dtm__group_gafa12d16c45ae0e5efc01beba4772ab69}{at\+\_\+ble\+\_\+dtm\+\_\+stop\+\_\+test}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__dtm__t_a4ae16b3de55d53c6613d86b65fa2ffe7}\label{structat__ble__dtm__t_a4ae16b3de55d53c6613d86b65fa2ffe7}} 
+\index{at\_ble\_dtm\_t@{at\_ble\_dtm\_t}!number\_of\_packets@{number\_of\_packets}}
+\index{number\_of\_packets@{number\_of\_packets}!at\_ble\_dtm\_t@{at\_ble\_dtm\_t}}
+\subsubsection{\texorpdfstring{number\_of\_packets}{number\_of\_packets}}
+{\footnotesize\ttfamily uint16\+\_\+t number\+\_\+of\+\_\+packets}
+
+Number of packets received (Read this variable only after calling \mbox{\hyperlink{group__dtm__group_gafa12d16c45ae0e5efc01beba4772ab69}{at\+\_\+ble\+\_\+dtm\+\_\+stop\+\_\+test}} api with Event \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}}) \mbox{\Hypertarget{structat__ble__dtm__t_a9ae90dd1d8198ce61dd0cac01efe7611}\label{structat__ble__dtm__t_a9ae90dd1d8198ce61dd0cac01efe7611}} 
+\index{at\_ble\_dtm\_t@{at\_ble\_dtm\_t}!op\_code@{op\_code}}
+\index{op\_code@{op\_code}!at\_ble\_dtm\_t@{at\_ble\_dtm\_t}}
+\subsubsection{\texorpdfstring{op\_code}{op\_code}}
+{\footnotesize\ttfamily uint16\+\_\+t op\+\_\+code}
+
+op-\/code for the current operation refer to \mbox{\hyperlink{at__ble__api_8h_ac5a600d38c2e7885bc447e7cca933e3a}{dtm\+\_\+op\+\_\+codes}} \mbox{\Hypertarget{structat__ble__dtm__t_ade818037fd6c985038ff29656089758d}\label{structat__ble__dtm__t_ade818037fd6c985038ff29656089758d}} 
+\index{at\_ble\_dtm\_t@{at\_ble\_dtm\_t}!status@{status}}
+\index{status@{status}!at\_ble\_dtm\_t@{at\_ble\_dtm\_t}}
+\subsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily uint8\+\_\+t status}
+
+status of the current command (events \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baebad529dc56000832da6054a10c8689d099}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+P\+A\+C\+K\+E\+T\+\_\+\+R\+E\+P\+O\+RT}} and \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba1dfeb2b9d9a9ceae264ac9eceae01f56}{A\+T\+\_\+\+B\+L\+E\+\_\+\+L\+E\+\_\+\+T\+E\+S\+T\+\_\+\+S\+T\+A\+T\+US}} ) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

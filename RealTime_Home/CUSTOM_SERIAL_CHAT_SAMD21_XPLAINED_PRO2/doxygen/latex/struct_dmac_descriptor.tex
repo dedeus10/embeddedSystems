@@ -1,0 +1,85 @@
+\hypertarget{struct_dmac_descriptor}{}\section{Dmac\+Descriptor Struct Reference}
+\label{struct_dmac_descriptor}\index{DmacDescriptor@{DmacDescriptor}}
+
+
+D\+M\+AC Descriptor S\+R\+AM registers.  
+
+
+
+
+{\ttfamily \#include $<$dmac.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___b_t_c_t_r_l___type}{D\+M\+A\+C\+\_\+\+B\+T\+C\+T\+R\+L\+\_\+\+Type}} \mbox{\hyperlink{struct_dmac_descriptor_a88d1dbe42db9afd1c76f28a8df3264e0}{B\+T\+C\+T\+RL}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x00 (R/W 16) Block Transfer Control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___b_t_c_n_t___type}{D\+M\+A\+C\+\_\+\+B\+T\+C\+N\+T\+\_\+\+Type}} \mbox{\hyperlink{struct_dmac_descriptor_a661d265c3dd9eec59e6f687eddaa3e6f}{B\+T\+C\+NT}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x02 (R/W 16) Block Transfer Count. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___s_r_c_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+S\+R\+C\+A\+D\+D\+R\+\_\+\+Type}} \mbox{\hyperlink{struct_dmac_descriptor_a9e61b7d0eff969d967dfca4eaf65ece3}{S\+R\+C\+A\+D\+DR}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x04 (R/W 32) Transfer Source Address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___d_s_t_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+D\+S\+T\+A\+D\+D\+R\+\_\+\+Type}} \mbox{\hyperlink{struct_dmac_descriptor_af2289e9979f4beae2ca64fde972762b9}{D\+S\+T\+A\+D\+DR}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x08 (R/W 32) Transfer Destination Address. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___d_e_s_c_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+D\+E\+S\+C\+A\+D\+D\+R\+\_\+\+Type}} \mbox{\hyperlink{struct_dmac_descriptor_a1c8d3adfe0bd45b3f49ed6b3bc884674}{D\+E\+S\+C\+A\+D\+DR}}
+\begin{DoxyCompactList}\small\item\em Offset\+: 0x0C (R/W 32) Next Descriptor Address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+M\+AC Descriptor S\+R\+AM registers. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_dmac_descriptor_a661d265c3dd9eec59e6f687eddaa3e6f}\label{struct_dmac_descriptor_a661d265c3dd9eec59e6f687eddaa3e6f}} 
+\index{DmacDescriptor@{DmacDescriptor}!BTCNT@{BTCNT}}
+\index{BTCNT@{BTCNT}!DmacDescriptor@{DmacDescriptor}}
+\subsubsection{\texorpdfstring{BTCNT}{BTCNT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___b_t_c_n_t___type}{D\+M\+A\+C\+\_\+\+B\+T\+C\+N\+T\+\_\+\+Type}} B\+T\+C\+NT}
+
+
+
+Offset\+: 0x02 (R/W 16) Block Transfer Count. 
+
+\mbox{\Hypertarget{struct_dmac_descriptor_a88d1dbe42db9afd1c76f28a8df3264e0}\label{struct_dmac_descriptor_a88d1dbe42db9afd1c76f28a8df3264e0}} 
+\index{DmacDescriptor@{DmacDescriptor}!BTCTRL@{BTCTRL}}
+\index{BTCTRL@{BTCTRL}!DmacDescriptor@{DmacDescriptor}}
+\subsubsection{\texorpdfstring{BTCTRL}{BTCTRL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___b_t_c_t_r_l___type}{D\+M\+A\+C\+\_\+\+B\+T\+C\+T\+R\+L\+\_\+\+Type}} B\+T\+C\+T\+RL}
+
+
+
+Offset\+: 0x00 (R/W 16) Block Transfer Control. 
+
+\mbox{\Hypertarget{struct_dmac_descriptor_a1c8d3adfe0bd45b3f49ed6b3bc884674}\label{struct_dmac_descriptor_a1c8d3adfe0bd45b3f49ed6b3bc884674}} 
+\index{DmacDescriptor@{DmacDescriptor}!DESCADDR@{DESCADDR}}
+\index{DESCADDR@{DESCADDR}!DmacDescriptor@{DmacDescriptor}}
+\subsubsection{\texorpdfstring{DESCADDR}{DESCADDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___d_e_s_c_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+D\+E\+S\+C\+A\+D\+D\+R\+\_\+\+Type}} D\+E\+S\+C\+A\+D\+DR}
+
+
+
+Offset\+: 0x0C (R/W 32) Next Descriptor Address. 
+
+\mbox{\Hypertarget{struct_dmac_descriptor_af2289e9979f4beae2ca64fde972762b9}\label{struct_dmac_descriptor_af2289e9979f4beae2ca64fde972762b9}} 
+\index{DmacDescriptor@{DmacDescriptor}!DSTADDR@{DSTADDR}}
+\index{DSTADDR@{DSTADDR}!DmacDescriptor@{DmacDescriptor}}
+\subsubsection{\texorpdfstring{DSTADDR}{DSTADDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___d_s_t_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+D\+S\+T\+A\+D\+D\+R\+\_\+\+Type}} D\+S\+T\+A\+D\+DR}
+
+
+
+Offset\+: 0x08 (R/W 32) Transfer Destination Address. 
+
+\mbox{\Hypertarget{struct_dmac_descriptor_a9e61b7d0eff969d967dfca4eaf65ece3}\label{struct_dmac_descriptor_a9e61b7d0eff969d967dfca4eaf65ece3}} 
+\index{DmacDescriptor@{DmacDescriptor}!SRCADDR@{SRCADDR}}
+\index{SRCADDR@{SRCADDR}!DmacDescriptor@{DmacDescriptor}}
+\subsubsection{\texorpdfstring{SRCADDR}{SRCADDR}}
+{\footnotesize\ttfamily \mbox{\hyperlink{core__cm0plus_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO}} \mbox{\hyperlink{union_d_m_a_c___s_r_c_a_d_d_r___type}{D\+M\+A\+C\+\_\+\+S\+R\+C\+A\+D\+D\+R\+\_\+\+Type}} S\+R\+C\+A\+D\+DR}
+
+
+
+Offset\+: 0x04 (R/W 32) Transfer Source Address. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/sam0/utils/cmsis/samd21/include/component/\mbox{\hyperlink{component_2dmac_8h}{dmac.\+h}}\end{DoxyCompactItemize}

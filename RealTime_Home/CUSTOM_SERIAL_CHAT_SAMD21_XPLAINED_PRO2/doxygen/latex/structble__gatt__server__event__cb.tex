@@ -1,0 +1,137 @@
+\hypertarget{structble__gatt__server__event__cb}{}\section{ble\+\_\+gatt\+\_\+server\+\_\+event\+\_\+cb Struct Reference}
+\label{structble__gatt__server__event__cb}\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+
+
+{\ttfamily \#include $<$ble\+\_\+manager.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_aba03ebc64859db1ac8bf0882dc6acac2}{notification\+\_\+confirmed}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the notification confirmation on the event of notification send. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a5310926130d77c5c1b550880f4ae2172}{indication\+\_\+confirmed}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server sends the indication to G\+A\+TT Client. Refer \mbox{\hyperlink{structat__ble__indication__confirmed__t}{at\+\_\+ble\+\_\+indication\+\_\+confirmed\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a3180cecaaa199e1dd5aecb41f552b4bc}{characteristic\+\_\+changed}}
+\begin{DoxyCompactList}\small\item\em If G\+A\+TT Client updates the G\+A\+TT Server characteristics, the G\+A\+TT server will send this event. Refer \mbox{\hyperlink{structat__ble__characteristic__changed__t}{at\+\_\+ble\+\_\+characteristic\+\_\+changed\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a9045a6f37cec8cb9bfd83567f653651a}{characteristic\+\_\+configuration\+\_\+changed}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Client changes G\+A\+TT Server Characteristics configuration. Refer \mbox{\hyperlink{structat__ble__characteristic__configuration__changed__t}{at\+\_\+ble\+\_\+characteristic\+\_\+configuration\+\_\+changed\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a1d1df8c125e687ee86e171a498951a59}{service\+\_\+changed\+\_\+indication\+\_\+sent}}
+\begin{DoxyCompactList}\small\item\em G\+A\+TT Server add/remove the service dynamically. If G\+A\+TT Client subscribes for this event then service changed indication will be sent. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_ae84f0ecb2ade7b0d22fd24370470fba3}{write\+\_\+authorize\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Peer(\+G\+A\+T\+T Client) asks authorization for writing into G\+A\+TT Server database. Refer \mbox{\hyperlink{structat__ble__characteristic__write__request__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+request\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_af0e89d90da1ef55f018e81b470d21df3}{mtu\+\_\+changed\+\_\+indication}}
+\begin{DoxyCompactList}\small\item\em Peer device changes the M\+TU size. Refer \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a0e2ca473ce2221274e8ce05a48233d49}{mtu\+\_\+changed\+\_\+cmd\+\_\+complete}}
+\begin{DoxyCompactList}\small\item\em Device request peer to change the M\+TU size. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a22defb4fe6f795a56b10cb020dfa4272}{characteristic\+\_\+write\+\_\+cmd\+\_\+cmp}}
+\begin{DoxyCompactList}\small\item\em Characteristics write command complete. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} \mbox{\hyperlink{structble__gatt__server__event__cb_a73149ea7b859fbb1183fb8ab5aa3ad79}{read\+\_\+authorize\+\_\+request}}
+\begin{DoxyCompactList}\small\item\em Peer(\+G\+A\+T\+T Client) asks authorization for reading G\+A\+TT Server database. Refer \mbox{\hyperlink{structat__ble__characteristic__read__req__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+req\+\_\+t}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a3180cecaaa199e1dd5aecb41f552b4bc}\label{structble__gatt__server__event__cb_a3180cecaaa199e1dd5aecb41f552b4bc}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!characteristic\_changed@{characteristic\_changed}}
+\index{characteristic\_changed@{characteristic\_changed}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_changed}{characteristic\_changed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+changed}
+
+
+
+If G\+A\+TT Client updates the G\+A\+TT Server characteristics, the G\+A\+TT server will send this event. Refer \mbox{\hyperlink{structat__ble__characteristic__changed__t}{at\+\_\+ble\+\_\+characteristic\+\_\+changed\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a9045a6f37cec8cb9bfd83567f653651a}\label{structble__gatt__server__event__cb_a9045a6f37cec8cb9bfd83567f653651a}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!characteristic\_configuration\_changed@{characteristic\_configuration\_changed}}
+\index{characteristic\_configuration\_changed@{characteristic\_configuration\_changed}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_configuration\_changed}{characteristic\_configuration\_changed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+configuration\+\_\+changed}
+
+
+
+G\+A\+TT Client changes G\+A\+TT Server Characteristics configuration. Refer \mbox{\hyperlink{structat__ble__characteristic__configuration__changed__t}{at\+\_\+ble\+\_\+characteristic\+\_\+configuration\+\_\+changed\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a22defb4fe6f795a56b10cb020dfa4272}\label{structble__gatt__server__event__cb_a22defb4fe6f795a56b10cb020dfa4272}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!characteristic\_write\_cmd\_cmp@{characteristic\_write\_cmd\_cmp}}
+\index{characteristic\_write\_cmd\_cmp@{characteristic\_write\_cmd\_cmp}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{characteristic\_write\_cmd\_cmp}{characteristic\_write\_cmd\_cmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} characteristic\+\_\+write\+\_\+cmd\+\_\+cmp}
+
+
+
+Characteristics write command complete. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a5310926130d77c5c1b550880f4ae2172}\label{structble__gatt__server__event__cb_a5310926130d77c5c1b550880f4ae2172}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!indication\_confirmed@{indication\_confirmed}}
+\index{indication\_confirmed@{indication\_confirmed}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{indication\_confirmed}{indication\_confirmed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} indication\+\_\+confirmed}
+
+
+
+G\+A\+TT Server sends the indication to G\+A\+TT Client. Refer \mbox{\hyperlink{structat__ble__indication__confirmed__t}{at\+\_\+ble\+\_\+indication\+\_\+confirmed\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a0e2ca473ce2221274e8ce05a48233d49}\label{structble__gatt__server__event__cb_a0e2ca473ce2221274e8ce05a48233d49}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!mtu\_changed\_cmd\_complete@{mtu\_changed\_cmd\_complete}}
+\index{mtu\_changed\_cmd\_complete@{mtu\_changed\_cmd\_complete}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{mtu\_changed\_cmd\_complete}{mtu\_changed\_cmd\_complete}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} mtu\+\_\+changed\+\_\+cmd\+\_\+complete}
+
+
+
+Device request peer to change the M\+TU size. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_af0e89d90da1ef55f018e81b470d21df3}\label{structble__gatt__server__event__cb_af0e89d90da1ef55f018e81b470d21df3}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!mtu\_changed\_indication@{mtu\_changed\_indication}}
+\index{mtu\_changed\_indication@{mtu\_changed\_indication}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{mtu\_changed\_indication}{mtu\_changed\_indication}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} mtu\+\_\+changed\+\_\+indication}
+
+
+
+Peer device changes the M\+TU size. Refer \mbox{\hyperlink{structat__ble__mtu__changed__ind__t}{at\+\_\+ble\+\_\+mtu\+\_\+changed\+\_\+ind\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_aba03ebc64859db1ac8bf0882dc6acac2}\label{structble__gatt__server__event__cb_aba03ebc64859db1ac8bf0882dc6acac2}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!notification\_confirmed@{notification\_confirmed}}
+\index{notification\_confirmed@{notification\_confirmed}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{notification\_confirmed}{notification\_confirmed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} notification\+\_\+confirmed}
+
+
+
+G\+A\+TT Server sends the notification confirmation on the event of notification send. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a73149ea7b859fbb1183fb8ab5aa3ad79}\label{structble__gatt__server__event__cb_a73149ea7b859fbb1183fb8ab5aa3ad79}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!read\_authorize\_request@{read\_authorize\_request}}
+\index{read\_authorize\_request@{read\_authorize\_request}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{read\_authorize\_request}{read\_authorize\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} read\+\_\+authorize\+\_\+request}
+
+
+
+Peer(\+G\+A\+T\+T Client) asks authorization for reading G\+A\+TT Server database. Refer \mbox{\hyperlink{structat__ble__characteristic__read__req__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+req\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_a1d1df8c125e687ee86e171a498951a59}\label{structble__gatt__server__event__cb_a1d1df8c125e687ee86e171a498951a59}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!service\_changed\_indication\_sent@{service\_changed\_indication\_sent}}
+\index{service\_changed\_indication\_sent@{service\_changed\_indication\_sent}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{service\_changed\_indication\_sent}{service\_changed\_indication\_sent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} service\+\_\+changed\+\_\+indication\+\_\+sent}
+
+
+
+G\+A\+TT Server add/remove the service dynamically. If G\+A\+TT Client subscribes for this event then service changed indication will be sent. Refer \mbox{\hyperlink{structat__ble__cmd__complete__event__t}{at\+\_\+ble\+\_\+cmd\+\_\+complete\+\_\+event\+\_\+t}}. 
+
+\mbox{\Hypertarget{structble__gatt__server__event__cb_ae84f0ecb2ade7b0d22fd24370470fba3}\label{structble__gatt__server__event__cb_ae84f0ecb2ade7b0d22fd24370470fba3}} 
+\index{ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}!write\_authorize\_request@{write\_authorize\_request}}
+\index{write\_authorize\_request@{write\_authorize\_request}!ble\_gatt\_server\_event\_cb@{ble\_gatt\_server\_event\_cb}}
+\subsubsection{\texorpdfstring{write\_authorize\_request}{write\_authorize\_request}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ble__manager_8h_a04ce4bb8cb8282f2762e3924b1773cc9}{ble\+\_\+event\+\_\+callback\+\_\+t}} write\+\_\+authorize\+\_\+request}
+
+
+
+Peer(\+G\+A\+T\+T Client) asks authorization for writing into G\+A\+TT Server database. Refer \mbox{\hyperlink{structat__ble__characteristic__write__request__t}{at\+\_\+ble\+\_\+characteristic\+\_\+write\+\_\+request\+\_\+t}}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/ble\+\_\+services/ble\+\_\+mgr/\mbox{\hyperlink{ble__manager_8h}{ble\+\_\+manager.\+h}}\end{DoxyCompactItemize}

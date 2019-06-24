@@ -1,0 +1,45 @@
+\hypertarget{structat__ble__char__list}{}\section{at\+\_\+ble\+\_\+char\+\_\+list Struct Reference}
+\label{structat__ble__char__list}\index{at\_ble\_char\_list@{at\_ble\_char\_list}}
+
+
+Encapsulation for a characteristic and its length.  
+
+
+
+
+{\ttfamily \#include $<$at\+\_\+ble\+\_\+api.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__char__list_a8cd0cff3a116d6ef67f787ae3a6a48d4}{att\+\_\+handle}}
+\begin{DoxyCompactList}\small\item\em Characteristic handle. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structat__ble__char__list_a5dda30258d10935828949e9b5d7efb98}{att\+\_\+len}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulation for a characteristic and its length. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structat__ble__char__list_a8cd0cff3a116d6ef67f787ae3a6a48d4}\label{structat__ble__char__list_a8cd0cff3a116d6ef67f787ae3a6a48d4}} 
+\index{at\_ble\_char\_list@{at\_ble\_char\_list}!att\_handle@{att\_handle}}
+\index{att\_handle@{att\_handle}!at\_ble\_char\_list@{at\_ble\_char\_list}}
+\subsubsection{\texorpdfstring{att\_handle}{att\_handle}}
+{\footnotesize\ttfamily uint16\+\_\+t att\+\_\+handle}
+
+
+
+Characteristic handle. 
+
+\mbox{\Hypertarget{structat__ble__char__list_a5dda30258d10935828949e9b5d7efb98}\label{structat__ble__char__list_a5dda30258d10935828949e9b5d7efb98}} 
+\index{at\_ble\_char\_list@{at\_ble\_char\_list}!att\_len@{att\_len}}
+\index{att\_len@{att\_len}!at\_ble\_char\_list@{at\_ble\_char\_list}}
+\subsubsection{\texorpdfstring{att\_len}{att\_len}}
+{\footnotesize\ttfamily uint16\+\_\+t att\+\_\+len}
+
+Characteristic length \+: must be the real length of the Characteristic every requested handle shall be delivered as one indication \mbox{\hyperlink{structat__ble__characteristic__read__response__t}{at\+\_\+ble\+\_\+characteristic\+\_\+read\+\_\+response\+\_\+t}} if Length of handle 1 is larger than the real length, the handle value will contain his length + length from the other requested handles 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/inc/\mbox{\hyperlink{at__ble__api_8h}{at\+\_\+ble\+\_\+api.\+h}}\end{DoxyCompactItemize}

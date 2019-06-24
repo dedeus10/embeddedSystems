@@ -1,0 +1,404 @@
+\hypertarget{ble__utils_8h}{}\section{A\+S\+F/thirdparty/wireless/ble\+\_\+sdk/utils/ble\+\_\+utils.h File Reference}
+\label{ble__utils_8h}\index{ASF/thirdparty/wireless/ble\_sdk/utils/ble\_utils.h@{ASF/thirdparty/wireless/ble\_sdk/utils/ble\_utils.h}}
+
+
+B\+LE Utils declarations.  
+
+
+{\ttfamily \#include $<$asf.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aed0f3c0fcc602cedc19e13730abeef70}{B\+T\+L\+C1000\+\_\+\+MR}}~0x00
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a1d7440c55b694c1fce8dec0f54256cf0}{B\+T\+L\+C1000\+\_\+\+ZR}}~0x01
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ab8a436bfce91c696fa5030f114e143c0}{B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+A\+J\+O\+R\+\_\+\+NO}}(version)~((version $>$$>$ 28) \& 0x0000000\+F)
+\begin{DoxyCompactList}\small\item\em Blu\+S\+DK version. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a048d0a30dc436dbfb15515e4a8af62bf}{B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+I\+N\+O\+R\+\_\+\+NO}}(version)~((version $>$$>$ 24) \& 0x0000000\+F)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_afe20fe9d93d1e469edbded9a1d3c4ae6}{B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+B\+U\+I\+L\+D\+\_\+\+NO}}(version)~(version \& 0x0000\+F\+F\+F\+F)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a6fa8577081d6160f52e66c12d4774f26}{B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+0}}~(0x60000000)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a2629524f13a61cd7d8036ee3dc43738a}{B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+1}}~(0x61000000)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a52a41baae3355869b622079065a8d2e7}{B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+I\+N\+O\+R\+\_\+\+N\+O\+\_\+\+I\+NC}}~(1)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a379ba08ab95ade277cd93b6814a44896}{B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+V\+E\+R\+S\+I\+ON}}~\mbox{\hyperlink{ble__utils_8h_a2629524f13a61cd7d8036ee3dc43738a}{B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+1}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ab81b8754d1887d6f0ac8ed63f3be8758}{B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+O\+B\+S\+E\+R\+V\+ER}}~0x01
+\begin{DoxyCompactList}\small\item\em Observer role. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a0fa3bc1f4cbd1b2fec580e0fed80af7b}{B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+ER}}~0x02
+\begin{DoxyCompactList}\small\item\em Broadcaster role. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aa3a5fccfa207d063a655fea753e9d070}{B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+C\+E\+N\+T\+R\+AL}}~0x05
+\begin{DoxyCompactList}\small\item\em Master/\+Central role. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a8aa06c4edd901e6331f9cf770e31f510}{B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+P\+E\+R\+I\+P\+H\+E\+R\+AL}}~0x0A
+\begin{DoxyCompactList}\small\item\em Peripheral/\+Slave role. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aca826554616c644d2c8626209869ac2f}{B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+A\+LL}}~0x0F
+\begin{DoxyCompactList}\small\item\em Device has all role, both peripheral and central. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a9366f61a0343bc369dc8744e62b7c226}{B\+L\+E\+\_\+\+A\+S\+S\+E\+RT}}~(\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}})
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a4dcba1bb8daedece11d5a0c9e0377960}{ble\+\_\+assert}}(expr)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ab44e0eee663e5390cc20a1d7ddba6a5b}{U\+N\+U\+S\+E\+D1}}(x)~(void)(x)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ae5f133855c03bd81edbfbc5f06333f73}{U\+N\+U\+S\+E\+D2}}(x,  y)~(void)(x),(void)(y)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a15a9e64f28614afb1c1ea5fc7e3b5032}{U\+N\+U\+S\+E\+D3}}(x,  y,  z)~(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a9ffd906c056dabca8fa6342ac578428c}{U\+N\+U\+S\+E\+D4}}(a,  x,  y,  z)~(void)(a),(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aca8e64179bfee4ec00ce33189dcdad9f}{U\+N\+U\+S\+E\+D5}}(a,  b,  x,  y,  z)~(void)(a),(void)(b),(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aaf266ac9a7505e507284a59353dc2977}{U\+N\+U\+S\+E\+D6}}(a,  b,  c,  x,  y,  z)~(void)(a),(void)(b),(void)(c),(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a78e1a7ca69e77f872e5e5d70e34cbde1}{U\+N\+U\+S\+E\+D7}}(a,  b,  c,  d,  x,  y,  z)~(void)(a),(void)(b),(void)(c),(void)(d),(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a9b08debd4ca3e1918b7942ed770afd18}{U\+N\+U\+S\+E\+D8}}(a,  b,  c,  d,  e,  x,  y,  z)~(void)(a),(void)(b),(void)(c),(void)(d),(void)(e),(void)(x),(void)(y),(void)(z)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a3baadc3485dd8fcaca805631ba78c096}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+G\+S\+\_\+\+I\+M\+PL}}(\+\_\+1,  \+\_\+2,  \+\_\+3,  \+\_\+4,  \+\_\+5,  \+\_\+6,  \+\_\+7,  \+\_\+8,  N, ...)~N
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_aea7004aa2c18587dfc65211777fb0426}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+GS}}(...)~\mbox{\hyperlink{ble__utils_8h_a3baadc3485dd8fcaca805631ba78c096}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+G\+S\+\_\+\+I\+M\+PL}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+, 8, 7, 6, 5, 4, 3, 2, 1)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a42f4d879f659537f2c44cabb451c9bc6}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+P\+L\+\_\+}}(nargs)~\mbox{\hyperlink{group__group__sam0__utils_gada67c62b1c57e07efa04431bc40b9238}{U\+N\+U\+S\+ED}} \#\# nargs
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ac6125eee704b9e90648021a94fb23148}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+PL}}(nargs)~\mbox{\hyperlink{ble__utils_8h_a42f4d879f659537f2c44cabb451c9bc6}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+P\+L\+\_\+}}(nargs)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}(...)~\mbox{\hyperlink{ble__utils_8h_ac6125eee704b9e90648021a94fb23148}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+PL}}( \mbox{\hyperlink{ble__utils_8h_aea7004aa2c18587dfc65211777fb0426}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+GS}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ )
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a4caca87f6f7cbe2ad1b73f7a678d48fb}{D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+C\+O\+NT}}~printf
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_adeaf15db05e0d4bcb5930a1538091eb0}{D\+B\+G\+\_\+\+L\+OG}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_afe534f2317bd74387a505917d07efe8d}{D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+A\+DV}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_afafb38dc6fdc68f81a4e26e92d92fa15}{D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+P\+TS}}~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a18630f8621818ed54491ae66f995786a}{D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+D\+EV}}~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a96e6c604c3473f3e5444e19ef9957df1}{D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+C\+O\+N\+T\+\_\+\+D\+EV}}~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ac9df469cd8020c2dbb6f02e3c5b92ef6}{B\+L\+U\+\_\+\+S\+D\+K\+\_\+\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_ac80c40a41a85f5231bacb430b2dcca8f}{I\+E\+E\+E11073\+\_\+\+E\+X\+P\+O\+N\+E\+NT}}~(0x\+F\+F000000)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a055adf90ba7702aae82d33d5aea3097c}{I\+E\+E\+E754\+\_\+\+M\+A\+N\+T\+I\+SA}}(val)~((uint32\+\_\+t)(val $\ast$ 10))
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a69462ad62ff74ed308ddeefb14053ef0}{I\+E\+E\+E754\+\_\+\+T\+O\+\_\+\+I\+E\+E\+E11073\+\_\+\+F\+L\+O\+AT}}(f\+\_\+val)
+\item 
+\#define \mbox{\hyperlink{ble__utils_8h_a00061d76273ac2e64cb17313e147adc2}{N\+I\+B\+B\+L\+E2\+A\+S\+C\+II}}(nibble)~(((nibble $<$ 0x0\+A) ? (nibble + \textquotesingle{}0\textquotesingle{}) \+: (nibble + 0x57)))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{ble__utils_8h_a6e1a17e73b59dcf5f2c780608ca5dc0f}{getchar\+\_\+timeout}} (uint32\+\_\+t timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+B\+LE Utils declarations. 
+
+Copyright (c) 2017-\/2018 Microchip Technology Inc. and its subsidiaries.
+
+\textbackslash{}asf\+\_\+license\+\_\+start 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}\label{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}} 
+\index{ble\_utils.h@{ble\_utils.h}!ALL\_UNUSED@{ALL\_UNUSED}}
+\index{ALL\_UNUSED@{ALL\_UNUSED}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{ALL\_UNUSED}{ALL\_UNUSED}}
+{\footnotesize\ttfamily \#define A\+L\+L\+\_\+\+U\+N\+U\+S\+ED(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{ble__utils_8h_ac6125eee704b9e90648021a94fb23148}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+PL}}( \mbox{\hyperlink{ble__utils_8h_aea7004aa2c18587dfc65211777fb0426}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+GS}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+))(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ )}
+
+\mbox{\Hypertarget{ble__utils_8h_ac6125eee704b9e90648021a94fb23148}\label{ble__utils_8h_ac6125eee704b9e90648021a94fb23148}} 
+\index{ble\_utils.h@{ble\_utils.h}!ALL\_UNUSED\_IMPL@{ALL\_UNUSED\_IMPL}}
+\index{ALL\_UNUSED\_IMPL@{ALL\_UNUSED\_IMPL}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{ALL\_UNUSED\_IMPL}{ALL\_UNUSED\_IMPL}}
+{\footnotesize\ttfamily \#define A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+PL(\begin{DoxyParamCaption}\item[{}]{nargs }\end{DoxyParamCaption})~\mbox{\hyperlink{ble__utils_8h_a42f4d879f659537f2c44cabb451c9bc6}{A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+P\+L\+\_\+}}(nargs)}
+
+\mbox{\Hypertarget{ble__utils_8h_a42f4d879f659537f2c44cabb451c9bc6}\label{ble__utils_8h_a42f4d879f659537f2c44cabb451c9bc6}} 
+\index{ble\_utils.h@{ble\_utils.h}!ALL\_UNUSED\_IMPL\_@{ALL\_UNUSED\_IMPL\_}}
+\index{ALL\_UNUSED\_IMPL\_@{ALL\_UNUSED\_IMPL\_}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{ALL\_UNUSED\_IMPL\_}{ALL\_UNUSED\_IMPL\_}}
+{\footnotesize\ttfamily \#define A\+L\+L\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+I\+M\+P\+L\+\_\+(\begin{DoxyParamCaption}\item[{}]{nargs }\end{DoxyParamCaption})~\mbox{\hyperlink{group__group__sam0__utils_gada67c62b1c57e07efa04431bc40b9238}{U\+N\+U\+S\+ED}} \#\# nargs}
+
+\mbox{\Hypertarget{ble__utils_8h_a9366f61a0343bc369dc8744e62b7c226}\label{ble__utils_8h_a9366f61a0343bc369dc8744e62b7c226}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ASSERT@{BLE\_ASSERT}}
+\index{BLE\_ASSERT@{BLE\_ASSERT}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ASSERT}{BLE\_ASSERT}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+A\+S\+S\+E\+RT~(\mbox{\hyperlink{group__group__sam0__utils_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}})}
+
+\mbox{\Hypertarget{ble__utils_8h_a4dcba1bb8daedece11d5a0c9e0377960}\label{ble__utils_8h_a4dcba1bb8daedece11d5a0c9e0377960}} 
+\index{ble\_utils.h@{ble\_utils.h}!ble\_assert@{ble\_assert}}
+\index{ble\_assert@{ble\_assert}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{ble\_assert}{ble\_assert}}
+{\footnotesize\ttfamily \#define ble\+\_\+assert(\begin{DoxyParamCaption}\item[{}]{expr }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\(\backslash\)}
+\DoxyCodeLine{    if (!(expr)) \textcolor{keywordflow}{while} (\textcolor{keyword}{true});\(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ble__utils_8h_aca826554616c644d2c8626209869ac2f}\label{ble__utils_8h_aca826554616c644d2c8626209869ac2f}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ROLE\_ALL@{BLE\_ROLE\_ALL}}
+\index{BLE\_ROLE\_ALL@{BLE\_ROLE\_ALL}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ROLE\_ALL}{BLE\_ROLE\_ALL}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+A\+LL~0x0F}
+
+
+
+Device has all role, both peripheral and central. 
+
+\mbox{\Hypertarget{ble__utils_8h_a0fa3bc1f4cbd1b2fec580e0fed80af7b}\label{ble__utils_8h_a0fa3bc1f4cbd1b2fec580e0fed80af7b}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ROLE\_BROADCASTER@{BLE\_ROLE\_BROADCASTER}}
+\index{BLE\_ROLE\_BROADCASTER@{BLE\_ROLE\_BROADCASTER}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ROLE\_BROADCASTER}{BLE\_ROLE\_BROADCASTER}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+B\+R\+O\+A\+D\+C\+A\+S\+T\+ER~0x02}
+
+
+
+Broadcaster role. 
+
+\mbox{\Hypertarget{ble__utils_8h_aa3a5fccfa207d063a655fea753e9d070}\label{ble__utils_8h_aa3a5fccfa207d063a655fea753e9d070}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ROLE\_CENTRAL@{BLE\_ROLE\_CENTRAL}}
+\index{BLE\_ROLE\_CENTRAL@{BLE\_ROLE\_CENTRAL}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ROLE\_CENTRAL}{BLE\_ROLE\_CENTRAL}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+C\+E\+N\+T\+R\+AL~0x05}
+
+
+
+Master/\+Central role. 
+
+\mbox{\Hypertarget{ble__utils_8h_ab81b8754d1887d6f0ac8ed63f3be8758}\label{ble__utils_8h_ab81b8754d1887d6f0ac8ed63f3be8758}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ROLE\_OBSERVER@{BLE\_ROLE\_OBSERVER}}
+\index{BLE\_ROLE\_OBSERVER@{BLE\_ROLE\_OBSERVER}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ROLE\_OBSERVER}{BLE\_ROLE\_OBSERVER}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+O\+B\+S\+E\+R\+V\+ER~0x01}
+
+
+
+Observer role. 
+
+\mbox{\Hypertarget{ble__utils_8h_a8aa06c4edd901e6331f9cf770e31f510}\label{ble__utils_8h_a8aa06c4edd901e6331f9cf770e31f510}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_ROLE\_PERIPHERAL@{BLE\_ROLE\_PERIPHERAL}}
+\index{BLE\_ROLE\_PERIPHERAL@{BLE\_ROLE\_PERIPHERAL}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_ROLE\_PERIPHERAL}{BLE\_ROLE\_PERIPHERAL}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+R\+O\+L\+E\+\_\+\+P\+E\+R\+I\+P\+H\+E\+R\+AL~0x0A}
+
+
+
+Peripheral/\+Slave role. 
+
+\mbox{\Hypertarget{ble__utils_8h_afe20fe9d93d1e469edbded9a1d3c4ae6}\label{ble__utils_8h_afe20fe9d93d1e469edbded9a1d3c4ae6}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_SDK\_BUILD\_NO@{BLE\_SDK\_BUILD\_NO}}
+\index{BLE\_SDK\_BUILD\_NO@{BLE\_SDK\_BUILD\_NO}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_SDK\_BUILD\_NO}{BLE\_SDK\_BUILD\_NO}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+B\+U\+I\+L\+D\+\_\+\+NO(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~(version \& 0x0000\+F\+F\+F\+F)}
+
+\mbox{\Hypertarget{ble__utils_8h_ab8a436bfce91c696fa5030f114e143c0}\label{ble__utils_8h_ab8a436bfce91c696fa5030f114e143c0}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_SDK\_MAJOR\_NO@{BLE\_SDK\_MAJOR\_NO}}
+\index{BLE\_SDK\_MAJOR\_NO@{BLE\_SDK\_MAJOR\_NO}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_SDK\_MAJOR\_NO}{BLE\_SDK\_MAJOR\_NO}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+A\+J\+O\+R\+\_\+\+NO(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~((version $>$$>$ 28) \& 0x0000000\+F)}
+
+
+
+Blu\+S\+DK version. 
+
+\mbox{\Hypertarget{ble__utils_8h_a048d0a30dc436dbfb15515e4a8af62bf}\label{ble__utils_8h_a048d0a30dc436dbfb15515e4a8af62bf}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_SDK\_MINOR\_NO@{BLE\_SDK\_MINOR\_NO}}
+\index{BLE\_SDK\_MINOR\_NO@{BLE\_SDK\_MINOR\_NO}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_SDK\_MINOR\_NO}{BLE\_SDK\_MINOR\_NO}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+I\+N\+O\+R\+\_\+\+NO(\begin{DoxyParamCaption}\item[{}]{version }\end{DoxyParamCaption})~((version $>$$>$ 24) \& 0x0000000\+F)}
+
+\mbox{\Hypertarget{ble__utils_8h_a52a41baae3355869b622079065a8d2e7}\label{ble__utils_8h_a52a41baae3355869b622079065a8d2e7}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_SDK\_MINOR\_NO\_INC@{BLE\_SDK\_MINOR\_NO\_INC}}
+\index{BLE\_SDK\_MINOR\_NO\_INC@{BLE\_SDK\_MINOR\_NO\_INC}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_SDK\_MINOR\_NO\_INC}{BLE\_SDK\_MINOR\_NO\_INC}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+M\+I\+N\+O\+R\+\_\+\+N\+O\+\_\+\+I\+NC~(1)}
+
+\mbox{\Hypertarget{ble__utils_8h_a379ba08ab95ade277cd93b6814a44896}\label{ble__utils_8h_a379ba08ab95ade277cd93b6814a44896}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLE\_SDK\_VERSION@{BLE\_SDK\_VERSION}}
+\index{BLE\_SDK\_VERSION@{BLE\_SDK\_VERSION}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLE\_SDK\_VERSION}{BLE\_SDK\_VERSION}}
+{\footnotesize\ttfamily \#define B\+L\+E\+\_\+\+S\+D\+K\+\_\+\+V\+E\+R\+S\+I\+ON~\mbox{\hyperlink{ble__utils_8h_a2629524f13a61cd7d8036ee3dc43738a}{B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+1}}}
+
+\mbox{\Hypertarget{ble__utils_8h_ac9df469cd8020c2dbb6f02e3c5b92ef6}\label{ble__utils_8h_ac9df469cd8020c2dbb6f02e3c5b92ef6}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLU\_SDK\_API@{BLU\_SDK\_API}}
+\index{BLU\_SDK\_API@{BLU\_SDK\_API}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLU\_SDK\_API}{BLU\_SDK\_API}}
+{\footnotesize\ttfamily \#define B\+L\+U\+\_\+\+S\+D\+K\+\_\+\+A\+PI}
+
+\mbox{\Hypertarget{ble__utils_8h_a6fa8577081d6160f52e66c12d4774f26}\label{ble__utils_8h_a6fa8577081d6160f52e66c12d4774f26}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLUSDK\_VER\_6\_0@{BLUSDK\_VER\_6\_0}}
+\index{BLUSDK\_VER\_6\_0@{BLUSDK\_VER\_6\_0}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLUSDK\_VER\_6\_0}{BLUSDK\_VER\_6\_0}}
+{\footnotesize\ttfamily \#define B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+0~(0x60000000)}
+
+\mbox{\Hypertarget{ble__utils_8h_a2629524f13a61cd7d8036ee3dc43738a}\label{ble__utils_8h_a2629524f13a61cd7d8036ee3dc43738a}} 
+\index{ble\_utils.h@{ble\_utils.h}!BLUSDK\_VER\_6\_1@{BLUSDK\_VER\_6\_1}}
+\index{BLUSDK\_VER\_6\_1@{BLUSDK\_VER\_6\_1}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BLUSDK\_VER\_6\_1}{BLUSDK\_VER\_6\_1}}
+{\footnotesize\ttfamily \#define B\+L\+U\+S\+D\+K\+\_\+\+V\+E\+R\+\_\+6\+\_\+1~(0x61000000)}
+
+\mbox{\Hypertarget{ble__utils_8h_aed0f3c0fcc602cedc19e13730abeef70}\label{ble__utils_8h_aed0f3c0fcc602cedc19e13730abeef70}} 
+\index{ble\_utils.h@{ble\_utils.h}!BTLC1000\_MR@{BTLC1000\_MR}}
+\index{BTLC1000\_MR@{BTLC1000\_MR}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BTLC1000\_MR}{BTLC1000\_MR}}
+{\footnotesize\ttfamily \#define B\+T\+L\+C1000\+\_\+\+MR~0x00}
+
+\mbox{\Hypertarget{ble__utils_8h_a1d7440c55b694c1fce8dec0f54256cf0}\label{ble__utils_8h_a1d7440c55b694c1fce8dec0f54256cf0}} 
+\index{ble\_utils.h@{ble\_utils.h}!BTLC1000\_ZR@{BTLC1000\_ZR}}
+\index{BTLC1000\_ZR@{BTLC1000\_ZR}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{BTLC1000\_ZR}{BTLC1000\_ZR}}
+{\footnotesize\ttfamily \#define B\+T\+L\+C1000\+\_\+\+ZR~0x01}
+
+\mbox{\Hypertarget{ble__utils_8h_adeaf15db05e0d4bcb5930a1538091eb0}\label{ble__utils_8h_adeaf15db05e0d4bcb5930a1538091eb0}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG@{DBG\_LOG}}
+\index{DBG\_LOG@{DBG\_LOG}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG}{DBG\_LOG}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+OG}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});\(\backslash\)}
+\DoxyCodeLine{                            printf}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ble__utils_8h_afe534f2317bd74387a505917d07efe8d}\label{ble__utils_8h_afe534f2317bd74387a505917d07efe8d}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG\_ADV@{DBG\_LOG\_ADV}}
+\index{DBG\_LOG\_ADV@{DBG\_LOG\_ADV}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG\_ADV}{DBG\_LOG\_ADV}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+A\+DV}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nBLE-ADV: "});\(\backslash\)}
+\DoxyCodeLine{                            printf}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ble__utils_8h_a4caca87f6f7cbe2ad1b73f7a678d48fb}\label{ble__utils_8h_a4caca87f6f7cbe2ad1b73f7a678d48fb}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG\_CONT@{DBG\_LOG\_CONT}}
+\index{DBG\_LOG\_CONT@{DBG\_LOG\_CONT}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG\_CONT}{DBG\_LOG\_CONT}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+C\+O\+NT~printf}
+
+\mbox{\Hypertarget{ble__utils_8h_a96e6c604c3473f3e5444e19ef9957df1}\label{ble__utils_8h_a96e6c604c3473f3e5444e19ef9957df1}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG\_CONT\_DEV@{DBG\_LOG\_CONT\_DEV}}
+\index{DBG\_LOG\_CONT\_DEV@{DBG\_LOG\_CONT\_DEV}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG\_CONT\_DEV}{DBG\_LOG\_CONT\_DEV}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+C\+O\+N\+T\+\_\+\+D\+EV~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}}
+
+\mbox{\Hypertarget{ble__utils_8h_a18630f8621818ed54491ae66f995786a}\label{ble__utils_8h_a18630f8621818ed54491ae66f995786a}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG\_DEV@{DBG\_LOG\_DEV}}
+\index{DBG\_LOG\_DEV@{DBG\_LOG\_DEV}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG\_DEV}{DBG\_LOG\_DEV}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+D\+EV~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}}
+
+\mbox{\Hypertarget{ble__utils_8h_afafb38dc6fdc68f81a4e26e92d92fa15}\label{ble__utils_8h_afafb38dc6fdc68f81a4e26e92d92fa15}} 
+\index{ble\_utils.h@{ble\_utils.h}!DBG\_LOG\_PTS@{DBG\_LOG\_PTS}}
+\index{DBG\_LOG\_PTS@{DBG\_LOG\_PTS}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{DBG\_LOG\_PTS}{DBG\_LOG\_PTS}}
+{\footnotesize\ttfamily \#define D\+B\+G\+\_\+\+L\+O\+G\+\_\+\+P\+TS~\mbox{\hyperlink{ble__utils_8h_ac994171e486a5de9a50d7742f6fbeb06}{A\+L\+L\+\_\+\+U\+N\+U\+S\+ED}}}
+
+\mbox{\Hypertarget{ble__utils_8h_ac80c40a41a85f5231bacb430b2dcca8f}\label{ble__utils_8h_ac80c40a41a85f5231bacb430b2dcca8f}} 
+\index{ble\_utils.h@{ble\_utils.h}!IEEE11073\_EXPONENT@{IEEE11073\_EXPONENT}}
+\index{IEEE11073\_EXPONENT@{IEEE11073\_EXPONENT}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{IEEE11073\_EXPONENT}{IEEE11073\_EXPONENT}}
+{\footnotesize\ttfamily \#define I\+E\+E\+E11073\+\_\+\+E\+X\+P\+O\+N\+E\+NT~(0x\+F\+F000000)}
+
+\mbox{\Hypertarget{ble__utils_8h_a055adf90ba7702aae82d33d5aea3097c}\label{ble__utils_8h_a055adf90ba7702aae82d33d5aea3097c}} 
+\index{ble\_utils.h@{ble\_utils.h}!IEEE754\_MANTISA@{IEEE754\_MANTISA}}
+\index{IEEE754\_MANTISA@{IEEE754\_MANTISA}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{IEEE754\_MANTISA}{IEEE754\_MANTISA}}
+{\footnotesize\ttfamily \#define I\+E\+E\+E754\+\_\+\+M\+A\+N\+T\+I\+SA(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~((uint32\+\_\+t)(val $\ast$ 10))}
+
+\mbox{\Hypertarget{ble__utils_8h_a69462ad62ff74ed308ddeefb14053ef0}\label{ble__utils_8h_a69462ad62ff74ed308ddeefb14053ef0}} 
+\index{ble\_utils.h@{ble\_utils.h}!IEEE754\_TO\_IEEE11073\_FLOAT@{IEEE754\_TO\_IEEE11073\_FLOAT}}
+\index{IEEE754\_TO\_IEEE11073\_FLOAT@{IEEE754\_TO\_IEEE11073\_FLOAT}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{IEEE754\_TO\_IEEE11073\_FLOAT}{IEEE754\_TO\_IEEE11073\_FLOAT}}
+{\footnotesize\ttfamily \#define I\+E\+E\+E754\+\_\+\+T\+O\+\_\+\+I\+E\+E\+E11073\+\_\+\+F\+L\+O\+AT(\begin{DoxyParamCaption}\item[{}]{f\+\_\+val }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\mbox{\hyperlink{ble__utils_8h_ac80c40a41a85f5231bacb430b2dcca8f}{IEEE11073\_EXPONENT}} | \(\backslash\)}
+\DoxyCodeLine{                                                IEEE754\_MANTISA(f\_val))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ble__utils_8h_a00061d76273ac2e64cb17313e147adc2}\label{ble__utils_8h_a00061d76273ac2e64cb17313e147adc2}} 
+\index{ble\_utils.h@{ble\_utils.h}!NIBBLE2ASCII@{NIBBLE2ASCII}}
+\index{NIBBLE2ASCII@{NIBBLE2ASCII}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{NIBBLE2ASCII}{NIBBLE2ASCII}}
+{\footnotesize\ttfamily \#define N\+I\+B\+B\+L\+E2\+A\+S\+C\+II(\begin{DoxyParamCaption}\item[{}]{nibble }\end{DoxyParamCaption})~(((nibble $<$ 0x0\+A) ? (nibble + \textquotesingle{}0\textquotesingle{}) \+: (nibble + 0x57)))}
+
+\mbox{\Hypertarget{ble__utils_8h_ab44e0eee663e5390cc20a1d7ddba6a5b}\label{ble__utils_8h_ab44e0eee663e5390cc20a1d7ddba6a5b}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED1@{UNUSED1}}
+\index{UNUSED1@{UNUSED1}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED1}{UNUSED1}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D1(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(void)(x)}
+
+\mbox{\Hypertarget{ble__utils_8h_ae5f133855c03bd81edbfbc5f06333f73}\label{ble__utils_8h_ae5f133855c03bd81edbfbc5f06333f73}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED2@{UNUSED2}}
+\index{UNUSED2@{UNUSED2}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED2}{UNUSED2}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D2(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~(void)(x),(void)(y)}
+
+\mbox{\Hypertarget{ble__utils_8h_a15a9e64f28614afb1c1ea5fc7e3b5032}\label{ble__utils_8h_a15a9e64f28614afb1c1ea5fc7e3b5032}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED3@{UNUSED3}}
+\index{UNUSED3@{UNUSED3}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED3}{UNUSED3}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D3(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_a9ffd906c056dabca8fa6342ac578428c}\label{ble__utils_8h_a9ffd906c056dabca8fa6342ac578428c}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED4@{UNUSED4}}
+\index{UNUSED4@{UNUSED4}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED4}{UNUSED4}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D4(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(a),(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_aca8e64179bfee4ec00ce33189dcdad9f}\label{ble__utils_8h_aca8e64179bfee4ec00ce33189dcdad9f}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED5@{UNUSED5}}
+\index{UNUSED5@{UNUSED5}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED5}{UNUSED5}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D5(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(a),(void)(b),(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_aaf266ac9a7505e507284a59353dc2977}\label{ble__utils_8h_aaf266ac9a7505e507284a59353dc2977}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED6@{UNUSED6}}
+\index{UNUSED6@{UNUSED6}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED6}{UNUSED6}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D6(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(a),(void)(b),(void)(c),(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_a78e1a7ca69e77f872e5e5d70e34cbde1}\label{ble__utils_8h_a78e1a7ca69e77f872e5e5d70e34cbde1}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED7@{UNUSED7}}
+\index{UNUSED7@{UNUSED7}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED7}{UNUSED7}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D7(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(a),(void)(b),(void)(c),(void)(d),(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_a9b08debd4ca3e1918b7942ed770afd18}\label{ble__utils_8h_a9b08debd4ca3e1918b7942ed770afd18}} 
+\index{ble\_utils.h@{ble\_utils.h}!UNUSED8@{UNUSED8}}
+\index{UNUSED8@{UNUSED8}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{UNUSED8}{UNUSED8}}
+{\footnotesize\ttfamily \#define U\+N\+U\+S\+E\+D8(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b,  }\item[{}]{c,  }\item[{}]{d,  }\item[{}]{e,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{z }\end{DoxyParamCaption})~(void)(a),(void)(b),(void)(c),(void)(d),(void)(e),(void)(x),(void)(y),(void)(z)}
+
+\mbox{\Hypertarget{ble__utils_8h_aea7004aa2c18587dfc65211777fb0426}\label{ble__utils_8h_aea7004aa2c18587dfc65211777fb0426}} 
+\index{ble\_utils.h@{ble\_utils.h}!VA\_NUM\_ARGS@{VA\_NUM\_ARGS}}
+\index{VA\_NUM\_ARGS@{VA\_NUM\_ARGS}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{VA\_NUM\_ARGS}{VA\_NUM\_ARGS}}
+{\footnotesize\ttfamily \#define V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+GS(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{ble__utils_8h_a3baadc3485dd8fcaca805631ba78c096}{V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+G\+S\+\_\+\+I\+M\+PL}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+, 8, 7, 6, 5, 4, 3, 2, 1)}
+
+\mbox{\Hypertarget{ble__utils_8h_a3baadc3485dd8fcaca805631ba78c096}\label{ble__utils_8h_a3baadc3485dd8fcaca805631ba78c096}} 
+\index{ble\_utils.h@{ble\_utils.h}!VA\_NUM\_ARGS\_IMPL@{VA\_NUM\_ARGS\_IMPL}}
+\index{VA\_NUM\_ARGS\_IMPL@{VA\_NUM\_ARGS\_IMPL}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{VA\_NUM\_ARGS\_IMPL}{VA\_NUM\_ARGS\_IMPL}}
+{\footnotesize\ttfamily \#define V\+A\+\_\+\+N\+U\+M\+\_\+\+A\+R\+G\+S\+\_\+\+I\+M\+PL(\begin{DoxyParamCaption}\item[{}]{\+\_\+1,  }\item[{}]{\+\_\+2,  }\item[{}]{\+\_\+3,  }\item[{}]{\+\_\+4,  }\item[{}]{\+\_\+5,  }\item[{}]{\+\_\+6,  }\item[{}]{\+\_\+7,  }\item[{}]{\+\_\+8,  }\item[{}]{N,  }\item[{}]{... }\end{DoxyParamCaption})~N}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ble__utils_8h_a6e1a17e73b59dcf5f2c780608ca5dc0f}\label{ble__utils_8h_a6e1a17e73b59dcf5f2c780608ca5dc0f}} 
+\index{ble\_utils.h@{ble\_utils.h}!getchar\_timeout@{getchar\_timeout}}
+\index{getchar\_timeout@{getchar\_timeout}!ble\_utils.h@{ble\_utils.h}}
+\subsubsection{\texorpdfstring{getchar\_timeout()}{getchar\_timeout()}}
+{\footnotesize\ttfamily uint8\+\_\+t getchar\+\_\+timeout (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{timeout }\end{DoxyParamCaption})}
+

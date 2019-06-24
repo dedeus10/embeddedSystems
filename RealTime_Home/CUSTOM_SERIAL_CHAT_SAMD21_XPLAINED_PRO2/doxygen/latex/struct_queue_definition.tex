@@ -1,0 +1,119 @@
+\hypertarget{struct_queue_definition}{}\section{Queue\+Definition Struct Reference}
+\label{struct_queue_definition}\index{QueueDefinition@{QueueDefinition}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t $\ast$ \mbox{\hyperlink{struct_queue_definition_adfa75f7bc22a3a58a907676c0164a1c1}{pc\+Head}}
+\item 
+int8\+\_\+t $\ast$ \mbox{\hyperlink{struct_queue_definition_aec0a6e253e1e05c107bf2a77c1bed940}{pc\+Tail}}
+\item 
+int8\+\_\+t $\ast$ \mbox{\hyperlink{struct_queue_definition_aa018576801d60d3a78ffacab53dc8b79}{pc\+Write\+To}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>int8\_t $\ast$ \mbox{\hyperlink{struct_queue_definition_af716fa534e7d09f91df1fbdd8ab7a693}{pcReadFrom}}\\
+\>\mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{UBaseType\_t}} \mbox{\hyperlink{struct_queue_definition_ae3c791284df4f19b849e56f972b13db4}{uxRecursiveCallCount}}\\
+\} \mbox{\hyperlink{struct_queue_definition_aa835eb1561f57f3fe62e2a598e7defa4}{u}}\\
+
+\end{tabbing}\item 
+\mbox{\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\+\_\+t}} \mbox{\hyperlink{struct_queue_definition_a5cfd8ae6db5da134ed16405043a0d898}{x\+Tasks\+Waiting\+To\+Send}}
+\item 
+\mbox{\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\+\_\+t}} \mbox{\hyperlink{struct_queue_definition_a8ad185d9d83713c774e6a897580d8313}{x\+Tasks\+Waiting\+To\+Receive}}
+\item 
+volatile \mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} \mbox{\hyperlink{struct_queue_definition_afb61b3f2247402ed3b8b159311c408b7}{ux\+Messages\+Waiting}}
+\item 
+\mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} \mbox{\hyperlink{struct_queue_definition_a619169da78e43281a73fbdf13f9eddfb}{ux\+Length}}
+\item 
+\mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} \mbox{\hyperlink{struct_queue_definition_a216cc99516d7f82573f6cb19f5a9f626}{ux\+Item\+Size}}
+\item 
+volatile int8\+\_\+t \mbox{\hyperlink{struct_queue_definition_a2017e9e2e81e1fd301fa88236614653e}{c\+Rx\+Lock}}
+\item 
+volatile int8\+\_\+t \mbox{\hyperlink{struct_queue_definition_a77c52e94671f477fd2942db97e20838b}{c\+Tx\+Lock}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_queue_definition_a2017e9e2e81e1fd301fa88236614653e}\label{struct_queue_definition_a2017e9e2e81e1fd301fa88236614653e}} 
+\index{QueueDefinition@{QueueDefinition}!cRxLock@{cRxLock}}
+\index{cRxLock@{cRxLock}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{cRxLock}{cRxLock}}
+{\footnotesize\ttfamily volatile int8\+\_\+t c\+Rx\+Lock}
+
+\mbox{\Hypertarget{struct_queue_definition_a77c52e94671f477fd2942db97e20838b}\label{struct_queue_definition_a77c52e94671f477fd2942db97e20838b}} 
+\index{QueueDefinition@{QueueDefinition}!cTxLock@{cTxLock}}
+\index{cTxLock@{cTxLock}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{cTxLock}{cTxLock}}
+{\footnotesize\ttfamily volatile int8\+\_\+t c\+Tx\+Lock}
+
+\mbox{\Hypertarget{struct_queue_definition_adfa75f7bc22a3a58a907676c0164a1c1}\label{struct_queue_definition_adfa75f7bc22a3a58a907676c0164a1c1}} 
+\index{QueueDefinition@{QueueDefinition}!pcHead@{pcHead}}
+\index{pcHead@{pcHead}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{pcHead}{pcHead}}
+{\footnotesize\ttfamily int8\+\_\+t$\ast$ pc\+Head}
+
+\mbox{\Hypertarget{struct_queue_definition_af716fa534e7d09f91df1fbdd8ab7a693}\label{struct_queue_definition_af716fa534e7d09f91df1fbdd8ab7a693}} 
+\index{QueueDefinition@{QueueDefinition}!pcReadFrom@{pcReadFrom}}
+\index{pcReadFrom@{pcReadFrom}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{pcReadFrom}{pcReadFrom}}
+{\footnotesize\ttfamily int8\+\_\+t$\ast$ pc\+Read\+From}
+
+\mbox{\Hypertarget{struct_queue_definition_aec0a6e253e1e05c107bf2a77c1bed940}\label{struct_queue_definition_aec0a6e253e1e05c107bf2a77c1bed940}} 
+\index{QueueDefinition@{QueueDefinition}!pcTail@{pcTail}}
+\index{pcTail@{pcTail}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{pcTail}{pcTail}}
+{\footnotesize\ttfamily int8\+\_\+t$\ast$ pc\+Tail}
+
+\mbox{\Hypertarget{struct_queue_definition_aa018576801d60d3a78ffacab53dc8b79}\label{struct_queue_definition_aa018576801d60d3a78ffacab53dc8b79}} 
+\index{QueueDefinition@{QueueDefinition}!pcWriteTo@{pcWriteTo}}
+\index{pcWriteTo@{pcWriteTo}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{pcWriteTo}{pcWriteTo}}
+{\footnotesize\ttfamily int8\+\_\+t$\ast$ pc\+Write\+To}
+
+\mbox{\Hypertarget{struct_queue_definition_aa835eb1561f57f3fe62e2a598e7defa4}\label{struct_queue_definition_aa835eb1561f57f3fe62e2a598e7defa4}} 
+\index{QueueDefinition@{QueueDefinition}!u@{u}}
+\index{u@{u}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily union \{ ... \}   u}
+
+\mbox{\Hypertarget{struct_queue_definition_a216cc99516d7f82573f6cb19f5a9f626}\label{struct_queue_definition_a216cc99516d7f82573f6cb19f5a9f626}} 
+\index{QueueDefinition@{QueueDefinition}!uxItemSize@{uxItemSize}}
+\index{uxItemSize@{uxItemSize}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{uxItemSize}{uxItemSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} ux\+Item\+Size}
+
+\mbox{\Hypertarget{struct_queue_definition_a619169da78e43281a73fbdf13f9eddfb}\label{struct_queue_definition_a619169da78e43281a73fbdf13f9eddfb}} 
+\index{QueueDefinition@{QueueDefinition}!uxLength@{uxLength}}
+\index{uxLength@{uxLength}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{uxLength}{uxLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} ux\+Length}
+
+\mbox{\Hypertarget{struct_queue_definition_afb61b3f2247402ed3b8b159311c408b7}\label{struct_queue_definition_afb61b3f2247402ed3b8b159311c408b7}} 
+\index{QueueDefinition@{QueueDefinition}!uxMessagesWaiting@{uxMessagesWaiting}}
+\index{uxMessagesWaiting@{uxMessagesWaiting}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{uxMessagesWaiting}{uxMessagesWaiting}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} ux\+Messages\+Waiting}
+
+\mbox{\Hypertarget{struct_queue_definition_ae3c791284df4f19b849e56f972b13db4}\label{struct_queue_definition_ae3c791284df4f19b849e56f972b13db4}} 
+\index{QueueDefinition@{QueueDefinition}!uxRecursiveCallCount@{uxRecursiveCallCount}}
+\index{uxRecursiveCallCount@{uxRecursiveCallCount}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{uxRecursiveCallCount}{uxRecursiveCallCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{portmacro_8h_a646f89d4298e4f5afd522202b11cb2e6}{U\+Base\+Type\+\_\+t}} ux\+Recursive\+Call\+Count}
+
+\mbox{\Hypertarget{struct_queue_definition_a8ad185d9d83713c774e6a897580d8313}\label{struct_queue_definition_a8ad185d9d83713c774e6a897580d8313}} 
+\index{QueueDefinition@{QueueDefinition}!xTasksWaitingToReceive@{xTasksWaitingToReceive}}
+\index{xTasksWaitingToReceive@{xTasksWaitingToReceive}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{xTasksWaitingToReceive}{xTasksWaitingToReceive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\+\_\+t}} x\+Tasks\+Waiting\+To\+Receive}
+
+\mbox{\Hypertarget{struct_queue_definition_a5cfd8ae6db5da134ed16405043a0d898}\label{struct_queue_definition_a5cfd8ae6db5da134ed16405043a0d898}} 
+\index{QueueDefinition@{QueueDefinition}!xTasksWaitingToSend@{xTasksWaitingToSend}}
+\index{xTasksWaitingToSend@{xTasksWaitingToSend}!QueueDefinition@{QueueDefinition}}
+\subsubsection{\texorpdfstring{xTasksWaitingToSend}{xTasksWaitingToSend}}
+{\footnotesize\ttfamily \mbox{\hyperlink{list_8h_afd590ef6400071b4d63d65ef90bea7f4}{List\+\_\+t}} x\+Tasks\+Waiting\+To\+Send}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+S\+F/thirdparty/freertos/freertos-\/10.\+0.\+0/\+Source/\mbox{\hyperlink{queue_8c}{queue.\+c}}\end{DoxyCompactItemize}

@@ -1,0 +1,918 @@
+\hypertarget{group___s_a_m_d21___d_a_c}{}\section{Digital Analog Converter}
+\label{group___s_a_m_d21___d_a_c}\index{Digital Analog Converter@{Digital Analog Converter}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_d_a_c___c_t_r_l_a___type}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___c_t_r_l_b___type}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___e_v_c_t_r_l___type}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___i_n_t_e_n_c_l_r___type}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___i_n_t_e_n_s_e_t___type}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___i_n_t_f_l_a_g___type}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___s_t_a_t_u_s___type}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___d_a_t_a___type}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+Type}}
+\item 
+union \mbox{\hyperlink{union_d_a_c___d_a_t_a_b_u_f___type}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_dac}{Dac}}
+\begin{DoxyCompactList}\small\item\em D\+AC hardware registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab76e3488c106c6d2688d864117555e6d}{D\+A\+C\+\_\+\+U2214}}
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga49409e81a9642d61cb82d3f664c44844}{R\+E\+V\+\_\+\+D\+AC}}~0x110
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaebd4a25fcf855e7d3824acf7f9d3ac83}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+O\+F\+F\+S\+ET}}~0x0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA offset) Control A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga5b2a0ad82560fded073e6276046facfc}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA reset\+\_\+value) Control A \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gafa3f0f563ba0dcc229026ca6d3effdcc}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA) Software Reset \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab50aae3a8aa2d5bcfb9892d87f425fd8}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+ST}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gafa6e69ab386a0acc15ec18b0584091f9}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA) Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gabdbf590aa240a8a85a49f13e27872353}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+LE}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gabdf461e8ca3765359a3e350ff50cfd05}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA) Run in Standby \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga601cdcfdd1fb4fae7de0c3ac96b6a9a2}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+BY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3194764eec2b07936137bbd3afbde5d2}{D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+M\+A\+SK}}~0x07ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LA) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga77355709810c770d457b0206b73e12c2}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+O\+F\+F\+S\+ET}}~0x1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB offset) Control B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gac2138055bf74ac2fccda007458cdca1d}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB reset\+\_\+value) Control B \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gac43fc445d046c2264721fe11789800c9}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+E\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) External Output Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga8499370d0bd9518c965fe89af94add46}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+EN}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga2bf8d42afa911f1ae377e42d31053bc0}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+E\+N\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Internal Output Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga27d2a20502a137bc36bf719afde9eb86}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+EN}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+E\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0f4867bbd5c372515cd93fcff2c770ab}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+D\+J\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Left Adjusted Data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gadd6e4258e9fd589eade5c4748b30a4d2}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+DJ}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+D\+J\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga2eea424d3ea75be2b3f24995955f0d1d}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+P\+D\+\_\+\+Pos}}~3
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Voltage Pump Disable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaf0a6f1e95822b9b170bb5697b17ddda4}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+PD}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+P\+D\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaf242f51bcbfe6ecb54605e3cdc12b3d8}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+W\+P\+\_\+\+Pos}}~4
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Bypass D\+A\+T\+A\+B\+UF Write Protection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaedde60a9d630ba437603b800b6d7c434}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+WP}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+W\+P\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}}~6
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Reference Selection \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga257979650aa6e806ad98f4095f58dd52}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Msk}}~(0x3ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab75aa87cd7f0a1813d5e73f2dba5057e}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+EL}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga257979650aa6e806ad98f4095f58dd52}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gafc2e72a0d035fcbf05dad162c768467c}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1\+V\+\_\+\+Val}}~0x0ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) Internal 1.\+0V reference \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0ec9e0f724ebc16f883f720380d25771}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+C\+C\+\_\+\+Val}}~0x1ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) A\+V\+CC \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga63711351571cbeb5c161639aee8d6252}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+F\+P\+\_\+\+Val}}~0x2ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) External reference \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga9a53c260c228abfd923a15064f1a1525}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1V}}~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_gafc2e72a0d035fcbf05dad162c768467c}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1\+V\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga70dc3629848778c513b61220e3a47107}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+CC}}~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0ec9e0f724ebc16f883f720380d25771}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+C\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaa2619d9edfd1b7945c69719f63456f5b}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+FP}}~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga63711351571cbeb5c161639aee8d6252}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+F\+P\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaa12ea04e34d8557ae1e628862714e207}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+SK}}~0x\+D\+Ful
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+C\+T\+R\+LB) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga554a475582005e674b535a88927abc9f}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET}}~0x2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+E\+V\+C\+T\+RL offset) Event Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gae95bd54234ae16d3e9ee3291b4c883c5}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+E\+V\+C\+T\+RL reset\+\_\+value) Event Control \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga31ff6c0f7fef665224fcf1068cd3f3fd}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+E\+I\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) Start Conversion Event Input \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga5fbf72269702debf464c4a596eb035d6}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+EI}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+E\+I\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga97e13ff75733b38e502c88e75cba9f3d}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+E\+O\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) Data Buffer Empty Event Output \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gacef4800bd29ad596e3e1dacbc83d8ed7}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+EO}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+E\+O\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga8290fa8981af7c9f3374d64bfd643575}{D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+M\+A\+SK}}~0x03ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga4b29525af7de15de08715677c874b359}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET}}~0x4
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR offset) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0052bdf4a77d5d851ff2dc3981b47f84}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR reset\+\_\+value) Interrupt Enable Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga1a17f5ec1b6b1d51eb7caa0e41fd01f8}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Underrun Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0a21d000b608c6a6acbbad5dcb1a4dc9}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+UN}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gae91b3684292cdb9164d07f4b2de13b80}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Data Buffer Empty Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga6a9d9f313d6fe75431478411e2588d01}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+TY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga097d9ec635456477c9fa82e148d2d8bb}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Synchronization Ready Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga07844b4a1d88dbe79b2af326a9409ceb}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+DY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga85bb6a4ca23cf5a609ff966cfe6ac6eb}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+M\+A\+SK}}~0x07ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0ccf063ca605c99a4d7675883da90a35}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}~0x5
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET offset) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gac03fead9c4f7f214a3e9c0718a629b84}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET reset\+\_\+value) Interrupt Enable Set \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga38aa2d8302976875d983b1e2c6b0ced2}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Underrun Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga1f6ced1ae61e442654cc75b4990a3db1}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+UN}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga12375d6d098ab02a3889530b60730fc4}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Data Buffer Empty Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gae0ba55a3795921a328b29e2b2b4c4455}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+TY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3036a73dc494322c684c9236bd70454f}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Synchronization Ready Interrupt Enable \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga160f399b31890e2fb6af4a43bd547952}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+DY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga16937f1a74d06e17331ee7d86534570a}{D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x07ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gadb76074cbcb6b6dbbe088030f72d5a4b}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+O\+F\+F\+S\+ET}}~0x6
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG offset) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga9f73e182aae9decbe33d83db01b2830b}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG reset\+\_\+value) Interrupt Flag Status and Clear \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga6c43469c26efeb772af1a2ceba6e472b}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Underrun \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga425d2358996c173b122575d98cb04434}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+UN}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0dac29b106d18582f439752a01102763}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos}}~1
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Data Buffer Empty \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gaa3cec4c9338963c8d6556c57824b5cbb}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+TY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga850fe6f2c2fefc2f5f6cd72d1757c780}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos}}~2
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Synchronization Ready \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga7437e469e21f5f1f9c0ba36a3c6b7934}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+DY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga7610b49b2915578cf29db233149cf421}{D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK}}~0x07ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga515f997330d2406b1230c8b83e7c5a6b}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET}}~0x7
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+S\+T\+A\+T\+US offset) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga114959003f1b29d6a60514c7e42781e3}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x00ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga78482bceb5799efa5c20ff1781500806}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos}}~7
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+S\+T\+A\+T\+US) Synchronization Busy Status \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gae923484ada5a9546eeb9dc1ccf30b0b8}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+SY}}~(0x1ul $<$$<$ D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga989b67a3f83996021dc0214e918aaddf}{D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK}}~0x80ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga927b65fb825b37f7f7b23d90604430be}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+O\+F\+F\+S\+ET}}~0x8
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+TA offset) Data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga18ce37ed9fbd7ceef65e3837f2ed73ec}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0000ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+TA reset\+\_\+value) Data \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gabb4ad33edb03cfa83cacba4fbfcae055}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+TA) Data value to be converted \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga171d99dfcf0786683343dee659c78c1f}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga74d499bb7e6618526f4e7928cc871593}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+TA}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga171d99dfcf0786683343dee659c78c1f}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gabb4ad33edb03cfa83cacba4fbfcae055}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga1bb2391625c1bf82261cfb3a23c32181}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+TA) M\+A\+SK Register \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga925e76e2151662945396d1937062bdf7}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+O\+F\+F\+S\+ET}}~0xC
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF offset) Data Buffer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3649ae1cf9dbb0179c3a00c0e210bc23}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE}}~0x0000ul
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF reset\+\_\+value) Data Buffer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3fe3d9c9181741d88429ff03b62828e5}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos}}~0
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF) Data Buffer \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab9b1749e7a45e018441aa8987cc29c16}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Msk}}~(0x\+F\+F\+F\+Ful $<$$<$ D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos)
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga4e60504cd02e632151e452ec90fa33ac}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+UF}}(value)~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab9b1749e7a45e018441aa8987cc29c16}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3fe3d9c9181741d88429ff03b62828e5}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos}}))
+\item 
+\#define \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga09bc5edc17c5afd32066807527a78ba1}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+M\+A\+SK}}~0x\+F\+F\+F\+Ful
+\begin{DoxyCompactList}\small\item\em (D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF) M\+A\+SK Register \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+O\+F\+T\+W\+A\+RE A\+PI D\+E\+F\+I\+N\+I\+T\+I\+ON F\+OR D\+AC 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gabdbf590aa240a8a85a49f13e27872353}\label{group___s_a_m_d21___d_a_c_gabdbf590aa240a8a85a49f13e27872353}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_ENABLE@{DAC\_CTRLA\_ENABLE}}
+\index{DAC\_CTRLA\_ENABLE@{DAC\_CTRLA\_ENABLE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_ENABLE}{DAC\_CTRLA\_ENABLE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+LE~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gafa6e69ab386a0acc15ec18b0584091f9}\label{group___s_a_m_d21___d_a_c_gafa6e69ab386a0acc15ec18b0584091f9}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_ENABLE\_Pos@{DAC\_CTRLA\_ENABLE\_Pos}}
+\index{DAC\_CTRLA\_ENABLE\_Pos@{DAC\_CTRLA\_ENABLE\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_ENABLE\_Pos}{DAC\_CTRLA\_ENABLE\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA) Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga3194764eec2b07936137bbd3afbde5d2}\label{group___s_a_m_d21___d_a_c_ga3194764eec2b07936137bbd3afbde5d2}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_MASK@{DAC\_CTRLA\_MASK}}
+\index{DAC\_CTRLA\_MASK@{DAC\_CTRLA\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_MASK}{DAC\_CTRLA\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+M\+A\+SK~0x07ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaebd4a25fcf855e7d3824acf7f9d3ac83}\label{group___s_a_m_d21___d_a_c_gaebd4a25fcf855e7d3824acf7f9d3ac83}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_OFFSET@{DAC\_CTRLA\_OFFSET}}
+\index{DAC\_CTRLA\_OFFSET@{DAC\_CTRLA\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_OFFSET}{DAC\_CTRLA\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+O\+F\+F\+S\+ET~0x0}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA offset) Control A 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga5b2a0ad82560fded073e6276046facfc}\label{group___s_a_m_d21___d_a_c_ga5b2a0ad82560fded073e6276046facfc}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_RESETVALUE@{DAC\_CTRLA\_RESETVALUE}}
+\index{DAC\_CTRLA\_RESETVALUE@{DAC\_CTRLA\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_RESETVALUE}{DAC\_CTRLA\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA reset\+\_\+value) Control A 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga601cdcfdd1fb4fae7de0c3ac96b6a9a2}\label{group___s_a_m_d21___d_a_c_ga601cdcfdd1fb4fae7de0c3ac96b6a9a2}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_RUNSTDBY@{DAC\_CTRLA\_RUNSTDBY}}
+\index{DAC\_CTRLA\_RUNSTDBY@{DAC\_CTRLA\_RUNSTDBY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_RUNSTDBY}{DAC\_CTRLA\_RUNSTDBY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+BY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gabdf461e8ca3765359a3e350ff50cfd05}\label{group___s_a_m_d21___d_a_c_gabdf461e8ca3765359a3e350ff50cfd05}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_RUNSTDBY\_Pos@{DAC\_CTRLA\_RUNSTDBY\_Pos}}
+\index{DAC\_CTRLA\_RUNSTDBY\_Pos@{DAC\_CTRLA\_RUNSTDBY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_RUNSTDBY\_Pos}{DAC\_CTRLA\_RUNSTDBY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+R\+U\+N\+S\+T\+D\+B\+Y\+\_\+\+Pos~2}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA) Run in Standby 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gab50aae3a8aa2d5bcfb9892d87f425fd8}\label{group___s_a_m_d21___d_a_c_gab50aae3a8aa2d5bcfb9892d87f425fd8}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_SWRST@{DAC\_CTRLA\_SWRST}}
+\index{DAC\_CTRLA\_SWRST@{DAC\_CTRLA\_SWRST}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_SWRST}{DAC\_CTRLA\_SWRST}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+ST~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gafa3f0f563ba0dcc229026ca6d3effdcc}\label{group___s_a_m_d21___d_a_c_gafa3f0f563ba0dcc229026ca6d3effdcc}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLA\_SWRST\_Pos@{DAC\_CTRLA\_SWRST\_Pos}}
+\index{DAC\_CTRLA\_SWRST\_Pos@{DAC\_CTRLA\_SWRST\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLA\_SWRST\_Pos}{DAC\_CTRLA\_SWRST\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+A\+\_\+\+S\+W\+R\+S\+T\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LA) Software Reset 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaedde60a9d630ba437603b800b6d7c434}\label{group___s_a_m_d21___d_a_c_gaedde60a9d630ba437603b800b6d7c434}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_BDWP@{DAC\_CTRLB\_BDWP}}
+\index{DAC\_CTRLB\_BDWP@{DAC\_CTRLB\_BDWP}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_BDWP}{DAC\_CTRLB\_BDWP}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+WP~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+W\+P\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaf242f51bcbfe6ecb54605e3cdc12b3d8}\label{group___s_a_m_d21___d_a_c_gaf242f51bcbfe6ecb54605e3cdc12b3d8}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_BDWP\_Pos@{DAC\_CTRLB\_BDWP\_Pos}}
+\index{DAC\_CTRLB\_BDWP\_Pos@{DAC\_CTRLB\_BDWP\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_BDWP\_Pos}{DAC\_CTRLB\_BDWP\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+B\+D\+W\+P\+\_\+\+Pos~4}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Bypass D\+A\+T\+A\+B\+UF Write Protection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga8499370d0bd9518c965fe89af94add46}\label{group___s_a_m_d21___d_a_c_ga8499370d0bd9518c965fe89af94add46}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_EOEN@{DAC\_CTRLB\_EOEN}}
+\index{DAC\_CTRLB\_EOEN@{DAC\_CTRLB\_EOEN}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_EOEN}{DAC\_CTRLB\_EOEN}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+EN~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gac43fc445d046c2264721fe11789800c9}\label{group___s_a_m_d21___d_a_c_gac43fc445d046c2264721fe11789800c9}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_EOEN\_Pos@{DAC\_CTRLB\_EOEN\_Pos}}
+\index{DAC\_CTRLB\_EOEN\_Pos@{DAC\_CTRLB\_EOEN\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_EOEN\_Pos}{DAC\_CTRLB\_EOEN\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+E\+O\+E\+N\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) External Output Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga27d2a20502a137bc36bf719afde9eb86}\label{group___s_a_m_d21___d_a_c_ga27d2a20502a137bc36bf719afde9eb86}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_IOEN@{DAC\_CTRLB\_IOEN}}
+\index{DAC\_CTRLB\_IOEN@{DAC\_CTRLB\_IOEN}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_IOEN}{DAC\_CTRLB\_IOEN}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+EN~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+E\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga2bf8d42afa911f1ae377e42d31053bc0}\label{group___s_a_m_d21___d_a_c_ga2bf8d42afa911f1ae377e42d31053bc0}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_IOEN\_Pos@{DAC\_CTRLB\_IOEN\_Pos}}
+\index{DAC\_CTRLB\_IOEN\_Pos@{DAC\_CTRLB\_IOEN\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_IOEN\_Pos}{DAC\_CTRLB\_IOEN\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+I\+O\+E\+N\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Internal Output Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gadd6e4258e9fd589eade5c4748b30a4d2}\label{group___s_a_m_d21___d_a_c_gadd6e4258e9fd589eade5c4748b30a4d2}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_LEFTADJ@{DAC\_CTRLB\_LEFTADJ}}
+\index{DAC\_CTRLB\_LEFTADJ@{DAC\_CTRLB\_LEFTADJ}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_LEFTADJ}{DAC\_CTRLB\_LEFTADJ}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+DJ~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+D\+J\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0f4867bbd5c372515cd93fcff2c770ab}\label{group___s_a_m_d21___d_a_c_ga0f4867bbd5c372515cd93fcff2c770ab}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_LEFTADJ\_Pos@{DAC\_CTRLB\_LEFTADJ\_Pos}}
+\index{DAC\_CTRLB\_LEFTADJ\_Pos@{DAC\_CTRLB\_LEFTADJ\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_LEFTADJ\_Pos}{DAC\_CTRLB\_LEFTADJ\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+L\+E\+F\+T\+A\+D\+J\+\_\+\+Pos~2}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Left Adjusted Data 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaa12ea04e34d8557ae1e628862714e207}\label{group___s_a_m_d21___d_a_c_gaa12ea04e34d8557ae1e628862714e207}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_MASK@{DAC\_CTRLB\_MASK}}
+\index{DAC\_CTRLB\_MASK@{DAC\_CTRLB\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_MASK}{DAC\_CTRLB\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+M\+A\+SK~0x\+D\+Ful}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga77355709810c770d457b0206b73e12c2}\label{group___s_a_m_d21___d_a_c_ga77355709810c770d457b0206b73e12c2}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_OFFSET@{DAC\_CTRLB\_OFFSET}}
+\index{DAC\_CTRLB\_OFFSET@{DAC\_CTRLB\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_OFFSET}{DAC\_CTRLB\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+O\+F\+F\+S\+ET~0x1}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB offset) Control B 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gab75aa87cd7f0a1813d5e73f2dba5057e}\label{group___s_a_m_d21___d_a_c_gab75aa87cd7f0a1813d5e73f2dba5057e}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL@{DAC\_CTRLB\_REFSEL}}
+\index{DAC\_CTRLB\_REFSEL@{DAC\_CTRLB\_REFSEL}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL}{DAC\_CTRLB\_REFSEL}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+EL(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga257979650aa6e806ad98f4095f58dd52}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga70dc3629848778c513b61220e3a47107}\label{group___s_a_m_d21___d_a_c_ga70dc3629848778c513b61220e3a47107}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_AVCC@{DAC\_CTRLB\_REFSEL\_AVCC}}
+\index{DAC\_CTRLB\_REFSEL\_AVCC@{DAC\_CTRLB\_REFSEL\_AVCC}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_AVCC}{DAC\_CTRLB\_REFSEL\_AVCC}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+CC~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga0ec9e0f724ebc16f883f720380d25771}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+C\+C\+\_\+\+Val}}     $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0ec9e0f724ebc16f883f720380d25771}\label{group___s_a_m_d21___d_a_c_ga0ec9e0f724ebc16f883f720380d25771}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_AVCC\_Val@{DAC\_CTRLB\_REFSEL\_AVCC\_Val}}
+\index{DAC\_CTRLB\_REFSEL\_AVCC\_Val@{DAC\_CTRLB\_REFSEL\_AVCC\_Val}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_AVCC\_Val}{DAC\_CTRLB\_REFSEL\_AVCC\_Val}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+A\+V\+C\+C\+\_\+\+Val~0x1ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) A\+V\+CC 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga9a53c260c228abfd923a15064f1a1525}\label{group___s_a_m_d21___d_a_c_ga9a53c260c228abfd923a15064f1a1525}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_INT1V@{DAC\_CTRLB\_REFSEL\_INT1V}}
+\index{DAC\_CTRLB\_REFSEL\_INT1V@{DAC\_CTRLB\_REFSEL\_INT1V}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_INT1V}{DAC\_CTRLB\_REFSEL\_INT1V}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1V~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_gafc2e72a0d035fcbf05dad162c768467c}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1\+V\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gafc2e72a0d035fcbf05dad162c768467c}\label{group___s_a_m_d21___d_a_c_gafc2e72a0d035fcbf05dad162c768467c}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_INT1V\_Val@{DAC\_CTRLB\_REFSEL\_INT1V\_Val}}
+\index{DAC\_CTRLB\_REFSEL\_INT1V\_Val@{DAC\_CTRLB\_REFSEL\_INT1V\_Val}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_INT1V\_Val}{DAC\_CTRLB\_REFSEL\_INT1V\_Val}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+I\+N\+T1\+V\+\_\+\+Val~0x0ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Internal 1.\+0V reference 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga257979650aa6e806ad98f4095f58dd52}\label{group___s_a_m_d21___d_a_c_ga257979650aa6e806ad98f4095f58dd52}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_Msk@{DAC\_CTRLB\_REFSEL\_Msk}}
+\index{DAC\_CTRLB\_REFSEL\_Msk@{DAC\_CTRLB\_REFSEL\_Msk}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_Msk}{DAC\_CTRLB\_REFSEL\_Msk}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Msk~(0x3ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}\label{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_Pos@{DAC\_CTRLB\_REFSEL\_Pos}}
+\index{DAC\_CTRLB\_REFSEL\_Pos@{DAC\_CTRLB\_REFSEL\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_Pos}{DAC\_CTRLB\_REFSEL\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos~6}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Reference Selection 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaa2619d9edfd1b7945c69719f63456f5b}\label{group___s_a_m_d21___d_a_c_gaa2619d9edfd1b7945c69719f63456f5b}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_VREFP@{DAC\_CTRLB\_REFSEL\_VREFP}}
+\index{DAC\_CTRLB\_REFSEL\_VREFP@{DAC\_CTRLB\_REFSEL\_VREFP}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_VREFP}{DAC\_CTRLB\_REFSEL\_VREFP}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+FP~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga63711351571cbeb5c161639aee8d6252}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+F\+P\+\_\+\+Val}}    $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gace1da3ee1cda6efe12a220080a718b99}{D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+Pos}})}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga63711351571cbeb5c161639aee8d6252}\label{group___s_a_m_d21___d_a_c_ga63711351571cbeb5c161639aee8d6252}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_REFSEL\_VREFP\_Val@{DAC\_CTRLB\_REFSEL\_VREFP\_Val}}
+\index{DAC\_CTRLB\_REFSEL\_VREFP\_Val@{DAC\_CTRLB\_REFSEL\_VREFP\_Val}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_REFSEL\_VREFP\_Val}{DAC\_CTRLB\_REFSEL\_VREFP\_Val}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+F\+S\+E\+L\+\_\+\+V\+R\+E\+F\+P\+\_\+\+Val~0x2ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) External reference 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gac2138055bf74ac2fccda007458cdca1d}\label{group___s_a_m_d21___d_a_c_gac2138055bf74ac2fccda007458cdca1d}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_RESETVALUE@{DAC\_CTRLB\_RESETVALUE}}
+\index{DAC\_CTRLB\_RESETVALUE@{DAC\_CTRLB\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_RESETVALUE}{DAC\_CTRLB\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB reset\+\_\+value) Control B 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaf0a6f1e95822b9b170bb5697b17ddda4}\label{group___s_a_m_d21___d_a_c_gaf0a6f1e95822b9b170bb5697b17ddda4}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_VPD@{DAC\_CTRLB\_VPD}}
+\index{DAC\_CTRLB\_VPD@{DAC\_CTRLB\_VPD}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_VPD}{DAC\_CTRLB\_VPD}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+PD~(0x1ul $<$$<$ D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+P\+D\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga2eea424d3ea75be2b3f24995955f0d1d}\label{group___s_a_m_d21___d_a_c_ga2eea424d3ea75be2b3f24995955f0d1d}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_CTRLB\_VPD\_Pos@{DAC\_CTRLB\_VPD\_Pos}}
+\index{DAC\_CTRLB\_VPD\_Pos@{DAC\_CTRLB\_VPD\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_CTRLB\_VPD\_Pos}{DAC\_CTRLB\_VPD\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+C\+T\+R\+L\+B\+\_\+\+V\+P\+D\+\_\+\+Pos~3}
+
+
+
+(D\+A\+C\+\_\+\+C\+T\+R\+LB) Voltage Pump Disable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga74d499bb7e6618526f4e7928cc871593}\label{group___s_a_m_d21___d_a_c_ga74d499bb7e6618526f4e7928cc871593}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_DATA@{DAC\_DATA\_DATA}}
+\index{DAC\_DATA\_DATA@{DAC\_DATA\_DATA}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_DATA}{DAC\_DATA\_DATA}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+TA(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga171d99dfcf0786683343dee659c78c1f}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_gabb4ad33edb03cfa83cacba4fbfcae055}{D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga171d99dfcf0786683343dee659c78c1f}\label{group___s_a_m_d21___d_a_c_ga171d99dfcf0786683343dee659c78c1f}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_DATA\_Msk@{DAC\_DATA\_DATA\_Msk}}
+\index{DAC\_DATA\_DATA\_Msk@{DAC\_DATA\_DATA\_Msk}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_DATA\_Msk}{DAC\_DATA\_DATA\_Msk}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gabb4ad33edb03cfa83cacba4fbfcae055}\label{group___s_a_m_d21___d_a_c_gabb4ad33edb03cfa83cacba4fbfcae055}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_DATA\_Pos@{DAC\_DATA\_DATA\_Pos}}
+\index{DAC\_DATA\_DATA\_Pos@{DAC\_DATA\_DATA\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_DATA\_Pos}{DAC\_DATA\_DATA\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+D\+A\+T\+A\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+TA) Data value to be converted 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga1bb2391625c1bf82261cfb3a23c32181}\label{group___s_a_m_d21___d_a_c_ga1bb2391625c1bf82261cfb3a23c32181}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_MASK@{DAC\_DATA\_MASK}}
+\index{DAC\_DATA\_MASK@{DAC\_DATA\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_MASK}{DAC\_DATA\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+Ful}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+TA) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga927b65fb825b37f7f7b23d90604430be}\label{group___s_a_m_d21___d_a_c_ga927b65fb825b37f7f7b23d90604430be}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_OFFSET@{DAC\_DATA\_OFFSET}}
+\index{DAC\_DATA\_OFFSET@{DAC\_DATA\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_OFFSET}{DAC\_DATA\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+O\+F\+F\+S\+ET~0x8}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+TA offset) Data 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga18ce37ed9fbd7ceef65e3837f2ed73ec}\label{group___s_a_m_d21___d_a_c_ga18ce37ed9fbd7ceef65e3837f2ed73ec}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATA\_RESETVALUE@{DAC\_DATA\_RESETVALUE}}
+\index{DAC\_DATA\_RESETVALUE@{DAC\_DATA\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATA\_RESETVALUE}{DAC\_DATA\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x0000ul}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+TA reset\+\_\+value) Data 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga4e60504cd02e632151e452ec90fa33ac}\label{group___s_a_m_d21___d_a_c_ga4e60504cd02e632151e452ec90fa33ac}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_DATABUF@{DAC\_DATABUF\_DATABUF}}
+\index{DAC\_DATABUF\_DATABUF@{DAC\_DATABUF\_DATABUF}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_DATABUF}{DAC\_DATABUF\_DATABUF}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+UF(\begin{DoxyParamCaption}\item[{}]{value }\end{DoxyParamCaption})~(\mbox{\hyperlink{group___s_a_m_d21___d_a_c_gab9b1749e7a45e018441aa8987cc29c16}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Msk}} \& ((value) $<$$<$ \mbox{\hyperlink{group___s_a_m_d21___d_a_c_ga3fe3d9c9181741d88429ff03b62828e5}{D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos}}))}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gab9b1749e7a45e018441aa8987cc29c16}\label{group___s_a_m_d21___d_a_c_gab9b1749e7a45e018441aa8987cc29c16}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_DATABUF\_Msk@{DAC\_DATABUF\_DATABUF\_Msk}}
+\index{DAC\_DATABUF\_DATABUF\_Msk@{DAC\_DATABUF\_DATABUF\_Msk}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_DATABUF\_Msk}{DAC\_DATABUF\_DATABUF\_Msk}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Msk~(0x\+F\+F\+F\+Ful $<$$<$ D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga3fe3d9c9181741d88429ff03b62828e5}\label{group___s_a_m_d21___d_a_c_ga3fe3d9c9181741d88429ff03b62828e5}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_DATABUF\_Pos@{DAC\_DATABUF\_DATABUF\_Pos}}
+\index{DAC\_DATABUF\_DATABUF\_Pos@{DAC\_DATABUF\_DATABUF\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_DATABUF\_Pos}{DAC\_DATABUF\_DATABUF\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF) Data Buffer 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga09bc5edc17c5afd32066807527a78ba1}\label{group___s_a_m_d21___d_a_c_ga09bc5edc17c5afd32066807527a78ba1}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_MASK@{DAC\_DATABUF\_MASK}}
+\index{DAC\_DATABUF\_MASK@{DAC\_DATABUF\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_MASK}{DAC\_DATABUF\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+M\+A\+SK~0x\+F\+F\+F\+Ful}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga925e76e2151662945396d1937062bdf7}\label{group___s_a_m_d21___d_a_c_ga925e76e2151662945396d1937062bdf7}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_OFFSET@{DAC\_DATABUF\_OFFSET}}
+\index{DAC\_DATABUF\_OFFSET@{DAC\_DATABUF\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_OFFSET}{DAC\_DATABUF\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+O\+F\+F\+S\+ET~0xC}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF offset) Data Buffer 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga3649ae1cf9dbb0179c3a00c0e210bc23}\label{group___s_a_m_d21___d_a_c_ga3649ae1cf9dbb0179c3a00c0e210bc23}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_DATABUF\_RESETVALUE@{DAC\_DATABUF\_RESETVALUE}}
+\index{DAC\_DATABUF\_RESETVALUE@{DAC\_DATABUF\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_DATABUF\_RESETVALUE}{DAC\_DATABUF\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+U\+F\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x0000ul}
+
+
+
+(D\+A\+C\+\_\+\+D\+A\+T\+A\+B\+UF reset\+\_\+value) Data Buffer 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gacef4800bd29ad596e3e1dacbc83d8ed7}\label{group___s_a_m_d21___d_a_c_gacef4800bd29ad596e3e1dacbc83d8ed7}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_EMPTYEO@{DAC\_EVCTRL\_EMPTYEO}}
+\index{DAC\_EVCTRL\_EMPTYEO@{DAC\_EVCTRL\_EMPTYEO}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_EMPTYEO}{DAC\_EVCTRL\_EMPTYEO}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+EO~(0x1ul $<$$<$ D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+E\+O\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga97e13ff75733b38e502c88e75cba9f3d}\label{group___s_a_m_d21___d_a_c_ga97e13ff75733b38e502c88e75cba9f3d}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_EMPTYEO\_Pos@{DAC\_EVCTRL\_EMPTYEO\_Pos}}
+\index{DAC\_EVCTRL\_EMPTYEO\_Pos@{DAC\_EVCTRL\_EMPTYEO\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_EMPTYEO\_Pos}{DAC\_EVCTRL\_EMPTYEO\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+E\+M\+P\+T\+Y\+E\+O\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) Data Buffer Empty Event Output 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga8290fa8981af7c9f3374d64bfd643575}\label{group___s_a_m_d21___d_a_c_ga8290fa8981af7c9f3374d64bfd643575}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_MASK@{DAC\_EVCTRL\_MASK}}
+\index{DAC\_EVCTRL\_MASK@{DAC\_EVCTRL\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_MASK}{DAC\_EVCTRL\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+M\+A\+SK~0x03ul}
+
+
+
+(D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga554a475582005e674b535a88927abc9f}\label{group___s_a_m_d21___d_a_c_ga554a475582005e674b535a88927abc9f}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_OFFSET@{DAC\_EVCTRL\_OFFSET}}
+\index{DAC\_EVCTRL\_OFFSET@{DAC\_EVCTRL\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_OFFSET}{DAC\_EVCTRL\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+O\+F\+F\+S\+ET~0x2}
+
+
+
+(D\+A\+C\+\_\+\+E\+V\+C\+T\+RL offset) Event Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gae95bd54234ae16d3e9ee3291b4c883c5}\label{group___s_a_m_d21___d_a_c_gae95bd54234ae16d3e9ee3291b4c883c5}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_RESETVALUE@{DAC\_EVCTRL\_RESETVALUE}}
+\index{DAC\_EVCTRL\_RESETVALUE@{DAC\_EVCTRL\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_RESETVALUE}{DAC\_EVCTRL\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+E\+V\+C\+T\+RL reset\+\_\+value) Event Control 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga5fbf72269702debf464c4a596eb035d6}\label{group___s_a_m_d21___d_a_c_ga5fbf72269702debf464c4a596eb035d6}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_STARTEI@{DAC\_EVCTRL\_STARTEI}}
+\index{DAC\_EVCTRL\_STARTEI@{DAC\_EVCTRL\_STARTEI}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_STARTEI}{DAC\_EVCTRL\_STARTEI}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+EI~(0x1ul $<$$<$ D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+E\+I\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga31ff6c0f7fef665224fcf1068cd3f3fd}\label{group___s_a_m_d21___d_a_c_ga31ff6c0f7fef665224fcf1068cd3f3fd}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_EVCTRL\_STARTEI\_Pos@{DAC\_EVCTRL\_STARTEI\_Pos}}
+\index{DAC\_EVCTRL\_STARTEI\_Pos@{DAC\_EVCTRL\_STARTEI\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_EVCTRL\_STARTEI\_Pos}{DAC\_EVCTRL\_STARTEI\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+E\+V\+C\+T\+R\+L\+\_\+\+S\+T\+A\+R\+T\+E\+I\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+E\+V\+C\+T\+RL) Start Conversion Event Input 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga6a9d9f313d6fe75431478411e2588d01}\label{group___s_a_m_d21___d_a_c_ga6a9d9f313d6fe75431478411e2588d01}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_EMPTY@{DAC\_INTENCLR\_EMPTY}}
+\index{DAC\_INTENCLR\_EMPTY@{DAC\_INTENCLR\_EMPTY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_EMPTY}{DAC\_INTENCLR\_EMPTY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+TY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gae91b3684292cdb9164d07f4b2de13b80}\label{group___s_a_m_d21___d_a_c_gae91b3684292cdb9164d07f4b2de13b80}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_EMPTY\_Pos@{DAC\_INTENCLR\_EMPTY\_Pos}}
+\index{DAC\_INTENCLR\_EMPTY\_Pos@{DAC\_INTENCLR\_EMPTY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_EMPTY\_Pos}{DAC\_INTENCLR\_EMPTY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Data Buffer Empty Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga85bb6a4ca23cf5a609ff966cfe6ac6eb}\label{group___s_a_m_d21___d_a_c_ga85bb6a4ca23cf5a609ff966cfe6ac6eb}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_MASK@{DAC\_INTENCLR\_MASK}}
+\index{DAC\_INTENCLR\_MASK@{DAC\_INTENCLR\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_MASK}{DAC\_INTENCLR\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+M\+A\+SK~0x07ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga4b29525af7de15de08715677c874b359}\label{group___s_a_m_d21___d_a_c_ga4b29525af7de15de08715677c874b359}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_OFFSET@{DAC\_INTENCLR\_OFFSET}}
+\index{DAC\_INTENCLR\_OFFSET@{DAC\_INTENCLR\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_OFFSET}{DAC\_INTENCLR\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+O\+F\+F\+S\+ET~0x4}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR offset) Interrupt Enable Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0052bdf4a77d5d851ff2dc3981b47f84}\label{group___s_a_m_d21___d_a_c_ga0052bdf4a77d5d851ff2dc3981b47f84}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_RESETVALUE@{DAC\_INTENCLR\_RESETVALUE}}
+\index{DAC\_INTENCLR\_RESETVALUE@{DAC\_INTENCLR\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_RESETVALUE}{DAC\_INTENCLR\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR reset\+\_\+value) Interrupt Enable Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga07844b4a1d88dbe79b2af326a9409ceb}\label{group___s_a_m_d21___d_a_c_ga07844b4a1d88dbe79b2af326a9409ceb}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_SYNCRDY@{DAC\_INTENCLR\_SYNCRDY}}
+\index{DAC\_INTENCLR\_SYNCRDY@{DAC\_INTENCLR\_SYNCRDY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_SYNCRDY}{DAC\_INTENCLR\_SYNCRDY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+DY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga097d9ec635456477c9fa82e148d2d8bb}\label{group___s_a_m_d21___d_a_c_ga097d9ec635456477c9fa82e148d2d8bb}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_SYNCRDY\_Pos@{DAC\_INTENCLR\_SYNCRDY\_Pos}}
+\index{DAC\_INTENCLR\_SYNCRDY\_Pos@{DAC\_INTENCLR\_SYNCRDY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_SYNCRDY\_Pos}{DAC\_INTENCLR\_SYNCRDY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos~2}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Synchronization Ready Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0a21d000b608c6a6acbbad5dcb1a4dc9}\label{group___s_a_m_d21___d_a_c_ga0a21d000b608c6a6acbbad5dcb1a4dc9}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_UNDERRUN@{DAC\_INTENCLR\_UNDERRUN}}
+\index{DAC\_INTENCLR\_UNDERRUN@{DAC\_INTENCLR\_UNDERRUN}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_UNDERRUN}{DAC\_INTENCLR\_UNDERRUN}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+UN~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga1a17f5ec1b6b1d51eb7caa0e41fd01f8}\label{group___s_a_m_d21___d_a_c_ga1a17f5ec1b6b1d51eb7caa0e41fd01f8}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENCLR\_UNDERRUN\_Pos@{DAC\_INTENCLR\_UNDERRUN\_Pos}}
+\index{DAC\_INTENCLR\_UNDERRUN\_Pos@{DAC\_INTENCLR\_UNDERRUN\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENCLR\_UNDERRUN\_Pos}{DAC\_INTENCLR\_UNDERRUN\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+L\+R\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+C\+LR) Underrun Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gae0ba55a3795921a328b29e2b2b4c4455}\label{group___s_a_m_d21___d_a_c_gae0ba55a3795921a328b29e2b2b4c4455}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_EMPTY@{DAC\_INTENSET\_EMPTY}}
+\index{DAC\_INTENSET\_EMPTY@{DAC\_INTENSET\_EMPTY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_EMPTY}{DAC\_INTENSET\_EMPTY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+TY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga12375d6d098ab02a3889530b60730fc4}\label{group___s_a_m_d21___d_a_c_ga12375d6d098ab02a3889530b60730fc4}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_EMPTY\_Pos@{DAC\_INTENSET\_EMPTY\_Pos}}
+\index{DAC\_INTENSET\_EMPTY\_Pos@{DAC\_INTENSET\_EMPTY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_EMPTY\_Pos}{DAC\_INTENSET\_EMPTY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Data Buffer Empty Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga16937f1a74d06e17331ee7d86534570a}\label{group___s_a_m_d21___d_a_c_ga16937f1a74d06e17331ee7d86534570a}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_MASK@{DAC\_INTENSET\_MASK}}
+\index{DAC\_INTENSET\_MASK@{DAC\_INTENSET\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_MASK}{DAC\_INTENSET\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+M\+A\+SK~0x07ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0ccf063ca605c99a4d7675883da90a35}\label{group___s_a_m_d21___d_a_c_ga0ccf063ca605c99a4d7675883da90a35}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_OFFSET@{DAC\_INTENSET\_OFFSET}}
+\index{DAC\_INTENSET\_OFFSET@{DAC\_INTENSET\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_OFFSET}{DAC\_INTENSET\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+O\+F\+F\+S\+ET~0x5}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET offset) Interrupt Enable Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gac03fead9c4f7f214a3e9c0718a629b84}\label{group___s_a_m_d21___d_a_c_gac03fead9c4f7f214a3e9c0718a629b84}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_RESETVALUE@{DAC\_INTENSET\_RESETVALUE}}
+\index{DAC\_INTENSET\_RESETVALUE@{DAC\_INTENSET\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_RESETVALUE}{DAC\_INTENSET\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET reset\+\_\+value) Interrupt Enable Set 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga160f399b31890e2fb6af4a43bd547952}\label{group___s_a_m_d21___d_a_c_ga160f399b31890e2fb6af4a43bd547952}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_SYNCRDY@{DAC\_INTENSET\_SYNCRDY}}
+\index{DAC\_INTENSET\_SYNCRDY@{DAC\_INTENSET\_SYNCRDY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_SYNCRDY}{DAC\_INTENSET\_SYNCRDY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+DY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga3036a73dc494322c684c9236bd70454f}\label{group___s_a_m_d21___d_a_c_ga3036a73dc494322c684c9236bd70454f}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_SYNCRDY\_Pos@{DAC\_INTENSET\_SYNCRDY\_Pos}}
+\index{DAC\_INTENSET\_SYNCRDY\_Pos@{DAC\_INTENSET\_SYNCRDY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_SYNCRDY\_Pos}{DAC\_INTENSET\_SYNCRDY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos~2}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Synchronization Ready Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga1f6ced1ae61e442654cc75b4990a3db1}\label{group___s_a_m_d21___d_a_c_ga1f6ced1ae61e442654cc75b4990a3db1}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_UNDERRUN@{DAC\_INTENSET\_UNDERRUN}}
+\index{DAC\_INTENSET\_UNDERRUN@{DAC\_INTENSET\_UNDERRUN}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_UNDERRUN}{DAC\_INTENSET\_UNDERRUN}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+UN~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga38aa2d8302976875d983b1e2c6b0ced2}\label{group___s_a_m_d21___d_a_c_ga38aa2d8302976875d983b1e2c6b0ced2}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTENSET\_UNDERRUN\_Pos@{DAC\_INTENSET\_UNDERRUN\_Pos}}
+\index{DAC\_INTENSET\_UNDERRUN\_Pos@{DAC\_INTENSET\_UNDERRUN\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTENSET\_UNDERRUN\_Pos}{DAC\_INTENSET\_UNDERRUN\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+E\+T\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+E\+N\+S\+ET) Underrun Interrupt Enable 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gaa3cec4c9338963c8d6556c57824b5cbb}\label{group___s_a_m_d21___d_a_c_gaa3cec4c9338963c8d6556c57824b5cbb}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_EMPTY@{DAC\_INTFLAG\_EMPTY}}
+\index{DAC\_INTFLAG\_EMPTY@{DAC\_INTFLAG\_EMPTY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_EMPTY}{DAC\_INTFLAG\_EMPTY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+TY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga0dac29b106d18582f439752a01102763}\label{group___s_a_m_d21___d_a_c_ga0dac29b106d18582f439752a01102763}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_EMPTY\_Pos@{DAC\_INTFLAG\_EMPTY\_Pos}}
+\index{DAC\_INTFLAG\_EMPTY\_Pos@{DAC\_INTFLAG\_EMPTY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_EMPTY\_Pos}{DAC\_INTFLAG\_EMPTY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+Pos~1}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Data Buffer Empty 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga7610b49b2915578cf29db233149cf421}\label{group___s_a_m_d21___d_a_c_ga7610b49b2915578cf29db233149cf421}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_MASK@{DAC\_INTFLAG\_MASK}}
+\index{DAC\_INTFLAG\_MASK@{DAC\_INTFLAG\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_MASK}{DAC\_INTFLAG\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+M\+A\+SK~0x07ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gadb76074cbcb6b6dbbe088030f72d5a4b}\label{group___s_a_m_d21___d_a_c_gadb76074cbcb6b6dbbe088030f72d5a4b}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_OFFSET@{DAC\_INTFLAG\_OFFSET}}
+\index{DAC\_INTFLAG\_OFFSET@{DAC\_INTFLAG\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_OFFSET}{DAC\_INTFLAG\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+O\+F\+F\+S\+ET~0x6}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG offset) Interrupt Flag Status and Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga9f73e182aae9decbe33d83db01b2830b}\label{group___s_a_m_d21___d_a_c_ga9f73e182aae9decbe33d83db01b2830b}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_RESETVALUE@{DAC\_INTFLAG\_RESETVALUE}}
+\index{DAC\_INTFLAG\_RESETVALUE@{DAC\_INTFLAG\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_RESETVALUE}{DAC\_INTFLAG\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG reset\+\_\+value) Interrupt Flag Status and Clear 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga7437e469e21f5f1f9c0ba36a3c6b7934}\label{group___s_a_m_d21___d_a_c_ga7437e469e21f5f1f9c0ba36a3c6b7934}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_SYNCRDY@{DAC\_INTFLAG\_SYNCRDY}}
+\index{DAC\_INTFLAG\_SYNCRDY@{DAC\_INTFLAG\_SYNCRDY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_SYNCRDY}{DAC\_INTFLAG\_SYNCRDY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+DY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga850fe6f2c2fefc2f5f6cd72d1757c780}\label{group___s_a_m_d21___d_a_c_ga850fe6f2c2fefc2f5f6cd72d1757c780}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_SYNCRDY\_Pos@{DAC\_INTFLAG\_SYNCRDY\_Pos}}
+\index{DAC\_INTFLAG\_SYNCRDY\_Pos@{DAC\_INTFLAG\_SYNCRDY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_SYNCRDY\_Pos}{DAC\_INTFLAG\_SYNCRDY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+S\+Y\+N\+C\+R\+D\+Y\+\_\+\+Pos~2}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Synchronization Ready 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga425d2358996c173b122575d98cb04434}\label{group___s_a_m_d21___d_a_c_ga425d2358996c173b122575d98cb04434}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_UNDERRUN@{DAC\_INTFLAG\_UNDERRUN}}
+\index{DAC\_INTFLAG\_UNDERRUN@{DAC\_INTFLAG\_UNDERRUN}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_UNDERRUN}{DAC\_INTFLAG\_UNDERRUN}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+UN~(0x1ul $<$$<$ D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga6c43469c26efeb772af1a2ceba6e472b}\label{group___s_a_m_d21___d_a_c_ga6c43469c26efeb772af1a2ceba6e472b}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_INTFLAG\_UNDERRUN\_Pos@{DAC\_INTFLAG\_UNDERRUN\_Pos}}
+\index{DAC\_INTFLAG\_UNDERRUN\_Pos@{DAC\_INTFLAG\_UNDERRUN\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_INTFLAG\_UNDERRUN\_Pos}{DAC\_INTFLAG\_UNDERRUN\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+A\+G\+\_\+\+U\+N\+D\+E\+R\+R\+U\+N\+\_\+\+Pos~0}
+
+
+
+(D\+A\+C\+\_\+\+I\+N\+T\+F\+L\+AG) Underrun 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga989b67a3f83996021dc0214e918aaddf}\label{group___s_a_m_d21___d_a_c_ga989b67a3f83996021dc0214e918aaddf}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_STATUS\_MASK@{DAC\_STATUS\_MASK}}
+\index{DAC\_STATUS\_MASK@{DAC\_STATUS\_MASK}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_STATUS\_MASK}{DAC\_STATUS\_MASK}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+M\+A\+SK~0x80ul}
+
+
+
+(D\+A\+C\+\_\+\+S\+T\+A\+T\+US) M\+A\+SK Register 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga515f997330d2406b1230c8b83e7c5a6b}\label{group___s_a_m_d21___d_a_c_ga515f997330d2406b1230c8b83e7c5a6b}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_STATUS\_OFFSET@{DAC\_STATUS\_OFFSET}}
+\index{DAC\_STATUS\_OFFSET@{DAC\_STATUS\_OFFSET}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_STATUS\_OFFSET}{DAC\_STATUS\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+O\+F\+F\+S\+ET~0x7}
+
+
+
+(D\+A\+C\+\_\+\+S\+T\+A\+T\+US offset) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga114959003f1b29d6a60514c7e42781e3}\label{group___s_a_m_d21___d_a_c_ga114959003f1b29d6a60514c7e42781e3}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_STATUS\_RESETVALUE@{DAC\_STATUS\_RESETVALUE}}
+\index{DAC\_STATUS\_RESETVALUE@{DAC\_STATUS\_RESETVALUE}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_STATUS\_RESETVALUE}{DAC\_STATUS\_RESETVALUE}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+S\+E\+T\+V\+A\+L\+UE~0x00ul}
+
+
+
+(D\+A\+C\+\_\+\+S\+T\+A\+T\+US reset\+\_\+value) Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gae923484ada5a9546eeb9dc1ccf30b0b8}\label{group___s_a_m_d21___d_a_c_gae923484ada5a9546eeb9dc1ccf30b0b8}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_STATUS\_SYNCBUSY@{DAC\_STATUS\_SYNCBUSY}}
+\index{DAC\_STATUS\_SYNCBUSY@{DAC\_STATUS\_SYNCBUSY}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_STATUS\_SYNCBUSY}{DAC\_STATUS\_SYNCBUSY}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+SY~(0x1ul $<$$<$ D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos)}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga78482bceb5799efa5c20ff1781500806}\label{group___s_a_m_d21___d_a_c_ga78482bceb5799efa5c20ff1781500806}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_STATUS\_SYNCBUSY\_Pos@{DAC\_STATUS\_SYNCBUSY\_Pos}}
+\index{DAC\_STATUS\_SYNCBUSY\_Pos@{DAC\_STATUS\_SYNCBUSY\_Pos}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_STATUS\_SYNCBUSY\_Pos}{DAC\_STATUS\_SYNCBUSY\_Pos}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+Y\+N\+C\+B\+U\+S\+Y\+\_\+\+Pos~7}
+
+
+
+(D\+A\+C\+\_\+\+S\+T\+A\+T\+US) Synchronization Busy Status 
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_gab76e3488c106c6d2688d864117555e6d}\label{group___s_a_m_d21___d_a_c_gab76e3488c106c6d2688d864117555e6d}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!DAC\_U2214@{DAC\_U2214}}
+\index{DAC\_U2214@{DAC\_U2214}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{DAC\_U2214}{DAC\_U2214}}
+{\footnotesize\ttfamily \#define D\+A\+C\+\_\+\+U2214}
+
+\mbox{\Hypertarget{group___s_a_m_d21___d_a_c_ga49409e81a9642d61cb82d3f664c44844}\label{group___s_a_m_d21___d_a_c_ga49409e81a9642d61cb82d3f664c44844}} 
+\index{Digital Analog Converter@{Digital Analog Converter}!REV\_DAC@{REV\_DAC}}
+\index{REV\_DAC@{REV\_DAC}!Digital Analog Converter@{Digital Analog Converter}}
+\subsubsection{\texorpdfstring{REV\_DAC}{REV\_DAC}}
+{\footnotesize\ttfamily \#define R\+E\+V\+\_\+\+D\+AC~0x110}
+

@@ -1,0 +1,68 @@
+\hypertarget{group__gap__scan__group}{}\section{Scanning Procedure A\+P\+Is}
+\label{group__gap__scan__group}\index{Scanning Procedure APIs@{Scanning Procedure APIs}}
+
+
+This group includes scanning A\+P\+Is.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__scan__group_ga26972125714f8cee1bc5a59d5b82623f}{at\+\_\+ble\+\_\+scan\+\_\+start}} (uint16\+\_\+t interval, uint16\+\_\+t window, uint16\+\_\+t timeout, \mbox{\hyperlink{at__ble__api_8h_aaf0f86429cbfecd3e7aff55ca39c9121}{at\+\_\+ble\+\_\+scan\+\_\+type\+\_\+t}} type, \mbox{\hyperlink{at__ble__api_8h_adfc2135fa2348d39943a1cf12b0e7d49}{at\+\_\+ble\+\_\+scan\+\_\+mode\+\_\+t}} mode, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} filter\+\_\+whitelist, \mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}} filter\+\_\+dublicates)
+\begin{DoxyCompactList}\small\item\em Start scan operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} \mbox{\hyperlink{group__gap__scan__group_gae7efc689bfa835b6870bd304726cb56f}{at\+\_\+ble\+\_\+scan\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Stops an ongoing scan operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This group includes scanning A\+P\+Is. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gap__scan__group_ga26972125714f8cee1bc5a59d5b82623f}\label{group__gap__scan__group_ga26972125714f8cee1bc5a59d5b82623f}} 
+\index{Scanning Procedure APIs@{Scanning Procedure APIs}!at\_ble\_scan\_start@{at\_ble\_scan\_start}}
+\index{at\_ble\_scan\_start@{at\_ble\_scan\_start}!Scanning Procedure APIs@{Scanning Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_scan\_start()}{at\_ble\_scan\_start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+scan\+\_\+start (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{interval,  }\item[{uint16\+\_\+t}]{window,  }\item[{uint16\+\_\+t}]{timeout,  }\item[{\mbox{\hyperlink{at__ble__api_8h_aaf0f86429cbfecd3e7aff55ca39c9121}{at\+\_\+ble\+\_\+scan\+\_\+type\+\_\+t}}}]{type,  }\item[{\mbox{\hyperlink{at__ble__api_8h_adfc2135fa2348d39943a1cf12b0e7d49}{at\+\_\+ble\+\_\+scan\+\_\+mode\+\_\+t}}}]{mode,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{filter\+\_\+whitelist,  }\item[{\mbox{\hyperlink{group__group__sam0__utils_ga97a80ca1602ebf2303258971a2c938e2}{bool}}}]{filter\+\_\+dublicates }\end{DoxyParamCaption})}
+
+
+
+Start scan operation. 
+
+While the scan operation is ongoing, the application will always receive \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba3cb207a61ee00b12381b45e27feb73c3}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+I\+N\+FO}} event per found device. ~\newline
+ In case of using \mbox{\hyperlink{at__ble__api_8h_adfc2135fa2348d39943a1cf12b0e7d49a179fefcc66a56f66a5b45d5880def7cb}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+G\+E\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+RY}} or \mbox{\hyperlink{at__ble__api_8h_adfc2135fa2348d39943a1cf12b0e7d49a4e114ee867376665b1a9312ffa2089c9}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+L\+I\+M\+\_\+\+D\+I\+S\+C\+O\+V\+E\+RY}}, also \mbox{\hyperlink{at__ble__api_8h_a3324640b95f33169515f89738ed5baeba7520b73374f9552caf9457201c3cdbc0}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+R\+E\+P\+O\+RT}} event will be received at the end of scan process or error occurred when trying to start scanning procedure
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em interval} & Scan interval in 625us units, a value between \mbox{\hyperlink{at__ble__api_8h_a2e2b6f40cdd2f3e6488f3940863c003b}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+M\+IN}} and \mbox{\hyperlink{at__ble__api_8h_aad2eedadcaed32f60bfd4c04b67ca1d1}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+M\+AX}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em window} & Scan window in 625us units, value between \mbox{\hyperlink{at__ble__api_8h_a7897dfdecd248945e99a205960ba267a}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+M\+IN}} and \mbox{\hyperlink{at__ble__api_8h_aa7dda4a1a9c81ec6da21843ac61d83df}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+C\+A\+N\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+M\+AX}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em timeout} & Scan time-\/out, between 0x0001 and 0x028F in scale of Seconds, 0x0000 disables time-\/out. \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & Controls the type of scan to perform either Passive or Active \mbox{\hyperlink{at__ble__api_8h_aaf0f86429cbfecd3e7aff55ca39c9121}{at\+\_\+ble\+\_\+scan\+\_\+type\+\_\+t}} for more details. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mode} & Either General, Limited or Observer only, \mbox{\hyperlink{at__ble__api_8h_adfc2135fa2348d39943a1cf12b0e7d49}{at\+\_\+ble\+\_\+scan\+\_\+mode\+\_\+t}} for more details \\
+\hline
+\mbox{\texttt{ in}}  & {\em filter\+\_\+whitelist} & If true, get scan results only from white-\/listed devices added by \mbox{\hyperlink{group__gap__whitelist__group_ga9c03fafebf456d7cdc4c0f66e87a2847}{at\+\_\+ble\+\_\+whitelist\+\_\+add}} otherwise scan results will be got from any advertising device. This filter should not be used with \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42a1e5579400246eb5c6a35ec3a14b06ab8}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+G\+E\+N\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+A\+B\+LE}} and \mbox{\hyperlink{at__ble__api_8h_a111d43782f9cab2913633e89a8fa7d42a339d3d03cfb45742b5cf0b438dae5821}{A\+T\+\_\+\+B\+L\+E\+\_\+\+A\+D\+V\+\_\+\+L\+I\+M\+\_\+\+D\+I\+S\+C\+O\+V\+E\+R\+A\+B\+LE}} modes O\+N\+LY. \\
+\hline
+\mbox{\texttt{ in}}  & {\em filter\+\_\+dublicates} & If true, scan event will be generated only once per device, if false multiple events will be issued\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gap__scan__group_gae7efc689bfa835b6870bd304726cb56f}\label{group__gap__scan__group_gae7efc689bfa835b6870bd304726cb56f}} 
+\index{Scanning Procedure APIs@{Scanning Procedure APIs}!at\_ble\_scan\_stop@{at\_ble\_scan\_stop}}
+\index{at\_ble\_scan\_stop@{at\_ble\_scan\_stop}!Scanning Procedure APIs@{Scanning Procedure APIs}}
+\subsubsection{\texorpdfstring{at\_ble\_scan\_stop()}{at\_ble\_scan\_stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__error__codes__group_ga3b1db9b95feb157b3c188ca27fe76988}{at\+\_\+ble\+\_\+status\+\_\+t}} at\+\_\+ble\+\_\+scan\+\_\+stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stops an ongoing scan operation. 
+
+\begin{DoxyReturn}{Returns}
+Upon successful completion the function shall return \mbox{\hyperlink{group__error__codes__group_gga3b1db9b95feb157b3c188ca27fe76988a7e3bfff5387331cd4f2c56cbcbbd7e19}{A\+T\+\_\+\+B\+L\+E\+\_\+\+S\+U\+C\+C\+E\+SS}}, Otherwise the function shall return \mbox{\hyperlink{at__ble__api_8h_ace24eb4e5ca3f325c663b809da5feb92}{at\+\_\+ble\+\_\+status\+\_\+t}} 
+\end{DoxyReturn}
